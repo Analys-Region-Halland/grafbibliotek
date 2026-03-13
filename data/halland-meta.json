@@ -1,0 +1,1484 @@
+[
+  {
+    "kpi_id": "S_SYSS_TOT",
+    "kpi_namn": "Sysselsättningsgrad",
+    "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_TOT_N"
+  },
+  {
+    "kpi_id": "S_SYSS_TOT_N",
+    "kpi_namn": "Antal sysselsatta",
+    "beskrivning": "Antal sysselsatta 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_TOT"
+  },
+  {
+    "kpi_id": "S_ARKR_TOT",
+    "kpi_namn": "Andel i arbetskraften",
+    "beskrivning": "Andel av befolkningen 20–64 år som ingår i arbetskraften (sysselsatta + arbetslösa). Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_TOT_N"
+  },
+  {
+    "kpi_id": "S_ARKR_TOT_N",
+    "kpi_namn": "Antal i arbetskraften",
+    "beskrivning": "Antal personer 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_TOT"
+  },
+  {
+    "kpi_id": "S_ARBL_TOT",
+    "kpi_namn": "Arbetslöshetsgrad",
+    "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_TOT_N"
+  },
+  {
+    "kpi_id": "S_ARBL_TOT_N",
+    "kpi_namn": "Antal arbetslösa",
+    "beskrivning": "Antal arbetslösa 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_TOT"
+  },
+  {
+    "kpi_id": "S_SYSS_INR",
+    "kpi_namn": "Sysselsättningsgrad, inrikes födda",
+    "beskrivning": "Andel sysselsatta bland inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_INR_N"
+  },
+  {
+    "kpi_id": "S_SYSS_INR_N",
+    "kpi_namn": "Antal sysselsatta, inrikes födda",
+    "beskrivning": "Antal sysselsatta inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_INR"
+  },
+  {
+    "kpi_id": "S_ARKR_INR",
+    "kpi_namn": "Andel i arbetskraften, inrikes födda",
+    "beskrivning": "Andel inrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_INR_N"
+  },
+  {
+    "kpi_id": "S_ARKR_INR_N",
+    "kpi_namn": "Antal i arbetskraften, inrikes födda",
+    "beskrivning": "Antal inrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_INR"
+  },
+  {
+    "kpi_id": "S_ARBL_INR",
+    "kpi_namn": "Arbetslöshetsgrad, inrikes födda",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_INR_N"
+  },
+  {
+    "kpi_id": "S_ARBL_INR_N",
+    "kpi_namn": "Antal arbetslösa, inrikes födda",
+    "beskrivning": "Antal arbetslösa inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_INR"
+  },
+  {
+    "kpi_id": "S_SYSS_UTR",
+    "kpi_namn": "Sysselsättningsgrad, utrikes födda",
+    "beskrivning": "Andel sysselsatta bland utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_UTR_N"
+  },
+  {
+    "kpi_id": "S_SYSS_UTR_N",
+    "kpi_namn": "Antal sysselsatta, utrikes födda",
+    "beskrivning": "Antal sysselsatta utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_UTR"
+  },
+  {
+    "kpi_id": "S_ARKR_UTR",
+    "kpi_namn": "Andel i arbetskraften, utrikes födda",
+    "beskrivning": "Andel utrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_UTR_N"
+  },
+  {
+    "kpi_id": "S_ARKR_UTR_N",
+    "kpi_namn": "Antal i arbetskraften, utrikes födda",
+    "beskrivning": "Antal utrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_UTR"
+  },
+  {
+    "kpi_id": "S_ARBL_UTR",
+    "kpi_namn": "Arbetslöshetsgrad, utrikes födda",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_UTR_N"
+  },
+  {
+    "kpi_id": "S_ARBL_UTR_N",
+    "kpi_namn": "Antal arbetslösa, utrikes födda",
+    "beskrivning": "Antal arbetslösa utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_UTR"
+  },
+  {
+    "kpi_id": "S_SYSS_KV",
+    "kpi_namn": "Sysselsättningsgrad, kvinnor",
+    "beskrivning": "Andel sysselsatta kvinnor 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_KV_N"
+  },
+  {
+    "kpi_id": "S_SYSS_KV_N",
+    "kpi_namn": "Antal sysselsatta, kvinnor",
+    "beskrivning": "Antal sysselsatta kvinnor 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_KV"
+  },
+  {
+    "kpi_id": "S_ARKR_KV",
+    "kpi_namn": "Andel i arbetskraften, kvinnor",
+    "beskrivning": "Andel kvinnor 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_KV_N"
+  },
+  {
+    "kpi_id": "S_ARKR_KV_N",
+    "kpi_namn": "Antal i arbetskraften, kvinnor",
+    "beskrivning": "Antal kvinnor 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_KV"
+  },
+  {
+    "kpi_id": "S_ARBL_KV",
+    "kpi_namn": "Arbetslöshetsgrad, kvinnor",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland kvinnor 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_KV_N"
+  },
+  {
+    "kpi_id": "S_ARBL_KV_N",
+    "kpi_namn": "Antal arbetslösa, kvinnor",
+    "beskrivning": "Antal arbetslösa kvinnor 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_KV"
+  },
+  {
+    "kpi_id": "S_SYSS_MAN",
+    "kpi_namn": "Sysselsättningsgrad, män",
+    "beskrivning": "Andel sysselsatta män 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_MAN_N"
+  },
+  {
+    "kpi_id": "S_SYSS_MAN_N",
+    "kpi_namn": "Antal sysselsatta, män",
+    "beskrivning": "Antal sysselsatta män 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_SYSS_MAN"
+  },
+  {
+    "kpi_id": "S_ARKR_MAN",
+    "kpi_namn": "Andel i arbetskraften, män",
+    "beskrivning": "Andel män 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_MAN_N"
+  },
+  {
+    "kpi_id": "S_ARKR_MAN_N",
+    "kpi_namn": "Antal i arbetskraften, män",
+    "beskrivning": "Antal män 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARKR_MAN"
+  },
+  {
+    "kpi_id": "S_ARBL_MAN",
+    "kpi_namn": "Arbetslöshetsgrad, män",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland män 20–64 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_MAN_N"
+  },
+  {
+    "kpi_id": "S_ARBL_MAN_N",
+    "kpi_namn": "Antal arbetslösa, män",
+    "beskrivning": "Antal arbetslösa män 20–64 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "arbetsmarknad",
+    "par_kpi_id": "S_ARBL_MAN"
+  },
+  {
+    "kpi_id": "N00927",
+    "kpi_namn": "Demografisk försörjningskvot",
+    "beskrivning": "Den demografiska försörjningskvoten beräknas som summan av antal personer 0-19 år och antal personer 65 år och äldre dividerat med antal personer 20-64 år. Ett värde över 1 innebär att gruppen äldre och yngre är större än den i arbetsför ålder. Källa: SCB.",
+    "enhet": "kvot",
+    "tema": "befolkning"
+  },
+  {
+    "kpi_id": "N00959",
+    "kpi_namn": "Medelålder, år",
+    "beskrivning": "Medelålder den 31/12. Källa: SCB.",
+    "enhet": "år",
+    "tema": "befolkning"
+  },
+  {
+    "kpi_id": "N01770",
+    "kpi_namn": "Summerad fruktsamhet, antal barn/kvinna",
+    "beskrivning": "Summerad fruktsamhet är ett demografiskt mått som mäter det genomsnittliga antalet barn som en kvinna förväntas föda under sin livstid. Det är ett vanligt mått för att jämföra barnafödandet olika år. Eftersom måttet utgår från hur många barn som föds och antalet kvinnor ändras det från år till år och ger en bra bild av utvecklingen. Källa: SCB",
+    "enhet": "barn/kvinna",
+    "tema": "befolkning"
+  },
+  {
+    "kpi_id": "N01803",
+    "kpi_namn": "Födelsenetto",
+    "beskrivning": "Antal födda minus Antal döda. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N02100"
+  },
+  {
+    "kpi_id": "N01806",
+    "kpi_namn": "Utrikes flyttnetto, antal",
+    "beskrivning": "Antal invånare som flyttat till kommunen från annat land minus antal invånare som flyttat från kommunen till annat land. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N02102"
+  },
+  {
+    "kpi_id": "N01812",
+    "kpi_namn": "Invånare 65-79 år, andel (%)",
+    "beskrivning": "Antal invånare 65-79 år dividerat med antal invånare totalt 31/12. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N01956"
+  },
+  {
+    "kpi_id": "N01813",
+    "kpi_namn": "Invånare 80+, andel (%)",
+    "beskrivning": "Antal invånare 80+ år 31/12 dividerat med antal invånare totalt 31/12. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N01957"
+  },
+  {
+    "kpi_id": "N01919",
+    "kpi_namn": "Invånare 0-19 år, antal",
+    "beskrivning": "Antal invånare 0-19 år den 31/12. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N01994"
+  },
+  {
+    "kpi_id": "N01951",
+    "kpi_namn": "Invånare totalt, antal",
+    "beskrivning": "Antal invånare totalt den 31/12. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning"
+  },
+  {
+    "kpi_id": "N01955",
+    "kpi_namn": "Invånare 20-64 år, antal",
+    "beskrivning": "Antal invånare 20-64 år den 31/12. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N01961"
+  },
+  {
+    "kpi_id": "N01956",
+    "kpi_namn": "Invånare 65-79 år, antal",
+    "beskrivning": "Antal invånare 65-79 år den 31/12. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N01812"
+  },
+  {
+    "kpi_id": "N01957",
+    "kpi_namn": "Invånare 80+, antal",
+    "beskrivning": "Antal invånare 80+ den 31/12. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N01813"
+  },
+  {
+    "kpi_id": "N01961",
+    "kpi_namn": "Invånare 20-64 år, andel (%)",
+    "beskrivning": "Antal invånare 20-64 31/12 dividerat med antal invånare totalt 31/12. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N01955"
+  },
+  {
+    "kpi_id": "N01963",
+    "kpi_namn": "Befolkningsförändring i antal invånare sedan föregående år, procent",
+    "beskrivning": "Procentuell förändring i antal invånare sen föregående år. Avser 31/12. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N02012"
+  },
+  {
+    "kpi_id": "N01964",
+    "kpi_namn": "Inrikes flyttnetto, antal",
+    "beskrivning": "Antal invånare som flyttat till kommunen från annan kommun minus antal invånare som flyttat från kommunen till annan kommun. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N02101"
+  },
+  {
+    "kpi_id": "N01994",
+    "kpi_namn": "Invånare 0-19 år, andel (%)",
+    "beskrivning": "Antal invånare 0-19 år den 31/12 dividerat med antal invånare totalt den 31/12. Källa: SCB",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N01919"
+  },
+  {
+    "kpi_id": "N02012",
+    "kpi_namn": "Befolkningsförändring i antal invånare sedan föregående år, antal",
+    "beskrivning": "Förändring i antal invånare sen föregående år. Avser 31/12. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N01963"
+  },
+  {
+    "kpi_id": "N02100",
+    "kpi_namn": "Födelsenetto, andel (%)",
+    "beskrivning": "Antal födda minus antal döda dividerat med antalet invånare. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N01803"
+  },
+  {
+    "kpi_id": "N02101",
+    "kpi_namn": "Inrikes flyttnetto, andel (%)",
+    "beskrivning": "Antal invånare som flyttat till kommunen från annan kommun minus antal invånare som flyttat från kommunen till annan kommun dividerat med antalet invånare i kommunen. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N01964"
+  },
+  {
+    "kpi_id": "N02102",
+    "kpi_namn": "Utrikes flyttnetto, andel (%)",
+    "beskrivning": "Antal invånare som flyttat till kommunen från annat land minus antal invånare som flyttat från kommunen till annat land dividerat med antalet invånare i kommunen. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "N01806"
+  },
+  {
+    "kpi_id": "N02923",
+    "kpi_namn": "Kvinnor i befolkningen, andel (%)",
+    "beskrivning": "Antal kvinnor dividerat med antal invånare totalt. 31/12 år T. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "C02923"
+  },
+  {
+    "kpi_id": "N02926",
+    "kpi_namn": "Utrikes födda, andel (%)",
+    "beskrivning": "Antalet personer födda utomlands dividerat med antal invånare 31/12. Källa: Registret över totalbefolkningen (RTB)",
+    "enhet": "procent",
+    "tema": "befolkning",
+    "par_kpi_id": "C02926"
+  },
+  {
+    "kpi_id": "N02937",
+    "kpi_namn": "Invånare per kvadratkilometer, inv/kvm",
+    "beskrivning": "Antal invånare 31/12 år T dividerat med landareal, kvadratkilometer. I landarealen ingår vattendrag 6 meter och smalare samt gölar och mindre vattensamlingar, upp till max några 10-tal kvadratmeter stora. Källa: SCB.",
+    "enhet": "inv/kvm",
+    "tema": "befolkning"
+  },
+  {
+    "kpi_id": "C02923",
+    "kpi_namn": "Kvinnor i befolkningen, antal",
+    "beskrivning": "Beräknat antal kvinnor baserat på andel (N02923) och totalbefolkning (N01951).",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N02923"
+  },
+  {
+    "kpi_id": "C02926",
+    "kpi_namn": "Utrikes födda, antal",
+    "beskrivning": "Beräknat antal utrikes födda baserat på andel (N02926) och totalbefolkning (N01951).",
+    "enhet": "antal",
+    "tema": "befolkning",
+    "par_kpi_id": "N02926"
+  },
+  {
+    "kpi_id": "N07418",
+    "kpi_namn": "Befolkning i kollektivtrafiknära läge, andel (%)",
+    "beskrivning": "Andel befolkning i det geografiska området som har en trafikerad hållplats inom 500 meter från sin folkbokföringsadress. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Nyckeltalet följer upp miljökvalitetsmålet 'God bebyggd miljö', se även www.sverigesmiljomal.se. Källa: SCB",
+    "enhet": "procent",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N07905",
+    "kpi_namn": "Färdigställda bostäder i småhus, antal/1000 inv",
+    "beskrivning": "Småhus avser friliggande en- och tvåbostadshus samt par-, rad- och kedjehus (exklusive fritidshus). Alla kommuner lämnar månatligen uppgifter om beviljade bygglov. Insamlingsrutinerna utgår från PBL. Uppgift om färdigställande ska primärt baseras på det slutbesked som byggherren ska få från byggnadsnämnden för bygglovsärendet. Dividerat med antal invånare 31/12 multiplicerat med 1000. Källa: SCB.",
+    "enhet": "antal/1 000 inv",
+    "tema": "bostader",
+    "par_kpi_id": "B_NY_SMAHUS"
+  },
+  {
+    "kpi_id": "N07906",
+    "kpi_namn": "Färdigställda bostäder i flerbostadshus, nybyggnad, antal/1000inv",
+    "beskrivning": "Flerbostadshus avser bostadsbyggnader innehållande tre eller flera lägenheter inklusive loftgångshus. Alla kommuner lämnar månatligen uppgifter om beviljade bygglov. Insamlingsrutinerna utgår från PBL. Uppgift om färdigställande ska primärt baseras på det slutbesked som byggherren ska få från byggnadsnämnden för bygglovsärendet. Dividerat med antal invånare 31/12 multiplicerat med 1000. Källa: SCB.",
+    "enhet": "antal/1 000 inv",
+    "tema": "bostader",
+    "par_kpi_id": "B_NY_FLERBO"
+  },
+  {
+    "kpi_id": "N07907",
+    "kpi_namn": "Trångboddhet i flerbostadshus, enligt norm 2, andel (%)",
+    "beskrivning": "Antal personer boende i flerbostadshus exklusive specialbostäder trångbodda enligt norm 2, dividerat med antal personer boende i flerbostadshus exklusive specialbostäder, multiplicerat med 100 för redovisning i procent. Specialbostäder avser studentbostäder, bostäder för äldre/funktionshindrade och övriga specialbostäder. Norm 2, skapades 1965. Hushållet räknas som trångbott om det bor mer än två personer per rum (kök och vardagsrum oräknade). Personer i ensamhushåll räknas inte som trångbodda. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N07908",
+    "kpi_namn": "Fastighetspris bostadsrätt, kr/kvm",
+    "beskrivning": "Uppgifterna till som ligger till grund för statistiken är KU55 – Kontrolluppgift – Överlåtelse av bostadsrätt från Skatteverket som samlas in av SCB. För att beräkna kvadratmeterpriser kompletteras informationen från KU55 med uppgifter från Fastighetstaxeringsregistret (FTR). FTR innehåller uppgifter om alla fastigheter i landet. Från FTR väljs de fastigheter/lägenheter som ägs av bostadsrättsföreningar ut. I FTR framgår den totala bostadsarean och antalet lägenheter per fastighet. Detta innebär att det inte kunnat gå att beräkna bostadsarean per enskild lägenhet, men den genomsnittliga bostadsarean per kommun. Vidare antas det att den genomsnittliga kvadratmeterarean (storleken per lägenhet) är konstant över tidsperioden som redovisas. Det genomsnittliga priset för överlåtna bostadsrätter kombinerat med de tidigare framräknade areorna per kommun för att erhålla kvadratmeterpriser för bostadsrätter per kommun.\\nKälla: SCB:s Fastighetstaxeringsregister och SCB:s insamlade KU55 blanketter från Skatteverket",
+    "enhet": "kr/kvm",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N07909",
+    "kpi_namn": "Fastighetspris småhus, kr/kvm",
+    "beskrivning": "För beräkning av kvadratmeterpriset för småhus för permanentboende har respektive enskilt köp använts. \\nMed småhus för permanentboende avses småhus (typkod 220) som haft någon folkbokförd befolkning under 4 kvartal före försäljningstidpunkten.\\nDefinitionen av vad som räknas som permanentboende resp. fritidshus ändrades något år 2015 vilket kan påverka jämförelser över tid.\\nKälla: SCB:s Fastighetsprisregister\\n",
+    "enhet": "kr/kvm",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N07913",
+    "kpi_namn": "Bostäder totalt, antal/1000 inv",
+    "beskrivning": "Bostäder totalt (hyres-, bostads-, äganderätter och där information om upplåtelseform saknas). Med lägenhet menas alla permanenta boenden. Källa: Lägenhetsregistret, fastighetstaxeringsregistret (FTR) och registret över totalbefolkningen (RTB)",
+    "enhet": "antal/1 000 inv",
+    "tema": "bostader",
+    "par_kpi_id": "B_TOT"
+  },
+  {
+    "kpi_id": "N07917",
+    "kpi_namn": "Färdigställda bostäder, nybyggnad, antal/1000 inv",
+    "beskrivning": "Inkluderar småhus och flerbostadshus. Småhus avser friliggande en- och tvåbostadshus samt par-, rad- och kedjehus (exklusive fritidshus). Flerbostadshus avser bostadsbyggnader innehållande tre eller flera lägenheter inklusive loftgångshus. Alla kommuner lämnar månatligen uppgifter om beviljade bygglov. Insamlingsrutinerna utgår från PBL. Uppgift om färdigställande ska primärt baseras på det slutbesked som byggherren ska få från byggnadsnämnden för bygglovsärendet. Dividerat med antal invånare 31/12 multiplicerat med 1000. Källa: SCB.",
+    "enhet": "antal/1 000 inv",
+    "tema": "bostader",
+    "par_kpi_id": "B_NY_TOT"
+  },
+  {
+    "kpi_id": "N07923",
+    "kpi_namn": "Planberedskap för nya bostäder som kan byggas med stöd av alla gällande detaljplaner den 31/12, antal/1000 inv",
+    "beskrivning": "Planberedskap för nya bostäder som kan byggas med stöd av alla gällande detaljplaner den 31/12, kommer från SKR:s Öppna Jämförelse och frågan \"Hur många bostäder kan byggas i kommunen med stöd av alla gällande detaljplaner som vunnit laga kraft senast den 31 december\", antal/1000 inv. Källa: SKR och egen undersökning i kommunen.",
+    "enhet": "antal/1 000 inv",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N07956",
+    "kpi_namn": "Hyresrätter i bostadsbeståndet, andel (%)",
+    "beskrivning": "Antalet bostäder under upplåtelseformen hyresrätt dividerat på antalet bostäder totalt, angivet i procent. Källa: SCB",
+    "enhet": "procent",
+    "tema": "bostader",
+    "par_kpi_id": "B_HYRA_N"
+  },
+  {
+    "kpi_id": "N07957",
+    "kpi_namn": "Bostadsrätter i bostadsbeståndet, andel (%)",
+    "beskrivning": "Antalet bostäder under upplåtelseformen bostadsrätt dividerat med totala antalet bostäder, angivet i procent. Källa: SCB",
+    "enhet": "procent",
+    "tema": "bostader",
+    "par_kpi_id": "B_BOST_N"
+  },
+  {
+    "kpi_id": "N07958",
+    "kpi_namn": "Äganderätter i bostadsbeståndet, andel (%)",
+    "beskrivning": "Antalet bostäder under upplåtelseformen äganderätt dividerat med antalet bostäder totalt, angivet i procent. Källa: SCB",
+    "enhet": "procent",
+    "tema": "bostader",
+    "par_kpi_id": "B_AGAN_N"
+  },
+  {
+    "kpi_id": "B_TOT",
+    "kpi_namn": "Bostäder totalt, antal",
+    "beskrivning": "Totalt antal lägenheter i kommunen. Källa: SCB Bostadsbestånd.",
+    "enhet": "antal",
+    "tema": "bostader",
+    "par_kpi_id": "N07913"
+  },
+  {
+    "kpi_id": "B_HYRA_N",
+    "kpi_namn": "Hyresrätter, antal",
+    "beskrivning": "Antal lägenheter med hyresrätt. Källa: SCB Bostadsbestånd.",
+    "enhet": "antal",
+    "tema": "bostader",
+    "par_kpi_id": "N07956"
+  },
+  {
+    "kpi_id": "B_BOST_N",
+    "kpi_namn": "Bostadsrätter, antal",
+    "beskrivning": "Antal lägenheter med bostadsrätt. Källa: SCB Bostadsbestånd.",
+    "enhet": "antal",
+    "tema": "bostader",
+    "par_kpi_id": "N07957"
+  },
+  {
+    "kpi_id": "B_AGAN_N",
+    "kpi_namn": "Äganderätter, antal",
+    "beskrivning": "Antal lägenheter med äganderätt (småhus). Källa: SCB Bostadsbestånd.",
+    "enhet": "antal",
+    "tema": "bostader",
+    "par_kpi_id": "N07958"
+  },
+  {
+    "kpi_id": "B_NY_TOT",
+    "kpi_namn": "Färdigställda bostäder, antal",
+    "beskrivning": "Antal färdigställda lägenheter i nybyggda hus per år. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "bostader",
+    "par_kpi_id": "N07917"
+  },
+  {
+    "kpi_id": "B_NY_SMAHUS",
+    "kpi_namn": "Färdigställda småhus, antal",
+    "beskrivning": "Antal färdigställda lägenheter i nybyggda småhus per år. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "bostader",
+    "par_kpi_id": "N07905"
+  },
+  {
+    "kpi_id": "B_NY_FLERBO",
+    "kpi_namn": "Färdigställda flerbostadshus, antal",
+    "beskrivning": "Antal färdigställda lägenheter i nybyggda flerbostadshus per år. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "bostader",
+    "par_kpi_id": "N07906"
+  },
+  {
+    "kpi_id": "N00999",
+    "kpi_namn": "Nystartade företag, antal/1000 inv, 16-64 år",
+    "beskrivning": "Antal nystartade företag delat med antalet tusen invånare, 16-64 år, föregående år. Ett nystartat företag definieras enligt Eurostat rekommendation som ett helt nystartat företag frånräknat olika former av ombildningar av existerade företag. Enskilda näringsidkare vilka inte registrerat firmanamn hos Bolagsverket ingår. Data bygger på bearbetningar av SCB:s företagsregister. Källa: Tillväxtanalys",
+    "enhet": "antal/1 000 inv",
+    "tema": "naringsliv",
+    "par_kpi_id": "N01003"
+  },
+  {
+    "kpi_id": "N01003",
+    "kpi_namn": "Nystartade företag, antal",
+    "beskrivning": "Antal nystartade företag. Ett nystartat företag definieras enligt Eurostat rekommendation som ett helt nystartat företag frånräknat olika former av ombildningar av existerade företag. Enskilda näringsidkare vilka inte registrerat firmanamn hos Bolagsverket ingår. Data bygger på bearbetningar av SCB:s företagsregister. Källa: Tillväxtanalys",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N00999"
+  },
+  {
+    "kpi_id": "N45700",
+    "kpi_namn": "Företagsförekomster, antal/1000 inv",
+    "beskrivning": "Med företagsförekomst menas alla företag som har ett eller flera arbetsställen i en viss region. Fram till 2021 beställdes uppgifterna från SCB:s Registerbaserade arbetsmarknadsstatistik (RAMS), från 2023 och framåt beställs uppgifterna från SCB:s Befolkningens arbetsmarknadsstatus (BAS). Från och med 2023 publiceras nyckeltalet vartannat år. Källa: SCB.",
+    "enhet": "antal/1 000 inv",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_TOT",
+    "kpi_namn": "Sysselsatta totalt",
+    "beskrivning": "Antal sysselsatta 15–74 år totalt. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta totalt. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_TOT"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_KV",
+    "kpi_namn": "Sysselsatta totalt, kvinnor",
+    "beskrivning": "Antal sysselsatta 15–74 år totalt, kvinnor. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_KV_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, kvinnor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta totalt, kvinnor. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_TOT_KV"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_MAN",
+    "kpi_namn": "Sysselsatta totalt, män",
+    "beskrivning": "Antal sysselsatta 15–74 år totalt, män. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_MAN_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, män",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta totalt, män. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_TOT_MAN"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_INR",
+    "kpi_namn": "Sysselsatta totalt, inrikes födda",
+    "beskrivning": "Antal sysselsatta 15–74 år totalt, inrikes födda. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_INR_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, inrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta totalt, inrikes födda. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_TOT_INR"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_UTR",
+    "kpi_namn": "Sysselsatta totalt, utrikes födda",
+    "beskrivning": "Antal sysselsatta 15–74 år totalt, utrikes födda. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_TOT_UTR_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, utrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta totalt, utrikes födda. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_TOT_UTR"
+  },
+  {
+    "kpi_id": "N_SEK_NARING",
+    "kpi_namn": "Sysselsatta i näringslivet",
+    "beskrivning": "Antal sysselsatta 15–74 år i näringslivet. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_NARING_A"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_A",
+    "kpi_namn": "Andel i näringslivet",
+    "beskrivning": "Andel av sysselsatta 15–74 år i näringslivet. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_NARING"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i näringslivet. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_NARING"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_KV",
+    "kpi_namn": "Sysselsatta i näringslivet, kvinnor",
+    "beskrivning": "Antal sysselsatta 15–74 år i näringslivet, kvinnor. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_KV_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, kvinnor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i näringslivet, kvinnor. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_NARING_KV"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_MAN",
+    "kpi_namn": "Sysselsatta i näringslivet, män",
+    "beskrivning": "Antal sysselsatta 15–74 år i näringslivet, män. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_MAN_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, män",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i näringslivet, män. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_NARING_MAN"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_INR",
+    "kpi_namn": "Sysselsatta i näringslivet, inrikes födda",
+    "beskrivning": "Antal sysselsatta 15–74 år i näringslivet, inrikes födda. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_INR_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, inrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i näringslivet, inrikes födda. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_NARING_INR"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_UTR",
+    "kpi_namn": "Sysselsatta i näringslivet, utrikes födda",
+    "beskrivning": "Antal sysselsatta 15–74 år i näringslivet, utrikes födda. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_NARING_UTR_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, utrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i näringslivet, utrikes födda. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_NARING_UTR"
+  },
+  {
+    "kpi_id": "N_SEK_OFF",
+    "kpi_namn": "Sysselsatta i offentlig sektor",
+    "beskrivning": "Antal sysselsatta 15–74 år i offentlig sektor. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_OFF_A"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_A",
+    "kpi_namn": "Andel i offentlig sektor",
+    "beskrivning": "Andel av sysselsatta 15–74 år i offentlig sektor. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_OFF"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i offentlig sektor. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_OFF"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_KV",
+    "kpi_namn": "Sysselsatta i offentlig sektor, kvinnor",
+    "beskrivning": "Antal sysselsatta 15–74 år i offentlig sektor, kvinnor. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_KV_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, kvinnor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i offentlig sektor, kvinnor. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_OFF_KV"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_MAN",
+    "kpi_namn": "Sysselsatta i offentlig sektor, män",
+    "beskrivning": "Antal sysselsatta 15–74 år i offentlig sektor, män. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_MAN_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, män",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i offentlig sektor, män. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_OFF_MAN"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_INR",
+    "kpi_namn": "Sysselsatta i offentlig sektor, inrikes födda",
+    "beskrivning": "Antal sysselsatta 15–74 år i offentlig sektor, inrikes födda. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_INR_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, inrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i offentlig sektor, inrikes födda. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_OFF_INR"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_UTR",
+    "kpi_namn": "Sysselsatta i offentlig sektor, utrikes födda",
+    "beskrivning": "Antal sysselsatta 15–74 år i offentlig sektor, utrikes födda. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_SEK_OFF_UTR_TILLV",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, utrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta i offentlig sektor, utrikes födda. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_SEK_OFF_UTR"
+  },
+  {
+    "kpi_id": "N_BR_A",
+    "kpi_namn": "Sysselsatta, jordbruk, skogsbruk och fiske",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom jordbruk, skogsbruk och fiske. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_A_A"
+  },
+  {
+    "kpi_id": "N_BR_A_A",
+    "kpi_namn": "Andel jordbruk, skogsbruk och fiske",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom jordbruk, skogsbruk och fiske. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_A"
+  },
+  {
+    "kpi_id": "N_BR_BC",
+    "kpi_namn": "Sysselsatta, tillverkning och utvinning",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom tillverkning och utvinning. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_BC_A"
+  },
+  {
+    "kpi_id": "N_BR_BC_A",
+    "kpi_namn": "Andel tillverkning och utvinning",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom tillverkning och utvinning. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_BC"
+  },
+  {
+    "kpi_id": "N_BR_DE",
+    "kpi_namn": "Sysselsatta, energi och miljö",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom energi och miljö. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_DE_A"
+  },
+  {
+    "kpi_id": "N_BR_DE_A",
+    "kpi_namn": "Andel energi och miljö",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom energi och miljö. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_DE"
+  },
+  {
+    "kpi_id": "N_BR_F",
+    "kpi_namn": "Sysselsatta, byggverksamhet",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom byggverksamhet. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_F_A"
+  },
+  {
+    "kpi_id": "N_BR_F_A",
+    "kpi_namn": "Andel byggverksamhet",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom byggverksamhet. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_F"
+  },
+  {
+    "kpi_id": "N_BR_G",
+    "kpi_namn": "Sysselsatta, handel",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom handel. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_G_A"
+  },
+  {
+    "kpi_id": "N_BR_G_A",
+    "kpi_namn": "Andel handel",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom handel. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_G"
+  },
+  {
+    "kpi_id": "N_BR_H",
+    "kpi_namn": "Sysselsatta, transport och magasinering",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom transport och magasinering. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_H_A"
+  },
+  {
+    "kpi_id": "N_BR_H_A",
+    "kpi_namn": "Andel transport och magasinering",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom transport och magasinering. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_H"
+  },
+  {
+    "kpi_id": "N_BR_I",
+    "kpi_namn": "Sysselsatta, hotell och restaurang",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom hotell och restaurang. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_I_A"
+  },
+  {
+    "kpi_id": "N_BR_I_A",
+    "kpi_namn": "Andel hotell och restaurang",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom hotell och restaurang. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_I"
+  },
+  {
+    "kpi_id": "N_BR_J",
+    "kpi_namn": "Sysselsatta, it och kommunikation",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom it och kommunikation. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_J_A"
+  },
+  {
+    "kpi_id": "N_BR_J_A",
+    "kpi_namn": "Andel it och kommunikation",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom it och kommunikation. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_J"
+  },
+  {
+    "kpi_id": "N_BR_K",
+    "kpi_namn": "Sysselsatta, finans och försäkring",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom finans och försäkring. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_K_A"
+  },
+  {
+    "kpi_id": "N_BR_K_A",
+    "kpi_namn": "Andel finans och försäkring",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom finans och försäkring. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_K"
+  },
+  {
+    "kpi_id": "N_BR_L",
+    "kpi_namn": "Sysselsatta, fastighetsverksamhet",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom fastighetsverksamhet. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_L_A"
+  },
+  {
+    "kpi_id": "N_BR_L_A",
+    "kpi_namn": "Andel fastighetsverksamhet",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom fastighetsverksamhet. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_L"
+  },
+  {
+    "kpi_id": "N_BR_MN",
+    "kpi_namn": "Sysselsatta, företagstjänster",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom företagstjänster. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_MN_A"
+  },
+  {
+    "kpi_id": "N_BR_MN_A",
+    "kpi_namn": "Andel företagstjänster",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom företagstjänster. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_MN"
+  },
+  {
+    "kpi_id": "N_BR_O",
+    "kpi_namn": "Sysselsatta, offentlig förvaltning",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom offentlig förvaltning. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_O_A"
+  },
+  {
+    "kpi_id": "N_BR_O_A",
+    "kpi_namn": "Andel offentlig förvaltning",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom offentlig förvaltning. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_O"
+  },
+  {
+    "kpi_id": "N_BR_P",
+    "kpi_namn": "Sysselsatta, utbildning",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom utbildning. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_P_A"
+  },
+  {
+    "kpi_id": "N_BR_P_A",
+    "kpi_namn": "Andel utbildning",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom utbildning. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_P"
+  },
+  {
+    "kpi_id": "N_BR_Q",
+    "kpi_namn": "Sysselsatta, vård och omsorg",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom vård och omsorg. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_Q_A"
+  },
+  {
+    "kpi_id": "N_BR_Q_A",
+    "kpi_namn": "Andel vård och omsorg",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom vård och omsorg. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_Q"
+  },
+  {
+    "kpi_id": "N_BR_RSTU",
+    "kpi_namn": "Sysselsatta, övriga tjänster",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) inom övriga tjänster. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_RSTU_A"
+  },
+  {
+    "kpi_id": "N_BR_RSTU_A",
+    "kpi_namn": "Andel övriga tjänster",
+    "beskrivning": "Andel av samtliga sysselsatta (dagbef. 16+) inom övriga tjänster. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_BR_RSTU"
+  },
+  {
+    "kpi_id": "N_UTB_FORGYM",
+    "kpi_namn": "Sysselsatta, förgymnasial utbildning",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) med förgymnasial utbildning. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_UTB_FORGYM_A"
+  },
+  {
+    "kpi_id": "N_UTB_FORGYM_A",
+    "kpi_namn": "Andel förgymnasial utbildning",
+    "beskrivning": "Andel av samtliga sysselsatta med förgymnasial utbildning. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_UTB_FORGYM"
+  },
+  {
+    "kpi_id": "N_UTB_GYM",
+    "kpi_namn": "Sysselsatta, gymnasial utbildning",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) med gymnasial utbildning. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_UTB_GYM_A"
+  },
+  {
+    "kpi_id": "N_UTB_GYM_A",
+    "kpi_namn": "Andel gymnasial utbildning",
+    "beskrivning": "Andel av samtliga sysselsatta med gymnasial utbildning. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_UTB_GYM"
+  },
+  {
+    "kpi_id": "N_UTB_EFTGYM",
+    "kpi_namn": "Sysselsatta, eftergymnasial utbildning",
+    "beskrivning": "Antal sysselsatta (dagbef. 16+) med eftergymnasial utbildning. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_UTB_EFTGYM_A"
+  },
+  {
+    "kpi_id": "N_UTB_EFTGYM_A",
+    "kpi_namn": "Andel eftergymnasial utbildning",
+    "beskrivning": "Andel av samtliga sysselsatta med eftergymnasial utbildning. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_UTB_EFTGYM"
+  },
+  {
+    "kpi_id": "N_UTB_TOT",
+    "kpi_namn": "Sysselsatta totalt (utb.)",
+    "beskrivning": "Totalt antal sysselsatta (dagbef. 16+), alla utbildningsnivåer. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_YRK_ANST",
+    "kpi_namn": "Antal anställda",
+    "beskrivning": "Antal anställda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST_A"
+  },
+  {
+    "kpi_id": "N_YRK_ANST_A",
+    "kpi_namn": "Andel anställda",
+    "beskrivning": "Andel anställda av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST"
+  },
+  {
+    "kpi_id": "N_YRK_ANST_INR",
+    "kpi_namn": "Antal anställda, inrikes födda",
+    "beskrivning": "Antal anställda, inrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST_INR_A"
+  },
+  {
+    "kpi_id": "N_YRK_ANST_INR_A",
+    "kpi_namn": "Andel anställda, inrikes födda",
+    "beskrivning": "Andel anställda, inrikes födda av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST_INR"
+  },
+  {
+    "kpi_id": "N_YRK_ANST_UTR",
+    "kpi_namn": "Antal anställda, utrikes födda",
+    "beskrivning": "Antal anställda, utrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST_UTR_A"
+  },
+  {
+    "kpi_id": "N_YRK_ANST_UTR_A",
+    "kpi_namn": "Andel anställda, utrikes födda",
+    "beskrivning": "Andel anställda, utrikes födda av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST_UTR"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB",
+    "kpi_namn": "Antal företagare i AB",
+    "beskrivning": "Antal företagare i AB 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB_A",
+    "kpi_namn": "Andel företagare i AB",
+    "beskrivning": "Andel företagare i AB av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB_INR",
+    "kpi_namn": "Antal företagare i AB, inrikes födda",
+    "beskrivning": "Antal företagare i AB, inrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB_INR_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB_INR_A",
+    "kpi_namn": "Andel företagare i AB, inrikes födda",
+    "beskrivning": "Andel företagare i AB, inrikes födda av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB_INR"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB_UTR",
+    "kpi_namn": "Antal företagare i AB, utrikes födda",
+    "beskrivning": "Antal företagare i AB, utrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB_UTR_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB_UTR_A",
+    "kpi_namn": "Andel företagare i AB, utrikes födda",
+    "beskrivning": "Andel företagare i AB, utrikes födda av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB_UTR"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR",
+    "kpi_namn": "Antal egenföretagare",
+    "beskrivning": "Antal egenföretagare 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR_A",
+    "kpi_namn": "Andel egenföretagare",
+    "beskrivning": "Andel egenföretagare av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR_INR",
+    "kpi_namn": "Antal egenföretagare, inrikes födda",
+    "beskrivning": "Antal egenföretagare, inrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR_INR_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR_INR_A",
+    "kpi_namn": "Andel egenföretagare, inrikes födda",
+    "beskrivning": "Andel egenföretagare, inrikes födda av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR_INR"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR_UTR",
+    "kpi_namn": "Antal egenföretagare, utrikes födda",
+    "beskrivning": "Antal egenföretagare, utrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR_UTR_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR_UTR_A",
+    "kpi_namn": "Andel egenföretagare, utrikes födda",
+    "beskrivning": "Andel egenföretagare, utrikes födda av samtliga sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR_UTR"
+  },
+  {
+    "kpi_id": "N_YRK_TOT",
+    "kpi_namn": "Sysselsatta totalt",
+    "beskrivning": "Totalt antal sysselsatta 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_YRK_TOT_INR",
+    "kpi_namn": "Sysselsatta totalt, inrikes födda",
+    "beskrivning": "Totalt antal sysselsatta, inrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_YRK_TOT_UTR",
+    "kpi_namn": "Sysselsatta totalt, utrikes födda",
+    "beskrivning": "Totalt antal sysselsatta, utrikes födda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv"
+  },
+  {
+    "kpi_id": "N_YRK_ANST_KV",
+    "kpi_namn": "Antal kvinnor, anställda",
+    "beskrivning": "Antal kvinnor bland anställda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST_KV_A"
+  },
+  {
+    "kpi_id": "N_YRK_ANST_KV_A",
+    "kpi_namn": "Andel kvinnor, anställda",
+    "beskrivning": "Andel kvinnor bland anställda 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_ANST_KV"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB_KV",
+    "kpi_namn": "Antal kvinnor, företagare i AB",
+    "beskrivning": "Antal kvinnor bland företagare i AB 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB_KV_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGAB_KV_A",
+    "kpi_namn": "Andel kvinnor, företagare i AB",
+    "beskrivning": "Andel kvinnor bland företagare i AB 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGAB_KV"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR_KV",
+    "kpi_namn": "Antal kvinnor, egenföretagare",
+    "beskrivning": "Antal kvinnor bland egenföretagare 15–74 år. Källa: SCB RAMS.",
+    "enhet": "antal",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR_KV_A"
+  },
+  {
+    "kpi_id": "N_YRK_EGFOR_KV_A",
+    "kpi_namn": "Andel kvinnor, egenföretagare",
+    "beskrivning": "Andel kvinnor bland egenföretagare 15–74 år. Källa: SCB RAMS.",
+    "enhet": "procent",
+    "tema": "naringsliv",
+    "par_kpi_id": "N_YRK_EGFOR_KV"
+  },
+  {
+    "kpi_id": "N01982",
+    "kpi_namn": "Invånare 25-64 år med eftergymnasial utbildning, andel (%)",
+    "beskrivning": "Invånare med eftergymnasial utbildning 25-64 år, andel (%). Eftergymnasial avser: eftergymnasial utbildning kortare än 3 år, längre än 3 år samt forskarutbildning. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01983",
+    "kpi_namn": "Invånare 25-64 år med gymnasial utbildning, andel (%)",
+    "beskrivning": "Invånare 25-64 år med gymnasial utbildning som högsta utbildning, avser både gymnasial utbildning 2 år samt 3 år, andel (%). Källa: SCB.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01984",
+    "kpi_namn": "Invånare 25-64 år med förgymnasial utbildning, andel (%)",
+    "beskrivning": "Invånare 25-64 år med förgymnasial utbildning som högsta utbildning, andel (%). Källa: SCB.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N15428",
+    "kpi_namn": "Elever i åk 9 som är behöriga till yrkesprogram, hemkommun, andel (%)",
+    "beskrivning": "Antal elever i årskurs 9 som är behöriga till ett yrkesprogram dividerat med antal elever som fått eller skulle ha fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. För att ha gymnasiebehörighet till ett yrkesprogram krävs godkända betyg i svenska eller svenska som andraspråk, engelska och matematik och i minst fem andra ämnen från grundskolan. Fram t.o.m. 2011 krävdes godkända betyg i svenska eller svenska som andraspråk, engelska och matematik för att uppnå lägsta behörighet till gymnasiet. Uppgiften avser elever folkbokförda i kommunen. För region är antal elever summerade för alla kommuner belägna i regionen. Elever med okänd bakgrund ingår inte. Uppgiften avser läsår.  Källa: SCB och Skolverket.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N15507",
+    "kpi_namn": "Elever i åk 9, meritvärde, hemkommun, genomsnitt (17 ämnen)",
+    "beskrivning": "Elevernas sammanlagda meritvärde dividerat med antal elever som fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. Betygen mäts före prövning. Uppgifterna avser elever folkbokförda i kommunen, oavsett var de går i skola. Elever med okänd bakgrund ingår inte. Uppgiften avser läsår. Meritvärdet för en elev utgörs av summan för de 17 bästa betygen i elevens slutbetyg  (E=10, D=12.5, C=15, B=17.5 och A=20). Det möjliga maxvärdet är 340 poäng. Källa: SCB och Skolverket.",
+    "enhet": "poäng",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N17473",
+    "kpi_namn": "Gymnasieelever som uppnått grundläggande behörighet till universitet och högskola inom 3 år, hemkommun, andel (%)",
+    "beskrivning": "Antal folkbokförda elever i kommunen som började på gymnasium för 3 år sedan som med behörighet till universitet/högskola inom 3 år, inkl. IM dividerat med antal folkbokförda elever i kommunen som började på gymnasium för 3 år sedan, inkl. IM. Fr.o.m. 2016 ingår inte elever som tagit examen i svenska utlandsskolor. Från och med år 2021 exkluderas IB elever. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01982_KV",
+    "kpi_namn": "Eftergymnasial utbildning, kvinnor",
+    "beskrivning": "Andel kvinnor 25–64 år med eftergymnasial utbildning.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01982_MAN",
+    "kpi_namn": "Eftergymnasial utbildning, män",
+    "beskrivning": "Andel män 25–64 år med eftergymnasial utbildning.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01983_KV",
+    "kpi_namn": "Gymnasial utbildning, kvinnor",
+    "beskrivning": "Andel kvinnor 25–64 år med gymnasial utbildning.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01983_MAN",
+    "kpi_namn": "Gymnasial utbildning, män",
+    "beskrivning": "Andel män 25–64 år med gymnasial utbildning.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01984_KV",
+    "kpi_namn": "Förgymnasial utbildning, kvinnor",
+    "beskrivning": "Andel kvinnor 25–64 år med förgymnasial utbildning.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N01984_MAN",
+    "kpi_namn": "Förgymnasial utbildning, män",
+    "beskrivning": "Andel män 25–64 år med förgymnasial utbildning.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N15507_KV",
+    "kpi_namn": "Meritvärde åk 9, flickor",
+    "beskrivning": "Genomsnittligt meritvärde (17 ämnen) åk 9, flickor, hemkommun.",
+    "enhet": "poäng",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N15507_MAN",
+    "kpi_namn": "Meritvärde åk 9, pojkar",
+    "beskrivning": "Genomsnittligt meritvärde (17 ämnen) åk 9, pojkar, hemkommun.",
+    "enhet": "poäng",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N15428_KV",
+    "kpi_namn": "Behöriga till yrkesprogram, flickor",
+    "beskrivning": "Andel flickor i åk 9 som är behöriga till yrkesprogram, hemkommun.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N15428_MAN",
+    "kpi_namn": "Behöriga till yrkesprogram, pojkar",
+    "beskrivning": "Andel pojkar i åk 9 som är behöriga till yrkesprogram, hemkommun.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N17473_KV",
+    "kpi_namn": "Högskolebehörighet inom 3 år, kvinnor",
+    "beskrivning": "Andel kvinnliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  },
+  {
+    "kpi_id": "N17473_MAN",
+    "kpi_namn": "Högskolebehörighet inom 3 år, män",
+    "beskrivning": "Andel manliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun.",
+    "enhet": "procent",
+    "tema": "utbildning"
+  }
+]
