@@ -11,12 +11,12 @@ const FONT_DATA = "'IBM Plex Sans', sans-serif";
 const FARG_LAG = "#c25100";   // Mörk orange (låga värden)
 const FARG_LAG_LJUS = "#fdd8b5"; // Ljus orange
 const FARG_HOG = "#00664D";   // Mörk teal/grön (höga värden)
-const _FARG_HOG_LJUS = "#c1e8c4"; // Ljus teal (reserv)
+// FARG_HOG_LJUS reserverad för framtida bruk
 const FARG_MITT = "#f5f5f0";  // Neutral mittpunkt
 
 const PER_1000_KPIS = new Set(["N01803", "N01806", "N01964"]);
 const FOLKMANGD_KPI = "N01951";
-const _HALLAND_LAN_KOD = "13"; // Används av cirkelfilter (reserv)
+// HALLAND_LAN_KOD = "13" — reserverad
 
 interface Props {
   valdKommunKod: string;
@@ -503,6 +503,7 @@ export default function KartaVy({
 
       // Styckevis linjär skala: median alltid i MITTEN av baren
       // Löser problemet med skev data (t.ex. befolkningstäthet: median 29, max 6 483)
+      const med = median ?? 0;
       const lScale = d3.scaleLinear()
         .domain([domain[0], med, domain[1]])
         .range([legendH, legendH / 2, 0]);
@@ -528,7 +529,6 @@ export default function KartaVy({
       const fsVal = compact ? "9px" : "10px";
 
       // Tick-värden till HÖGER — min, max, och jämna steg i varje halva
-      const med = median ?? 0;
       const lowerTicks = d3.ticks(domain[0], med, 2).filter((v) => v > domain[0] * 1.1 && v < med * 0.9);
       const upperTicks = d3.ticks(med, domain[1], 2).filter((v) => v > med * 1.1 && v < domain[1] * 0.9);
       const allTicks = [
@@ -551,7 +551,7 @@ export default function KartaVy({
 
       // ─── Vänster-etiketter med connector lines ───
       const fsLabel = compact ? "9px" : "11px";
-      const _labelX = 8; // x i legG-coords (reserv)
+      // labelX = 8 — vänsterkant av panelen
       const connMidX = barX - 12; // x där connector-linjen svänger vertikalt
       const minGap = compact ? 14 : 16;
 
