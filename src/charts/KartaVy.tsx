@@ -11,12 +11,12 @@ const FONT_DATA = "'IBM Plex Sans', sans-serif";
 const FARG_LAG = "#c25100";   // Mörk orange (låga värden)
 const FARG_LAG_LJUS = "#fdd8b5"; // Ljus orange
 const FARG_HOG = "#00664D";   // Mörk teal/grön (höga värden)
-const FARG_HOG_LJUS = "#c1e8c4"; // Ljus teal
+const _FARG_HOG_LJUS = "#c1e8c4"; // Ljus teal (reserv)
 const FARG_MITT = "#f5f5f0";  // Neutral mittpunkt
 
 const PER_1000_KPIS = new Set(["N01803", "N01806", "N01964"]);
 const FOLKMANGD_KPI = "N01951";
-const HALLAND_LAN_KOD = "13";
+const _HALLAND_LAN_KOD = "13"; // Används av cirkelfilter (reserv)
 
 interface Props {
   valdKommunKod: string;
@@ -122,10 +122,10 @@ export default function KartaVy({
 
     const values = [...valueMap.values()].map((d) => d.varde).sort((a, b) => a - b);
     if (values.length === 0) {
-      return { valueMap, colorScale: () => "#eee", domain: [0, 1] as [number, number], mean: 0 };
+      return { valueMap, colorScale: () => "#eee", domain: [0, 1] as [number, number], median: 0 };
     }
 
-    const median = d3.median(values) ?? values[Math.floor(values.length / 2)];
+    const median: number = d3.median(values) ?? values[Math.floor(values.length / 2)] ?? 0;
 
     // Avgör skala-typ
     const hasNeg = values.some((v) => v < 0);
@@ -504,7 +504,7 @@ export default function KartaVy({
       // Styckevis linjär skala: median alltid i MITTEN av baren
       // Löser problemet med skev data (t.ex. befolkningstäthet: median 29, max 6 483)
       const lScale = d3.scaleLinear()
-        .domain([domain[0], median, domain[1]])
+        .domain([domain[0], med, domain[1]])
         .range([legendH, legendH / 2, 0]);
 
       // Gradient-stops samplar via lScale (inte linjärt i domänen)
@@ -528,8 +528,9 @@ export default function KartaVy({
       const fsVal = compact ? "9px" : "10px";
 
       // Tick-värden till HÖGER — min, max, och jämna steg i varje halva
-      const lowerTicks = d3.ticks(domain[0], median, 2).filter((v) => v > domain[0] * 1.1 && v < median * 0.9);
-      const upperTicks = d3.ticks(median, domain[1], 2).filter((v) => v > median * 1.1 && v < domain[1] * 0.9);
+      const med = median ?? 0;
+      const lowerTicks = d3.ticks(domain[0], med, 2).filter((v) => v > domain[0] * 1.1 && v < med * 0.9);
+      const upperTicks = d3.ticks(med, domain[1], 2).filter((v) => v > med * 1.1 && v < domain[1] * 0.9);
       const allTicks = [
         { v: domain[0], bold: true },
         ...lowerTicks.map((v) => ({ v, bold: false })),
@@ -550,7 +551,7 @@ export default function KartaVy({
 
       // ─── Vänster-etiketter med connector lines ───
       const fsLabel = compact ? "9px" : "11px";
-      const labelX = 8; // x i legG-coords (vänsterkant av panelen + padding)
+      const _labelX = 8; // x i legG-coords (reserv)
       const connMidX = barX - 12; // x där connector-linjen svänger vertikalt
       const minGap = compact ? 14 : 16;
 
@@ -611,10 +612,10 @@ export default function KartaVy({
 
       // Statiska etiketter
       const staticLabels: LegLabel[] = [];
-      const medY = lScale(Math.max(domain[0], Math.min(domain[1], median)));
+      const medY = lScale(Math.max(domain[0], Math.min(domain[1], med)));
       staticLabels.push({
         naturalY: medY, yPos: medY,
-        label: `Median ${fmtKarta(median, enhet)}`,
+        label: `Median ${fmtKarta(med, enhet)}`,
         color: "#444", dash: true,
       });
 
