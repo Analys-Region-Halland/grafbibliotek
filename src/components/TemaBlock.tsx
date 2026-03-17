@@ -99,7 +99,7 @@ export default function TemaBlock({
   };
 
   let cardIdx = 0;
-  const cells: JSX.Element[] = [];
+  const cells: React.JSX.Element[] = [];
 
   for (const sektion of tema.sektioner) {
     let huvudKpis = resolveKpis(sektion.kpiIds, meta, kommunKpiData);

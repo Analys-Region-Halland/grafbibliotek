@@ -189,7 +189,7 @@ export default function KartaVy({
 
       const parts: { text: string; fill: string; weight: string }[] = [];
       if (subtitelEnhet) parts.push({ text: subtitelEnhet, fill: "#888", weight: "400" });
-      if (subtitelGeografi) parts.push({ text: subtitelGeografi, fill: GRON_1, weight: "600" });
+      if (subtitelGeografi) parts.push({ text: subtitelGeografi, fill: FARG_HOG, weight: "600" });
       parts.push({ text: String(aktivtAr), fill: "#888", weight: "400" });
       parts.push({ text: isRegion ? "samtliga regioner" : "samtliga kommuner", fill: "#999", weight: "400" });
 
@@ -233,7 +233,7 @@ export default function KartaVy({
           ? `<br><span style="color:#444">${entry.rang} av ${entry.total}</span>` : "";
         tooltipEl.innerHTML =
           `<span style="font-weight:600">${entry.namn || namn}</span><br>` +
-          `<span style="color:${GRON_1};font-weight:600">${fmtKarta(entry.varde, enhet)}</span>` + rang;
+          `<span style="color:${FARG_HOG};font-weight:600">${fmtKarta(entry.varde, enhet)}</span>` + rang;
       } else {
         tooltipEl.innerHTML = `<span style="font-weight:600">${namn}</span><br><span style="color:#999">Uppgift saknas</span>`;
       }
@@ -356,9 +356,9 @@ export default function KartaVy({
         .data(nodes).join("circle").attr("class", "prop")
         .attr("cx", (d) => d.x!).attr("cy", (d) => d.y!)
         .attr("r", (d) => d.r)
-        .attr("fill", GRON_1)
+        .attr("fill", FARG_HOG)
         .attr("fill-opacity", (d) => 0.35 + 0.3 * (1 - d.r / maxR))
-        .attr("stroke", GRON_1)
+        .attr("stroke", FARG_HOG)
         .attr("stroke-width", (d) => d.kod === valdKommunKod ? 2 : 0.5)
         .attr("stroke-opacity", (d) => d.kod === valdKommunKod ? 1 : 0.5)
         .style("cursor", "pointer")
@@ -399,16 +399,16 @@ export default function KartaVy({
       if (vE) {
         const vR = Math.max(minR, rScale(Math.abs(vE.varde)));
         legG.append("circle").attr("cx", lcx).attr("cy", -vR).attr("r", vR)
-          .attr("fill", GRON_1).attr("fill-opacity", 0.2)
-          .attr("stroke", GRON_1).attr("stroke-width", 1.2);
+          .attr("fill", FARG_HOG).attr("fill-opacity", 0.2)
+          .attr("stroke", FARG_HOG).attr("stroke-width", 1.2);
         // Etikett bredvid — med namn
         const labelY = -2 * vR + 3;
         legG.append("text").attr("x", labelX).attr("y", labelY)
-          .attr("fill", GRON_1).attr("font-weight", 600)
+          .attr("fill", FARG_HOG).attr("font-weight", 600)
           .attr("font-size", compact ? "8px" : "10px").attr("font-family", FONT_DATA)
           .text(fmtKarta(vE.varde, enhet));
         legG.append("text").attr("x", labelX).attr("y", labelY + 12)
-          .attr("fill", GRON_1).attr("font-weight", 400)
+          .attr("fill", FARG_HOG).attr("font-weight", 400)
           .attr("font-size", compact ? "7px" : "9px").attr("font-family", FONT)
           .text(valdKommunNamn);
       }
@@ -624,7 +624,7 @@ export default function KartaVy({
         staticLabels.push({
           naturalY: vY, yPos: vY,
           label: `${valdKommunNamn} ${fmtKarta(vE.varde, enhet)}`,
-          color: GRON_1, dash: false,
+          color: FARG_HOG, dash: false,
         });
       }
 
@@ -850,7 +850,7 @@ export default function KartaVy({
             className="flex-1 h-1.5 accent-[#00664D] cursor-pointer"
           />
           <span className="text-[13px] font-data tabular-nums font-semibold min-w-[3ch] text-right"
-            style={{ color: GRON_1 }}>
+            style={{ color: FARG_HOG }}>
             {aktivtAr}
           </span>
         </div>
