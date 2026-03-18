@@ -155,40 +155,43 @@ export default function App() {
         <div className="h-[3px] bg-gradient-to-r from-gron-1 via-gron-2 to-gron-3/60" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          {/* Rad 1: Logo + kommun */}
-          <div className="flex items-center justify-between py-3">
-            <div className="flex items-center gap-4">
+          {/* Rad 1: Logo + titel + vald kommun */}
+          <div className="flex items-center justify-between pt-3 sm:pt-4 pb-2.5">
+            <div className="flex items-center gap-3 sm:gap-4">
               <img
                 src={`${import.meta.env.BASE_URL}logo_farg.svg`}
                 alt="Region Halland"
-                className="h-6 sm:h-7"
+                className="h-7 sm:h-9"
               />
-              <div className="border-l border-neutral-200 pl-4">
-                <h1 className="font-data text-[13px] sm:text-[14px] font-bold text-neutral-900 tracking-tight leading-tight">
-                  Grafbiblioteket
+              <div className="border-l border-neutral-200 pl-3 sm:pl-4">
+                <h1 className="text-[16px] sm:text-[20px] font-bold text-neutral-900 tracking-tight leading-tight">
+                  Halland i siffror
                 </h1>
-                <p className="font-data text-[10px] text-neutral-500 mt-0.5 hidden sm:block">
-                  Hallands kommuner i siffror
+                <p className="text-[10px] sm:text-[11.5px] text-neutral-400 tracking-wide mt-0.5">
+                  överblick, jämförelse och utveckling
                 </p>
               </div>
             </div>
-            <div className="text-right">
-              <p className="font-data text-[18px] sm:text-[22px] font-bold text-neutral-900 tracking-tight leading-tight">
+            <div className="text-right shrink-0 pl-4">
+              <p className="font-data text-[15px] sm:text-[18px] font-bold text-neutral-900 tracking-tight leading-tight">
                 {kommunNamn}
               </p>
-              <p className="font-data text-[10px] text-neutral-500 mt-0.5">
+              <p className="font-data text-[10px] text-neutral-400 mt-0.5">
                 {fmtInt(invånare)} invånare · {senasteAr}
               </p>
             </div>
           </div>
 
           {/* Rad 2: Kommunväljare */}
-          <div className="pb-2.5">
+          <div className="pb-2">
             <KommunValjare vald={valdKommun} onChange={setValdKommun} />
           </div>
 
+          {/* Separator */}
+          <div className="border-t border-neutral-100" />
+
           {/* Rad 3: Temanavigation */}
-          <div className="pb-2.5">
+          <div className="py-2">
             <TemaNav aktivtTema={aktivtTema} onChange={handleTemaChange} />
           </div>
         </div>
@@ -230,7 +233,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <img src={`${import.meta.env.BASE_URL}logo_farg.svg`} alt="Region Halland" className="h-5 opacity-50" />
             <span className="text-[10px] text-neutral-300">|</span>
-            <span className="text-[10px] text-neutral-400 font-medium">Grafbiblioteket</span>
+            <span className="text-[10px] text-neutral-400 font-medium">Halland i siffror</span>
           </div>
           <p className="text-[10px] text-neutral-400">
             Data: SCB m.fl. och bearbetningar av Region Halland · {senasteAr}

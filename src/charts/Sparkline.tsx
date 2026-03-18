@@ -2,7 +2,7 @@ import { memo, useRef, useEffect, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import * as d3 from "d3";
 import type { KpiRow } from "../types";
-import { fmt, fmtInt } from "../utils/format";
+import { fmt, fmtInt, fmtPeriod, isMonthly } from "../utils/format";
 
 interface Props {
   data: KpiRow[];
@@ -123,7 +123,7 @@ function SparklineInner({
           const n = row.antal_kommuner ?? 290;
           const label = rankLabel(row.rang_total!, n);
           setTip({
-            text: `${row.ar}: ${label} (${row.rang_total}/${n})`,
+            text: `${fmtPeriod(row.ar)}: ${label} (${row.rang_total}/${n})`,
             x: rect.left + x(idx),
             y: rect.top - 4,
             visible: true,
@@ -147,6 +147,8 @@ function SparklineInner({
         .y((d) => y(d))
         .curve(d3.curveMonotoneX);
 
+      const monthly = valueData.length > 0 && isMonthly(valueData[0].ar);
+
       svg.append("path")
         .datum(values)
         .attr("d", line)
@@ -154,6 +156,21 @@ function SparklineInner({
         .attr("stroke", LINJE)
         .attr("stroke-width", 1.8);
 
+      // Månadsdata: små punkter vid samma månad alla föregående år
+      if (monthly) {
+        const lastMonth = valueData[valueData.length - 1].ar % 100;
+        valueData.forEach((d, i) => {
+          if (i < valueData.length - 1 && d.ar % 100 === lastMonth) {
+            svg.append("circle")
+              .attr("cx", x(i)).attr("cy", y(d.varde!))
+              .attr("r", 1.8)
+              .attr("fill", LINJE)
+              .attr("opacity", 0.45);
+          }
+        });
+      }
+
+      // Senaste punkt
       svg.append("circle")
         .attr("cx", x(values.length - 1))
         .attr("cy", y(values[values.length - 1]))
@@ -186,7 +203,7 @@ function SparklineInner({
           const dec = Math.abs(row.varde) < 10 ? 2 : 1;
           const v = enhet === "antal" ? fmtInt(row.varde) : fmt(row.varde, dec);
           setTip({
-            text: `${row.ar}: ${v}`,
+            text: `${fmtPeriod(row.ar)}: ${v}`,
             x: rect.left + x(idx),
             y: rect.top - 4,
             visible: true,

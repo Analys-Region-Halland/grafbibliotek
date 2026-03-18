@@ -421,7 +421,7 @@
   {
     "kpi_id": "C02923",
     "kpi_namn": "Kvinnor i befolkningen, antal",
-    "beskrivning": "Beräknat antal kvinnor baserat på andel (N02923) och totalbefolkning (N01951).",
+    "beskrivning": "Beräknat antal kvinnor baserat på andel av kvinnor i befolkningen och totalbefolkning. Källa: RKA Kolada och bearbetningar av Region Halland.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "N02923"
@@ -429,7 +429,7 @@
   {
     "kpi_id": "C02926",
     "kpi_namn": "Utrikes födda, antal",
-    "beskrivning": "Beräknat antal utrikes födda baserat på andel (N02926) och totalbefolkning (N01951).",
+    "beskrivning": "Beräknat antal utrikes födda baserat på andel utrikes födda och totalbefolkning. Källa: RKA Kolada och bearbetningar av Region Halland.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "N02926"
@@ -437,14 +437,14 @@
   {
     "kpi_id": "C_FORSORJ_UNG",
     "kpi_namn": "Försörjningskvot, yngre (0–19 / 20–64)",
-    "beskrivning": "Beräknad kvot: andelen invånare 0–19 år (N01994) dividerat med andelen 20–64 år (N01961). Visar hur många unga försörjda det går per person i arbetsför ålder.",
+    "beskrivning": "Beräknad kvot: andelen invånare 0–19 år dividerat med andelen 20–64 år. Visar hur många unga försörjda det går per person i arbetsför ålder. Källa: RKA Kolada och bearbetningar av Region Halland.",
     "enhet": "procent",
     "tema": "befolkning"
   },
   {
     "kpi_id": "C_FORSORJ_ALD",
     "kpi_namn": "Försörjningskvot, äldre (65+ / 20–64)",
-    "beskrivning": "Beräknad kvot: andelen invånare 65 år och äldre (N01812 + N01813) dividerat med andelen 20–64 år (N01961). Visar hur många äldre försörjda det går per person i arbetsför ålder.",
+    "beskrivning": "Beräknad kvot: andelen invånare 65 år och äldre dividerat med andelen 20–64 år. Visar hur många äldre försörjda det går per person i arbetsför ålder. Källa: RKA Kolada och bearbetningar av Region Halland.",
     "enhet": "procent",
     "tema": "befolkning"
   },
@@ -594,6 +594,234 @@
     "enhet": "antal",
     "tema": "bostader",
     "par_kpi_id": "N07906"
+  },
+  {
+    "kpi_id": "K_SYSS_TOT",
+    "kpi_namn": "Sysselsättningsgrad (prelim.)",
+    "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur",
+    "par_kpi_id": "K_SYSS_ANT"
+  },
+  {
+    "kpi_id": "K_SYSS_ANT",
+    "kpi_namn": "Antal sysselsatta (prelim.)",
+    "beskrivning": "Antal sysselsatta 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur",
+    "par_kpi_id": "K_SYSS_TOT"
+  },
+  {
+    "kpi_id": "K_SYSS_INR",
+    "kpi_namn": "Sysselsättningsgrad, inrikes födda (prelim.)",
+    "beskrivning": "Andel sysselsatta bland inrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_SYSS_UTR",
+    "kpi_namn": "Sysselsättningsgrad, utrikes födda (prelim.)",
+    "beskrivning": "Andel sysselsatta bland utrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_SYSS_KV",
+    "kpi_namn": "Sysselsättningsgrad, kvinnor (prelim.)",
+    "beskrivning": "Andel sysselsatta kvinnor 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_SYSS_MAN",
+    "kpi_namn": "Sysselsättningsgrad, män (prelim.)",
+    "beskrivning": "Andel sysselsatta män 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARBL_TOT",
+    "kpi_namn": "Arbetslöshetsgrad (prelim.)",
+    "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur",
+    "par_kpi_id": "K_ARBL_ANT"
+  },
+  {
+    "kpi_id": "K_ARBL_ANT",
+    "kpi_namn": "Antal arbetslösa (prelim.)",
+    "beskrivning": "Antal arbetslösa 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur",
+    "par_kpi_id": "K_ARBL_TOT"
+  },
+  {
+    "kpi_id": "K_ARBL_INR",
+    "kpi_namn": "Arbetslöshetsgrad, inrikes födda (prelim.)",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARBL_UTR",
+    "kpi_namn": "Arbetslöshetsgrad, utrikes födda (prelim.)",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARBL_KV",
+    "kpi_namn": "Arbetslöshetsgrad, kvinnor (prelim.)",
+    "beskrivning": "Andel arbetslösa kvinnor av arbetskraften 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARBL_MAN",
+    "kpi_namn": "Arbetslöshetsgrad, män (prelim.)",
+    "beskrivning": "Andel arbetslösa män av arbetskraften 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARKR_TOT",
+    "kpi_namn": "Arbetskraftsdeltagande (prelim.)",
+    "beskrivning": "Andel av befolkningen 20–64 år i arbetskraften. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARKR_KV",
+    "kpi_namn": "Arbetskraftsdeltagande, kvinnor (prelim.)",
+    "beskrivning": "Andel kvinnor 20–64 år i arbetskraften. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARKR_MAN",
+    "kpi_namn": "Arbetskraftsdeltagande, män (prelim.)",
+    "beskrivning": "Andel män 20–64 år i arbetskraften. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_TOT",
+    "kpi_namn": "Sysselsatta dagbefolkning (prelim.)",
+    "beskrivning": "Antal sysselsatta efter arbetsställets kommun, alla branscher. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_JORD",
+    "kpi_namn": "Sysselsatta, jordbruk m.m. (prelim.)",
+    "beskrivning": "Antal sysselsatta inom jordbruk, skogsbruk och fiske (SNI A) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_IND",
+    "kpi_namn": "Sysselsatta, tillverkning (prelim.)",
+    "beskrivning": "Antal sysselsatta inom tillverkning (SNI B+C) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_ENMI",
+    "kpi_namn": "Sysselsatta, energi och miljö (prelim.)",
+    "beskrivning": "Antal sysselsatta inom energi och miljö (SNI D+E) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_BYG",
+    "kpi_namn": "Sysselsatta, bygg (prelim.)",
+    "beskrivning": "Antal sysselsatta inom byggindustrin (SNI F) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_HAND",
+    "kpi_namn": "Sysselsatta, handel (prelim.)",
+    "beskrivning": "Antal sysselsatta inom handel (SNI G) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_TRANS",
+    "kpi_namn": "Sysselsatta, transport (prelim.)",
+    "beskrivning": "Antal sysselsatta inom transport (SNI H) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_HOTEL",
+    "kpi_namn": "Sysselsatta, hotell & restaurang (prelim.)",
+    "beskrivning": "Antal sysselsatta inom hotell och restaurang (SNI I) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_IT",
+    "kpi_namn": "Sysselsatta, IT och kommunikation (prelim.)",
+    "beskrivning": "Antal sysselsatta inom IT och kommunikation (SNI J) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_FINANS",
+    "kpi_namn": "Sysselsatta, finans och försäkring (prelim.)",
+    "beskrivning": "Antal sysselsatta inom finans och försäkring (SNI K) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_FAST",
+    "kpi_namn": "Sysselsatta, fastigheter (prelim.)",
+    "beskrivning": "Antal sysselsatta inom fastighetsverksamhet (SNI L) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_FORETJ",
+    "kpi_namn": "Sysselsatta, företagstjänster (prelim.)",
+    "beskrivning": "Antal sysselsatta inom företagstjänster (SNI M+N) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_OFF",
+    "kpi_namn": "Sysselsatta, offentlig sektor (prelim.)",
+    "beskrivning": "Antal sysselsatta inom offentlig förvaltning, utbildning och vård (SNI O+P+Q) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_KULT",
+    "kpi_namn": "Sysselsatta, kultur m.m. (prelim.)",
+    "beskrivning": "Antal sysselsatta inom kultur, nöje, fritid m.m. (SNI R+S+T+U) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_SYSS_FORANDR",
+    "kpi_namn": "Sysselsättningsgrad, årsförändring (procentenheter)",
+    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procentenheter",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ARBL_FORANDR",
+    "kpi_namn": "Arbetslöshet, årsförändring (procentenheter)",
+    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procentenheter",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_DAG_TILLVAXT",
+    "kpi_namn": "Dagbefolkning, årsförändring (procent)",
+    "beskrivning": "Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad föregående år. Källa: SCB preliminär månadsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
   },
   {
     "kpi_id": "N00999",
@@ -1368,6 +1596,157 @@
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_KV"
+  },
+  {
+    "kpi_id": "T_GAST_TOT",
+    "kpi_namn": "Gästnätter, totalt",
+    "beskrivning": "Totalt antal gästnätter vid samtliga kommersiella boenden (hotell, stugbyar, vandrarhem, camping och förmedlade stugor/lägenheter). Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_HOTELL",
+    "kpi_namn": "Gästnätter, hotell",
+    "beskrivning": "Antal gästnätter vid hotell.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_CAMPING",
+    "kpi_namn": "Gästnätter, camping",
+    "beskrivning": "Antal gästnätter vid campinganläggningar.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_STUGBY",
+    "kpi_namn": "Gästnätter, stugbyar",
+    "beskrivning": "Antal gästnätter vid stugbyar.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_VANDRARHEM",
+    "kpi_namn": "Gästnätter, vandrarhem",
+    "beskrivning": "Antal gästnätter vid vandrarhem.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_SOL",
+    "kpi_namn": "Gästnätter, förmedlade stugor och lägenheter",
+    "beskrivning": "Antal gästnätter i kommersiellt förmedlade privata stugor och lägenheter.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_SVE",
+    "kpi_namn": "Gästnätter, svenska gäster",
+    "beskrivning": "Antal gästnätter av gäster med hemland Sverige.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_UTL",
+    "kpi_namn": "Gästnätter, utländska gäster",
+    "beskrivning": "Antal gästnätter av gäster med hemland utanför Sverige.",
+    "enhet": "antal",
+    "tema": "turism",
+    "par_kpi_id": "T_ANDEL_UTL_NATTER"
+  },
+  {
+    "kpi_id": "T_ANDEL_UTL_NATTER",
+    "kpi_namn": "Andel utländska gästnätter",
+    "beskrivning": "Utländska gästnätter som andel av samtliga gästnätter, procent.",
+    "enhet": "procent",
+    "tema": "turism",
+    "par_kpi_id": "T_GAST_UTL"
+  },
+  {
+    "kpi_id": "T_ANKOMST_SVE",
+    "kpi_namn": "Gästankomster, svenska",
+    "beskrivning": "Antal ankomster av svenska gäster till kommersiella boenden.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_ANKOMST_UTL",
+    "kpi_namn": "Gästankomster, utländska",
+    "beskrivning": "Antal ankomster av utländska gäster till kommersiella boenden.",
+    "enhet": "antal",
+    "tema": "turism",
+    "par_kpi_id": "T_ANDEL_UTL"
+  },
+  {
+    "kpi_id": "T_ANDEL_UTL",
+    "kpi_namn": "Andel utländska gästankomster",
+    "beskrivning": "Utländska gästankomster som andel av samtliga ankomster, procent.",
+    "enhet": "procent",
+    "tema": "turism",
+    "par_kpi_id": "T_ANKOMST_UTL"
+  },
+  {
+    "kpi_id": "T_BELAGG_RUM",
+    "kpi_namn": "Rumsbeläggning",
+    "beskrivning": "Andel belagda rum av totalt antal disponibla rum, procent. Omfattar hotell, stugbyar och vandrarhem.",
+    "enhet": "procent",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_BELAGG_BADD",
+    "kpi_namn": "Bäddbeläggning",
+    "beskrivning": "Andel belagda bäddar av totalt antal disponibla bäddar, procent.",
+    "enhet": "procent",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_LOGIINTAKT",
+    "kpi_namn": "Logiintäkter",
+    "beskrivning": "Totala logiintäkter i kronor vid kommersiella boenden.",
+    "enhet": "kr",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_ANLAGGNINGAR",
+    "kpi_namn": "Antal anläggningar",
+    "beskrivning": "Totalt antal kommersiella boendeanläggningar.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_INTAKT_PER_GAST",
+    "kpi_namn": "Logiintäkt per gästnatt",
+    "beskrivning": "Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala logiintäkter dividerat med antal gästnätter.",
+    "enhet": "kr",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_PER_ANLAGG",
+    "kpi_namn": "Gästnätter per anläggning",
+    "beskrivning": "Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_PER_INV",
+    "kpi_namn": "Gästnätter per invånare",
+    "beskrivning": "Antal gästnätter per invånare. Mäter turismintensiteten i förhållande till kommunens storlek. Beräknat med totalbefolkning. Källa: Tillväxtverket, RKA Kolada och bearbetningar av Region Halland.",
+    "enhet": "antal",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_GAST_TILLVAXT",
+    "kpi_namn": "Gästnätter, årlig förändring",
+    "beskrivning": "Gästnätternas förändring jämfört med föregående år, procent.",
+    "enhet": "procent",
+    "tema": "turism"
+  },
+  {
+    "kpi_id": "T_INTAKT_TILLVAXT",
+    "kpi_namn": "Logiintäkter, årlig förändring",
+    "beskrivning": "Logiintäkternas förändring jämfört med föregående år, procent.",
+    "enhet": "procent",
+    "tema": "turism"
   },
   {
     "kpi_id": "N01982",

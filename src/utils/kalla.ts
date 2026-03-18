@@ -1,8 +1,8 @@
 /** Extrahera källhänvisning från KPI-beskrivning */
 export function extractKalla(beskrivning: string | undefined): string {
-  if (!beskrivning) return "SCB";
+  if (!beskrivning) return "RKA Kolada";
   const match = beskrivning.match(/Källa:\s*([^.]+)/);
-  const bas = match ? match[1].trim() : "SCB";
+  const bas = match ? match[1].trim() : "RKA Kolada";
   return bas;
 }
 

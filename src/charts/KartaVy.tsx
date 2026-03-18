@@ -7,16 +7,20 @@ import type { MapData } from "../hooks/useMapData";
 const FONT = "'Inter', system-ui, sans-serif";
 const FONT_DATA = "'IBM Plex Sans', sans-serif";
 
-// Neutral divergerande palett (teal–orange) — undviker rött/grönt
-const FARG_LAG = "#c25100";   // Mörk orange (låga värden)
-const FARG_LAG_LJUS = "#fdd8b5"; // Ljus orange
-const FARG_HOG = "#00664D";   // Mörk teal/grön (höga värden)
-// FARG_HOG_LJUS reserverad för framtida bruk
-const FARG_MITT = "#f5f5f0";  // Neutral mittpunkt
+// UI-färg — används för markerad kommun, etiketter etc. (inte kartfyllning)
+const FARG_HOG = "#00664D";
+
+// Mako-palett (seaborn/matplotlib) — mörk marinblå → teal → ljus cyan
+const interpolateMako = d3.interpolateRgbBasis([
+  "#0B0405", "#1B0C41", "#25296A", "#1F4D8E", "#1C6C94",
+  "#21888C", "#3EA18F", "#6DBC9F", "#AED4BB", "#DEF0E0",
+]);
 
 const PER_1000_KPIS = new Set(["N01803", "N01806", "N01964"]);
 const FOLKMANGD_KPI = "N01951";
-// HALLAND_LAN_KOD = "13" — reserverad
+
+// Latitudgräns för Sydsverige-zoom (≈ Stockholm och söderut)
+const SYD_LAT_MAX = 60;
 
 interface Props {
   valdKommunKod: string;
@@ -57,8 +61,8 @@ export default function KartaVy({
 
   const compact = width < 500;
 
-  // Alltid choropleth — inga proportionella cirklar
-  const useCircles = false;
+  // Proportionella cirklar för absoluta antal, choropleth för andelar/kvoter
+  const useCircles = enhet === "antal" && !indexMode;
 
   // ─── Steg 1: Transformera all data ───
   const transformed = useMemo(() => {
@@ -103,6 +107,9 @@ export default function KartaVy({
   const aktivtAr = valdAr ?? maxYear;
   useEffect(() => { setValdAr(null); }, [kpiId, enhet, indexMode]);
 
+  // Zoom: Sydsverige (default) eller hela landet
+  const [visaHelaSverige, setVisaHelaSverige] = useState(false);
+
   // ─── Steg 2: Filtrera till valt år ───
   const prepared = useMemo(() => {
     const jmfTyp = isRegion ? "L" : "K";
@@ -135,32 +142,28 @@ export default function KartaVy({
     let domain: [number, number];
 
     if (isChange) {
-      // Förändring: divergerande kring 0 (eller 100 för index)
+      // Förändring: röd (minskning) → vit (0) → blå (ökning)
       const center = indexMode ? 100 : 0;
       const dists = values.map((v) => Math.abs(v - center)).sort((a, b) => a - b);
       const maxDist = d3.quantile(dists, 0.95) ?? dists[dists.length - 1];
       domain = [center - maxDist, center + maxDist];
       const divScale = d3.scaleDiverging<string>()
         .domain([domain[0], center, domain[1]])
-        .interpolator((t: number) => {
-          if (t < 0.5) return d3.interpolateRgb(FARG_LAG, FARG_MITT)(t * 2);
-          return d3.interpolateRgb(FARG_MITT, FARG_HOG)((t - 0.5) * 2);
-        })
+        .interpolator(d3.interpolateRdBu)
         .clamp(true);
       colorScale = (v: number) => divScale(v);
+      // Returnera center som "median" så legenden centreras korrekt
+      return { valueMap, colorScale, domain, median: center };
     } else {
-      // Nivåvärden: divergerande kring MEDIANEN
+      // Nivåvärden: Mako (ljus teal → mörk blålila) — låga värden ljusa, höga mörka
       const p2 = d3.quantile(values, 0.02) ?? values[0];
       const p98 = d3.quantile(values, 0.98) ?? values[values.length - 1];
       domain = [p2, p98];
-      const divScale = d3.scaleDiverging<string>()
-        .domain([domain[0], median, domain[1]])
-        .interpolator((t: number) => {
-          if (t < 0.5) return d3.interpolateRgb(FARG_LAG_LJUS, FARG_MITT)(t * 2);
-          return d3.interpolateRgb(FARG_MITT, FARG_HOG)((t - 0.5) * 2);
-        })
+      const seqScale = d3.scaleSequential<string>()
+        .domain([domain[0], domain[1]])
+        .interpolator((t: number) => interpolateMako(1 - t))
         .clamp(true);
-      colorScale = (v: number) => divScale(v);
+      colorScale = (v: number) => seqScale(v);
     }
 
     return { valueMap, colorScale, domain, median };
@@ -203,12 +206,29 @@ export default function KartaVy({
 
     // ─── Projektion ───
     const geoFeatures = isRegion ? mapData.lan : mapData.kommuner;
+    let fitTarget = geoFeatures;
+    if (!visaHelaSverige) {
+      // Filtrera till features söder om ~Stockholm för att zooma in
+      const sydFeatures = geoFeatures.features.filter((f) => {
+        const c = d3.geoCentroid(f);
+        return c[1] < SYD_LAT_MAX;
+      });
+      if (sydFeatures.length > 0) {
+        fitTarget = { type: "FeatureCollection" as const, features: sydFeatures };
+      }
+    }
+    const pad = 6;
     const projection = d3.geoMercator()
-      .fitSize([mapAreaW, mapAreaH], geoFeatures as d3.ExtendedFeatureCollection);
+      .fitExtent([[pad, pad], [mapAreaW - pad, mapAreaH - pad]], fitTarget as d3.ExtendedFeatureCollection);
     const pathGen = d3.geoPath(projection);
     const pathFn = (d: GeoJSON.Feature) => pathGen(d) ?? "";
 
-    const mapG = svg.append("g").attr("transform", `translate(0, ${titelH})`);
+    // Clip-path: begränsar kartrendering till under titeln
+    svg.append("defs").append("clipPath").attr("id", "kartaClip")
+      .append("rect").attr("width", width).attr("height", mapAreaH);
+    const mapG = svg.append("g")
+      .attr("transform", `translate(0, ${titelH})`)
+      .attr("clip-path", "url(#kartaClip)");
     const tooltipEl = tooltipRef.current;
 
     // Highlight-overlay
@@ -707,32 +727,39 @@ export default function KartaVy({
         .attr("y", legendH).attr("height", 0)
         .attr("fill", "#fff").attr("opacity", 0.75).attr("pointer-events", "none");
 
-      // Filter-info — visas på kartan
-      const filterInfoG = mapG.append("g")
-        .attr("transform", `translate(14, ${mapAreaH - 8})`)
+      // Filter-info — centrerad under legend-panelen
+      const filterInfoG = svg.append("g")
+        .attr("transform", `translate(${panelX + panelW / 2}, ${panelY + panelH + 6})`)
         .style("display", "none");
-      filterInfoG.append("rect").attr("x", -6).attr("y", -28).attr("width", 160).attr("height", 32)
-        .attr("rx", 4).attr("fill", "#fff").attr("opacity", 0.88);
+      filterInfoG.append("rect").attr("x", -75).attr("y", -2).attr("width", 150).attr("height", 32)
+        .attr("rx", 4).attr("fill", "#fff").attr("opacity", 0.92);
       const filterLine1 = filterInfoG.append("text")
-        .attr("y", -14).attr("fill", "#333").attr("font-size", "11px")
+        .attr("y", 10).attr("text-anchor", "middle").attr("fill", "#333").attr("font-size", "11px")
         .attr("font-weight", 600).attr("font-family", FONT);
       const filterLine2 = filterInfoG.append("text")
-        .attr("y", 0).attr("fill", "#666").attr("font-size", "10px")
+        .attr("y", 24).attr("text-anchor", "middle").attr("fill", "#666").attr("font-size", "10px")
         .attr("font-family", FONT_DATA);
 
-      // Handtag: tunn visuell linje med cirkelgrepp + bred osynlig klickyta
+      // Handtag: rundad rektangel med greppstruktur, bred klickyta
       function makeHandle(yInit: number) {
         const h = barG.append("g").attr("transform", `translate(0, ${yInit})`).style("cursor", "ns-resize");
-        // Osynlig klickyta
-        h.append("rect").attr("x", -10).attr("width", barW + 20).attr("y", -8).attr("height", 16)
+        // Osynlig klickyta (24px hög)
+        h.append("rect").attr("x", -10).attr("width", barW + 20).attr("y", -12).attr("height", 24)
           .attr("fill", "transparent");
-        // Visuell linje
-        h.append("line").attr("x1", -5).attr("x2", barW + 5)
-          .attr("y1", 0).attr("y2", 0)
-          .attr("stroke", "#444").attr("stroke-width", 1.5).attr("stroke-linecap", "round");
-        // Grepp-prickar i ändarna
-        h.append("circle").attr("cx", -5).attr("cy", 0).attr("r", 2.5).attr("fill", "#444");
-        h.append("circle").attr("cx", barW + 5).attr("cy", 0).attr("r", 2.5).attr("fill", "#444");
+        // Rundad rektangel (8px hög)
+        const hw = barW + 10;
+        h.append("rect")
+          .attr("x", -5).attr("y", -4).attr("width", hw).attr("height", 8).attr("rx", 3)
+          .attr("fill", "#555").attr("opacity", 0.7)
+          .on("mouseenter", function () { d3.select(this).attr("opacity", 1); })
+          .on("mouseleave", function () { d3.select(this).attr("opacity", 0.7); });
+        // 3 greppstreck (vit)
+        for (const dy of [-1.5, 0, 1.5]) {
+          h.append("line").attr("x1", hw / 2 - 5).attr("x2", hw / 2 + 1)
+            .attr("y1", dy).attr("y2", dy)
+            .attr("stroke", "#fff").attr("stroke-width", 0.7).attr("stroke-linecap", "round")
+            .attr("pointer-events", "none");
+        }
         return h;
       }
 
@@ -818,7 +845,7 @@ export default function KartaVy({
     }
   }, [
     mapData, valueMap, colorScale, domain, median, aktivtAr,
-    valdKommunKod, valdKommunNamn, isRegion, useCircles,
+    valdKommunKod, valdKommunNamn, isRegion, useCircles, visaHelaSverige,
     width, height, titel, compact, subtitelEnhet, subtitelGeografi, enhet, kalla,
   ]);
 
@@ -829,6 +856,24 @@ export default function KartaVy({
   return (
     <div className="relative">
       <svg ref={svgRef} width={width} height={height} />
+      {/* Zoom-toggle */}
+      <button
+        onClick={() => setVisaHelaSverige((v) => !v)}
+        className="absolute left-3 flex items-center gap-1.5 text-[10px] font-medium
+                   px-2.5 py-1.5 rounded-md bg-white/90 border border-neutral-200
+                   text-neutral-600 hover:text-neutral-900 hover:bg-white
+                   cursor-pointer transition-colors shadow-sm"
+        style={{ top: height - 34 }}
+      >
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          {visaHelaSverige
+            ? <><polyline points="4 14 10 14 10 20" /><polyline points="20 10 14 10 14 4" /><line x1="14" y1="10" x2="21" y2="3" /><line x1="3" y1="21" x2="10" y2="14" /></>
+            : <><polyline points="15 3 21 3 21 9" /><polyline points="9 21 3 21 3 15" /><line x1="21" y1="3" x2="14" y2="10" /><line x1="3" y1="21" x2="10" y2="14" /></>
+          }
+        </svg>
+        {visaHelaSverige ? "Sydsverige" : "Hela landet"}
+      </button>
       <div
         ref={tooltipRef}
         className="absolute pointer-events-none font-data text-[12px] leading-snug

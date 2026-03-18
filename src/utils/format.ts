@@ -33,6 +33,33 @@ export function trendFarg(riktning: string | null): string {
   return "text-gra-1";
 }
 
+/** Kolla om period är månadsdata (YYYYMM > 9999) */
+export function isMonthly(ar: number): boolean {
+  return ar > 9999;
+}
+
+/** Svenska månadsförkortningar */
+const MANAD_KORT = [
+  "jan", "feb", "mar", "apr", "maj", "jun",
+  "jul", "aug", "sep", "okt", "nov", "dec",
+];
+
+/** Formatera period: YYYYMM → "dec 2025", YYYY → "2025" */
+export function fmtPeriod(ar: number): string {
+  if (!isMonthly(ar)) return String(ar);
+  const year = Math.floor(ar / 100);
+  const month = ar % 100;
+  return `${MANAD_KORT[month - 1] ?? "?"} ${year}`;
+}
+
+/** Hitta "samma månad föregående år" — returnerar YYYYMM eller null */
+export function sameMonthLastYear(ar: number): number | null {
+  if (!isMonthly(ar)) return null;
+  const year = Math.floor(ar / 100);
+  const month = ar % 100;
+  return (year - 1) * 100 + month;
+}
+
 /** CSS-klass för differens mot riket */
 export function diffFarg(diff: number | null): string {
   if (diff == null) return "text-gra-1";

@@ -1,7 +1,7 @@
 import { memo, useMemo, useRef, useEffect, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import type { KpiRow } from "../types";
-import { fmt, fmtInt } from "../utils/format";
+import { fmt, fmtInt, fmtPeriod } from "../utils/format";
 import Sparkline from "../charts/Sparkline";
 
 interface Props {
@@ -33,7 +33,7 @@ function TrendRow({ label, value, d }: { label: string; value: number | null; d:
   if (!s) return null;
   return (
     <div className="flex items-baseline justify-between gap-2">
-      <span className="font-data text-[10px] text-neutral-500">{label}</span>
+      <span className="font-data text-[11px] text-neutral-500">{label}</span>
       <span className={`font-data text-[12px] font-semibold tabular-nums ${trendCls(value)}`}>
         {s}
       </span>
@@ -100,7 +100,7 @@ function KpiKortInner({
   const tTotal = senaste.varde != null && forsta?.varde != null && forsta.ar !== senaste.ar
     ? senaste.varde - forsta.varde : null;
   const totalLabel = forsta && forsta.ar !== senaste.ar
-    ? `${forsta.ar}–${senaste.ar}` : null;
+    ? `${fmtPeriod(forsta.ar)}–${fmtPeriod(senaste.ar)}` : null;
 
   // Ranking
   const rang = senaste.rang_total;
@@ -187,13 +187,13 @@ function KpiKortInner({
               </span>
             )}
             <span className="font-data text-[10.5px] text-neutral-600 block mt-0.5">
-              {enhet} · {senaste.ar}
+              {enhet} · {fmtPeriod(senaste.ar)}
             </span>
           </div>
 
-          <div className="min-w-[85px] pt-0.5">
-            <p className="font-data text-[9px] text-neutral-500 mb-1 font-medium">Förändring</p>
-            <div className="space-y-0.5">
+          <div className="min-w-[85px] pt-0.5 border-l border-neutral-100 pl-3">
+            <p className="font-data text-[10px] text-neutral-500 mb-1 font-medium">Förändring</p>
+            <div className="space-y-1">
               <TrendRow label="1 år" value={t1} d={trendDec} />
               <TrendRow label="5 år" value={t5} d={trendDec} />
               {totalLabel && <TrendRow label={totalLabel} value={tTotal} d={trendDec} />}
@@ -204,13 +204,13 @@ function KpiKortInner({
         {/* Sparklines — sida vid sida, pushade till botten */}
         <div ref={sparkRef} className="flex gap-2 mt-3.5">
           <div className="flex-1 min-w-0">
-            <p className="font-data text-[9px] text-neutral-500 mb-0.5">Utveckling</p>
+            <p className="font-data text-[10px] text-neutral-500 mb-0.5">Utveckling</p>
             {halfWidth > 0 && (
               <Sparkline data={data} mode="value" enhet={enhet} width={halfWidth} height={sparkH} />
             )}
           </div>
           <div className="flex-1 min-w-0">
-            <p className="font-data text-[9px] text-neutral-500 mb-0.5">Ranking</p>
+            <p className="font-data text-[10px] text-neutral-500 mb-0.5">Ranking</p>
             {halfWidth > 0 && (
               <Sparkline data={data} mode="rank" width={halfWidth} height={sparkH} />
             )}

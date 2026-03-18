@@ -42,48 +42,78 @@ interface NarrativeCtx {
 const SLIDES: SlideConfig[] = [
   {
     kpiId: "N01951",
-    titel: "Var finns människorna?",
-    undertitel: (ar) => `Folkmängd per kommun · ${ar}`,
+    titel: "Folkmängd",
+    undertitel: (ar) => `Antal invånare · ${ar}`,
     enhet: "antal",
     useLog: true,
-    berattelse: ({ kommunNamn, value, rang, total, min, max }) => {
+    berattelse: ({ kommunNamn, value, rang, total }) => {
       if (value == null || rang == null) return "";
-      const pos = rang <= total * 0.1
-        ? `bland de tio procent största`
-        : rang <= total * 0.25
-        ? `bland den övre fjärdedelen`
-        : rang <= total * 0.5
-        ? `i den övre halvan`
-        : rang <= total * 0.75
-        ? `i den undre halvan`
-        : `bland de minsta fjärdedelen`;
-      const spread = min && max
-        ? ` Spridningen är enorm — från ${min.namn} med ${fmtInt(min.value)} invånare till ${max.namn} med drygt ${fmtInt(max.value)}.`
-        : "";
-      return `Med ${fmtInt(value)} invånare placerar sig ${kommunNamn} ${pos} av Sveriges ${total} kommuner.${spread}`;
+      return `${kommunNamn} har ${fmtInt(value)} invånare — plats ${rang} av ${total} kommuner.`;
     },
   },
   {
-    kpiId: "N02937",
-    titel: "Hur tätt bor vi?",
-    undertitel: (ar) => `Invånare per kvadratkilometer · ${ar}`,
-    enhet: "inv/kvm",
-    useLog: true,
-    berattelse: ({ kommunNamn, value, rang, total, median, riket }) => {
+    kpiId: "N01963",
+    titel: "Befolkningsförändring",
+    undertitel: (ar) => `Förändring sedan föregående år, procent · ${ar}`,
+    enhet: "procent",
+    useLog: false,
+    berattelse: ({ kommunNamn, value, riket }) => {
       if (value == null) return "";
-      const valFmt = fmt(value, 1);
-      const rel = median != null
-        ? value > median * 1.5
-          ? `betydligt tätare än mediankommunens ${fmt(median, 1)}`
-          : value > median
-          ? `något tätare än mediankommunens ${fmt(median, 1)}`
-          : value > median * 0.5
-          ? `något glesare än mediankommunens ${fmt(median, 1)}`
-          : `betydligt glesare än mediankommunens ${fmt(median, 1)}`
-        : "";
-      const riksText = riket != null ? ` Rikssnittet ligger på ${fmt(riket, 1)} invånare per km².` : "";
-      const rangText = rang != null ? ` Det ger plats ${rang} av ${total}.` : "";
-      return `I ${kommunNamn} bor det ${valFmt} invånare per kvadratkilometer — ${rel}.${riksText}${rangText}`;
+      const riktning = value > 0 ? "växer" : value < 0 ? "krymper" : "är oförändrad";
+      const riketText = riket != null ? ` Rikssnittet är ${fmt(riket, 1)} procent.` : "";
+      return `${kommunNamn} ${riktning} med ${fmt(Math.abs(value), 1)} procent.${riketText} Förändringen drivs av tre komponenter: födelsenetto, inrikes och utrikes flyttnetto.`;
+    },
+  },
+  {
+    kpiId: "N02100",
+    titel: "Födelsenetto",
+    undertitel: (ar) => `Födda minus döda, per 1 000 invånare · ${ar}`,
+    enhet: "procent",
+    useLog: false,
+    berattelse: ({ kommunNamn, value, median }) => {
+      if (value == null) return "";
+      const netto = value > 0 ? "födelseöverskott" : value < 0 ? "födelseunderskott" : "balans mellan födda och döda";
+      const medText = median != null ? ` Mediankommunen ligger på ${fmt(median, 1)}.` : "";
+      return `${kommunNamn} har ${netto} — ${fmt(value, 1)} per 1 000 invånare.${medText}`;
+    },
+  },
+  {
+    kpiId: "N02101",
+    titel: "Inrikes flyttnetto",
+    undertitel: (ar) => `Inflyttade minus utflyttade inom Sverige, per 1 000 invånare · ${ar}`,
+    enhet: "procent",
+    useLog: false,
+    berattelse: ({ kommunNamn, value, median }) => {
+      if (value == null) return "";
+      const netto = value > 0 ? "fler som flyttar in än ut" : value < 0 ? "fler som flyttar ut än in" : "balans i inrikes flyttningar";
+      const medText = median != null ? ` Mediankommunen ligger på ${fmt(median, 1)}.` : "";
+      return `${kommunNamn} har ${netto} inom Sverige — nettot är ${fmt(value, 1)} per 1 000 invånare.${medText}`;
+    },
+  },
+  {
+    kpiId: "N02102",
+    titel: "Utrikes flyttnetto",
+    undertitel: (ar) => `Invandring minus utvandring, per 1 000 invånare · ${ar}`,
+    enhet: "procent",
+    useLog: false,
+    berattelse: ({ kommunNamn, value, median, riket }) => {
+      if (value == null) return "";
+      const riketText = riket != null ? ` Rikssnittet är ${fmt(riket, 1)}.` : "";
+      const medText = median != null ? ` Mediankommunen ligger på ${fmt(median, 1)}.` : "";
+      return `${kommunNamn} har ett utrikes flyttnetto på ${fmt(value, 1)} per 1 000 invånare.${riketText}${medText}`;
+    },
+  },
+  {
+    kpiId: "N00927",
+    titel: "Försörjningskvot",
+    undertitel: (ar) => `Unga och äldre per person i arbetsför ålder · ${ar}`,
+    enhet: "kvot",
+    useLog: false,
+    berattelse: ({ kommunNamn, value, rang, total, riket }) => {
+      if (value == null) return "";
+      const riketText = riket != null ? ` Rikssnittet är ${fmt(riket, 1)}.` : "";
+      const rangText = rang != null ? ` Plats ${rang} av ${total}.` : "";
+      return `Försörjningskvoten i ${kommunNamn} är ${fmt(value, 1)} — det antal unga (0–19) och äldre (65+) per person i arbetsför ålder (20–64).${riketText}${rangText}`;
     },
   },
 ];

@@ -209,26 +209,30 @@ export default function TemaBlock({
   return (
     <div className="tema-fade-in">
       {/* Temarubrik */}
-      <div className="flex items-center justify-between mb-5">
-        <div className="flex items-center gap-2.5">
-          <div className={`w-2.5 h-2.5 rounded-full ${farg.dot}`} />
-          <h2 className="font-data text-[17px] font-bold text-neutral-900 tracking-tight">
-            {tema.temaNamn}
-          </h2>
-        </div>
-        <button
-          onClick={onStartBerattelse}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg
-                     bg-neutral-900 text-white font-data text-[11px] font-medium
-                     hover:bg-neutral-700 active:scale-[0.97]
-                     transition-all duration-150 cursor-pointer"
-        >
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-               strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <polygon points="5 3 19 12 5 21 5 3" />
-          </svg>
-          <span className="hidden sm:inline">Berättelse</span>
-        </button>
+      <div className="flex items-center gap-2.5 mb-5">
+        <div className={`w-2.5 h-2.5 rounded-full ${farg.dot}`} />
+        <h2 className="font-data text-[17px] font-bold text-neutral-900 tracking-tight">
+          {tema.temaNamn}
+        </h2>
+        {tema.temaId === "befolkning" && (
+          <button
+            onClick={onStartBerattelse}
+            className="flex items-center gap-1.5 ml-1 px-2.5 py-1 rounded-md
+                       border border-neutral-200 bg-white
+                       text-neutral-500 hover:text-neutral-800 hover:border-neutral-300
+                       font-data text-[10px] font-medium
+                       active:scale-[0.97] transition-all duration-150 cursor-pointer"
+          >
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            <span className="hidden sm:inline">Berättelse</span>
+            <span className="text-[8px] px-1 py-0.5 rounded bg-neutral-100 text-neutral-400 font-semibold uppercase tracking-wider">
+              Beta
+            </span>
+          </button>
+        )}
       </div>
 
       {/* Kortgrid */}

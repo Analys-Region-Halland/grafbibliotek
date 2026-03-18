@@ -195,6 +195,19 @@ export default function Beeswarm({
     // Samla annotationer
     const annots: { px: number; text: string; dash: string; lineAlpha: number; labelY: number }[] = [];
 
+    // Noll-linje om data spänner över noll
+    if (dataMin < 0 && dataMax > 0) {
+      const zeroPx = xScale(0);
+      if (zeroPx >= 0 && zeroPx <= w) {
+        annots.push({ px: zeroPx, text: "0", dash: "none", lineAlpha: 0.7, labelY: labelTopY });
+        // Extra tick på axeln
+        axisG.append("line")
+          .attr("x1", zeroPx).attr("x2", zeroPx)
+          .attr("y1", axisY).attr("y2", axisY + 5)
+          .attr("stroke", "rgba(255,255,255,0.7)").attr("stroke-width", 1);
+      }
+    }
+
     if (medianValue != null) {
       const px = xScale(Math.max(medianValue, useLog ? 1 : -Infinity));
       if (px >= 0 && px <= w) {
@@ -209,21 +222,35 @@ export default function Beeswarm({
       }
     }
 
-    // Överlapp: om nära, flytta den andra uppåt
-    if (annots.length === 2 && Math.abs(annots[0].px - annots[1].px) < 50) {
-      annots[1].labelY = labelTopY - 12;
+    // Lösa etikett-överlapp med faktiska textbredder (~6.5px/tecken vid 10px font)
+    annots.sort((a, b) => a.px - b.px);
+    const labelW = annots.map((a) => a.text.length * 6.5 + 8); // px bredd per etikett
+    for (let iter = 0; iter < 15; iter++) {
+      let moved = false;
+      for (let i = 0; i < annots.length; i++) {
+        for (let j = i + 1; j < annots.length; j++) {
+          const iRight = annots[i].px + 4 + labelW[i];
+          const jLeft = annots[j].px + 4;
+          const hOverlap = jLeft < iRight;
+          const vOverlap = Math.abs(annots[i].labelY - annots[j].labelY) < 12;
+          if (hOverlap && vOverlap) {
+            annots[j].labelY = Math.min(annots[i].labelY, annots[j].labelY) - 13;
+            moved = true;
+          }
+        }
+      }
+      if (!moved) break;
     }
 
     annots.forEach((a) => {
-      // Vertikal streckad linje
+      // Vertikal linje (alltid från svärm-topp till axeln)
       refG.append("line")
         .attr("x1", a.px).attr("x2", a.px)
-        .attr("y1", a.labelY + 3).attr("y2", axisY)
+        .attr("y1", Math.min(a.labelY + 3, labelTopY + 3)).attr("y2", axisY)
         .attr("stroke", `rgba(255,255,255,${a.lineAlpha})`)
         .attr("stroke-width", 1)
         .attr("stroke-dasharray", a.dash);
 
-      // Etikett tight vid linjens topp
       refG.append("text")
         .attr("x", a.px + 4).attr("y", a.labelY)
         .attr("text-anchor", "start")

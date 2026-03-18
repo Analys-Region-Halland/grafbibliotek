@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from "react";
-import type { KpiRow, KpiMeta } from "../types";
+import type { KpiRow, KpiMeta, SlimRow, KommunEntry } from "../types";
 
 interface DataState {
   data: KpiRow[];
@@ -11,6 +11,9 @@ interface DataState {
   progress: number;
   retryTema: () => void;
 }
+
+// Halland-koder (region + kommuner) — för halland-flagga
+const HALLAND_SET = new Set(["0013", "1380", "1381", "1382", "1383", "1384", "1315"]);
 
 /** Hämta med progress-tracking via ReadableStream */
 async function fetchMedProgress(
@@ -49,8 +52,46 @@ async function fetchMedProgress(
   return JSON.parse(text);
 }
 
+/** Hydrera slim-rader till fulla KpiRow med data från meta + kommun-register */
+function hydrate(
+  slim: SlimRow[],
+  metaMap: Map<string, KpiMeta>,
+  kommunMap: Map<string, { namn: string; typ: string }>,
+): KpiRow[] {
+  const rows: KpiRow[] = new Array(slim.length);
+  for (let i = 0; i < slim.length; i++) {
+    const s = slim[i];
+    const m = metaMap.get(s.k);
+    const km = kommunMap.get(s.m);
+    const v = s.v;
+    const r = s.r;
+    rows[i] = {
+      kpi_id: s.k,
+      kommun_kod: s.m,
+      kommun_typ: s.t,
+      ar: s.a,
+      varde: v,
+      riksvarde: r,
+      rang_total: s.rg,
+      antal_kommuner: s.n,
+      trend_5ar: s.t5,
+      // Hydrerade fält
+      kpi_namn: m?.kpi_namn ?? "",
+      enhet: m?.enhet ?? "",
+      tema: m?.tema ?? "",
+      kommun_namn: km?.namn ?? "",
+      halland: HALLAND_SET.has(s.m),
+      diff_riket: v != null && r != null ? Math.round((v - r) * 100) / 100 : null,
+      diff_riket_pct: v != null && r != null && r !== 0
+        ? Math.round((v - r) / r * 10000) / 100 : null,
+      trend_riktning: s.t5 != null ? (s.t5 > 0 ? "upp" : s.t5 < 0 ? "ned" : "oforandrad") : null,
+    };
+  }
+  return rows;
+}
+
 /**
- * Lazy-laddar per-tema datasfiler.
+ * Lazy-laddar per-tema datasfiler (slim-format).
  * Befolkning laddas initialt (med progress), övriga teman vid behov.
  * Varje tema cachas efter första laddning för omedelbar återväxling.
  */
@@ -64,17 +105,34 @@ export function useData(aktivtTema: string): DataState {
   const [progress, setProgress] = useState(0);
   const [retryCount, setRetryCount] = useState(0);
   const loadingRef = useRef<Set<string>>(new Set());
+  // Lookup-maps byggs en gång vid initial laddning
+  const metaMapRef = useRef<Map<string, KpiMeta>>(new Map());
+  const kommunMapRef = useRef<Map<string, { namn: string; typ: string }>>(new Map());
   const base = import.meta.env.BASE_URL;
 
-  // Initial: meta + befolkning
+  // Initial: meta + kommun-register + befolkning
   useEffect(() => {
     Promise.all([
       fetch(`${base}data/halland-meta.json`).then((r) => r.json()),
+      fetch(`${base}data/kommun-register.json`).then((r) => r.json()),
       fetchMedProgress(`${base}data/halland-data-befolkning.json`, setProgress),
     ])
-      .then(([metaData, befData]) => {
-        setMeta(metaData as KpiMeta[]);
-        setCache({ befolkning: befData as KpiRow[] });
+      .then(([metaData, kommunData, befSlim]) => {
+        const metaArr = metaData as KpiMeta[];
+        setMeta(metaArr);
+
+        // Bygg lookup-maps
+        const mMap = new Map<string, KpiMeta>();
+        for (const m of metaArr) mMap.set(m.kpi_id, m);
+        metaMapRef.current = mMap;
+
+        const kMap = new Map<string, { namn: string; typ: string }>();
+        for (const k of kommunData as KommunEntry[]) kMap.set(k.k, { namn: k.n, typ: k.t });
+        kommunMapRef.current = kMap;
+
+        // Hydrera befolkningsdata
+        const befRows = hydrate(befSlim as SlimRow[], mMap, kMap);
+        setCache({ befolkning: befRows });
         setInitialLoading(false);
       })
       .catch((err) => {
@@ -98,8 +156,13 @@ export function useData(aktivtTema: string): DataState {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json();
       })
-      .then((rows) => {
-        setCache((prev) => ({ ...prev, [aktivtTema]: rows as KpiRow[] }));
+      .then((slim) => {
+        const rows = hydrate(
+          slim as SlimRow[],
+          metaMapRef.current,
+          kommunMapRef.current,
+        );
+        setCache((prev) => ({ ...prev, [aktivtTema]: rows }));
         loadingRef.current.delete(aktivtTema);
         setTemaLoading(false);
       })

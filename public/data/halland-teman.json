@@ -176,6 +176,104 @@
     }
   },
   {
+    "tema_id": "konjunktur",
+    "tema_namn": "Konjunktur",
+    "tema_farg": "bla",
+    "sektioner": [
+      {
+        "id": "sysselsattning",
+        "namn": "Sysselsättningsgrad 20–64 år (prelim.)",
+        "kpi_ids": "K_SYSS_TOT",
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["K_SYSS_INR", "K_SYSS_UTR"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["K_SYSS_KV", "K_SYSS_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "arbetsloshet",
+        "namn": "Arbetslöshet 20–64 år (prelim.)",
+        "kpi_ids": "K_ARBL_TOT",
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["K_ARBL_INR", "K_ARBL_UTR"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["K_ARBL_KV", "K_ARBL_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "arbetskraft",
+        "namn": "Arbetskraftsdeltagande 20–64 år (prelim.)",
+        "kpi_ids": "K_ARKR_TOT",
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["K_ARKR_KV", "K_ARKR_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "dagbefolkning",
+        "namn": "Sysselsatta dagbefolkning (prelim.)",
+        "kpi_ids": "K_DAG_TOT",
+        "undersektioner": [
+          {
+            "namn": "Branscher",
+            "kpi_ids": ["K_DAG_JORD", "K_DAG_IND", "K_DAG_ENMI", "K_DAG_BYG", "K_DAG_HAND", "K_DAG_TRANS", "K_DAG_HOTEL", "K_DAG_IT", "K_DAG_FINANS", "K_DAG_FAST", "K_DAG_FORETJ", "K_DAG_OFF", "K_DAG_KULT"]
+          }
+        ]
+      },
+      {
+        "id": "forandring",
+        "namn": "Förändring mot samma månad föregående år",
+        "kpi_ids": ["K_SYSS_FORANDR", "K_ARBL_FORANDR", "K_DAG_TILLVAXT"]
+      }
+    ],
+    "visningsnamn": {
+      "K_SYSS_TOT": "Sysselsättningsgrad (prelim.)",
+      "K_SYSS_ANT": "Antal sysselsatta (prelim.)",
+      "K_SYSS_INR": "Sysselsättningsgrad, inrikes födda (prelim.)",
+      "K_SYSS_UTR": "Sysselsättningsgrad, utrikes födda (prelim.)",
+      "K_SYSS_KV": "Sysselsättningsgrad, kvinnor (prelim.)",
+      "K_SYSS_MAN": "Sysselsättningsgrad, män (prelim.)",
+      "K_ARBL_TOT": "Arbetslöshetsgrad (prelim.)",
+      "K_ARBL_ANT": "Antal arbetslösa (prelim.)",
+      "K_ARBL_INR": "Arbetslöshetsgrad, inrikes födda (prelim.)",
+      "K_ARBL_UTR": "Arbetslöshetsgrad, utrikes födda (prelim.)",
+      "K_ARBL_KV": "Arbetslöshetsgrad, kvinnor (prelim.)",
+      "K_ARBL_MAN": "Arbetslöshetsgrad, män (prelim.)",
+      "K_ARKR_TOT": "Arbetskraftsdeltagande (prelim.)",
+      "K_ARKR_KV": "Arbetskraftsdeltagande, kvinnor (prelim.)",
+      "K_ARKR_MAN": "Arbetskraftsdeltagande, män (prelim.)",
+      "K_DAG_TOT": "Sysselsatta dagbefolkning, totalt (prelim.)",
+      "K_DAG_JORD": "Sysselsatta, jordbruk m.m. (prelim.)",
+      "K_DAG_IND": "Sysselsatta, tillverkning (prelim.)",
+      "K_DAG_ENMI": "Sysselsatta, energi och miljö (prelim.)",
+      "K_DAG_BYG": "Sysselsatta, bygg (prelim.)",
+      "K_DAG_HAND": "Sysselsatta, handel (prelim.)",
+      "K_DAG_TRANS": "Sysselsatta, transport (prelim.)",
+      "K_DAG_HOTEL": "Sysselsatta, hotell & restaurang (prelim.)",
+      "K_DAG_IT": "Sysselsatta, IT och kommunikation (prelim.)",
+      "K_DAG_FINANS": "Sysselsatta, finans och försäkring (prelim.)",
+      "K_DAG_FAST": "Sysselsatta, fastigheter (prelim.)",
+      "K_DAG_FORETJ": "Sysselsatta, företagstjänster (prelim.)",
+      "K_DAG_OFF": "Sysselsatta, offentlig sektor (prelim.)",
+      "K_DAG_KULT": "Sysselsatta, kultur m.m. (prelim.)",
+      "K_SYSS_FORANDR": "Sysselsättningsgrad, årsförändring (procentenheter)",
+      "K_ARBL_FORANDR": "Arbetslöshet, årsförändring (procentenheter)",
+      "K_DAG_TILLVAXT": "Dagbefolkning, årsförändring (procent)"
+    }
+  },
+  {
     "tema_id": "naringsliv",
     "tema_namn": "Näringsliv",
     "tema_farg": "rod",
@@ -337,6 +435,62 @@
       "N_YRK_EGAB_KV_A": "Andel kvinnor, företagare i ab",
       "N_YRK_EGFOR_KV": "Andel kvinnor, egenföretagare",
       "N_YRK_EGFOR_KV_A": "Andel kvinnor, egenföretagare"
+    }
+  },
+  {
+    "tema_id": "turism",
+    "tema_namn": "Turism & besöksnäring",
+    "tema_farg": "rod",
+    "sektioner": [
+      {
+        "id": "gastnatter",
+        "namn": "Gästnätter",
+        "kpi_ids": ["T_GAST_TOT", "T_GAST_PER_INV"],
+        "undersektioner": [
+          {
+            "namn": "Per anläggningstyp",
+            "kpi_ids": ["T_GAST_HOTELL", "T_GAST_CAMPING", "T_GAST_STUGBY", "T_GAST_VANDRARHEM", "T_GAST_SOL"]
+          }
+        ]
+      },
+      {
+        "id": "marknad",
+        "namn": "Inhemska och utländska gäster",
+        "kpi_ids": ["T_GAST_SVE", "T_GAST_UTL", "T_ANDEL_UTL_NATTER", "T_ANKOMST_SVE", "T_ANKOMST_UTL", "T_ANDEL_UTL"]
+      },
+      {
+        "id": "tillvaxt",
+        "namn": "Utveckling och tillväxt",
+        "kpi_ids": ["T_GAST_TILLVAXT", "T_INTAKT_TILLVAXT"]
+      },
+      {
+        "id": "kapacitet",
+        "namn": "Kapacitet och intäkter",
+        "kpi_ids": ["T_BELAGG_RUM", "T_BELAGG_BADD", "T_LOGIINTAKT", "T_INTAKT_PER_GAST", "T_GAST_PER_ANLAGG", "T_ANLAGGNINGAR"]
+      }
+    ],
+    "visningsnamn": {
+      "T_GAST_TOT": "Gästnätter, totalt",
+      "T_GAST_HOTELL": "Gästnätter, hotell",
+      "T_GAST_CAMPING": "Gästnätter, camping",
+      "T_GAST_STUGBY": "Gästnätter, stugbyar",
+      "T_GAST_VANDRARHEM": "Gästnätter, vandrarhem",
+      "T_GAST_SOL": "Gästnätter, förmedlade stugor och lägenheter",
+      "T_GAST_SVE": "Gästnätter, svenska gäster",
+      "T_GAST_UTL": "Gästnätter, utländska gäster",
+      "T_ANDEL_UTL_NATTER": "Andel utländska gästnätter",
+      "T_ANKOMST_SVE": "Gästankomster, svenska",
+      "T_ANKOMST_UTL": "Gästankomster, utländska",
+      "T_ANDEL_UTL": "Andel utländska gästankomster",
+      "T_BELAGG_RUM": "Rumsbeläggning",
+      "T_BELAGG_BADD": "Bäddbeläggning",
+      "T_LOGIINTAKT": "Logiintäkter",
+      "T_ANLAGGNINGAR": "Antal anläggningar",
+      "T_INTAKT_PER_GAST": "Logiintäkt per gästnatt",
+      "T_GAST_PER_ANLAGG": "Gästnätter per anläggning",
+      "T_GAST_PER_INV": "Gästnätter per invånare",
+      "T_GAST_TILLVAXT": "Gästnätter, årlig förändring",
+      "T_INTAKT_TILLVAXT": "Logiintäkter, årlig förändring"
     }
   },
   {

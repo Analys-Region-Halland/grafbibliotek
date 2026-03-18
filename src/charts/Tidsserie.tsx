@@ -2,7 +2,7 @@ import { useRef, useEffect, useCallback, useMemo } from "react";
 import * as d3 from "d3";
 import type { KpiRow } from "../types";
 import { HALLAND_KODER } from "../types";
-import { fmt } from "../utils/format";
+import { fmt, fmtPeriod, isMonthly } from "../utils/format";
 
 export type VisningsLage = "alla" | "halland" | "egen";
 
@@ -348,10 +348,20 @@ export default function Tidsserie({
     }
 
     const allYears = kpiData.map((d) => d.ar);
+    const monthly = allYears.length > 0 && isMonthly(allYears[0]);
+
+    // Månadsdata: konvertera YYYYMM till sekventiellt index för jämn x-skala
+    // (annars blir det 89 enheters hopp vid varje årsskifte)
+    const uniquePeriods = [...new Set(allYears)].sort((a, b) => a - b);
+    const periodIndex = new Map(uniquePeriods.map((p, i) => [p, i]));
+    const toX = (ar: number) => periodIndex.get(ar) ?? 0;
 
     const x = d3.scaleLinear()
-      .domain(d3.extent(allYears) as [number, number])
+      .domain(monthly ? [0, uniquePeriods.length - 1] : d3.extent(allYears) as [number, number])
       .range([0, w]);
+
+    // Wrapper: period → pixel
+    const xp = (ar: number) => monthly ? x(toX(ar)) : x(ar);
 
     let [yMin, yMax] = d3.extent(relevantValues) as [number, number];
     if (visningsLage === "egen") {
@@ -460,25 +470,41 @@ export default function Tidsserie({
 
     const years = [...new Set(allYears)].sort();
     const yearDom = d3.extent(years) as [number, number];
-    const tickYears = years.filter(
-      (yr) => yr % 5 === 0 || yr === yearDom[0] || yr === yearDom[1]
-    );
+
+    // X-axel-ticks: januarimånader för månadsdata, var 5:e år för årsdata
+    let tickYears: number[];
+    if (monthly) {
+      // Visa januari-ticks (YYYY01) + senaste punkt
+      tickYears = years.filter(
+        (yr) => yr % 100 === 1 || yr === yearDom[1]
+      );
+      // Glesa ut om det blir för tätt
+      if (tickYears.length > 8) {
+        tickYears = tickYears.filter(
+          (yr, i) => yr % 200 === 1 || yr === yearDom[1] || i === 0
+        );
+      }
+    } else {
+      tickYears = years.filter(
+        (yr) => yr % 5 === 0 || yr === yearDom[0] || yr === yearDom[1]
+      );
+    }
     tickYears.forEach((yr) => {
       g.append("line")
-        .attr("x1", x(yr)).attr("x2", x(yr))
+        .attr("x1", xp(yr)).attr("x2", xp(yr))
         .attr("y1", h).attr("y2", h + 6)
         .attr("stroke", "#000").attr("stroke-width", 0.8);
       g.append("text")
-        .attr("x", x(yr)).attr("y", h + 22)
+        .attr("x", xp(yr)).attr("y", h + 22)
         .attr("text-anchor", "middle")
         .attr("fill", "#000").attr("font-size", `${axisFontSize}px`)
         .attr("font-family", FONT)
-        .text(yr);
+        .text(monthly ? fmtPeriod(yr) : String(yr));
     });
 
     const line = d3.line<KpiRow>()
       .defined((d) => d.varde != null)
-      .x((d) => x(d.ar))
+      .x((d) => xp(d.ar))
       .y((d) => y(d.varde!))
       .curve(d3.curveMonotoneX);
 
@@ -500,7 +526,7 @@ export default function Tidsserie({
     // ─── Mediankommun — visas i alla + halland ───
     const visaRef = visningsLage !== "egen";
     const medianLine = d3.line<{ ar: number; varde: number }>()
-      .x((d) => x(d.ar))
+      .x((d) => xp(d.ar))
       .y((d) => y(d.varde))
       .curve(d3.curveMonotoneX);
 
@@ -515,7 +541,7 @@ export default function Tidsserie({
         .attr("stroke-width", 1.4);
       if (medianLast) {
         g.append("circle")
-          .attr("cx", x(medianLast.ar)).attr("cy", y(medianLast.varde))
+          .attr("cx", xp(medianLast.ar)).attr("cy", y(medianLast.varde))
           .attr("r", 3.5).attr("fill", "#777");
       }
     }
@@ -533,7 +559,7 @@ export default function Tidsserie({
         .attr("stroke-width", 1.8);
       if (riksLast?.varde != null) {
         g.append("circle")
-          .attr("cx", x(riksLast.ar)).attr("cy", y(riksLast.varde))
+          .attr("cx", xp(riksLast.ar)).attr("cy", y(riksLast.varde))
           .attr("r", 3.5).attr("fill", "#444");
       }
     }
@@ -554,7 +580,7 @@ export default function Tidsserie({
         const last = sorted[sorted.length - 1];
         if (last?.varde != null) {
           g.append("circle")
-            .attr("cx", x(last.ar)).attr("cy", y(last.varde))
+            .attr("cx", xp(last.ar)).attr("cy", y(last.varde))
             .attr("r", 2).attr("fill", "#DCDCDC");
         }
       });
@@ -572,9 +598,23 @@ export default function Tidsserie({
         .attr("stroke", "#00664D")
         .attr("stroke-width", 3);
 
+      // Månadsdata: referenspunkter vid samma månad alla föregående år
+      if (monthly && kommunLast) {
+        const lastMonth = kommunLast.ar % 100;
+        kommunSorted.forEach((d) => {
+          if (d.ar !== kommunLast.ar && d.ar % 100 === lastMonth && d.varde != null) {
+            g.append("circle")
+              .attr("cx", xp(d.ar)).attr("cy", y(d.varde))
+              .attr("r", 3)
+              .attr("fill", "#00664D")
+              .attr("opacity", 0.4);
+          }
+        });
+      }
+
       if (kommunLast?.varde != null) {
         g.append("circle")
-          .attr("cx", x(kommunLast.ar)).attr("cy", y(kommunLast.varde))
+          .attr("cx", xp(kommunLast.ar)).attr("cy", y(kommunLast.varde))
           .attr("r", 4.5).attr("fill", "#00664D");
 
         g.append("line")
@@ -586,7 +626,7 @@ export default function Tidsserie({
       const kommunFirst = kommunSorted[0];
       if (kommunFirst?.varde != null) {
         g.append("circle")
-          .attr("cx", x(kommunFirst.ar)).attr("cy", y(kommunFirst.varde))
+          .attr("cx", xp(kommunFirst.ar)).attr("cy", y(kommunFirst.varde))
           .attr("r", 2.5).attr("fill", "#00664D").attr("opacity", 0.5);
       }
     }
@@ -690,13 +730,21 @@ export default function Tidsserie({
       .attr("fill", "none").attr("pointer-events", "all")
       .on("mousemove", (event) => {
         const [mx] = d3.pointer(event);
-        const year = Math.round(x.invert(mx));
+        // Hitta närmaste period (index-baserat för månadsdata)
+        let year: number;
+        if (monthly) {
+          const idx = Math.round(x.invert(mx));
+          const clamped = Math.max(0, Math.min(uniquePeriods.length - 1, idx));
+          year = uniquePeriods[clamped];
+        } else {
+          year = Math.round(x.invert(mx));
+        }
         const kommunRow = kommunSorted.find((d) => d.ar === year);
         const riksRow = riksSorted.find((d) => d.ar === year);
         if (!kommunRow?.varde) return;
 
-        focusLine.attr("x1", x(year)).attr("x2", x(year)).attr("opacity", 0.15);
-        focusDot.attr("cx", x(year)).attr("cy", y(kommunRow.varde)).attr("opacity", 1);
+        focusLine.attr("x1", xp(year)).attr("x2", xp(year)).attr("opacity", 0.15);
+        focusDot.attr("cx", xp(year)).attr("cy", y(kommunRow.varde)).attr("opacity", 1);
 
         const riksText = riksRow?.varde != null
           ? `<br><span style="color:#555">Riket: ${fmtY(riksRow.varde, enhet)}</span>`
@@ -706,10 +754,10 @@ export default function Tidsserie({
           : "";
 
         tooltipEl.style.opacity = "1";
-        tooltipEl.style.left = `${margin.left + x(year) + 14}px`;
+        tooltipEl.style.left = `${margin.left + xp(year) + 14}px`;
         tooltipEl.style.top = `${margin.top + y(kommunRow.varde) - 28}px`;
         tooltipEl.innerHTML =
-          `<span style="color:#444">${year}</span><br>` +
+          `<span style="color:#444">${monthly ? fmtPeriod(year) : year}</span><br>` +
           `<span style="color:#00664D;font-weight:600">${valdKommunNamn}: ${fmtY(kommunRow.varde, enhet)}</span>` +
           riksText + rangText;
       })

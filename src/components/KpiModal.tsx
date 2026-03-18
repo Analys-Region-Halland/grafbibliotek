@@ -3,13 +3,15 @@ import type { KpiRow, KpiMeta } from "../types";
 import Tidsserie, { downloadSvgAsPng, downloadSvgAsFile } from "../charts/Tidsserie";
 import type { VisningsLage } from "../charts/Tidsserie";
 import KartaVy from "../charts/KartaVy";
-import { getAllVisningsnamn, getAllNettoKpis } from "../teman";
+import { getAllVisningsnamn, getAllNettoKpis, getAllIngetIndex } from "../teman";
 import { fullKalla } from "../utils/kalla";
+import { fmtPeriod } from "../utils/format";
 import { useContainerWidth } from "../hooks/useContainerWidth";
 import { useMapData } from "../hooks/useMapData";
 
-// Hämta visningsnamn och netto-KPI:er från tema-registret
+// Hämta visningsnamn, netto-KPI:er och index-undantag från tema-registret
 const VISNINGSNAMN = getAllVisningsnamn();
+const INGET_INDEX = getAllIngetIndex();
 
 /** Rensat visningsnamn med fallback */
 function visningsNamn(kpiId: string, fallback: string): string {
@@ -115,7 +117,7 @@ export default function KpiModal({
     if (years.length === 0) return "";
     const min = Math.min(...years);
     const max = Math.max(...years);
-    return min === max ? `${min}` : `${min}–${max}`;
+    return min === max ? fmtPeriod(min) : `${fmtPeriod(min)}–${fmtPeriod(max)}`;
   }, [allData, aktivtKpiId]);
 
   // Basår för index
@@ -285,7 +287,7 @@ export default function KpiModal({
               </>
             )}
 
-            {aktivtEnhet === "antal" && !isNetto && (
+            {aktivtEnhet === "antal" && !isNetto && !INGET_INDEX.has(kpiId) && (
               <>
                 <span className="w-px h-4 bg-neutral-200 mx-0.5 sm:mx-1.5 hidden sm:block" />
                 <button

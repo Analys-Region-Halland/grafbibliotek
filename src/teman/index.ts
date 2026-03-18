@@ -5,6 +5,8 @@ import arbetsmarknad from "./arbetsmarknad";
 import utbildning from "./utbildning";
 import bostader from "./bostader";
 import naringsliv from "./naringsliv";
+import turism from "./turism";
+import konjunktur from "./konjunktur";
 
 // Lägg till nya teman här i den ordning de ska visas
 export const TEMAN: TemaConfig[] = [
@@ -13,6 +15,8 @@ export const TEMAN: TemaConfig[] = [
   utbildning,
   bostader,
   naringsliv,
+  turism,
+  konjunktur,
 ];
 
 /** Hämta ett tema baserat på ID */
@@ -25,6 +29,15 @@ export function getAllNettoKpis(): Set<string> {
   const ids = new Set<string>();
   for (const tema of TEMAN) {
     for (const id of tema.nettoKpis ?? []) ids.add(id);
+  }
+  return ids;
+}
+
+/** Samla alla KPI:er som inte ska ha index-toggle */
+export function getAllIngetIndex(): Set<string> {
+  const ids = new Set<string>();
+  for (const tema of TEMAN) {
+    for (const id of tema.ingetIndex ?? []) ids.add(id);
   }
   return ids;
 }
