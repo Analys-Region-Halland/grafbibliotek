@@ -15,7 +15,10 @@ export interface KpiRow {
   rang_total: number | null;
   antal_kommuner: number | null;
   trend_5ar: number | null;
+  trend_10ar: number | null;
   trend_riktning: string | null;
+  ki_lower: number | null;
+  ki_upper: number | null;
 }
 
 /** Slim JSON-format från per-tema-filer (korta nycklar, inga redundanta kolumner) */
@@ -29,6 +32,9 @@ export interface SlimRow {
   rg: number | null;  // rang_total
   n: number | null;   // antal_kommuner
   t5: number | null;  // trend_5ar
+  t10: number | null; // trend_10ar
+  kl: number | null;  // ki_lower
+  kh: number | null;  // ki_upper
 }
 
 /** Kommun-register: kort nyckelformat */

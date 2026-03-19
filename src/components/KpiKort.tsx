@@ -28,14 +28,13 @@ function trendCls(v: number | null): string {
 }
 
 /** Trendrad — definierad utanför komponenten så den inte återskapas */
-function TrendRow({ label, value, d }: { label: string; value: number | null; d: number }) {
-  const s = fmtTrend(value, d);
-  if (!s) return null;
+function TrendRow({ label, value, d }: { label: string; value: number | null | undefined; d: number }) {
+  const s = fmtTrend(value ?? null, d);
   return (
     <div className="flex items-baseline justify-between gap-2">
       <span className="font-data text-[11px] text-neutral-500">{label}</span>
-      <span className={`font-data text-[12px] font-semibold tabular-nums ${trendCls(value)}`}>
-        {s}
+      <span className={`font-data text-[12px] font-semibold tabular-nums ${s ? trendCls(value ?? null) : "text-neutral-300"}`}>
+        {s ?? "–"}
       </span>
     </div>
   );
@@ -60,22 +59,25 @@ function KpiKortInner({
   }, []);
 
   // Tooltip via portal — undviker overflow-hidden
-  const [showTip, setShowTip] = useState(false);
+  const [showTip, setShowTip] = useState<"beskrivning" | "ki" | "ej_jamforbar" | null>(null);
   const [tipPos, setTipPos] = useState({ x: 0, y: 0 });
   const tipTrigger = useRef<HTMLDivElement>(null);
+  const kiTrigger = useRef<HTMLSpanElement>(null);
+  const ejJamfTrigger = useRef<HTMLSpanElement>(null);
   const tipTimer = useRef<number>(0);
-  const onTipEnter = useCallback(() => {
+
+  const openTip = useCallback((kind: "beskrivning" | "ki" | "ej_jamforbar", triggerRef: React.RefObject<HTMLElement | null>) => {
     tipTimer.current = window.setTimeout(() => {
-      if (tipTrigger.current) {
-        const r = tipTrigger.current.getBoundingClientRect();
-        setTipPos({ x: r.left, y: r.top - 8 });
+      if (triggerRef.current) {
+        const r = triggerRef.current.getBoundingClientRect();
+        setTipPos({ x: r.left, y: r.bottom + 8 });
       }
-      setShowTip(true);
+      setShowTip(kind);
     }, 300);
   }, []);
-  const onTipLeave = useCallback(() => {
+  const closeTip = useCallback(() => {
     clearTimeout(tipTimer.current);
-    setShowTip(false);
+    setShowTip(null);
   }, []);
 
   const sorted = useMemo(() =>
@@ -83,7 +85,6 @@ function KpiKortInner({
   [data]);
   const senaste = sorted[0] ?? null;
   const forega = sorted[1] ?? null;
-  const forsta = sorted[sorted.length - 1] ?? null;
 
   if (!senaste) return null;
 
@@ -97,10 +98,11 @@ function KpiKortInner({
   const t1 = senaste.varde != null && forega?.varde != null
     ? senaste.varde - forega.varde : null;
   const t5 = senaste.trend_5ar;
-  const tTotal = senaste.varde != null && forsta?.varde != null && forsta.ar !== senaste.ar
-    ? senaste.varde - forsta.varde : null;
-  const totalLabel = forsta && forsta.ar !== senaste.ar
-    ? `${fmtPeriod(forsta.ar)}–${fmtPeriod(senaste.ar)}` : null;
+  const t10 = senaste.trend_10ar;
+
+  // Konfidensintervall (enkätdata från FoHM)
+  const harKI = senaste.ki_lower != null && senaste.ki_upper != null;
+  const kiStr = harKI ? `(${fmt(senaste.ki_lower!, dec)}–${fmt(senaste.ki_upper!, dec)})` : null;
 
   // Ranking
   const rang = senaste.rang_total;
@@ -121,9 +123,10 @@ function KpiKortInner({
 
   return (
     <div
-      className={`${cardAnim} bg-white rounded-xl border border-neutral-200/70 relative
+      className={`${cardAnim} bg-white rounded-xl border border-neutral-200/50 relative
+                 shadow-[0_1px_3px_rgba(0,0,0,0.04)]
                  hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]
-                 transition-all duration-200
+                 transition-all duration-200 flex flex-col
                  ${compact ? "border-l-[3px]" : ""}`}
       style={{
         animationDelay: `${animDelay}ms`,
@@ -132,36 +135,41 @@ function KpiKortInner({
     >
       {/* Klickbar kortyta — öppnar graf/karta */}
       <div
-        className={`cursor-pointer group/card ${compact ? "px-3.5 pt-3 pb-3" : "px-5 pt-4 pb-4"}`}
+        role="button"
+        tabIndex={0}
+        className={`cursor-pointer group/card flex-1 rounded-xl
+                   focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gron-2
+                   ${compact ? "px-3.5 pt-3 pb-2.5" : "px-5 pt-4 pb-3"}`}
         onClick={onClick}
+        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onClick(); } }}
       >
         {/* Rad 1: Rubrik + "Visa graf" */}
-        <div className="flex items-start justify-between gap-2 mb-3">
+        <div className="flex items-start justify-between gap-2 mb-2">
           <div
             ref={tipTrigger}
-            className="min-w-0"
-            onMouseEnter={beskrivning ? onTipEnter : undefined}
-            onMouseLeave={beskrivning ? onTipLeave : undefined}
+            className="min-w-0 group/tip"
+            onMouseEnter={beskrivning ? () => openTip("beskrivning", tipTrigger) : undefined}
+            onMouseLeave={beskrivning ? closeTip : undefined}
           >
-            <div className="flex items-start gap-2">
+            <div className="flex items-start gap-1.5">
               {!compact && (
                 <div className={`w-1.5 h-1.5 rounded-full ${dotColor} shrink-0 mt-[5px]`} />
               )}
               <h3
-                className={`font-data font-medium text-neutral-900 leading-snug
-                           ${compact ? "text-[11.5px] min-h-[2.75em]" : "text-[13px] min-h-[2.75em]"}
-                           ${beskrivning ? "decoration-neutral-300 decoration-dotted underline underline-offset-2" : ""}`}
+                className={`font-data font-medium text-neutral-900 leading-snug line-clamp-2
+                           ${compact ? "text-[11.5px] min-h-[2.5em]" : "text-[13px] min-h-[2.5em]"}
+                           ${beskrivning ? "decoration-neutral-300 decoration-dotted underline underline-offset-2 cursor-help" : ""}`}
               >
                 {kortNamn}
               </h3>
             </div>
           </div>
 
-          {/* Visa graf & karta — poppar fram vid hover */}
+          {/* Visa graf & karta — svagt synlig, full opacity vid hover */}
           <div className="shrink-0 flex items-center gap-1.5 px-2 py-1 rounded-md
-                           opacity-0 translate-x-1 group-hover/card:opacity-100 group-hover/card:translate-x-0
+                           opacity-[0.15] group-hover/card:opacity-100
                            transition-all duration-200
-                           bg-neutral-900 text-white shadow-sm">
+                           bg-neutral-900 text-white ring-1 ring-neutral-200">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                    strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
@@ -181,13 +189,35 @@ function KpiKortInner({
             <span className={`font-data ${valueSize} font-bold text-neutral-900 tracking-tight leading-none block`}>
               {vardeStr}
             </span>
-            {rang != null && (
-              <span className={`font-data text-[11.5px] font-semibold ${rangColor} block mt-1`}>
+            {harKI && kiStr && (
+              <span
+                ref={kiTrigger}
+                className="font-data text-[10px] text-neutral-400 block mt-0.5
+                           decoration-neutral-300 decoration-dotted underline underline-offset-2 cursor-help"
+                onMouseEnter={() => openTip("ki", kiTrigger)}
+                onMouseLeave={closeTip}
+              >
+                95 % KI: {kiStr}
+              </span>
+            )}
+            {rang != null && nKommuner > 1 && (
+              <span className={`font-data text-[11.5px] font-semibold ${rangColor} block mt-0.5`}>
                 Plats {rang} <span className="text-neutral-500 font-normal">av {nKommuner}</span>
               </span>
             )}
+            {rang != null && nKommuner <= 1 && (
+              <span
+                ref={ejJamfTrigger}
+                className="font-data text-[10.5px] text-neutral-400 block mt-0.5
+                           decoration-neutral-300 decoration-dotted underline underline-offset-2 cursor-help"
+                onMouseEnter={() => openTip("ej_jamforbar", ejJamfTrigger)}
+                onMouseLeave={closeTip}
+              >
+                Ej jämförbar
+              </span>
+            )}
             <span className="font-data text-[10.5px] text-neutral-600 block mt-0.5">
-              {enhet} · {fmtPeriod(senaste.ar)}
+              {harKI ? "enkätdata" : enhet} · {fmtPeriod(senaste.ar)}
             </span>
           </div>
 
@@ -196,7 +226,7 @@ function KpiKortInner({
             <div className="space-y-1">
               <TrendRow label="1 år" value={t1} d={trendDec} />
               <TrendRow label="5 år" value={t5} d={trendDec} />
-              {totalLabel && <TrendRow label={totalLabel} value={tTotal} d={trendDec} />}
+              <TrendRow label="10 år" value={t10} d={trendDec} />
             </div>
           </div>
         </div>
@@ -248,28 +278,87 @@ function KpiKortInner({
         )
       )}
 
-      {/* Tooltip via portal — renderas utanför overflow-hidden */}
-      {beskrivning && showTip && createPortal(
-        <div
-          className="fixed z-[9999] w-[300px] max-w-[90vw]
-                     bg-neutral-800 text-neutral-100 font-data text-[11.5px] leading-relaxed
-                     px-4 py-3 rounded-lg shadow-2xl pointer-events-none"
-          style={{
-            left: Math.min(tipPos.x, window.innerWidth - 320),
-            top: tipPos.y,
-            transform: "translateY(-100%)",
-          }}
-        >
-          <p className="text-neutral-400 text-[10px] font-semibold mb-1.5">Beskrivning</p>
-          <p className="text-neutral-200">{beskrivning}</p>
+      {/* Tooltip — beskrivning */}
+      {showTip === "beskrivning" && beskrivning && createPortal(
           <div
-            className="absolute left-4 top-full w-0 h-0
-                       border-l-[6px] border-l-transparent
-                       border-r-[6px] border-r-transparent
-                       border-t-[6px] border-t-neutral-800"
-          />
-        </div>,
-        document.body,
+            className="fixed z-[9999] w-[300px] max-w-[90vw]
+                       bg-neutral-800 text-neutral-100 font-data text-[11.5px] leading-relaxed
+                       px-4 py-3 rounded-lg shadow-2xl pointer-events-none"
+            style={{
+              left: Math.min(tipPos.x, window.innerWidth - 320),
+              top: tipPos.y,
+            }}
+          >
+            <div
+              className="absolute left-4 bottom-full w-0 h-0
+                         border-l-[6px] border-l-transparent
+                         border-r-[6px] border-r-transparent
+                         border-b-[6px] border-b-neutral-800"
+            />
+            <p className="text-neutral-400 text-[10px] font-semibold mb-1.5">Beskrivning</p>
+            <p className="text-neutral-200">{beskrivning}</p>
+          </div>,
+          document.body,
+      )}
+
+      {/* Tooltip — konfidensintervall */}
+      {showTip === "ki" && createPortal(
+          <div
+            className="fixed z-[9999] w-[300px] max-w-[90vw]
+                       bg-neutral-800 text-neutral-100 font-data text-[11.5px] leading-relaxed
+                       px-4 py-3 rounded-lg shadow-2xl pointer-events-none"
+            style={{
+              left: Math.min(tipPos.x, window.innerWidth - 320),
+              top: tipPos.y,
+            }}
+          >
+            <div
+              className="absolute left-4 bottom-full w-0 h-0
+                         border-l-[6px] border-l-transparent
+                         border-r-[6px] border-r-transparent
+                         border-b-[6px] border-b-neutral-800"
+            />
+            <p className="text-neutral-400 text-[10px] font-semibold mb-1.5">Om konfidensintervall</p>
+            <p className="text-neutral-200">
+              Uppgifterna bygger på en urvalsundersökning och redovisas med
+              95-procentigt konfidensintervall. Det innebär att det verkliga
+              värdet med stor sannolikhet ligger inom det angivna intervallet
+              — i 19 av 20 fall. Bredare intervall innebär större osäkerhet,
+              ofta på grund av färre svarande. Data redovisas som
+              fyraårsmedelvärden för att ge tillräckligt underlag på kommunnivå.
+            </p>
+            <p className="text-neutral-500 text-[10px] mt-1.5">
+              Källa: Folkhälsomyndigheten, Nationella folkhälsoenkäten
+            </p>
+          </div>,
+          document.body,
+      )}
+
+      {/* Tooltip — ej jämförbar */}
+      {showTip === "ej_jamforbar" && createPortal(
+          <div
+            className="fixed z-[9999] w-[280px] max-w-[90vw]
+                       bg-neutral-800 text-neutral-100 font-data text-[11.5px] leading-relaxed
+                       px-4 py-3 rounded-lg shadow-2xl pointer-events-none"
+            style={{
+              left: Math.min(tipPos.x, window.innerWidth - 300),
+              top: tipPos.y,
+            }}
+          >
+            <div
+              className="absolute left-4 bottom-full w-0 h-0
+                         border-l-[6px] border-l-transparent
+                         border-r-[6px] border-r-transparent
+                         border-b-[6px] border-b-neutral-800"
+            />
+            <p className="text-neutral-400 text-[10px] font-semibold mb-1.5">Ranking saknas</p>
+            <p className="text-neutral-200">
+              Indikatorn är beräknad utifrån data som för närvarande bara
+              finns för den valda enheten. Den kan därför inte rangordnas
+              eller jämföras med andra kommuner eller regioner.
+            </p>
+          </div>,
+          document.body,
       )}
     </div>
   );

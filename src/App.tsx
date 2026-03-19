@@ -7,6 +7,7 @@ import TemaNav from "./components/TemaNav";
 import TemaBlock from "./components/TemaBlock";
 import KpiModal from "./components/KpiModal";
 import GuidadBerattelse from "./components/GuidadBerattelse";
+import OmModal from "./components/OmModal";
 import { fmtInt } from "./utils/format";
 
 /** Alla netto-KPI:er samlade från samtliga teman */
@@ -19,6 +20,7 @@ export default function App() {
   const [valdKommun, setValdKommun] = useState("0013");
   const [openKpi, setOpenKpi] = useState<string | null>(null);
   const [visaBerattelse, setVisaBerattelse] = useState(false);
+  const [visaOm, setVisaOm] = useState(false);
 
   const valdEnhet = HALLAND_KOMMUNER.find((k) => k.kod === valdKommun);
   const kommunNamn = valdEnhet?.namn ?? "";
@@ -155,50 +157,51 @@ export default function App() {
         <div className="h-[3px] bg-gradient-to-r from-gron-1 via-gron-2 to-gron-3/60" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          {/* Rad 1: Logo + titel + vald kommun */}
-          <div className="flex items-center justify-between pt-3 sm:pt-4 pb-2.5">
-            <div className="flex items-center gap-3 sm:gap-4">
+          {/* Rad 1: Logo + titel + kommunväljare + Om */}
+          <div className="flex items-center justify-between gap-3 pt-3 pb-2">
+            <div className="flex items-center gap-3 sm:gap-4 min-w-0">
               <img
                 src={`${import.meta.env.BASE_URL}logo_farg.svg`}
                 alt="Region Halland"
-                className="h-7 sm:h-9"
+                className="h-7 sm:h-8 shrink-0"
               />
-              <div className="border-l border-neutral-200 pl-3 sm:pl-4">
-                <h1 className="text-[16px] sm:text-[20px] font-bold text-neutral-900 tracking-tight leading-tight">
+              <div className="border-l border-neutral-200 pl-3 sm:pl-4 shrink-0">
+                <h1 className="text-[17px] sm:text-[20px] font-bold text-neutral-900 tracking-tight leading-tight">
                   Halland i siffror
                 </h1>
-                <p className="text-[10px] sm:text-[11.5px] text-neutral-400 tracking-wide mt-0.5">
-                  överblick, jämförelse och utveckling
+                <p className="font-data text-[10px] text-neutral-400 mt-0.5">
+                  {fmtInt(invånare)} invånare · {senasteAr}
                 </p>
               </div>
+              <div className="hidden lg:block ml-1">
+                <KommunValjare vald={valdKommun} onChange={setValdKommun} />
+              </div>
             </div>
-            <div className="text-right shrink-0 pl-4">
-              <p className="font-data text-[15px] sm:text-[18px] font-bold text-neutral-900 tracking-tight leading-tight">
-                {kommunNamn}
-              </p>
-              <p className="font-data text-[10px] text-neutral-400 mt-0.5">
-                {fmtInt(invånare)} invånare · {senasteAr}
-              </p>
-            </div>
+            <button
+              onClick={() => setVisaOm(true)}
+              className="font-data text-[11px] font-medium text-neutral-500
+                         hover:text-neutral-800 hover:bg-neutral-100
+                         px-2.5 py-1 rounded-md transition-colors cursor-pointer shrink-0
+                         focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gron-2"
+            >
+              Om
+            </button>
           </div>
 
-          {/* Rad 2: Kommunväljare */}
-          <div className="pb-2">
+          {/* Mobil/tablet: kommunväljare på egen rad */}
+          <div className="lg:hidden pb-1.5">
             <KommunValjare vald={valdKommun} onChange={setValdKommun} />
           </div>
 
-          {/* Separator */}
-          <div className="border-t border-neutral-100" />
-
-          {/* Rad 3: Temanavigation */}
-          <div className="py-2">
+          {/* Rad 2: Temanavigation */}
+          <div className="border-t border-neutral-100 py-1.5">
             <TemaNav aktivtTema={aktivtTema} onChange={handleTemaChange} />
           </div>
         </div>
       </header>
 
       {/* ── Innehåll ── */}
-      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 py-5 sm:py-6 flex-1">
+      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-8 flex-1">
         {temaLoading ? (
           <div className="flex flex-col items-center justify-center py-24 gap-3">
             <div className="h-5 w-5 border-2 border-neutral-200 border-t-neutral-500 rounded-full animate-spin" />
@@ -236,7 +239,7 @@ export default function App() {
             <span className="text-[10px] text-neutral-400 font-medium">Halland i siffror</span>
           </div>
           <p className="text-[10px] text-neutral-400">
-            Data: SCB m.fl. och bearbetningar av Region Halland · {senasteAr}
+            Data: RKA Kolada · SCB · Folkhälsomyndigheten · Trafikanalys och bearbetningar av Region Halland · {senasteAr}
           </p>
         </div>
       </footer>
@@ -252,6 +255,9 @@ export default function App() {
           onClose={() => setVisaBerattelse(false)}
         />
       )}
+
+      {/* Om-modal */}
+      {visaOm && <OmModal onClose={() => setVisaOm(false)} />}
 
       {/* KPI-modal (graf/karta) */}
       {openKpi && openKpiMeta && (

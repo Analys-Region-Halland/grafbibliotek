@@ -7,6 +7,9 @@ import bostader from "./bostader";
 import naringsliv from "./naringsliv";
 import turism from "./turism";
 import konjunktur from "./konjunktur";
+import miljoKlimat from "./miljo_klimat";
+import transport from "./transport";
+import socioekonomi from "./socioekonomi";
 
 // Lägg till nya teman här i den ordning de ska visas
 export const TEMAN: TemaConfig[] = [
@@ -17,6 +20,9 @@ export const TEMAN: TemaConfig[] = [
   naringsliv,
   turism,
   konjunktur,
+  miljoKlimat,
+  transport,
+  socioekonomi,
 ];
 
 /** Hämta ett tema baserat på ID */

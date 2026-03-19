@@ -57,6 +57,15 @@ body {
   display: none;
 }
 
+/* Horisontell scroll-snap för temanavigation */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-snap-x > * {
+  scroll-snap-align: start;
+}
+
 /* Kortanimationer */
 @keyframes cardEnter {
   from {

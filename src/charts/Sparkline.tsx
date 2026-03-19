@@ -139,8 +139,15 @@ function SparklineInner({
       const values = valueData.map((d) => d.varde!);
       if (values.length < 2) return;
 
+      // Utöka y-domänen med KI-gränser om de finns
+      let [yMin, yMax] = d3.extent(values) as [number, number];
+      for (const d of valueData) {
+        if (d.ki_lower != null) yMin = Math.min(yMin, d.ki_lower);
+        if (d.ki_upper != null) yMax = Math.max(yMax, d.ki_upper);
+      }
+
       const x = d3.scaleLinear().domain([0, values.length - 1]).range([2, width - 2]);
-      const y = d3.scaleLinear().domain(d3.extent(values) as [number, number]).range([height - 3, 3]);
+      const y = d3.scaleLinear().domain([yMin, yMax]).range([height - 3, 3]);
 
       const line = d3.line<number>()
         .x((_, i) => x(i))
@@ -148,6 +155,23 @@ function SparklineInner({
         .curve(d3.curveMonotoneX);
 
       const monthly = valueData.length > 0 && isMonthly(valueData[0].ar);
+
+      // KI-band — ritas före linjen så det hamnar bakom
+      const hasKI = valueData.some(d => d.ki_lower != null && d.ki_upper != null);
+      if (hasKI && mode === "value") {
+        const kiArea = d3.area<KpiRow>()
+          .defined(d => d.ki_lower != null && d.ki_upper != null && d.varde != null)
+          .x((_d, i) => x(i))
+          .y0(d => y(d.ki_lower!))
+          .y1(d => y(d.ki_upper!));
+
+        svg.append("path")
+          .datum(valueData)
+          .attr("d", kiArea)
+          .attr("fill", LINJE)
+          .attr("fill-opacity", 0.07)
+          .attr("stroke", "none");
+      }
 
       svg.append("path")
         .datum(values)
@@ -202,8 +226,11 @@ function SparklineInner({
           const rect = svgEl.getBoundingClientRect();
           const dec = Math.abs(row.varde) < 10 ? 2 : 1;
           const v = enhet === "antal" ? fmtInt(row.varde) : fmt(row.varde, dec);
+          const kiPart = row.ki_lower != null && row.ki_upper != null
+            ? ` (${fmt(row.ki_lower, dec)}–${fmt(row.ki_upper, dec)})`
+            : "";
           setTip({
-            text: `${fmtPeriod(row.ar)}: ${v}`,
+            text: `${fmtPeriod(row.ar)}: ${v}${kiPart}`,
             x: rect.left + x(idx),
             y: rect.top - 4,
             visible: true,

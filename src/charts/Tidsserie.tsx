@@ -363,6 +363,13 @@ export default function Tidsserie({
     // Wrapper: period → pixel
     const xp = (ar: number) => monthly ? x(toX(ar)) : x(ar);
 
+    // Inkludera KI-gränser i y-domänen så bandet inte klipps
+    const kommunKI = kommunData.filter(d => d.ki_lower != null && d.ki_upper != null);
+    if (kommunKI.length > 0) {
+      relevantValues.push(...kommunKI.map(d => d.ki_lower!));
+      relevantValues.push(...kommunKI.map(d => d.ki_upper!));
+    }
+
     let [yMin, yMax] = d3.extent(relevantValues) as [number, number];
     if (visningsLage === "egen") {
       const span = yMax - yMin || Math.abs(yMax) * 0.1 || 1;
@@ -590,6 +597,24 @@ export default function Tidsserie({
     const kommunSorted = [...kommunData].sort((a, b) => a.ar - b.ar);
     const kommunLast = kommunSorted[kommunSorted.length - 1];
 
+    // KI-band (konfidensintervall) — ritas före linjen så det hamnar bakom
+    const hasKI = kommunSorted.some(d => d.ki_lower != null && d.ki_upper != null);
+    if (hasKI) {
+      const kiArea = d3.area<KpiRow>()
+        .defined(d => d.ki_lower != null && d.ki_upper != null)
+        .x(d => xp(d.ar))
+        .y0(d => y(d.ki_lower!))
+        .y1(d => y(d.ki_upper!))
+        .curve(d3.curveMonotoneX);
+
+      g.append("path")
+        .datum(kommunSorted)
+        .attr("d", kiArea)
+        .attr("fill", "#00664D")
+        .attr("fill-opacity", 0.07)
+        .attr("stroke", "none");
+    }
+
     if (kommunSorted.length > 0) {
       g.append("path")
         .datum(kommunSorted)
@@ -753,13 +778,17 @@ export default function Tidsserie({
           ? `<br><span style="color:#444">${kommunRow.rang_total}/${kommunRow.antal_kommuner}</span>`
           : "";
 
+        const kiText = kommunRow.ki_lower != null && kommunRow.ki_upper != null
+          ? `<br><span style="color:#888;font-size:10px">95 % KI: ${fmtY(kommunRow.ki_lower, enhet)}–${fmtY(kommunRow.ki_upper, enhet)}</span>`
+          : "";
+
         tooltipEl.style.opacity = "1";
         tooltipEl.style.left = `${margin.left + xp(year) + 14}px`;
         tooltipEl.style.top = `${margin.top + y(kommunRow.varde) - 28}px`;
         tooltipEl.innerHTML =
           `<span style="color:#444">${monthly ? fmtPeriod(year) : year}</span><br>` +
           `<span style="color:#00664D;font-weight:600">${valdKommunNamn}: ${fmtY(kommunRow.varde, enhet)}</span>` +
-          riksText + rangText;
+          riksText + rangText + kiText;
       })
       .on("mouseleave", () => {
         focusLine.attr("opacity", 0);

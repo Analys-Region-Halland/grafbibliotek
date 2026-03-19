@@ -12,6 +12,8 @@ export interface Sektion {
   undersektioner?: Undersektion[];
   /** Sortera kort efter senaste värde (fallande) */
   sorteraEfterVarde?: boolean;
+  /** Grupprubrik — renderas som rubrik ovanför kortet när gruppen ändras */
+  gruppRubrik?: string;
 }
 
 export interface TemaConfig {

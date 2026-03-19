@@ -75,6 +75,9 @@ function hydrate(
       rang_total: s.rg,
       antal_kommuner: s.n,
       trend_5ar: s.t5,
+      trend_10ar: s.t10 ?? null,
+      ki_lower: s.kl ?? null,
+      ki_upper: s.kh ?? null,
       // Hydrerade fält
       kpi_namn: m?.kpi_namn ?? "",
       enhet: m?.enhet ?? "",

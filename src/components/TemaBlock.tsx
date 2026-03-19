@@ -100,8 +100,20 @@ export default function TemaBlock({
 
   let cardIdx = 0;
   const cells: React.JSX.Element[] = [];
+  let föregåendeGrupp = "";
 
   for (const sektion of tema.sektioner) {
+    // Grupprubrik — renderas när gruppen ändras
+    if (sektion.gruppRubrik && sektion.gruppRubrik !== föregåendeGrupp) {
+      föregåendeGrupp = sektion.gruppRubrik;
+      cells.push(
+        <div key={`grp-${sektion.gruppRubrik}`} className="col-span-full mt-4 mb-1 first:mt-0">
+          <h3 className="font-data text-[12px] font-semibold text-neutral-600 tracking-wide">
+            {sektion.gruppRubrik}
+          </h3>
+        </div>,
+      );
+    }
     let huvudKpis = resolveKpis(sektion.kpiIds, meta, kommunKpiData);
     if (huvudKpis.length === 0) continue;
 
@@ -228,15 +240,12 @@ export default function TemaBlock({
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>
             <span className="hidden sm:inline">Berättelse</span>
-            <span className="text-[8px] px-1 py-0.5 rounded bg-neutral-100 text-neutral-400 font-semibold uppercase tracking-wider">
-              Beta
-            </span>
           </button>
         )}
       </div>
 
       {/* Kortgrid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
         {cells.map((el) => (
           <Fragment key={el.key}>{el}</Fragment>
         ))}
