@@ -8,7 +8,6 @@ import TemaBlock from "./components/TemaBlock";
 import KpiModal from "./components/KpiModal";
 import GuidadBerattelse from "./components/GuidadBerattelse";
 import OmModal from "./components/OmModal";
-import { fmtInt } from "./utils/format";
 
 /** Alla netto-KPI:er samlade från samtliga teman */
 const NETTO_KPIS = getAllNettoKpis();
@@ -109,13 +108,6 @@ export default function App() {
     return grouped;
   }, [data, valdKommun, isRegion]);
 
-  const invånare = useMemo(() => {
-    const row = data.find(
-      (d) => d.kommun_kod === valdKommun && d.kpi_id === "N01951" && d.ar === senasteAr
-    );
-    return row?.varde ?? null;
-  }, [data, valdKommun, senasteAr]);
-
   const openKpiMeta = meta.find((m) => m.kpi_id === openKpi);
 
   // Laddningsskärm
@@ -169,9 +161,6 @@ export default function App() {
                 <h1 className="text-[17px] sm:text-[20px] font-bold text-neutral-900 tracking-tight leading-tight">
                   Halland i siffror
                 </h1>
-                <p className="font-data text-[10px] text-neutral-400 mt-0.5">
-                  {fmtInt(invånare)} invånare · {senasteAr}
-                </p>
               </div>
               <div className="hidden lg:block ml-1">
                 <KommunValjare vald={valdKommun} onChange={setValdKommun} />

@@ -63,8 +63,8 @@ function hydrate(
     const s = slim[i];
     const m = metaMap.get(s.k);
     const km = kommunMap.get(s.m);
-    const v = s.v;
-    const r = s.r;
+    const v = s.v ?? null;
+    const r = s.r ?? null;
     rows[i] = {
       kpi_id: s.k,
       kommun_kod: s.m,
@@ -72,9 +72,9 @@ function hydrate(
       ar: s.a,
       varde: v,
       riksvarde: r,
-      rang_total: s.rg,
-      antal_kommuner: s.n,
-      trend_5ar: s.t5,
+      rang_total: s.rg ?? null,
+      antal_kommuner: s.n ?? null,
+      trend_5ar: s.t5 ?? null,
       trend_10ar: s.t10 ?? null,
       ki_lower: s.kl ?? null,
       ki_upper: s.kh ?? null,
