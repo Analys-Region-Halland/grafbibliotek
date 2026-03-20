@@ -874,22 +874,22 @@
   },
   {
     "kpi_id": "K_BYGG_TOT",
-    "kpi_namn": "Bygglov bostadslägenheter, alla hustyper (kvartal)",
-    "beskrivning": "Antal beviljade bygglov för bostadslägenheter per kvartal. OBS: Bara region- och riksnivå (ej kommun). De senaste 4 kvartalens siffror underskattas pga eftersläpning i rapportering. Källa: SCB BO0101.",
+    "kpi_namn": "Påbörjade lägenheter, alla hustyper (kvartal)",
+    "beskrivning": "Antal påbörjade lägenheter i nybyggda hus per kvartal. Källa: SCB BO0101.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_BYGG_SMAHUS",
-    "kpi_namn": "Bygglov småhus (kvartal)",
-    "beskrivning": "Antal beviljade bygglov för småhuslägenheter per kvartal. OBS: Bara region- och riksnivå (ej kommun). De senaste 4 kvartalens siffror underskattas pga eftersläpning. Källa: SCB BO0101.",
+    "kpi_namn": "Påbörjade lägenheter, småhus (kvartal)",
+    "beskrivning": "Antal påbörjade lägenheter i nybyggda småhus per kvartal. Källa: SCB BO0101.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_BYGG_FLERBO",
-    "kpi_namn": "Bygglov flerbostadshus (kvartal)",
-    "beskrivning": "Antal beviljade bygglov för flerbostadslägenheter per kvartal. OBS: Bara region- och riksnivå (ej kommun). De senaste 4 kvartalens siffror underskattas pga eftersläpning. Källa: SCB BO0101.",
+    "kpi_namn": "Påbörjade lägenheter, flerbostadshus (kvartal)",
+    "beskrivning": "Antal påbörjade lägenheter i nybyggda flerbostadshus per kvartal. Källa: SCB BO0101.",
     "enhet": "antal",
     "tema": "konjunktur"
   },

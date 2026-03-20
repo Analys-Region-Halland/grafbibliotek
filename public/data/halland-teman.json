@@ -305,9 +305,9 @@
       "K_DAG_TILLVAXT": "Dagbefolkning, årsförändring (procent)",
       "K_BEF_TOT": "Folkmängd (prelim.)",
       "K_BEF_FORANDR": "Befolkningsförändring mot samma månad fg. år",
-      "K_BYGG_TOT": "Bygglov bostäder, alla hustyper (kvartal)",
-      "K_BYGG_SMAHUS": "Bygglov småhus (kvartal)",
-      "K_BYGG_FLERBO": "Bygglov flerbostadshus (kvartal)"
+      "K_BYGG_TOT": "Påbörjade lägenheter, alla hustyper (kvartal)",
+      "K_BYGG_SMAHUS": "Påbörjade lägenheter, småhus (kvartal)",
+      "K_BYGG_FLERBO": "Påbörjade lägenheter, flerbostadshus (kvartal)"
     }
   },
   {

@@ -10,6 +10,8 @@ interface Props {
   height?: number;
   mode?: "value" | "rank";
   enhet?: string;
+  /** Inverterar rankingfärgerna (grönt = lågt värde) */
+  lagtArBra?: boolean;
 }
 
 const LINJE = "#00664D"; // gron-1 — enhetlig linjefärg
@@ -29,7 +31,7 @@ interface TipState {
 }
 
 function SparklineInner({
-  data, width = 130, height = 52, mode = "value", enhet = "",
+  data, width = 130, height = 52, mode = "value", enhet = "", lagtArBra,
 }: Props) {
   const ref = useRef<SVGSVGElement>(null);
   const [tip, setTip] = useState<TipState>({ text: "", x: 0, y: 0, visible: false });
@@ -57,11 +59,17 @@ function SparklineInner({
       const x = d3.scaleLinear().domain([0, percentiler.length - 1]).range([2, width - 2]);
       const y = d3.scaleLinear().domain([100, 0]).range([height - 3, 3]);
 
+      // Ranking-band: grönt = bra, rött = dåligt
+      // Vid lagtArBra inverteras (högt ranknr = bra = grönt)
+      const braFarg = "rgba(0, 171, 96, ";
+      const daligFarg = "rgba(165, 19, 0, ";
+      const topFarg = lagtArBra ? daligFarg : braFarg;
+      const botFarg = lagtArBra ? braFarg : daligFarg;
       [
-        { from: 0, to: 25, fill: "rgba(0, 171, 96, 0.10)" },
-        { from: 25, to: 50, fill: "rgba(0, 171, 96, 0.04)" },
-        { from: 50, to: 75, fill: "rgba(165, 19, 0, 0.04)" },
-        { from: 75, to: 100, fill: "rgba(165, 19, 0, 0.10)" },
+        { from: 0, to: 25, fill: `${topFarg}0.10)` },
+        { from: 25, to: 50, fill: `${topFarg}0.04)` },
+        { from: 50, to: 75, fill: `${botFarg}0.04)` },
+        { from: 75, to: 100, fill: `${botFarg}0.10)` },
       ].forEach(({ from, to, fill }) => {
         svg.append("rect")
           .attr("x", 0).attr("width", width)

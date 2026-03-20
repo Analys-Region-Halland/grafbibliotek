@@ -251,7 +251,7 @@ function KpiKortInner({
           <div className="flex-1 min-w-0">
             <p className="font-data text-[10px] text-neutral-500 mb-0.5">Ranking</p>
             {halfWidth > 0 && (
-              <Sparkline data={data} mode="rank" width={halfWidth} height={sparkH} />
+              <Sparkline data={data} mode="rank" width={halfWidth} height={sparkH} lagtArBra={lagtArBra} />
             )}
           </div>
         </div>

@@ -96,7 +96,7 @@ const konjunktur: TemaConfig = {
     },
     {
       id: "byggnation",
-      namn: "Bygglov bostäder (kvartal)",
+      namn: "Påbörjade lägenheter (kvartal)",
       kpiIds: ["K_BYGG_TOT"],
       undersektioner: [
         { namn: "Hustyp", kpiIds: ["K_BYGG_SMAHUS", "K_BYGG_FLERBO"] },
@@ -155,9 +155,9 @@ const konjunktur: TemaConfig = {
     K_BEF_TOT: "Folkmängd (prelim.)",
     K_BEF_FORANDR: "Befolkningsförändring mot samma månad fg. år",
 
-    K_BYGG_TOT: "Bygglov bostäder, alla hustyper (kvartal)",
-    K_BYGG_SMAHUS: "Bygglov småhus (kvartal)",
-    K_BYGG_FLERBO: "Bygglov flerbostadshus (kvartal)",
+    K_BYGG_TOT: "Påbörjade lägenheter, alla hustyper (kvartal)",
+    K_BYGG_SMAHUS: "Påbörjade lägenheter, småhus (kvartal)",
+    K_BYGG_FLERBO: "Påbörjade lägenheter, flerbostadshus (kvartal)",
   },
   lagtArBra: [
     "K_ARBL_TOT", "K_ARBL_ANT", "K_ARBL_INR", "K_ARBL_UTR",
