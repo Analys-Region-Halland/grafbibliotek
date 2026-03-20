@@ -33,6 +33,7 @@ const konjunktur: TemaConfig = {
     // Arbetsmarknad
     {
       id: "nattbefolkning",
+      gruppRubrik: "Arbetsmarknad",
       namn: "Sysselsatta nattbefolkning 15–74 år (prelim.)",
       kpiIds: ["K_NATT_ANT"],
       undersektioner: [
@@ -73,6 +74,7 @@ const konjunktur: TemaConfig = {
     // Näringsliv (dagbefolkning)
     {
       id: "dagbefolkning",
+      gruppRubrik: "Näringsliv (dagbefolkning)",
       namn: "Sysselsatta dagbefolkning 15–74 år (prelim.)",
       kpiIds: ["K_DAG_TOT"],
       undersektioner: [
@@ -104,12 +106,14 @@ const konjunktur: TemaConfig = {
     // Befolkningsutveckling
     {
       id: "befolkning",
+      gruppRubrik: "Befolkningsutveckling",
       namn: "Befolkningsutveckling",
       kpiIds: ["K_BEF_TOT", "K_BEF_FORANDR"],
     },
     // Gästnätter
     {
       id: "gastnatter",
+      gruppRubrik: "Gästnätter (turism)",
       namn: "Gästnätter",
       kpiIds: ["K_GAST_TOT"],
       undersektioner: [
@@ -120,6 +124,7 @@ const konjunktur: TemaConfig = {
     // Bostadsmarknad
     {
       id: "byggnation",
+      gruppRubrik: "Bostadsmarknad",
       namn: "Bostadsmarknad",
       kpiIds: ["K_BYGG_TOT"],
       undersektioner: [
