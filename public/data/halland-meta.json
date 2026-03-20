@@ -598,7 +598,7 @@
   {
     "kpi_id": "K_SYSS_TOT",
     "kpi_namn": "Sysselsättningsgrad (prelim.)",
-    "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur",
     "par_kpi_id": "K_SYSS_ANT"
@@ -606,7 +606,7 @@
   {
     "kpi_id": "K_SYSS_ANT",
     "kpi_namn": "Antal sysselsatta (prelim.)",
-    "beskrivning": "Antal sysselsatta 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur",
     "par_kpi_id": "K_SYSS_TOT"
@@ -614,35 +614,35 @@
   {
     "kpi_id": "K_SYSS_INR",
     "kpi_namn": "Sysselsättningsgrad, inrikes födda (prelim.)",
-    "beskrivning": "Andel sysselsatta bland inrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel sysselsatta bland inrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_UTR",
     "kpi_namn": "Sysselsättningsgrad, utrikes födda (prelim.)",
-    "beskrivning": "Andel sysselsatta bland utrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel sysselsatta bland utrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_KV",
     "kpi_namn": "Sysselsättningsgrad, kvinnor (prelim.)",
-    "beskrivning": "Andel sysselsatta kvinnor 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel sysselsatta kvinnor 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_MAN",
     "kpi_namn": "Sysselsättningsgrad, män (prelim.)",
-    "beskrivning": "Andel sysselsatta män 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel sysselsatta män 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_TOT",
     "kpi_namn": "Arbetslöshetsgrad (prelim.)",
-    "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur",
     "par_kpi_id": "K_ARBL_ANT"
@@ -650,7 +650,7 @@
   {
     "kpi_id": "K_ARBL_ANT",
     "kpi_namn": "Antal arbetslösa (prelim.)",
-    "beskrivning": "Antal arbetslösa 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal arbetslösa 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur",
     "par_kpi_id": "K_ARBL_TOT"
@@ -658,169 +658,239 @@
   {
     "kpi_id": "K_ARBL_INR",
     "kpi_namn": "Arbetslöshetsgrad, inrikes födda (prelim.)",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_UTR",
     "kpi_namn": "Arbetslöshetsgrad, utrikes födda (prelim.)",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_KV",
     "kpi_namn": "Arbetslöshetsgrad, kvinnor (prelim.)",
-    "beskrivning": "Andel arbetslösa kvinnor av arbetskraften 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel arbetslösa kvinnor av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_MAN",
     "kpi_namn": "Arbetslöshetsgrad, män (prelim.)",
-    "beskrivning": "Andel arbetslösa män av arbetskraften 20–64 år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel arbetslösa män av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARKR_TOT",
     "kpi_namn": "Arbetskraftsdeltagande (prelim.)",
-    "beskrivning": "Andel av befolkningen 20–64 år i arbetskraften. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARKR_KV",
     "kpi_namn": "Arbetskraftsdeltagande, kvinnor (prelim.)",
-    "beskrivning": "Andel kvinnor 20–64 år i arbetskraften. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel kvinnor 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARKR_MAN",
     "kpi_namn": "Arbetskraftsdeltagande, män (prelim.)",
-    "beskrivning": "Andel män 20–64 år i arbetskraften. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Andel män 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_TOT",
     "kpi_namn": "Sysselsatta dagbefolkning (prelim.)",
-    "beskrivning": "Antal sysselsatta efter arbetsställets kommun, alla branscher. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta efter arbetsställets kommun, alla branscher. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_JORD",
     "kpi_namn": "Sysselsatta, jordbruk m.m. (prelim.)",
-    "beskrivning": "Antal sysselsatta inom jordbruk, skogsbruk och fiske (SNI A) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom jordbruk, skogsbruk och fiske (SNI A) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_IND",
     "kpi_namn": "Sysselsatta, tillverkning (prelim.)",
-    "beskrivning": "Antal sysselsatta inom tillverkning (SNI B+C) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom tillverkning (SNI B+C) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_ENMI",
     "kpi_namn": "Sysselsatta, energi och miljö (prelim.)",
-    "beskrivning": "Antal sysselsatta inom energi och miljö (SNI D+E) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom energi och miljö (SNI D+E) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_BYG",
     "kpi_namn": "Sysselsatta, bygg (prelim.)",
-    "beskrivning": "Antal sysselsatta inom byggindustrin (SNI F) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom byggindustrin (SNI F) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_HAND",
     "kpi_namn": "Sysselsatta, handel (prelim.)",
-    "beskrivning": "Antal sysselsatta inom handel (SNI G) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom handel (SNI G) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_TRANS",
     "kpi_namn": "Sysselsatta, transport (prelim.)",
-    "beskrivning": "Antal sysselsatta inom transport (SNI H) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom transport (SNI H) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_HOTEL",
     "kpi_namn": "Sysselsatta, hotell & restaurang (prelim.)",
-    "beskrivning": "Antal sysselsatta inom hotell och restaurang (SNI I) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom hotell och restaurang (SNI I) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_IT",
     "kpi_namn": "Sysselsatta, IT och kommunikation (prelim.)",
-    "beskrivning": "Antal sysselsatta inom IT och kommunikation (SNI J) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom IT och kommunikation (SNI J) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_FINANS",
     "kpi_namn": "Sysselsatta, finans och försäkring (prelim.)",
-    "beskrivning": "Antal sysselsatta inom finans och försäkring (SNI K) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom finans och försäkring (SNI K) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_FAST",
     "kpi_namn": "Sysselsatta, fastigheter (prelim.)",
-    "beskrivning": "Antal sysselsatta inom fastighetsverksamhet (SNI L) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom fastighetsverksamhet (SNI L) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_FORETJ",
     "kpi_namn": "Sysselsatta, företagstjänster (prelim.)",
-    "beskrivning": "Antal sysselsatta inom företagstjänster (SNI M+N) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom företagstjänster (SNI M+N) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_OFF",
     "kpi_namn": "Sysselsatta, offentlig sektor (prelim.)",
-    "beskrivning": "Antal sysselsatta inom offentlig förvaltning, utbildning och vård (SNI O+P+Q) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom offentlig förvaltning, utbildning och vård (SNI O+P+Q) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_KULT",
     "kpi_namn": "Sysselsatta, kultur m.m. (prelim.)",
-    "beskrivning": "Antal sysselsatta inom kultur, nöje, fritid m.m. (SNI R+S+T+U) efter arbetsställets kommun. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Antal sysselsatta inom kultur, nöje, fritid m.m. (SNI R+S+T+U) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_FORANDR",
     "kpi_namn": "Sysselsättningsgrad, årsförändring (procentenheter)",
-    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procentenheter",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_FORANDR",
     "kpi_namn": "Arbetslöshet, årsförändring (procentenheter)",
-    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procentenheter",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_BEF_TOT",
+    "kpi_namn": "Folkmängd (prelim.)",
+    "beskrivning": "Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_BEF_FORANDR",
+    "kpi_namn": "Befolkningsförändring mot samma månad fg. år",
+    "beskrivning": "Absolut förändring i folkmängd jämfört med samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_TILLVAXT",
     "kpi_namn": "Dagbefolkning, årsförändring (procent)",
-    "beskrivning": "Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad föregående år. Källa: SCB preliminär månadsstatistik.",
+    "beskrivning": "Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
     "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_GAST_TOT",
+    "kpi_namn": "Gästnätter totalt (prelim.)",
+    "beskrivning": "Antal gästnätter på samtliga inkvarteringsanläggningar. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_GAST_SVE",
+    "kpi_namn": "Gästnätter svenska gäster",
+    "beskrivning": "Antal gästnätter av svenska gäster. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_GAST_UTL",
+    "kpi_namn": "Gästnätter utländska gäster",
+    "beskrivning": "Antal gästnätter av utländska gäster. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_ANDEL_UTL",
+    "kpi_namn": "Andel utländska gästnätter (%)",
+    "beskrivning": "Andel utländska gästnätter av totala gästnätter. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_GAST_TILLVAXT",
+    "kpi_namn": "Gästnätter, årsförändring (%)",
+    "beskrivning": "Procentuell förändring i antal gästnätter mot samma månad föregående år. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "enhet": "procent",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_BYGG_TOT",
+    "kpi_namn": "Bygglov bostadslägenheter, alla hustyper (kvartal)",
+    "beskrivning": "Antal beviljade bygglov för bostadslägenheter per kvartal. OBS: Bara region- och riksnivå (ej kommun). De senaste 4 kvartalens siffror underskattas pga eftersläpning i rapportering. Källa: SCB BO0101.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_BYGG_SMAHUS",
+    "kpi_namn": "Bygglov småhus (kvartal)",
+    "beskrivning": "Antal beviljade bygglov för småhuslägenheter per kvartal. OBS: Bara region- och riksnivå (ej kommun). De senaste 4 kvartalens siffror underskattas pga eftersläpning. Källa: SCB BO0101.",
+    "enhet": "antal",
+    "tema": "konjunktur"
+  },
+  {
+    "kpi_id": "K_BYGG_FLERBO",
+    "kpi_namn": "Bygglov flerbostadshus (kvartal)",
+    "beskrivning": "Antal beviljade bygglov för flerbostadslägenheter per kvartal. OBS: Bara region- och riksnivå (ej kommun). De senaste 4 kvartalens siffror underskattas pga eftersläpning. Källa: SCB BO0101.",
+    "enhet": "antal",
     "tema": "konjunktur"
   },
   {

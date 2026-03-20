@@ -218,6 +218,21 @@ const socioekonomi: TemaConfig = {
     F_ALK_RISK_KV: "Riskkonsumtion av alkohol, kvinnor (%)",
     F_ALK_RISK_MAN: "Riskkonsumtion av alkohol, män (%)",
   },
+  lagtArBra: [
+    "N00957", "N00957_KV", "N00957_MAN",
+    "N00938", "N00938_KV", "N00938_MAN",
+    "N31001", "N31910",
+    "N33820", "N33820_KV", "N33820_MAN",
+    "N00956", "N00997",
+    "F_TOBAK", "F_TOBAK_KV", "F_TOBAK_MAN",
+    "F_FORTID", "F_FORTID_KV", "F_FORTID_MAN",
+    "F_SUICID", "F_SUICID_KV", "F_SUICID_MAN",
+    "F_PSYK_PAFR", "F_PSYK_PAFR_KV", "F_PSYK_PAFR_MAN",
+    "F_STRESS", "F_STRESS_KV", "F_STRESS_MAN",
+    "F_OVERVIKT", "F_OVERVIKT_KV", "F_OVERVIKT_MAN",
+    "F_ALK_RISK", "F_ALK_RISK_KV", "F_ALK_RISK_MAN",
+    "F_VEK_VUX", "F_VINK_BARN",
+  ],
   kortNamn: {
     // Medellivslängd (multi-kort)
     F_MEDLIVS_KV: "Kvinnor",

@@ -28,6 +28,8 @@ export interface TemaConfig {
   nettoKpis?: string[];
   /** KPI-ID:n som saknar index-toggle (netto-KPI:er) */
   ingetIndex?: string[];
+  /** KPI-ID:n där lågt värde är önskvärt (inverterad färgskala för ranking) */
+  lagtArBra?: string[];
 }
 
 /** Tillgängliga temafärger — mappar till Tailwind-klasser */

@@ -81,6 +81,11 @@ const arbetsmarknad: TemaConfig = {
     "S_ARBL_MAN": "Arbetslösa bland män 20–64 år, andel (%)",
     "S_ARBL_MAN_N": "Arbetslösa bland män 20–64 år, antal",
   },
+  lagtArBra: [
+    "S_ARBL_TOT", "S_ARBL_TOT_N", "S_ARBL_INR", "S_ARBL_INR_N",
+    "S_ARBL_UTR", "S_ARBL_UTR_N", "S_ARBL_KV", "S_ARBL_KV_N",
+    "S_ARBL_MAN", "S_ARBL_MAN_N",
+  ],
 };
 
 export default arbetsmarknad;

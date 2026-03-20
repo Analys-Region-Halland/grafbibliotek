@@ -98,6 +98,8 @@ export default function TemaBlock({
     });
   };
 
+  const lagtArBraSet = new Set(tema.lagtArBra ?? []);
+
   let cardIdx = 0;
   const cells: React.JSX.Element[] = [];
   let föregåendeGrupp = "";
@@ -150,6 +152,7 @@ export default function TemaBlock({
             onToggleExpand={() => toggleExpand(sektion.id)}
             animDelay={cardIdx++ * 40}
             onClick={() => onOpenKpi(m.kpi_id)}
+            lagtArBra={lagtArBraSet.has(m.kpi_id)}
           />
 
           {/* Underkort som faller ut */}
@@ -180,6 +183,7 @@ export default function TemaBlock({
                           compact
                           animDelay={si * 50}
                           onClick={() => onOpenKpi(sub.kpiId)}
+                          lagtArBra={lagtArBraSet.has(sub.kpiId)}
                         />
                       ))}
                     </Fragment>
@@ -211,6 +215,7 @@ export default function TemaBlock({
               dotColor={farg.dot}
               animDelay={cardIdx++ * 40}
               onClick={() => onOpenKpi(m.kpi_id)}
+              lagtArBra={lagtArBraSet.has(m.kpi_id)}
             />
           </div>,
         );

@@ -46,6 +46,10 @@ const miljoKlimat: TemaConfig = {
     N85078: "Jordbruk",
     N85072: "Uppvärmning",
   },
+  lagtArBra: [
+    "N00401", "N07702", "N85073", "N85533", "N85077", "N85537",
+    "N85078", "N85538", "N85072", "N85532", "N45913", "N45945",
+  ],
 };
 
 export default miljoKlimat;

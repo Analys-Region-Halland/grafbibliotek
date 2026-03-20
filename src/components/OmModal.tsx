@@ -93,73 +93,21 @@ export default function OmModal({ onClose }: Props) {
             </ul>
           </section>
 
-          {/* 3. Datapipeline */}
-          <section>
-            <h3 className="font-data text-[12px] font-semibold text-neutral-900 mb-3 tracking-wide">
-              Datapipeline
-            </h3>
-            <div className="flex items-center justify-center">
-              <svg viewBox="0 0 440 56" className="w-full max-w-md" aria-hidden="true">
-                {/* Steg 1: Datakällor */}
-                <rect x="0" y="8" width="100" height="40" rx="8" fill="#f5f5f5" stroke="#d4d4d4" strokeWidth="1" />
-                <text x="50" y="24" textAnchor="middle" className="fill-neutral-600" fontSize="9" fontWeight="600">Datakällor</text>
-                <text x="50" y="38" textAnchor="middle" className="fill-neutral-400" fontSize="8">Kolada · SCB</text>
-                <text x="50" y="47" textAnchor="middle" className="fill-neutral-400" fontSize="8">FoHM · Trafikanalys</text>
-
-                {/* Pil 1 */}
-                <path d="M105 28 L125 28" stroke="#a3a3a3" strokeWidth="1.5" fill="none" markerEnd="url(#arrow)" />
-
-                {/* Steg 2: R-bearbetning */}
-                <rect x="130" y="8" width="90" height="40" rx="8" fill="#ecfdf5" stroke="#86efac" strokeWidth="1" />
-                <text x="175" y="24" textAnchor="middle" className="fill-emerald-700" fontSize="9" fontWeight="600">R-bearbetning</text>
-                <text x="175" y="38" textAnchor="middle" className="fill-emerald-600" fontSize="8">Trender · Ranking</text>
-                <text x="175" y="47" textAnchor="middle" className="fill-emerald-600" fontSize="8">Rikssnitt · KI</text>
-
-                {/* Pil 2 */}
-                <path d="M225 28 L245 28" stroke="#a3a3a3" strokeWidth="1.5" fill="none" markerEnd="url(#arrow)" />
-
-                {/* Steg 3: JSON */}
-                <rect x="250" y="12" width="60" height="32" rx="8" fill="#fefce8" stroke="#fde047" strokeWidth="1" />
-                <text x="280" y="32" textAnchor="middle" className="fill-yellow-700" fontSize="9" fontWeight="600">JSON</text>
-
-                {/* Pil 3 */}
-                <path d="M315 28 L335 28" stroke="#a3a3a3" strokeWidth="1.5" fill="none" markerEnd="url(#arrow)" />
-
-                {/* Steg 4: Frontend */}
-                <rect x="340" y="8" width="96" height="40" rx="8" fill="#eff6ff" stroke="#93c5fd" strokeWidth="1" />
-                <text x="388" y="24" textAnchor="middle" className="fill-blue-700" fontSize="9" fontWeight="600">React + D3</text>
-                <text x="388" y="38" textAnchor="middle" className="fill-blue-600" fontSize="8">Visualisering</text>
-                <text x="388" y="47" textAnchor="middle" className="fill-blue-600" fontSize="8">& interaktion</text>
-
-                <defs>
-                  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
-                          markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#a3a3a3" />
-                  </marker>
-                </defs>
-              </svg>
-            </div>
-          </section>
-
-          {/* 4. Under utveckling */}
+          {/* 3. Kontakt */}
           <section>
             <h3 className="font-data text-[12px] font-semibold text-neutral-900 mb-2 tracking-wide">
-              Under utveckling
+              Kontakt
             </h3>
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <span className="text-[8px] px-1.5 py-0.5 rounded bg-neutral-100 text-neutral-500 font-data font-semibold uppercase tracking-wider">
-                  Planerad
-                </span>
-                <span>Guidade berättelser — KI-genererade analyser av kommunens utveckling (maj 2026).</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[8px] px-1.5 py-0.5 rounded bg-neutral-100 text-neutral-500 font-data font-semibold uppercase tracking-wider">
-                  Planerad
-                </span>
-                <span>Snabbrapport — exporterbar sammanfattning per kommun (maj 2026).</span>
-              </div>
-            </div>
+            <p>
+              Har du frågor, hittat ett fel eller vill föreslå en förbättring?
+              Kontakta{" "}
+              <a
+                href="mailto:robin.rikardsson@regionhalland.se"
+                className="text-bla-1 underline underline-offset-2 hover:text-bla-2 transition-colors"
+              >
+                robin.rikardsson@regionhalland.se
+              </a>
+            </p>
           </section>
 
           {/* Uppdateringsdatum */}

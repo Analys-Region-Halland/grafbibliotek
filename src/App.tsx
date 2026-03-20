@@ -159,7 +159,7 @@ export default function App() {
               />
               <div className="border-l border-neutral-200 pl-3 sm:pl-4 shrink-0">
                 <h1 className="text-[17px] sm:text-[20px] font-bold text-neutral-900 tracking-tight leading-tight">
-                  Halland i siffror
+                  Halland i siffror – Region Halland
                 </h1>
               </div>
               <div className="hidden lg:block ml-1">

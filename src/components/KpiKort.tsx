@@ -16,6 +16,8 @@ interface Props {
   animDelay?: number;
   onClick: () => void;
   compact?: boolean;
+  /** Lågt värde är önskvärt — inverterar färg på ranking */
+  lagtArBra?: boolean;
 }
 
 function fmtTrend(v: number | null, dec: number): string | null {
@@ -43,7 +45,7 @@ function TrendRow({ label, value, d }: { label: string; value: number | null | u
 function KpiKortInner({
   kortNamn, beskrivning, enhet, data, dotColor,
   hasExpand, isExpanded, onToggleExpand,
-  animDelay = 0, onClick, compact,
+  animDelay = 0, onClick, compact, lagtArBra,
 }: Props) {
   // Mät sparkline-containerbredd
   const sparkRef = useRef<HTMLDivElement>(null);
@@ -104,13 +106,15 @@ function KpiKortInner({
   const harKI = senaste.ki_lower != null && senaste.ki_upper != null;
   const kiStr = harKI ? `(${fmt(senaste.ki_lower!, dec)}–${fmt(senaste.ki_upper!, dec)})` : null;
 
-  // Ranking
+  // Ranking — inverterad färgskala om lågt värde är önskvärt
   const rang = senaste.rang_total;
   const nKommuner = senaste.antal_kommuner ?? 290;
   const rangPct = rang != null ? rang / nKommuner : null;
+  const braColor = "text-emerald-700";
+  const daligColor = "text-rose-700";
   const rangColor = rangPct != null
-    ? rangPct <= 0.25 ? "text-emerald-700"
-    : rangPct >= 0.75 ? "text-rose-700"
+    ? rangPct <= 0.25 ? (lagtArBra ? daligColor : braColor)
+    : rangPct >= 0.75 ? (lagtArBra ? braColor : daligColor)
     : "text-neutral-700"
     : "text-neutral-500";
 
@@ -203,6 +207,11 @@ function KpiKortInner({
             {rang != null && nKommuner > 1 && (
               <span className={`font-data text-[11.5px] font-semibold ${rangColor} block mt-0.5`}>
                 Plats {rang} <span className="text-neutral-500 font-normal">av {nKommuner}</span>
+                {lagtArBra && (
+                  <span className="text-neutral-400 font-normal text-[9.5px] ml-1" title="Lågt värde är önskvärt">
+                    ▼ önskvärd
+                  </span>
+                )}
               </span>
             )}
             {rang != null && nKommuner <= 1 && (

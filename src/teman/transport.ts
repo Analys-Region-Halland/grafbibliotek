@@ -209,6 +209,7 @@ const transport: TemaConfig = {
     N07412: "Utanför tätort",
     U07918: "Mil per bil",
   },
+  lagtArBra: ["N00799"],
 };
 
 export default transport;
