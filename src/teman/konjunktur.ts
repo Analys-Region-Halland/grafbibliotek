@@ -30,6 +30,15 @@ const konjunktur: TemaConfig = {
     K_DAG_KULT: "Kultur m.m.",
   },
   sektioner: [
+    // Arbetsmarknad
+    {
+      id: "nattbefolkning",
+      namn: "Sysselsatta nattbefolkning 15–74 år (prelim.)",
+      kpiIds: ["K_NATT_ANT"],
+      undersektioner: [
+        { namn: "Sysselsättningsgrad", kpiIds: ["K_NATT_GRAD"] },
+      ],
+    },
     {
       id: "sysselsattning",
       namn: "Sysselsättningsgrad 20–64 år (prelim.)",
@@ -57,8 +66,14 @@ const konjunktur: TemaConfig = {
       ],
     },
     {
+      id: "arbetsmarknad-forandring",
+      namn: "Årsförändring arbetsmarknad",
+      kpiIds: ["K_SYSS_FORANDR", "K_ARBL_FORANDR"],
+    },
+    // Näringsliv (dagbefolkning)
+    {
       id: "dagbefolkning",
-      namn: "Sysselsatta dagbefolkning (prelim.)",
+      namn: "Sysselsatta dagbefolkning 15–74 år (prelim.)",
       kpiIds: ["K_DAG_TOT"],
       undersektioner: [
         {
@@ -82,33 +97,40 @@ const konjunktur: TemaConfig = {
       ],
     },
     {
+      id: "naringsliv-forandring",
+      namn: "Årsförändring dagbefolkning",
+      kpiIds: ["K_DAG_TILLVAXT"],
+    },
+    // Befolkningsutveckling
+    {
       id: "befolkning",
-      namn: "Folkmängd",
+      namn: "Befolkningsutveckling",
       kpiIds: ["K_BEF_TOT", "K_BEF_FORANDR"],
     },
+    // Gästnätter
     {
       id: "gastnatter",
-      namn: "Gästnätter (prelim.)",
+      namn: "Gästnätter",
       kpiIds: ["K_GAST_TOT"],
       undersektioner: [
         { namn: "Marknad", kpiIds: ["K_GAST_SVE", "K_GAST_UTL", "K_ANDEL_UTL"] },
+        { namn: "Årsförändring", kpiIds: ["K_GAST_TILLVAXT"] },
       ],
     },
+    // Bostadsmarknad
     {
       id: "byggnation",
-      namn: "Påbörjade lägenheter (kvartal)",
+      namn: "Bostadsmarknad",
       kpiIds: ["K_BYGG_TOT"],
       undersektioner: [
         { namn: "Hustyp", kpiIds: ["K_BYGG_SMAHUS", "K_BYGG_FLERBO"] },
       ],
     },
-    {
-      id: "forandring",
-      namn: "Förändring mot samma månad föregående år",
-      kpiIds: ["K_SYSS_FORANDR", "K_ARBL_FORANDR", "K_DAG_TILLVAXT"],
-    },
   ],
   visningsnamn: {
+    K_NATT_ANT: "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+    K_NATT_GRAD: "Sysselsättningsgrad 15–74 år (prelim.)",
+
     K_SYSS_TOT: "Sysselsatta bland befolkningen 20–64 år, andel (%) (prelim.)",
     K_SYSS_ANT: "Sysselsatta i befolkningen 20–64 år, antal (prelim.)",
     K_SYSS_INR: "Sysselsatta bland inrikes födda 20–64 år, andel (%) (prelim.)",

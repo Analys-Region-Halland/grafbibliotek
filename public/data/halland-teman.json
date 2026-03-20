@@ -181,6 +181,17 @@
     "tema_farg": "bla",
     "sektioner": [
       {
+        "id": "nattbefolkning",
+        "namn": "Sysselsatta nattbefolkning 15–74 år (prelim.)",
+        "kpi_ids": "K_NATT_ANT",
+        "undersektioner": [
+          {
+            "namn": "Sysselsättningsgrad",
+            "kpi_ids": "K_NATT_GRAD"
+          }
+        ]
+      },
+      {
         "id": "sysselsattning",
         "namn": "Sysselsättningsgrad 20–64 år (prelim.)",
         "kpi_ids": "K_SYSS_TOT",
@@ -222,8 +233,13 @@
         ]
       },
       {
+        "id": "arbetsmarknad-forandring",
+        "namn": "Årsförändring arbetsmarknad",
+        "kpi_ids": ["K_SYSS_FORANDR", "K_ARBL_FORANDR"]
+      },
+      {
         "id": "dagbefolkning",
-        "namn": "Sysselsatta dagbefolkning (prelim.)",
+        "namn": "Sysselsatta dagbefolkning 15–74 år (prelim.)",
         "kpi_ids": "K_DAG_TOT",
         "undersektioner": [
           {
@@ -233,13 +249,33 @@
         ]
       },
       {
+        "id": "naringsliv-forandring",
+        "namn": "Årsförändring dagbefolkning",
+        "kpi_ids": "K_DAG_TILLVAXT"
+      },
+      {
         "id": "befolkning",
-        "namn": "Folkmängd",
+        "namn": "Befolkningsutveckling",
         "kpi_ids": ["K_BEF_TOT", "K_BEF_FORANDR"]
       },
       {
+        "id": "gastnatter",
+        "namn": "Gästnätter",
+        "kpi_ids": "K_GAST_TOT",
+        "undersektioner": [
+          {
+            "namn": "Marknad",
+            "kpi_ids": ["K_GAST_SVE", "K_GAST_UTL", "K_ANDEL_UTL"]
+          },
+          {
+            "namn": "Årsförändring",
+            "kpi_ids": "K_GAST_TILLVAXT"
+          }
+        ]
+      },
+      {
         "id": "byggnation",
-        "namn": "Bygglov bostäder (kvartal)",
+        "namn": "Bostadsmarknad",
         "kpi_ids": "K_BYGG_TOT",
         "undersektioner": [
           {
@@ -247,22 +283,6 @@
             "kpi_ids": ["K_BYGG_SMAHUS", "K_BYGG_FLERBO"]
           }
         ]
-      },
-      {
-        "id": "gastnatter",
-        "namn": "Gästnätter (prelim.)",
-        "kpi_ids": "K_GAST_TOT",
-        "undersektioner": [
-          {
-            "namn": "Marknad",
-            "kpi_ids": ["K_GAST_SVE", "K_GAST_UTL", "K_ANDEL_UTL"]
-          }
-        ]
-      },
-      {
-        "id": "forandring",
-        "namn": "Förändring mot samma månad föregående år",
-        "kpi_ids": ["K_SYSS_FORANDR", "K_ARBL_FORANDR", "K_DAG_TILLVAXT"]
       }
     ],
     "visningsnamn": {
@@ -272,6 +292,8 @@
       "K_SYSS_UTR": "Sysselsatta bland utrikes födda 20–64 år, andel (%) (prelim.)",
       "K_SYSS_KV": "Sysselsatta bland kvinnor 20–64 år, andel (%) (prelim.)",
       "K_SYSS_MAN": "Sysselsatta bland män 20–64 år, andel (%) (prelim.)",
+      "K_NATT_ANT": "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+      "K_NATT_GRAD": "Sysselsättningsgrad 15–74 år (prelim.)",
       "K_ARBL_TOT": "Arbetslösa i arbetskraften 20–64 år, andel (%) (prelim.)",
       "K_ARBL_ANT": "Arbetslösa i arbetskraften 20–64 år, antal (prelim.)",
       "K_ARBL_INR": "Arbetslösa bland inrikes födda 20–64 år, andel (%) (prelim.)",

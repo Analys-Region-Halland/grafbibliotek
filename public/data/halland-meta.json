@@ -640,6 +640,22 @@
     "tema": "konjunktur"
   },
   {
+    "kpi_id": "K_NATT_ANT",
+    "kpi_namn": "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+    "beskrivning": "Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommunen). Preliminär statistik från SCB BAS.",
+    "enhet": "antal",
+    "tema": "konjunktur",
+    "par_kpi_id": "K_NATT_GRAD"
+  },
+  {
+    "kpi_id": "K_NATT_GRAD",
+    "kpi_namn": "Sysselsättningsgrad 15–74 år (prelim.)",
+    "beskrivning": "Andel sysselsatta av befolkningen 15–74 år, nattbefolkning. Preliminär statistik från SCB BAS.",
+    "enhet": "procent",
+    "tema": "konjunktur",
+    "par_kpi_id": "K_NATT_ANT"
+  },
+  {
     "kpi_id": "K_ARBL_TOT",
     "kpi_namn": "Arbetslöshetsgrad (prelim.)",
     "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
