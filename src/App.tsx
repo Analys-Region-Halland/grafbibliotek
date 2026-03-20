@@ -35,11 +35,7 @@ export default function App() {
   const handleOpenKpi = useCallback((kpiId: string) => setOpenKpi(kpiId), []);
   const handleStartBerattelse = useCallback(() => setVisaBerattelse(true), []);
 
-  const senasteAr = useMemo(() => {
-    if (data.length === 0) return 0;
-    const years = data.filter((d) => d.kommun_kod === valdKommun).map((d) => d.ar);
-    return years.length > 0 ? Math.max(...years) : 0;
-  }, [data, valdKommun]);
+
 
   // Rikets befolkning — cachad separat (ändras bara vid nytt tema, inte vid kommunbyte)
   const riketPopCache = useMemo(() => {
@@ -159,7 +155,7 @@ export default function App() {
               />
               <div className="border-l border-neutral-200 pl-3 sm:pl-4 shrink-0">
                 <h1 className="text-[17px] sm:text-[20px] font-bold text-neutral-900 tracking-tight leading-tight">
-                  Halland i siffror – Region Halland
+                  Halland i siffror
                 </h1>
               </div>
               <div className="hidden lg:block ml-1">
@@ -228,7 +224,7 @@ export default function App() {
             <span className="text-[10px] text-neutral-400 font-medium">Halland i siffror</span>
           </div>
           <p className="text-[10px] text-neutral-400">
-            Data: RKA Kolada · SCB · Folkhälsomyndigheten · Trafikanalys och bearbetningar av Region Halland · {senasteAr}
+            Data: RKA Kolada · SCB · Folkhälsomyndigheten · Trafikanalys och bearbetningar av Region Halland
           </p>
         </div>
       </footer>
