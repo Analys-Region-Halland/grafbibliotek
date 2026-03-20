@@ -6,7 +6,6 @@ import KommunValjare from "./components/KommunValjare";
 import TemaNav from "./components/TemaNav";
 import TemaBlock from "./components/TemaBlock";
 import KpiModal from "./components/KpiModal";
-import GuidadBerattelse from "./components/GuidadBerattelse";
 import OmModal from "./components/OmModal";
 
 /** Alla netto-KPI:er samlade från samtliga teman */
@@ -18,7 +17,6 @@ export default function App() {
   const { data, meta, loading, temaLoading, error, temaError, progress, retryTema } = useData(aktivtTema);
   const [valdKommun, setValdKommun] = useState("0013");
   const [openKpi, setOpenKpi] = useState<string | null>(null);
-  const [visaBerattelse, setVisaBerattelse] = useState(false);
   const [visaOm, setVisaOm] = useState(false);
 
   const valdEnhet = HALLAND_KOMMUNER.find((k) => k.kod === valdKommun);
@@ -33,7 +31,6 @@ export default function App() {
   }, []);
 
   const handleOpenKpi = useCallback((kpiId: string) => setOpenKpi(kpiId), []);
-  const handleStartBerattelse = useCallback(() => setVisaBerattelse(true), []);
 
 
 
@@ -210,7 +207,6 @@ export default function App() {
             kommunKpiData={kommunKpiData}
             nettoKpis={NETTO_KPIS}
             onOpenKpi={handleOpenKpi}
-            onStartBerattelse={handleStartBerattelse}
           />
         ) : null}
       </main>
@@ -228,18 +224,6 @@ export default function App() {
           </p>
         </div>
       </footer>
-
-      {/* Berättelse-modal */}
-      {visaBerattelse && (
-        <GuidadBerattelse
-          kommunKod={valdKommun}
-          kommunNamn={kommunNamn}
-          isRegion={isRegion}
-          allData={data}
-          allMeta={meta}
-          onClose={() => setVisaBerattelse(false)}
-        />
-      )}
 
       {/* Om-modal */}
       {visaOm && <OmModal onClose={() => setVisaOm(false)} />}

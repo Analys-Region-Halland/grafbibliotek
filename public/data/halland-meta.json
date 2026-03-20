@@ -1028,83 +1028,83 @@
   },
   {
     "kpi_id": "N_SEK_TOT",
-    "kpi_namn": "Förvärvsarbetande totalt",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år totalt, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_TOT_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande totalt",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning totalt, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning totalt, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_TOT"
   },
   {
     "kpi_id": "N_SEK_TOT_KV",
-    "kpi_namn": "Förvärvsarbetande totalt, kvinnor",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år totalt, kvinnor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt, kvinnor",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år totalt, kvinnor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_TOT_KV_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande totalt, kvinnor",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning totalt, kvinnor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, kvinnor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning totalt, kvinnor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_TOT_KV"
   },
   {
     "kpi_id": "N_SEK_TOT_MAN",
-    "kpi_namn": "Förvärvsarbetande totalt, män",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år totalt, män, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt, män",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år totalt, män, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_TOT_MAN_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande totalt, män",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning totalt, män, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, män",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning totalt, män, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_TOT_MAN"
   },
   {
     "kpi_id": "N_SEK_TOT_INR",
-    "kpi_namn": "Förvärvsarbetande totalt, inrikes födda",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år totalt, inrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt, inrikes födda",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år totalt, inrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_TOT_INR_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande totalt, inrikes födda",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning totalt, inrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, inrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning totalt, inrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_TOT_INR"
   },
   {
     "kpi_id": "N_SEK_TOT_UTR",
-    "kpi_namn": "Förvärvsarbetande totalt, utrikes födda",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år totalt, utrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt, utrikes födda",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år totalt, utrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_TOT_UTR_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande totalt, utrikes födda",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning totalt, utrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta totalt, utrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning totalt, utrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_TOT_UTR"
   },
   {
     "kpi_id": "N_SEK_NARING",
-    "kpi_namn": "Förvärvsarbetande i näringslivet",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i näringslivet, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i näringslivet",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i näringslivet, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_NARING_A"
@@ -1112,83 +1112,83 @@
   {
     "kpi_id": "N_SEK_NARING_A",
     "kpi_namn": "Andel i näringslivet",
-    "beskrivning": "Andel av förvärvsarbetande dagbefolkning 15–74 år i näringslivet, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av sysselsatta dagbefolkning 15–74 år i näringslivet, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_NARING"
   },
   {
     "kpi_id": "N_SEK_NARING_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i näringslivet",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i näringslivet, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i näringslivet, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_NARING"
   },
   {
     "kpi_id": "N_SEK_NARING_KV",
-    "kpi_namn": "Förvärvsarbetande i näringslivet, kvinnor",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i näringslivet, kvinnor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i näringslivet, kvinnor",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i näringslivet, kvinnor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_NARING_KV_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i näringslivet, kvinnor",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i näringslivet, kvinnor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, kvinnor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i näringslivet, kvinnor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_NARING_KV"
   },
   {
     "kpi_id": "N_SEK_NARING_MAN",
-    "kpi_namn": "Förvärvsarbetande i näringslivet, män",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i näringslivet, män, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i näringslivet, män",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i näringslivet, män, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_NARING_MAN_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i näringslivet, män",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i näringslivet, män, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, män",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i näringslivet, män, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_NARING_MAN"
   },
   {
     "kpi_id": "N_SEK_NARING_INR",
-    "kpi_namn": "Förvärvsarbetande i näringslivet, inrikes födda",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i näringslivet, inrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i näringslivet, inrikes födda",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i näringslivet, inrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_NARING_INR_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i näringslivet, inrikes födda",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i näringslivet, inrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, inrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i näringslivet, inrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_NARING_INR"
   },
   {
     "kpi_id": "N_SEK_NARING_UTR",
-    "kpi_namn": "Förvärvsarbetande i näringslivet, utrikes födda",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i näringslivet, utrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i näringslivet, utrikes födda",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i näringslivet, utrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_NARING_UTR_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i näringslivet, utrikes födda",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i näringslivet, utrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i näringslivet, utrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i näringslivet, utrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_NARING_UTR"
   },
   {
     "kpi_id": "N_SEK_OFF",
-    "kpi_namn": "Förvärvsarbetande i offentlig sektor",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i offentlig sektor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i offentlig sektor",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_OFF_A"
@@ -1196,83 +1196,83 @@
   {
     "kpi_id": "N_SEK_OFF_A",
     "kpi_namn": "Andel i offentlig sektor",
-    "beskrivning": "Andel av förvärvsarbetande dagbefolkning 15–74 år i offentlig sektor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av sysselsatta dagbefolkning 15–74 år i offentlig sektor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_OFF"
   },
   {
     "kpi_id": "N_SEK_OFF_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i offentlig sektor",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i offentlig sektor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i offentlig sektor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_OFF"
   },
   {
     "kpi_id": "N_SEK_OFF_KV",
-    "kpi_namn": "Förvärvsarbetande i offentlig sektor, kvinnor",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i offentlig sektor, kvinnor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i offentlig sektor, kvinnor",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, kvinnor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_OFF_KV_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i offentlig sektor, kvinnor",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i offentlig sektor, kvinnor, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, kvinnor",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i offentlig sektor, kvinnor, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_OFF_KV"
   },
   {
     "kpi_id": "N_SEK_OFF_MAN",
-    "kpi_namn": "Förvärvsarbetande i offentlig sektor, män",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i offentlig sektor, män, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i offentlig sektor, män",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, män, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_OFF_MAN_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i offentlig sektor, män",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i offentlig sektor, män, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, män",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i offentlig sektor, män, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_OFF_MAN"
   },
   {
     "kpi_id": "N_SEK_OFF_INR",
-    "kpi_namn": "Förvärvsarbetande i offentlig sektor, inrikes födda",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i offentlig sektor, inrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i offentlig sektor, inrikes födda",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, inrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_OFF_INR_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i offentlig sektor, inrikes födda",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i offentlig sektor, inrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, inrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i offentlig sektor, inrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_OFF_INR"
   },
   {
     "kpi_id": "N_SEK_OFF_UTR",
-    "kpi_namn": "Förvärvsarbetande i offentlig sektor, utrikes födda",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning 15–74 år i offentlig sektor, utrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta i offentlig sektor, utrikes födda",
+    "beskrivning": "Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, utrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_SEK_OFF_UTR_TILLV",
-    "kpi_namn": "Årlig tillväxt, förvärvsarbetande i offentlig sektor, utrikes födda",
-    "beskrivning": "Årlig procentuell förändring av antalet förvärvsarbetande dagbefolkning i offentlig sektor, utrikes födda, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Årlig tillväxt, sysselsatta i offentlig sektor, utrikes födda",
+    "beskrivning": "Årlig procentuell förändring av antalet sysselsatta dagbefolkning i offentlig sektor, utrikes födda, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_SEK_OFF_UTR"
   },
   {
     "kpi_id": "N_BR_A",
-    "kpi_namn": "Förvärvsarbetande, jordbruk, skogsbruk och fiske",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom jordbruk, skogsbruk och fiske, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, jordbruk, skogsbruk och fiske",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom jordbruk, skogsbruk och fiske, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_A_A"
@@ -1280,15 +1280,15 @@
   {
     "kpi_id": "N_BR_A_A",
     "kpi_namn": "Andel jordbruk, skogsbruk och fiske",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom jordbruk, skogsbruk och fiske, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom jordbruk, skogsbruk och fiske, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_A"
   },
   {
     "kpi_id": "N_BR_BC",
-    "kpi_namn": "Förvärvsarbetande, tillverkning och utvinning",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom tillverkning och utvinning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, tillverkning och utvinning",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom tillverkning och utvinning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_BC_A"
@@ -1296,15 +1296,15 @@
   {
     "kpi_id": "N_BR_BC_A",
     "kpi_namn": "Andel tillverkning och utvinning",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom tillverkning och utvinning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom tillverkning och utvinning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_BC"
   },
   {
     "kpi_id": "N_BR_DE",
-    "kpi_namn": "Förvärvsarbetande, energi och miljö",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom energi och miljö, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, energi och miljö",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom energi och miljö, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_DE_A"
@@ -1312,15 +1312,15 @@
   {
     "kpi_id": "N_BR_DE_A",
     "kpi_namn": "Andel energi och miljö",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom energi och miljö, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom energi och miljö, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_DE"
   },
   {
     "kpi_id": "N_BR_F",
-    "kpi_namn": "Förvärvsarbetande, byggverksamhet",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom byggverksamhet, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, byggverksamhet",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom byggverksamhet, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_F_A"
@@ -1328,15 +1328,15 @@
   {
     "kpi_id": "N_BR_F_A",
     "kpi_namn": "Andel byggverksamhet",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom byggverksamhet, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom byggverksamhet, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_F"
   },
   {
     "kpi_id": "N_BR_G",
-    "kpi_namn": "Förvärvsarbetande, handel",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom handel, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, handel",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom handel, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_G_A"
@@ -1344,15 +1344,15 @@
   {
     "kpi_id": "N_BR_G_A",
     "kpi_namn": "Andel handel",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom handel, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom handel, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_G"
   },
   {
     "kpi_id": "N_BR_H",
-    "kpi_namn": "Förvärvsarbetande, transport och magasinering",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom transport och magasinering, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, transport och magasinering",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom transport och magasinering, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_H_A"
@@ -1360,15 +1360,15 @@
   {
     "kpi_id": "N_BR_H_A",
     "kpi_namn": "Andel transport och magasinering",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom transport och magasinering, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom transport och magasinering, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_H"
   },
   {
     "kpi_id": "N_BR_I",
-    "kpi_namn": "Förvärvsarbetande, hotell och restaurang",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom hotell och restaurang, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, hotell och restaurang",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom hotell och restaurang, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_I_A"
@@ -1376,15 +1376,15 @@
   {
     "kpi_id": "N_BR_I_A",
     "kpi_namn": "Andel hotell och restaurang",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom hotell och restaurang, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom hotell och restaurang, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_I"
   },
   {
     "kpi_id": "N_BR_J",
-    "kpi_namn": "Förvärvsarbetande, it och kommunikation",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom it och kommunikation, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, it och kommunikation",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom it och kommunikation, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_J_A"
@@ -1392,15 +1392,15 @@
   {
     "kpi_id": "N_BR_J_A",
     "kpi_namn": "Andel it och kommunikation",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom it och kommunikation, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom it och kommunikation, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_J"
   },
   {
     "kpi_id": "N_BR_K",
-    "kpi_namn": "Förvärvsarbetande, finans och försäkring",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom finans och försäkring, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, finans och försäkring",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom finans och försäkring, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_K_A"
@@ -1408,15 +1408,15 @@
   {
     "kpi_id": "N_BR_K_A",
     "kpi_namn": "Andel finans och försäkring",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom finans och försäkring, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom finans och försäkring, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_K"
   },
   {
     "kpi_id": "N_BR_L",
-    "kpi_namn": "Förvärvsarbetande, fastighetsverksamhet",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom fastighetsverksamhet, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, fastighetsverksamhet",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom fastighetsverksamhet, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_L_A"
@@ -1424,15 +1424,15 @@
   {
     "kpi_id": "N_BR_L_A",
     "kpi_namn": "Andel fastighetsverksamhet",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom fastighetsverksamhet, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom fastighetsverksamhet, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_L"
   },
   {
     "kpi_id": "N_BR_MN",
-    "kpi_namn": "Förvärvsarbetande, företagstjänster",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom företagstjänster, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, företagstjänster",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom företagstjänster, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_MN_A"
@@ -1440,15 +1440,15 @@
   {
     "kpi_id": "N_BR_MN_A",
     "kpi_namn": "Andel företagstjänster",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom företagstjänster, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom företagstjänster, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_MN"
   },
   {
     "kpi_id": "N_BR_O",
-    "kpi_namn": "Förvärvsarbetande, offentlig förvaltning",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom offentlig förvaltning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, offentlig förvaltning",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom offentlig förvaltning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_O_A"
@@ -1456,15 +1456,15 @@
   {
     "kpi_id": "N_BR_O_A",
     "kpi_namn": "Andel offentlig förvaltning",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom offentlig förvaltning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom offentlig förvaltning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_O"
   },
   {
     "kpi_id": "N_BR_P",
-    "kpi_namn": "Förvärvsarbetande, utbildning",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, utbildning",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_P_A"
@@ -1472,15 +1472,15 @@
   {
     "kpi_id": "N_BR_P_A",
     "kpi_namn": "Andel utbildning",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_P"
   },
   {
     "kpi_id": "N_BR_Q",
-    "kpi_namn": "Förvärvsarbetande, vård och omsorg",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom vård och omsorg, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, vård och omsorg",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom vård och omsorg, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_Q_A"
@@ -1488,15 +1488,15 @@
   {
     "kpi_id": "N_BR_Q_A",
     "kpi_namn": "Andel vård och omsorg",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom vård och omsorg, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom vård och omsorg, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_Q"
   },
   {
     "kpi_id": "N_BR_RSTU",
-    "kpi_namn": "Förvärvsarbetande, övriga tjänster",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning inom övriga tjänster, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, övriga tjänster",
+    "beskrivning": "Antal sysselsatta dagbefolkning inom övriga tjänster, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_RSTU_A"
@@ -1504,15 +1504,15 @@
   {
     "kpi_id": "N_BR_RSTU_A",
     "kpi_namn": "Andel övriga tjänster",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning inom övriga tjänster, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning inom övriga tjänster, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_BR_RSTU"
   },
   {
     "kpi_id": "N_UTB_FORGYM",
-    "kpi_namn": "Förvärvsarbetande, förgymnasial utbildning",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning med förgymnasial utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, förgymnasial utbildning",
+    "beskrivning": "Antal sysselsatta dagbefolkning med förgymnasial utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_UTB_FORGYM_A"
@@ -1520,15 +1520,15 @@
   {
     "kpi_id": "N_UTB_FORGYM_A",
     "kpi_namn": "Andel förgymnasial utbildning",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning med förgymnasial utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning med förgymnasial utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_UTB_FORGYM"
   },
   {
     "kpi_id": "N_UTB_GYM",
-    "kpi_namn": "Förvärvsarbetande, gymnasial utbildning",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning med gymnasial utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, gymnasial utbildning",
+    "beskrivning": "Antal sysselsatta dagbefolkning med gymnasial utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_UTB_GYM_A"
@@ -1536,15 +1536,15 @@
   {
     "kpi_id": "N_UTB_GYM_A",
     "kpi_namn": "Andel gymnasial utbildning",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning med gymnasial utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning med gymnasial utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_UTB_GYM"
   },
   {
     "kpi_id": "N_UTB_EFTGYM",
-    "kpi_namn": "Förvärvsarbetande, eftergymnasial utbildning",
-    "beskrivning": "Antal förvärvsarbetande dagbefolkning med eftergymnasial utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta, eftergymnasial utbildning",
+    "beskrivning": "Antal sysselsatta dagbefolkning med eftergymnasial utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_UTB_EFTGYM_A"
@@ -1552,22 +1552,22 @@
   {
     "kpi_id": "N_UTB_EFTGYM_A",
     "kpi_namn": "Andel eftergymnasial utbildning",
-    "beskrivning": "Andel av samtliga förvärvsarbetande dagbefolkning med eftergymnasial utbildning, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel av samtliga sysselsatta dagbefolkning med eftergymnasial utbildning, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_UTB_EFTGYM"
   },
   {
     "kpi_id": "N_UTB_TOT",
-    "kpi_namn": "Förvärvsarbetande totalt (utb.)",
-    "beskrivning": "Totalt antal förvärvsarbetande dagbefolkning, alla utbildningsnivåer, efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt (utb.)",
+    "beskrivning": "Totalt antal sysselsatta dagbefolkning, alla utbildningsnivåer, efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_YRK_ANST",
     "kpi_namn": "Antal anställda",
-    "beskrivning": "Antal anställda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal anställda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST_A"
@@ -1575,7 +1575,7 @@
   {
     "kpi_id": "N_YRK_ANST_A",
     "kpi_namn": "Andel anställda",
-    "beskrivning": "Andel anställda av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel anställda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST"
@@ -1583,7 +1583,7 @@
   {
     "kpi_id": "N_YRK_ANST_INR",
     "kpi_namn": "Antal anställda, inrikes födda",
-    "beskrivning": "Antal anställda, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal anställda, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST_INR_A"
@@ -1591,7 +1591,7 @@
   {
     "kpi_id": "N_YRK_ANST_INR_A",
     "kpi_namn": "Andel anställda, inrikes födda",
-    "beskrivning": "Andel anställda, inrikes födda av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel anställda, inrikes födda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST_INR"
@@ -1599,7 +1599,7 @@
   {
     "kpi_id": "N_YRK_ANST_UTR",
     "kpi_namn": "Antal anställda, utrikes födda",
-    "beskrivning": "Antal anställda, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal anställda, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST_UTR_A"
@@ -1607,7 +1607,7 @@
   {
     "kpi_id": "N_YRK_ANST_UTR_A",
     "kpi_namn": "Andel anställda, utrikes födda",
-    "beskrivning": "Andel anställda, utrikes födda av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel anställda, utrikes födda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST_UTR"
@@ -1615,7 +1615,7 @@
   {
     "kpi_id": "N_YRK_EGAB",
     "kpi_namn": "Antal företagare i AB",
-    "beskrivning": "Antal företagare i AB 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal företagare i AB 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB_A"
@@ -1623,7 +1623,7 @@
   {
     "kpi_id": "N_YRK_EGAB_A",
     "kpi_namn": "Andel företagare i AB",
-    "beskrivning": "Andel företagare i AB av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel företagare i AB av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB"
@@ -1631,7 +1631,7 @@
   {
     "kpi_id": "N_YRK_EGAB_INR",
     "kpi_namn": "Antal företagare i AB, inrikes födda",
-    "beskrivning": "Antal företagare i AB, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal företagare i AB, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB_INR_A"
@@ -1639,7 +1639,7 @@
   {
     "kpi_id": "N_YRK_EGAB_INR_A",
     "kpi_namn": "Andel företagare i AB, inrikes födda",
-    "beskrivning": "Andel företagare i AB, inrikes födda av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel företagare i AB, inrikes födda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB_INR"
@@ -1647,7 +1647,7 @@
   {
     "kpi_id": "N_YRK_EGAB_UTR",
     "kpi_namn": "Antal företagare i AB, utrikes födda",
-    "beskrivning": "Antal företagare i AB, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal företagare i AB, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB_UTR_A"
@@ -1655,7 +1655,7 @@
   {
     "kpi_id": "N_YRK_EGAB_UTR_A",
     "kpi_namn": "Andel företagare i AB, utrikes födda",
-    "beskrivning": "Andel företagare i AB, utrikes födda av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel företagare i AB, utrikes födda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB_UTR"
@@ -1663,7 +1663,7 @@
   {
     "kpi_id": "N_YRK_EGFOR",
     "kpi_namn": "Antal egenföretagare",
-    "beskrivning": "Antal egenföretagare 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal egenföretagare 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_A"
@@ -1671,7 +1671,7 @@
   {
     "kpi_id": "N_YRK_EGFOR_A",
     "kpi_namn": "Andel egenföretagare",
-    "beskrivning": "Andel egenföretagare av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel egenföretagare av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR"
@@ -1679,7 +1679,7 @@
   {
     "kpi_id": "N_YRK_EGFOR_INR",
     "kpi_namn": "Antal egenföretagare, inrikes födda",
-    "beskrivning": "Antal egenföretagare, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal egenföretagare, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_INR_A"
@@ -1687,7 +1687,7 @@
   {
     "kpi_id": "N_YRK_EGFOR_INR_A",
     "kpi_namn": "Andel egenföretagare, inrikes födda",
-    "beskrivning": "Andel egenföretagare, inrikes födda av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel egenföretagare, inrikes födda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_INR"
@@ -1695,7 +1695,7 @@
   {
     "kpi_id": "N_YRK_EGFOR_UTR",
     "kpi_namn": "Antal egenföretagare, utrikes födda",
-    "beskrivning": "Antal egenföretagare, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal egenföretagare, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_UTR_A"
@@ -1703,36 +1703,36 @@
   {
     "kpi_id": "N_YRK_EGFOR_UTR_A",
     "kpi_namn": "Andel egenföretagare, utrikes födda",
-    "beskrivning": "Andel egenföretagare, utrikes födda av samtliga förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel egenföretagare, utrikes födda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_UTR"
   },
   {
     "kpi_id": "N_YRK_TOT",
-    "kpi_namn": "Förvärvsarbetande totalt",
-    "beskrivning": "Totalt antal förvärvsarbetande 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt",
+    "beskrivning": "Totalt antal sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_YRK_TOT_INR",
-    "kpi_namn": "Förvärvsarbetande totalt, inrikes födda",
-    "beskrivning": "Totalt antal förvärvsarbetande, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt, inrikes födda",
+    "beskrivning": "Totalt antal sysselsatta, inrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_YRK_TOT_UTR",
-    "kpi_namn": "Förvärvsarbetande totalt, utrikes födda",
-    "beskrivning": "Totalt antal förvärvsarbetande, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "kpi_namn": "Sysselsatta totalt, utrikes födda",
+    "beskrivning": "Totalt antal sysselsatta, utrikes födda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv"
   },
   {
     "kpi_id": "N_YRK_ANST_KV",
     "kpi_namn": "Antal kvinnor, anställda",
-    "beskrivning": "Antal kvinnor bland anställda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal kvinnor bland anställda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST_KV_A"
@@ -1740,7 +1740,7 @@
   {
     "kpi_id": "N_YRK_ANST_KV_A",
     "kpi_namn": "Andel kvinnor, anställda",
-    "beskrivning": "Andel kvinnor bland anställda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel kvinnor bland anställda 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_ANST_KV"
@@ -1748,7 +1748,7 @@
   {
     "kpi_id": "N_YRK_EGAB_KV",
     "kpi_namn": "Antal kvinnor, företagare i AB",
-    "beskrivning": "Antal kvinnor bland företagare i AB 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal kvinnor bland företagare i AB 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB_KV_A"
@@ -1756,7 +1756,7 @@
   {
     "kpi_id": "N_YRK_EGAB_KV_A",
     "kpi_namn": "Andel kvinnor, företagare i AB",
-    "beskrivning": "Andel kvinnor bland företagare i AB 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel kvinnor bland företagare i AB 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGAB_KV"
@@ -1764,7 +1764,7 @@
   {
     "kpi_id": "N_YRK_EGFOR_KV",
     "kpi_namn": "Antal kvinnor, egenföretagare",
-    "beskrivning": "Antal kvinnor bland egenföretagare 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Antal kvinnor bland egenföretagare 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "antal",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_KV_A"
@@ -1772,7 +1772,7 @@
   {
     "kpi_id": "N_YRK_EGFOR_KV_A",
     "kpi_namn": "Andel kvinnor, egenföretagare",
-    "beskrivning": "Andel kvinnor bland egenföretagare 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: SCB RAMS.",
+    "beskrivning": "Andel kvinnor bland egenföretagare 15–74 år, dagbefolkning efter arbetsställets belägenhet. Källa: Slutlig statistik från SCB BAS årsregister. Baseras på årliga registeruppgifter.",
     "enhet": "procent",
     "tema": "naringsliv",
     "par_kpi_id": "N_YRK_EGFOR_KV"

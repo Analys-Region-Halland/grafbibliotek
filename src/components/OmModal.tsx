@@ -32,7 +32,7 @@ export default function OmModal({ onClose }: Props) {
         {/* Header */}
         <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-neutral-100">
           <h2 className="font-data text-[17px] font-bold text-neutral-900 tracking-tight">
-            Om Halland i siffror
+            Om sidan
           </h2>
           <button
             onClick={onClose}
@@ -76,7 +76,7 @@ export default function OmModal({ onClose }: Props) {
               </li>
               <li>
                 <span className="font-semibold text-neutral-900">SCB</span>{" "}
-                — Statistiska centralbyrån. Pendlingsstatistik (BAS/RAMS) hämtas
+                — Statistiska centralbyrån. Pendlingsstatistik (BAS) hämtas
                 direkt via SCB:s PxWeb-API.
               </li>
               <li>
@@ -90,10 +90,27 @@ export default function OmModal({ onClose }: Props) {
                 — Fordonsstatistik och färdtjänstdata hämtas via Trafikanalys
                 öppna data-API.
               </li>
+              <li>
+                <span className="font-semibold text-neutral-900">Tillväxtverket</span>{" "}
+                — Inkvarteringsstatistik (turismdata) hämtas via Tillväxtverkets
+                öppna data.
+              </li>
             </ul>
           </section>
 
-          {/* 3. Kontakt */}
+          {/* 3. Kommande uppdateringar */}
+          <section>
+            <h3 className="font-data text-[12px] font-semibold text-neutral-900 mb-2 tracking-wide">
+              Kommande uppdateringar (april 2026)
+            </h3>
+            <ul className="space-y-1.5 list-disc list-inside">
+              <li>Berättelsefunktion med en guidad berättelse inom respektive tema</li>
+              <li>Kortrapport per tema och geografi</li>
+              <li>Fler indikatorer inom respektive område</li>
+            </ul>
+          </section>
+
+          {/* 4. Kontakt */}
           <section>
             <h3 className="font-data text-[12px] font-semibold text-neutral-900 mb-2 tracking-wide">
               Kontakt
@@ -112,7 +129,7 @@ export default function OmModal({ onClose }: Props) {
 
           {/* Uppdateringsdatum */}
           <p className="text-[11px] text-neutral-400 pt-2 border-t border-neutral-100">
-            Sidan uppdaterades {__BUILD_DATE__}.
+            Sidan uppdaterades senast {__BUILD_DATE__}.
           </p>
         </div>
 

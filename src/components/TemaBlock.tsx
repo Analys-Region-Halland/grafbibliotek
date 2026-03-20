@@ -10,7 +10,6 @@ interface Props {
   kommunKpiData: Map<string, KpiRow[]>;
   nettoKpis: Set<string>;
   onOpenKpi: (kpiId: string) => void;
-  onStartBerattelse: () => void;
 }
 
 /** Hämta KPI-metadata, filtrera bort de utan data */
@@ -83,7 +82,7 @@ const ACCENT_COLORS: Record<string, string> = {
 };
 
 export default function TemaBlock({
-  tema, meta, kommunKpiData, nettoKpis, onOpenKpi, onStartBerattelse,
+  tema, meta, kommunKpiData, nettoKpis, onOpenKpi,
 }: Props) {
   const farg = TEMA_FARG_KLASSER[tema.temaFarg];
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
@@ -231,22 +230,6 @@ export default function TemaBlock({
         <h2 className="font-data text-[17px] font-bold text-neutral-900 tracking-tight">
           {tema.temaNamn}
         </h2>
-        {tema.temaId === "befolkning" && (
-          <button
-            onClick={onStartBerattelse}
-            className="flex items-center gap-1.5 ml-1 px-2.5 py-1 rounded-md
-                       border border-neutral-200 bg-white
-                       text-neutral-500 hover:text-neutral-800 hover:border-neutral-300
-                       font-data text-[10px] font-medium
-                       active:scale-[0.97] transition-all duration-150 cursor-pointer"
-          >
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                 strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-            <span className="hidden sm:inline">Berättelse</span>
-          </button>
-        )}
       </div>
 
       {/* Kortgrid */}
