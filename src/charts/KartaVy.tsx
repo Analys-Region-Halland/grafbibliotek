@@ -503,12 +503,14 @@ export default function KartaVy({
       mainPaths: d3.Selection<SVGPathElement, GeoJSON.Feature, SVGGElement, unknown>,
       getKod: (d: GeoJSON.Feature) => string,
     ) {
-      const legendH = Math.min(mapAreaH * 0.65, 280);
-      const barW = compact ? 12 : 16;
-      const panelW = compact ? 150 : 200;
-      const barX = compact ? 70 : 100; // utrymme för vänster-etiketter + connectors
-      const panelX = width - panelW - 8;
-      const panelY = titelH + (mapAreaH - legendH) / 2 - 14;
+      const legendH = compact ? Math.min(mapAreaH * 0.5, 180) : Math.min(mapAreaH * 0.65, 280);
+      const barW = compact ? 10 : 16;
+      const panelW = compact ? 120 : 200;
+      const barX = compact ? 55 : 100; // utrymme för vänster-etiketter + connectors
+      const panelX = width - panelW - 4;
+      const panelY = compact
+        ? titelH + mapAreaH - legendH - 36
+        : titelH + (mapAreaH - legendH) / 2 - 14;
       const panelH = legendH + 28;
 
       const legG = svg.append("g").attr("transform", `translate(${panelX}, ${panelY})`);
@@ -570,10 +572,10 @@ export default function KartaVy({
       });
 
       // ─── Vänster-etiketter med connector lines ───
-      const fsLabel = compact ? "9px" : "11px";
+      const fsLabel = compact ? "8px" : "11px";
       // labelX = 8 — vänsterkant av panelen
-      const connMidX = barX - 12; // x där connector-linjen svänger vertikalt
-      const minGap = compact ? 14 : 16;
+      const connMidX = barX - (compact ? 8 : 12); // x där connector-linjen svänger vertikalt
+      const minGap = compact ? 12 : 16;
 
       interface LegLabel {
         naturalY: number; yPos: number;

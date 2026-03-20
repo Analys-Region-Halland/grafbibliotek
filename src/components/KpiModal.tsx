@@ -77,14 +77,14 @@ export default function KpiModal({
   // Lazy-ladda kartdata (bara när kartfliken är aktiv)
   const { mapData, loading: mapLoading } = useMapData(visning === "karta");
 
-  // Responsiv höjd — mobil: fasta höjder baserade på viewport, desktop: ratio
+  // Responsiv höjd — mobil: mer vertikal plats, desktop: breddbaserad ratio
   const chartHeight = chartWidth > 0
     ? visning === "karta"
       ? (chartWidth < 500
-        ? Math.min(Math.round(window.innerHeight * 0.6), 500)
+        ? Math.min(Math.round(window.innerHeight * 0.65), 520)
         : Math.round(chartWidth * 0.7))
       : (chartWidth < 500
-        ? Math.min(Math.round(window.innerHeight * 0.5), 400)
+        ? Math.min(Math.round(window.innerHeight * 0.45), 360)
         : Math.round(chartWidth * 0.62))
     : 0;
 

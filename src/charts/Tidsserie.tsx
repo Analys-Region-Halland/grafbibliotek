@@ -262,7 +262,7 @@ export default function Tidsserie({
     const longestLabel = `Snittkommun (riket)  ${fmtY(maxVal, enhet)}`;
     const charWidth = compact ? 4.5 : 7;
     const rightMargin = compact
-      ? Math.min(110, Math.max(80, longestLabel.length * charWidth + 8))
+      ? Math.min(90, Math.max(60, longestLabel.length * charWidth + 4))
       : Math.max(150, longestLabel.length * charWidth + 20);
 
     const margin = { top: 24 + titelOffset, right: rightMargin, bottom: 44, left: leftMargin };
@@ -485,10 +485,17 @@ export default function Tidsserie({
       tickYears = years.filter(
         (yr) => yr % 100 === 1 || yr === yearDom[1]
       );
-      // Glesa ut om det blir för tätt
-      if (tickYears.length > 8) {
+      // Glesa ut om det blir för tätt (mobil: max 4 ticks, desktop: max 8)
+      const maxTicks = compact ? 4 : 8;
+      if (tickYears.length > maxTicks) {
         tickYears = tickYears.filter(
           (yr, i) => yr % 200 === 1 || yr === yearDom[1] || i === 0
+        );
+      }
+      if (compact && tickYears.length > maxTicks) {
+        // Behåll bara första, sista och varannan
+        tickYears = tickYears.filter(
+          (_yr, i, arr) => i === 0 || i === arr.length - 1 || i % 2 === 0
         );
       }
     } else {
@@ -504,7 +511,7 @@ export default function Tidsserie({
       g.append("text")
         .attr("x", xp(yr)).attr("y", h + 22)
         .attr("text-anchor", "middle")
-        .attr("fill", "#000").attr("font-size", `${axisFontSize}px`)
+        .attr("fill", "#000").attr("font-size", `${compact ? axisSmFontSize : axisFontSize}px`)
         .attr("font-family", FONT)
         .text(monthly ? fmtPeriod(yr) : String(yr));
     });
