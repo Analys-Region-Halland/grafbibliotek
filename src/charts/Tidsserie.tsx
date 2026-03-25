@@ -6,6 +6,9 @@ import { fmt, fmtPeriod, isMonthly } from "../utils/format";
 
 export type VisningsLage = "alla" | "halland" | "egen";
 
+// Färgpalett för extra jämförelselinjer
+const EXTRA_COLORS = ["#004990", "#FF7E00", "#433C9D", "#2DB8F6", "#A51300", "#895B42"];
+
 interface Props {
   valdKommunKod: string;
   valdKommunNamn: string;
@@ -24,6 +27,15 @@ interface Props {
   kalla?: string;
   width: number;
   height: number;
+
+  // Popup-läge (nya props)
+  showRiksnitt?: boolean;
+  showLanssnitt?: boolean;
+  showMedian?: boolean;
+  bandKoder?: string[];
+  bandLabel?: string;
+  bandVisning?: "band" | "linjer";
+  extraLinjer?: Set<string>;
 }
 
 interface Label {
@@ -36,8 +48,9 @@ interface Label {
 }
 
 // Typsnitt
-const FONT = "'Inter', system-ui, sans-serif";
-const FONT_DATA = "'IBM Plex Sans', sans-serif";
+const FONT_TITEL = "'Source Serif 4', Georgia, serif";
+const FONT = "'IBM Plex Sans', system-ui, sans-serif";
+const FONT_DATA = "'IBM Plex Sans', system-ui, sans-serif";
 
 /** Iterativ relaxering — skjuter isär etiketter tills ingen överlappar */
 function resolveOverlap(labels: Label[], minGap: number, yMin: number, yMax: number) {
@@ -83,6 +96,14 @@ function fmtY(v: number, enhet?: string): string {
   return fmt(v, Math.abs(v) >= 100 ? 0 : Math.abs(v) < 10 ? 2 : 1);
 }
 
+/** Export-header: titel + subtitel som kan injiceras i SVG-klon vid nedladdning */
+export interface ExportHeader {
+  titel: string;
+  subtitel?: string;
+  kalla?: string;
+  leftMargin?: number; // matcha grafens vänstermarginal
+}
+
 /** Rensa SVG-klon för export */
 function cleanSvgClone(svgEl: SVGSVGElement): SVGSVGElement {
   const clone = svgEl.cloneNode(true) as SVGSVGElement;
@@ -90,22 +111,115 @@ function cleanSvgClone(svgEl: SVGSVGElement): SVGSVGElement {
   return clone;
 }
 
-/** Ladda ner SVG som PNG (2x retina). Valfria exportWidth/exportHeight sätter klonens storlek. */
+/** Injicera titel + subtitel i SVG-klonens topp och skjut ner grafinnehållet */
+function injectHeader(clone: SVGSVGElement, header: ExportHeader, origW: number, origH: number) {
+  const ns = "http://www.w3.org/2000/svg";
+  const xStart = String(header.leftMargin ?? 16);
+
+  // Radbrytning: dela undertitel i rader som ryms
+  const subFontPx = 13;
+  const charsPerLine = Math.floor((origW - 32) / (subFontPx * 0.55));
+  const subLines: string[] = [];
+  if (header.subtitel) {
+    const words = header.subtitel.split(" ");
+    let line = "";
+    for (const word of words) {
+      if (line && (line.length + 1 + word.length) > charsPerLine) {
+        subLines.push(line);
+        line = word;
+      } else {
+        line = line ? line + " " + word : word;
+      }
+    }
+    if (line) subLines.push(line);
+  }
+
+  const titelBaseline = 22;
+  const subLineH = 17;
+  const gapTitelSub = 4;
+  const totalSubH = subLines.length > 0 ? gapTitelSub + subLines.length * subLineH : 0;
+  const headerH = titelBaseline + totalSubH + 12; // 12px luft till graf
+  const newH = origH + headerH;
+
+  clone.setAttribute("viewBox", `0 0 ${origW} ${newH}`);
+  clone.setAttribute("width", String(origW));
+  clone.setAttribute("height", String(newH));
+
+  // Skjut ner befintligt innehåll
+  const wrapper = clone.ownerDocument.createElementNS(ns, "g");
+  wrapper.setAttribute("transform", `translate(0,${headerH})`);
+  while (clone.firstChild) wrapper.appendChild(clone.firstChild);
+  clone.appendChild(wrapper);
+
+  // Titel — Source Serif 4, 400, 21px — alignad med grafens y-etiketter
+  const titleEl = clone.ownerDocument.createElementNS(ns, "text");
+  titleEl.setAttribute("x", xStart);
+  titleEl.setAttribute("y", String(titelBaseline));
+  titleEl.setAttribute("fill", "#2d2e2d");
+  titleEl.setAttribute("font-size", "21px");
+  titleEl.setAttribute("font-weight", "400");
+  titleEl.setAttribute("font-family", "'Source Serif 4', Georgia, serif");
+  titleEl.textContent = header.titel;
+  clone.appendChild(titleEl);
+
+  // Undertitel — IBM Plex Sans 400, radbruten med tspan
+  if (subLines.length > 0) {
+    const subEl = clone.ownerDocument.createElementNS(ns, "text");
+    subEl.setAttribute("x", xStart);
+    subEl.setAttribute("fill", "#5b5b5b");
+    subEl.setAttribute("font-size", `${subFontPx}px`);
+    subEl.setAttribute("font-weight", "400");
+    subEl.setAttribute("font-family", "'IBM Plex Sans', system-ui, sans-serif");
+    subLines.forEach((line, i) => {
+      const tspan = clone.ownerDocument.createElementNS(ns, "tspan");
+      tspan.setAttribute("x", xStart);
+      tspan.setAttribute("y", String(titelBaseline + gapTitelSub + subLineH * (i + 1)));
+      tspan.textContent = line;
+      subEl.appendChild(tspan);
+    });
+    clone.appendChild(subEl);
+  }
+
+  // Källa
+  if (header.kalla) {
+    const kallaEl = clone.ownerDocument.createElementNS(ns, "text");
+    kallaEl.setAttribute("x", String(origW - 8));
+    kallaEl.setAttribute("y", String(newH - 4));
+    kallaEl.setAttribute("text-anchor", "end");
+    kallaEl.setAttribute("fill", "#aaa");
+    kallaEl.setAttribute("font-size", "11px");
+    kallaEl.setAttribute("font-weight", "400");
+    kallaEl.setAttribute("font-family", "'IBM Plex Sans', system-ui, sans-serif");
+    kallaEl.textContent = `Källa: ${header.kalla}`;
+    clone.appendChild(kallaEl);
+  }
+
+  return newH;
+}
+
+/** Ladda ner SVG som PNG (2x retina). */
 export function downloadSvgAsPng(
   svgEl: SVGSVGElement,
   filename: string,
   exportWidth?: number,
   exportHeight?: number,
+  header?: ExportHeader,
 ) {
   const clone = cleanSvgClone(svgEl);
+  const origW = svgEl.width.baseVal.value;
+  const origH = svgEl.height.baseVal.value;
 
-  // Om exportdimensioner anges: sätt viewBox till originalstorlek, explicit width/height till export
+  let finalH = origH;
+  if (header) {
+    finalH = injectHeader(clone, header, origW, origH);
+  }
+
+  // Exportdimensioner
   if (exportWidth && exportHeight) {
-    const origW = svgEl.width.baseVal.value;
-    const origH = svgEl.height.baseVal.value;
-    clone.setAttribute("viewBox", `0 0 ${origW} ${origH}`);
+    const scaledH = Math.round(exportWidth * (finalH / origW));
+    clone.setAttribute("viewBox", `0 0 ${origW} ${finalH}`);
     clone.setAttribute("width", String(exportWidth));
-    clone.setAttribute("height", String(exportHeight));
+    clone.setAttribute("height", String(scaledH));
   }
 
   const svgData = new XMLSerializer().serializeToString(clone);
@@ -114,8 +228,8 @@ export function downloadSvgAsPng(
 
   const img = new Image();
   const scale = 2;
-  const w = exportWidth ?? svgEl.width.baseVal.value;
-  const h = exportHeight ?? svgEl.height.baseVal.value;
+  const w = exportWidth ?? origW;
+  const h = exportHeight ? Math.round(exportWidth! * (finalH / origW)) : finalH;
   img.onload = () => {
     const canvas = document.createElement("canvas");
     canvas.width = w * scale;
@@ -134,22 +248,29 @@ export function downloadSvgAsPng(
   img.src = url;
 }
 
-/** Ladda ner SVG som .svg-fil. Valfria exportWidth/exportHeight sätter klonens storlek. */
+/** Ladda ner SVG som .svg-fil. */
 export function downloadSvgAsFile(
   svgEl: SVGSVGElement,
   filename: string,
   exportWidth?: number,
   exportHeight?: number,
+  header?: ExportHeader,
 ) {
   const clone = cleanSvgClone(svgEl);
   clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  const origW = svgEl.width.baseVal.value;
+  const origH = svgEl.height.baseVal.value;
+
+  let finalH = origH;
+  if (header) {
+    finalH = injectHeader(clone, header, origW, origH);
+  }
 
   if (exportWidth && exportHeight) {
-    const origW = svgEl.width.baseVal.value;
-    const origH = svgEl.height.baseVal.value;
-    clone.setAttribute("viewBox", `0 0 ${origW} ${origH}`);
+    const scaledH = Math.round(exportWidth * (finalH / origW));
+    clone.setAttribute("viewBox", `0 0 ${origW} ${finalH}`);
     clone.setAttribute("width", String(exportWidth));
-    clone.setAttribute("height", String(exportHeight));
+    clone.setAttribute("height", String(scaledH));
   }
 
   const svgData = new XMLSerializer().serializeToString(clone);
@@ -165,6 +286,18 @@ export function downloadSvgAsFile(
 const PER_1000_KPIS = new Set(["N01803", "N01806", "N01964"]);
 const FOLKMANGD_KPI = "N01951";
 
+/** Beräkna vänstermarginal — exporterad så KpiPopup kan aligna titel */
+export function calcLeftMargin(allData: KpiRow[], kpiId: string, enhet: string, indexMode: boolean): number {
+  if (indexMode || PER_1000_KPIS.has(kpiId)) return 64;
+  const kpiVals = allData
+    .filter((d) => d.kpi_id === kpiId && d.varde != null)
+    .map((d) => d.varde!);
+  if (kpiVals.length === 0) return 64;
+  const maxAbs = Math.max(...kpiVals.map((v) => Math.abs(v)));
+  const sample = fmtY(maxAbs, enhet);
+  return Math.max(64, sample.length * 8.5 + 20);
+}
+
 
 export default function Tidsserie({
   valdKommunKod, valdKommunNamn, kpiId, enhet, allData,
@@ -172,7 +305,16 @@ export default function Tidsserie({
   titel, subtitelEnhet, subtitelGeografi, subtitelKontext, subtitelPeriod,
   kalla,
   width, height,
+  showRiksnitt: showRiksnittProp,
+  showLanssnitt: showLanssnittprop,
+  showMedian: showMedianProp,
+  bandKoder,
+  bandLabel,
+  bandVisning = "band",
+  extraLinjer,
 }: Props) {
+  // Popup-läge: styrs av nya props istället för visningsLage
+  const popupMode = showRiksnittProp !== undefined;
   const compact = width < 500;
   const ref = useRef<SVGSVGElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
@@ -181,14 +323,16 @@ export default function Tidsserie({
   const titelFontSize = compact ? 15 : 18;
   const titelLineH = compact ? 20 : 24;
   const subFontSize = compact ? 11 : 13;
-  const axisFontSize = compact ? 11 : 13;
-  const axisSmFontSize = compact ? 10 : 12;
+  const axisFontSize = compact ? 11 : 14;
+  const axisSmFontSize = compact ? 11 : 13;
   const labelFontSize = compact ? 11 : 13;
   const labelSmFontSize = compact ? 10 : 12;
 
   const titelLines = useMemo(() => titel ? wrapText(titel, titelMaxChars) : [], [titel, titelMaxChars]);
   const harSubtitel = !!(subtitelEnhet || subtitelGeografi || subtitelKontext || subtitelPeriod);
-  const titelOffset = titel
+  // Popup-läge: ingen titel i SVG (KpiPopup visar den redan)
+  const visaTitel = !popupMode && !!titel;
+  const titelOffset = visaTitel
     ? titelLines.length * titelLineH + (harSubtitel ? (compact ? 18 : 22) : 0) + 6
     : 0;
 
@@ -210,13 +354,13 @@ export default function Tidsserie({
     svg.selectAll("*").remove();
 
     // ─── Titel ───
-    if (titel) {
+    if (visaTitel) {
       const titelEl = svg.append("text")
         .attr("x", leftMargin).attr("y", titelLineH)
-        .attr("fill", "#111")
-        .attr("font-size", `${titelFontSize}px`)
-        .attr("font-weight", "600")
-        .attr("font-family", FONT);
+        .attr("fill", "#2d2e2d")
+        .attr("font-size", "21px")
+        .attr("font-weight", "400")
+        .attr("font-family", FONT_TITEL);
 
       titelLines.forEach((line, i) => {
         titelEl.append("tspan")
@@ -230,7 +374,8 @@ export default function Tidsserie({
         const subY = titelLineH + (titelLines.length - 1) * titelLineH + (compact ? 18 : 22);
         const subEl = svg.append("text")
           .attr("x", leftMargin).attr("y", subY)
-          .attr("font-size", `${subFontSize}px`)
+          .attr("font-size", "13px")
+          .attr("font-weight", "400")
           .attr("font-family", FONT);
 
         const parts: { text: string; fill: string; weight: string }[] = [];
@@ -252,20 +397,15 @@ export default function Tidsserie({
     // Alla rader för detta KPI
     const kpiDataRaw = allData.filter((d) => d.kpi_id === kpiId && d.varde != null);
 
-    // Dynamisk högermarginal baserad på längsta möjliga etikett
-    const kpiValsForMargin = kpiDataRaw
-      .filter((d) => d.varde != null)
-      .map((d) => d.varde!);
-    const maxVal = kpiValsForMargin.length > 0
-      ? Math.max(...kpiValsForMargin.map((v) => Math.abs(v)))
-      : 0;
-    const longestLabel = `Snittkommun (riket)  ${fmtY(maxVal, enhet)}`;
-    const charWidth = compact ? 4.5 : 7;
+    // Dynamisk högermarginal: connector (30px) + längsta etikettnamn (utan värden)
+    const longestName = "Snittkommun (riket)"; // längsta möjliga namn
+    const charWidth = compact ? 5 : 7;
+    const connectorWidth = 30; // H→V→H connector
     const rightMargin = compact
-      ? Math.min(90, Math.max(60, longestLabel.length * charWidth + 4))
-      : Math.max(150, longestLabel.length * charWidth + 20);
+      ? Math.min(90, Math.max(65, longestName.length * charWidth + connectorWidth))
+      : Math.max(140, longestName.length * charWidth + connectorWidth);
 
-    const margin = { top: 24 + titelOffset, right: rightMargin, bottom: 44, left: leftMargin };
+    const margin = { top: (popupMode ? 8 : 24) + titelOffset, right: rightMargin, bottom: 44, left: leftMargin };
     const w = width - margin.left - margin.right;
     const h = (height + titelOffset) - margin.top - margin.bottom;
     const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
@@ -313,8 +453,11 @@ export default function Tidsserie({
     const perKommun = d3.group(kpiData, (d) => d.kommun_kod);
     const kommunData = perKommun.get(valdKommunKod) ?? [];
 
-    const visaRiket = indexMode || enhet !== "antal";
+    const visaRiket = popupMode ? (showRiksnittProp ?? false) : (indexMode || enhet !== "antal");
     const riksData = visaRiket ? (perKommun.get("0000") ?? []) : [];
+
+    const visaLanssnitt = popupMode ? (showLanssnittprop ?? false) : false;
+    const lansData = visaLanssnitt ? (perKommun.get("0013") ?? []) : [];
 
     const jmfTyp = isRegion ? "L" : "K";
     const kommunKoder = [...perKommun.keys()].filter(
@@ -323,16 +466,47 @@ export default function Tidsserie({
 
     // Median per år
     const years0 = [...new Set(kpiData.map((d) => d.ar))].sort();
-    const medianPerAr = years0.map((yr) => {
+    const visaMedian = popupMode ? (showMedianProp ?? false) : (visningsLage !== "egen");
+    const medianPerAr = visaMedian ? years0.map((yr) => {
       const vals = kommunKoder
         .map((k) => perKommun.get(k)?.find((d) => d.ar === yr)?.varde)
         .filter((v): v is number => v != null);
       return { ar: yr, varde: vals.length > 0 ? d3.median(vals)! : null };
-    }).filter((d) => d.varde != null) as { ar: number; varde: number }[];
+    }).filter((d) => d.varde != null) as { ar: number; varde: number }[] : [];
+
+    // Band (referensområde) — min/max per år
+    const hasBand = bandKoder && bandKoder.length > 0;
+    const bandMinMax = hasBand ? years0.map((yr) => {
+      const vals = bandKoder!
+        .map((k) => perKommun.get(k)?.find((d) => d.ar === yr)?.varde)
+        .filter((v): v is number => v != null);
+      if (vals.length === 0) return null;
+      return { ar: yr, min: Math.min(...vals), max: Math.max(...vals) };
+    }).filter((d): d is { ar: number; min: number; max: number } => d != null) : [];
+
+    // Extra jämförelselinjer
+    const extraKoder = extraLinjer ? [...extraLinjer] : [];
+    const extraDataArr = extraKoder.map((kod, i) => ({
+      kod,
+      namn: kpiData.find((d) => d.kommun_kod === kod)?.kommun_namn ?? kod,
+      data: [...(perKommun.get(kod) ?? [])].sort((a, b) => a.ar - b.ar),
+      color: EXTRA_COLORS[i % EXTRA_COLORS.length],
+    })).filter((e) => e.data.length > 0);
 
     // Y-domän
     let relevantValues: number[];
-    if (visningsLage === "alla") {
+    if (popupMode) {
+      // Popup: vald kommun + allt som visas
+      relevantValues = kommunData.filter((d) => d.varde != null).map((d) => d.varde!);
+      if (visaRiket) relevantValues.push(...riksData.filter(d => d.varde != null).map((d) => d.varde!));
+      if (visaLanssnitt) relevantValues.push(...lansData.filter(d => d.varde != null).map((d) => d.varde!));
+      if (visaMedian) relevantValues.push(...medianPerAr.map((d) => d.varde));
+      if (bandMinMax.length > 0) {
+        relevantValues.push(...bandMinMax.map((d) => d.min));
+        relevantValues.push(...bandMinMax.map((d) => d.max));
+      }
+      extraDataArr.forEach((e) => relevantValues.push(...e.data.filter(d => d.varde != null).map((d) => d.varde!)));
+    } else if (visningsLage === "alla") {
       let domainData = visaRiket ? kpiData : kpiData.filter((d) => d.kommun_kod !== "0000");
       if (isRegion) domainData = domainData.filter((d) => d.kommun_typ === "L" || d.kommun_kod === "0000" || d.kommun_kod === valdKommunKod);
       relevantValues = domainData.map((d) => d.varde!);
@@ -342,7 +516,7 @@ export default function Tidsserie({
     } else {
       relevantValues = kommunData.filter((d) => d.varde != null).map((d) => d.varde!);
     }
-    if (visningsLage !== "egen") {
+    if (!popupMode && visningsLage !== "egen") {
       if (visaRiket) relevantValues.push(...riksData.map((d) => d.varde!));
       relevantValues.push(...medianPerAr.map((d) => d.varde));
     }
@@ -371,9 +545,9 @@ export default function Tidsserie({
     }
 
     let [yMin, yMax] = d3.extent(relevantValues) as [number, number];
-    if (visningsLage === "egen") {
+    if (popupMode || visningsLage === "egen") {
       const span = yMax - yMin || Math.abs(yMax) * 0.1 || 1;
-      const pad = span * 0.15;
+      const pad = span * (popupMode ? 0.08 : 0.15);
       yMin -= pad;
       yMax += pad;
     }
@@ -391,48 +565,31 @@ export default function Tidsserie({
 
     const yDom = y.domain() as [number, number];
 
-    // ─── Y-axel ───
-    g.append("line")
-      .attr("x1", 0).attr("x2", 0)
-      .attr("y1", y(yDom[0])).attr("y2", y(yDom[1]))
-      .attr("stroke", "#000").attr("stroke-width", 1.2);
+    // ─── Y-axel — OWID-stil: streckade horisontella gridlines, ingen vertikal linje ───
+    // Antal ticks: OWID-formel — skalbaserat, 3–5 st ger jämnt spacing
+    const tickTarget = Math.round(Math.max(3, Math.min(5, h / (axisSmFontSize * 4))));
+    const yTicks = useLog ? (y.ticks() as number[]) : (y.ticks(tickTarget) as number[]);
 
-    [yDom[0], yDom[1]].forEach((val) => {
-      g.append("line")
-        .attr("x1", -5).attr("x2", 0)
-        .attr("y1", y(val)).attr("y2", y(val))
-        .attr("stroke", "#000").attr("stroke-width", 1.2);
-      g.append("text")
-        .attr("x", -10).attr("y", y(val) + 5)
-        .attr("text-anchor", "end")
-        .attr("fill", "#000").attr("font-size", `${axisFontSize}px`)
-        .attr("font-family", FONT_DATA)
-        .text(fmtY(val, enhet));
-    });
-
-    // Mellanliggande tick-markeringar — filtrera så etiketter aldrig överlappar
-    const rawTicks = useLog ? y.ticks() : y.ticks(5);
-    const minTickGap = 30;
-    const occupiedPixels = [y(yDom[0]), y(yDom[1])];
-
-    const filteredTicks = (rawTicks as number[])
-      .filter((t) => t > yDom[0] && t < yDom[1])
-      .sort((a, b) => y(a) - y(b));
-
-    for (const t of filteredTicks) {
+    for (const t of yTicks) {
       const px = y(t);
-      if (occupiedPixels.some((op) => Math.abs(px - op) < minTickGap)) continue;
-      occupiedPixels.push(px);
 
+      // Streckad gridline (OWID: dash 4,4)
+      const isZero = !indexMode && Math.abs(t) < 0.001;
       g.append("line")
-        .attr("x1", -3).attr("x2", 0)
+        .attr("x1", 0).attr("x2", w)
         .attr("y1", px).attr("y2", px)
-        .attr("stroke", "#555").attr("stroke-width", 0.6);
+        .attr("stroke", isZero ? "#aaa" : "#d2d2d2")
+        .attr("stroke-width", isZero ? 1 : 0.7)
+        .attr("stroke-dasharray", isZero ? "none" : "4,4");
+
+      // Etikett — IBM Plex Sans 400 tnum
       g.append("text")
-        .attr("x", -10).attr("y", px + 5)
+        .attr("x", -8).attr("y", px + 5)
         .attr("text-anchor", "end")
-        .attr("fill", "#666").attr("font-size", `${axisSmFontSize}px`)
+        .attr("fill", "#5b5b5b").attr("font-size", `${axisSmFontSize}px`)
+        .attr("font-weight", "400")
         .attr("font-family", FONT_DATA)
+        .style("font-feature-settings", '"tnum"')
         .text(fmtY(t, enhet));
     }
 
@@ -448,24 +605,14 @@ export default function Tidsserie({
         .text("Logaritmisk skala");
     }
 
-    // Referenslinje: 100 vid index, 1,00 för kvoter, 0 annars (dölj vid log)
+    // Referenslinje: 100 vid index, 1,00 för kvoter (solid, starkare — OWID-stil)
     if (!useLog) {
-      const refVal = indexMode ? 100 : (enhet === "kvot" ? 1 : 0);
-      if (yDom[0] <= refVal && yDom[1] >= refVal) {
+      const refVal = indexMode ? 100 : (enhet === "kvot" ? 1 : null);
+      if (refVal != null && yDom[0] <= refVal && yDom[1] >= refVal) {
         g.append("line")
           .attr("x1", 0).attr("x2", w)
           .attr("y1", y(refVal)).attr("y2", y(refVal))
-          .attr("stroke", "#000").attr("stroke-width", 1.2)
-          .attr("stroke-dasharray", "6,4")
-          .attr("opacity", 0.6);
-        if (enhet === "kvot" && !indexMode) {
-          g.append("text")
-            .attr("x", w + 4).attr("y", y(refVal) + 4)
-            .attr("fill", "#666").attr("font-size", "11px")
-            .attr("font-weight", "500")
-            .attr("font-family", FONT_DATA)
-            .text("1,00");
-        }
+          .attr("stroke", "#999").attr("stroke-width", 1);
       }
     }
 
@@ -473,7 +620,7 @@ export default function Tidsserie({
     g.append("line")
       .attr("x1", 0).attr("x2", w)
       .attr("y1", h).attr("y2", h)
-      .attr("stroke", "#000").attr("stroke-width", 1.2);
+      .attr("stroke", "#ddd").attr("stroke-width", 0.5);
 
     const years = [...new Set(allYears)].sort();
     const yearDom = d3.extent(years) as [number, number];
@@ -506,12 +653,13 @@ export default function Tidsserie({
     tickYears.forEach((yr) => {
       g.append("line")
         .attr("x1", xp(yr)).attr("x2", xp(yr))
-        .attr("y1", h).attr("y2", h + 6)
-        .attr("stroke", "#000").attr("stroke-width", 0.8);
+        .attr("y1", h).attr("y2", h + 5)
+        .attr("stroke", "#ddd").attr("stroke-width", 0.5);
       g.append("text")
-        .attr("x", xp(yr)).attr("y", h + 22)
+        .attr("x", xp(yr)).attr("y", h + 20)
         .attr("text-anchor", "middle")
-        .attr("fill", "#000").attr("font-size", `${compact ? axisSmFontSize : axisFontSize}px`)
+        .attr("fill", "#5b5b5b").attr("font-size", `${compact ? axisSmFontSize : axisFontSize}px`)
+        .attr("font-weight", "400")
         .attr("font-family", FONT)
         .text(monthly ? fmtPeriod(yr) : String(yr));
     });
@@ -521,6 +669,51 @@ export default function Tidsserie({
       .x((d) => xp(d.ar))
       .y((d) => y(d.varde!))
       .curve(d3.curveMonotoneX);
+
+    // ─── Referensområde: band eller individuella linjer ───
+    if (hasBand && bandVisning === "band" && bandMinMax.length > 1) {
+      const bandArea = d3.area<{ ar: number; min: number; max: number }>()
+        .x((d) => xp(d.ar))
+        .y0((d) => y(d.min))
+        .y1((d) => y(d.max))
+        .curve(d3.curveMonotoneX);
+      g.append("path")
+        .datum(bandMinMax)
+        .attr("d", bandArea)
+        .attr("fill", "#000")
+        .attr("fill-opacity", 0.04)
+        .attr("stroke", "none");
+    } else if (hasBand && bandVisning === "linjer") {
+      bandKoder!.forEach((kod) => {
+        if (kod === valdKommunKod) return;
+        const rows = perKommun.get(kod);
+        if (!rows) return;
+        const sorted = [...rows].sort((a, b) => a.ar - b.ar);
+        g.append("path")
+          .datum(sorted)
+          .attr("d", line)
+          .attr("fill", "none")
+          .attr("stroke", "#DCDCDC")
+          .attr("stroke-width", 0.5);
+      });
+    }
+
+    // ─── Extra jämförelselinjer ───
+    extraDataArr.forEach((extra) => {
+      g.append("path")
+        .datum(extra.data)
+        .attr("d", line)
+        .attr("fill", "none")
+        .attr("stroke", extra.color)
+        .attr("stroke-width", 1.5)
+        .attr("stroke-opacity", 0.7);
+      const last = extra.data[extra.data.length - 1];
+      if (last?.varde != null) {
+        g.append("circle")
+          .attr("cx", xp(last.ar)).attr("cy", y(last.varde))
+          .attr("r", 2.5).attr("fill", extra.color).attr("fill-opacity", 0.7);
+      }
+    });
 
     // ─── Bakgrundslinjer ───
     if (visningsLage === "alla") {
@@ -537,8 +730,8 @@ export default function Tidsserie({
       });
     }
 
-    // ─── Mediankommun — visas i alla + halland ───
-    const visaRef = visningsLage !== "egen";
+    // ─── Mediankommun ───
+    const visaRef = popupMode ? visaMedian : (visningsLage !== "egen");
     const medianLine = d3.line<{ ar: number; varde: number }>()
       .x((d) => xp(d.ar))
       .y((d) => y(d.varde))
@@ -551,17 +744,38 @@ export default function Tidsserie({
         .datum(medianPerAr)
         .attr("d", medianLine)
         .attr("fill", "none")
-        .attr("stroke", "#777")
-        .attr("stroke-width", 1.4);
+        .attr("stroke", "#888")
+        .attr("stroke-width", 1.5)
+        .attr("stroke-dasharray", popupMode ? "4,3" : "none");
       if (medianLast) {
         g.append("circle")
           .attr("cx", xp(medianLast.ar)).attr("cy", y(medianLast.varde))
-          .attr("r", 3.5).attr("fill", "#777");
+          .attr("r", 3).attr("fill", "#888");
+      }
+    }
+
+    // ─── Länssnitt (Region Halland 0013) ───
+    const lansSorted = visaLanssnitt ? [...lansData].sort((a, b) => a.ar - b.ar) : [];
+    const lansLast = lansSorted[lansSorted.length - 1];
+
+    if (lansSorted.length > 0) {
+      g.append("path")
+        .datum(lansSorted)
+        .attr("d", line)
+        .attr("fill", "none")
+        .attr("stroke", "#00AB60")
+        .attr("stroke-width", 1.5)
+        .attr("stroke-opacity", 0.6);
+      if (lansLast?.varde != null) {
+        g.append("circle")
+          .attr("cx", xp(lansLast.ar)).attr("cy", y(lansLast.varde))
+          .attr("r", 3).attr("fill", "#00AB60").attr("fill-opacity", 0.6);
       }
     }
 
     // ─── Rikssnitt ───
-    const riksSorted = visaRef ? [...riksData].sort((a, b) => a.ar - b.ar) : [];
+    const visaRiks = popupMode ? visaRiket : visaRef;
+    const riksSorted = visaRiks ? [...riksData].sort((a, b) => a.ar - b.ar) : [];
     const riksLast = riksSorted[riksSorted.length - 1];
 
     if (riksSorted.length > 0) {
@@ -569,12 +783,12 @@ export default function Tidsserie({
         .datum(riksSorted)
         .attr("d", line)
         .attr("fill", "none")
-        .attr("stroke", "#444")
-        .attr("stroke-width", 1.8);
+        .attr("stroke", "#555")
+        .attr("stroke-width", 1.5);
       if (riksLast?.varde != null) {
         g.append("circle")
           .attr("cx", xp(riksLast.ar)).attr("cy", y(riksLast.varde))
-          .attr("r", 3.5).attr("fill", "#444");
+          .attr("r", 3).attr("fill", "#555");
       }
     }
 
@@ -628,7 +842,7 @@ export default function Tidsserie({
         .attr("d", line)
         .attr("fill", "none")
         .attr("stroke", "#00664D")
-        .attr("stroke-width", 3);
+        .attr("stroke-width", 2.5);
 
       // Månadsdata: referenspunkter vid samma månad alla föregående år
       if (monthly && kommunLast) {
@@ -648,11 +862,6 @@ export default function Tidsserie({
         g.append("circle")
           .attr("cx", xp(kommunLast.ar)).attr("cy", y(kommunLast.varde))
           .attr("r", 4.5).attr("fill", "#00664D");
-
-        g.append("line")
-          .attr("x1", -5).attr("x2", 4)
-          .attr("y1", y(kommunLast.varde)).attr("y2", y(kommunLast.varde))
-          .attr("stroke", "#00664D").attr("stroke-width", 1.5);
       }
 
       const kommunFirst = kommunSorted[0];
@@ -673,30 +882,51 @@ export default function Tidsserie({
     if (kommunLast?.varde != null) {
       const yp = y(kommunLast.varde);
       labels.push({
-        text: compact ? fmtY(kommunLast.varde, enhet) : `${valdKommunNamn}  ${fmtY(kommunLast.varde, enhet)}`,
+        text: valdKommunNamn,
         naturalY: yp, yPos: yp,
-        color: "#00664D", weight: 600, size: `${labelFontSize}px`,
+        color: "#00664D", weight: 500, size: `${labelFontSize}px`,
       });
     }
     if (riksLast?.varde != null) {
       const yp = y(riksLast.varde);
       labels.push({
-        text: compact ? fmtY(riksLast.varde, enhet) : `Riket  ${fmtY(riksLast.varde, enhet)}`,
+        text: "Riket",
         naturalY: yp, yPos: yp,
-        color: "#444", weight: 500, size: `${labelSmFontSize}px`,
+        color: "#555", weight: 400, size: `${labelSmFontSize}px`,
+      });
+    }
+
+    if (lansLast?.varde != null) {
+      const yp = y(lansLast.varde);
+      labels.push({
+        text: "Halland",
+        naturalY: yp, yPos: yp,
+        color: "#00AB60", weight: 400, size: `${labelSmFontSize}px`,
       });
     }
 
     if (medianLast) {
       const yp = y(medianLast.varde);
       labels.push({
-        text: `Median  ${fmtY(medianLast.varde, enhet)}`,
+        text: "Median",
         naturalY: yp, yPos: yp,
-        color: "#777", weight: 500, size: `${labelSmFontSize}px`,
+        color: "#888", weight: 400, size: `${labelSmFontSize}px`,
       });
     }
 
-    if (visningsLage === "halland") {
+    // Extra jämförelselinjer — etiketter
+    extraDataArr.forEach((extra) => {
+      const last = extra.data[extra.data.length - 1];
+      if (!last?.varde) return;
+      const yp = y(last.varde);
+      labels.push({
+        text: trunc(extra.namn),
+        naturalY: yp, yPos: yp,
+        color: extra.color, weight: 500, size: `${labelSmFontSize}px`,
+      });
+    });
+
+    if (!popupMode && visningsLage === "halland") {
       HALLAND_KODER.forEach((kod) => {
         if (kod === valdKommunKod) return;
         const rows = perKommun.get(kod);
@@ -706,29 +936,36 @@ export default function Tidsserie({
         if (!last?.varde) return;
         const yp = y(last.varde);
         labels.push({
-          text: compact ? fmtY(last.varde, enhet) : `${trunc(last.kommun_namn)}  ${fmtY(last.varde, enhet)}`,
+          text: trunc(last.kommun_namn),
           naturalY: yp, yPos: yp,
           color: "#bbb", weight: 400, size: compact ? "9px" : "11px",
         });
       });
     }
 
-    resolveOverlap(labels, compact ? 13 : 17, 0, h);
+    resolveOverlap(labels, compact ? 14 : 18, 0, h);
+
+    // OWID-stil connectors: alltid H→V→H (3-segment path)
+    const connMargin = 4;       // avstånd från linjens sista punkt till connector-start
+    const connMidX = w + connMargin + 12; // mittpunkt för vertikalt segment
+    const connEndX = w + connMargin + 22; // där texten börjar
+    const textX = connEndX + 4;
 
     labels.forEach((lbl) => {
-      const displaced = Math.abs(lbl.yPos - lbl.naturalY) > 3;
+      // Connector: horisontell → vertikal → horisontell
+      g.append("path")
+        .attr("d", `M${w + connMargin},${lbl.naturalY} H${connMidX} V${lbl.yPos} H${connEndX}`)
+        .attr("fill", "none")
+        .attr("stroke", "#999")
+        .attr("stroke-width", 0.5);
 
-      if (displaced) {
-        g.append("path")
-          .attr("d", `M${w + 3},${lbl.naturalY} L${w + 7},${lbl.naturalY} L${w + 9},${lbl.yPos}`)
-          .attr("fill", "none")
-          .attr("stroke", lbl.color)
-          .attr("stroke-width", 0.8)
-          .attr("opacity", 0.35);
-      }
+      // Liten cirkel vid linjens ändpunkt
+      g.append("circle")
+        .attr("cx", w + connMargin).attr("cy", lbl.naturalY)
+        .attr("r", 0).attr("fill", "none");
 
       g.append("text")
-        .attr("x", w + 12)
+        .attr("x", textX)
         .attr("y", lbl.yPos + 4)
         .attr("fill", lbl.color)
         .attr("font-size", lbl.size)
@@ -741,7 +978,8 @@ export default function Tidsserie({
     svg.append("text")
       .attr("x", width - 8).attr("y", height + titelOffset - 4)
       .attr("text-anchor", "end")
-      .attr("fill", "#aaa").attr("font-size", "10px")
+      .attr("fill", "#aaa").attr("font-size", "11px")
+      .attr("font-weight", "400")
       .attr("font-family", FONT)
       .text(kalla ? `Källa: ${kalla}` : "Källa: SCB och bearbetningar av Region Halland");
 
@@ -762,7 +1000,6 @@ export default function Tidsserie({
       .attr("fill", "none").attr("pointer-events", "all")
       .on("mousemove", (event) => {
         const [mx] = d3.pointer(event);
-        // Hitta närmaste period (index-baserat för månadsdata)
         let year: number;
         if (monthly) {
           const idx = Math.round(x.invert(mx));
@@ -772,50 +1009,136 @@ export default function Tidsserie({
           year = Math.round(x.invert(mx));
         }
         const kommunRow = kommunSorted.find((d) => d.ar === year);
-        const riksRow = riksSorted.find((d) => d.ar === year);
         if (!kommunRow?.varde) return;
 
-        focusLine.attr("x1", xp(year)).attr("x2", xp(year)).attr("opacity", 0.15);
+        focusLine.attr("x1", xp(year)).attr("x2", xp(year)).attr("opacity", 0.12);
         focusDot.attr("cx", xp(year)).attr("cy", y(kommunRow.varde)).attr("opacity", 1);
 
-        const riksText = riksRow?.varde != null
-          ? `<br><span style="color:#555">Riket: ${fmtY(riksRow.varde, enhet)}</span>`
-          : "";
-        const rangText = kommunRow.rang_total != null
-          ? `<br><span style="color:#444">${kommunRow.rang_total}/${kommunRow.antal_kommuner}</span>`
-          : "";
+        // ── Bygg kolumnbaserad tooltip ──
 
-        const kiText = kommunRow.ki_lower != null && kommunRow.ki_upper != null
-          ? `<br><span style="color:#888;font-size:10px">95 % KI: ${fmtY(kommunRow.ki_lower, enhet)}–${fmtY(kommunRow.ki_upper, enhet)}</span>`
-          : "";
+        // Beräkna ranking dynamiskt: alla kommuners värde detta år, sorterat
+        const allaVardenAr = kommunKoder
+          .map((k) => {
+            const r = perKommun.get(k)?.find((d) => d.ar === year);
+            return r?.varde != null ? { kod: k, varde: r.varde } : null;
+          })
+          .filter((v): v is { kod: string; varde: number } => v != null)
+          .sort((a, b) => b.varde - a.varde);
+        const rangMap = new Map(allaVardenAr.map((v, i) => [v.kod, i + 1]));
+        const totalRank = allaVardenAr.length;
 
+        type TipRow = { namn: string; varde: number; color: string; rang?: number; totalRank?: number; isVald: boolean; isAggregate: boolean };
+        const rows: TipRow[] = [];
+
+        // Vald kommun
+        rows.push({
+          namn: valdKommunNamn,
+          varde: kommunRow.varde,
+          color: "#00664D",
+          rang: rangMap.get(valdKommunKod),
+          totalRank,
+          isVald: true,
+          isAggregate: false,
+        });
+
+        // Rikssnitt
+        const riksRow = riksSorted.find((d) => d.ar === year);
+        if (riksRow?.varde != null) {
+          rows.push({ namn: "Riket", varde: riksRow.varde, color: "#555", isVald: false, isAggregate: true });
+        }
+
+        // Länssnitt
+        const lansRow = lansSorted.find((d) => d.ar === year);
+        if (lansRow?.varde != null) {
+          rows.push({ namn: "Halland", varde: lansRow.varde, color: "#00AB60", isVald: false, isAggregate: true });
+        }
+
+        // Median
+        if (medianPerAr.length > 0) {
+          const medRow = medianPerAr.find((d) => d.ar === year);
+          if (medRow) {
+            rows.push({ namn: "Median", varde: medRow.varde, color: "#888", isVald: false, isAggregate: true });
+          }
+        }
+
+        // Extra linjer (faktiska kommuner — har ranking)
+        extraDataArr.forEach((extra) => {
+          const row = extra.data.find((d) => d.ar === year);
+          if (row?.varde != null) {
+            rows.push({
+              namn: extra.namn,
+              varde: row.varde,
+              color: extra.color,
+              rang: rangMap.get(extra.kod),
+              totalRank,
+              isVald: false,
+              isAggregate: false,
+            });
+          }
+        });
+
+        // Sortera efter värde (dynamisk ranking-ordning, högst först)
+        rows.sort((a, b) => b.varde - a.varde);
+
+        // Bredaste namn för kolumn-alignment
+        const yearLabel = monthly ? fmtPeriod(year) : String(year);
+
+        // Header
+        let html = `<div style="font-weight:600;color:#2d2e2d;font-size:13px;padding-bottom:4px;border-bottom:1px solid #eee;margin-bottom:4px">${yearLabel}</div>`;
+
+        // Tabellrader
+        html += `<table style="border-collapse:collapse;width:100%">`;
+        rows.forEach((r) => {
+          const fw = r.isVald ? "font-weight:600" : "font-weight:400";
+          const opacity = r.isVald ? "1" : "0.85";
+          // Rang: visa för faktiska kommuner/regioner, inte aggregat (Riket, Median)
+          const rangText = (!r.isAggregate && r.rang != null && r.totalRank)
+            ? `<span style="color:#aaa;font-size:10px">${r.rang}/${r.totalRank}</span>`
+            : "";
+          html += `<tr style="opacity:${opacity}">`;
+          html += `<td style="padding:1.5px 0;white-space:nowrap">`;
+          html += `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${r.color};margin-right:6px;vertical-align:middle"></span>`;
+          html += `<span style="color:${r.color};${fw};font-size:12px">${r.namn}</span>`;
+          html += `</td>`;
+          html += `<td style="padding:1.5px 0 1.5px 14px;text-align:right;${fw};font-size:12px;color:#2d2e2d">${fmtY(r.varde, enhet)}</td>`;
+          html += `<td style="padding:1.5px 0 1.5px 10px;text-align:right;min-width:36px">${rangText}</td>`;
+          html += `</tr>`;
+        });
+        html += `</table>`;
+
+        // KI
+        if (kommunRow.ki_lower != null && kommunRow.ki_upper != null) {
+          html += `<div style="margin-top:4px;padding-top:4px;border-top:1px solid #eee;color:#999;font-size:10px">95 % KI: ${fmtY(kommunRow.ki_lower, enhet)}–${fmtY(kommunRow.ki_upper, enhet)}</div>`;
+        }
+
+        // Positionera med fixed (via getBoundingClientRect) så tooltip kan spilla utanför containern
+        const svgRect = ref.current?.getBoundingClientRect();
+        const tipX = (svgRect?.left ?? 0) + margin.left + xp(year) + 14;
+        const tipY = (svgRect?.top ?? 0) + margin.top + y(kommunRow.varde) - 28;
         tooltipEl.style.opacity = "1";
-        tooltipEl.style.left = `${margin.left + xp(year) + 14}px`;
-        tooltipEl.style.top = `${margin.top + y(kommunRow.varde) - 28}px`;
-        tooltipEl.innerHTML =
-          `<span style="color:#444">${monthly ? fmtPeriod(year) : year}</span><br>` +
-          `<span style="color:#00664D;font-weight:600">${valdKommunNamn}: ${fmtY(kommunRow.varde, enhet)}</span>` +
-          riksText + rangText + kiText;
+        tooltipEl.style.left = `${tipX}px`;
+        tooltipEl.style.top = `${tipY}px`;
+        tooltipEl.innerHTML = html;
       })
       .on("mouseleave", () => {
         focusLine.attr("opacity", 0);
         focusDot.attr("opacity", 0);
         tooltipEl.style.opacity = "0";
       });
-  }, [valdKommunKod, valdKommunNamn, kpiId, enhet, allData, isRegion, visningsLage, visaNoll, indexMode, leftMargin, titel, titelLines, harSubtitel, subtitelEnhet, subtitelGeografi, subtitelKontext, subtitelPeriod, titelOffset, width, height, compact, titelFontSize, titelLineH, subFontSize, axisFontSize, axisSmFontSize, labelFontSize, labelSmFontSize]);
+  }, [valdKommunKod, valdKommunNamn, kpiId, enhet, allData, isRegion, visningsLage, visaNoll, indexMode, leftMargin, titel, titelLines, harSubtitel, visaTitel, subtitelEnhet, subtitelGeografi, subtitelKontext, subtitelPeriod, titelOffset, width, height, compact, titelFontSize, titelLineH, subFontSize, axisFontSize, axisSmFontSize, labelFontSize, labelSmFontSize, popupMode, showRiksnittProp, showLanssnittprop, showMedianProp, bandKoder, bandLabel, bandVisning, extraLinjer]);
 
   useEffect(() => { draw(); }, [draw]);
 
   return (
-    <div className="relative">
+    <>
       <svg ref={ref} width={width} height={height + titelOffset} />
       <div
         ref={tooltipRef}
-        className="absolute pointer-events-none font-data text-[12px] leading-snug
-                   bg-white/95 border border-neutral-200 rounded-lg px-3 py-2 shadow-md
-                   transition-opacity duration-75"
-        style={{ opacity: 0 }}
+        className="fixed pointer-events-none text-[12px] leading-snug z-[100]
+                   bg-white/97 border border-neutral-200 rounded-xl px-3.5 py-2.5 shadow-lg shadow-black/8
+                   transition-opacity duration-100"
+        style={{ opacity: 0, fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontFeatureSettings: '"tnum"', minWidth: 180 }}
       />
-    </div>
+    </>
   );
 }

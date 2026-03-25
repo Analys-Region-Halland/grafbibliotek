@@ -52,6 +52,36 @@ async function fetchMedProgress(
   return JSON.parse(text);
 }
 
+/** Mappa Koladas regionsnamn till SCB:s länsnamn */
+const REGION_NAMN_MAP: Record<string, string> = {
+  "Region Stockholm": "Stockholm",
+  "Region Uppsala": "Uppsala",
+  "Region Sörmland": "Södermanland",
+  "Region Östergötland": "Östergötland",
+  "Region Jönköpings län": "Jönköping",
+  "Region Kronoberg": "Kronoberg",
+  "Region Kalmar": "Kalmar",
+  "Region Gotland": "Gotland",
+  "Region Blekinge": "Blekinge",
+  "Region Skåne": "Skåne",
+  "Region Halland": "Halland",
+  "Västra Götalandsregionen": "Västra Götaland",
+  "Region Värmland": "Värmland",
+  "Region Örebro län": "Örebro",
+  "Region Västmanland": "Västmanland",
+  "Region Dalarna": "Dalarna",
+  "Region Gävleborg": "Gävleborg",
+  "Region Västernorrland": "Västernorrland",
+  "Region Jämtland Härjedalen": "Jämtland",
+  "Region Västerbotten": "Västerbotten",
+  "Region Norrbotten": "Norrbotten",
+};
+
+export function cleanRegionName(namn: string, typ: string): string {
+  if (typ !== "L" || namn === "Riket") return namn;
+  return REGION_NAMN_MAP[namn] ?? namn;
+}
+
 /** Hydrera slim-rader till fulla KpiRow med data från meta + kommun-register */
 function hydrate(
   slim: SlimRow[],
@@ -82,7 +112,7 @@ function hydrate(
       kpi_namn: m?.kpi_namn ?? "",
       enhet: m?.enhet ?? "",
       tema: m?.tema ?? "",
-      kommun_namn: km?.namn ?? "",
+      kommun_namn: km ? cleanRegionName(km.namn, km.typ) : "",
       halland: HALLAND_SET.has(s.m),
       diff_riket: v != null && r != null ? Math.round((v - r) * 100) / 100 : null,
       diff_riket_pct: v != null && r != null && r !== 0

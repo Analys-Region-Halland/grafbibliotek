@@ -1,11 +1,13 @@
-import { useState, useMemo, useCallback } from "react";
-import { useData } from "./hooks/useData";
+import { useState, useEffect, useMemo, useCallback } from "react";
+import { useData, cleanRegionName } from "./hooks/useData";
 import { HALLAND_KOMMUNER } from "./types";
+import type { KommunEntry } from "./types";
 import { TEMAN, getAllNettoKpis } from "./teman";
 import KommunValjare from "./components/KommunValjare";
 import TemaNav from "./components/TemaNav";
 import TemaBlock from "./components/TemaBlock";
-import KpiModal from "./components/KpiModal";
+import KpiPopup from "./components/KpiPopup";
+import type { KommunGruppData } from "./components/ControlDrawer";
 import OmModal from "./components/OmModal";
 
 /** Alla netto-KPI:er samlade från samtliga teman */
@@ -18,6 +20,21 @@ export default function App() {
   const [valdKommun, setValdKommun] = useState("0013");
   const [openKpi, setOpenKpi] = useState<string | null>(null);
   const [visaOm, setVisaOm] = useState(false);
+
+  // Kommun-register + kommungrupper (laddas en gång)
+  const [kommunRegister, setKommunRegister] = useState<KommunEntry[]>([]);
+  const [kommunGrupper, setKommunGrupper] = useState<KommunGruppData | null>(null);
+
+  useEffect(() => {
+    const base = import.meta.env.BASE_URL;
+    Promise.all([
+      fetch(`${base}data/kommun-register.json`).then((r) => r.json()),
+      fetch(`${base}data/kommungrupper.json`).then((r) => r.json()),
+    ]).then(([reg, grupp]) => {
+      setKommunRegister((reg as KommunEntry[]).map((k) => ({ ...k, n: cleanRegionName(k.n, k.t) })));
+      setKommunGrupper(grupp as KommunGruppData);
+    }).catch(() => { /* fail silently — ControlDrawer hanterar null */ });
+  }, []);
 
   const valdEnhet = HALLAND_KOMMUNER.find((k) => k.kod === valdKommun);
   const kommunNamn = valdEnhet?.namn ?? "";
@@ -228,9 +245,9 @@ export default function App() {
       {/* Om-modal */}
       {visaOm && <OmModal onClose={() => setVisaOm(false)} />}
 
-      {/* KPI-modal (graf/karta) */}
+      {/* KPI-popup (ny graf + kontrollpanel) */}
       {openKpi && openKpiMeta && (
-        <KpiModal
+        <KpiPopup
           kpiId={openKpi}
           kpiNamn={openKpiMeta.kpi_namn}
           beskrivning={openKpiMeta.beskrivning}
@@ -240,6 +257,8 @@ export default function App() {
           isRegion={isRegion}
           allData={data}
           allMeta={meta}
+          kommunRegister={kommunRegister}
+          kommunGrupper={kommunGrupper}
           onClose={() => setOpenKpi(null)}
         />
       )}

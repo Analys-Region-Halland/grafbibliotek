@@ -86,7 +86,6 @@ function KpiKortInner({
     [...data].filter((d) => d.varde != null).sort((a, b) => b.ar - a.ar),
   [data]);
   const senaste = sorted[0] ?? null;
-  const forega = sorted[1] ?? null;
 
   if (!senaste) return null;
 
@@ -96,9 +95,8 @@ function KpiKortInner({
   const trendDec = isAntal ? 0 : 1;
   const vardeStr = isAntal ? fmtInt(senaste.varde) : fmt(senaste.varde, dec);
 
-  // Trender
-  const t1 = senaste.varde != null && forega?.varde != null
-    ? senaste.varde - forega.varde : null;
+  // Trender — trend_1ar från R-pipelinen jämför redan med samma månad fg. år
+  const t1 = senaste.trend_1ar;
   const t5 = senaste.trend_5ar;
   const t10 = senaste.trend_10ar;
 
