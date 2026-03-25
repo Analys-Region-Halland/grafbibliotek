@@ -352,7 +352,9 @@ export default function KpiPopup({
 
     // ── Mening 1: "Halmstad har 106 315 invånare." ──
     // intro() returnerar hela meningen med geo inbakat — vi splittar på geo för att kunna accenta det
-    const introText = intro(geo, val);
+    // Versalisera första bokstaven (vissa intro börjar med gemen, t.ex. "medianinkomsten i...")
+    const rawIntro = intro(geo, val);
+    const introText = rawIntro.charAt(0).toUpperCase() + rawIntro.slice(1);
     const geoIdx = introText.indexOf(geo);
     if (geoIdx >= 0) {
       if (geoIdx > 0) seg.push({ text: introText.slice(0, geoIdx) });
@@ -538,9 +540,12 @@ export default function KpiPopup({
     [allData, aktivtKpiId, aktivtEnhet, visaIndex]
   );
 
+  const exportSubtitel = visning === "karta"
+    ? forstaMeningen.map((s) => s.text).join("")
+    : undertitelSegment.map((s) => s.text).join("");
   const exportHeader: ExportHeader = {
     titel: fullTitel,
-    subtitel: undertitelSegment.map((s) => s.text).join(""),
+    subtitel: exportSubtitel,
     kalla: fullKalla(aktivtMeta?.beskrivning) || "SCB och bearbetningar av Region Halland",
     leftMargin: (chartWidth < 500 ? 12 : 20) + grafLeftMargin,
   };
