@@ -181,6 +181,17 @@
     "tema_farg": "bla",
     "sektioner": [
       {
+        "id": "nattbefolkning",
+        "namn": "Sysselsatta nattbefolkning 15–74 år (prelim.)",
+        "kpi_ids": "K_NATT_ANT",
+        "undersektioner": [
+          {
+            "namn": "Sysselsättningsgrad",
+            "kpi_ids": "K_NATT_GRAD"
+          }
+        ]
+      },
+      {
         "id": "sysselsattning",
         "namn": "Sysselsättningsgrad 20–64 år (prelim.)",
         "kpi_ids": "K_SYSS_TOT",
@@ -222,8 +233,13 @@
         ]
       },
       {
+        "id": "arbetsmarknad-forandring",
+        "namn": "Årsförändring arbetsmarknad",
+        "kpi_ids": ["K_SYSS_FORANDR", "K_ARBL_FORANDR"]
+      },
+      {
         "id": "dagbefolkning",
-        "namn": "Sysselsatta dagbefolkning (prelim.)",
+        "namn": "Sysselsatta dagbefolkning 15–74 år (prelim.)",
         "kpi_ids": "K_DAG_TOT",
         "undersektioner": [
           {
@@ -233,44 +249,120 @@
         ]
       },
       {
-        "id": "forandring",
-        "namn": "Förändring mot samma månad föregående år",
-        "kpi_ids": ["K_SYSS_FORANDR", "K_ARBL_FORANDR", "K_DAG_TILLVAXT"]
+        "id": "naringsliv-forandring",
+        "namn": "Årsförändring dagbefolkning",
+        "kpi_ids": "K_DAG_TILLVAXT"
+      },
+      {
+        "id": "befolkning",
+        "namn": "Befolkningsutveckling",
+        "kpi_ids": ["K_BEF_TOT", "K_BEF_FORANDR"]
+      },
+      {
+        "id": "gastnatter",
+        "namn": "Gästnätter",
+        "kpi_ids": "K_GAST_TOT",
+        "undersektioner": [
+          {
+            "namn": "Marknad",
+            "kpi_ids": ["K_GAST_SVE", "K_GAST_UTL", "K_ANDEL_UTL"]
+          },
+          {
+            "namn": "Årsförändring",
+            "kpi_ids": "K_GAST_TILLVAXT"
+          }
+        ]
+      },
+      {
+        "id": "byggnation",
+        "namn": "Bostadsmarknad",
+        "kpi_ids": "K_BYGG_TOT",
+        "undersektioner": [
+          {
+            "namn": "Hustyp",
+            "kpi_ids": ["K_BYGG_SMAHUS", "K_BYGG_FLERBO"]
+          }
+        ]
       }
     ],
     "visningsnamn": {
-      "K_SYSS_TOT": "Sysselsättningsgrad (prelim.)",
-      "K_SYSS_ANT": "Antal sysselsatta (prelim.)",
-      "K_SYSS_INR": "Sysselsättningsgrad, inrikes födda (prelim.)",
-      "K_SYSS_UTR": "Sysselsättningsgrad, utrikes födda (prelim.)",
-      "K_SYSS_KV": "Sysselsättningsgrad, kvinnor (prelim.)",
-      "K_SYSS_MAN": "Sysselsättningsgrad, män (prelim.)",
-      "K_ARBL_TOT": "Arbetslöshetsgrad (prelim.)",
-      "K_ARBL_ANT": "Antal arbetslösa (prelim.)",
-      "K_ARBL_INR": "Arbetslöshetsgrad, inrikes födda (prelim.)",
-      "K_ARBL_UTR": "Arbetslöshetsgrad, utrikes födda (prelim.)",
-      "K_ARBL_KV": "Arbetslöshetsgrad, kvinnor (prelim.)",
-      "K_ARBL_MAN": "Arbetslöshetsgrad, män (prelim.)",
-      "K_ARKR_TOT": "Arbetskraftsdeltagande (prelim.)",
-      "K_ARKR_KV": "Arbetskraftsdeltagande, kvinnor (prelim.)",
-      "K_ARKR_MAN": "Arbetskraftsdeltagande, män (prelim.)",
-      "K_DAG_TOT": "Sysselsatta dagbefolkning, totalt (prelim.)",
-      "K_DAG_JORD": "Sysselsatta, jordbruk m.m. (prelim.)",
-      "K_DAG_IND": "Sysselsatta, tillverkning (prelim.)",
-      "K_DAG_ENMI": "Sysselsatta, energi och miljö (prelim.)",
-      "K_DAG_BYG": "Sysselsatta, bygg (prelim.)",
-      "K_DAG_HAND": "Sysselsatta, handel (prelim.)",
-      "K_DAG_TRANS": "Sysselsatta, transport (prelim.)",
-      "K_DAG_HOTEL": "Sysselsatta, hotell & restaurang (prelim.)",
-      "K_DAG_IT": "Sysselsatta, IT och kommunikation (prelim.)",
-      "K_DAG_FINANS": "Sysselsatta, finans och försäkring (prelim.)",
-      "K_DAG_FAST": "Sysselsatta, fastigheter (prelim.)",
-      "K_DAG_FORETJ": "Sysselsatta, företagstjänster (prelim.)",
-      "K_DAG_OFF": "Sysselsatta, offentlig sektor (prelim.)",
-      "K_DAG_KULT": "Sysselsatta, kultur m.m. (prelim.)",
+      "K_SYSS_TOT": "Sysselsatta bland befolkningen 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_ANT": "Sysselsatta i befolkningen 20–64 år, antal (prelim.)",
+      "K_SYSS_INR": "Sysselsatta bland inrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_UTR": "Sysselsatta bland utrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_KV": "Sysselsatta bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_MAN": "Sysselsatta bland män 20–64 år, andel (%) (prelim.)",
+      "K_NATT_ANT": "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+      "K_NATT_GRAD": "Sysselsättningsgrad 15–74 år (prelim.)",
+      "K_ARBL_TOT": "Arbetslösa i arbetskraften 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_ANT": "Arbetslösa i arbetskraften 20–64 år, antal (prelim.)",
+      "K_ARBL_INR": "Arbetslösa bland inrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_UTR": "Arbetslösa bland utrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_KV": "Arbetslösa bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_MAN": "Arbetslösa bland män 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_TOT": "I arbetskraften bland befolkningen 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_KV": "I arbetskraften bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_MAN": "I arbetskraften bland män 20–64 år, andel (%) (prelim.)",
+      "K_DAG_TOT": "Sysselsatta dagbefolkning 15–74 år, antal (prelim.)",
+      "K_DAG_JORD": "Sysselsatta inom jordbruk och skogsbruk (prelim.)",
+      "K_DAG_IND": "Sysselsatta inom tillverkning (prelim.)",
+      "K_DAG_ENMI": "Sysselsatta inom energi och miljö (prelim.)",
+      "K_DAG_BYG": "Sysselsatta inom byggverksamhet (prelim.)",
+      "K_DAG_HAND": "Sysselsatta inom handel (prelim.)",
+      "K_DAG_TRANS": "Sysselsatta inom transport (prelim.)",
+      "K_DAG_HOTEL": "Sysselsatta inom hotell och restaurang (prelim.)",
+      "K_DAG_IT": "Sysselsatta inom IT och kommunikation (prelim.)",
+      "K_DAG_FINANS": "Sysselsatta inom finans och försäkring (prelim.)",
+      "K_DAG_FAST": "Sysselsatta inom fastighetsverksamhet (prelim.)",
+      "K_DAG_FORETJ": "Sysselsatta inom företagstjänster (prelim.)",
+      "K_DAG_OFF": "Sysselsatta inom offentlig sektor (prelim.)",
+      "K_DAG_KULT": "Sysselsatta inom kultur, nöje och fritid (prelim.)",
       "K_SYSS_FORANDR": "Sysselsättningsgrad, årsförändring (procentenheter)",
       "K_ARBL_FORANDR": "Arbetslöshet, årsförändring (procentenheter)",
-      "K_DAG_TILLVAXT": "Dagbefolkning, årsförändring (procent)"
+      "K_GAST_TOT": "Gästnätter totalt (prelim.)",
+      "K_GAST_SVE": "Gästnätter svenska gäster",
+      "K_GAST_UTL": "Gästnätter utländska gäster",
+      "K_ANDEL_UTL": "Andel utländska gästnätter (%)",
+      "K_GAST_TILLVAXT": "Gästnätter, årsförändring (%)",
+      "K_DAG_TILLVAXT": "Dagbefolkning, årsförändring (procent)",
+      "K_BEF_TOT": "Folkmängd (prelim.)",
+      "K_BEF_FORANDR": "Befolkningsförändring mot samma månad fg. år",
+      "K_BYGG_TOT": "Påbörjade lägenheter, alla hustyper (kvartal)",
+      "K_BYGG_SMAHUS": "Påbörjade lägenheter, småhus (kvartal)",
+      "K_BYGG_FLERBO": "Påbörjade lägenheter, flerbostadshus (kvartal)"
+    }
+  },
+  {
+    "tema_id": "miljo_klimat",
+    "tema_namn": "Miljö & klimat",
+    "tema_farg": "gron",
+    "sektioner": [
+      {
+        "id": "utslapp",
+        "namn": "Växthusgasutsläpp",
+        "kpi_ids": ["N00401", "N07702", "N85073", "N85533", "N85077", "N85537", "N85078", "N85538", "N85072", "N85532"]
+      },
+      {
+        "id": "energi",
+        "namn": "Energi och omställning",
+        "kpi_ids": ["N45913", "N45945", "N45925", "N00403"]
+      }
+    ],
+    "visningsnamn": {
+      "N00401": "Växthusgasutsläpp totalt",
+      "N07702": "Växthusgasutsläpp totalt",
+      "N85073": "Växthusgasutsläpp, transporter",
+      "N85533": "Växthusgasutsläpp, transporter",
+      "N85077": "Växthusgasutsläpp, industri",
+      "N85537": "Växthusgasutsläpp, industri",
+      "N85078": "Växthusgasutsläpp, jordbruk",
+      "N85538": "Växthusgasutsläpp, jordbruk",
+      "N85072": "Växthusgasutsläpp, uppvärmning",
+      "N85532": "Växthusgasutsläpp, uppvärmning",
+      "N45913": "Energianvändning, transporter",
+      "N45945": "Energianvändning, transporter",
+      "N45925": "Förnybar elproduktion",
+      "N00403": "Ekologiskt brukad åkermark"
     }
   },
   {
@@ -435,6 +527,164 @@
       "N_YRK_EGAB_KV_A": "Andel kvinnor, företagare i ab",
       "N_YRK_EGFOR_KV": "Andel kvinnor, egenföretagare",
       "N_YRK_EGFOR_KV_A": "Andel kvinnor, egenföretagare"
+    }
+  },
+  {
+    "tema_id": "socioekonomi",
+    "tema_namn": "Socioekonomi & hälsa",
+    "tema_farg": "rod",
+    "sektioner": [
+      {
+        "id": "halsoutfall",
+        "namn": "Hälsa",
+        "kpi_ids": ["F_HALSA_GOD", "F_MEDLIVS_KV", "F_MEDLIVS_MAN", "F_FORTID", "N00957", "N00938"]
+      },
+      {
+        "id": "psykisk_halsa",
+        "namn": "Psykisk hälsa",
+        "kpi_ids": ["F_PSYK_PAFR", "F_STRESS", "N33820", "F_SUICID"]
+      },
+      {
+        "id": "inkomst",
+        "namn": "Inkomst och ekonomisk utsatthet",
+        "kpi_ids": ["F_DINK", "N00956", "N00997", "F_VEK_VUX", "F_VINK_BARN", "N31001", "N31910"]
+      },
+      {
+        "id": "levnadsvanor",
+        "namn": "Levnadsvanor",
+        "kpi_ids": ["F_OVERVIKT", "F_TOBAK", "F_ALK_RISK"]
+      },
+      {
+        "id": "utbildning_delaktighet",
+        "namn": "Utbildning och delaktighet",
+        "kpi_ids": ["F_BEHGYMN", "F_VAL"]
+      }
+    ],
+    "visningsnamn": {
+      "N00956": "Ginikoefficient, förvärvsinkomst",
+      "N00997": "Ginikoefficient, disponibel inkomst",
+      "N00957": "Ohälsotal",
+      "N00957_KV": "Ohälsotal, kvinnor",
+      "N00957_MAN": "Ohälsotal, män",
+      "N00938": "Sjukpenningtal",
+      "N00938_KV": "Sjukpenningtal, kvinnor",
+      "N00938_MAN": "Sjukpenningtal, män",
+      "N33820": "Psykisk ohälsa, barn och unga",
+      "N33820_KV": "Psykisk ohälsa, flickor",
+      "N33820_MAN": "Psykisk ohälsa, pojkar",
+      "N31001": "Kostnad ekonomiskt bistånd",
+      "N31910": "Biståndshushåll",
+      "F_HALSA_GOD": "Självskattad god hälsa",
+      "F_HALSA_GOD_KV": "Självskattad god hälsa, kvinnor",
+      "F_HALSA_GOD_MAN": "Självskattad god hälsa, män",
+      "F_MEDLIVS_KV": "Medellivslängd, kvinnor",
+      "F_MEDLIVS_MAN": "Medellivslängd, män",
+      "F_FORTID": "Förtida dödlighet, 25–64 år",
+      "F_FORTID_KV": "Förtida dödlighet, kvinnor 25–64 år",
+      "F_FORTID_MAN": "Förtida dödlighet, män 25–64 år",
+      "F_PSYK_PAFR": "Allvarlig psykisk påfrestning",
+      "F_PSYK_PAFR_KV": "Allvarlig psykisk påfrestning, kvinnor",
+      "F_PSYK_PAFR_MAN": "Allvarlig psykisk påfrestning, män",
+      "F_STRESS": "Stress",
+      "F_STRESS_KV": "Stress, kvinnor",
+      "F_STRESS_MAN": "Stress, män",
+      "F_SUICID": "Suicid",
+      "F_SUICID_KV": "Suicid, kvinnor",
+      "F_SUICID_MAN": "Suicid, män",
+      "F_DINK": "Ekonomisk standard, medianinkomst",
+      "F_DINK_KV": "Ekonomisk standard, kvinnor",
+      "F_DINK_MAN": "Ekonomisk standard, män",
+      "F_VEK_VUX": "Varaktigt låg ekonomisk standard, vuxna",
+      "F_VINK_BARN": "Varaktigt låg inkomststandard, barn och unga",
+      "F_OVERVIKT": "Övervikt och obesitas",
+      "F_OVERVIKT_KV": "Övervikt och obesitas, kvinnor",
+      "F_OVERVIKT_MAN": "Övervikt och obesitas, män",
+      "F_TOBAK": "Daglig tobaksrökning",
+      "F_TOBAK_KV": "Daglig tobaksrökning, kvinnor",
+      "F_TOBAK_MAN": "Daglig tobaksrökning, män",
+      "F_ALK_RISK": "Riskkonsumtion av alkohol",
+      "F_ALK_RISK_KV": "Riskkonsumtion av alkohol, kvinnor",
+      "F_ALK_RISK_MAN": "Riskkonsumtion av alkohol, män",
+      "F_BEHGYMN": "Gymnasiebehörighet",
+      "F_BEHGYMN_KV": "Gymnasiebehörighet, flickor",
+      "F_BEHGYMN_MAN": "Gymnasiebehörighet, pojkar",
+      "F_VAL": "Valdeltagande"
+    }
+  },
+  {
+    "tema_id": "transport",
+    "tema_namn": "Kollektivtrafik & transport",
+    "tema_farg": "lila",
+    "sektioner": [
+      {
+        "id": "fordonsflotta",
+        "namn": "Fordonsflotta",
+        "kpi_ids": ["N07935", "N07945", "N07938", "N07947", "N07940", "U00501"]
+      },
+      {
+        "id": "laddinfra",
+        "namn": "Laddinfrastruktur",
+        "kpi_ids": ["N07713", "N07710", "N07711"]
+      },
+      {
+        "id": "kollektivtrafik",
+        "namn": "Kollektivtrafik och tillgänglighet",
+        "kpi_ids": ["N07418", "N07419", "N07412", "N07410"]
+      },
+      {
+        "id": "bilresande",
+        "namn": "Bilresande",
+        "kpi_ids": ["U07917", "U07918", "N07782"]
+      },
+      {
+        "id": "pendling",
+        "namn": "Pendling",
+        "kpi_ids": ["N02276", "N02277", "N02279", "N02278"]
+      },
+      {
+        "id": "sakerhet",
+        "namn": "Trafiksäkerhet",
+        "kpi_ids": "N00799"
+      }
+    ],
+    "visningsnamn": {
+      "N07935": "Personbilar per 1 000 invånare",
+      "N07945": "Elbilar, andel av personbilar",
+      "N07938": "Elbilar per 1 000 invånare",
+      "N07947": "Laddhybridbilar, andel av personbilar",
+      "N07940": "Laddhybridbilar per 1 000 invånare",
+      "U00501": "Fossiloberoende personbilar, andel",
+      "N07713": "Elbilsladdpunkter, totalt antal",
+      "N07710": "Normalladdare, antal",
+      "N07711": "Snabbladdare, antal",
+      "N07418": "Befolkning i kollektivtrafiknära läge",
+      "N07419": "Befolkning inom tätort, kollektivtrafiknära läge",
+      "N07412": "Befolkning utanför tätort, kollektivtrafiknära läge",
+      "N07410": "Nytillkomna bostäder i kollektivtrafiknära läge",
+      "N60404": "Resor med kollektivtrafik",
+      "U60496": "Förnybara drivmedel i kollektivtrafiken",
+      "U85001": "Nettokostnad trafik",
+      "U07917": "Genomsnittlig körsträcka med personbil, mil per invånare",
+      "U07918": "Genomsnittlig körsträcka med personbil, mil per bil",
+      "N07782": "Drivmedelsleverans till vägtransporter, liter per invånare",
+      "C_INPENDL_ANDEL": "Inpendlingsandel",
+      "C_UTPENDL_ANDEL": "Utpendlingsandel",
+      "S_INPENDL": "Inpendlare",
+      "S_UTPENDL": "Utpendlare",
+      "S_DAG_TOT": "Dagbefolkning",
+      "S_NATT_TOT": "Nattbefolkning",
+      "C_PENDL_NETTO": "Nettopendling",
+      "C_PENDLKVOT": "Pendlingskvot",
+      "N02276": "Inpendling, andel av förvärvsarbetande",
+      "N02277": "Inpendling, antal",
+      "N02279": "Utpendling, andel av förvärvsarbetande",
+      "N02278": "Utpendling, antal",
+      "N00799": "Trafikolyckor med räddningsinsatser",
+      "TR_BILAR_EL": "Elbilar i trafik",
+      "TR_BILAR_DIESEL": "Dieselbilar i trafik",
+      "TR_BILAR_BENSIN": "Bensinbilar i trafik",
+      "TR_BILAR_LADDHYBRID": "Laddhybridbilar i trafik",
+      "TR_FARDTJANST": "Färdtjänstresor"
     }
   },
   {
