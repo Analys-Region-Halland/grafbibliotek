@@ -434,7 +434,6 @@ export default function LineChart({
     const bandLabels: { bandIdx: number; text: string; naturalY: number; yPos: number; color: string; type: "median" | "high" | "low" }[] = [];
 
     bands.forEach((band, bi) => {
-      const colors = BAND_COLORS[band.colorIndex % BAND_COLORS.length];
       // Inkludera vald kommun i bandet så det alltid har spann
       const allBandKoder = [...new Set([...band.koder, valdKommunKod])];
       const bandRows = allBandKoder
@@ -909,7 +908,8 @@ export default function LineChart({
         focusDot.attr("cx", xp(year)).attr("cy", y(kommunRow.varde)).attr("opacity", 1);
 
         // Hover-detektion — bg-linjer + band-linjer
-        let focused: { kod: string; namn: string; val: number; source: "bg" | "band"; color: string } | null = null;
+        type FocusInfo = { kod: string; namn: string; val: number; source: "bg" | "band"; color: string };
+        const focusBox: { v: FocusInfo | null } = { v: null };
         if (hoverMap.size > 0) {
           let minDist = 20;
           hoverMap.forEach(({ namn, perAr, source, bandColor }, kod) => {
@@ -918,11 +918,12 @@ export default function LineChart({
             const dist = Math.abs(my - y(val));
             if (dist < minDist) {
               minDist = dist;
-              focused = { kod, namn, val, source, color: bandColor ?? "#444" };
+              focusBox.v = { kod, namn, val, source, color: bandColor ?? "#444" };
             }
           });
-
-          if (focused) {
+        }
+        const focused = focusBox.v;
+        if (focused) {
             const f = focused;
             focusedKodRef.current = f.kod;
 
@@ -969,7 +970,6 @@ export default function LineChart({
             resetHover();
             d3.select(event.currentTarget).style("cursor", "default");
           }
-        }
 
         // Tooltip
         const riksText = riksRow?.varde != null

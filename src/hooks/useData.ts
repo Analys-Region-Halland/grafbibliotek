@@ -104,6 +104,7 @@ function hydrate(
       riksvarde: r,
       rang_total: s.rg ?? null,
       antal_kommuner: s.n ?? null,
+      trend_1ar: s.t1 ?? null,
       trend_5ar: s.t5 ?? null,
       trend_10ar: s.t10 ?? null,
       ki_lower: s.kl ?? null,
@@ -117,7 +118,7 @@ function hydrate(
       diff_riket: v != null && r != null ? Math.round((v - r) * 100) / 100 : null,
       diff_riket_pct: v != null && r != null && r !== 0
         ? Math.round((v - r) / r * 10000) / 100 : null,
-      trend_riktning: s.t5 != null ? (s.t5 > 0 ? "upp" : s.t5 < 0 ? "ned" : "oforandrad") : null,
+      trend_riktning: (s.t1 ?? s.t5) != null ? ((s.t1 ?? s.t5)! > 0 ? "upp" : (s.t1 ?? s.t5)! < 0 ? "ned" : "oforandrad") : null,
     };
   }
   return rows;

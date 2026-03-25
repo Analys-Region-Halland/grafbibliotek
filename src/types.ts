@@ -14,6 +14,7 @@ export interface KpiRow {
   halland: boolean;
   rang_total: number | null;
   antal_kommuner: number | null;
+  trend_1ar: number | null;
   trend_5ar: number | null;
   trend_10ar: number | null;
   trend_riktning: string | null;
@@ -31,6 +32,7 @@ export interface SlimRow {
   r: number | null;   // riksvarde
   rg: number | null;  // rang_total
   n: number | null;   // antal_kommuner
+  t1: number | null;  // trend_1ar
   t5: number | null;  // trend_5ar
   t10: number | null; // trend_10ar
   kl: number | null;  // ki_lower

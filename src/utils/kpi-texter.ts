@@ -41,12 +41,6 @@ const per1000 = (beskrivning: string): TextSpec => ({
   suffix: "",
 });
 
-const perInv = (beskrivning: string, enhetText: string): TextSpec => ({
-  intro: (geo, val) => `${geo} har ${val} ${enhetText}`,
-  pronomen: "nivån",
-  den: "den",
-  suffix: "",
-});
 
 const kronor = (beskrivning: string): TextSpec => ({
   intro: (geo, val) => `${geo} har ${val} kronor per invånare i ${beskrivning}`,

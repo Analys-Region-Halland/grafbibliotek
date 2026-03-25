@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import type { KpiRow, KpiMeta, KommunEntry } from "../types";
-import { HALLAND_KODER, HALLAND_KOMMUNER } from "../types";
+import { HALLAND_KODER } from "../types";
 import Tidsserie, { downloadSvgAsPng, downloadSvgAsFile, calcLeftMargin } from "../charts/Tidsserie";
 import type { ExportHeader } from "../charts/Tidsserie";
 import KartaVy from "../charts/KartaVy";
@@ -159,7 +159,6 @@ export default function KpiPopup({
     ? (nettoRatt ? "antal" : "per 1 000 inv.")
     : (aktivtMeta?.enhet ?? enhet);
   const aktivtNamn = aktivtMeta?.kpi_namn ?? kpiNamn;
-  const isRelativt = aktivtEnhet !== "antal";
 
   const titel = visningsNamn(aktivtKpiId, aktivtNamn);
   const kanVisaIndex = aktivtEnhet === "antal" && !isNetto && !INGET_INDEX.has(kpiId);

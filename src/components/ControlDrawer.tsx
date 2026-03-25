@@ -1,6 +1,6 @@
-import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import type { KommunEntry, KpiRow } from "../types";
-import { HALLAND_KOMMUNER, HALLAND_KODER } from "../types";
+import { HALLAND_KODER } from "../types";
 import { fmt } from "../utils/format";
 import type { ComparisonBand } from "../charts/LineChart";
 
