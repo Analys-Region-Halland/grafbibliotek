@@ -18,8 +18,7 @@ import { useJamfor } from "../hooks/useJamfor";
 const VISNINGSNAMN = getAllVisningsnamn();
 const INGET_INDEX = getAllIngetIndex();
 const NETTO_KPIS = getAllNettoKpis();
-const EXPORT_W = 900;
-const EXPORT_H = 556;
+// Export: använd faktisk grafstorlek (inte fast bredd) så export ser identisk ut med web
 
 // Sydvästsverige — regionkoder
 // Sydvästsverige-koder definierade i JamforPanel
@@ -448,11 +447,11 @@ export default function KpiPopup({
 
   const handleDownloadPng = () => {
     const res = getSvgAndSlug();
-    if (res) downloadSvgAsPng(res.svg, `${kommunNamn}-${res.slug}.png`, EXPORT_W, EXPORT_H, exportHeader);
+    if (res) downloadSvgAsPng(res.svg, `${kommunNamn}-${res.slug}.png`, undefined, undefined, exportHeader);
   };
   const handleDownloadSvg = () => {
     const res = getSvgAndSlug();
-    if (res) downloadSvgAsFile(res.svg, `${kommunNamn}-${res.slug}.svg`, EXPORT_W, EXPORT_H, exportHeader);
+    if (res) downloadSvgAsFile(res.svg, `${kommunNamn}-${res.slug}.svg`, undefined, undefined, exportHeader);
   };
 
   const andelLabel = enhet === "procent" ? "Andel (%)" : enhet === "kvot" ? "Kvot" : enhetEtikett(enhet);
