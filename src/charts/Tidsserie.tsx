@@ -155,12 +155,16 @@ function cleanSvgClone(svgEl: SVGSVGElement): SVGSVGElement {
 function injectHeader(clone: SVGSVGElement, header: ExportHeader, origW: number, origH: number) {
   const ns = "http://www.w3.org/2000/svg";
   const xStart = String(header.leftMargin ?? 16);
-  const rightPad = Math.max(20, Math.round(origW * RIGHT_PAD_RATIO));
-  const maxTextW = origW - (header.leftMargin ?? 16) - rightPad;
+  const left = header.leftMargin ?? 16;
+
+  // Titel: full bredd (sitter ovanför grafen, krockar inte med etiketter)
+  const titelMaxW = origW - left - 20;
+  // Undertitel: lite mer högerpad så den inte sträcker sig för långt
+  const subMaxW = origW - left - Math.max(20, Math.round(origW * RIGHT_PAD_RATIO));
 
   // ── Titel-radbrytning (exakt pixelbredd) ──
   const titelFont = `400 ${TITEL_FONT_PX}px ${FONT_TITEL}`;
-  const titelLines = wrapByWidth(header.titel, titelFont, maxTextW);
+  const titelLines = wrapByWidth(header.titel, titelFont, titelMaxW);
 
   // ── Undertitel-radbrytning med segment-stöd (exakt pixelbredd) ──
   const subFont = `400 ${SUB_FONT_PX}px ${FONT}`;
@@ -179,7 +183,7 @@ function injectHeader(clone: SVGSVGElement, header: ExportHeader, origW: number,
   let currentText = "";
   for (const sw of styledWords) {
     const testText = currentText ? `${currentText} ${sw.word}` : sw.word;
-    if (currentText && measureText(testText, subFont) > maxTextW) {
+    if (currentText && measureText(testText, subFont) > subMaxW) {
       lines.push(currentLine);
       currentLine = [sw];
       currentText = sw.word;
