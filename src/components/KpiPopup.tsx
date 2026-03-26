@@ -11,6 +11,8 @@ import { fmtPeriod, fmt, isMonthly, sameMonthLastYear } from "../utils/format";
 import { useContainerWidth } from "../hooks/useContainerWidth";
 import { useMapData } from "../hooks/useMapData";
 import { getKpiText } from "../utils/kpi-texter";
+import JamforPanel from "./JamforPanel";
+import { useJamfor } from "../hooks/useJamfor";
 
 // ─── Konstanter ───
 
@@ -49,8 +51,6 @@ function fmtKort(v: number | null, enhet: string): string {
   if (enhet === "antal") return fmt(v, 0);
   return fmt(v, Math.abs(v) >= 100 ? 0 : Math.abs(v) < 10 ? 2 : 1);
 }
-
-type RefOmrade = "halland" | "alla" | "kommungrupp" | "sydvastsverige" | null;
 
 // ─── Generisk click-outside hook ───
 
@@ -163,26 +163,21 @@ export default function KpiPopup({
   const titel = visningsNamn(aktivtKpiId, aktivtNamn);
   const kanVisaIndex = aktivtEnhet === "antal" && !isNetto && !INGET_INDEX.has(kpiId);
 
-  // ── Referensområde (band) — INGET default ──
-  const [refOmrade, setRefOmrade] = useState<RefOmrade>(null);
-  const [refVisning, setRefVisning] = useState<"band" | "linjer">("band");
-  const [openRefMenu, setOpenRefMenu] = useState(false);
-
-  // ── Jämför — helt omgjord ──
-  const [extraLinjer, setExtraLinjer] = useState<Set<string>>(new Set());
+  // ── Jämför — samlad panel (ersätter gamla Referensområde + Jämför) ──
+  const { state: jamfor, dispatch: jamforDispatch, totalActive: antalJamforelser } = useJamfor();
   const [openJamfor, setOpenJamfor] = useState(false);
-  const [jamforSearch, setJamforSearch] = useState("");
   const jamforRef = useRef<HTMLDivElement>(null);
   useClickOutside(jamforRef, openJamfor, () => setOpenJamfor(false));
 
   // ── Mått-dropdown ──
   const [openMattMenu, setOpenMattMenu] = useState(false);
 
-  // ── Referenslinjer — INGET default, allt styrs av extraLinjer ──
-  // Riket, länssnitt, median hanteras nu som "snabbval" i Jämför-panelen
-  const showRiksnitt = extraLinjer.has("__rikssnitt__");
-  const showLanssnitt = extraLinjer.has("__lanssnitt__") && !isRegion;
-  const showMedian = extraLinjer.has("__median__");
+  // ── Referenslinjer (från jamfor-state) ──
+  // Riket/Länssnitt inte meningsfullt vid absoluta tal (antal), utom i index-läge
+  const isAbsolut = aktivtEnhet === "antal" && !visaIndex;
+  const showRiksnitt = !isAbsolut && jamfor.refs.has("__rikssnitt__");
+  const showLanssnitt = !isAbsolut && jamfor.refs.has("__lanssnitt__") && !isRegion;
+  const showMedian = jamfor.refs.has("__median__");
 
   // ── Refs ──
   const chartRef = useRef<HTMLDivElement>(null);
@@ -226,37 +221,8 @@ export default function KpiPopup({
   const subtitelEnhet = visaIndex && basAr ? `Index (${basAr} = 100)` : enhetEtikett(aktivtEnhet);
   const subtitelGeografi = isRegion ? kommunNamn : `${kommunNamn} kommun`;
 
-  // ── Band-koder ──
-  const bandKoder = useMemo(() => {
-    if (!refOmrade) return [];
-    if (refOmrade === "halland") return [...HALLAND_KODER];
-    if (refOmrade === "sydvastsverige") return [...SYDVASTSVERIGE_KODER];
-    if (refOmrade === "alla") {
-      return kommunRegister
-        .filter((k) => k.t === (isRegion ? "L" : "K") && k.k !== "0000")
-        .map((k) => k.k);
-    }
-    if (refOmrade === "kommungrupp" && kommunGrupper) {
-      const gruppKod = kommunGrupper.kommuner[kommunKod];
-      if (!gruppKod) return [];
-      return Object.entries(kommunGrupper.kommuner)
-        .filter(([, g]) => g === gruppKod)
-        .map(([k]) => k);
-    }
-    return [];
-  }, [refOmrade, kommunKod, kommunRegister, kommunGrupper, isRegion]);
-
-  const bandLabel = useMemo(() => {
-    if (refOmrade === "halland") return "halländska kommuner";
-    if (refOmrade === "sydvastsverige") return "regioner i Sydvästsverige";
-    if (refOmrade === "alla") return isRegion ? "samtliga regioner" : "samtliga kommuner";
-    if (refOmrade === "kommungrupp" && kommunGrupper) {
-      const gruppKod = kommunGrupper.kommuner[kommunKod];
-      const grupp = kommunGrupper?.grupper.find((g) => g.kod === gruppKod);
-      return grupp ? grupp.namn.toLowerCase() : "kommungruppen";
-    }
-    return "";
-  }, [refOmrade, kommunGrupper, kommunKod, isRegion]);
+  // ── Adapter: jamfor-state → Tidsserie-props ──
+  // Alla valda kommuner ritas som färgade linjer (extraLinjer).
 
   // ── Senaste rad för vald kommun (värde, rang, period) ──
   const senaste = useMemo(() => {
@@ -266,20 +232,7 @@ export default function KpiPopup({
     return rows[0] ?? null;
   }, [allData, aktivtKpiId, kommunKod]);
 
-  // Rang inom kommungrupp
-  const rangIGrupp = useMemo(() => {
-    if (!refOmrade || !senaste || bandKoder.length === 0) return null;
-    const maxAr = senaste.ar;
-    const vals = bandKoder
-      .map((k) => {
-        const row = allData.find((d) => d.kpi_id === aktivtKpiId && d.kommun_kod === k && d.ar === maxAr);
-        return row?.varde != null ? { kod: k, varde: row.varde } : null;
-      })
-      .filter((v): v is { kod: string; varde: number } => v != null)
-      .sort((a, b) => b.varde - a.varde); // högst först
-    const pos = vals.findIndex((v) => v.kod === kommunKod);
-    return pos >= 0 ? { plats: pos + 1, av: vals.length } : null;
-  }, [refOmrade, senaste, bandKoder, allData, aktivtKpiId, kommunKod]);
+  // Ranking hämtas direkt från senaste raden (rang_total, antal_kommuner)
 
   // ── Titel: ämne, enhet, tidsperiod — deduplikerad ──
   const fullTitel = useMemo(() => {
@@ -303,15 +256,15 @@ export default function KpiPopup({
     return delar.join(", ");
   }, [titel, aktivtEnhet, visaIndex, basAr, period]);
 
-  // ── Undertitel: JSX-segment som renderas inline ──
-  // Kommunnamnet markeras i grön (inline-legend). Texten ska vara en
-  // sammanhängande, flytande mening — aldrig stelt eller upprepande.
+  // ── Undertitel: tre systematiska delar ──
+  //   1. Nuvarande värde (via kpi-texter intro)
+  //   2. Riksgenomsnitt + ranking
+  //   3. Trend
   //
-  // Struktur beroende på tillgänglig data:
-  //   Bas:  "{År} låg {Kommun} på {värde} ({enhet}), plats {rang} av {N} i riket."
+  // Failproof: fungerar för alla KPI:er oavsett enhet, urval eller grupp.
+  // Snittjämförelse bara vid relativa mått. Ranking alltid.
   type Segment = { text: string; accent?: boolean };
 
-  // Första datapunkt för vald kommun (för trend)
   const forsta = useMemo(() => {
     const rows = allData
       .filter((d) => d.kpi_id === aktivtKpiId && d.kommun_kod === kommunKod && d.varde != null)
@@ -319,70 +272,84 @@ export default function KpiPopup({
     return rows[0] ?? null;
   }, [allData, aktivtKpiId, kommunKod]);
 
-  // Extrahera ämne från titeln genom att ta bort enhet-suffix
-  // "Behöriga till gymnasiets yrkesprogram efter årskurs 9, andel (%)" → "behöriga till gymnasiets yrkesprogram efter årskurs 9"
-  // KPI-specifik text: intro, pronomen, suffix — från explicit mappning
   const naturalText = useMemo(() => getKpiText(aktivtKpiId, aktivtEnhet), [aktivtKpiId, aktivtEnhet]);
+
+  // Ranking: använd rang_total om tillgänglig, annars beräkna dynamiskt
+  const ranking = useMemo(() => {
+    if (senaste?.rang_total != null && senaste?.antal_kommuner != null) {
+      return { rang: senaste.rang_total, av: senaste.antal_kommuner };
+    }
+    if (!senaste?.varde) return null;
+    const typ = isRegion ? "L" : "K";
+    const vals = allData
+      .filter((d) => d.kpi_id === aktivtKpiId && d.kommun_typ === typ && d.ar === senaste.ar && d.varde != null && d.kommun_kod !== "0000")
+      .map((d) => ({ kod: d.kommun_kod, varde: d.varde! }))
+      .sort((a, b) => b.varde - a.varde);
+    const pos = vals.findIndex((v) => v.kod === kommunKod);
+    return pos >= 0 ? { rang: pos + 1, av: vals.length } : null;
+  }, [senaste, allData, aktivtKpiId, kommunKod, isRegion]);
 
   const undertitelSegment = useMemo((): Segment[] => {
     const seg: Segment[] = [];
     const geo = kommunNamn;
-    const { intro, pronomen, den: denExplicit, suffix } = naturalText;
-    const val = senaste?.varde != null ? fmtKort(senaste.varde, aktivtEnhet) : "–";
+    const { intro, pronomen } = naturalText;
+    const v = senaste?.varde;
+    const val = v != null ? fmtKort(v, aktivtEnhet) : null;
 
-    // Tillbakasyftande pronomen: "den", "det" eller "de"
-    const ref = denExplicit ?? (() => {
-      const ord = pronomen.split(" ");
-      if (ord[0] === "de") return "de";
-      if (ord[0] === "det") return "det";
-      if (ord[0] === "antalet") return "det";
-      if (ord.some((o) => /erna$|arna$|orna$/.test(o))) return "de";
-      const sista = ord[ord.length - 1];
-      if (/ppen$/.test(sista)) return "de";
-      if (/et$|ot$/.test(sista)) return "det";
-      return "den";
-    })();
-
-    if (!senaste?.varde) {
+    // Fallback: ingen data
+    if (v == null || val == null) {
       seg.push({ text: "Visar utvecklingen för " });
       seg.push({ text: isRegion ? geo : `${geo} kommun`, accent: true });
       seg.push({ text: "." });
       return seg;
     }
 
-    // ── Mening 1: "Halmstad har 106 315 invånare." ──
-    // intro() returnerar hela meningen med geo inbakat — vi splittar på geo för att kunna accenta det
-    // Versalisera första bokstaven (vissa intro börjar med gemen, t.ex. "medianinkomsten i...")
+    // ── DEL 1: Värde ──
     const rawIntro = intro(geo, val);
     const introText = rawIntro.charAt(0).toUpperCase() + rawIntro.slice(1);
     const geoIdx = introText.indexOf(geo);
     if (geoIdx >= 0) {
       if (geoIdx > 0) seg.push({ text: introText.slice(0, geoIdx) });
       seg.push({ text: geo, accent: true });
-      seg.push({ text: introText.slice(geoIdx + geo.length) + "." });
+      seg.push({ text: introText.slice(geoIdx + geo.length) });
     } else {
-      seg.push({ text: introText + "." });
+      seg.push({ text: introText });
     }
 
-    // ── Mening 2: trend ──
-    if (forsta && forsta.ar !== senaste.ar && forsta.varde != null) {
-      const arForsta = fmtPeriod(forsta.ar);
-      const totalDiff = senaste.varde - forsta.varde;
-      const isProcentuellt = aktivtEnhet === "procent" || aktivtEnhet === "kvot";
+    // ── DEL 2: Riksgenomsnitt + ranking ──
+    const relativ = aktivtEnhet !== "antal" || visaIndex;
+    const riksVal = senaste.riksvarde;
+    const rang = ranking?.rang ?? null;
+    const av = ranking?.av ?? null;
+    const geoTyp = isRegion ? "regioner" : "kommuner";
+
+    if (relativ && riksVal != null) {
+      const diff = v - riksVal;
+      const jmfOrd = Math.abs(diff) < 0.1
+        ? "i nivå med"
+        : (diff > 0 ? "över" : "under");
+      seg.push({ text: `, vilket är ${jmfOrd} riksgenomsnittet (${fmtKort(riksVal, aktivtEnhet)}).` });
+    } else {
+      seg.push({ text: "." });
+    }
+
+    if (rang != null && av != null) {
+      seg.push({ text: ` Bland landets ${geoTyp} intar ` });
+      seg.push({ text: geo, accent: true });
+      seg.push({ text: ` plats ${rang} av ${av}.` });
+    }
+
+    // ── DEL 3: Trend ──
+    // Förändringstal (förändring, tillväxt, nettoflytt) beskriver redan en förändring.
+    // Att säga "förändringen har minskat" är en meta-trend som förvirrar — hoppa över.
+    const isForandring = /förändring|tillväxt|netto/i.test(pronomen);
+
+    if (!isForandring && forsta && forsta.ar !== senaste.ar && forsta.varde != null) {
+      const totalDiff = v - forsta.varde;
 
       if (Math.abs(totalDiff) > 0.001) {
-        if (isProcentuellt) {
-          // Procentmått: visa från→till istället för "ökat med X procentenheter"
-          const valForsta = fmtKort(forsta.varde, aktivtEnhet);
-          const riktning = totalDiff > 0 ? "stigit" : "sjunkit";
-          seg.push({ text: ` Sedan ${arForsta} har ${pronomen} ${riktning} från ${valForsta} till ${fmtKort(senaste.varde, aktivtEnhet)}${aktivtEnhet === "procent" ? " procent" : ""}` });
-        } else {
-          const totalVal = fmtKort(Math.abs(totalDiff), aktivtEnhet);
-          const riktning = totalDiff > 0 ? "ökat" : "minskat";
-          seg.push({ text: ` Sedan ${arForsta} har ${pronomen} ${riktning} med ${totalVal}${suffix}` });
-        }
+        const riktning = totalDiff > 0 ? "ökat" : "minskat";
 
-        // Senaste årets förändring — för månadsdata: samma månad föregående år
         const monthly = isMonthly(senaste.ar);
         const jmfAr = monthly ? sameMonthLastYear(senaste.ar) : null;
         const nästSenaste = monthly
@@ -391,71 +358,32 @@ export default function KpiPopup({
               .filter((d) => d.kpi_id === aktivtKpiId && d.kommun_kod === kommunKod && d.varde != null && d.ar < senaste.ar)
               .sort((a, b) => b.ar - a.ar)[0];
 
-        if (nästSenaste?.varde != null) {
-          const arsDiff = senaste.varde - nästSenaste.varde;
-          if (Math.abs(arsDiff) > 0.001) {
-            const byteRiktning = (totalDiff > 0 && arsDiff < 0) || (totalDiff < 0 && arsDiff > 0);
-            const konjunktion = byteRiktning ? "men" : "och";
-            const arsVal = fmtKort(Math.abs(arsDiff), aktivtEnhet);
-            const arsRikt = arsDiff > 0 ? "ökade" : "minskade";
-            const arsSuffix = isProcentuellt ? " procentenheter" : suffix;
-            const jmfText = monthly
-              ? `jämfört med ${fmtPeriod(jmfAr!)} ${arsRikt} ${ref} med ${arsVal}${arsSuffix}.`
-              : `det senaste året ${arsRikt} ${ref} med ${arsVal}${arsSuffix}.`;
-            seg.push({ text: `, ${konjunktion} ${jmfText}` });
-          } else {
-            seg.push({ text: "." });
-          }
+        // Bara 2 datapunkter → kort text utan upprepning
+        if (!nästSenaste || nästSenaste.ar === forsta.ar) {
+          seg.push({ text: ` Sedan ${fmtPeriod(forsta.ar)} har ${pronomen} ${riktning}.` });
         } else {
-          seg.push({ text: "." });
+          seg.push({ text: ` Över tid har ${pronomen} ${riktning}` });
+
+          const arsDiff = v - (nästSenaste.varde ?? v);
+          if (Math.abs(arsDiff) < 0.001) {
+            seg.push({ text: ", medan den senaste perioden var i stort sett oförändrad." });
+          } else {
+            const byteRikt = (totalDiff > 0 && arsDiff < 0) || (totalDiff < 0 && arsDiff > 0);
+            if (byteRikt) {
+              seg.push({ text: `, men den senaste perioden visade ${arsDiff > 0 ? "en ökning" : "en minskning"}.` });
+            } else {
+              seg.push({ text: ` och den senaste perioden visade en fortsatt ${totalDiff > 0 ? "ökning" : "minskning"}.` });
+            }
+          }
         }
       }
     }
 
-    // ── Mening 3: ranking (bara med referensområde) ──
-    if (refOmrade && bandKoder.length > 0 && rangIGrupp) {
-      if (refOmrade === "alla") {
-        seg.push({ text: ` Bland landets ${isRegion ? "regioner" : "kommuner"} placerar sig ` });
-        seg.push({ text: geo, accent: true });
-        seg.push({ text: ` på plats ${rangIGrupp.plats} av ${rangIGrupp.av}.` });
-      } else {
-        seg.push({ text: ` Bland ${bandLabel} placerar sig ` });
-        seg.push({ text: geo, accent: true });
-        seg.push({ text: ` på plats ${rangIGrupp.plats} av ${rangIGrupp.av}.` });
-      }
-
-      if (refVisning === "band") {
-        seg.push({ text: ` Det skuggade fältet visar spridningen inom gruppen.` });
-      } else {
-        seg.push({ text: ` De tunna linjerna visar övriga ${isRegion ? "regioner" : "kommuner"} i gruppen.` });
-      }
-    }
-
     return seg;
-  }, [kommunNamn, isRegion, senaste, forsta, aktivtKpiId, aktivtEnhet, naturalText, rangIGrupp, bandLabel, refOmrade, bandKoder, refVisning, allData, kommunKod]);
+  }, [kommunNamn, isRegion, senaste, forsta, aktivtKpiId, aktivtEnhet, visaIndex, naturalText, allData, kommunKod]);
 
-  const valdKommunGrupp = useMemo(() => {
-    if (!kommunGrupper) return null;
-    const gruppKod = kommunGrupper.kommuner[kommunKod];
-    if (!gruppKod) return null;
-    return kommunGrupper.grupper.find((g) => g.kod === gruppKod) ?? null;
-  }, [kommunGrupper, kommunKod]);
-
-  // ── Riktiga extra kommun-koder (utan pseudo-keys) ──
-  const riktaExtraLinjer = useMemo(() => {
-    const s = new Set<string>();
-    extraLinjer.forEach((k) => { if (!k.startsWith("__")) s.add(k); });
-    return s;
-  }, [extraLinjer]);
-
-  // Antal aktiva jämförelser (synliga i chip)
-  const antalJamforelser = useMemo(() => {
-    let n = riktaExtraLinjer.size;
-    if (showRiksnitt) n++;
-    if (showLanssnitt) n++;
-    if (showMedian) n++;
-    return n;
-  }, [riktaExtraLinjer, showRiksnitt, showLanssnitt, showMedian]);
+  // ── Alla valda kommuner som färgade linjer ──
+  const riktaExtraLinjer = jamfor.selected;
 
   // ── Jämför-panelens sökbara kommun-lista ──
   const senasteVarden = useMemo(() => {
@@ -468,35 +396,7 @@ export default function KpiPopup({
     return map;
   }, [allData, aktivtKpiId]);
 
-  const jmfTyp = isRegion ? "L" : "K";
-  const filteredKommuner = useMemo(() => {
-    let list = kommunRegister.filter(
-      (k) => k.t === jmfTyp && k.k !== kommunKod && k.k !== "0000" && k.k !== "0013"
-    );
-    if (jamforSearch.length >= 2) {
-      const q = jamforSearch.toLowerCase();
-      list = list.filter((k) => k.n.toLowerCase().includes(q));
-    }
-    list.sort((a, b) => {
-      const aVald = riktaExtraLinjer.has(a.k) ? 0 : 1;
-      const bVald = riktaExtraLinjer.has(b.k) ? 0 : 1;
-      if (aVald !== bVald) return aVald - bVald;
-      return a.n.localeCompare(b.n, "sv");
-    });
-    return list;
-  }, [kommunRegister, jmfTyp, kommunKod, jamforSearch, riktaExtraLinjer]);
-
-  const toggleExtra = useCallback((key: string) => {
-    setExtraLinjer((prev) => {
-      const next = new Set(prev);
-      if (next.has(key)) next.delete(key); else next.add(key);
-      return next;
-    });
-  }, []);
-
-  const clearAllJamfor = useCallback(() => {
-    setExtraLinjer(new Set());
-  }, []);
+  // filteredKommuner, toggleExtra, clearAllJamfor — flyttade till JamforPanel
 
   // ── Keyboard ──
   useEffect(() => {
@@ -540,12 +440,10 @@ export default function KpiPopup({
     [allData, aktivtKpiId, aktivtEnhet, visaIndex]
   );
 
-  const exportSubtitel = visning === "karta"
-    ? forstaMeningen.map((s) => s.text).join("")
-    : undertitelSegment.map((s) => s.text).join("");
+  const exportSegments = visning === "karta" ? forstaMeningen : undertitelSegment;
   const exportHeader: ExportHeader = {
     titel: fullTitel,
-    subtitel: exportSubtitel,
+    segments: exportSegments.map((s) => ({ text: s.text, accent: s.accent })),
     kalla: fullKalla(aktivtMeta?.beskrivning) || "SCB och bearbetningar av Region Halland",
     leftMargin: (chartWidth < 500 ? 12 : 20) + grafLeftMargin,
   };
@@ -569,35 +467,9 @@ export default function KpiPopup({
     : andelLabel;
 
   // Stäng andra dropdowns
-  const closeAll = () => { setOpenRefMenu(false); setOpenJamfor(false); setOpenMattMenu(false); };
+  const closeAll = () => { setOpenJamfor(false); setOpenMattMenu(false); };
 
-  // ── Checkbox-rad (används i Jämför-panelen) ──
-  const CheckRow = ({ checked, onChange, label, sub, color }: {
-    checked: boolean; onChange: () => void; label: string; sub?: string; color?: string;
-  }) => (
-    <button
-      onClick={onChange}
-      className={`w-full flex items-center gap-2.5 px-3 py-[7px] text-left transition-colors cursor-pointer ${
-        checked ? "bg-gron-4/30" : "hover:bg-neutral-50"
-      }`}
-    >
-      <span className={`w-3.5 h-3.5 rounded border flex items-center justify-center shrink-0 ${
-        checked ? "bg-gron-2 border-gron-2" : "border-neutral-300"
-      }`}>
-        {checked && (
-          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="white"
-               strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="20 6 9 17 4 12" />
-          </svg>
-        )}
-      </span>
-      {color && <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color }} />}
-      <span className={`text-[12px] flex-1 truncate ${checked ? "text-gron-1 font-medium" : "text-neutral-600"}`}>
-        {label}
-      </span>
-      {sub && <span className="text-[10px] text-neutral-400 font-data tabular-nums shrink-0">{sub}</span>}
-    </button>
-  );
+  // CheckRow borttagen — nu i JamforPanel
 
   // Ikon-komponent för verktygsfältet
   const TbIcon = ({ d, size = 14 }: { d: string; size?: number }) => (
@@ -652,151 +524,42 @@ export default function KpiPopup({
 
             <span className="w-px h-4 bg-neutral-200 mx-0.5 hidden sm:block" />
 
-            {/* ── Chips: Referensområde, Jämför, Mått, Visa 0 ── */}
-            <SplitChip
-              label="Referensområde"
-              value={refOmrade === "halland" ? "Halland"
-                : refOmrade === "sydvastsverige" ? "Sydvästsverige"
-                : refOmrade === "alla" ? (isRegion ? "Alla regioner" : "Alla kommuner")
-                : refOmrade === "kommungrupp" ? (valdKommunGrupp?.namn ?? "Kommungrupp")
-                : "Inget valt"}
-              open={openRefMenu}
-              onToggle={() => { closeAll(); setOpenRefMenu(!openRefMenu); }}
-            >
-              <div className="py-1">
-                {[
-                  { val: null as RefOmrade, label: "Inget valt", desc: isRegion ? "Visa enbart regionens linje" : "Visa enbart kommunens linje" },
-                  ...(isRegion ? [
-                    { val: "sydvastsverige" as RefOmrade, label: "Sydvästsverige", desc: `${SYDVASTSVERIGE_KODER.length} regioner` },
-                    { val: "alla" as RefOmrade, label: "Alla regioner", desc: `${kommunRegister.filter((k) => k.t === "L" && k.k !== "0000").length} regioner` },
-                  ] : [
-                    { val: "halland" as RefOmrade, label: "Hallands kommuner", desc: `${HALLAND_KODER.length} kommuner` },
-                    { val: "alla" as RefOmrade, label: "Alla kommuner", desc: `${kommunRegister.filter((k) => k.t === "K" && k.k !== "0000").length} kommuner` },
-                    ...(valdKommunGrupp ? [{
-                      val: "kommungrupp" as RefOmrade,
-                      label: valdKommunGrupp.namn,
-                      desc: `Kommungrupp ${valdKommunGrupp.kod}`,
-                    }] : []),
-                  ]),
-                ].map((opt) => (
-                    <button
-                      key={opt.val ?? "none"}
-                      onClick={() => { setRefOmrade(opt.val); if (!opt.val) setOpenRefMenu(false); }}
-                      className={`w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors cursor-pointer ${
-                        refOmrade === opt.val ? "bg-neutral-50" : "hover:bg-neutral-50"
-                      }`}
-                    >
-                      <span className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0 ${
-                        refOmrade === opt.val ? "border-gron-2" : "border-neutral-300"
-                      }`}>
-                        {refOmrade === opt.val && <span className="w-2 h-2 rounded-full bg-gron-2" />}
-                      </span>
-                      <div className="min-w-0">
-                        <div className={`text-[12px] ${refOmrade === opt.val ? "font-medium text-neutral-800" : "text-neutral-600"}`}>{opt.label}</div>
-                        <div className="text-[10px] text-neutral-400">{opt.desc}</div>
-                      </div>
-                    </button>
-                  ))}
-                  {refOmrade && (
-                    <div className="mx-3 mt-1 mb-2 pt-2 border-t border-neutral-100">
-                      <div className="text-[10px] font-semibold tracking-wider uppercase text-neutral-400 mb-1.5">Visa som</div>
-                      <div className="flex bg-neutral-100 rounded-md p-0.5 gap-0.5">
-                        {([["band", "Band"], ["linjer", "Linjer"]] as const).map(([val, label]) => (
-                          <button key={val} onClick={() => setRefVisning(val)}
-                            className={`flex-1 text-[11px] py-1 px-2 rounded transition-all duration-150 cursor-pointer ${
-                              refVisning === val ? "bg-white text-neutral-800 shadow-sm font-medium" : "text-neutral-500 hover:text-neutral-700"
-                            }`}>{label}</button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </SplitChip>
-
+            {/* ── Jämför: samlad panel ── */}
             <div ref={jamforRef} className="relative">
-              <SplitChip
-                label="Jämför"
-                value={antalJamforelser > 0 ? `${antalJamforelser} valda` : "Lägg till"}
-                open={openJamfor}
-                onToggle={() => { closeAll(); setOpenJamfor(!openJamfor); }}
+              <button
+                onClick={() => { closeAll(); setOpenJamfor(!openJamfor); }}
+                className={`inline-flex items-center rounded-full border transition-all cursor-pointer select-none overflow-hidden ${
+                  openJamfor ? "border-neutral-400" : "border-neutral-200 hover:border-neutral-400"
+                }`}
               >
-                <div className="w-[300px]">
-                  <div className="px-3 pt-2.5 pb-1">
-                    <div className="text-[10px] font-semibold tracking-wider uppercase text-neutral-400 mb-1">Snabbval</div>
-                  </div>
-                  <div className="border-b border-neutral-100">
-                    <CheckRow checked={showRiksnitt} onChange={() => toggleExtra("__rikssnitt__")}
-                      label="Riksgenomsnitt" color="#555"
-                      sub={fmtKort(senasteVarden.get("0000") ?? null, aktivtEnhet)} />
-                    {!isRegion && (
-                      <CheckRow checked={showLanssnitt} onChange={() => toggleExtra("__lanssnitt__")}
-                        label="Länsgenomsnitt (Halland)" color="#00AB60"
-                        sub={fmtKort(senasteVarden.get("0013") ?? null, aktivtEnhet)} />
-                    )}
-                    <CheckRow checked={showMedian} onChange={() => toggleExtra("__median__")}
-                      label={isRegion ? "Regionmedian (riket)" : "Mediankommun (riket)"} color="#888" />
-                    {isRegion && (() => {
-                      const sydOvriga = SYDVASTSVERIGE_KODER.filter((k) => k !== kommunKod);
-                      const allaValdaSyd = sydOvriga.every((k) => riktaExtraLinjer.has(k));
-                      return (
-                        <CheckRow checked={allaValdaSyd}
-                          onChange={() => {
-                            setExtraLinjer((p) => { const n = new Set(p); sydOvriga.forEach((k) => allaValdaSyd ? n.delete(k) : n.add(k)); return n; });
-                          }}
-                          label="Sydvästsveriges regioner" color="#A2D9F8"
-                          sub={`${sydOvriga.length} st`} />
-                      );
-                    })()}
-                    {!isRegion && (
-                      <CheckRow
-                        checked={HALLAND_KODER.filter((k) => k !== kommunKod).every((k) => riktaExtraLinjer.has(k))}
-                        onChange={() => {
-                          const hl = HALLAND_KODER.filter((k) => k !== kommunKod);
-                          const alla = hl.every((k) => riktaExtraLinjer.has(k));
-                          setExtraLinjer((p) => { const n = new Set(p); hl.forEach((k) => alla ? n.delete(k) : n.add(k)); return n; });
-                        }}
-                        label="Hallands kommuner" color="#C1E8C4"
-                        sub={`${HALLAND_KODER.filter((k) => k !== kommunKod).length} st`} />
-                    )}
-                    {valdKommunGrupp && !isRegion && (() => {
-                      const gk = kommunGrupper!.kommuner[kommunKod];
-                      const koder = Object.entries(kommunGrupper!.kommuner).filter(([k, g]) => g === gk && k !== kommunKod).map(([k]) => k);
-                      const alla = koder.length > 0 && koder.every((k) => riktaExtraLinjer.has(k));
-                      return (
-                        <CheckRow checked={alla}
-                          onChange={() => { setExtraLinjer((p) => { const n = new Set(p); koder.forEach((k) => alla ? n.delete(k) : n.add(k)); return n; }); }}
-                          label={valdKommunGrupp.namn} color="#C0C6FF" sub={`${koder.length} st`} />
-                      );
-                    })()}
-                  </div>
-                  <div className="px-3 pt-2.5 pb-1">
-                    <div className="text-[10px] font-semibold tracking-wider uppercase text-neutral-400 mb-1">{isRegion ? "Lägg till region" : "Lägg till kommun"}</div>
-                    <div className="relative">
-                      <svg className="absolute left-2.5 top-1/2 -translate-y-1/2 text-neutral-400"
-                        width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                        <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-                      </svg>
-                      <input type="text" value={jamforSearch} onChange={(e) => setJamforSearch(e.target.value)}
-                        placeholder={isRegion ? "Sök region…" : "Sök kommun…"}
-                        className="w-full pl-7 pr-2 py-1.5 text-[12px] bg-neutral-50 border border-neutral-200 rounded-lg focus:outline-none focus:border-gron-2 placeholder:text-neutral-400" />
-                    </div>
-                  </div>
-                  {antalJamforelser > 0 && (
-                    <div className="px-3 py-1 flex justify-end">
-                      <button onClick={clearAllJamfor} className="text-[10px] text-neutral-400 hover:text-neutral-600 cursor-pointer">Rensa alla</button>
-                    </div>
-                  )}
-                  <div className="max-h-[200px] overflow-y-auto border-t border-neutral-100">
-                    {filteredKommuner.length === 0 ? (
-                      <div className="px-3 py-4 text-[11px] text-neutral-400 text-center">Inga träffar</div>
-                    ) : filteredKommuner.slice(0, 60).map((k) => (
-                      <CheckRow key={k.k} checked={riktaExtraLinjer.has(k.k)} onChange={() => toggleExtra(k.k)}
-                        label={k.n + (HALLAND_KODER.includes(k.k) ? " ●" : "")}
-                        sub={fmtKort(senasteVarden.get(k.k) ?? null, aktivtEnhet)} />
-                    ))}
-                  </div>
+                <span className="text-[11px] px-2.5 py-1.5 text-neutral-400 bg-neutral-50 border-r border-neutral-200">
+                  Jämför
+                </span>
+                <span className="text-[12px] px-2.5 py-1.5 text-neutral-700 font-medium flex items-center gap-1">
+                  {antalJamforelser > 0 ? `${antalJamforelser} valda` : "Lägg till"}
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                       strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
+                       className={`transition-transform text-neutral-400 ${openJamfor ? "rotate-180" : ""}`}>
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </span>
+              </button>
+              {openJamfor && (
+                <div className="absolute top-full left-0 mt-1.5 z-50 bg-white rounded-xl border border-neutral-200
+                                shadow-lg shadow-black/8 overflow-hidden animate-[fadeIn_100ms_ease-out]">
+                  <JamforPanel
+                    isRegion={isRegion}
+                    kommunKod={kommunKod}
+                    kommunRegister={kommunRegister}
+                    kommunGrupper={kommunGrupper}
+                    senasteVarden={senasteVarden}
+                    aktivtEnhet={aktivtEnhet}
+                    visaIndex={visaIndex}
+                    state={jamfor}
+                    dispatch={jamforDispatch}
+                  />
                 </div>
-              </SplitChip>
+              )}
             </div>
 
             {harMattVal && (
@@ -876,11 +639,13 @@ export default function KpiPopup({
             </button>
 
             <button onClick={onClose} title="Stäng (Esc)"
-              className="w-7 h-7 flex items-center justify-center rounded-md text-neutral-400 hover:text-neutral-600 hover:bg-white cursor-pointer transition-colors">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                   strokeWidth="2" strokeLinecap="round">
+              className="h-7 px-2 flex items-center justify-center gap-1 rounded-md
+                         text-neutral-400 hover:text-neutral-600 hover:bg-white cursor-pointer transition-colors">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   strokeWidth="2.5" strokeLinecap="round">
                 <path d="M18 6L6 18M6 6l12 12" />
               </svg>
+              <span className="text-[11px] hidden sm:inline">Stäng</span>
             </button>
           </div>
         </div>
@@ -888,14 +653,18 @@ export default function KpiPopup({
         {/* ═══════════ GRAFBLOCK: titel → undertitel → graf (obrutet) ═══════════ */}
         <div className="flex-1 overflow-y-auto overflow-x-hidden">
 
-          {/* Titel + undertitel — alignad med grafens y-etiketter */}
-          <div className="pt-4 pb-0"
-               style={{ paddingLeft: `${(chartWidth < 500 ? 12 : 20) + grafLeftMargin}px`, paddingRight: 20 }}>
-            <h2 className="text-[21px] text-[#2d2e2d] leading-[1.25]"
+          {/* Titel + undertitel — OWID/FT-spacing: 6px titel→sub, 16px sub→graf */}
+          {/* Högerpad: titel/sub slutar vid ~85% av grafbredden så text aldrig krockar med etiketter */}
+          <div className="pt-5 pb-0"
+               style={{
+                 paddingLeft: `${(chartWidth < 500 ? 12 : 20) + grafLeftMargin}px`,
+                 paddingRight: `${Math.max(20, Math.round(chartWidth * 0.15))}px`,
+               }}>
+            <h2 className="text-[21px] text-[#2d2e2d] leading-[1.2]"
                 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontWeight: 400 }}>
               {fullTitel}
             </h2>
-            <p className="text-[13px] mt-1 text-[#5b5b5b] leading-[1.45]"
+            <p className="text-[13px] mt-[6px] text-[#5b5b5b] leading-[1.45]"
                style={{ fontFamily: "'IBM Plex Sans', system-ui, sans-serif", fontWeight: 400 }}>
               {(visning === "karta" ? forstaMeningen : undertitelSegment).map((s, i) =>
                 s.accent
@@ -905,8 +674,8 @@ export default function KpiPopup({
             </p>
           </div>
 
-          {/* Graf / Karta — 16px gap från undertitel (OWID) */}
-          <div className="px-3 sm:px-5 pt-2 pb-2" ref={setChartRefs}>
+          {/* Graf / Karta — 16px gap från undertitel */}
+          <div className="px-3 sm:px-5 pt-4 pb-2" ref={setChartRefs}>
             {chartWidth > 0 && visning === "graf" && (
               <Tidsserie
                 valdKommunKod={kommunKod}
@@ -928,9 +697,6 @@ export default function KpiPopup({
                 showRiksnitt={showRiksnitt}
                 showLanssnitt={showLanssnitt}
                 showMedian={showMedian}
-                bandKoder={bandKoder}
-                bandLabel={bandLabel}
-                bandVisning={refVisning}
                 extraLinjer={riktaExtraLinjer}
               />
             )}
@@ -958,6 +724,15 @@ export default function KpiPopup({
               />
             )}
           </div>
+        </div>
+
+        {/* ── Mobil: sticky stäng-knapp i botten ── */}
+        <div className="sm:hidden shrink-0 border-t border-neutral-200 bg-white px-4 py-3">
+          <button onClick={onClose}
+            className="w-full py-2.5 rounded-lg bg-neutral-800 text-white text-[14px] font-medium
+                       cursor-pointer active:bg-neutral-900 transition-colors">
+            Stäng
+          </button>
         </div>
       </div>
     </div>

@@ -35,6 +35,7 @@ interface Props {
   bandKoder?: string[];
   bandLabel?: string;
   bandVisning?: "band" | "linjer";
+  bandStyle?: { opacity: number; lineWidth: number };
   extraLinjer?: Set<string>;
 }
 
@@ -51,6 +52,18 @@ interface Label {
 const FONT_TITEL = "'Source Serif 4', Georgia, serif";
 const FONT = "'IBM Plex Sans', system-ui, sans-serif";
 const FONT_DATA = "'IBM Plex Sans', system-ui, sans-serif";
+
+// ── Delade layout-konstanter (web + export) ──
+const TITEL_FONT_PX = 21;
+const TITEL_LINE_H = 26;
+const SUB_FONT_PX = 13;
+const SUB_LINE_H = 18;
+const GAP_TITEL_SUB = 6;
+const GAP_SUB_CHART = 16;
+const TITEL_BASELINE = 24;
+const RIGHT_PAD_RATIO = 0.15;  // 15% av bredden reserverat till höger
+const TITEL_CHAR_W = 0.52;    // approx teckenbredd / fontstorlek
+const SUB_CHAR_W = 0.55;
 
 /** Iterativ relaxering — skjuter isär etiketter tills ingen överlappar */
 function resolveOverlap(labels: Label[], minGap: number, yMin: number, yMax: number) {
@@ -97,11 +110,13 @@ function fmtY(v: number, enhet?: string): string {
 }
 
 /** Export-header: titel + subtitel som kan injiceras i SVG-klon vid nedladdning */
+export interface ExportSegment { text: string; accent?: boolean }
 export interface ExportHeader {
   titel: string;
   subtitel?: string;
+  segments?: ExportSegment[]; // styled undertitel (accent = grön geo-namn)
   kalla?: string;
-  leftMargin?: number; // matcha grafens vänstermarginal
+  leftMargin?: number;
 }
 
 /** Rensa SVG-klon för export */
@@ -111,34 +126,50 @@ function cleanSvgClone(svgEl: SVGSVGElement): SVGSVGElement {
   return clone;
 }
 
-/** Injicera titel + subtitel i SVG-klonens topp och skjut ner grafinnehållet */
+/** Injicera titel + styled undertitel i SVG-klonens topp.
+ *  Använder samma konstanter som display-renderingen. */
 function injectHeader(clone: SVGSVGElement, header: ExportHeader, origW: number, origH: number) {
   const ns = "http://www.w3.org/2000/svg";
   const xStart = String(header.leftMargin ?? 16);
+  const rightPad = Math.max(20, Math.round(origW * RIGHT_PAD_RATIO));
+  const maxTextW = origW - (header.leftMargin ?? 16) - rightPad;
 
-  // Radbrytning: dela undertitel i rader som ryms
-  const subFontPx = 13;
-  const charsPerLine = Math.floor((origW - 32) / (subFontPx * 0.55));
-  const subLines: string[] = [];
-  if (header.subtitel) {
-    const words = header.subtitel.split(" ");
-    let line = "";
-    for (const word of words) {
-      if (line && (line.length + 1 + word.length) > charsPerLine) {
-        subLines.push(line);
-        line = word;
-      } else {
-        line = line ? line + " " + word : word;
-      }
-    }
-    if (line) subLines.push(line);
+  // ── Radbrytning av undertitel (med segment-stöd) ──
+  const charsPerLine = Math.floor(maxTextW / (SUB_FONT_PX * SUB_CHAR_W));
+
+  type StyledWord = { word: string; accent: boolean };
+  const styledWords: StyledWord[] = [];
+  const segs = header.segments ?? (header.subtitel ? [{ text: header.subtitel }] : []);
+  for (const seg of segs) {
+    const words = seg.text.split(/(\s+)/).filter((w) => w.trim().length > 0);
+    for (const w of words) styledWords.push({ word: w, accent: !!seg.accent });
   }
 
-  const titelBaseline = 22;
-  const subLineH = 17;
-  const gapTitelSub = 4;
-  const totalSubH = subLines.length > 0 ? gapTitelSub + subLines.length * subLineH : 0;
-  const headerH = titelBaseline + totalSubH + 12; // 12px luft till graf
+  type StyledLine = StyledWord[];
+  const lines: StyledLine[] = [];
+  let currentLine: StyledWord[] = [];
+  let currentLen = 0;
+  for (const sw of styledWords) {
+    const addLen = (currentLen > 0 ? 1 : 0) + sw.word.length;
+    if (currentLen > 0 && currentLen + addLen > charsPerLine) {
+      lines.push(currentLine);
+      currentLine = [sw];
+      currentLen = sw.word.length;
+    } else {
+      currentLine.push(sw);
+      currentLen += addLen;
+    }
+  }
+  if (currentLine.length > 0) lines.push(currentLine);
+
+  // ── Titel-radbrytning ──
+  const titelCharsPerLine = Math.floor(maxTextW / (TITEL_FONT_PX * TITEL_CHAR_W));
+  const titelLines = wrapText(header.titel, titelCharsPerLine);
+
+  // ── Spacing ──
+  const titelBlockH = TITEL_BASELINE + (titelLines.length - 1) * TITEL_LINE_H;
+  const totalSubH = lines.length > 0 ? GAP_TITEL_SUB + lines.length * SUB_LINE_H : 0;
+  const headerH = titelBlockH + totalSubH + GAP_SUB_CHART;
   const newH = origH + headerH;
 
   clone.setAttribute("viewBox", `0 0 ${origW} ${newH}`);
@@ -151,48 +182,46 @@ function injectHeader(clone: SVGSVGElement, header: ExportHeader, origW: number,
   while (clone.firstChild) wrapper.appendChild(clone.firstChild);
   clone.appendChild(wrapper);
 
-  // Titel — Source Serif 4, 400, 21px — alignad med grafens y-etiketter
+  // ── Titel ──
   const titleEl = clone.ownerDocument.createElementNS(ns, "text");
   titleEl.setAttribute("x", xStart);
-  titleEl.setAttribute("y", String(titelBaseline));
   titleEl.setAttribute("fill", "#2d2e2d");
-  titleEl.setAttribute("font-size", "21px");
+  titleEl.setAttribute("font-size", `${TITEL_FONT_PX}px`);
   titleEl.setAttribute("font-weight", "400");
-  titleEl.setAttribute("font-family", "'Source Serif 4', Georgia, serif");
-  titleEl.textContent = header.titel;
+  titleEl.setAttribute("font-family", FONT_TITEL);
+  titelLines.forEach((line, i) => {
+    const tspan = clone.ownerDocument.createElementNS(ns, "tspan");
+    tspan.setAttribute("x", xStart);
+    tspan.setAttribute("y", String(TITEL_BASELINE + i * TITEL_LINE_H));
+    tspan.textContent = line;
+    titleEl.appendChild(tspan);
+  });
   clone.appendChild(titleEl);
 
-  // Undertitel — IBM Plex Sans 400, radbruten med tspan
-  if (subLines.length > 0) {
-    const subEl = clone.ownerDocument.createElementNS(ns, "text");
-    subEl.setAttribute("x", xStart);
-    subEl.setAttribute("fill", "#5b5b5b");
-    subEl.setAttribute("font-size", `${subFontPx}px`);
-    subEl.setAttribute("font-weight", "400");
-    subEl.setAttribute("font-family", "'IBM Plex Sans', system-ui, sans-serif");
-    subLines.forEach((line, i) => {
-      const tspan = clone.ownerDocument.createElementNS(ns, "tspan");
-      tspan.setAttribute("x", xStart);
-      tspan.setAttribute("y", String(titelBaseline + gapTitelSub + subLineH * (i + 1)));
-      tspan.textContent = line;
-      subEl.appendChild(tspan);
+  // ── Undertitel ──
+  if (lines.length > 0) {
+    lines.forEach((lineWords, i) => {
+      const lineEl = clone.ownerDocument.createElementNS(ns, "text");
+      lineEl.setAttribute("x", xStart);
+      lineEl.setAttribute("y", String(titelBlockH + GAP_TITEL_SUB + SUB_LINE_H * (i + 1)));
+      lineEl.setAttribute("font-size", `${SUB_FONT_PX}px`);
+      lineEl.setAttribute("font-family", FONT);
+
+      // Bygg tspan:ar per ord med rätt stil
+      let first = true;
+      for (const sw of lineWords) {
+        const tspan = clone.ownerDocument.createElementNS(ns, "tspan");
+        tspan.setAttribute("fill", sw.accent ? "#00664D" : "#5b5b5b");
+        tspan.setAttribute("font-weight", sw.accent ? "500" : "400");
+        tspan.textContent = (first ? "" : " ") + sw.word;
+        lineEl.appendChild(tspan);
+        first = false;
+      }
+      clone.appendChild(lineEl);
     });
-    clone.appendChild(subEl);
   }
 
-  // Källa
-  if (header.kalla) {
-    const kallaEl = clone.ownerDocument.createElementNS(ns, "text");
-    kallaEl.setAttribute("x", String(origW - 8));
-    kallaEl.setAttribute("y", String(newH - 4));
-    kallaEl.setAttribute("text-anchor", "end");
-    kallaEl.setAttribute("fill", "#aaa");
-    kallaEl.setAttribute("font-size", "11px");
-    kallaEl.setAttribute("font-weight", "400");
-    kallaEl.setAttribute("font-family", "'IBM Plex Sans', system-ui, sans-serif");
-    kallaEl.textContent = `Källa: ${header.kalla}`;
-    clone.appendChild(kallaEl);
-  }
+  // Källa renderas redan i SVG:n av draw() — ingen dubblett här
 
   return newH;
 }
@@ -311,6 +340,7 @@ export default function Tidsserie({
   bandKoder,
   bandLabel,
   bandVisning = "band",
+  bandStyle,
   extraLinjer,
 }: Props) {
   // Popup-läge: styrs av nya props istället för visningsLage
@@ -320,9 +350,9 @@ export default function Tidsserie({
   const tooltipRef = useRef<HTMLDivElement>(null);
 
   const titelMaxChars = compact ? 40 : 75;
-  const titelFontSize = compact ? 15 : 18;
-  const titelLineH = compact ? 20 : 24;
-  const subFontSize = compact ? 11 : 13;
+  const titelFontSize = compact ? 15 : TITEL_FONT_PX;
+  const titelLineH = compact ? 20 : TITEL_LINE_H;
+  const subFontSize = compact ? 11 : SUB_FONT_PX;
   const axisFontSize = compact ? 11 : 14;
   const axisSmFontSize = compact ? 11 : 13;
   const labelFontSize = compact ? 11 : 13;
@@ -566,9 +596,31 @@ export default function Tidsserie({
     const yDom = y.domain() as [number, number];
 
     // ─── Y-axel — OWID-stil: streckade horisontella gridlines, ingen vertikal linje ───
-    // Antal ticks: OWID-formel — skalbaserat, 3–5 st ger jämnt spacing
+    // Antal ticks: skalbaserat, 3–5 st ger jämnt spacing
     const tickTarget = Math.round(Math.max(3, Math.min(5, h / (axisSmFontSize * 4))));
     const yTicks = useLog ? (y.ticks() as number[]) : (y.ticks(tickTarget) as number[]);
+
+    // Säkerställ att ticks omsluter all data — alltid en gridline ovanför
+    // högsta och under lägsta datapunkt. Eliminerar "luft" utan att klippa data.
+    if (!useLog && yTicks.length >= 2) {
+      const tickStep = yTicks[1] - yTicks[0];
+      let tickMin = yTicks[0];
+      let tickMax = yTicks[yTicks.length - 1];
+      const [dataMin, dataMax] = d3.extent(relevantValues) as [number, number];
+
+      // Utöka nedåt om data sticker under lägsta tick
+      while (tickMin > dataMin) {
+        tickMin -= tickStep;
+        yTicks.unshift(tickMin);
+      }
+      // Utöka uppåt om data sticker över högsta tick
+      while (tickMax < dataMax) {
+        tickMax += tickStep;
+        yTicks.push(tickMax);
+      }
+
+      y.domain([tickMin, tickMax]);
+    }
 
     for (const t of yTicks) {
       const px = y(t);
@@ -671,6 +723,9 @@ export default function Tidsserie({
       .curve(d3.curveMonotoneX);
 
     // ─── Referensområde: band eller individuella linjer ───
+    const bsOp = bandStyle?.opacity ?? 0.35;
+    const bsLw = bandStyle?.lineWidth ?? 1;
+
     if (hasBand && bandVisning === "band" && bandMinMax.length > 1) {
       const bandArea = d3.area<{ ar: number; min: number; max: number }>()
         .x((d) => xp(d.ar))
@@ -681,7 +736,7 @@ export default function Tidsserie({
         .datum(bandMinMax)
         .attr("d", bandArea)
         .attr("fill", "#000")
-        .attr("fill-opacity", 0.04)
+        .attr("fill-opacity", bsOp * 0.12)
         .attr("stroke", "none");
     } else if (hasBand && bandVisning === "linjer") {
       bandKoder!.forEach((kod) => {
@@ -694,26 +749,45 @@ export default function Tidsserie({
           .attr("d", line)
           .attr("fill", "none")
           .attr("stroke", "#DCDCDC")
-          .attr("stroke-width", 0.5);
+          .attr("stroke-width", bsLw)
+          .attr("stroke-opacity", bsOp);
       });
     }
 
     // ─── Extra jämförelselinjer ───
-    extraDataArr.forEach((extra) => {
-      g.append("path")
-        .datum(extra.data)
-        .attr("d", line)
-        .attr("fill", "none")
-        .attr("stroke", extra.color)
-        .attr("stroke-width", 1.5)
-        .attr("stroke-opacity", 0.7);
-      const last = extra.data[extra.data.length - 1];
-      if (last?.varde != null) {
-        g.append("circle")
-          .attr("cx", xp(last.ar)).attr("cy", y(last.varde))
-          .attr("r", 2.5).attr("fill", extra.color).attr("fill-opacity", 0.7);
-      }
-    });
+    // Många linjer (>15): grå bakgrund, bara högsta/lägsta etiketter.
+    // Färre: färgade, individuella etiketter.
+    const manyExtras = extraDataArr.length >= 20;
+
+    if (manyExtras) {
+      // Gråskale-läge: alla linjer i neutral grå
+      extraDataArr.forEach((extra) => {
+        g.append("path")
+          .datum(extra.data)
+          .attr("d", line)
+          .attr("fill", "none")
+          .attr("stroke", "#D0D0D0")
+          .attr("stroke-width", 0.6)
+          .attr("stroke-opacity", 0.6);
+      });
+    } else {
+      // Färgade linjer, nedtonade
+      extraDataArr.forEach((extra) => {
+        g.append("path")
+          .datum(extra.data)
+          .attr("d", line)
+          .attr("fill", "none")
+          .attr("stroke", extra.color)
+          .attr("stroke-width", 1.2)
+          .attr("stroke-opacity", 0.45);
+        const last = extra.data[extra.data.length - 1];
+        if (last?.varde != null) {
+          g.append("circle")
+            .attr("cx", xp(last.ar)).attr("cy", y(last.varde))
+            .attr("r", 2).attr("fill", extra.color).attr("fill-opacity", 0.45);
+        }
+      });
+    }
 
     // ─── Bakgrundslinjer ───
     if (visningsLage === "alla") {
@@ -739,18 +813,21 @@ export default function Tidsserie({
 
     const medianLast = visaRef ? medianPerAr[medianPerAr.length - 1] : undefined;
 
+    // Referenslinjer: streckade, lite tjockare än jämförelsegeografier
+    const refDash = "6,4";
+
     if (visaRef && medianPerAr.length > 1) {
       g.append("path")
         .datum(medianPerAr)
         .attr("d", medianLine)
         .attr("fill", "none")
         .attr("stroke", "#888")
-        .attr("stroke-width", 1.5)
-        .attr("stroke-dasharray", popupMode ? "4,3" : "none");
+        .attr("stroke-width", 1.8)
+        .attr("stroke-dasharray", refDash);
       if (medianLast) {
         g.append("circle")
           .attr("cx", xp(medianLast.ar)).attr("cy", y(medianLast.varde))
-          .attr("r", 3).attr("fill", "#888");
+          .attr("r", 3.5).attr("fill", "#888");
       }
     }
 
@@ -764,12 +841,13 @@ export default function Tidsserie({
         .attr("d", line)
         .attr("fill", "none")
         .attr("stroke", "#00AB60")
-        .attr("stroke-width", 1.5)
-        .attr("stroke-opacity", 0.6);
+        .attr("stroke-width", 1.8)
+        .attr("stroke-opacity", 0.7)
+        .attr("stroke-dasharray", refDash);
       if (lansLast?.varde != null) {
         g.append("circle")
           .attr("cx", xp(lansLast.ar)).attr("cy", y(lansLast.varde))
-          .attr("r", 3).attr("fill", "#00AB60").attr("fill-opacity", 0.6);
+          .attr("r", 3.5).attr("fill", "#00AB60").attr("fill-opacity", 0.7);
       }
     }
 
@@ -784,11 +862,12 @@ export default function Tidsserie({
         .attr("d", line)
         .attr("fill", "none")
         .attr("stroke", "#555")
-        .attr("stroke-width", 1.5);
+        .attr("stroke-width", 1.8)
+        .attr("stroke-dasharray", refDash);
       if (riksLast?.varde != null) {
         g.append("circle")
           .attr("cx", xp(riksLast.ar)).attr("cy", y(riksLast.varde))
-          .attr("r", 3).attr("fill", "#555");
+          .attr("r", 3.5).attr("fill", "#555");
       }
     }
 
@@ -836,13 +915,17 @@ export default function Tidsserie({
         .attr("stroke", "none");
     }
 
+    // Förhöjd vald kommun (tjockare när jämförelser finns)
+    const hasComparisons = extraDataArr.length > 0 || visaRiket || visaLanssnitt || visaMedian;
+    const kommunLineWidth = hasComparisons ? 3 : 2.5;
+
     if (kommunSorted.length > 0) {
       g.append("path")
         .datum(kommunSorted)
         .attr("d", line)
         .attr("fill", "none")
         .attr("stroke", "#00664D")
-        .attr("stroke-width", 2.5);
+        .attr("stroke-width", kommunLineWidth);
 
       // Månadsdata: referenspunkter vid samma månad alla föregående år
       if (monthly && kommunLast) {
@@ -861,7 +944,7 @@ export default function Tidsserie({
       if (kommunLast?.varde != null) {
         g.append("circle")
           .attr("cx", xp(kommunLast.ar)).attr("cy", y(kommunLast.varde))
-          .attr("r", 4.5).attr("fill", "#00664D");
+          .attr("r", hasComparisons ? 5 : 4.5).attr("fill", "#00664D");
       }
 
       const kommunFirst = kommunSorted[0];
@@ -884,7 +967,7 @@ export default function Tidsserie({
       labels.push({
         text: valdKommunNamn,
         naturalY: yp, yPos: yp,
-        color: "#00664D", weight: 500, size: `${labelFontSize}px`,
+        color: "#00664D", weight: 600, size: `${hasComparisons ? labelFontSize + 1 : labelFontSize}px`,
       });
     }
     if (riksLast?.varde != null) {
@@ -908,23 +991,42 @@ export default function Tidsserie({
     if (medianLast) {
       const yp = y(medianLast.varde);
       labels.push({
-        text: "Median",
+        text: isRegion ? "Median (riket)" : "Median (riket)",
         naturalY: yp, yPos: yp,
         color: "#888", weight: 400, size: `${labelSmFontSize}px`,
       });
     }
 
     // Extra jämförelselinjer — etiketter
-    extraDataArr.forEach((extra) => {
-      const last = extra.data[extra.data.length - 1];
-      if (!last?.varde) return;
-      const yp = y(last.varde);
-      labels.push({
-        text: trunc(extra.namn),
-        naturalY: yp, yPos: yp,
-        color: extra.color, weight: 500, size: `${labelSmFontSize}px`,
+    if (manyExtras) {
+      // Bara högsta och lägsta bland extras
+      const extraLastVals = extraDataArr
+        .map((e) => { const l = e.data[e.data.length - 1]; return l?.varde != null ? { namn: e.namn, varde: l.varde } : null; })
+        .filter((v): v is { namn: string; varde: number } => v != null);
+      if (extraLastVals.length > 0) {
+        const highest = extraLastVals.reduce((a, b) => a.varde > b.varde ? a : b);
+        const lowest = extraLastVals.reduce((a, b) => a.varde < b.varde ? a : b);
+        for (const item of [highest, lowest]) {
+          labels.push({
+            text: trunc(item.namn),
+            naturalY: y(item.varde), yPos: y(item.varde),
+            color: "#aaa", weight: 400, size: `${labelSmFontSize}px`,
+          });
+        }
+      }
+    } else {
+      // Alla extras får etiketter
+      extraDataArr.forEach((extra) => {
+        const last = extra.data[extra.data.length - 1];
+        if (!last?.varde) return;
+        const yp = y(last.varde);
+        labels.push({
+          text: trunc(extra.namn),
+          naturalY: yp, yPos: yp,
+          color: extra.color, weight: 400, size: `${labelSmFontSize}px`,
+        });
       });
-    });
+    }
 
     if (!popupMode && visningsLage === "halland") {
       HALLAND_KODER.forEach((kod) => {
@@ -943,7 +1045,11 @@ export default function Tidsserie({
       });
     }
 
-    resolveOverlap(labels, compact ? 14 : 18, 0, h);
+    // Dynamisk gap: minska vid många etiketter, tillåt mer vertikal spridning
+    const baseGap = compact ? 14 : 18;
+    const dynGap = labels.length > 6 ? Math.max(compact ? 11 : 13, baseGap - (labels.length - 6)) : baseGap;
+    const labelPad = labels.length > 4 ? 20 : 8;
+    resolveOverlap(labels, dynGap, -labelPad, h + labelPad);
 
     // OWID-stil connectors: alltid H→V→H (3-segment path)
     const connMargin = 4;       // avstånd från linjens sista punkt till connector-start
@@ -974,11 +1080,11 @@ export default function Tidsserie({
         .text(lbl.text);
     });
 
-    // ─── Källa ───
+    // ─── Källa — vänsterställd, i linje med titel ───
     svg.append("text")
-      .attr("x", width - 8).attr("y", height + titelOffset - 4)
-      .attr("text-anchor", "end")
-      .attr("fill", "#aaa").attr("font-size", "11px")
+      .attr("x", leftMargin).attr("y", height + titelOffset - 4)
+      .attr("text-anchor", "start")
+      .attr("fill", "#999").attr("font-size", "11px")
       .attr("font-weight", "400")
       .attr("font-family", FONT)
       .text(kalla ? `Källa: ${kalla}` : "Källa: SCB och bearbetningar av Region Halland");
@@ -987,8 +1093,11 @@ export default function Tidsserie({
     const tooltipEl = tooltipRef.current;
     if (!tooltipEl) return;
 
+    // Crosshair begränsad till gridline-intervallet (inte hela grafytan)
+    const gridTop = yTicks.length > 0 ? y(yTicks[yTicks.length - 1]) : 0;
+    const gridBottom = yTicks.length > 0 ? y(yTicks[0]) : h;
     const focusLine = g.append("line")
-      .attr("y1", 0).attr("y2", h)
+      .attr("y1", gridTop).attr("y2", gridBottom)
       .attr("stroke", "#00664D").attr("stroke-width", 0.8)
       .attr("opacity", 0).attr("pointer-events", "none");
     const focusDot = g.append("circle")
@@ -1057,25 +1166,46 @@ export default function Tidsserie({
         if (medianPerAr.length > 0) {
           const medRow = medianPerAr.find((d) => d.ar === year);
           if (medRow) {
-            rows.push({ namn: "Median", varde: medRow.varde, color: "#888", isVald: false, isAggregate: true });
+            rows.push({ namn: "Median (riket)", varde: medRow.varde, color: "#888", isVald: false, isAggregate: true });
           }
         }
 
         // Extra linjer (faktiska kommuner — har ranking)
-        extraDataArr.forEach((extra) => {
-          const row = extra.data.find((d) => d.ar === year);
-          if (row?.varde != null) {
-            rows.push({
-              namn: extra.namn,
-              varde: row.varde,
-              color: extra.color,
-              rang: rangMap.get(extra.kod),
-              totalRank,
-              isVald: false,
-              isAggregate: false,
-            });
+        if (manyExtras) {
+          // Många linjer: visa bara högsta och lägsta i tooltip
+          const extraVals = extraDataArr
+            .map((e) => { const r = e.data.find((d) => d.ar === year); return r?.varde != null ? { ...e, varde: r.varde } : null; })
+            .filter((v): v is typeof extraDataArr[0] & { varde: number } => v != null);
+          if (extraVals.length > 0) {
+            const highest = extraVals.reduce((a, b) => a.varde > b.varde ? a : b);
+            const lowest = extraVals.reduce((a, b) => a.varde < b.varde ? a : b);
+            for (const item of [highest, lowest]) {
+              if (item.kod === highest.kod && item.kod === lowest.kod) {
+                // Bara en — visa den en gång
+                rows.push({ namn: item.namn, varde: item.varde, color: "#aaa",
+                  rang: rangMap.get(item.kod), totalRank, isVald: false, isAggregate: false });
+                break;
+              }
+              rows.push({ namn: item.namn, varde: item.varde, color: "#aaa",
+                rang: rangMap.get(item.kod), totalRank, isVald: false, isAggregate: false });
+            }
           }
-        });
+        } else {
+          extraDataArr.forEach((extra) => {
+            const row = extra.data.find((d) => d.ar === year);
+            if (row?.varde != null) {
+              rows.push({
+                namn: extra.namn,
+                varde: row.varde,
+                color: extra.color,
+                rang: rangMap.get(extra.kod),
+                totalRank,
+                isVald: false,
+                isAggregate: false,
+              });
+            }
+          });
+        }
 
         // Sortera efter värde (dynamisk ranking-ordning, högst först)
         rows.sort((a, b) => b.varde - a.varde);
@@ -1125,7 +1255,7 @@ export default function Tidsserie({
         focusDot.attr("opacity", 0);
         tooltipEl.style.opacity = "0";
       });
-  }, [valdKommunKod, valdKommunNamn, kpiId, enhet, allData, isRegion, visningsLage, visaNoll, indexMode, leftMargin, titel, titelLines, harSubtitel, visaTitel, subtitelEnhet, subtitelGeografi, subtitelKontext, subtitelPeriod, titelOffset, width, height, compact, titelFontSize, titelLineH, subFontSize, axisFontSize, axisSmFontSize, labelFontSize, labelSmFontSize, popupMode, showRiksnittProp, showLanssnittprop, showMedianProp, bandKoder, bandLabel, bandVisning, extraLinjer]);
+  }, [valdKommunKod, valdKommunNamn, kpiId, enhet, allData, isRegion, visningsLage, visaNoll, indexMode, leftMargin, titel, titelLines, harSubtitel, visaTitel, subtitelEnhet, subtitelGeografi, subtitelKontext, subtitelPeriod, titelOffset, width, height, compact, titelFontSize, titelLineH, subFontSize, axisFontSize, axisSmFontSize, labelFontSize, labelSmFontSize, popupMode, showRiksnittProp, showLanssnittprop, showMedianProp, bandKoder, bandLabel, bandVisning, bandStyle, extraLinjer]);
 
   useEffect(() => { draw(); }, [draw]);
 
