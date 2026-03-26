@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import type { KpiRow, KpiMeta, KommunEntry } from "../types";
-import { HALLAND_KODER } from "../types";
 import Tidsserie, { downloadSvgAsPng, downloadSvgAsFile, calcLeftMargin } from "../charts/Tidsserie";
 import type { ExportHeader } from "../charts/Tidsserie";
 import KartaVy from "../charts/KartaVy";
@@ -23,8 +22,7 @@ const EXPORT_W = 900;
 const EXPORT_H = 556;
 
 // Sydvästsverige — regionkoder
-const SYDVASTSVERIGE_KODER = ["0013", "0014", "0006", "0007", "0008", "0010", "0012"];
-// 0013=Halland, 0014=Västra Götaland, 0006=Jönköping, 0007=Kronoberg, 0008=Kalmar, 0010=Blekinge, 0012=Skåne
+// Sydvästsverige-koder definierade i JamforPanel
 
 function visningsNamn(kpiId: string, fallback: string): string {
   if (VISNINGSNAMN[kpiId]) return VISNINGSNAMN[kpiId];

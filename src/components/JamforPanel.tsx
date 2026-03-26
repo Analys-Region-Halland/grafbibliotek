@@ -177,8 +177,6 @@ export default function JamforPanel({
     return list;
   }, [kommunRegister, typ, kommunKod, search, state.selected]);
 
-  const totalActive = state.refs.size + state.selected.size;
-
   // ─── RENDER ───
   return (
     <div className="w-[360px] flex flex-col" style={{ maxHeight: "min(75vh, 560px)" }}>
