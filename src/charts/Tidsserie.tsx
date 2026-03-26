@@ -62,8 +62,32 @@ const GAP_TITEL_SUB = 6;
 const GAP_SUB_CHART = 16;
 const TITEL_BASELINE = 24;
 const RIGHT_PAD_RATIO = 0.15;  // 15% av bredden reserverat till höger
-const TITEL_CHAR_W = 0.52;    // approx teckenbredd / fontstorlek
-const SUB_CHAR_W = 0.55;
+
+/** Mät textbredd med Canvas — exakt samma rendering som browsern */
+const _measureCtx = typeof document !== "undefined" ? document.createElement("canvas").getContext("2d") : null;
+function measureText(text: string, font: string): number {
+  if (!_measureCtx) return text.length * 8;
+  _measureCtx.font = font;
+  return _measureCtx.measureText(text).width;
+}
+
+/** Bryt text i rader baserat på exakt pixelbredd (inte teckenantal) */
+function wrapByWidth(text: string, font: string, maxWidth: number): string[] {
+  const words = text.split(" ");
+  const lines: string[] = [];
+  let current = "";
+  for (const word of words) {
+    const test = current ? `${current} ${word}` : word;
+    if (current && measureText(test, font) > maxWidth) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = test;
+    }
+  }
+  if (current) lines.push(current);
+  return lines;
+}
 
 /** Iterativ relaxering — skjuter isär etiketter tills ingen överlappar */
 function resolveOverlap(labels: Label[], minGap: number, yMin: number, yMax: number) {
@@ -127,15 +151,19 @@ function cleanSvgClone(svgEl: SVGSVGElement): SVGSVGElement {
 }
 
 /** Injicera titel + styled undertitel i SVG-klonens topp.
- *  Använder samma konstanter som display-renderingen. */
+ *  Använder canvas.measureText() för exakt samma radbrytning som webben. */
 function injectHeader(clone: SVGSVGElement, header: ExportHeader, origW: number, origH: number) {
   const ns = "http://www.w3.org/2000/svg";
   const xStart = String(header.leftMargin ?? 16);
   const rightPad = Math.max(20, Math.round(origW * RIGHT_PAD_RATIO));
   const maxTextW = origW - (header.leftMargin ?? 16) - rightPad;
 
-  // ── Radbrytning av undertitel (med segment-stöd) ──
-  const charsPerLine = Math.floor(maxTextW / (SUB_FONT_PX * SUB_CHAR_W));
+  // ── Titel-radbrytning (exakt pixelbredd) ──
+  const titelFont = `400 ${TITEL_FONT_PX}px ${FONT_TITEL}`;
+  const titelLines = wrapByWidth(header.titel, titelFont, maxTextW);
+
+  // ── Undertitel-radbrytning med segment-stöd (exakt pixelbredd) ──
+  const subFont = `400 ${SUB_FONT_PX}px ${FONT}`;
 
   type StyledWord = { word: string; accent: boolean };
   const styledWords: StyledWord[] = [];
@@ -148,23 +176,19 @@ function injectHeader(clone: SVGSVGElement, header: ExportHeader, origW: number,
   type StyledLine = StyledWord[];
   const lines: StyledLine[] = [];
   let currentLine: StyledWord[] = [];
-  let currentLen = 0;
+  let currentText = "";
   for (const sw of styledWords) {
-    const addLen = (currentLen > 0 ? 1 : 0) + sw.word.length;
-    if (currentLen > 0 && currentLen + addLen > charsPerLine) {
+    const testText = currentText ? `${currentText} ${sw.word}` : sw.word;
+    if (currentText && measureText(testText, subFont) > maxTextW) {
       lines.push(currentLine);
       currentLine = [sw];
-      currentLen = sw.word.length;
+      currentText = sw.word;
     } else {
       currentLine.push(sw);
-      currentLen += addLen;
+      currentText = testText;
     }
   }
   if (currentLine.length > 0) lines.push(currentLine);
-
-  // ── Titel-radbrytning ──
-  const titelCharsPerLine = Math.floor(maxTextW / (TITEL_FONT_PX * TITEL_CHAR_W));
-  const titelLines = wrapText(header.titel, titelCharsPerLine);
 
   // ── Spacing ──
   const titelBlockH = TITEL_BASELINE + (titelLines.length - 1) * TITEL_LINE_H;
