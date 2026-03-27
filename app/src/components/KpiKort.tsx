@@ -92,7 +92,7 @@ function KpiKortInner({
   // Decimaler: 0 för antal, annars 1 (eller 2 för små procent)
   const isAntal = enhet === "antal";
   const dec = isAntal ? 0 : (senaste.varde != null && Math.abs(senaste.varde) < 10 ? 2 : 1);
-  const trendDec = isAntal ? 0 : 1;
+  const trendDec = isAntal ? 0 : dec;
   const vardeStr = isAntal ? fmtInt(senaste.varde) : fmt(senaste.varde, dec);
 
   // Trender — trend_1ar från R-pipelinen jämför redan med samma månad fg. år
