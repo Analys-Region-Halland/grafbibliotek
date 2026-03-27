@@ -1,0 +1,847 @@
+[
+  {
+    "tema_id": "arbetsmarknad",
+    "tema_namn": "Arbetsmarknad",
+    "tema_farg": "bla",
+    "sektioner": [
+      {
+        "id": "sysselsattning",
+        "namn": "Sysselsättningsgrad, 20–64 år",
+        "kpi_ids": "S_SYSS_TOT",
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["S_SYSS_INR", "S_SYSS_UTR"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["S_SYSS_KV", "S_SYSS_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "arbetskraft",
+        "namn": "Arbetskraftsdeltagande, 20–64 år",
+        "kpi_ids": "S_ARKR_TOT",
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["S_ARKR_INR", "S_ARKR_UTR"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["S_ARKR_KV", "S_ARKR_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "arbetsloshet",
+        "namn": "Arbetslöshet, 20–64 år",
+        "kpi_ids": "S_ARBL_TOT",
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["S_ARBL_INR", "S_ARBL_UTR"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["S_ARBL_KV", "S_ARBL_MAN"]
+          }
+        ]
+      }
+    ],
+    "visningsnamn": {
+      "S_SYSS_TOT": "Sysselsättningsgrad",
+      "S_SYSS_TOT_N": "Antal sysselsatta",
+      "S_ARKR_TOT": "Andel i arbetskraften",
+      "S_ARKR_TOT_N": "Antal i arbetskraften",
+      "S_ARBL_TOT": "Arbetslöshetsgrad",
+      "S_ARBL_TOT_N": "Antal arbetslösa",
+      "S_SYSS_INR": "Sysselsättningsgrad, inrikes födda",
+      "S_SYSS_INR_N": "Antal sysselsatta, inrikes födda",
+      "S_ARKR_INR": "Andel i arbetskraften, inrikes födda",
+      "S_ARKR_INR_N": "Antal i arbetskraften, inrikes födda",
+      "S_ARBL_INR": "Arbetslöshetsgrad, inrikes födda",
+      "S_ARBL_INR_N": "Antal arbetslösa, inrikes födda",
+      "S_SYSS_UTR": "Sysselsättningsgrad, utrikes födda",
+      "S_SYSS_UTR_N": "Antal sysselsatta, utrikes födda",
+      "S_ARKR_UTR": "Andel i arbetskraften, utrikes födda",
+      "S_ARKR_UTR_N": "Antal i arbetskraften, utrikes födda",
+      "S_ARBL_UTR": "Arbetslöshetsgrad, utrikes födda",
+      "S_ARBL_UTR_N": "Antal arbetslösa, utrikes födda",
+      "S_SYSS_KV": "Sysselsättningsgrad, kvinnor",
+      "S_SYSS_KV_N": "Antal sysselsatta, kvinnor",
+      "S_ARKR_KV": "Andel i arbetskraften, kvinnor",
+      "S_ARKR_KV_N": "Antal i arbetskraften, kvinnor",
+      "S_ARBL_KV": "Arbetslöshetsgrad, kvinnor",
+      "S_ARBL_KV_N": "Antal arbetslösa, kvinnor",
+      "S_SYSS_MAN": "Sysselsättningsgrad, män",
+      "S_SYSS_MAN_N": "Antal sysselsatta, män",
+      "S_ARKR_MAN": "Andel i arbetskraften, män",
+      "S_ARKR_MAN_N": "Antal i arbetskraften, män",
+      "S_ARBL_MAN": "Arbetslöshetsgrad, män",
+      "S_ARBL_MAN_N": "Antal arbetslösa, män"
+    }
+  },
+  {
+    "tema_id": "befolkning",
+    "tema_namn": "Befolkning & demografi",
+    "tema_farg": "gron",
+    "sektioner": [
+      {
+        "id": "folkmagd",
+        "namn": "Folkmangd och forandring",
+        "kpi_ids": ["S_BEF_TOTALT", "S_BEF_TATHET", "S_BEF_FORANDR_PCT", "S_FODELSENETTO_ANTAL", "S_INRIKES_NETTO_ANTAL", "S_UTRIKES_NETTO_ANTAL", "S_FRUKTSAMHET"]
+      },
+      {
+        "id": "sammansattning",
+        "namn": "Befolkningens sammansattning",
+        "kpi_ids": ["S_MEDELALDER", "S_FORSORJ_TOTAL", "S_BEF_0_19_ANDEL", "S_BEF_20_64_ANDEL", "S_BEF_65_79_ANDEL", "S_BEF_80_ANDEL", "S_KVINNOR_ANDEL", "S_UTRIKES_FODDA_ANDEL"]
+      }
+    ],
+    "visningsnamn": {
+      "S_BEF_TOTALT": "Folkmagd",
+      "S_BEF_FORANDR_PCT": "Arlig befolkningsforandring",
+      "S_BEF_FORANDR_ANTAL": "Arlig befolkningsforandring",
+      "S_BEF_0_19_ANDEL": "Befolkningsandel 0-19 ar",
+      "S_BEF_0_19_ANTAL": "Befolkning 0-19 ar",
+      "S_BEF_20_64_ANDEL": "Andel i arbetsfor alder",
+      "S_BEF_20_64_ANTAL": "Befolkning i arbetsfor alder",
+      "S_BEF_65_79_ANDEL": "Befolkningsandel 65-79 ar",
+      "S_BEF_65_79_ANTAL": "Befolkning 65-79 ar",
+      "S_BEF_80_ANDEL": "Befolkningsandel 80 ar och aldre",
+      "S_BEF_80_ANTAL": "Befolkning 80 ar och aldre",
+      "S_FODELSENETTO_PROMILLE": "Fodelsenetto",
+      "S_FODELSENETTO_ANTAL": "Fodelsenetto",
+      "S_INRIKES_NETTO_PROMILLE": "Inrikes flyttnetto",
+      "S_INRIKES_NETTO_ANTAL": "Inrikes flyttnetto",
+      "S_UTRIKES_NETTO_PROMILLE": "Utrikes flyttnetto",
+      "S_UTRIKES_NETTO_ANTAL": "Utrikes flyttnetto",
+      "S_FODDA_ANTAL": "Antal fodda",
+      "S_DODA_ANTAL": "Antal doda",
+      "S_INVANDRING_ANTAL": "Invandringar",
+      "S_UTVANDRING_ANTAL": "Utvandringar",
+      "S_INRIKES_INFLYTT_ANTAL": "Inrikes inflyttningar",
+      "S_INRIKES_UTFLYTT_ANTAL": "Inrikes utflyttningar",
+      "S_KVINNOR_ANDEL": "Kvinnor i befolkningen",
+      "S_KVINNOR_ANTAL": "Kvinnor i befolkningen",
+      "S_UTRIKES_FODDA_ANDEL": "Utrikes fodda",
+      "S_UTRIKES_FODDA_ANTAL": "Utrikes fodda",
+      "S_FORSORJ_TOTAL": "Demografisk forsorjningskvot",
+      "S_FORSORJ_UNG": "Forsorjningskvot, yngre (0-19 / 20-64)",
+      "S_FORSORJ_ALD": "Forsorjningskvot, aldre (65+ / 20-64)",
+      "S_MEDELALDER": "Befolkningens medelalder",
+      "S_FRUKTSAMHET": "Summerad fruktsamhet",
+      "S_BEF_TATHET": "Invanare per kvadratkilometer"
+    }
+  },
+  {
+    "tema_id": "bostader",
+    "tema_namn": "Bostäder",
+    "tema_farg": "gul",
+    "sektioner": [
+      {
+        "id": "bestand",
+        "namn": "Bostadsbestånd och upplåtelseform",
+        "kpi_ids": ["N07913", "N07956", "N07957", "N07958"]
+      },
+      {
+        "id": "byggande",
+        "namn": "Bostadsbyggande",
+        "kpi_ids": ["N07917", "N07905", "N07906", "N07923"]
+      },
+      {
+        "id": "priser",
+        "namn": "Fastighetspriser",
+        "kpi_ids": ["N07908", "N07909"]
+      },
+      {
+        "id": "kvalitet",
+        "namn": "Boendekvalitet",
+        "kpi_ids": ["N07907", "N07418"]
+      }
+    ],
+    "visningsnamn": {
+      "N07913": "Bostäder totalt",
+      "B_TOT": "Bostäder totalt",
+      "N07956": "Hyresrätter",
+      "B_HYRA_N": "Hyresrätter",
+      "N07957": "Bostadsrätter",
+      "B_BOST_N": "Bostadsrätter",
+      "N07958": "Äganderätter",
+      "B_AGAN_N": "Äganderätter",
+      "N07917": "Nybyggda bostäder",
+      "B_NY_TOT": "Nybyggda bostäder",
+      "N07905": "Färdigställda småhus",
+      "B_NY_SMAHUS": "Färdigställda småhus",
+      "N07906": "Färdigställda flerbostadshus",
+      "B_NY_FLERBO": "Färdigställda flerbostadshus",
+      "N07923": "Planberedskap",
+      "N07908": "Bostadsrättspris",
+      "N07909": "Småhuspris",
+      "N07907": "Trångboddhet",
+      "N07418": "Kollektivtrafiknära läge"
+    }
+  },
+  {
+    "tema_id": "konjunktur",
+    "tema_namn": "Konjunktur",
+    "tema_farg": "bla",
+    "sektioner": [
+      {
+        "id": "nattbefolkning",
+        "namn": "Sysselsatta nattbefolkning 15–74 år (prelim.)",
+        "kpi_ids": "K_NATT_ANT",
+        "undersektioner": [
+          {
+            "namn": "Sysselsättningsgrad",
+            "kpi_ids": "K_NATT_GRAD"
+          }
+        ]
+      },
+      {
+        "id": "sysselsattning",
+        "namn": "Sysselsättningsgrad 20–64 år (prelim.)",
+        "kpi_ids": "K_SYSS_TOT",
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["K_SYSS_INR", "K_SYSS_UTR"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["K_SYSS_KV", "K_SYSS_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "arbetsloshet",
+        "namn": "Arbetslöshet 20–64 år (prelim.)",
+        "kpi_ids": "K_ARBL_TOT",
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["K_ARBL_INR", "K_ARBL_UTR"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["K_ARBL_KV", "K_ARBL_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "arbetskraft",
+        "namn": "Arbetskraftsdeltagande 20–64 år (prelim.)",
+        "kpi_ids": "K_ARKR_TOT",
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["K_ARKR_KV", "K_ARKR_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "arbetsmarknad-forandring",
+        "namn": "Årsförändring arbetsmarknad",
+        "kpi_ids": ["K_SYSS_FORANDR", "K_ARBL_FORANDR"]
+      },
+      {
+        "id": "dagbefolkning",
+        "namn": "Sysselsatta dagbefolkning 15–74 år (prelim.)",
+        "kpi_ids": "K_DAG_TOT",
+        "undersektioner": [
+          {
+            "namn": "Branscher",
+            "kpi_ids": ["K_DAG_JORD", "K_DAG_IND", "K_DAG_ENMI", "K_DAG_BYG", "K_DAG_HAND", "K_DAG_TRANS", "K_DAG_HOTEL", "K_DAG_IT", "K_DAG_FINANS", "K_DAG_FAST", "K_DAG_FORETJ", "K_DAG_OFF", "K_DAG_KULT"]
+          }
+        ]
+      },
+      {
+        "id": "naringsliv-forandring",
+        "namn": "Årsförändring dagbefolkning",
+        "kpi_ids": "K_DAG_TILLVAXT"
+      },
+      {
+        "id": "befolkning",
+        "namn": "Befolkningsutveckling",
+        "kpi_ids": ["K_BEF_TOT", "K_BEF_FORANDR"]
+      },
+      {
+        "id": "gastnatter",
+        "namn": "Gästnätter",
+        "kpi_ids": "K_GAST_TOT",
+        "undersektioner": [
+          {
+            "namn": "Marknad",
+            "kpi_ids": ["K_GAST_SVE", "K_GAST_UTL", "K_ANDEL_UTL"]
+          },
+          {
+            "namn": "Årsförändring",
+            "kpi_ids": "K_GAST_TILLVAXT"
+          }
+        ]
+      },
+      {
+        "id": "byggnation",
+        "namn": "Bostadsmarknad",
+        "kpi_ids": "K_BYGG_TOT",
+        "undersektioner": [
+          {
+            "namn": "Hustyp",
+            "kpi_ids": ["K_BYGG_SMAHUS", "K_BYGG_FLERBO"]
+          }
+        ]
+      }
+    ],
+    "visningsnamn": {
+      "K_SYSS_TOT": "Sysselsatta bland befolkningen 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_ANT": "Sysselsatta i befolkningen 20–64 år, antal (prelim.)",
+      "K_SYSS_INR": "Sysselsatta bland inrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_UTR": "Sysselsatta bland utrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_KV": "Sysselsatta bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_MAN": "Sysselsatta bland män 20–64 år, andel (%) (prelim.)",
+      "K_NATT_ANT": "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+      "K_NATT_GRAD": "Sysselsättningsgrad 15–74 år (prelim.)",
+      "K_ARBL_TOT": "Arbetslösa i arbetskraften 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_ANT": "Arbetslösa i arbetskraften 20–64 år, antal (prelim.)",
+      "K_ARBL_INR": "Arbetslösa bland inrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_UTR": "Arbetslösa bland utrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_KV": "Arbetslösa bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_MAN": "Arbetslösa bland män 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_TOT": "I arbetskraften bland befolkningen 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_KV": "I arbetskraften bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_MAN": "I arbetskraften bland män 20–64 år, andel (%) (prelim.)",
+      "K_DAG_TOT": "Sysselsatta dagbefolkning 15–74 år, antal (prelim.)",
+      "K_DAG_JORD": "Sysselsatta inom jordbruk och skogsbruk (prelim.)",
+      "K_DAG_IND": "Sysselsatta inom tillverkning (prelim.)",
+      "K_DAG_ENMI": "Sysselsatta inom energi och miljö (prelim.)",
+      "K_DAG_BYG": "Sysselsatta inom byggverksamhet (prelim.)",
+      "K_DAG_HAND": "Sysselsatta inom handel (prelim.)",
+      "K_DAG_TRANS": "Sysselsatta inom transport (prelim.)",
+      "K_DAG_HOTEL": "Sysselsatta inom hotell och restaurang (prelim.)",
+      "K_DAG_IT": "Sysselsatta inom IT och kommunikation (prelim.)",
+      "K_DAG_FINANS": "Sysselsatta inom finans och försäkring (prelim.)",
+      "K_DAG_FAST": "Sysselsatta inom fastighetsverksamhet (prelim.)",
+      "K_DAG_FORETJ": "Sysselsatta inom företagstjänster (prelim.)",
+      "K_DAG_OFF": "Sysselsatta inom offentlig sektor (prelim.)",
+      "K_DAG_KULT": "Sysselsatta inom kultur, nöje och fritid (prelim.)",
+      "K_SYSS_FORANDR": "Sysselsättningsgrad, årsförändring (procentenheter)",
+      "K_ARBL_FORANDR": "Arbetslöshet, årsförändring (procentenheter)",
+      "K_GAST_TOT": "Gästnätter totalt (prelim.)",
+      "K_GAST_SVE": "Gästnätter svenska gäster",
+      "K_GAST_UTL": "Gästnätter utländska gäster",
+      "K_ANDEL_UTL": "Andel utländska gästnätter (%)",
+      "K_GAST_TILLVAXT": "Gästnätter, årsförändring (%)",
+      "K_DAG_TILLVAXT": "Dagbefolkning, årsförändring (procent)",
+      "K_BEF_TOT": "Folkmängd (prelim.)",
+      "K_BEF_FORANDR": "Befolkningsförändring mot samma månad fg. år",
+      "K_BYGG_TOT": "Påbörjade lägenheter, alla hustyper (kvartal)",
+      "K_BYGG_SMAHUS": "Påbörjade lägenheter, småhus (kvartal)",
+      "K_BYGG_FLERBO": "Påbörjade lägenheter, flerbostadshus (kvartal)"
+    }
+  },
+  {
+    "tema_id": "miljo_klimat",
+    "tema_namn": "Miljö & klimat",
+    "tema_farg": "gron",
+    "sektioner": [
+      {
+        "id": "utslapp",
+        "namn": "Växthusgasutsläpp",
+        "kpi_ids": ["N00401", "N07702", "N85073", "N85533", "N85077", "N85537", "N85078", "N85538", "N85072", "N85532"]
+      },
+      {
+        "id": "energi",
+        "namn": "Energi och omställning",
+        "kpi_ids": ["N45913", "N45945", "N45925", "N00403"]
+      }
+    ],
+    "visningsnamn": {
+      "N00401": "Växthusgasutsläpp totalt",
+      "N07702": "Växthusgasutsläpp totalt",
+      "N85073": "Växthusgasutsläpp, transporter",
+      "N85533": "Växthusgasutsläpp, transporter",
+      "N85077": "Växthusgasutsläpp, industri",
+      "N85537": "Växthusgasutsläpp, industri",
+      "N85078": "Växthusgasutsläpp, jordbruk",
+      "N85538": "Växthusgasutsläpp, jordbruk",
+      "N85072": "Växthusgasutsläpp, uppvärmning",
+      "N85532": "Växthusgasutsläpp, uppvärmning",
+      "N45913": "Energianvändning, transporter",
+      "N45945": "Energianvändning, transporter",
+      "N45925": "Förnybar elproduktion",
+      "N00403": "Ekologiskt brukad åkermark"
+    }
+  },
+  {
+    "tema_id": "naringsliv",
+    "tema_namn": "Näringsliv",
+    "tema_farg": "rod",
+    "sektioner": [
+      {
+        "id": "sektor",
+        "namn": "Sysselsatta efter sektor",
+        "kpi_ids": ["N_SEK_TOT", "N_SEK_NARING", "N_SEK_OFF"],
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["N_SEK_TOT_KV", "N_SEK_TOT_MAN", "N_SEK_NARING_KV", "N_SEK_NARING_MAN", "N_SEK_OFF_KV", "N_SEK_OFF_MAN"]
+          },
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["N_SEK_TOT_INR", "N_SEK_TOT_UTR", "N_SEK_NARING_INR", "N_SEK_NARING_UTR", "N_SEK_OFF_INR", "N_SEK_OFF_UTR"]
+          }
+        ]
+      },
+      {
+        "id": "tillvaxt",
+        "namn": "Årlig tillväxt, sysselsatta",
+        "kpi_ids": ["N_SEK_TOT_TILLV", "N_SEK_NARING_TILLV", "N_SEK_OFF_TILLV"],
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["N_SEK_TOT_KV_TILLV", "N_SEK_TOT_MAN_TILLV", "N_SEK_NARING_KV_TILLV", "N_SEK_NARING_MAN_TILLV", "N_SEK_OFF_KV_TILLV", "N_SEK_OFF_MAN_TILLV"]
+          },
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["N_SEK_TOT_INR_TILLV", "N_SEK_TOT_UTR_TILLV", "N_SEK_NARING_INR_TILLV", "N_SEK_NARING_UTR_TILLV", "N_SEK_OFF_INR_TILLV", "N_SEK_OFF_UTR_TILLV"]
+          }
+        ]
+      },
+      {
+        "id": "bransch",
+        "namn": "Sysselsatta efter bransch",
+        "kpi_ids": ["N_BR_A_A", "N_BR_BC_A", "N_BR_DE_A", "N_BR_F_A", "N_BR_G_A", "N_BR_H_A", "N_BR_I_A", "N_BR_J_A", "N_BR_K_A", "N_BR_L_A", "N_BR_MN_A", "N_BR_O_A", "N_BR_P_A", "N_BR_Q_A", "N_BR_RSTU_A"]
+      },
+      {
+        "id": "utbildningsniva",
+        "namn": "Sysselsatta efter utbildningsnivå",
+        "kpi_ids": ["N_UTB_FORGYM_A", "N_UTB_GYM_A", "N_UTB_EFTGYM_A"]
+      },
+      {
+        "id": "yrkesstallning",
+        "namn": "Yrkesställning",
+        "kpi_ids": ["N_YRK_ANST_A", "N_YRK_EGAB_A", "N_YRK_EGFOR_A"],
+        "undersektioner": [
+          {
+            "namn": "Födelseregion",
+            "kpi_ids": ["N_YRK_ANST_INR_A", "N_YRK_ANST_UTR_A", "N_YRK_EGAB_INR_A", "N_YRK_EGAB_UTR_A", "N_YRK_EGFOR_INR_A", "N_YRK_EGFOR_UTR_A"]
+          },
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["N_YRK_ANST_KV_A", "N_YRK_EGAB_KV_A", "N_YRK_EGFOR_KV_A"]
+          }
+        ]
+      },
+      {
+        "id": "foretagande",
+        "namn": "Nyföretagande",
+        "kpi_ids": ["N00999", "N45700"]
+      }
+    ],
+    "visningsnamn": {
+      "N00999": "Nystartade företag",
+      "N01003": "Nystartade företag",
+      "N45700": "Företagsförekomster",
+      "N_SEK_TOT": "Totalt",
+      "N_SEK_TOT_TILLV": "Totalt (tillväxt)",
+      "N_SEK_TOT_KV": "Totalt, kvinnor",
+      "N_SEK_TOT_KV_TILLV": "Totalt, kvinnor (tillväxt)",
+      "N_SEK_TOT_MAN": "Totalt, män",
+      "N_SEK_TOT_MAN_TILLV": "Totalt, män (tillväxt)",
+      "N_SEK_TOT_INR": "Totalt, inrikes",
+      "N_SEK_TOT_INR_TILLV": "Totalt, inrikes (tillväxt)",
+      "N_SEK_TOT_UTR": "Totalt, utrikes",
+      "N_SEK_TOT_UTR_TILLV": "Totalt, utrikes (tillväxt)",
+      "N_SEK_NARING": "Näringslivet",
+      "N_SEK_NARING_A": "Näringslivet",
+      "N_SEK_NARING_TILLV": "Näringslivet (tillväxt)",
+      "N_SEK_NARING_KV": "Näringslivet, kvinnor",
+      "N_SEK_NARING_KV_TILLV": "Näringslivet, kvinnor (tillväxt)",
+      "N_SEK_NARING_MAN": "Näringslivet, män",
+      "N_SEK_NARING_MAN_TILLV": "Näringslivet, män (tillväxt)",
+      "N_SEK_NARING_INR": "Näringslivet, inrikes",
+      "N_SEK_NARING_INR_TILLV": "Näringslivet, inrikes (tillväxt)",
+      "N_SEK_NARING_UTR": "Näringslivet, utrikes",
+      "N_SEK_NARING_UTR_TILLV": "Näringslivet, utrikes (tillväxt)",
+      "N_SEK_OFF": "Offentlig sektor",
+      "N_SEK_OFF_A": "Offentlig sektor",
+      "N_SEK_OFF_TILLV": "Offentlig sektor (tillväxt)",
+      "N_SEK_OFF_KV": "Offentlig sektor, kvinnor",
+      "N_SEK_OFF_KV_TILLV": "Offentlig sektor, kvinnor (tillväxt)",
+      "N_SEK_OFF_MAN": "Offentlig sektor, män",
+      "N_SEK_OFF_MAN_TILLV": "Offentlig sektor, män (tillväxt)",
+      "N_SEK_OFF_INR": "Offentlig sektor, inrikes",
+      "N_SEK_OFF_INR_TILLV": "Offentlig sektor, inrikes (tillväxt)",
+      "N_SEK_OFF_UTR": "Offentlig sektor, utrikes",
+      "N_SEK_OFF_UTR_TILLV": "Offentlig sektor, utrikes (tillväxt)",
+      "N_BR_A": "Jordbruk, skogsbruk och fiske",
+      "N_BR_A_A": "Jordbruk, skogsbruk och fiske",
+      "N_BR_BC": "Tillverkning och utvinning",
+      "N_BR_BC_A": "Tillverkning och utvinning",
+      "N_BR_DE": "Energi och miljö",
+      "N_BR_DE_A": "Energi och miljö",
+      "N_BR_F": "Byggverksamhet",
+      "N_BR_F_A": "Byggverksamhet",
+      "N_BR_G": "Handel",
+      "N_BR_G_A": "Handel",
+      "N_BR_H": "Transport och magasinering",
+      "N_BR_H_A": "Transport och magasinering",
+      "N_BR_I": "Hotell och restaurang",
+      "N_BR_I_A": "Hotell och restaurang",
+      "N_BR_J": "IT och kommunikation",
+      "N_BR_J_A": "IT och kommunikation",
+      "N_BR_K": "Finans och försäkring",
+      "N_BR_K_A": "Finans och försäkring",
+      "N_BR_L": "Fastighetsverksamhet",
+      "N_BR_L_A": "Fastighetsverksamhet",
+      "N_BR_MN": "Företagstjänster",
+      "N_BR_MN_A": "Företagstjänster",
+      "N_BR_O": "Offentlig förvaltning",
+      "N_BR_O_A": "Offentlig förvaltning",
+      "N_BR_P": "Utbildning",
+      "N_BR_P_A": "Utbildning",
+      "N_BR_Q": "Vård och omsorg",
+      "N_BR_Q_A": "Vård och omsorg",
+      "N_BR_RSTU": "Övriga tjänster",
+      "N_BR_RSTU_A": "Övriga tjänster",
+      "N_UTB_FORGYM": "Förgymnasial",
+      "N_UTB_FORGYM_A": "Förgymnasial",
+      "N_UTB_GYM": "Gymnasial",
+      "N_UTB_GYM_A": "Gymnasial",
+      "N_UTB_EFTGYM": "Eftergymnasial",
+      "N_UTB_EFTGYM_A": "Eftergymnasial",
+      "N_YRK_ANST": "Anställda",
+      "N_YRK_ANST_A": "Anställda",
+      "N_YRK_ANST_INR": "Anställda, inrikes",
+      "N_YRK_ANST_INR_A": "Anställda, inrikes",
+      "N_YRK_ANST_UTR": "Anställda, utrikes",
+      "N_YRK_ANST_UTR_A": "Anställda, utrikes",
+      "N_YRK_EGAB": "Företagare i AB",
+      "N_YRK_EGAB_A": "Företagare i AB",
+      "N_YRK_EGAB_INR": "Företagare i AB, inrikes",
+      "N_YRK_EGAB_INR_A": "Företagare i AB, inrikes",
+      "N_YRK_EGAB_UTR": "Företagare i AB, utrikes",
+      "N_YRK_EGAB_UTR_A": "Företagare i AB, utrikes",
+      "N_YRK_EGFOR": "Egenföretagare",
+      "N_YRK_EGFOR_A": "Egenföretagare",
+      "N_YRK_EGFOR_INR": "Egenföretagare, inrikes",
+      "N_YRK_EGFOR_INR_A": "Egenföretagare, inrikes",
+      "N_YRK_EGFOR_UTR": "Egenföretagare, utrikes",
+      "N_YRK_EGFOR_UTR_A": "Egenföretagare, utrikes",
+      "N_YRK_ANST_KV": "Andel kvinnor, anställda",
+      "N_YRK_ANST_KV_A": "Andel kvinnor, anställda",
+      "N_YRK_EGAB_KV": "Andel kvinnor, företagare i ab",
+      "N_YRK_EGAB_KV_A": "Andel kvinnor, företagare i ab",
+      "N_YRK_EGFOR_KV": "Andel kvinnor, egenföretagare",
+      "N_YRK_EGFOR_KV_A": "Andel kvinnor, egenföretagare"
+    }
+  },
+  {
+    "tema_id": "socioekonomi",
+    "tema_namn": "Socioekonomi & hälsa",
+    "tema_farg": "rod",
+    "sektioner": [
+      {
+        "id": "halsoutfall",
+        "namn": "Hälsa",
+        "kpi_ids": ["F_HALSA_GOD", "F_MEDLIVS_KV", "F_MEDLIVS_MAN", "F_FORTID", "N00957", "N00938"]
+      },
+      {
+        "id": "psykisk_halsa",
+        "namn": "Psykisk hälsa",
+        "kpi_ids": ["F_PSYK_PAFR", "F_STRESS", "N33820", "F_SUICID"]
+      },
+      {
+        "id": "inkomst",
+        "namn": "Inkomst och ekonomisk utsatthet",
+        "kpi_ids": ["F_DINK", "N00956", "N00997", "F_VEK_VUX", "F_VINK_BARN", "N31001", "N31910"]
+      },
+      {
+        "id": "levnadsvanor",
+        "namn": "Levnadsvanor",
+        "kpi_ids": ["F_OVERVIKT", "F_TOBAK", "F_ALK_RISK"]
+      },
+      {
+        "id": "utbildning_delaktighet",
+        "namn": "Utbildning och delaktighet",
+        "kpi_ids": ["F_BEHGYMN", "F_VAL"]
+      }
+    ],
+    "visningsnamn": {
+      "N00956": "Ginikoefficient, förvärvsinkomst",
+      "N00997": "Ginikoefficient, disponibel inkomst",
+      "N00957": "Ohälsotal",
+      "N00957_KV": "Ohälsotal, kvinnor",
+      "N00957_MAN": "Ohälsotal, män",
+      "N00938": "Sjukpenningtal",
+      "N00938_KV": "Sjukpenningtal, kvinnor",
+      "N00938_MAN": "Sjukpenningtal, män",
+      "N33820": "Psykisk ohälsa, barn och unga",
+      "N33820_KV": "Psykisk ohälsa, flickor",
+      "N33820_MAN": "Psykisk ohälsa, pojkar",
+      "N31001": "Kostnad ekonomiskt bistånd",
+      "N31910": "Biståndshushåll",
+      "F_HALSA_GOD": "Självskattad god hälsa",
+      "F_HALSA_GOD_KV": "Självskattad god hälsa, kvinnor",
+      "F_HALSA_GOD_MAN": "Självskattad god hälsa, män",
+      "F_MEDLIVS_KV": "Medellivslängd, kvinnor",
+      "F_MEDLIVS_MAN": "Medellivslängd, män",
+      "F_FORTID": "Förtida dödlighet, 25–64 år",
+      "F_FORTID_KV": "Förtida dödlighet, kvinnor 25–64 år",
+      "F_FORTID_MAN": "Förtida dödlighet, män 25–64 år",
+      "F_PSYK_PAFR": "Allvarlig psykisk påfrestning",
+      "F_PSYK_PAFR_KV": "Allvarlig psykisk påfrestning, kvinnor",
+      "F_PSYK_PAFR_MAN": "Allvarlig psykisk påfrestning, män",
+      "F_STRESS": "Stress",
+      "F_STRESS_KV": "Stress, kvinnor",
+      "F_STRESS_MAN": "Stress, män",
+      "F_SUICID": "Suicid",
+      "F_SUICID_KV": "Suicid, kvinnor",
+      "F_SUICID_MAN": "Suicid, män",
+      "F_DINK": "Ekonomisk standard, medianinkomst",
+      "F_DINK_KV": "Ekonomisk standard, kvinnor",
+      "F_DINK_MAN": "Ekonomisk standard, män",
+      "F_VEK_VUX": "Varaktigt låg ekonomisk standard, vuxna",
+      "F_VINK_BARN": "Varaktigt låg inkomststandard, barn och unga",
+      "F_OVERVIKT": "Övervikt och obesitas",
+      "F_OVERVIKT_KV": "Övervikt och obesitas, kvinnor",
+      "F_OVERVIKT_MAN": "Övervikt och obesitas, män",
+      "F_TOBAK": "Daglig tobaksrökning",
+      "F_TOBAK_KV": "Daglig tobaksrökning, kvinnor",
+      "F_TOBAK_MAN": "Daglig tobaksrökning, män",
+      "F_ALK_RISK": "Riskkonsumtion av alkohol",
+      "F_ALK_RISK_KV": "Riskkonsumtion av alkohol, kvinnor",
+      "F_ALK_RISK_MAN": "Riskkonsumtion av alkohol, män",
+      "F_BEHGYMN": "Gymnasiebehörighet",
+      "F_BEHGYMN_KV": "Gymnasiebehörighet, flickor",
+      "F_BEHGYMN_MAN": "Gymnasiebehörighet, pojkar",
+      "F_VAL": "Valdeltagande"
+    }
+  },
+  {
+    "tema_id": "transport",
+    "tema_namn": "Kollektivtrafik & transport",
+    "tema_farg": "lila",
+    "sektioner": [
+      {
+        "id": "fordonsflotta",
+        "namn": "Fordonsflotta",
+        "kpi_ids": ["N07935", "N07945", "N07938", "N07947", "N07940", "U00501"]
+      },
+      {
+        "id": "laddinfra",
+        "namn": "Laddinfrastruktur",
+        "kpi_ids": ["N07713", "N07710", "N07711"]
+      },
+      {
+        "id": "kollektivtrafik",
+        "namn": "Kollektivtrafik och tillgänglighet",
+        "kpi_ids": ["N07418", "N07419", "N07412", "N07410"]
+      },
+      {
+        "id": "bilresande",
+        "namn": "Bilresande",
+        "kpi_ids": ["U07917", "U07918", "N07782"]
+      },
+      {
+        "id": "pendling",
+        "namn": "Pendling",
+        "kpi_ids": ["N02276", "N02277", "N02279", "N02278"]
+      },
+      {
+        "id": "sakerhet",
+        "namn": "Trafiksäkerhet",
+        "kpi_ids": "N00799"
+      }
+    ],
+    "visningsnamn": {
+      "N07935": "Personbilar per 1 000 invånare",
+      "N07945": "Elbilar, andel av personbilar",
+      "N07938": "Elbilar per 1 000 invånare",
+      "N07947": "Laddhybridbilar, andel av personbilar",
+      "N07940": "Laddhybridbilar per 1 000 invånare",
+      "U00501": "Fossiloberoende personbilar, andel",
+      "N07713": "Elbilsladdpunkter, totalt antal",
+      "N07710": "Normalladdare, antal",
+      "N07711": "Snabbladdare, antal",
+      "N07418": "Befolkning i kollektivtrafiknära läge",
+      "N07419": "Befolkning inom tätort, kollektivtrafiknära läge",
+      "N07412": "Befolkning utanför tätort, kollektivtrafiknära läge",
+      "N07410": "Nytillkomna bostäder i kollektivtrafiknära läge",
+      "N60404": "Resor med kollektivtrafik",
+      "U60496": "Förnybara drivmedel i kollektivtrafiken",
+      "U85001": "Nettokostnad trafik",
+      "U07917": "Genomsnittlig körsträcka med personbil, mil per invånare",
+      "U07918": "Genomsnittlig körsträcka med personbil, mil per bil",
+      "N07782": "Drivmedelsleverans till vägtransporter, liter per invånare",
+      "C_INPENDL_ANDEL": "Inpendlingsandel",
+      "C_UTPENDL_ANDEL": "Utpendlingsandel",
+      "S_INPENDL": "Inpendlare",
+      "S_UTPENDL": "Utpendlare",
+      "S_DAG_TOT": "Dagbefolkning",
+      "S_NATT_TOT": "Nattbefolkning",
+      "C_PENDL_NETTO": "Nettopendling",
+      "C_PENDLKVOT": "Pendlingskvot",
+      "N02276": "Inpendling, andel av förvärvsarbetande",
+      "N02277": "Inpendling, antal",
+      "N02279": "Utpendling, andel av förvärvsarbetande",
+      "N02278": "Utpendling, antal",
+      "N00799": "Trafikolyckor med räddningsinsatser",
+      "TR_BILAR_EL": "Elbilar i trafik",
+      "TR_BILAR_DIESEL": "Dieselbilar i trafik",
+      "TR_BILAR_BENSIN": "Bensinbilar i trafik",
+      "TR_BILAR_LADDHYBRID": "Laddhybridbilar i trafik",
+      "TR_FARDTJANST": "Färdtjänstresor"
+    }
+  },
+  {
+    "tema_id": "turism",
+    "tema_namn": "Turism & besöksnäring",
+    "tema_farg": "rod",
+    "sektioner": [
+      {
+        "id": "gastnatter",
+        "namn": "Gästnätter",
+        "kpi_ids": ["T_GAST_TOT", "T_GAST_PER_INV"],
+        "undersektioner": [
+          {
+            "namn": "Per anläggningstyp",
+            "kpi_ids": ["T_GAST_HOTELL", "T_GAST_CAMPING", "T_GAST_STUGBY", "T_GAST_VANDRARHEM", "T_GAST_SOL"]
+          }
+        ]
+      },
+      {
+        "id": "marknad",
+        "namn": "Inhemska och utländska gäster",
+        "kpi_ids": ["T_GAST_SVE", "T_GAST_UTL", "T_ANDEL_UTL_NATTER", "T_ANKOMST_SVE", "T_ANKOMST_UTL", "T_ANDEL_UTL"]
+      },
+      {
+        "id": "tillvaxt",
+        "namn": "Utveckling och tillväxt",
+        "kpi_ids": ["T_GAST_TILLVAXT", "T_INTAKT_TILLVAXT"]
+      },
+      {
+        "id": "kapacitet",
+        "namn": "Kapacitet och intäkter",
+        "kpi_ids": ["T_BELAGG_RUM", "T_BELAGG_BADD", "T_LOGIINTAKT", "T_INTAKT_PER_GAST", "T_GAST_PER_ANLAGG", "T_ANLAGGNINGAR"]
+      }
+    ],
+    "visningsnamn": {
+      "T_GAST_TOT": "Gästnätter, totalt",
+      "T_GAST_HOTELL": "Gästnätter, hotell",
+      "T_GAST_CAMPING": "Gästnätter, camping",
+      "T_GAST_STUGBY": "Gästnätter, stugbyar",
+      "T_GAST_VANDRARHEM": "Gästnätter, vandrarhem",
+      "T_GAST_SOL": "Gästnätter, förmedlade stugor och lägenheter",
+      "T_GAST_SVE": "Gästnätter, svenska gäster",
+      "T_GAST_UTL": "Gästnätter, utländska gäster",
+      "T_ANDEL_UTL_NATTER": "Andel utländska gästnätter",
+      "T_ANKOMST_SVE": "Gästankomster, svenska",
+      "T_ANKOMST_UTL": "Gästankomster, utländska",
+      "T_ANDEL_UTL": "Andel utländska gästankomster",
+      "T_BELAGG_RUM": "Rumsbeläggning",
+      "T_BELAGG_BADD": "Bäddbeläggning",
+      "T_LOGIINTAKT": "Logiintäkter",
+      "T_ANLAGGNINGAR": "Antal anläggningar",
+      "T_INTAKT_PER_GAST": "Logiintäkt per gästnatt",
+      "T_GAST_PER_ANLAGG": "Gästnätter per anläggning",
+      "T_GAST_PER_INV": "Gästnätter per invånare",
+      "T_GAST_TILLVAXT": "Gästnätter, årlig förändring",
+      "T_INTAKT_TILLVAXT": "Logiintäkter, årlig förändring"
+    }
+  },
+  {
+    "tema_id": "utbildning",
+    "tema_namn": "Utbildning och kompetens",
+    "tema_farg": "lila",
+    "sektioner": [
+      {
+        "id": "eftergymnasial",
+        "namn": "Eftergymnasial utbildning, 25–64 år",
+        "kpi_ids": "N01982",
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["N01982_KV", "N01982_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "gymnasial",
+        "namn": "Gymnasial utbildning, 25–64 år",
+        "kpi_ids": "N01983",
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["N01983_KV", "N01983_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "forgymnasial",
+        "namn": "Förgymnasial utbildning, 25–64 år",
+        "kpi_ids": "N01984",
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["N01984_KV", "N01984_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "meritvarde",
+        "namn": "Meritvärde åk 9",
+        "kpi_ids": "N15507",
+        "undersektioner": [
+          {
+            "namn": "Flickor och pojkar",
+            "kpi_ids": ["N15507_KV", "N15507_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "behorighet",
+        "namn": "Behörighet till yrkesprogram",
+        "kpi_ids": "N15428",
+        "undersektioner": [
+          {
+            "namn": "Flickor och pojkar",
+            "kpi_ids": ["N15428_KV", "N15428_MAN"]
+          }
+        ]
+      },
+      {
+        "id": "hogskolebeh",
+        "namn": "Högskolebehörighet inom 3 år",
+        "kpi_ids": "N17473",
+        "undersektioner": [
+          {
+            "namn": "Kvinnor och män",
+            "kpi_ids": ["N17473_KV", "N17473_MAN"]
+          }
+        ]
+      }
+    ],
+    "visningsnamn": {
+      "N01982": "Eftergymnasial utbildning",
+      "N01983": "Gymnasial utbildning",
+      "N01984": "Förgymnasial utbildning",
+      "N01982_KV": "Eftergymnasial, kvinnor",
+      "N01982_MAN": "Eftergymnasial, män",
+      "N01983_KV": "Gymnasial, kvinnor",
+      "N01983_MAN": "Gymnasial, män",
+      "N01984_KV": "Förgymnasial, kvinnor",
+      "N01984_MAN": "Förgymnasial, män",
+      "N15507": "Meritvärde åk 9",
+      "N15428": "Behöriga till yrkesprogram",
+      "N17473": "Högskolebehörighet inom 3 år",
+      "N15507_KV": "Meritvärde åk 9, flickor",
+      "N15507_MAN": "Meritvärde åk 9, pojkar",
+      "N15428_KV": "Behöriga yrkesprogram, flickor",
+      "N15428_MAN": "Behöriga yrkesprogram, pojkar",
+      "N17473_KV": "Högskolebehörighet, kvinnor",
+      "N17473_MAN": "Högskolebehörighet, män"
+    }
+  }
+]

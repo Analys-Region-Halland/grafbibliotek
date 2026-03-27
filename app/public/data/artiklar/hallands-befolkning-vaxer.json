@@ -1,0 +1,39 @@
+{
+  "slug": "hallands-befolkning-vaxer",
+  "titel": "Hallands befolkning fortsätter att växa",
+  "ingress": "Halland är en av Sveriges snabbast växande regioner. Men tillväxten är ojämnt fördelad mellan kommunerna, och drivkrafterna bakom utvecklingen har förändrats över tid.",
+  "datum": "2026-03-26",
+  "tema": ["befolkning"],
+  "temaFarg": "gron",
+  "forfattare": "Robin Rikardsson, analytiker, Region Halland",
+  "epost": "robin.rikardsson@regionhalland.se",
+  "block": [
+    {
+      "typ": "text",
+      "innehall": "Halland har under de senaste decennierna haft en av landets starkaste befolkningstillväxttakter. Sedan millennieskiftet har regionens folkmängd ökat med över 60 000 personer, och samtliga sex kommuner har vuxit. Men tillväxten är inte jämnt fördelad \u2014 och de underliggande drivkrafterna har skiftat över tid."
+    },
+    {
+      "typ": "rubrik",
+      "innehall": "Fruktsamheten i Halland",
+      "niva": 2
+    },
+    {
+      "typ": "text",
+      "innehall": "Den summerade fruktsamheten \u2014 antal barn per kvinna \u2014 är ett av de mest fundamentala demografiska måtten. Grafen nedan visar utvecklingen för Halland med alla filter och vyer tillgängliga, precis som i dashboarden."
+    },
+    {
+      "typ": "graf",
+      "config": {
+        "grafTyp": "tidsserie",
+        "kpiId": "N01770",
+        "temaId": "befolkning",
+        "kommunKod": "0013",
+        "bildtext": "Summerad fruktsamhet i Halland. Alla filter och jämförelsemöjligheter är tillgängliga direkt i grafen."
+      }
+    },
+    {
+      "typ": "text",
+      "innehall": "Genom att använda verktygsfältets jämförelsefunktion kan du lägga till andra kommuner eller regioner för att se hur Halland ligger till i förhållande till omvärlden. Byt mellan graf och karta, välj index-läge, eller ladda ner grafen som PNG eller SVG."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "datum": "2026-03-26",
+    "typ": "artikel",
+    "titel": "Ny analys: Hallands befolkning växer",
+    "beskrivning": "Fördjupning om befolkningsutvecklingen i Hallands kommuner",
+    "artikelSlug": "hallands-befolkning-vaxer"
+  },
+  {
+    "datum": "2026-03-25",
+    "typ": "funktion",
+    "titel": "Analysfunktion lanserad",
+    "beskrivning": "Nu kan du läsa fördjupande analyser med interaktiva grafer"
+  },
+  {
+    "datum": "2026-03-20",
+    "typ": "data",
+    "titel": "Uppdaterad data: Turism och inkvartering",
+    "beskrivning": "Gästnattsstatistik t.o.m. januari 2026"
+  }
+]
