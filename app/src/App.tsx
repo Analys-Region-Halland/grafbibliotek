@@ -55,17 +55,10 @@ export default function App() {
     navigate("#/");
   }, [navigate]);
 
-  const handleAnalysClick = useCallback(() => {
-    navigate("#/analys");
-  }, [navigate]);
-
-  const handleOpenArtikel = useCallback((slug: string) => {
-    navigate(`#/analys/${slug}`);
-  }, [navigate]);
-
-  const handleBackToAnalys = useCallback(() => {
-    navigate("#/analys");
-  }, [navigate]);
+  // Analys-vy (dold tills vidare)
+  // const handleAnalysClick = useCallback(() => { navigate("#/analys"); }, [navigate]);
+  // const handleOpenArtikel = useCallback((slug: string) => { navigate(`#/analys/${slug}`); }, [navigate]);
+  // const handleBackToAnalys = useCallback(() => { navigate("#/analys"); }, [navigate]);
 
   const handleOpenKpi = useCallback((kpiId: string) => setOpenKpi(kpiId), []);
 
