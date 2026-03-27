@@ -10,8 +10,9 @@ import TemaBlock from "./components/TemaBlock";
 import KpiPopup from "./components/KpiPopup";
 import type { KommunGruppData } from "./components/ControlDrawer";
 import OmModal from "./components/OmModal";
-import AnalysFeed from "./components/AnalysFeed";
-import ArtikelVy from "./components/ArtikelVy";
+// Analys-vy (dold tills vidare)
+// import AnalysFeed from "./components/AnalysFeed";
+// import ArtikelVy from "./components/ArtikelVy";
 
 /** Alla netto-KPI:er samlade från samtliga teman */
 const NETTO_KPIS = getAllNettoKpis();
@@ -226,11 +227,7 @@ export default function App() {
 
       {/* ── Innehåll ── */}
       <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-8 flex-1">
-        {route.view === "artikel" ? (
-          <ArtikelVy slug={route.slug} onBack={handleBackToAnalys} />
-        ) : route.view === "analys" ? (
-          <AnalysFeed onOpenArtikel={handleOpenArtikel} />
-        ) : temaLoading ? (
+        {temaLoading ? (
           <div className="flex flex-col items-center justify-center py-24 gap-3">
             <div className="h-5 w-5 border-2 border-neutral-200 border-t-neutral-500 rounded-full animate-spin" />
             <p className="text-neutral-400 text-[12px]">Laddar tema…</p>
