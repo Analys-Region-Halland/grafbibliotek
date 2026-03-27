@@ -241,103 +241,103 @@
   },
   {
     "kpi_id": "S_BEF_TOTALT",
-    "kpi_namn": "Folkmagd, antal",
-    "beskrivning": "Folkmagden den 31 december. Kalla: SCB.",
+    "kpi_namn": "Folkmängd, antal",
+    "beskrivning": "Folkmängden den 31 december. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_BEF_FORANDR_PCT",
-    "kpi_namn": "Befolkningsforandring, procent",
-    "beskrivning": "Procentuell forandring av folkmagden sedan foregaende ar. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Befolkningsförändring, procent",
+    "beskrivning": "Procentuell förändring av folkmängden sedan föregående år. Källa: SCB, bearbetning Region Halland.",
     "enhet": "procent",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_FORANDR_ANTAL"
   },
   {
     "kpi_id": "S_BEF_FORANDR_ANTAL",
-    "kpi_namn": "Befolkningsforandring, antal",
-    "beskrivning": "Folketokning/minskning i antal under aret. Kalla: SCB.",
+    "kpi_namn": "Befolkningsförändring, antal",
+    "beskrivning": "Folkökning/minskning i antal under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_FORANDR_PCT"
   },
   {
     "kpi_id": "S_BEF_0_19_ANDEL",
-    "kpi_namn": "Invanare 0-19 ar, andel",
-    "beskrivning": "Andelen av befolkningen i aldern 0-19 ar. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 0–19 år, andel",
+    "beskrivning": "Andelen av befolkningen i åldern 0–19 år. Källa: SCB, bearbetning Region Halland.",
     "enhet": "procent",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_0_19_ANTAL"
   },
   {
     "kpi_id": "S_BEF_0_19_ANTAL",
-    "kpi_namn": "Invanare 0-19 ar, antal",
-    "beskrivning": "Antal invanare i aldern 0-19 ar. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 0–19 år, antal",
+    "beskrivning": "Antal invånare i åldern 0–19 år. Källa: SCB, bearbetning Region Halland.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_0_19_ANDEL"
   },
   {
     "kpi_id": "S_BEF_20_64_ANDEL",
-    "kpi_namn": "Invanare 20-64 ar, andel",
-    "beskrivning": "Andelen av befolkningen i arbetsfor alder (20-64 ar). Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 20–64 år, andel",
+    "beskrivning": "Andelen av befolkningen i arbetsför ålder (20–64 år). Källa: SCB, bearbetning Region Halland.",
     "enhet": "procent",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_20_64_ANTAL"
   },
   {
     "kpi_id": "S_BEF_20_64_ANTAL",
-    "kpi_namn": "Invanare 20-64 ar, antal",
-    "beskrivning": "Antal invanare i arbetsfor alder (20-64 ar). Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 20–64 år, antal",
+    "beskrivning": "Antal invånare i arbetsför ålder (20–64 år). Källa: SCB, bearbetning Region Halland.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_20_64_ANDEL"
   },
   {
     "kpi_id": "S_BEF_65_79_ANDEL",
-    "kpi_namn": "Invanare 65-79 ar, andel",
-    "beskrivning": "Andelen av befolkningen i aldern 65-79 ar. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 65–79 år, andel",
+    "beskrivning": "Andelen av befolkningen i åldern 65–79 år. Källa: SCB, bearbetning Region Halland.",
     "enhet": "procent",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_65_79_ANTAL"
   },
   {
     "kpi_id": "S_BEF_65_79_ANTAL",
-    "kpi_namn": "Invanare 65-79 ar, antal",
-    "beskrivning": "Antal invanare i aldern 65-79 ar. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 65–79 år, antal",
+    "beskrivning": "Antal invånare i åldern 65–79 år. Källa: SCB, bearbetning Region Halland.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_65_79_ANDEL"
   },
   {
     "kpi_id": "S_BEF_80_ANDEL",
-    "kpi_namn": "Invanare 80 ar och aldre, andel",
-    "beskrivning": "Andelen av befolkningen som ar 80 ar och aldre. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 80 år och äldre, andel",
+    "beskrivning": "Andelen av befolkningen som är 80 år och äldre. Källa: SCB, bearbetning Region Halland.",
     "enhet": "procent",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_80_ANTAL"
   },
   {
     "kpi_id": "S_BEF_80_ANTAL",
-    "kpi_namn": "Invanare 80 ar och aldre, antal",
-    "beskrivning": "Antal invanare som ar 80 ar och aldre. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Invånare 80 år och äldre, antal",
+    "beskrivning": "Antal invånare som är 80 år och äldre. Källa: SCB, bearbetning Region Halland.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_BEF_80_ANDEL"
   },
   {
     "kpi_id": "S_FODELSENETTO_PROMILLE",
-    "kpi_namn": "Fodelsenetto per 1 000 inv.",
-    "beskrivning": "Fodelseoeverskott (fodda minus doda) per 1 000 invanare. Kalla: SCB, bearbetning Region Halland.",
-    "enhet": "promille",
+    "kpi_namn": "Födelsenetto per 1 000 inv.",
+    "beskrivning": "Födelseöverskott (födda minus döda) per 1 000 invånare. Källa: SCB, bearbetning Region Halland.",
+    "enhet": "per 1 000 inv.",
     "tema": "befolkning",
     "par_kpi_id": "S_FODELSENETTO_ANTAL"
   },
   {
     "kpi_id": "S_FODELSENETTO_ANTAL",
-    "kpi_namn": "Fodelsenetto, antal",
-    "beskrivning": "Fodelseoeverskott: antal fodda minus antal doda under aret. Kalla: SCB.",
+    "kpi_namn": "Födelsenetto, antal",
+    "beskrivning": "Födelseöverskott: antal födda minus antal döda under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_FODELSENETTO_PROMILLE"
@@ -345,15 +345,15 @@
   {
     "kpi_id": "S_INRIKES_NETTO_PROMILLE",
     "kpi_namn": "Inrikes flyttnetto per 1 000 inv.",
-    "beskrivning": "Inrikes flyttningsoeverskott per 1 000 invanare. Kalla: SCB, bearbetning Region Halland.",
-    "enhet": "promille",
+    "beskrivning": "Inrikes flyttningsöverskott per 1 000 invånare. Källa: SCB, bearbetning Region Halland.",
+    "enhet": "per 1 000 inv.",
     "tema": "befolkning",
     "par_kpi_id": "S_INRIKES_NETTO_ANTAL"
   },
   {
     "kpi_id": "S_INRIKES_NETTO_ANTAL",
     "kpi_namn": "Inrikes flyttnetto, antal",
-    "beskrivning": "Inrikes flyttningsoeverskott: inflyttade minus utflyttade inom Sverige. Kalla: SCB.",
+    "beskrivning": "Inrikes flyttningsöverskott: inflyttade minus utflyttade inom Sverige. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_INRIKES_NETTO_PROMILLE"
@@ -361,65 +361,65 @@
   {
     "kpi_id": "S_UTRIKES_NETTO_PROMILLE",
     "kpi_namn": "Utrikes flyttnetto per 1 000 inv.",
-    "beskrivning": "Invandringsoeverskott per 1 000 invanare. Kalla: SCB, bearbetning Region Halland.",
-    "enhet": "promille",
+    "beskrivning": "Invandringsöverskott per 1 000 invånare. Källa: SCB, bearbetning Region Halland.",
+    "enhet": "per 1 000 inv.",
     "tema": "befolkning",
     "par_kpi_id": "S_UTRIKES_NETTO_ANTAL"
   },
   {
     "kpi_id": "S_UTRIKES_NETTO_ANTAL",
     "kpi_namn": "Utrikes flyttnetto, antal",
-    "beskrivning": "Invandringsoeverskott: antal invandrade minus utvandrade. Kalla: SCB.",
+    "beskrivning": "Invandringsöverskott: antal invandrade minus utvandrade. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_UTRIKES_NETTO_PROMILLE"
   },
   {
     "kpi_id": "S_FODDA_ANTAL",
-    "kpi_namn": "Antal fodda",
-    "beskrivning": "Antal levande fodda under aret. Kalla: SCB.",
+    "kpi_namn": "Antal födda",
+    "beskrivning": "Antal levande födda under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_DODA_ANTAL",
-    "kpi_namn": "Antal doda",
-    "beskrivning": "Antal doda under aret. Kalla: SCB.",
+    "kpi_namn": "Antal döda",
+    "beskrivning": "Antal döda under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_INVANDRING_ANTAL",
     "kpi_namn": "Invandringar, antal",
-    "beskrivning": "Antal invandringar (inflyttningar fran utlandet) under aret. Kalla: SCB.",
+    "beskrivning": "Antal invandringar (inflyttningar från utlandet) under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_UTVANDRING_ANTAL",
     "kpi_namn": "Utvandringar, antal",
-    "beskrivning": "Antal utvandringar (utflyttningar till utlandet) under aret. Kalla: SCB.",
+    "beskrivning": "Antal utvandringar (utflyttningar till utlandet) under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_INRIKES_INFLYTT_ANTAL",
     "kpi_namn": "Inrikes inflyttningar, antal",
-    "beskrivning": "Antal inflyttningar fran andra kommuner i Sverige under aret. Kalla: SCB.",
+    "beskrivning": "Antal inflyttningar från andra kommuner i Sverige under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_INRIKES_UTFLYTT_ANTAL",
     "kpi_namn": "Inrikes utflyttningar, antal",
-    "beskrivning": "Antal utflyttningar till andra kommuner i Sverige under aret. Kalla: SCB.",
+    "beskrivning": "Antal utflyttningar till andra kommuner i Sverige under året. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_KVINNOR_ANDEL",
     "kpi_namn": "Kvinnor i befolkningen, andel",
-    "beskrivning": "Andelen kvinnor av totalbefolkningen. Kalla: SCB, bearbetning Region Halland.",
+    "beskrivning": "Andelen kvinnor av totalbefolkningen. Källa: SCB, bearbetning Region Halland.",
     "enhet": "procent",
     "tema": "befolkning",
     "par_kpi_id": "S_KVINNOR_ANTAL"
@@ -427,66 +427,66 @@
   {
     "kpi_id": "S_KVINNOR_ANTAL",
     "kpi_namn": "Kvinnor i befolkningen, antal",
-    "beskrivning": "Antal kvinnor i befolkningen. Kalla: SCB.",
+    "beskrivning": "Antal kvinnor i befolkningen. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_KVINNOR_ANDEL"
   },
   {
     "kpi_id": "S_UTRIKES_FODDA_ANDEL",
-    "kpi_namn": "Utrikes fodda, andel",
-    "beskrivning": "Andelen av befolkningen som ar fodda utanfor Sverige. Kalla: SCB, bearbetning Region Halland.",
+    "kpi_namn": "Utrikes födda, andel",
+    "beskrivning": "Andelen av befolkningen som är födda utanför Sverige. Källa: SCB, bearbetning Region Halland.",
     "enhet": "procent",
     "tema": "befolkning",
     "par_kpi_id": "S_UTRIKES_FODDA_ANTAL"
   },
   {
     "kpi_id": "S_UTRIKES_FODDA_ANTAL",
-    "kpi_namn": "Utrikes fodda, antal",
-    "beskrivning": "Antal invanare som ar fodda utanfor Sverige. Kalla: SCB.",
+    "kpi_namn": "Utrikes födda, antal",
+    "beskrivning": "Antal invånare som är födda utanför Sverige. Källa: SCB.",
     "enhet": "antal",
     "tema": "befolkning",
     "par_kpi_id": "S_UTRIKES_FODDA_ANDEL"
   },
   {
     "kpi_id": "S_FORSORJ_TOTAL",
-    "kpi_namn": "Demografisk forsorjningskvot",
-    "beskrivning": "Antal invanare 0-19 och 65+ per 100 invanare 20-64 ar. Kalla: SCB.",
+    "kpi_namn": "Demografisk försörjningskvot",
+    "beskrivning": "Antal invånare 0–19 och 65+ per 100 invånare 20–64 år. Källa: SCB.",
     "enhet": "kvot",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_FORSORJ_UNG",
-    "kpi_namn": "Forsorjningskvot, yngre (0-19 / 20-64)",
-    "beskrivning": "Antal invanare 0-19 ar per 100 invanare 20-64 ar. Kalla: SCB.",
+    "kpi_namn": "Försörjningskvot, yngre (0–19 / 20–64)",
+    "beskrivning": "Antal invånare 0–19 år per 100 invånare 20–64 år. Källa: SCB.",
     "enhet": "kvot",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_FORSORJ_ALD",
-    "kpi_namn": "Forsorjningskvot, aldre (65+ / 20-64)",
-    "beskrivning": "Antal invanare 65 ar och aldre per 100 invanare 20-64 ar. Kalla: SCB.",
+    "kpi_namn": "Försörjningskvot, äldre (65+ / 20–64)",
+    "beskrivning": "Antal invånare 65 år och äldre per 100 invånare 20–64 år. Källa: SCB.",
     "enhet": "kvot",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_MEDELALDER",
-    "kpi_namn": "Befolkningens medelalder",
-    "beskrivning": "Medelalder i befolkningen. Kalla: SCB.",
-    "enhet": "ar",
+    "kpi_namn": "Befolkningens medelålder",
+    "beskrivning": "Medelålder i befolkningen. Källa: SCB.",
+    "enhet": "år",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_FRUKTSAMHET",
     "kpi_namn": "Summerad fruktsamhet",
-    "beskrivning": "Genomsnittligt antal barn per kvinna (summerat fruktsamhetstal). Kalla: SCB.",
+    "beskrivning": "Genomsnittligt antal barn per kvinna (summerat fruktsamhetstal). Källa: SCB.",
     "enhet": "barn/kvinna",
     "tema": "befolkning"
   },
   {
     "kpi_id": "S_BEF_TATHET",
-    "kpi_namn": "Invanare per kvadratkilometer",
-    "beskrivning": "Befolkningstathet: antal invanare per kvadratkilometer landareal. Kalla: SCB.",
+    "kpi_namn": "Invånare per kvadratkilometer",
+    "beskrivning": "Befolkningstäthet: antal invånare per kvadratkilometer landareal. Källa: SCB.",
     "enhet": "inv/kvm",
     "tema": "befolkning"
   },

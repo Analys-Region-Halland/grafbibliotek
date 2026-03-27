@@ -25,6 +25,8 @@ SCB_TABELLER <- list(
   forsorjning   = paste0(SCB_BASE, "BE0101A/FkvotHVD"),
   medelalder    = paste0(SCB_BASE, "BE0101B/BefolkningMedelAlder"),
   fruktsamhet   = paste0(SCB_BASE, "BE0101H/FruktsamhetSum"),
+  befolkning_ckm = paste0(SCB_BASE, "BE0101A/BefolkningCKM"),
+  forandringar_ckm = paste0(SCB_BASE, "BE0101G/BefforandrKvRLKCKM"),
   tathet        = paste0(SCB_BASE, "BE0101C/BefArealTathetKon"),
   utrikes_fodda = paste0(SCB_BASE, "BE0101E/InrUtrFoddaRegAlKon"),
   fodda          = paste0(SCB_BASE, "BE0101H/FoddaK"),
@@ -251,6 +253,88 @@ hamta_befolkning <- function(config, tvinga = FALSE) {
 
   message(glue("  -> 9 KPI:er fran aldersdata"))
 
+  # --- CKM 2025: Folkmagd per alder (BefolkningCKM) ---
+  tryCatch({
+    message("\n  [A-CKM] Folkmagd 2025 (BefolkningCKM)...")
+    ckm_meta <- hamta_scb_meta(SCB_TABELLER$befolkning_ckm)
+    if ("2025" %in% ckm_meta$Tid) {
+      # Ettarsklasser: siffror 0-99 + "100+"
+      ckm_alder <- ckm_meta$Alder[grepl("^\\d+\\+?$", ckm_meta$Alder)]
+      ckm_regioner <- intersect(alla_regioner, ckm_meta$Region)
+      ckm_cc <- ckm_meta$ContentsCode[1]  # 000007ME
+
+      ckm_alder_df <- hamta_chunked(SCB_TABELLER$befolkning_ckm,
+        list(Civilstand = "SC", Alder = ckm_alder, Kon = "TotSa",
+             ContentsCode = ckm_cc, Tid = "2025"),
+        ckm_regioner, chunk_storlek = 35)
+      # Byt kolumnnamn sa de matchar huvudtabellen
+      if (ckm_cc %in% names(ckm_alder_df)) {
+        ckm_alder_df <- ckm_alder_df |> rename(BE0101N1 = all_of(ckm_cc))
+      }
+      message(glue("  CKM hamtat: {nrow(ckm_alder_df)} rader"))
+
+      ckm_alder_df <- ckm_alder_df |>
+        mutate(alder_num = suppressWarnings(as.integer(Alder)),
+               alder_num = if_else(is.na(alder_num), 100L, alder_num),
+               aldersgrupp = case_when(
+                 alder_num <= 19 ~ "0_19", alder_num <= 64 ~ "20_64",
+                 alder_num <= 79 ~ "65_79", TRUE ~ "80_plus"))
+
+      ckm_grupp <- ckm_alder_df |>
+        group_by(Region, Tid, aldersgrupp) |>
+        summarise(antal = sum(BE0101N1, na.rm = TRUE), .groups = "drop")
+
+      ckm_total <- ckm_alder_df |>
+        group_by(Region, Tid) |>
+        summarise(total = sum(BE0101N1, na.rm = TRUE), .groups = "drop")
+
+      # Lagg till 2025 i total_pop (anvands av B och H)
+      total_pop <- bind_rows(total_pop, ckm_total)
+
+      ckm_grupp_andel <- ckm_grupp |>
+        left_join(ckm_total, by = c("Region", "Tid")) |>
+        mutate(andel = round(antal / total * 100, 1))
+
+      # S_BEF_TOTALT
+      alla_kpier[["S_BEF_TOTALT"]] <- bind_rows(
+        alla_kpier[["S_BEF_TOTALT"]],
+        ckm_total |> transmute(
+          kpi = "S_BEF_TOTALT",
+          municipality_id = scb_till_kolada_kod(Region),
+          year = as.integer(Tid), gender = "T",
+          value = as.numeric(total),
+          municipality_type = if_else(nchar(Region) <= 2, "L", "K")) |>
+        mutate(municipality = unname(namn_map[municipality_id])))
+
+      # Aldersgrupper
+      for (i in seq_len(nrow(grupp_mappning))) {
+        g <- grupp_mappning$aldersgrupp[i]
+        sub_df <- ckm_grupp_andel |> filter(aldersgrupp == g)
+
+        alla_kpier[[grupp_mappning$antal_id[i]]] <- bind_rows(
+          alla_kpier[[grupp_mappning$antal_id[i]]],
+          sub_df |> transmute(
+            kpi = grupp_mappning$antal_id[i],
+            municipality_id = scb_till_kolada_kod(Region),
+            year = as.integer(Tid), gender = "T",
+            value = as.numeric(antal),
+            municipality_type = if_else(nchar(Region) <= 2, "L", "K")) |>
+          mutate(municipality = unname(namn_map[municipality_id])))
+
+        alla_kpier[[grupp_mappning$andel_id[i]]] <- bind_rows(
+          alla_kpier[[grupp_mappning$andel_id[i]]],
+          sub_df |> transmute(
+            kpi = grupp_mappning$andel_id[i],
+            municipality_id = scb_till_kolada_kod(Region),
+            year = as.integer(Tid), gender = "T",
+            value = andel,
+            municipality_type = if_else(nchar(Region) <= 2, "L", "K")) |>
+          mutate(municipality = unname(namn_map[municipality_id])))
+      }
+      message(glue("  -> CKM 2025 tillagd for folkmagd + aldersgrupper"))
+    }
+  }, error = function(e) message(glue("  CKM BefolkningNy ej tillganglig: {e$message}")))
+
 
   # ================================================================
   # B. FOLKMAGD PER KON (BefolkningNy, Kon=2)
@@ -290,6 +374,52 @@ hamta_befolkning <- function(config, tvinga = FALSE) {
     filter(!is.na(value))
 
   message(glue("  -> 2 KPI:er"))
+
+  # --- CKM 2025: Folkmagd per kon (BefolkningCKM) ---
+  tryCatch({
+    message("\n  [B-CKM] Kvinnor 2025 (BefolkningCKM)...")
+    ckm_meta_b <- hamta_scb_meta(SCB_TABELLER$befolkning_ckm)
+    if ("2025" %in% ckm_meta_b$Tid) {
+      ckm_regioner_b <- intersect(alla_regioner, ckm_meta_b$Region)
+      ckm_cc_b <- ckm_meta_b$ContentsCode[1]
+      # Hamta kvinnor (Kon=2), alla alder totalt (TotSA), civilstand=samtliga
+      ckm_kon_query <- list(
+        Region       = ckm_regioner_b,
+        Civilstand   = "SC",
+        Alder        = "TotSA",
+        Kon          = "2",
+        ContentsCode = ckm_cc_b,
+        Tid          = "2025"
+      )
+      ckm_kvinnor_df <- hamta_scb(SCB_TABELLER$befolkning_ckm, ckm_kon_query)
+      # Byt kolumnnamn
+      if (ckm_cc_b %in% names(ckm_kvinnor_df)) {
+        ckm_kvinnor_df <- ckm_kvinnor_df |> rename(BE0101N1 = all_of(ckm_cc_b))
+      }
+      message(glue("  CKM hamtat: {nrow(ckm_kvinnor_df)} rader"))
+
+      ckm_kvinnor_andel <- ckm_kvinnor_df |>
+        left_join(total_pop |> filter(Tid == "2025"), by = c("Region", "Tid")) |>
+        mutate(andel = round(BE0101N1 / total * 100, 1))
+
+      alla_kpier[["S_KVINNOR_ANTAL"]] <- bind_rows(
+        alla_kpier[["S_KVINNOR_ANTAL"]],
+        skapa_kpi_rader(ckm_kvinnor_df, "S_KVINNOR_ANTAL", "BE0101N1", namn_map))
+
+      alla_kpier[["S_KVINNOR_ANDEL"]] <- bind_rows(
+        alla_kpier[["S_KVINNOR_ANDEL"]],
+        ckm_kvinnor_andel |> transmute(
+          kpi = "S_KVINNOR_ANDEL",
+          municipality_id = scb_till_kolada_kod(Region),
+          year = as.integer(Tid), gender = "T",
+          value = andel,
+          municipality_type = if_else(nchar(Region) <= 2, "L", "K")) |>
+        mutate(municipality = unname(namn_map[municipality_id])) |>
+        filter(!is.na(value)))
+
+      message(glue("  -> CKM 2025 tillagd for kvinnoandel"))
+    }
+  }, error = function(e) message(glue("  CKM BefolkningNy (kon) ej tillganglig: {e$message}")))
 
 
   # ================================================================
@@ -384,6 +514,73 @@ hamta_befolkning <- function(config, tvinga = FALSE) {
   }
 
   message(glue("  -> 8 KPI:er fran forandringsdata"))
+
+  # --- CKM 2025: Befolkningsforandringar (BefforandrKvRLKCKM) ---
+  tryCatch({
+    message("\n  [C-CKM] Forandringskomponenter 2025 (BefforandrKvRLKCKM)...")
+    forandr_ckm_meta <- hamta_scb_meta(SCB_TABELLER$forandringar_ckm)
+    if ("2025" %in% forandr_ckm_meta$Tid) {
+      ckm_f_regioner <- intersect(alla_regioner, forandr_ckm_meta$Region)
+      # Identifiera tillgangliga forandringskoder
+      tillgangliga_koder <- intersect(c("100", "110", "135", "230", "260"),
+                                       forandr_ckm_meta$Forandringar)
+      if (length(tillgangliga_koder) >= 5) {
+        # Identifiera ContentsCode
+        ckm_cc <- forandr_ckm_meta$ContentsCode[1]  # 000007TB
+        ckm_f_query <- list(
+          Region       = ckm_f_regioner,
+          Forandringar = tillgangliga_koder,
+          Period       = "hel",
+          Kon          = "TotSa",
+          ContentsCode = ckm_cc,
+          Tid          = "2025"
+        )
+        ckm_f_celler <- length(ckm_f_regioner) * 5
+        if (ckm_f_celler > 90000) {
+          ckm_forandr_df <- hamta_chunked(SCB_TABELLER$forandringar_ckm,
+            list(Forandringar = tillgangliga_koder, Period = "hel",
+                 Kon = "TotSa", ContentsCode = ckm_cc, Tid = "2025"),
+            ckm_f_regioner, chunk_storlek = 70)
+        } else {
+          ckm_forandr_df <- hamta_scb(SCB_TABELLER$forandringar_ckm, ckm_f_query)
+        }
+        message(glue("  CKM hamtat: {nrow(ckm_forandr_df)} rader"))
+
+        # Pivotera till bred form
+        ckm_varde_kol <- names(ckm_forandr_df)[sapply(ckm_forandr_df, is.numeric)][1]
+        ckm_forandr_bred <- ckm_forandr_df |>
+          select(Region, Tid, Forandringar, varde = all_of(ckm_varde_kol)) |>
+          pivot_wider(id_cols = c(Region, Tid), names_from = Forandringar,
+                      values_from = varde, names_prefix = "f_") |>
+          rename(folkmagd = f_100, folkokning = f_110, fodelseoverskott = f_135,
+                 flyttoverskott_totalt = f_230, invandringsoverskott = f_260) |>
+          mutate(
+            inrikes_netto = flyttoverskott_totalt - invandringsoverskott,
+            pop_prev = folkmagd - folkokning,
+            forandr_pct = if_else(pop_prev > 0, round(folkokning / pop_prev * 100, 2), NA_real_),
+            fodelsenetto_promille = if_else(folkmagd > 0, round(fodelseoverskott / folkmagd * 1000, 1), NA_real_),
+            inrikes_netto_promille = if_else(folkmagd > 0, round(inrikes_netto / folkmagd * 1000, 1), NA_real_),
+            utrikes_netto_promille = if_else(folkmagd > 0, round(invandringsoverskott / folkmagd * 1000, 1), NA_real_))
+
+        # Lagg till CKM-rader for varje KPI
+        for (spec in forandr_kpi_spec) {
+          alla_kpier[[spec$id]] <- bind_rows(
+            alla_kpier[[spec$id]],
+            ckm_forandr_bred |> transmute(
+              kpi = spec$id,
+              municipality_id = scb_till_kolada_kod(Region),
+              year = as.integer(Tid), gender = "T",
+              value = .data[[spec$kol]],
+              municipality_type = if_else(nchar(Region) <= 2, "L", "K")) |>
+            mutate(municipality = unname(namn_map[municipality_id])) |>
+            filter(!is.na(value)))
+        }
+        message(glue("  -> CKM 2025 tillagd for forandringskomponenter"))
+      } else {
+        message(glue("  CKM saknar forandringskoder (hittade {length(tillgangliga_koder)}/5)"))
+      }
+    }
+  }, error = function(e) message(glue("  CKM BefforandrKvRLK ej tillganglig: {e$message}")))
 
 
   # ================================================================
