@@ -1,0 +1,29 @@
+{
+  "hash": "f7089076abbe9f5e4739183f1b6f7702",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Utsläppen per invånare ligger kvar på 2019 års nivå",
+    "ingress": "Varbergs växthusgasutsläpp per invånare ligger på samma nivå som 2019, medan rikets har minskat under samma period. Transporter och jordbruk ligger klart över riket medan industrin ligger under, men industrins utsläpp har ökat.",
+    "i_korthet": [
+      {
+        "ledtext": "Samma nivå som för fem år sedan",
+        "text": "Utsläppen var 4,96 ton per invånare 2024 mot 4,94 ton 2019, efter en ökning med 0,49 ton det senaste året, medan riket minskade med 0,36 ton på fem år."
+      },
+      {
+        "ledtext": "Transporterna ligger klart över riket",
+        "text": "Transporterna gav 2,33 ton per invånare 2024, vilket är 0,74 ton över riket."
+      },
+      {
+        "ledtext": "Industrins utsläpp har ökat",
+        "text": "Industrins utsläpp ökade med 0,25 ton per invånare på fem år, medan rikets minskade med 0,22 ton."
+      }
+    ],
+    "stycken": [
+      "Varbergs växthusgasutsläpp per invånare ligger på samma nivå som för fem år sedan, medan rikets är lägre än då. Utsläppen uppgick 2024 till 4,96 ton koldioxidekvivalenter per invånare, i nivå med 4,94 ton 2019, medan riket minskade med 0,36 ton under samma period. Nivån sjönk från 6,13 ton 2010 till som lägst 4,27 ton 2022 men har därefter stigit. Det senaste året ökade Varbergs utsläpp med 0,49 ton från 4,48 ton 2023, mer än rikets ökning på 0,32 ton.",
+      "Varberg ligger 0,46 ton över riket och 0,65 ton över länet och hamnar på fjärde plats bland Hallands kommuner, mellan Falkenberg med 5,47 ton och Halmstad med 4,08 ton. Avståndet till riket finns främst i två sektorer. Transporterna ger 2,33 ton per invånare, 0,74 ton över riket, och jordbruket 1,35 ton, 0,77 ton över riket. Industrin drar åt andra hållet: den ligger 0,51 ton under riket men är näst högst i Halland efter Hylte, och den har ökat med 0,25 ton på fem år medan rikets industriutsläpp minskat med 0,22 ton.",
+      "Transportnivån hänger sannolikt samman med läget längs E6: utsläppen räknas inom kommunens gräns, så genomfartstrafik och bilpendling kan bidra. Energianvändningen i transporter är 9,01 MWh per invånare, 2,12 MWh över riket, och den ökade med 0,72 MWh det senaste året när riket minskade med 0,53 MWh. Jordbruket väger tyngre än i riket, samtidigt som 14,8 procent av åkermarken brukades ekologiskt 2025, högst i länet. För planeringen pekar det på att transporterna, den största utsläppskällan per invånare, och industrin, vars utsläpp har ökat, i första hand avgör utsläppsutvecklingen."
+    ]
+  }
+}

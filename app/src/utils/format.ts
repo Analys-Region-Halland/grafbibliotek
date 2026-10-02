@@ -8,6 +8,18 @@ export function fmt(value: number | null | undefined, decimals = 1): string {
   return `${intPart},${parts[1]}`;
 }
 
+/**
+ * Decimaler för ett KPI-värde. Samma regel används i R/kap03-ai-analys.R så att
+ * siffrorna i analystexten stämmer med korten: antal och tal ≥ 1 000 utan decimaler,
+ * tal under 10 med två, övriga med en.
+ */
+export function kpiDecimaler(v: number | null | undefined, enhet: string): number {
+  if (v == null) return 1;
+  if (enhet === "antal" || Math.abs(v) >= 1000) return 0;
+  if (Math.abs(v) < 10) return 2;
+  return 1;
+}
+
 /** Formatera heltal med mellanslag */
 export function fmtInt(value: number | null | undefined): string {
   return fmt(value, 0);

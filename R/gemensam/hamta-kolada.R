@@ -48,6 +48,11 @@ hamta_och_filtrera_kolada <- function(kpi_ids, kommun_koder, perioder,
     period = perioder,
     simplify = TRUE
   )
+  # get_values() returnerar NULL när frågan saknar träffar
+  if (is.null(radata) || nrow(radata) == 0) {
+    message("  Rådata: 0 rader")
+    return(tibble())
+  }
   message(glue("  Rådata: {nrow(radata)} rader"))
 
   filtrerad <- radata |>
@@ -91,23 +96,31 @@ hamta_tema_kolada <- function(tema_config, tvinga = FALSE) {
   }
 
   if (cache_status$behov == "kontrollera") {
-    # Snabbkontroll mot API (1 KPI, 1 kommun, senaste år)
-    kontroll <- get_values(
-      kpi = kpi_ids[1],
-      municipality = "0000",
-      period = as.character(nuvarande_ar),
-      simplify = TRUE
-    )
-    if (nrow(kontroll) > 0) {
-      message("  Ny data finns — inkrementell uppdatering")
-      cache_status$behov <- "inkrementell"
-      cache_status$nya_perioder <- as.character(nuvarande_ar)
+    # Kolada fyller på och reviderar de senaste åren löpande (värden för 2025 publiceras
+    # under hela 2026). Att bara leta efter innevarande år missar dem, så de fyra senaste
+    # åren hämtas om och ersätter cachens värden för de KPI:er som kom tillbaka.
+    omhamta <- as.character((nuvarande_ar - 3):nuvarande_ar)
+    message(glue("  Hämtar om {min(omhamta)}–{max(omhamta)} (nya och reviderade värden)"))
+    ny_data <- hamta_och_filtrera_kolada(kpi_ids, alla_kommun_koder, omhamta,
+                                         behall_kon_for = tema_config$konuppdelning %||% character(0))
+    befintlig <- readRDS(radata_fil)
+    if (nrow(ny_data) > 0) {
+      fore <- befintlig |> filter(kpi %in% kpi_ids) |> group_by(kpi) |>
+        summarise(senaste = max(year), .groups = "drop")
+      kombinerad <- befintlig |>
+        filter(!(kpi %in% unique(ny_data$kpi) & as.character(year) %in% omhamta)) |>
+        bind_rows(ny_data)
+      efter <- kombinerad |> filter(kpi %in% kpi_ids) |> group_by(kpi) |>
+        summarise(senaste = max(year), .groups = "drop")
+      nya_ar <- inner_join(fore, efter, by = "kpi") |> filter(senaste.y > senaste.x)
+      saveRDS(kombinerad, radata_fil)
+      message(glue("  Uppdaterat: {nrow(kombinerad)} rader; {nrow(nya_ar)} KPI:er fick ett nyare år"))
     } else {
-      message("  Ingen ny data — uppdaterar tidsstämpel")
-      meta <- las_cache_meta(tema_id)
-      spara_cache_meta(tema_id, kpi_ids, meta$perioder, meta$antal_rader)
-      return(invisible(NULL))
+      message("  Inga värden tillbaka från API:t — behåller cachen")
+      kombinerad <- befintlig
     }
+    spara_cache_meta(tema_id, kpi_ids, alla_perioder, nrow(kombinerad))
+    return(invisible(NULL))
   }
 
   if (cache_status$behov == "full") {

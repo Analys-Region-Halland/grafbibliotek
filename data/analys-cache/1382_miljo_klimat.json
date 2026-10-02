@@ -1,0 +1,29 @@
+{
+  "hash": "eb4aeef67e908a58f552e82557b880bb",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Transporter och jordbruk lyfter Falkenbergs utsläpp över riket",
+    "ingress": "Växthusgasutsläppen inom Falkenbergs gränser ligger 0,97 ton per invånare över riket och 1,16 ton över länet. Transporter och jordbruk ligger 1,07 respektive 1,21 ton över riket, medan industrins utsläpp ligger 0,96 ton under.",
+    "i_korthet": [
+      {
+        "ledtext": "Utsläppen ligger över riket och länet",
+        "text": "Falkenberg släppte ut 5,47 ton koldioxidekvivalenter per invånare 2024, mot 4,50 i riket och 4,31 i Halland."
+      },
+      {
+        "ledtext": "Jordbrukets utsläpp näst högst i länet",
+        "text": "Jordbrukets utsläpp var 1,80 ton per invånare, 1,21 ton över riket och näst högst i länet efter Laholm."
+      },
+      {
+        "ledtext": "Utsläppen steg det senaste året",
+        "text": "De totala utsläppen ökade med 0,60 ton per invånare från 2023, jämfört med 0,32 ton i riket."
+      }
+    ],
+    "stycken": [
+      "Transporter och jordbruk är de största av de redovisade utsläppskällorna inom Falkenbergs gränser. Totalt släpptes 5,47 ton koldioxidekvivalenter per invånare ut 2024. Transporterna stod för 2,66 ton och jordbruket för 1,80 ton, medan industrin bidrog med 0,27 ton, vilket är 0,96 ton under riket. Det betyder att kommunens livsmedels- och tillverkningsindustri syns betydligt mindre i utsläppsstatistiken än transporterna och jordbruket.",
+      "I Halland hamnar Falkenberg på tredje plats, efter Laholm och Hylte. Mönstret liknar Laholms: båda har jordbruksutsläpp långt över riket, där Laholm når 3,06 ton och Falkenberg 1,80 ton per invånare. Över fem år har Falkenbergs utsläpp minskat med 0,36 ton, lika mycket som i riket. Det senaste året steg de däremot med 0,60 ton från 4,86 ton 2023, seriens lägsta nivå. Energianvändningen för transporter rörde sig åt samma håll: den ökade med 0,58 MWh per invånare medan riket minskade med 0,53.",
+      "Utsläppsprofilen hänger sannolikt samman med kommunens läge och struktur. Om E6 passerar kommunen och inlandet mot Småland är glest, så blir körsträckorna längre och en del av utsläppen kan komma från genomfartstrafik som kommunen har begränsad rådighet över. Energianvändningen för transporter, 9,10 MWh per invånare mot 6,89 i riket, pekar åt samma håll. Ekologiskt brukad åkermark omfattar 8,27 procent, 5,83 procentenheter under riket, men andelen har ökat med 3,49 procentenheter på tio år medan riket minskat. För planeringen pekar sektorerna mot resmönster och jordbruk, där utsläppen per invånare ligger mest över riket, och ettårsuppgången behöver följas innan den tolkas som ett trendbrott."
+    ]
+  }
+}

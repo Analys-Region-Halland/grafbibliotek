@@ -1,0 +1,29 @@
+{
+  "hash": "337a9fc6b5ef4c2e3af1de3b744b5b1c",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Lägst utsläpp per invånare i länet, transporterna över riket",
+    "ingress": "Kungsbacka släpper ut minst växthusgaser per invånare av Hallands kommuner, med länets lägsta nivåer inom industri, jordbruk och transporter. Transporterna står för den största delen av utsläppen och ligger över rikets nivå.",
+    "i_korthet": [
+      {
+        "ledtext": "Lägst utsläpp per invånare i Halland",
+        "text": "Växthusgasutsläppen var 2,59 ton koldioxidekvivalenter per invånare 2024, 1,72 ton under länet och 1,92 ton under riket."
+      },
+      {
+        "ledtext": "Transporterna ligger över riket",
+        "text": "Transporterna gav 1,83 ton per invånare, lägst i länet men 0,24 ton över riket."
+      },
+      {
+        "ledtext": "Mindre minskning än i riket",
+        "text": "Utsläppen har minskat med 0,12 ton per invånare på fem år, mot 0,36 ton i riket."
+      }
+    ],
+    "stycken": [
+      "Kungsbacka har lägst klimatutsläpp per invånare i Halland, och skillnaden syns i flera sektorer. Utsläppen inom kommunens gräns var 2,59 ton koldioxidekvivalenter per invånare 2024, 1,72 ton under länet och 1,92 ton under riket, vilket ger plats 252 bland landets 290 kommuner. Industrin bidrar med 0,01 ton per invånare mot 1,23 ton i riket, och jordbruket med 0,32 ton mot 1,01 ton i länet. Transporterna, 1,83 ton per invånare, står för den klart största delen av kommunens utsläpp.",
+      "Transportutsläppen är låga jämfört med de andra halländska kommunerna men inte jämfört med riket. Kungsbacka och Halmstad har länets lägsta nivåer, 1,83 respektive 1,84 ton per invånare, medan Hylte och Falkenberg ligger på 2,90 och 2,66 ton. Riket ligger på 1,59 ton, alltså 0,24 ton under Kungsbacka. De totala utsläppen har minskat långsammare än i landet: med 0,12 ton på fem år, mot 0,36 ton i riket. Mellan 2023 och 2024 steg de med 0,32 ton, i samma takt som i riket, från seriens lägsta nivå 2,27 ton.",
+      "Mönstret hänger sannolikt samman med Kungsbackas roll som bostadskommun i Göteborgsregionen. Statistiken räknar utsläpp inom kommunens geografiska gräns, och om tung industri och storskaligt jordbruk i huvudsak finns på annat håll hamnar deras utsläpp där. Villabebyggelse och pendling norrut kan samtidigt göra bilen till ett vanligt färdmedel, vilket kan förklara att transporterna ligger över riket trots att de är lägst i länet. För planeringen pekar det på att kommunens egna utsläpp främst kan påverkas genom resandet, och att en låg nivå per invånare inte i sig betyder att omställningen går snabbare än i landet."
+    ]
+  }
+}

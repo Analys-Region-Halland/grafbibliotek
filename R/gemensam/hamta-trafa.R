@@ -137,12 +137,14 @@ hamta_tema_trafa <- function(tema_config, tvinga = FALSE) {
   trafa_ids <- sapply(tema_config$trafa_tabeller, \(t) t$kpi_id)
   radata_fil <- file.path("data", glue("radata-{tema_id}.rds"))
 
-  # Enkel cache-kontroll
-  if (!tvinga && file.exists(radata_fil)) {
+  # Cache-kontroll: hoppa över om alla KPI:er finns och hämtades för under 30 dagar sedan
+  stampel_fil <- file.path("data", glue("hamtning-stampel-{tema_id}-trafa.rds"))
+  if (!tvinga && file.exists(radata_fil) && file.exists(stampel_fil)) {
     befintlig <- readRDS(radata_fil)
     befintliga_trafa <- intersect(unique(befintlig$kpi), trafa_ids)
-    if (length(befintliga_trafa) == length(trafa_ids)) {
-      message("  Trafikanalys-data finns redan — hoppar över (använd force för omhämtning)")
+    dagar <- as.numeric(difftime(Sys.time(), readRDS(stampel_fil), units = "days"))
+    if (length(befintliga_trafa) == length(trafa_ids) && dagar < 30) {
+      message(glue("  Trafikanalys-data hämtades för {round(dagar)} dagar sedan — hoppar över"))
       return(invisible(NULL))
     }
   }
@@ -180,15 +182,21 @@ hamta_tema_trafa <- function(tema_config, tvinga = FALSE) {
   kombinerad <- bind_rows(alla_rader)
   message(glue("  Totalt {nrow(kombinerad)} rader från Trafikanalys"))
 
-  # Bevara befintlig data från andra källor
+  if (length(alla_rader) == 0) {
+    warning("  Ingen Trafikanalys-tabell kunde hämtas — behåller befintlig rådata")
+    return(invisible(NULL))
+  }
+
+  # Bevara befintlig data från andra källor; ersätt bara KPI:er som hämtades nu
   if (file.exists(radata_fil)) {
     befintlig <- readRDS(radata_fil)
-    trafa_pattern <- paste0("^(", paste(trafa_ids, collapse = "|"), ")")
+    trafa_pattern <- paste0("^(", paste(names(alla_rader), collapse = "|"), ")")
     befintlig <- befintlig |> filter(!grepl(trafa_pattern, kpi))
     kombinerad <- bind_rows(befintlig, kombinerad)
   }
 
   saveRDS(kombinerad, radata_fil)
+  saveRDS(Sys.time(), stampel_fil)
   message(glue("  Sparat: {nrow(kombinerad)} rader totalt"))
 
   invisible(NULL)

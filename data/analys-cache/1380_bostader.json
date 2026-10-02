@@ -1,0 +1,29 @@
+{
+  "hash": "f0b9ff8846481a59523fbdf2e742831a",
+  "period": "2024",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Halmstad är Hallands hyresrättskommun och bygger främst flerbostadshus",
+    "ingress": "Halmstad har störst andel hyresrätter och flest bostäder per invånare i länet, och nybyggandet 2025 dominerades av flerbostadshus. Trångboddheten ligger samtidigt över både länet och riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Störst andel hyresrätter i länet",
+        "text": "Hyresrätterna utgör 47,9 procent av bostäderna, 8,8 procentenheter över riket och högst bland Hallands kommuner."
+      },
+      {
+        "ledtext": "Nybyggandet sker i flerbostadshus",
+        "text": "År 2025 färdigställdes 3,33 lägenheter i flerbostadshus per 1 000 invånare mot 2,43 i riket, medan småhusen stannade vid 0,54, lägst i länet."
+      },
+      {
+        "ledtext": "Trångboddheten ligger över länet",
+        "text": "Av de boende i flerbostadshus är 15,8 procent trångbodda, 3,2 procentenheter över Halland och 0,7 procentenheter över riket."
+      }
+    ],
+    "stycken": [
+      "Halmstads bostadsbestånd skiljer sig från övriga Halland genom att hyresrätten är den största upplåtelseformen. Hyresrätterna utgör 47,9 procent av bostäderna, 8,8 procentenheter över riket, vilket ger plats 13 bland landets 290 kommuner. Äganderätterna är 38,8 procent, lägst i länet, och bostadsrätterna 13,3 procent, 11,0 procentenheter under riket. Nybyggandet förstärker mönstret: av 3,87 nybyggda bostäder per 1 000 invånare 2025 var 3,33 lägenheter i flerbostadshus.",
+      "Inom länet byggde bara Kungsbacka mer 2025, med 7,91 nya bostäder per 1 000 invånare, medan Varberg, Falkenberg, Laholm och Hylte låg klart under Halmstad. Småhusbyggandet är däremot lägst i länet, 0,54 per 1 000 invånare mot 0,84 i Halland. Priserna placerar Halmstad i mitten av länet: bostadsrätter kostar 27 305 kronor per kvadratmeter och småhus 30 024, i båda fallen efter Kungsbacka och Varberg. Trångboddheten har ökat med 1,8 procentenheter på tio år medan riket minskat med 2,5, men sedan toppen på 17,8 procent 2019 har den sjunkit, med 1,5 procentenheter på fem år.",
+      "Mönstret hänger sannolikt samman med Halmstads roll som residensstad, högskoleort och södra Hallands största arbetsmarknad, där efterfrågan på hyrda och mindre bostäder kan väntas vara större än i villakommunerna. Det täta boendet kan också avläsas i att 90,3 procent av befolkningen bor nära en trafikerad hållplats, 13,5 procentenheter över länet. Eftersom flerbostadshusen står för det mesta av nybyggandet och trångboddheten bland de boende där ligger över länet blir lägenheternas storlek en planeringsfråga. Byggtakten svänger kraftigt, från 11,00 per 1 000 invånare 2023 till 0,87 året därpå, och planberedskapen på 14,8 bostäder per 1 000 invånare 2023 ger plats 141 av 199 kommuner, vilket kan begränsa möjligheten att hålla en jämn nivå."
+    ]
+  }
+}

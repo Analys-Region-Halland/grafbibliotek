@@ -1,0 +1,29 @@
+{
+  "hash": "e0087a0eae2ea8ba74759f02370e5e23",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Hylte har länets högsta förtida dödlighet och störst ekonomisk utsatthet",
+    "ingress": "Hylte har lägst inkomster och störst andel med varaktigt låg ekonomisk standard i Halland. Samtidigt har den förtida dödligheten stigit sedan 2019, medan den har sjunkit i riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Förtida dödlighet högst i länet",
+        "text": "Dödligheten bland 25–64-åringar var 219,6 per 100 000 invånare 2024, 46,6 över riket och högst i Halland."
+      },
+      {
+        "ledtext": "Störst ekonomisk utsatthet i länet",
+        "text": "Andelen vuxna med varaktigt låg ekonomisk standard var 10,3 procent, 3,2 procentenheter över riket och 4,9 över länet."
+      },
+      {
+        "ledtext": "Männens livslängd har minskat",
+        "text": "Medellivslängden för män var 80,0 år 2025, 1,8 år under riket och 1,2 år kortare än 2020."
+      }
+    ],
+    "stycken": [
+      "Hylte har den mest utsatta ekonomiska situationen bland Hallands kommuner. Medianinkomsten var 302,5 tusen kronor 2024, 37,1 tusen kronor under riket och lägst i länet. Andelen vuxna med varaktigt låg ekonomisk standard, alltså inkomster under 60 procent av medianen minst tre av fyra år, var 10,3 procent, vilket ger plats 26 bland landets 289 kommuner. Kommunens kostnad för ekonomiskt bistånd var 2 233 kronor per invånare 2025, högst i länet och 714 kronor över riket.",
+      "Hälsobilden avviker på samma sätt från resten av länet, och avståndet till riket har vuxit. Den förtida dödligheten var 219,6 per 100 000 invånare 25–64 år, 65,9 över länet. Talet har ökat med 50,0 sedan 2019, medan det sjunkit med 18,3 i riket, och ökningen är störst bland män. Männens medellivslängd var 80,0 år, lägst i Halland och 2,7 år under länet. Levnadsvanorna pekar åt samma håll: 7,8 procent röker dagligen och 57,2 procent har övervikt eller obesitas, båda högst i länet och i båda fallen med riket utanför enkätens felmarginal.",
+      "Mönstret kan hänga samman med att ekonomisk utsatthet och hälsa följs åt: om fler lever med små marginaler under lång tid kan risken för rökning, övervikt och sjukdom i arbetsför ålder öka. Bilden är ändå inte entydig, eftersom färre uppger stress än i riket, 11,3 procent mot 15,9 procent. Bland barn och unga har den psykiska ohälsan ökat: andelen 0–19-åringar med psykisk ohälsa var 12,1 procent, högst i Halland och 5,4 procentenheter högre än 2019. För planeringen pekar flera mått på att folkhälsoinsatser och vägar till egen försörjning kan behöva hänga ihop."
+    ]
+  }
+}

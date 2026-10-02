@@ -1,0 +1,29 @@
+{
+  "hash": "c95089c8d70ceb290505e6a442e7149e",
+  "period": "2024",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Bostadsbyggandet har minskat kraftigt sedan toppåret 2020",
+    "ingress": "Falkenberg bygger i dag betydligt färre bostäder per invånare än länet och riket, efter en topp 2020. Antalet bostäder per invånare ökar långsammare än i riket, beståndet domineras av äganderätter och priserna sjönk det senaste året.",
+    "i_korthet": [
+      {
+        "ledtext": "Byggandet har fallit sedan 2020",
+        "text": "Nybyggda bostäder sjönk från 8,79 per 1 000 invånare år 2020 till 1,29 år 2025, mot 3,83 i länet och 2,96 i riket."
+      },
+      {
+        "ledtext": "Färre bostäder per invånare än riket",
+        "text": "Falkenberg har 469,8 bostäder per 1 000 invånare, 29,1 färre än riket och näst lägst bland Hallands kommuner."
+      },
+      {
+        "ledtext": "Priserna sjönk senaste året",
+        "text": "Småhuspriset sjönk med 651 kronor per kvadratmeter till 26 108, medan det steg med 862 kronor i riket."
+      }
+    ],
+    "stycken": [
+      "Bostadsbyggandet i Falkenberg har mattats av kraftigt efter toppen 2020. Det året färdigställdes 8,79 bostäder per 1 000 invånare, den högsta nivån i serien sedan 2010, mot 1,29 år 2025, en liten ökning från seriens lägsta nivå 1,16 året innan. Både småhus och flerbostadshus har minskat: på fem år sjönk färdigställda småhus från 5,08 till 0,70 och lägenheter i flerbostadshus från 3,71 till 0,59 per 1 000 invånare. Antalet bostäder per 1 000 invånare har ökat med 26,2 på tio år, mot 43,1 i riket.",
+      "I länet bygger Kungsbacka med 7,91 och Halmstad med 3,87 per 1 000 invånare mer än länets 3,83, medan Falkenberg hamnar på fjärde plats. Skillnaden mot riket ligger i flerbostadshusen: småhusbyggandet på 0,70 per 1 000 invånare är högre än rikets 0,52, om än under länets 0,84, men lägenhetsbyggandet ligger 1,84 under riket. Beståndet har samma tyngdpunkt: äganderätter utgör 54,1 procent, 17,5 procentenheter över riket, och hyresrätter 29,8 procent, 9,2 procentenheter under.",
+      "En möjlig förklaring till det låga lägenhetsbyggandet är prisnivån. Bostadsrätter kostar 21 778 kronor per kvadratmeter mot 39 813 i riket, och både bostadsrätts- och småhuspriserna sjönk senaste året när rikets steg. Om priserna ligger lägre kan det bli svårare att få flerbostadshus att bära sina byggkostnader. Planberedskapen år 2019, med 39,7 bostäder i detaljplan per 1 000 invånare, pekar på att planlagd mark då inte saknades, även om uppgiften är äldre. För planeringen innebär det att tillskottet av lägenheter är litet, samtidigt som trångboddheten i flerbostadshus ligger 0,8 procentenheter över länet men 1,7 under riket."
+    ]
+  }
+}

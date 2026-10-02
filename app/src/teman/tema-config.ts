@@ -35,6 +35,16 @@ export interface TemaConfig {
 /** Tillgängliga temafärger — mappar till Tailwind-klasser */
 export type TemaFarg = "gron" | "bla" | "rod" | "lila" | "gul" | "brun";
 
+/** Hexvärden per temafärg: djup (text, linjer) och medel (prickar, accentlinjer) */
+export const TEMA_FARG_HEX: Record<TemaFarg, { djup: string; medel: string; ljus: string }> = {
+  gron: { djup: "#00664D", medel: "#00AB60", ljus: "#E3F4E2" },
+  bla: { djup: "#004990", medel: "#2DB8F6", ljus: "#E2F6FF" },
+  rod: { djup: "#A51300", medel: "#FF5F4A", ljus: "#FEE6E7" },
+  lila: { djup: "#433C9D", medel: "#6473D9", ljus: "#E8EBFF" },
+  gul: { djup: "#FF7E00", medel: "#FF7E00", ljus: "#FEF8E8" },
+  brun: { djup: "#59392E", medel: "#895B42", ljus: "#EFCDB6" },
+};
+
 /** CSS-klasser per temafärg */
 export const TEMA_FARG_KLASSER: Record<TemaFarg, {
   gradient: string;

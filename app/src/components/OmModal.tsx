@@ -1,3 +1,4 @@
+import { AiForklaring } from "./AiUpplysning";
 import { useEffect, useCallback } from "react";
 
 interface Props {
@@ -56,9 +57,9 @@ export default function OmModal({ onClose }: Props) {
             <p>
               Halland i siffror samlar nyckeltal för Region Hallands sex kommuner
               och regionen som helhet. Dashboarden ger en överblick över utvecklingen
-              inom tio temaområden — från befolkning och arbetsmarknad till miljö,
-              hälsa och kollektivtrafik — med möjlighet att jämföra mot riksnivå
-              och andra kommuner.
+              inom tio områden, från befolkning och arbetsmarknad till miljö,
+              hälsa och kollektivtrafik, med jämförelser mot länet, riket och
+              landets övriga kommuner.
             </p>
           </section>
 
@@ -69,45 +70,45 @@ export default function OmModal({ onClose }: Props) {
             </h3>
             <ul className="space-y-2">
               <li>
-                <span className="font-semibold text-neutral-900">RKA Kolada</span>{" "}
-                — Kommun- och regiondatabasen med över 6 000 nyckeltal från SCB,
+                <span className="font-semibold text-neutral-900">RKA Kolada</span>:{" "}
+                Kommun- och regiondatabasen med över 6 000 nyckeltal från SCB,
                 Försäkringskassan, Socialstyrelsen m.fl. Registerdata med årsvisa
                 uppdateringar.
               </li>
               <li>
-                <span className="font-semibold text-neutral-900">SCB</span>{" "}
-                — Statistiska centralbyrån. Pendlingsstatistik (BAS) hämtas
+                <span className="font-semibold text-neutral-900">SCB</span>:{" "}
+                Statistiska centralbyrån. Pendlingsstatistik (BAS) hämtas
                 direkt via SCB:s PxWeb-API.
               </li>
               <li>
-                <span className="font-semibold text-neutral-900">Folkhälsomyndigheten</span>{" "}
-                — Folkhälsodata med enkätbaserade indikatorer (Nationella
+                <span className="font-semibold text-neutral-900">Folkhälsomyndigheten</span>:{" "}
+                Folkhälsodata med enkätbaserade indikatorer (Nationella
                 folkhälsoenkäten) och registerdata om dödlighet, inkomst och
                 utbildning. Enkätdata redovisas med konfidensintervall.
               </li>
               <li>
-                <span className="font-semibold text-neutral-900">Trafikanalys</span>{" "}
-                — Fordonsstatistik och färdtjänstdata hämtas via Trafikanalys
+                <span className="font-semibold text-neutral-900">Trafikanalys</span>:{" "}
+                Fordonsstatistik och färdtjänstdata hämtas via Trafikanalys
                 öppna data-API.
               </li>
               <li>
-                <span className="font-semibold text-neutral-900">Tillväxtverket</span>{" "}
-                — Inkvarteringsstatistik (turismdata) hämtas via Tillväxtverkets
+                <span className="font-semibold text-neutral-900">Tillväxtverket</span>:{" "}
+                Inkvarteringsstatistik (turismdata) hämtas via Tillväxtverkets
                 öppna data.
               </li>
             </ul>
           </section>
 
-          {/* 3. Kommande uppdateringar */}
+          {/* 3. Analyser */}
           <section>
             <h3 className="font-data text-[12px] font-semibold text-neutral-900 mb-2 tracking-wide">
-              Kommande uppdateringar (april 2026)
+              Analyser
             </h3>
-            <ul className="space-y-1.5 list-disc list-inside">
-              <li>Berättelsefunktion med en guidad berättelse inom respektive tema</li>
-              <li>Kortrapport per tema och geografi</li>
-              <li>Fler indikatorer inom respektive område</li>
-            </ul>
+            <p>
+              Varje område har en kort analys för länet och för varje kommun, och under
+              Analys finns alla områden samlade per kommun. Texterna är AI-genererade.
+            </p>
+            <AiForklaring />
           </section>
 
           {/* 4. Kontakt */}

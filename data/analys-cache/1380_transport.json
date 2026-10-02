@@ -1,0 +1,29 @@
+{
+  "hash": "7634d9157f358829194a220d7112cb94",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Halmstad drar till sig pendlare och har länets lägsta biltäthet",
+    "ingress": "Halmstad är den enda halländska kommunen där fler pendlar in än ut, och en större andel av invånarna bor nära kollektivtrafik än i riket. Bilinnehavet och körsträckorna är lägst i länet, men elbilarna utgör en mindre andel av bilparken än i både länet och riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Enda kommunen i länet med nettoinpendling",
+        "text": "Nettoinpendlingen var 2 327 personer 2024 och pendlingskvoten 1,04, högst i Halland och 0,05 över riket."
+      },
+      {
+        "ledtext": "Störst andel nära kollektivtrafik i länet",
+        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter var 90,3 procent, 9,4 procentenheter över riket."
+      },
+      {
+        "ledtext": "Elbilsandelen under länet och riket",
+        "text": "Elbilar utgjorde 6,87 procent av personbilarna 2025, 1,21 procentenheter under länet och 1,71 under riket."
+      }
+    ],
+    "stycken": [
+      "Halmstad är ett arbetsplatscentrum som tar emot fler pendlare än det skickar ut. Antalet sysselsatta som arbetar i kommunen översteg antalet sysselsatta invånare med 2 327 år 2024, och pendlingskvoten var 1,04, högst i länet och plats 39 bland landets 290 kommuner. Med 11 077 inpendlare tar Halmstad emot flest pendlare i Halland, samtidigt som 16,9 procent av de sysselsatta invånarna arbetar i en annan kommun, lägst i länet. Det betyder att de flesta som bor i Halmstad också arbetar där.",
+      "Tillgången till kollektivtrafik skiljer sig tydligt från grannkommunernas. I Halmstad har 90,3 procent av invånarna en trafikerad hållplats inom 500 meter, 13,5 procentenheter över länet, mot 63,4 procent i Laholm och 60,7 procent i Hylte. Bostadsbyggandet följer samma linje: av de bostäder som tillkommit under den senaste treårsperioden ligger 95,7 procent nära kollektivtrafik, högst i länet. Biltätheten, 496,3 personbilar per 1 000 invånare, är lägst i Halland men 21,1 över riket, och körsträckan på 620,8 mil per invånare ligger 4,0 mil under riket och 62,9 mil under länet.",
+      "Mönstret hänger sannolikt samman med att Halmstad är länets största kommun och residensstad. Om arbete och service ligger nära bostaden blir resorna kortare, vilket kan förklara de kortare körsträckorna. Elektrifieringen av bilparken går däremot långsammare än i riket: elbilarnas andel har ökat med 5,87 procentenheter på fem år mot 7,46 i riket, trots att kommunen har flest publika laddpunkter i Halland, 636. Andelen laddhybrider ökade samtidigt något mer än i riket det senaste året, 1,32 mot 1,12 procentenheter. För planeringen pekar siffrorna på att resandet i Halmstad kan påverkas av var bostäder och arbetsplatser placeras."
+    ]
+  }
+}

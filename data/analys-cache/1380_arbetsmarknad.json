@@ -1,0 +1,29 @@
+{
+  "hash": "3f1a2864c1838c8996c2fcc79a48ad76",
+  "period": "2024",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Halmstads arbetsmarknad liknar rikets mer än länets",
+    "ingress": "Sysselsättningen i Halmstad ligger nära rikets nivå men tydligt under länets, och mellan 2023 och 2024 sjönk sysselsättningen medan arbetslösheten steg. Avståndet till länet är störst i männens sysselsättning och i utrikes föddas arbetslöshet.",
+    "i_korthet": [
+      {
+        "ledtext": "Sysselsättningen ligger under länet",
+        "text": "Andelen sysselsatta 20–64 år var 80,1 procent 2024, vilket är 3,9 procentenheter under Halland och 0,8 procentenheter under riket."
+      },
+      {
+        "ledtext": "Arbetslösheten steg under 2024",
+        "text": "Arbetslösheten ökade med 0,7 procentenheter till 6,2 procent, jämfört med en ökning på 0,5 procentenheter i riket."
+      },
+      {
+        "ledtext": "Störst avstånd i utrikes föddas arbetslöshet",
+        "text": "Bland utrikes födda var 14,5 procent arbetslösa, 2,6 procentenheter över både länet och riket."
+      }
+    ],
+    "stycken": [
+      "Halmstads arbetsmarknad ser ut som rikets snarare än som länets. Andelen sysselsatta i åldern 20–64 år var 80,1 procent 2024, 0,8 procentenheter under riket men 3,9 procentenheter under länet, och den sjönk med 1,2 procentenheter från 2023. Arbetskraftsdeltagandet, alltså andelen som arbetar eller söker arbete, var 85,4 procent och därmed i nivå med riket. Det som skiljer Halmstad från riket är därför främst att en större del av arbetskraften saknar jobb: arbetslösheten var 6,2 procent, 0,8 procentenheter över riket, och steg med 0,7 procentenheter från 2023, något mer än i riket.",
+      "Bland Hallands kommuner har Halmstad och Hylte lägst sysselsättning och högst arbetslöshet. Halmstad har femte högst sysselsättning av länets sex kommuner och näst högst arbetslöshet efter Hylte, medan Kungsbacka och Varberg har 87,9 respektive 86,2 procent sysselsatta. Avståndet till länet är störst bland män, vars sysselsättning ligger 4,1 procentenheter under länet, och männens arbetslöshet på 6,5 procent är den högsta i länet. Bland inrikes födda är sysselsättningen 84,3 procent, den lägsta i Halland, och bland utrikes födda är 14,5 procent arbetslösa.",
+      "Mönstret hänger sannolikt samman med Halmstads roll som största kommun i södra Halland. Om en stad har högskola, hamn och logistik kan där samlas fler som studerar, söker sitt första jobb eller arbetar i branscher som påverkas snabbt av konjunkturen, vilket kan hålla nere sysselsättningen. Länets nivå dras samtidigt upp av Kungsbacka och Varberg, de kommuner som ligger närmast Göteborg. För planeringen pekar det på att Halmstad rimligen jämförs med riket lika mycket som med länet. Förändringen 2024 gäller ett enda år och behöver följas innan den tolkas som en trend."
+    ]
+  }
+}

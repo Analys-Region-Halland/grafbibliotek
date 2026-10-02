@@ -1,0 +1,29 @@
+{
+  "hash": "b6fa3b09f4a6c477d46076505b38373f",
+  "period": "juni 2026",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Arbetslösheten sjunker snabbt men befolkningen och industrin krymper",
+    "ingress": "Hylte har haft länets största nedgång i arbetslöshet det senaste året men har fortfarande Hallands högsta arbetslöshet och lägsta sysselsättningsgrad. Nedgången sker samtidigt som folkmängden minskar och tillverkningen tappar sysselsatta.",
+    "i_korthet": [
+      {
+        "ledtext": "Arbetslösheten sjunker mest i länet",
+        "text": "Arbetslösheten bland 20–64-åringar sjönk från 6,9 till 5,6 procent, en nedgång på 1,3 procentenheter mot 0,3 i både länet och riket."
+      },
+      {
+        "ledtext": "Kvinnors sysselsättning ligger lägst i Halland",
+        "text": "Av kvinnorna i åldern 20–64 år är 78,9 procent sysselsatta, 6,2 procentenheter under länet och 3,0 under riket."
+      },
+      {
+        "ledtext": "Tillverkningen tappar sysselsatta",
+        "text": "Tillverkningen minskade med 106 sysselsatta på ett år, eller 6,7 procent, medan branschen i riket ökade med 0,2 procent."
+      }
+    ],
+    "stycken": [
+      "Arbetslösheten i Hylte har sjunkit tydligt det senaste året, samtidigt som befolkningen minskar. Preliminära uppgifter visar att arbetslösheten bland 20–64-åringar sjönk från 6,9 procent i juli 2025 till 5,6 procent i juli 2026, den största nedgången bland Hallands kommuner. Sysselsättningsgraden steg samtidigt med 0,8 procentenheter till 80,9 procent. Antalet sysselsatta boende minskade ändå med 19 personer, medan folkmängden minskade med 135 personer. Det betyder att en del av uppgången i sysselsättningsgraden kan spegla att befolkningen krymper snabbare än antalet sysselsatta.",
+      "Trots nedgången har Hylte länets högsta arbetslöshet, 1,9 procentenheter över Halland och 0,6 procentenheter över riket. Sysselsättningsgraden är den lägsta i länet, 4,7 procentenheter under Halland och 1,6 under riket. Skillnaden mot länet är störst bland kvinnor, där 78,9 procent är sysselsatta och arbetskraftsdeltagandet på 84,1 procent är lägst i Halland. Arbetslösheten har dock sjunkit i alla redovisade grupper: kvinnors med 2,0 procentenheter och utrikes föddas med 3,6 procentenheter, till 11,7 procent.",
+      "Antalet arbetstillfällen i kommunen är oförändrat på 4 695, men sammansättningen förskjuts. Tillverkningen minskade med 106 sysselsatta, medan offentlig sektor ökade med 48 och företagstjänster med 35. Eftersom tillverkningen med 1 477 sysselsatta fortfarande är kommunens största bransch kan det göra Hylte känsligt för industrins konjunktur, och pendlingen mot Halmstad och Falkenberg kan bli viktigare om de lokala industrijobben fortsätter att minska. För planeringen pekar mönstret på att kvinnors arbetskraftsdeltagande och befolkningsutvecklingen kan väga tyngre än den kortsiktiga nedgången i arbetslöshet."
+    ]
+  }
+}

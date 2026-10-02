@@ -1,0 +1,29 @@
+{
+  "hash": "a9b37a70f045bab4fac5513a8a227175",
+  "period": "2023",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Högst andel AB-företagare i länet, lägst andel inom tillverkning",
+    "ingress": "Kungsbacka har en av landets största andelar företagare i aktiebolag, handel är den största branschen och tillverkningen har länets lägsta andel av de sysselsatta. Under 2024 var antalet sysselsatta i näringslivet oförändrat, medan offentlig sektor minskade.",
+    "i_korthet": [
+      {
+        "ledtext": "Andelen företagare i AB länets högsta",
+        "text": "Av dem som arbetar i Kungsbacka är 12,2 procent företagare i aktiebolag, 6,4 procentenheter över riket och plats 12 bland landets 290 kommuner."
+      },
+      {
+        "ledtext": "Handel och bygg över rikets nivå",
+        "text": "Handeln står för 17,9 procent och byggverksamheten för 10,9 procent av de sysselsatta, 6,4 respektive 3,8 procentenheter över riket."
+      },
+      {
+        "ledtext": "Näringslivet oförändrat 2024",
+        "text": "Antalet sysselsatta i näringslivet var oförändrat 2024, medan det minskade med 0,6 procent i riket och med 1,6 procent i Kungsbackas offentliga sektor."
+      }
+    ],
+    "stycken": [
+      "Kungsbackas näringsliv präglas av företagare i aktiebolag och av handel och byggverksamhet. Andelen företagare i aktiebolag bland de sysselsatta är 12,2 procent, vilket ger plats 12 bland landets 290 kommuner och ligger 6,4 procentenheter över riket. Samma bild syns i andelen anställda, som med 82,7 procent ligger 7,3 procentenheter under riket. Handel är den största branschen med 17,9 procent av de sysselsatta, och byggverksamheten står för 10,9 procent, länets högsta andel. Tillverkningen stannar vid 5,6 procent, den lägsta andelen i länet.",
+      "Mot övriga Halland skiljer sig Kungsbacka tydligt i industrin: tillverkningen ligger 4,8 procentenheter under länet. Kungsbacka har i stället länets högsta andelar inom byggverksamhet, företagstjänster (11,4 procent) och IT och kommunikation (2,6 procent), även om de två senare ligger under riket. Under 2024 var antalet sysselsatta i näringslivet oförändrat, medan det minskade med 0,7 procent i länet och 0,6 procent i riket. Bakom nollan finns en uppdelning: män i näringslivet ökade med 0,9 procent och kvinnor minskade med 1,5 procent, den största minskningen för kvinnor i länet. Den totala nedgången på 160 sysselsatta kom nästan helt från offentlig sektor, som minskade med 151.",
+      "Mönstret hänger sannolikt samman med att Kungsbacka ingår i Göteborgs arbetsmarknadsregion. Om många förvärvsarbetande pendlar norrut, kan det lokala näringslivet i högre grad bestå av verksamheter som betjänar hushållen och villabebyggelsen, vilket kan förklara tyngden i handel och bygg. För planeringen pekar det på att det lokala näringslivet kan vara känsligt för bostadsbyggandet och hushållens efterfrågan. Måtten avser var arbetsstället ligger och säger inget om var de sysselsatta bor."
+    ]
+  }
+}

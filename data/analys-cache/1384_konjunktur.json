@@ -1,0 +1,29 @@
+{
+  "hash": "a9d652d2a34f03d142b352c47ff5a9f4",
+  "period": "juni 2026",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Länets högsta sysselsättningsgrad, oförändrad på ett år",
+    "ingress": "Preliminära uppgifter för juli 2026 visar att Kungsbacka har den högsta sysselsättningsgraden och den näst lägsta arbetslösheten i Halland. På ett år var sysselsättningsgraden oförändrad och arbetslösheten steg något, medan sysselsättningsgraden steg och arbetslösheten sjönk i länet och riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Länets högsta sysselsättningsgrad",
+        "text": "Bland invånarna 20–64 år var 88,2 procent sysselsatta i juli 2026, vilket är 5,7 procentenheter över riket och 2,6 procentenheter över länet."
+      },
+      {
+        "ledtext": "Arbetslösheten under länet och riket",
+        "text": "Arbetslösheten är 2,6 procent, mot 3,7 procent i Halland och 5,0 procent i riket."
+      },
+      {
+        "ledtext": "Enda halländska kommunen med stigande arbetslöshet",
+        "text": "Arbetslösheten steg med 0,1 procentenheter på ett år, medan den sjönk med 0,3 procentenheter i både länet och riket."
+      }
+    ],
+    "stycken": [
+      "Kungsbacka har länets högsta sysselsättningsgrad: bland invånarna 20–64 år är 88,2 procent sysselsatta i juli 2026 enligt preliminära uppgifter. Det placerar kommunen på plats 6 av landets 290 kommuner, 5,7 procentenheter över riket. Arbetslösheten är 2,6 procent, mot 5,0 procent i riket. Mönstret är brett: kvinnor har en sysselsättningsgrad på 88,0 procent och utrikes födda 78,0 procent, det senare 6,0 procentenheter över riket.",
+      "Det som skiljer Kungsbacka från resten av Halland är att sysselsättningsgraden har stått still. Den är oförändrad mot juli 2025, medan den steg i alla andra halländska kommuner och med 0,4 procentenheter i riket. Arbetslösheten ökade med 0,1 procentenheter, och Kungsbacka är den enda halländska kommunen där den steg; i länet och riket sjönk den med 0,3 procentenheter. Varberg ligger i nivå med Kungsbacka, med 87,8 procent sysselsatta och 2,5 procent arbetslösa, medan Hylte och Halmstad har en arbetslöshet på 5,6 respektive 5,4 procent.",
+      "Stillaståendet kan hänga samman med att en redan stor andel arbetar, även om sysselsättningsgraden var högre i juli 2023, 89,2 procent. Kungsbacka är också en bostadskommun i Göteborgs arbetsmarknadsregion, där 46 134 sysselsatta bor i kommunen men 29 316 arbetar där. Det betyder att arbetsmarknadsläget för invånarna kan spegla Göteborgsregionen mer än det lokala näringslivet, där antalet sysselsatta ökade med 0,8 procent på ett år medan länet minskade med 0,2 procent. För planeringen pekar det på att kommunens arbetsmarknad kan följa konjunkturen norrut. Bostadsbyggandet har samtidigt skiftat: under kvartalet fram till juni 2026 påbörjades 23 lägenheter i småhus mot 44 ett år tidigare, och 27 i flerbostadshus mot 14."
+    ]
+  }
+}

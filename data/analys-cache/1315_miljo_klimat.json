@@ -1,0 +1,29 @@
+{
+  "hash": "3799917312cdb86b23ceafab6f3b809a",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Hylte har länets högsta utsläpp från transporter och industri",
+    "ingress": "Hylte släpper ut näst mest växthusgaser per invånare i Halland, och utsläppen har ökat de senaste fem åren medan de minskat i riket. Transporter och industri ligger högst i länet, samtidigt som nästan all el som produceras i kommunen är förnybar.",
+    "i_korthet": [
+      {
+        "ledtext": "Näst högst utsläpp i länet",
+        "text": "Utsläppen var 5,78 ton koldioxidekvivalenter per invånare 2024, 1,47 ton över länet och 1,28 ton över riket."
+      },
+      {
+        "ledtext": "Utsläppen ökar medan riket minskar",
+        "text": "På fem år har utsläppen ökat med 0,23 ton per invånare, medan de minskat med 0,36 ton i riket."
+      },
+      {
+        "ledtext": "Nästan all lokal el är förnybar",
+        "text": "Förnybara källor stod för 99,6 procent av elproduktionen i kommunen, mot 67,3 procent i riket."
+      }
+    ],
+    "stycken": [
+      "Hylte har en utsläppsprofil som skiljer sig från resten av Halland: både transporter och industri ligger högst i länet. Utsläppen inom kommunens gräns var 5,78 ton koldioxidekvivalenter per invånare 2024, näst mest i Halland efter Laholm och 1,28 ton över riket. Transporterna stod för 2,90 ton per invånare, 1,31 ton över riket, och industrin för 1,20 ton, i nivå med rikets 1,23 ton men långt över länets 0,30 ton. Nivån är lägre än 2010, då utsläppen var 9,91 ton, men den steg med 0,72 ton mellan 2023 och 2024, från seriens lägsta värde.",
+      "Över fem år går utvecklingen i motsatt riktning mot riket. Utsläppen har ökat med 0,23 ton per invånare, medan de minskat med 0,36 ton i riket. Transporternas utsläpp har ökat med 0,27 ton under samma period, mot en minskning på 0,04 ton i landet. Hylte har högre transportutsläpp än grannkommunerna Falkenberg, 2,66 ton, och Halmstad, 1,84 ton, och hamnar på plats 53 bland landets 290 kommuner.",
+      "Mönstret hänger sannolikt samman med Hyltes läge och näringsliv. I en inlandskommun med liten befolkning och pendling mot Halmstad och Falkenberg blir avstånden långa och bilen ett naturligt val, och eftersom utsläppen räknas per invånare kan trafik som passerar kommunen väga tungt. Industriutsläppen kan spegla traditionen av tillverkningsindustri, där enskilda anläggningar kan påverka siffrorna mycket när befolkningen är liten. Samtidigt kommer 99,6 procent av elen som produceras i kommunen från förnybara källor, mot 67,3 procent i riket. För planeringen pekar det på att utsläppen främst påverkas genom transporterna och industrins omställning, och att förändringar i enskilda verksamheter kan ge stora utslag."
+    ]
+  }
+}

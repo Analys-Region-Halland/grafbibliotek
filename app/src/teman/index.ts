@@ -58,4 +58,4 @@ export function getAllVisningsnamn(): Record<string, string> {
 }
 
 export type { TemaConfig, Sektion, Undersektion, TemaFarg } from "./tema-config";
-export { TEMA_FARG_KLASSER } from "./tema-config";
+export { TEMA_FARG_KLASSER, TEMA_FARG_HEX } from "./tema-config";

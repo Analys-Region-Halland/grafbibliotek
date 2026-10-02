@@ -1,0 +1,29 @@
+{
+  "hash": "bb4d9096693c0412805f246c81f3228a",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Flest gästnätter sedan 2008 men lägre intäkt per natt",
+    "ingress": "Halmstad hade fler gästnätter 2025 än något år sedan 2008, men logiintäkterna växte långsammare än i länet och intäkten per gästnatt sjönk. Kommunen har flest hotellnätter och störst logiintäkter i länet, men en mindre andel utländska gästnätter än riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Flest gästnätter sedan 2008",
+        "text": "Gästnätterna uppgick till 872 543 under 2025, en ökning med 5,3 procent på ett år mot 2,5 procent i riket."
+      },
+      {
+        "ledtext": "Intäkterna följer inte med",
+        "text": "Logiintäkterna ökade med 1,7 procent mot 8,0 procent i länet, och intäkten per gästnatt sjönk från 499 till 482 kronor."
+      },
+      {
+        "ledtext": "Utländska gäster ökar från en lägre nivå",
+        "text": "Utländska gäster stod för 12,1 procent av gästnätterna, 14,2 procentenheter under riket, men deras gästnätter ökade med 20,9 procent på ett år."
+      }
+    ],
+    "stycken": [
+      "Halmstad hade fler gästnätter 2025 än något år sedan serien börjar 2008, men intäkterna har inte följt med. Gästnätterna uppgick till 872 543 och ökade med 5,3 procent på ett år mot 2,5 procent i riket. Logiintäkterna ökade samtidigt med 1,7 procent. Det betyder att varje gästnatt i genomsnitt gav mindre: intäkten sjönk från 499 till 482 kronor. Rumsbeläggningen minskade också, med 1,4 procentenheter till 51,4 procent.",
+      "Jämfört med grannkommunerna sticker Halmstad ut som länets hotellkommun. Hotellen stod för 483 776 gästnätter, flest i Halland, medan Falkenberg och Varberg har fler campingnätter. Halmstad har också de största logiintäkterna bland länets kommuner och den högsta intäkten per gästnatt, 55 kronor över länet men 96 kronor under riket. Räknat per invånare är gästnätterna färre än i Falkenberg och Varberg: 8 per invånare mot 20 respektive 12, och 9 i länet. Utländska gäster utgör 12,1 procent av gästnätterna, 14,2 procentenheter under riket, men deras gästnätter ökade med 20,9 procent på ett år och är fler än i någon annan halländsk kommun.",
+      "Hotellprofilen hänger sannolikt samman med Halmstads roll som residensstad, högskoleort och största arbetsmarknad i södra Halland: om en större del av resandet sker i tjänsten och sprids över året blir beroendet av sommarens campinggäster mindre än i Falkenberg och Varberg. Att gästnätterna ökar snabbare än intäkterna kan spegla prispress eller att de nya gästerna väljer billigare boende, men underlaget visar inte vilket. För planeringen pekar mönstret på att antalet gästnätter ensamt ger en ofullständig bild. Beläggning och intäkt per natt säger mer om hur stort utrymmet för ny kapacitet är."
+    ]
+  }
+}

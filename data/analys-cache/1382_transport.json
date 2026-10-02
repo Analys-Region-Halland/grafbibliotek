@@ -1,0 +1,29 @@
+{
+  "hash": "eb0879c288163a116a11551c2dea5468",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Kollektivtrafiken når många i Falkenberg men få nya bostäder",
+    "ingress": "Falkenberg har näst störst andel invånare nära en trafikerad hållplats i Halland och en pendlingskvot på 0,92, över länet men under riket. Det nya bostadsbyggandet följer inte samma mönster: en klart mindre andel av de nya bostäderna ligger kollektivtrafiknära än i länet och riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Många bor nära kollektivtrafik",
+        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter är 77,2 procent, näst högst i Halland och 0,4 procentenheter över länet."
+      },
+      {
+        "ledtext": "Få nya bostäder kollektivtrafiknära",
+        "text": "Av de nytillkomna bostäderna ligger 36,4 procent i kollektivtrafiknära läge, 55,0 procentenheter under riket och lägst i kommunens serie."
+      },
+      {
+        "ledtext": "Många laddpunkter, färre elbilar",
+        "text": "Kommunen har 554 publika laddpunkter, näst flest av de halländska kommuner som redovisas, medan elbilarna utgör 5,89 procent av personbilarna mot 8,59 procent i riket."
+      }
+    ],
+    "stycken": [
+      "Falkenbergs invånare har jämförelsevis nära till kollektivtrafiken. Andelen som har en trafikerad hållplats inom 500 meter är 77,2 procent, vilket bara Halmstad överträffar i länet, även om nivån ligger 3,7 procentenheter under riket. Utanför tätorterna är andelen 25,7 procent, 5,8 procentenheter över riket. Pendlingskvoten är 0,92, över länets 0,87 men under rikets 0,99, vilket betyder att kommunen har något färre arbetstillfällen än sysselsatta invånare. Av de sysselsatta invånarna pendlar 28,5 procent ut.",
+      "Det nya bostadsbyggandet drar åt ett annat håll. Av de bostäder som tillkommit under den senaste treårsperioden ligger 36,4 procent i kollektivtrafiknära läge, mot 81,5 procent i länet och 91,4 procent i riket. Så sent som 2022 var andelen 93,9 procent, och bara det senaste året sjönk den med 23,6 procentenheter. I Halmstad och Kungsbacka är andelen 95,7 respektive 93,6 procent, och i Halland har endast Hylte en lägre andel. Biltätheten, 557,2 personbilar per 1 000 invånare, ligger 82,0 över riket och är tredje högst i länet.",
+      "Förändringen kan hänga samman med var det har funnits mark att bygga på. Om nya bostadsområden läggs i tätorternas utkanter eller i mindre orter med glesare trafik hamnar fler hushåll långt från en hållplats, och eftersom måttet avser en treårsperiod kan enskilda större projekt slå igenom kraftigt. Samtidigt har Falkenberg 554 publika laddpunkter, plats 16 av 217 kommuner i landet, medan elbilsandelen ligger under riket, vilket pekar på att laddinfrastrukturen ensam inte avgör omställningen av bilparken. För planeringen betyder det att de nya bostädernas läge får stor betydelse för om den förhållandevis höga tillgången till kollektivtrafik kan behållas."
+    ]
+  }
+}

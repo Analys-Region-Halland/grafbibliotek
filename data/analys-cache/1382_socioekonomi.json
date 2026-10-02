@@ -1,0 +1,29 @@
+{
+  "hash": "874ad718ed732f955d57c68ba97ffa46",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Falkenberg har länets högsta sjukfrånvaro, särskilt bland kvinnor",
+    "ingress": "I Falkenberg tar invånarna i arbetsför ålder ut fler dagar med sjukpenning och sjukersättning än i någon annan halländsk kommun, och den kortare sjukskrivningen har ökat mer än i riket sedan 2020, även om den minskade något det senaste året. Samtidigt uppger färre stress än i riket, och männens medellivslängd är längre än rikets.",
+    "i_korthet": [
+      {
+        "ledtext": "Högst ohälsotal i Halland",
+        "text": "Ohälsotalet var 24,5 dagar per person 2025, 2,5 dagar över riket och 3,3 dagar över länet."
+      },
+      {
+        "ledtext": "Sjukskrivningarna har ökat sedan 2020",
+        "text": "Sjukpenningtalet steg med 1,7 dagar på fem år till 11,8 dagar, medan riket ökade med 0,8 dagar, men det minskade med 0,4 dagar det senaste året."
+      },
+      {
+        "ledtext": "Inkomsten under länet och riket",
+        "text": "Medianinkomsten var 327,1 tusen kronor 2024, 12,5 tusen kronor under riket och 21,4 tusen kronor under länet."
+      }
+    ],
+    "stycken": [
+      "Falkenberg har den största sjukfrånvaron bland Hallands kommuner. Ohälsotalet, alltså antalet ersatta dagar med sjukpenning, rehabiliteringspenning och sjuk- eller aktivitetsersättning per person 16–64 år, var 24,5 dagar 2025, 2,5 dagar över riket och 3,3 dagar över länet. På tio år har talet sjunkit med 4,3 dagar, mot 6,0 i riket. Den kortare sjukskrivningen har ökat: sjukpenningtalet steg med 1,7 dagar sedan 2020 till 11,8, medan riket ökade med 0,8 dagar, men det senaste året minskade det med 0,4 dagar från seriens högsta nivå.",
+      "Mönstret gäller både kvinnor och män men är tydligast bland kvinnor. Kvinnornas ohälsotal var 29,7 dagar, 4,4 dagar över länet, och männens 19,6 dagar, 2,4 dagar över länet, båda högst i Halland. Andra hälsomått ger en blandad bild. Medellivslängden för män är 82,9 år, 1,1 år över riket, och andelen som uppger stress är 12,5 procent mot 15,9 procent i riket. Andelen med god självskattad hälsa, 71,1 procent, är i nivå med riket men under länets 75,0 procent.",
+      "Att sjukfrånvaron sticker ut mer än flera andra hälsomått kan spegla hur arbetsmarknaden ser ut. Om en större del av de sysselsatta arbetar i livsmedels- och tillverkningsindustrin, där arbetet kan vara fysiskt krävande, kan besvär oftare leda till sjukskrivning än i kommuner med fler kontorsjobb. Inkomsterna ligger under länet men är jämnare fördelade än i flertalet halländska kommuner: ginikoefficienten för förvärvsinkomst, 0,34, är tillsammans med Varbergs den lägsta i Halland. Andelen vuxna med varaktigt låg ekonomisk standard är 6,3 procent, under rikets 7,1 men över länets 5,4. För planeringen pekar det mot arbetsmiljö och återgång i arbete efter sjukskrivning som en central fråga."
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "hash": "cd326c9c53e83c083df7ddff1cdb0bbe",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Hylte kör långt och har länets lägsta andel elbilar",
+    "ingress": "I Hylte bor en mindre andel av invånarna nära en hållplats med regelbunden trafik än i någon annan halländsk kommun, och bilinnehav och körsträckor ligger över länet. Samtidigt har omställningen av bilparken kommit kortare än i länet och riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Lägst andel nära en hållplats",
+        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter var 60,7 procent 2024, 16,1 procentenheter under länet och 20,2 under riket."
+      },
+      {
+        "ledtext": "Fler bilar och längre körsträckor",
+        "text": "Hylte hade 569,1 personbilar per 1 000 invånare 2025, 93,9 fler än riket, och invånarna körde i genomsnitt 762,2 mil per person 2024."
+      },
+      {
+        "ledtext": "Elbilsandelen lägst i Halland",
+        "text": "Rena elbilar utgjorde 4,27 procent av personbilarna 2025, mot 8,09 procent i länet och 8,59 procent i riket."
+      }
+    ],
+    "stycken": [
+      "Bilen har en starkare ställning i Hylte än i länet och riket. Kommunen hade 569,1 personbilar per 1 000 invånare 2025, 93,9 fler än riket. Invånarna körde i genomsnitt 762,2 mil per person 2024, 137,4 mil mer än i riket. Samtidigt bor 60,7 procent av befolkningen inom 500 meter från en hållplats med minst en avgång i timmen, den lägsta andelen i länet. Utanför tätorterna gäller det 13,1 procent, mot 84,5 procent inom tätort.",
+      "Omställningen av bilparken har kommit kortare i Hylte än i resten av Halland. Rena elbilar utgjorde 4,27 procent av personbilarna 2025, lägst i länet, mot 8,59 procent i riket. Under fem år har andelen ökat med 3,36 procentenheter mot 7,46 i riket, vilket betyder att avståndet till landet har vuxit. Andelen fossiloberoende bilar, 18,2 procent, är också lägst i länet, och kommunen har färst laddpunkter i länet.",
+      "Mönstret hänger sannolikt samman med att Hylte är en gles inlandskommun där avstånden till arbete och service är långa. Pendlingen går åt båda hållen: 29,9 procent av dem som arbetar i Hylte bor i en annan kommun, den högsta andelen i länet, och 33,1 procent av de sysselsatta invånarna arbetar utanför kommunen. Om resorna går mellan orter med glesa förbindelser blir bilen det praktiska valet, och få laddpunkter kan göra elbilen till ett mindre självklart alternativ. För planeringen pekar siffrorna på att bostädernas läge spelar roll: av de bostäder som tillkommit under den senaste treårsperioden ligger 20,0 procent i kollektivtrafiknära läge, mot 81,5 procent i länet. Byggandet är litet, så andelen kan svänga kraftigt mellan perioderna."
+    ]
+  }
+}

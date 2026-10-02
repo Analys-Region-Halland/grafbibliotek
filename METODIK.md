@@ -64,7 +64,7 @@ kommundata/
 │   │
 │   ├── kap01-hamta.R               # Steg 1: Hämta rådata (alla teman)
 │   ├── kap02-bearbeta.R            # Steg 2: Bearbeta data (alla teman)
-│   ├── kap03-ai-analys.R           # Steg 3: AI-analystexter (ej refaktorerad ännu)
+│   ├── kap03-ai-analys.R           # Steg 3: underlag + kontroll av analystexter
 │   └── kap04-exportera.R           # Steg 4: Exportera till JSON + tema-config
 │
 ├── data/                           # Genererade datafiler (gitignore:ade)
@@ -597,10 +597,9 @@ Per tema:
 
 ### Steg 3: AI-analys (kap03-ai-analys.R)
 
-*Ej refaktorerad till ny temastruktur ännu.*
-
-- Generera analystexter per kommun via Claude API (Haiku 4.5)
-- En analys per temaområde per kommun
+- En analys per tema och enhet (Halland + sex kommuner) och en översikt per enhet
+- Underlag ur bearbetad data, siffror kontrolleras mot underlaget, cache per hash
+- Se CLAUDE.md avsnitt "AI-analys" och R/analys/systemprompt.md
 
 ### Steg 4: Exportera (kap04-exportera.R)
 
@@ -712,12 +711,12 @@ Implementeras genom att skapa `R/teman/<tema_id>/config.R` +
 
 ## 9. AI-analys — specifikation
 
-### 9.1 Modell
-- **Primär:** Claude Haiku 4.5 (`claude-haiku-4-5-20251001`)
-- **Budget:** Max $10/månad
-- **Uppskattad kostnad:** ~54 anrop × ~4 000 tokens = ~$1–2 per körning
+### 9.1 Arbetssätt
+- Texterna skrivs av Claude Code i en session (Max-planen), inte via API. kap03 bygger
+  underlag och uppdragslista, Claude Code skriver, kap03 kontrollerar och sammanställer.
+  Se CLAUDE.md avsnitt "AI-analys".
 
-### 9.2 Systemprompt (sammanfattad)
+### 9.2 Systemprompt (sammanfattad; fullständig i R/analys/systemprompt.md)
 - Saklig, resonerande ton — public policy-text
 - Siffror i kontext via jämförelser (rikssnitt, grannkommuner)
 - Förklara varför, inte bara vad

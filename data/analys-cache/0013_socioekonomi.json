@@ -1,0 +1,29 @@
+{
+  "hash": "78d220318a115203414d360c779d26ff",
+  "period": "2024",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Hälsa och inkomster över rikets nivå, med tydliga kommunskillnader",
+    "ingress": "Hallänningarna bedömer oftare sin hälsa som god, lever längre och har högre medianinkomst än invånarna i riket, och männens medellivslängd är den högsta i landet. Bakom länssnittet finns en tydlig skillnad mellan Kungsbacka och Hylte, och skillnaden mot riket i inkomst och ohälsotal har minskat något de senaste fem åren.",
+    "i_korthet": [
+      {
+        "ledtext": "Högst andel med god hälsa",
+        "text": "Av invånarna 16–84 år bedömde 75,0 procent sin hälsa som god 2024, högst bland landets 21 regioner och 4,0 procentenheter över riket."
+      },
+      {
+        "ledtext": "Männen lever längst i landet",
+        "text": "Medellivslängden för män var 82,7 år 2025, högst i landet och 0,9 år över riket."
+      },
+      {
+        "ledtext": "Tydlig inkomstskillnad mellan kommunerna",
+        "text": "Medianinkomsten var 406,3 tusen kronor i Kungsbacka och 302,5 tusen kronor i Hylte 2024, mot 348,5 tusen kronor i länet."
+      }
+    ],
+    "stycken": [
+      "Halland ligger över riket på flera mått samtidigt: självskattad hälsa, livslängd och ekonomisk standard. Andelen som bedömer sin hälsa som god är 75,0 procent, högst bland landets 21 regioner, och medellivslängden för män, 82,7 år, är den högsta i landet. Förtida dödlighet, alltså dödsfall före 65 års ålder, var 153,7 per 100 000 invånare 25–64 år, mot 173,0 i riket. Medianinkomsten efter skatt, justerad för hushållets storlek, var 348,5 tusen kronor 2024 och näst högst i landet, och andelen vuxna med varaktigt låg ekonomisk standard, 5,4 procent, var lägst av alla regioner.",
+      "Länssnittet rymmer en tydlig skillnad mellan Kungsbacka i norr och Hylte i inlandet. Medianinkomsten var 406,3 tusen kronor i Kungsbacka och 302,5 i Hylte, och andelen vuxna med varaktigt låg ekonomisk standard var 2,7 procent mot 10,3 procent. Samma ordning syns i hälsan: förtida dödlighet var 124,1 per 100 000 i Kungsbacka och 219,6 i Hylte, och männens medellivslängd var 83,7 respektive 80,0 år.",
+      "Mönstret hänger sannolikt samman med var invånarna arbetar: om många i norra Halland pendlar till Göteborgs arbetsmarknad kan det lyfta inkomsterna och de förutsättningar för hälsa som följer med dem. Skillnaden mot riket har minskat något: medianinkomsten ökade med 0,6 tusen kronor på fem år mot 1,9 i riket, och ohälsotalet steg med 0,1 dagar medan det sjönk med 0,6 i riket. Andelen som uppger stress har ökat från 9,4 till 16,8 procent på tio år, men skillnaden mot rikets 15,9 procent ligger inom enkätens felmarginal. För planeringen pekar siffrorna på att ekonomisk utsatthet och förtida dödlighet är vanligast i Hylte, Halmstad och Laholm."
+    ]
+  }
+}

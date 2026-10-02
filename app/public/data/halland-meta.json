@@ -2,7 +2,7 @@
   {
     "kpi_id": "S_SYSS_TOT",
     "kpi_namn": "Sysselsättningsgrad",
-    "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_TOT_N"
@@ -10,7 +10,7 @@
   {
     "kpi_id": "S_SYSS_TOT_N",
     "kpi_namn": "Antal sysselsatta",
-    "beskrivning": "Antal sysselsatta 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal sysselsatta 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_TOT"
@@ -18,7 +18,7 @@
   {
     "kpi_id": "S_ARKR_TOT",
     "kpi_namn": "Andel i arbetskraften",
-    "beskrivning": "Andel av befolkningen 20–64 år som ingår i arbetskraften (sysselsatta + arbetslösa). Källa: SCB RAMS.",
+    "beskrivning": "Andel av befolkningen 20–64 år som ingår i arbetskraften (sysselsatta + arbetslösa). Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_TOT_N"
@@ -26,7 +26,7 @@
   {
     "kpi_id": "S_ARKR_TOT_N",
     "kpi_namn": "Antal i arbetskraften",
-    "beskrivning": "Antal personer 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Antal personer 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_TOT"
@@ -34,7 +34,7 @@
   {
     "kpi_id": "S_ARBL_TOT",
     "kpi_namn": "Arbetslöshetsgrad",
-    "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_TOT_N"
@@ -42,7 +42,7 @@
   {
     "kpi_id": "S_ARBL_TOT_N",
     "kpi_namn": "Antal arbetslösa",
-    "beskrivning": "Antal arbetslösa 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal arbetslösa 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_TOT"
@@ -50,7 +50,7 @@
   {
     "kpi_id": "S_SYSS_INR",
     "kpi_namn": "Sysselsättningsgrad, inrikes födda",
-    "beskrivning": "Andel sysselsatta bland inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel sysselsatta bland inrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_INR_N"
@@ -58,7 +58,7 @@
   {
     "kpi_id": "S_SYSS_INR_N",
     "kpi_namn": "Antal sysselsatta, inrikes födda",
-    "beskrivning": "Antal sysselsatta inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal sysselsatta inrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_INR"
@@ -66,7 +66,7 @@
   {
     "kpi_id": "S_ARKR_INR",
     "kpi_namn": "Andel i arbetskraften, inrikes födda",
-    "beskrivning": "Andel inrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Andel inrikes födda 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_INR_N"
@@ -74,7 +74,7 @@
   {
     "kpi_id": "S_ARKR_INR_N",
     "kpi_namn": "Antal i arbetskraften, inrikes födda",
-    "beskrivning": "Antal inrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Antal inrikes födda 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_INR"
@@ -82,7 +82,7 @@
   {
     "kpi_id": "S_ARBL_INR",
     "kpi_namn": "Arbetslöshetsgrad, inrikes födda",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_INR_N"
@@ -90,7 +90,7 @@
   {
     "kpi_id": "S_ARBL_INR_N",
     "kpi_namn": "Antal arbetslösa, inrikes födda",
-    "beskrivning": "Antal arbetslösa inrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal arbetslösa inrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_INR"
@@ -98,7 +98,7 @@
   {
     "kpi_id": "S_SYSS_UTR",
     "kpi_namn": "Sysselsättningsgrad, utrikes födda",
-    "beskrivning": "Andel sysselsatta bland utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel sysselsatta bland utrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_UTR_N"
@@ -106,7 +106,7 @@
   {
     "kpi_id": "S_SYSS_UTR_N",
     "kpi_namn": "Antal sysselsatta, utrikes födda",
-    "beskrivning": "Antal sysselsatta utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal sysselsatta utrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_UTR"
@@ -114,7 +114,7 @@
   {
     "kpi_id": "S_ARKR_UTR",
     "kpi_namn": "Andel i arbetskraften, utrikes födda",
-    "beskrivning": "Andel utrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Andel utrikes födda 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_UTR_N"
@@ -122,7 +122,7 @@
   {
     "kpi_id": "S_ARKR_UTR_N",
     "kpi_namn": "Antal i arbetskraften, utrikes födda",
-    "beskrivning": "Antal utrikes födda 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Antal utrikes födda 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_UTR"
@@ -130,7 +130,7 @@
   {
     "kpi_id": "S_ARBL_UTR",
     "kpi_namn": "Arbetslöshetsgrad, utrikes födda",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_UTR_N"
@@ -138,7 +138,7 @@
   {
     "kpi_id": "S_ARBL_UTR_N",
     "kpi_namn": "Antal arbetslösa, utrikes födda",
-    "beskrivning": "Antal arbetslösa utrikes födda 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal arbetslösa utrikes födda 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_UTR"
@@ -146,7 +146,7 @@
   {
     "kpi_id": "S_SYSS_KV",
     "kpi_namn": "Sysselsättningsgrad, kvinnor",
-    "beskrivning": "Andel sysselsatta kvinnor 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel sysselsatta kvinnor 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_KV_N"
@@ -154,7 +154,7 @@
   {
     "kpi_id": "S_SYSS_KV_N",
     "kpi_namn": "Antal sysselsatta, kvinnor",
-    "beskrivning": "Antal sysselsatta kvinnor 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal sysselsatta kvinnor 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_KV"
@@ -162,7 +162,7 @@
   {
     "kpi_id": "S_ARKR_KV",
     "kpi_namn": "Andel i arbetskraften, kvinnor",
-    "beskrivning": "Andel kvinnor 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Andel kvinnor 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_KV_N"
@@ -170,7 +170,7 @@
   {
     "kpi_id": "S_ARKR_KV_N",
     "kpi_namn": "Antal i arbetskraften, kvinnor",
-    "beskrivning": "Antal kvinnor 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Antal kvinnor 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_KV"
@@ -178,7 +178,7 @@
   {
     "kpi_id": "S_ARBL_KV",
     "kpi_namn": "Arbetslöshetsgrad, kvinnor",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland kvinnor 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland kvinnor 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_KV_N"
@@ -186,7 +186,7 @@
   {
     "kpi_id": "S_ARBL_KV_N",
     "kpi_namn": "Antal arbetslösa, kvinnor",
-    "beskrivning": "Antal arbetslösa kvinnor 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal arbetslösa kvinnor 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_KV"
@@ -194,7 +194,7 @@
   {
     "kpi_id": "S_SYSS_MAN",
     "kpi_namn": "Sysselsättningsgrad, män",
-    "beskrivning": "Andel sysselsatta män 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel sysselsatta män 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_MAN_N"
@@ -202,7 +202,7 @@
   {
     "kpi_id": "S_SYSS_MAN_N",
     "kpi_namn": "Antal sysselsatta, män",
-    "beskrivning": "Antal sysselsatta män 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal sysselsatta män 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_SYSS_MAN"
@@ -210,7 +210,7 @@
   {
     "kpi_id": "S_ARKR_MAN",
     "kpi_namn": "Andel i arbetskraften, män",
-    "beskrivning": "Andel män 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Andel män 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_MAN_N"
@@ -218,7 +218,7 @@
   {
     "kpi_id": "S_ARKR_MAN_N",
     "kpi_namn": "Antal i arbetskraften, män",
-    "beskrivning": "Antal män 20–64 år i arbetskraften. Källa: SCB RAMS.",
+    "beskrivning": "Antal män 20–64 år i arbetskraften. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARKR_MAN"
@@ -226,7 +226,7 @@
   {
     "kpi_id": "S_ARBL_MAN",
     "kpi_namn": "Arbetslöshetsgrad, män",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland män 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Andel arbetslösa av arbetskraften bland män 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "procent",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_MAN_N"
@@ -234,7 +234,7 @@
   {
     "kpi_id": "S_ARBL_MAN_N",
     "kpi_namn": "Antal arbetslösa, män",
-    "beskrivning": "Antal arbetslösa män 20–64 år. Källa: SCB RAMS.",
+    "beskrivning": "Antal arbetslösa män 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
     "enhet": "antal",
     "tema": "arbetsmarknad",
     "par_kpi_id": "S_ARBL_MAN"
@@ -953,113 +953,113 @@
   },
   {
     "kpi_id": "N00401",
-    "kpi_namn": "Utsläpp till luft av växthusgaser totalt, ton CO2-ekv/inv",
-    "beskrivning": "Totala emissioner av växthusgaser inom det geografiska området delat med invånare i ton CO2-ekvivalenter. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen per invånare ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen och SCB\\n",
+    "kpi_namn": "Växthusgasutsläpp totalt, ton CO2-ekv/inv",
+    "beskrivning": "Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mätt i ton koldioxidekvivalenter per invånare. Måttet inkluderar koldioxid, metan och lustgas från alla sektorer. Lägre värden innebär lägre klimatpåverkan per person. Källa: Nationella emissionsdatabasen via RKA Kolada.",
     "enhet": "ton CO2/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N07702"
   },
   {
-    "kpi_id": "N00403",
-    "kpi_namn": "Ekologiskt brukad åkermark, andel (%)",
-    "beskrivning": "Ekologiskt brukad åkermark som andel av total areal åkermark (%). Med ekologiskt odlad åkermark avses arealer jordbruksmark som brukas med ekologiska produktionsmetoder och som uppfyller kraven enligt Rådets förordning (EG) nr 834/2007 om ekologisk produktion och märkning av ekologiska produkter. OBS: Andelar som överstiger 100% klassificeras som bortfall. Detta kan förekomma då de två uppgifterna hämtas ur två olika källor. Total jordbruksmark hämtas ur Jordbruksverkets Lantbruksregister, där marken registreras i den kommun den är belägen i. Uppgifter om ekologisk brukad mark får Jordbruksverket från de kontrollorgan som kontrollerar jordbrukarnas efterlevnad av regelverket. Där registreras endast en kommunkod för hela företaget, även om ett företag kan ha areal i mer än den kommun som kontrollorganet anger. Tolka därför kommunvärdena och det ovägda kommunmedelvärdet för detta nyckeltal med försiktighet. Källa: Jordbruksverket.",
-    "enhet": "procent",
-    "tema": "miljo_klimat"
-  },
-  {
     "kpi_id": "N07702",
-    "kpi_namn": "Utsläpp till luft av växthusgaser totalt, ton CO2-ekv",
-    "beskrivning": "Totala emissioner av växthusgaser inom det geografiska området i ton CO2-ekvivalenter. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Totalen inkluderar ytterligare poster som vi inte redovisar i Kolada. Utsläppen ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen",
+    "kpi_namn": "Växthusgasutsläpp totalt, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mätt i ton koldioxidekvivalenter. Måttet inkluderar samtliga sektorer: transporter, industri, jordbruk, uppvärmning med mera. Källa: Nationella emissionsdatabasen via RKA Kolada.",
     "enhet": "ton CO2",
     "tema": "miljo_klimat",
     "par_kpi_id": "N00401"
   },
   {
-    "kpi_id": "N45913",
-    "kpi_namn": "Slutanvändning av energi inom transporter inom det geografiska området, MWh/inv",
-    "beskrivning": "Slutanvändning av energi mätt i megawattimmar (MWh) dividerat med antalet invånare i kommunen. Avser slutanvändning som sker inom transporter, oavsett bränsletyp, inom det geografiska områdets gränser. För att SCB ska kunna publicera uppgifter krävs samtycke från exempelvis industrin i kommunen, har sådant inte kunnat inhämtas får kommunen istället sekretess. Källa: Energimyndigheten och SCB.",
-    "enhet": "MWh/inv",
-    "tema": "miljo_klimat",
-    "par_kpi_id": "N45945"
-  },
-  {
-    "kpi_id": "N45925",
-    "kpi_namn": "Elproduktion av förnybara energikällor inom det geografiska området, andel (%)",
-    "beskrivning": "Andel förnybar elproduktion. Elproduktion av vatten-, vindkraft, samt förnybara bränslen, dividerat med total elproduktion. Från och med 2021 ingår även solkraft. Oavsett producent, produktion i megawattimmar (MWh), inom det geografiska områdets gränser. För att skatta produktion av förnybara bränslen, har andel förnybar bränsleanvändning vid elproduktion använts. Källa: Energimyndigheten och SCB.",
-    "enhet": "procent",
-    "tema": "miljo_klimat"
-  },
-  {
-    "kpi_id": "N45945",
-    "kpi_namn": "Slutanvändning av energi inom transporter inom det geografiska området, MWh",
-    "beskrivning": "Slutanvändning av energi mätt i megawattimmar (MWh). Avser slutanvändning som sker inom transporter, oavsett bränsletyp, inom det geografiska områdets gränser. För att SCB ska kunna publicera uppgifter krävs samtycke från exempelvis industrin i kommunen, har sådant inte kunnat inhämtas får kommunen istället sekretess. Källa: Energimyndigheten och SCB.",
-    "enhet": "MWh",
-    "tema": "miljo_klimat",
-    "par_kpi_id": "N45913"
-  },
-  {
-    "kpi_id": "N85072",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, egen uppvärmning, ton CO2e/inv",
-    "beskrivning": "Totala emissioner av växthusgaser från egen uppvärmning av bostäder och lokaler delat med invånare i ton CO2-ekvivalenter. Egen uppvärmning inkluderar uppvärmning av bostäder, Kommersiella och offentliga lokaler samt Jordbruks- och skogsbrukslokaler. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen per invånare ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen och SCB\\n",
-    "enhet": "ton CO2/inv",
-    "tema": "miljo_klimat",
-    "par_kpi_id": "N85532"
-  },
-  {
     "kpi_id": "N85073",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, transporter, ton CO2e/inv",
-    "beskrivning": "Totala emissioner av växthusgaser från transporter inom det geografiska området, ton CO2e per invånare. Transporter inkluderar personbilar, lastbilar, järnväg, mopeder/motorcyklar, bussar, inkrikes flygtrafik, inrikes civil sjöfart, militär transport men också emissionerna från slitaget från däck, bromsar, vägbanan och avdunstningen från vägfordon. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen per invånare ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen och SCB\\n",
+    "kpi_namn": "Växthusgasutsläpp transporter, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från inrikes transporter per invånare. Inkluderar vägtrafik, sjöfart, flyg, järnväg och arbetsmaskiner inom kommunens gräns. Kommuner med stor genomfartstrafik tenderar att ha högre värden. Källa: Nationella emissionsdatabasen via RKA Kolada.",
     "enhet": "ton CO2/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85533"
   },
   {
-    "kpi_id": "N85077",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, industri, ton CO2e/inv",
-    "beskrivning": "Totala emissioner av av växthusgaser från industrisektorn inom det geografiska området, ton CO2e per invånare. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen per invånare ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen och SCB\\n",
-    "enhet": "ton CO2/inv",
-    "tema": "miljo_klimat",
-    "par_kpi_id": "N85537"
-  },
-  {
-    "kpi_id": "N85078",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, jordbruk, ton CO2e/inv",
-    "beskrivning": "Totala emissioner av växthusgaser ifrån jordbrukssektorn inom det geografiska området, ton CO2e/inv. I Jordbrukssektorn ingår emissioner ifrån olika typer av gödsel, djurs matsmältning, kalkning av åkermark, odling av organogena- och mineraljordar samt indirekta utsläpp av lustgas från brukad mark. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen per invånare ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen och SCB\\n",
-    "enhet": "ton CO2/inv",
-    "tema": "miljo_klimat",
-    "par_kpi_id": "N85538"
-  },
-  {
-    "kpi_id": "N85532",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, egen uppvärmning, ton CO2e",
-    "beskrivning": "Totala emissioner av växthusgaser ifrån egen uppvärmning av bostäder och lokaler inom det geografiska området, ton CO2e. Egen uppvärmning inkluderar uppvärmning av bostäder, Kommersiella och offentliga lokaler samt Jordbruks- och skogsbrukslokaler. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen",
-    "enhet": "ton CO2",
-    "tema": "miljo_klimat",
-    "par_kpi_id": "N85072"
-  },
-  {
     "kpi_id": "N85533",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, transporter, ton CO2e",
-    "beskrivning": "Totala emissioner av växthusgaser ifrån transporter inom det geografiska området, ton CO2e. Transporter inkluderar personbilar, lastbilar, järnväg, mopeder/motorcyklar, bussar, inkrikes flygtrafik, inrikes civil sjöfart, militär transport men också emissionerna ifrån slitaget från däck, bromsar, vägbanan och avdunstningen från vägfordon. Utsläpp av växthusgaser inom det geografiska området i ton CO2-ekvivalenter. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen",
+    "kpi_namn": "Växthusgasutsläpp transporter, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från inrikes transporter inom kommunens gräns. Inkluderar vägtrafik, sjöfart, flyg, järnväg och arbetsmaskiner. Källa: Nationella emissionsdatabasen via RKA Kolada.",
     "enhet": "ton CO2",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85073"
   },
   {
+    "kpi_id": "N85077",
+    "kpi_namn": "Växthusgasutsläpp industri, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från industriprocesser och industriell energianvändning per invånare. Enstaka stora anläggningar kan ge höga per capita-värden i mindre kommuner. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85537"
+  },
+  {
     "kpi_id": "N85537",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, industri, ton CO2e",
-    "beskrivning": "Totala emissioner av växthusgaser från industrisektorn inom det geografiska området, ton CO2e. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen",
+    "kpi_namn": "Växthusgasutsläpp industri, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från industriprocesser och industriell energianvändning inom kommunens gräns. Källa: Nationella emissionsdatabasen via RKA Kolada.",
     "enhet": "ton CO2",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85077"
   },
   {
+    "kpi_id": "N85078",
+    "kpi_namn": "Växthusgasutsläpp jordbruk, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från jordbruket per invånare. Inkluderar metan från djurhållning och lustgas från gödsling. Kommuner med omfattande jordbruk har typiskt högre värden. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85538"
+  },
+  {
     "kpi_id": "N85538",
-    "kpi_namn": "Utsläpp till luft av växthusgaser, jordbruk, ton CO2e",
-    "beskrivning": "Totala emissioner av växthusgaser ifrån jordbrukssektorn inom det geografiska området, ton CO2e. I Jordbrukssektorn ingår emissioner ifrån olika typer av gödsel, djurs matsmältning, kalkning av åkermark, odling av organogena- och mineraljordar samt indirekta utsläpp av lustgas från brukad mark. Växthusgaser totalt är det totala utsläppet av växthusgaser (CO2 med fossilt ursprung samt N2O, CH4, HFC, PFC, och SF6) omräknat till koldioxidekvivalenter. Utsläppen ska inte tolkas som konsumtionsbaserade utsläpp. Enskilda industriverksamheter kan leda till höga utsläpp lokalt, liksom vägtrafik på stamvägnätet eller en stor andel jordbruk. Nyckeltalet följer upp miljökvalitetsmålet Begränsad klimatpåverkan, se även sverigesmiljomal.se. Vid uppdatering av emissionsdata revideras tidsserien bakåt. Uppgifter för olika undersektorer kan vara osäkra på kommunnivå, se vidare Metodbeskrivning på den Nationella emissionsdatabasens hemsida. Källa: Nationella emissionsdatabasen",
+    "kpi_namn": "Växthusgasutsläpp jordbruk, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från jordbruket inom kommunens gräns. Inkluderar metan från djurhållning, lustgas från gödsling och koldioxid från kalkning. Källa: Nationella emissionsdatabasen via RKA Kolada.",
     "enhet": "ton CO2",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85078"
+  },
+  {
+    "kpi_id": "N85072",
+    "kpi_namn": "Växthusgasutsläpp uppvärmning, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från egen uppvärmning av bostäder och lokaler per invånare. Avser direkta utsläpp från förbränning av olja, gas och ved. Kommuner med utbyggd fjärrvärme har generellt lägre värden. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85532"
+  },
+  {
+    "kpi_id": "N85532",
+    "kpi_namn": "Växthusgasutsläpp uppvärmning, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från egen uppvärmning av bostäder och lokaler inom kommunens gräns. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85072"
+  },
+  {
+    "kpi_id": "N45913",
+    "kpi_namn": "Energianvändning transporter, MWh/inv",
+    "beskrivning": "Slutanvändning av energi i transportsektorn per invånare, mätt i megawattimmar. Inkluderar bensin, diesel, el och biodrivmedel för alla trafikslag inom kommunen. Lägre värden kan spegla effektivare transporter eller kortare körsträckor. Källa: SCB Kommunal energistatistik via RKA Kolada.",
+    "enhet": "MWh/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N45945"
+  },
+  {
+    "kpi_id": "N45945",
+    "kpi_namn": "Energianvändning transporter, MWh",
+    "beskrivning": "Total slutanvändning av energi i transportsektorn, mätt i megawattimmar. Inkluderar alla energislag för samtliga trafikslag inom kommunen. Källa: SCB Kommunal energistatistik via RKA Kolada.",
+    "enhet": "MWh",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N45913"
+  },
+  {
+    "kpi_id": "N45925",
+    "kpi_namn": "Förnybar elproduktion, andel",
+    "beskrivning": "Andel av den lokalt producerade elen som kommer från förnybara energikällor som vindkraft, vattenkraft och solenergi. Värdet kan överstiga 100 procent om kommunen producerar mer förnybar el än den totala elproduktionen inom dess gräns. Källa: SCB Kommunal energistatistik via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "miljo_klimat"
+  },
+  {
+    "kpi_id": "N00403",
+    "kpi_namn": "Ekologiskt brukad åkermark, andel",
+    "beskrivning": "Andel av kommunens totala åkermark som brukas ekologiskt, inklusive mark under omställning. Ekologiskt jordbruk innebär odling utan kemiska bekämpningsmedel och konstgödsel. Källa: Jordbruksverket via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "miljo_klimat"
   },
   {
     "kpi_id": "N00999",
@@ -1836,55 +1836,55 @@
     "par_kpi_id": "N_YRK_EGFOR_KV"
   },
   {
-    "kpi_id": "N00938",
-    "kpi_namn": "Sjukpenningtalet, 16–64 år, dagar/registrerad försäkrad",
-    "beskrivning": "Antal utbetalda dagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad i åldrarna 16-64 år (hela befolkningen) exklusive försäkrade med hel sjukersättning eller aktivitetsersättning (före år 2003 hel förtidspension eller helt sjukbidrag). Alla dagar är omräknade till nettodagar. \"sjuktalet 1.0\" hos försäkringskassan. Källa: Försäkringskassan.",
-    "enhet": "dagar",
+    "kpi_id": "N00956",
+    "kpi_namn": "Ginikoefficient, förvärvsinkomst",
+    "beskrivning": "Ginikoefficienten mäter ojämlikheten i förvärvsinkomster bland befolkningen 20 år och äldre. Värdet ligger mellan 0 och 1 där 0 innebär fullständig jämlikhet och 1 innebär att all inkomst tillfaller en enda person. Högre värden indikerar större inkomstspridning i kommunen. Källa: SCB via RKA Kolada.",
+    "enhet": "index",
     "tema": "socioekonomi"
   },
   {
-    "kpi_id": "N00956",
-    "kpi_namn": "Ginikoefficient - förvärvsinkomst, index",
-    "beskrivning": "Ginikoefficienten har ett värde mellan noll (0) och ett (1). 0 innebär att alla individer har exakt lika stora tillgångar (dvs total jämlikhet) medan 1 innebär total ojämlikhet. Bygger på sammanräknad förvärvsinkomst på individnivå. Källa: SCB.",
+    "kpi_id": "N00997",
+    "kpi_namn": "Ginikoefficient, disponibel inkomst",
+    "beskrivning": "Ginikoefficienten mäter ojämlikheten i hushållens disponibla inkomster, det vill säga inkomster efter skatt och transfereringar, justerat för hushållets storlek. Disponibel inkomst ger en mer rättvisande bild av den faktiska köpkraften än förvärvsinkomst. Källa: SCB via RKA Kolada.",
     "enhet": "index",
     "tema": "socioekonomi"
   },
   {
     "kpi_id": "N00957",
-    "kpi_namn": "Ohälsotal, dagar",
-    "beskrivning": "Ohälsotalet är ett mått på utbetalda dagar med sjukpenning, arbetsskadesjukpenning, rehabiliteringspenning, aktivitets- och sjukersättning från socialförsäkringen. Ohälsotalet beräknas genom att summa dagar med sjukpenning, arbetsskadesjukpenning, rehabiliteringspenning samt dagar med aktivitets- och sjukersättning divideras med befolkningen i åldern 16-64 år. Källa: Försäkringskassan.",
+    "kpi_namn": "Ohälsotal",
+    "beskrivning": "Ohälsotalet mäter det genomsnittliga antalet utbetalda dagar med sjukpenning, rehabiliteringspenning och sjuk- eller aktivitetsersättning per person 16–64 år under ett år. Måttet ger en samlad bild av sjukfrånvaron i kommunen. Höga värden kan spegla hälsoproblem, arbetsmarknadsförhållanden eller socioekonomiska faktorer. Källa: Försäkringskassan via RKA Kolada.",
     "enhet": "dagar",
     "tema": "socioekonomi"
   },
   {
-    "kpi_id": "N00997",
-    "kpi_namn": "Ginikoefficient – hushållens disponibla inkomster, index",
-    "beskrivning": "För att redovisa ojämnheten i inkomstfördelningen används gini-koefficienten. Koefficienten kan anta ett värde mellan 0 och 1. Ett högt värde på koefficienten visar på större ojämnhet än ett lågt värde. Gini-koefficienten avser disponibel inkomst per konsumtionsenhet. Disponibel inkomst är summan av alla skattepliktiga och skattefria inkomster minus skatt och övriga negativa transfereringar. Konsumtionsenhet avser ett viktsystem där konsumtionen är relaterad till hushållets sammansättning. Den disponibla inkomsten divideras med den konsumtionsvikt som gäller för hushållet. Källa: SCB.",
-    "enhet": "index",
+    "kpi_id": "N00938",
+    "kpi_namn": "Sjukpenningtal",
+    "beskrivning": "Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad person 16–64 år, exklusive försäkrade med hel sjukersättning. Till skillnad från ohälsotalet fångar sjukpenningtalet bara den kortare sjukfrånvaron och är därmed ett mer direkt mått på pågående sjukskrivning. Källa: Försäkringskassan via RKA Kolada.",
+    "enhet": "dagar",
+    "tema": "socioekonomi"
+  },
+  {
+    "kpi_id": "N33820",
+    "kpi_namn": "Psykisk ohälsa bland barn och unga",
+    "beskrivning": "Andel barn och unga 0–19 år med psykisk ohälsa, baserat på ett index som kombinerar uthämtad psykofarmaka, psykiatrisk diagnos och slutenvård vid psykiatrisk klinik. Ett högre värde innebär att en större andel av barn och unga har vårdkontakter eller läkemedelsbehandling för psykisk ohälsa. Källa: Socialstyrelsen via RKA Kolada.",
+    "enhet": "procent",
     "tema": "socioekonomi"
   },
   {
     "kpi_id": "N31001",
     "kpi_namn": "Kostnad ekonomiskt bistånd, kr/inv",
-    "beskrivning": "Bruttokostnad minus interna intäkter och försäljning till andra kommuner och regioner för ekonomiskt bistånd (inkl. utredningskostnader), dividerad med antal invånare totalt den 31/12. Försörjningsstöd till flyktinghushåll ingår inte. Källa: SCB.",
+    "beskrivning": "Kommunens totala kostnad för ekonomiskt bistånd (försörjningsstöd) per invånare. Ekonomiskt bistånd är samhällets yttersta skyddsnät och beviljas när enskilda inte kan försörja sig genom arbete, sjukförsäkring eller andra inkomster. Höga kostnader kan spegla arbetsmarknadsläget, bostadssituationen och befolkningens sammansättning. Källa: Socialstyrelsen via RKA Kolada.",
     "enhet": "kr/inv",
     "tema": "socioekonomi",
     "par_kpi_id": "N31910"
   },
   {
     "kpi_id": "N31910",
-    "kpi_namn": "Biståndshushåll, ekonomiskt bistånd, antal",
-    "beskrivning": "Hushåll som har fått ekonomiskt bistånd under året, antal. Som ett hushåll räknas: ensamstående med eller utan hemmavarande barn, sammanboende med eller utan hemmavarande barn. Med sammanboende jämställs sambo, registrerad partner, maka eller make. Hemmavarande barn över 18 år som inte går i gymnasiet och andra vuxna som bor i bostaden, t.ex. mor- och farföräldrar, bildar egna hushåll.  Ekonomiskt bistånd är det begrepp som täcker all ekonomisk hjälp enligt socialtjänstlagen. Försörjningsstöd är en del av det ekonomiska biståndet och avser de vnligaste och regelbundet återkommande levnadskostnaderna. Källa: Socialstyrelsen",
+    "kpi_namn": "Biståndshushåll, antal",
+    "beskrivning": "Antal hushåll i kommunen som någon gång under året mottagit ekonomiskt bistånd (försörjningsstöd). Antalet ger en bild av hur stor del av befolkningen som befinner sig i ekonomisk utsatthet och behöver samhällets stöd för sin försörjning. Källa: Socialstyrelsen via RKA Kolada.",
     "enhet": "antal",
     "tema": "socioekonomi",
     "par_kpi_id": "N31001"
-  },
-  {
-    "kpi_id": "N33820",
-    "kpi_namn": "Psykisk ohälsa bland barn och unga, andel (%)",
-    "beskrivning": "Antal personer 0-19 år med psykisk ohälsa dividerat med medelbefolkning 0-19 år. Psykisk ohälsa tas fram genom ett index som beskriver om individen under det aktuella året uppfyller minst en av följande: utskriven och uthämtad psykofarma (se definitioner), diagnostiserats med diagnos inom psykisk ohälsa F10-F99 eller vårdats på psykiatrisk klinik (MVO 9). Medelbefolkning avser den genomsnittliga folkbokförda befolkningen enligt befolkningsregister från SCB, per den 1 januari och 31 decemeber aktuellt år. Källa: Socialstyrelsen",
-    "enhet": "procent",
-    "tema": "socioekonomi"
   },
   {
     "kpi_id": "F_HALSA_GOD",
@@ -2146,16 +2146,148 @@
     "tema": "socioekonomi"
   },
   {
-    "kpi_id": "N00799",
-    "kpi_namn": "Trafikolyckor med räddningsinsatser per 1000 inv",
-    "beskrivning": "Genomsnittligt antal räddningsinsatser till trafikolyckor år T till år T-2. Beräknat per 1000 invånare (31/12). Avser samtliga trafikelement. En trafikolycka kan omfatta flera olika trafikelement såsom personbil, lastbil, djur, motorcykel, moped, cykel m.m. Källa: Myndigheten för samhällsskydd och beredskap (MSB)",
+    "kpi_id": "N07935",
+    "kpi_namn": "Personbilar per 1 000 invånare",
+    "beskrivning": "Antal registrerade personbilar per 1 000 invånare i kommunen. Måttet visar biltätheten och påverkas av faktorer som kollektivtrafikutbud, urbaniseringsgrad och inkomstnivå. Kommuner med god kollektivtrafik och tät bebyggelse tenderar att ha lägre bilinnehav. Källa: Trafikanalys via RKA Kolada.",
     "enhet": "per 1 000 inv.",
     "tema": "transport"
   },
   {
+    "kpi_id": "N07945",
+    "kpi_namn": "Elbilar, andel av personbilar",
+    "beskrivning": "Andel av kommunens registrerade personbilar som är rena elbilar. Elektrifieringen av fordonsflottan är central för att minska transporternas klimatpåverkan. Högre andelar syns oftare i kommuner med höga inkomster och god laddinfrastruktur. Källa: Trafikanalys via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport",
+    "par_kpi_id": "N07938"
+  },
+  {
+    "kpi_id": "N07938",
+    "kpi_namn": "Elbilar per 1 000 invånare",
+    "beskrivning": "Antal registrerade rena elbilar per 1 000 invånare. Måttet kompletterar andelen elbilar genom att visa den absoluta utbredningen i relation till befolkningens storlek. Källa: Trafikanalys via RKA Kolada.",
+    "enhet": "per 1 000 inv.",
+    "tema": "transport",
+    "par_kpi_id": "N07945"
+  },
+  {
+    "kpi_id": "N07947",
+    "kpi_namn": "Laddhybridbilar, andel av personbilar",
+    "beskrivning": "Andel av kommunens registrerade personbilar som är laddhybrider, det vill säga bilar med kombination av elmotor och förbränningsmotor som kan laddas externt. Laddhybrider ses som en övergångsteknik mot helelektrifiering. Källa: Trafikanalys via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport",
+    "par_kpi_id": "N07940"
+  },
+  {
+    "kpi_id": "N07940",
+    "kpi_namn": "Laddhybridbilar per 1 000 invånare",
+    "beskrivning": "Antal registrerade laddhybridbilar per 1 000 invånare. Källa: Trafikanalys via RKA Kolada.",
+    "enhet": "per 1 000 inv.",
+    "tema": "transport",
+    "par_kpi_id": "N07947"
+  },
+  {
+    "kpi_id": "U00501",
+    "kpi_namn": "Fossiloberoende personbilar, andel",
+    "beskrivning": "Andel av kommunens personbilar som klassas som fossiloberoende, det vill säga elbilar, laddhybrider och bilar som kan köras på biodrivmedel. Måttet ger en samlad bild av omställningen bort från fossila drivmedel i personbilsflottan. Källa: Trafikanalys via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N07713",
+    "kpi_namn": "Elbilsladdpunkter, totalt antal",
+    "beskrivning": "Totalt antal publikt tillgängliga laddpunkter för elbilar i kommunen, inklusive både normalladdare och snabbladdare. God laddinfrastruktur är en förutsättning för elektrifieringen av fordonsflottan, särskilt för dem utan egen parkering. Källa: Energimyndigheten via RKA Kolada.",
+    "enhet": "antal",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N07710",
+    "kpi_namn": "Normalladdare, antal",
+    "beskrivning": "Antal publikt tillgängliga normalladdare (upp till 22 kW) i kommunen. Normalladdare används typiskt vid längre uppställning, exempelvis vid arbetsplatser och i bostadsområden. Källa: Energimyndigheten via RKA Kolada.",
+    "enhet": "antal",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N07711",
+    "kpi_namn": "Snabbladdare, antal",
+    "beskrivning": "Antal publikt tillgängliga snabbladdare (över 22 kW) i kommunen. Snabbladdare möjliggör kortare laddningsstopp och är viktiga för längre resor och för dem utan tillgång till hemmaladdning. Källa: Energimyndigheten via RKA Kolada.",
+    "enhet": "antal",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N07418",
+    "kpi_namn": "Befolkning i kollektivtrafiknära läge",
+    "beskrivning": "Andel av kommunens befolkning som bor inom 500 meter från en hållplats med minst 4 dubbelturer per dag i tätort, eller 1 000 meter utanför tätort. Måttet visar i vilken utsträckning invånarna har tillgång till grundläggande kollektivtrafik. Källa: Trafikverket via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N07419",
+    "kpi_namn": "Befolkning inom tätort, kollektivtrafiknära läge",
+    "beskrivning": "Andel av kommunens tätortsbefolkning som bor inom 500 meter från en hållplats med minst 4 dubbelturer per dag. Tätortsbor har generellt närmare till kollektivtrafik, men andelen varierar beroende på tätortens storlek och linjenätets utbredning. Källa: Trafikverket via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N07412",
+    "kpi_namn": "Befolkning utanför tätort, kollektivtrafiknära läge",
+    "beskrivning": "Andel av kommunens befolkning utanför tätort som bor inom 1 000 meter från en hållplats med minst 4 dubbelturer per dag. Landsbygdens tillgänglighet till kollektivtrafik är ofta betydligt sämre än i tätort. Källa: Trafikverket via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N07410",
+    "kpi_namn": "Nytillkomna bostäder i kollektivtrafiknära läge",
+    "beskrivning": "Andel av kommunens nytillkomna bostäder under en treårsperiod som ligger i kollektivtrafiknära läge. Måttet visar om bostadsbyggandet stödjer hållbart resande genom att placera nya bostäder nära befintlig kollektivtrafik. Källa: Trafikverket via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "N60404",
+    "kpi_namn": "Resor med kollektivtrafik per invånare",
+    "beskrivning": "Antal resor med regional kollektivtrafik per invånare i länet. Måttet avser betalda och förbetalda resor med buss, tåg och annan regional kollektivtrafik. Högre resande tyder på ett väl utbyggt och attraktivt kollektivtrafiksystem. Avser läns-/regionnivå. Källa: Svensk kollektivtrafik via RKA Kolada.",
+    "enhet": "resor/inv",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "U60496",
+    "kpi_namn": "Förnybara drivmedel i kollektivtrafiken",
+    "beskrivning": "Andel av regionens kollektivtrafik som drivs med förnybara drivmedel, mätt i energiinnehåll. Inkluderar biodrivmedel, biogas och el från förnybara källor. Avser läns-/regionnivå. Källa: Svensk kollektivtrafik via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "U85001",
+    "kpi_namn": "Nettokostnad trafik per invånare",
+    "beskrivning": "Regionens nettokostnad för trafikverksamhet per invånare, det vill säga kostnader minus intäkter för kollektivtrafik och annan regional trafikverksamhet. Måttet visar den offentliga subventionsgraden och avser läns-/regionnivå. Källa: SCB via RKA Kolada.",
+    "enhet": "kr/inv",
+    "tema": "transport"
+  },
+  {
+    "kpi_id": "U07917",
+    "kpi_namn": "Körsträcka med personbil, mil per invånare",
+    "beskrivning": "Genomsnittlig årlig körsträcka med personbil per invånare. Beräknas utifrån de personbilar som är registrerade i kommunen. Långa körsträckor kan spegla långa pendlingsavstånd, dålig kollektivtrafik eller gles bebyggelse. Källa: Trafikanalys via RKA Kolada.",
+    "enhet": "mil/inv",
+    "tema": "transport",
+    "par_kpi_id": "U07918"
+  },
+  {
+    "kpi_id": "U07918",
+    "kpi_namn": "Körsträcka med personbil, mil per bil",
+    "beskrivning": "Genomsnittlig årlig körsträcka per registrerad personbil i kommunen. Till skillnad från mil per invånare visar detta mått hur intensivt varje bil används. Källa: Trafikanalys via RKA Kolada.",
+    "enhet": "mil/bil",
+    "tema": "transport",
+    "par_kpi_id": "U07917"
+  },
+  {
+    "kpi_id": "N07782",
+    "kpi_namn": "Drivmedelsleverans vägtransporter, liter/inv",
+    "beskrivning": "Levererad mängd drivmedel (bensin och diesel) till vägtransporter per invånare inom kommunen. Måttet påverkas av genomfartstrafik och stationära tankställens lokalisering och speglar inte enbart kommuninvånarnas förbrukning. Källa: SPBI/Energimyndigheten via RKA Kolada.",
+    "enhet": "liter/inv",
+    "tema": "transport"
+  },
+  {
     "kpi_id": "N02276",
-    "kpi_namn": "Inpendling, andel (%)",
-    "beskrivning": "Antal inpendlare (sysselsatta personer i kommunen/regionen som bor i en annan kommun/region) dividerat med antal sysselsatta som arbetar i kommunen/regionen. Källa: SCB - Befolkningens arbetsmarknadsstatus (BAS).",
+    "kpi_namn": "Inpendling, andel av förvärvsarbetande",
+    "beskrivning": "Andel av de förvärvsarbetande i kommunen (dagbefolkning) som är folkbokförda i en annan kommun. Hög inpendlingsandel tyder på att kommunen fungerar som arbetsplatscentrum i sin arbetsmarknadsregion. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport",
     "par_kpi_id": "N02277"
@@ -2163,164 +2295,32 @@
   {
     "kpi_id": "N02277",
     "kpi_namn": "Inpendling, antal",
-    "beskrivning": "Antal inpendlare (sysselsatta personer i kommunen/regionen och som bor i en annan kommun/region). Källa: SCB - Befolkningens arbetsmarknadsstatus (BAS).",
+    "beskrivning": "Antal förvärvsarbetande som arbetar i kommunen men är folkbokförda i en annan kommun. Källa: SCB via RKA Kolada.",
     "enhet": "antal",
     "tema": "transport",
     "par_kpi_id": "N02276"
   },
   {
-    "kpi_id": "N02278",
-    "kpi_namn": "Utpendling, antal",
-    "beskrivning": "Antal utpendlare (sysselsatta personer i kommunen/regionen som arbetar i en annan kommun/region). Källa: SCB - Befolkningens arbetsmarknadsstatus (BAS).\\n",
-    "enhet": "antal",
-    "tema": "transport",
-    "par_kpi_id": "N02279"
-  },
-  {
     "kpi_id": "N02279",
-    "kpi_namn": "Utpendling, andel (%)",
-    "beskrivning": "Antal utpendlare (sysselsatta personer i kommunen/regionen som arbetar i en annan kommun/region) dividerat med antal sysselsatta med bostadsort i kommunen/regionen. Källa: SCB - Befolkningens arbetsmarknadsstatus (BAS).",
+    "kpi_namn": "Utpendling, andel av förvärvsarbetande",
+    "beskrivning": "Andel av de förvärvsarbetande som bor i kommunen (nattbefolkning) och arbetar i en annan kommun. Hög utpendlingsandel indikerar att kommunen i större utsträckning är en bostadsort där invånarna pendlar till arbetsplatser på annan ort. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport",
     "par_kpi_id": "N02278"
   },
   {
-    "kpi_id": "N07410",
-    "kpi_namn": "Nytillkomna bostäder i kollektivtrafiknära läge, andel (%)",
-    "beskrivning": "Andel nytillkomna bostäder (under det aktuella referensåret) i det geografiska området, som har en trafikerad hållplats inom 500 meter. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Hållplatsernas geografiska läge har samkörts med uppgifter ut lägenhetsregistret om antal lägenheter per byggnad. Nyckeltalet följer upp miljökvalitetsmålet 'God bebyggd miljö', se även www.sverigesmiljomal.se. Källa: SCB",
-    "enhet": "procent",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07412",
-    "kpi_namn": "Befolkning, utanför tätort, i kollektivtrafiknära läge, andel (%)",
-    "beskrivning": "Andel befolkning i det geografiska området, utanför tätort, som har en trafikerad hållplats inom 500 meter från sin folkbokföringsadress. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Källa: SCB",
-    "enhet": "procent",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07418",
-    "kpi_namn": "Befolkning i kollektivtrafiknära läge, andel (%)",
-    "beskrivning": "Andel befolkning i det geografiska området som har en trafikerad hållplats inom 500 meter från sin folkbokföringsadress. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Nyckeltalet följer upp miljökvalitetsmålet 'God bebyggd miljö', se även www.sverigesmiljomal.se. Källa: SCB",
-    "enhet": "procent",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07419",
-    "kpi_namn": "Befolkning, inom tätort, i kollektivtrafiknära läge, andel (%)",
-    "beskrivning": "Andel befolkning i det geografiska området, inom tätort, som har en trafikerad hållplats inom 500 meter från sin folkbokföringsadress. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Källa: SCB",
-    "enhet": "procent",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07710",
-    "kpi_namn": "Elbilsladdpunkter: normalladdare, antal",
-    "beskrivning": "Laddpunkter är kontakter där det finns möjlighet att ansluta ett fordon för laddning och har olika kapacitet i kilowatt (kW) vilket innebär att det tar olika lång tid för fordonet att laddas färdigt. Laddpunkter som är kategoriserade som normalladdare har en kW kapacitet på upp till 50 och har en beräknad laddtid på ca 3-10 timmar. Avser offentligt tillgängliga laddpunkter med både offentliga och privata ägare. Källa: Energimyndigheten/Nobil",
+    "kpi_id": "N02278",
+    "kpi_namn": "Utpendling, antal",
+    "beskrivning": "Antal förvärvsarbetande som bor i kommunen men arbetar i en annan kommun. Källa: SCB via RKA Kolada.",
     "enhet": "antal",
-    "tema": "transport"
+    "tema": "transport",
+    "par_kpi_id": "N02279"
   },
   {
-    "kpi_id": "N07711",
-    "kpi_namn": "Elbilsladdpunkter: snabbladdare, antal",
-    "beskrivning": "Laddpunkter är kontakter där det finns möjlighet att ansluta ett fordon för laddning och har olika kapacitet i kilowatt (kW) vilket innebär att det tar olika lång tid för fordonet att laddas färdigt. Laddpunkter som är kategoriserade som snabbladdare har en kW kapacitet på mellan 50-150 och har en beräknad laddtid på ca 15-120 minuter. Avser offentligt tillgängliga laddpunkter med både offentliga och privata ägare. Källa: Energimyndigheten/Nobil",
-    "enhet": "antal",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07713",
-    "kpi_namn": "Elbilsladdpunkter, totalt antal",
-    "beskrivning": "Laddpunkter är kontakter där det finns möjlighet att ansluta ett fordon för laddning och har olika kapacitet i kiloWatt (kW) vilket innebär att det tar olika lång tid för fordonet att laddas färdigt. Detta är antalet normalladdare (-50 kW), snabbladdare (50-150 kW) och supersnabbladdare (över 150 kW) summerat och avser offentligt tillgängliga laddpunkter med både offentliga och privata ägare. Källa: Energimyndigheten/Nobil",
-    "enhet": "antal",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07782",
-    "kpi_namn": "Drivmedelsleverans till vägtransporter, liter/inv (-2023)",
-    "beskrivning": "Antal liter levererad bensin, diesel och EO1 (eldningsolja 1), etanol, samt HVO för vägtransporter till slutliga förbrukare per kommun. Baseras på leveranser och inte på vart konsumenterna bor, kommuner med mycket genomfartstrafik kan därför få höga värden. Källa:SCB",
-    "enhet": "liter/inv",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07935",
-    "kpi_namn": "Bilar, antal/1000 inv",
-    "beskrivning": "Antal personbilar, oavsett bränsletyp, per 1000 invånare i trafik i det geografiska området 31/12. Källa: SCB.",
+    "kpi_id": "N00799",
+    "kpi_namn": "Trafikolyckor med räddningsinsatser",
+    "beskrivning": "Antal trafikolyckor som krävt kommunal räddningsinsats per 1 000 invånare. Måttet fångar de allvarligaste olyckorna och påverkas av trafikvolymer, hastighetsgränser och vägnätets säkerhet. Källa: MSB via RKA Kolada.",
     "enhet": "per 1 000 inv.",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "N07938",
-    "kpi_namn": "Elbilar, antal/1000 inv",
-    "beskrivning": "Antal el-personbilar per 1000 invånare i trafik i det geografiska området 31/12. Källa: Trafikanalys och SCB.",
-    "enhet": "per 1 000 inv.",
-    "tema": "transport",
-    "par_kpi_id": "N07945"
-  },
-  {
-    "kpi_id": "N07940",
-    "kpi_namn": "Laddhybridbilar, antal/1000 inv",
-    "beskrivning": "Antal laddhybrid-personbilar per 1000 invånare i trafik i det geografiska området 31/12. Laddhybridbilar har två motorer: en förbränningsmotor och en elmotor. Laddhybridbilar har ett batteri som kan laddas från elnätet, men batteriet räcker inte lika långt som det i de renodlade elbilarna. Laddhybrider tankas därutöver med bensin eller i några fall diesel. Källa: Trafikanalys och SCB.",
-    "enhet": "per 1 000 inv.",
-    "tema": "transport",
-    "par_kpi_id": "N07947"
-  },
-  {
-    "kpi_id": "N07945",
-    "kpi_namn": "Elbilar, andel (%)",
-    "beskrivning": "Andelen personbilar i trafik den 31/12, i det geografiska området av drivmedelstypen el. Källa: Trafikanalys och SCB.",
-    "enhet": "procent",
-    "tema": "transport",
-    "par_kpi_id": "N07938"
-  },
-  {
-    "kpi_id": "N07947",
-    "kpi_namn": "Laddhybridbilar, andel (%)",
-    "beskrivning": "Andelen personbilar i trafik den 31/12, i det geografiska området av drivmedelstypen laddhybrid. Laddhybridbilar har två motorer: en förbränningsmotor och en elmotor. Laddhybridbilar har ett batteri som kan laddas från elnätet, men batteriet räcker inte lika långt som det i de renodlade elbilarna. Laddhybrider tankas därutöver med bensin eller i några fall diesel. Källa: Trafikanalys och SCB.",
-    "enhet": "procent",
-    "tema": "transport",
-    "par_kpi_id": "N07940"
-  },
-  {
-    "kpi_id": "N60404",
-    "kpi_namn": "Resor med kollektivtrafik, resor/inv",
-    "beskrivning": "Antal resor i regional kollektivtrafik inrapporterat av regionala trafikhuvudmän samt de kommunala huvudmännen i Karlstad, Lund och Luleå. Källa: Trafa (Trafikanalys).",
-    "enhet": "resor/inv",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "U00501",
-    "kpi_namn": "Fossiloberoende personbilar, andel av totalt antal bilar i det geografiska området (%)",
-    "beskrivning": "Antal fossiloberoende personbilar i det geografiska området delat med totala antalet personbilar i det geografiska området. Med fossiloberoende menas bilar som har möjlighet att köra på ett bränsle från förnybara källor men som inte nödvändigtvis gör det hela tiden. Bilar av typerna gas (CNG, biogas, naturgas, metangas), el, E85, laddhybrid (förutsatt att de kan laddas med sladd), vätgas samt bilar godkända av tillverkaren att köras på HVO100 (syntetisk diesel med förnybart ursprung) är inkluderade. Källa: Miljöfordon Sverige",
-    "enhet": "procent",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "U07917",
-    "kpi_namn": "Genomsnittlig körsträcka med personbil, mil/inv",
-    "beskrivning": "Total körsträcka i mil och år med personbilar registrerade i det geografiska området dividerat med totalt antal invånare i det geografiska området. Avser körsträcka för bilar registrerade i det geografiska området och säger ingenting om i vilka geografiska områden dessa bilar har kört. Avser bilar registrerade på såväl juridiska som fysiska personer (Observera att bilar skrivna på juridiska personer, så som företag, kan påverka statistiken för kommuner där många företag och huvudkontor är lokaliserade). Källa: Trafa",
-    "enhet": "mil/inv",
-    "tema": "transport",
-    "par_kpi_id": "U07918"
-  },
-  {
-    "kpi_id": "U07918",
-    "kpi_namn": "Genomsnittlig körsträcka med personbil, mil/personbil",
-    "beskrivning": "Total körsträcka i mil med personbilar registrerade i det geografiska området dividerat med totalt antal personbilar registrerade i det geografiska området. Avser körsträcka för bilar registrerade i det geografiska området och säger ingenting om i vilka geografiska områden dessa bilar har kört. Avser bilar registrerade på såväl juridiska som fysiska personer. (Observera att bilar skrivna på juridiska personer, så som företag, kan påverka statistiken för kommuner där många företag och huvudkontor är lokaliserade). Källa: Trafa",
-    "enhet": "mil/bil",
-    "tema": "transport",
-    "par_kpi_id": "U07917"
-  },
-  {
-    "kpi_id": "U60496",
-    "kpi_namn": "Förnybara drivmedel i kollektivtrafiken, andel (%)",
-    "beskrivning": "Förnybara drivmedel omfattar förnybar el, biodiesel, biogas och etanol, inklusive låginblandning i diesel och bensin. Drivmedlen viktas utifrån energiinnehåll. All allmän kollektivtrafik som omfattas av trafikplikt ingår: spårbunden trafik, buss och båt. Källa: Trafikhuvudmännen (drivmedelsvolymer) och Energimyndigheten (omräkningsfaktorer).",
-    "enhet": "procent",
-    "tema": "transport"
-  },
-  {
-    "kpi_id": "U85001",
-    "kpi_namn": "Nettokostnad trafik, kr/inv",
-    "beskrivning": "Nettokostnad för trafik, dividerat med antal invånare i regionen den 31/12. Kommunens eller regionens nettokostnad för en verksamhet visar hur stor del av kostnaderna för verksamheten som är finansierad med kommunal- eller regionskatt plus generella statsbidrag och utjämning. Huvuddelen av nettokostnaden utgörs av bidrag till respektive regional kollektivtrafikmyndighet/trafikupphandlande bolag, för att täcka de kostnader som inte finansieras med biljett- och periodkortsförsäljning och andra trafikintäkter (t.ex. reklamintäkter) samt statsbidrag. Därutöver har kommuner och regioner även egna kostnader för kollektivtrafik, där bland annat tillköp kan ingå. Källa: SCB: räkenskapssammandrag för kommuner och region.",
-    "enhet": "kr/inv",
     "tema": "transport"
   },
   {
@@ -2595,7 +2595,7 @@
   {
     "kpi_id": "N15428",
     "kpi_namn": "Elever i åk 9 som är behöriga till yrkesprogram, hemkommun, andel (%)",
-    "beskrivning": "Antal elever i årskurs 9 som är behöriga till ett yrkesprogram dividerat med antal elever som fått eller skulle ha fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. För att ha gymnasiebehörighet till ett yrkesprogram krävs godkända betyg i svenska eller svenska som andraspråk, engelska och matematik och i minst fem andra ämnen från grundskolan. Fram t.o.m. 2011 krävdes godkända betyg i svenska eller svenska som andraspråk, engelska och matematik för att uppnå lägsta behörighet till gymnasiet. Uppgiften avser elever folkbokförda i kommunen. För region är antal elever summerade för alla kommuner belägna i regionen. Elever med okänd bakgrund ingår inte. Uppgiften avser läsår.  Källa: SCB och Skolverket.",
+    "beskrivning": "Antal elever i årskurs 9 som är behöriga till ett yrkesprogram dividerat med antal elever som fått eller skulle ha fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. För att ha gymnasiebehörighet till ett yrkesprogram krävs godkända betyg i svenska eller svenska som andraspråk, engelska och matematik och i minst fem andra ämnen från grundskolan. Fram t.o.m. 2011 krävdes godkända betyg i svenska eller svenska som andraspråk, engelska och matematik för att uppnå lägsta behörighet till gymnasiet. Uppgiften avser elever folkbokförda i kommunen. För region är antal elever summerade för alla kommuner belägna i regionen. Elever vid internationella skolor eller med okänd folkbokföringsadress är exkluderade. Uppgiften avser läsår.  Källa: SCB och Skolverket.",
     "enhet": "procent",
     "tema": "utbildning"
   },

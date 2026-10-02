@@ -1,0 +1,29 @@
+{
+  "hash": "ab4a3c8ce6622f2a10bf690f72a7b6d2",
+  "period": "2024",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Trångboddheten i Hylte är landets högsta trots länets lägsta priser",
+    "ingress": "Hylte har den högsta andelen trångbodda i flerbostadshus bland landets kommuner, samtidigt som bostadspriserna och nybyggandet är de lägsta i Halland. Trångboddheten har minskat sedan toppen 2019, men nivån ligger långt över både länet och riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Högst trångboddhet i landet",
+        "text": "Av de boende i flerbostadshus är 31,0 procent trångbodda, mot 12,6 procent i Halland och 15,1 procent i riket."
+      },
+      {
+        "ledtext": "Nybyggandet är lägst i länet",
+        "text": "Under 2025 färdigställdes 0,59 bostäder per 1 000 invånare, mot 3,83 i länet och 2,96 i riket, och inga av dem i flerbostadshus."
+      },
+      {
+        "ledtext": "Länets lägsta småhuspriser",
+        "text": "Ett småhus kostade i genomsnitt 10 072 kronor per kvadratmeter, mot 21 068 i Laholm och 28 884 i riket."
+      }
+    ],
+    "stycken": [
+      "Trångboddheten i Hylte är den högsta bland landets 290 kommuner: 31,0 procent av de boende i flerbostadshus bor med fler än två personer per rum, kök och vardagsrum oräknade. Det är 15,9 procentenheter över riket och 18,4 procentenheter över länet. Andelen har sjunkit från 42,0 procent 2019 och minskade med 7,6 procentenheter på fem år, mot 2,3 i riket. Måttet gäller bara boende i flerbostadshus, medan 62,9 procent av bostäderna i Hylte är äganderätter, så det beskriver sannolikt en mindre del av beståndet.",
+      "Antalet bostäder i förhållande till befolkningen skiljer inte ut Hylte. Med 489,3 bostäder per 1 000 invånare ligger kommunen näst högst i Halland efter Halmstad och 9,6 under riket. Skillnaden ligger i priser och byggande: småhuspriset är lägst i länet och i stort sett oförändrat det senaste året, medan riket steg med 862 kronor per kvadratmeter. Nybyggandet är också lägst i länet, långt efter Kungsbacka med 7,91 per 1 000 invånare, och bostadsrätterna utgör 2,35 procent av beståndet mot 24,32 procent i riket.",
+      "Mönstret kan hänga samman med att marknadsvärdet ligger så långt under riket att nya hus sällan bär sin byggkostnad, vilket kan förklara varför byggandet 2025 bestod av småhus. Trångboddheten mäts däremot i flerbostadshusen, och hyresrätterna har ökat med 0,5 procentenheter som andel av beståndet på fem år. Nya småhus påverkar därför sannolikt måttet lite. För planeringen pekar det mot lägenheter i lägen med god kollektivtrafik, där Hylte ligger lägst i länet: 60,7 procent av invånarna hade 2024 en hållplats med minst en avgång i timmen inom 500 meter."
+    ]
+  }
+}

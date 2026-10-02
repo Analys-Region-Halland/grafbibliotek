@@ -65,6 +65,21 @@ export const HALLAND_KOMMUNER = [
   { kod: "1315", namn: "Hylte", typ: "K" as const },
 ] as const;
 
+/** Fasta färger per enhet, samma i alla grafer och kartor (riktlinje VIS-01) */
+export const ENHET_FARG: Record<string, string> = {
+  "1384": "#0C8C7E", // Kungsbacka
+  "1383": "#004990", // Varberg
+  "1382": "#FF7E00", // Falkenberg
+  "1380": "#A51300", // Halmstad
+  "1381": "#8cd211", // Laholm
+  "1315": "#7b2d8e", // Hylte
+  "0013": "#555555", // Halland
+  "0000": "#999999", // Riket
+};
+
+/** Kommunerna i geografisk ordning norr till söder, inlandet sist */
+export const KOMMUNER_NORR_SODER = ["1384", "1383", "1382", "1380", "1381", "1315"];
+
 export const HALLAND_KODER: string[] = HALLAND_KOMMUNER
   .filter((k) => k.typ === "K")
   .map((k) => k.kod);

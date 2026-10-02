@@ -38,8 +38,10 @@ forbearbeta_turism <- function(radata) {
   bef_fil <- "data/radata-befolkning.rds"
   if (file.exists(bef_fil)) {
     bef_radata <- readRDS(bef_fil)
+    # Folkmängd: S_BEF_TOTALT (SCB, befolkningstemats egen hämtning) eller N01951 (Kolada, äldre)
+    pop_kpi <- intersect(c("S_BEF_TOTALT", "N01951"), unique(bef_radata$kpi))[1]
     pop_data <- bef_radata |>
-      filter(kpi == "N01951", gender == "T") |>
+      filter(kpi == pop_kpi, gender == "T") |>
       select(municipality_id, year, pop = value) |>
       filter(!is.na(pop), pop > 0)
 

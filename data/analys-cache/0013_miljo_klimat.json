@@ -1,0 +1,29 @@
+{
+  "hash": "b10bbb6f8c7def299a0d686345836b44",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Utsläppen per invånare under riket, men transporter och jordbruk över",
+    "ingress": "Halland släpper ut något mindre växthusgaser per invånare än riket, men länets profil skiljer sig: transporter och jordbruk väger tyngre och industrin lättare. Mellan kommunerna är skillnaderna stora, och de senaste fem åren har utsläppen minskat långsammare än i landet.",
+    "i_korthet": [
+      {
+        "ledtext": "Transporterna ligger över riksnivån",
+        "text": "Transportutsläppen uppgick till 2,13 ton koldioxidekvivalenter per invånare 2024, vilket är 0,53 ton mer än i riket."
+      },
+      {
+        "ledtext": "Stor spridning mellan kommunerna",
+        "text": "Laholm släppte ut 6,48 ton per invånare och Kungsbacka 2,59 ton, medan länet låg på 4,31 ton."
+      },
+      {
+        "ledtext": "Lägre andel förnybar el än riket",
+        "text": "Förnybara källor stod för 13,5 procent av elproduktionen i länet 2022, mot 65,6 procent i riket."
+      }
+    ],
+    "stycken": [
+      "Halland släpper ut något mindre växthusgaser per invånare än riket, men sammansättningen skiljer sig tydligt. Utsläppen uppgick till 4,31 ton koldioxidekvivalenter per invånare 2024, vilket är 0,19 ton under riket. Transporter stod för 2,13 ton och jordbruk för 1,01 ton, alltså 0,53 respektive 0,43 ton över riksnivån. Det som framför allt håller nere totalen är industrin: med 0,30 ton per invånare ligger den 0,93 ton under riket.",
+      "Skillnaderna mellan kommunerna är större än skillnaden mot riket. Laholm har de högsta utsläppen med 6,48 ton per invånare och Kungsbacka de lägsta med 2,59 ton. Jordbruket förklarar en stor del av Laholms nivå med 3,06 ton, medan Hylte sticker ut med industriutsläpp på 1,20 ton och länets högsta transportutsläpp på 2,90 ton. Bland landets 21 regioner har Halland det tredje högsta värdet för jordbruk och det femte högsta för transporter. Minskningen har också gått långsammare än i landet: på fem år sjönk utsläppen med 0,07 ton mot 0,36 ton i riket, och 2024 ökade de med 0,50 ton mot 0,32 ton i riket.",
+      "Mönstret hänger sannolikt samman med länets läge mellan två storstadsregioner. Om många reser med bil längs E6 och utsläppen räknas där trafiken sker, hamnar transportutsläppen högt i kustkommunerna, medan Kungsbackas energianvändning för transporter, länets lägsta med 4,96 MWh per invånare, kan spegla att en del av körningen sker inom Göteborgs gräns. Samtidigt kom 13,5 procent av den el som producerades i länet 2022 från förnybara källor, lägst bland de tio regioner som redovisas. För planeringen pekar det på att transporter, jordbruk och lokal elproduktion är de områden där länet skiljer sig mest från riket, med olika tyngdpunkt i olika kommuner."
+    ]
+  }
+}

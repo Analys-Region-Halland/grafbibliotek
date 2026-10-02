@@ -1,0 +1,29 @@
+{
+  "hash": "890e84c4f0af674c8be494d4bc764906",
+  "period": "2024",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Bostadsbyggandet har bromsat in medan småhuspriserna stiger",
+    "ingress": "Varberg har gått från seriens högsta byggtakt 2023 till den lägsta sedan serien började 2010. Småhuspriserna ligger samtidigt näst högst i Halland och har stigit mer än i riket, både det senaste året och på fem år.",
+    "i_korthet": [
+      {
+        "ledtext": "Byggandet har fallit från toppnivå",
+        "text": "Färdigställda bostäder var 2,02 per 1 000 invånare 2025, mot 20,14 år 2023, och nivån ligger 0,94 under riket."
+      },
+      {
+        "ledtext": "Småhusen dyrare än i riket",
+        "text": "Småhuspriset var 35 431 kronor per kvadratmeter 2025, 6 547 kronor över riket och näst högst i Halland efter Kungsbacka."
+      },
+      {
+        "ledtext": "Trångboddheten under länet och riket",
+        "text": "Andelen trångbodda i flerbostadshus var 8,15 procent 2025, 4,43 procentenheter under länet och näst lägst i Halland."
+      }
+    ],
+    "stycken": [
+      "Varbergs bostadsbyggande har på två år gått från seriens högsta nivå till en nivå under riket. År 2023 färdigställdes 20,14 bostäder per 1 000 invånare, det högsta värdet sedan 2010, och 2024 var nivån 5,68. År 2025 var den 2,02, den lägsta i serien och 0,94 under riket. Svängningarna kan spegla att större projekt blev klara samtidigt.",
+      "Inom länet ligger Varberg på tredje plats i byggtakt, efter Kungsbacka med 7,91 och Halmstad med 3,87 bostäder per 1 000 invånare. Skillnaden ligger i flerbostadshusen: Varberg färdigställde 1,14 lägenheter per 1 000 invånare mot 2,99 i länet, medan småhusbyggandet på 0,88 låg över både länet och riket. Småhuspriset var 35 431 kronor per kvadratmeter, 6 547 kronor över riket och näst högst i länet efter Kungsbacka, och det steg med 2 058 kronor på ett år. Bostadsrättspriset sjönk samtidigt med 726 kronor, medan det steg i riket. Trångboddheten i flerbostadshus är 8,15 procent, 4,43 procentenheter under länet och näst lägst i Halland.",
+      "Att småhuspriserna stiger medan bostadsrättspriserna sjunker kan spegla en fortsatt efterfrågan på småhus i en kommun med pendeltåg mot Göteborg, medan det stora tillskottet av bostäder 2023 kan ha dämpat bostadsrättspriserna. Planberedskapen pekar på utrymme för fortsatt byggande: gällande detaljplaner rymmer 20,2 bostäder per 1 000 invånare, mer än i Kungsbacka, den enda andra halländska kommun som redovisar uppgiften, men på plats 134 av 198 kommuner i landet. Andelen invånare med en trafikerad hållplats inom 500 meter var 73,6 procent 2024, 7,3 procentenheter under riket och 1,4 procentenheter lägre än året innan, och nya bostäder nära stationen och i hamnområdet kan dra upp andelen."
+    ]
+  }
+}

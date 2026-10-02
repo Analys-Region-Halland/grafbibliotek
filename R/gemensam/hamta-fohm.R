@@ -209,12 +209,14 @@ hamta_tema_fohm <- function(tema_config, tvinga = FALSE) {
   fohm_ids <- sapply(tema_config$fohm_tabeller, \(t) t$kpi_id)
   radata_fil <- file.path("data", glue("radata-{tema_id}.rds"))
 
-  # Enkel cache-kontroll: finns rådata + FoHM-KPI:er redan?
-  if (!tvinga && file.exists(radata_fil)) {
+  # Cache-kontroll: hoppa över om alla FoHM-KPI:er finns och hämtades för under 30 dagar sedan
+  stampel_fil <- file.path("data", glue("hamtning-stampel-{tema_id}-fohm.rds"))
+  if (!tvinga && file.exists(radata_fil) && file.exists(stampel_fil)) {
     befintlig <- readRDS(radata_fil)
     befintliga_fohm <- intersect(unique(befintlig$kpi), fohm_ids)
-    if (length(befintliga_fohm) == length(fohm_ids)) {
-      message("  FoHM-data finns redan — hoppar över (använd force för omhämtning)")
+    dagar <- as.numeric(difftime(Sys.time(), readRDS(stampel_fil), units = "days"))
+    if (length(befintliga_fohm) == length(fohm_ids) && dagar < 30) {
+      message(glue("  FoHM-data hämtades för {round(dagar)} dagar sedan — hoppar över"))
       return(invisible(NULL))
     }
   }
@@ -247,10 +249,11 @@ hamta_tema_fohm <- function(tema_config, tvinga = FALSE) {
   message(glue("  Totalt {nrow(kombinerad)} rader från FoHM"))
 
   # Bevara befintlig data från andra källor (Kolada)
-  if (file.exists(radata_fil)) {
+  if (file.exists(radata_fil) && length(alla_rader) > 0) {
     befintlig <- readRDS(radata_fil)
-    # Ta bort gamla FoHM-KPI:er (inkl. _KV/_MAN-varianter), behåll Kolada
-    fohm_pattern <- paste0("^(", paste(fohm_ids, collapse = "|"), ")")
+    # Ta bort gamla värden (inkl. _KV/_MAN-varianter) bara för KPI:er som hämtades nu,
+    # så att en tabell som misslyckades behåller sina tidigare värden
+    fohm_pattern <- paste0("^(", paste(names(alla_rader), collapse = "|"), ")")
     befintlig <- befintlig |> filter(!grepl(fohm_pattern, kpi))
     # Säkerställ att befintlig data har KI-kolumner (NA)
     if (!"ki_lower" %in% names(befintlig)) {
@@ -259,7 +262,13 @@ hamta_tema_fohm <- function(tema_config, tvinga = FALSE) {
     kombinerad <- bind_rows(befintlig, kombinerad)
   }
 
+  if (length(alla_rader) == 0) {
+    warning("  Ingen FoHM-tabell kunde hämtas — behåller befintlig rådata")
+    return(invisible(NULL))
+  }
+
   saveRDS(kombinerad, radata_fil)
+  saveRDS(Sys.time(), stampel_fil)
   message(glue("  Sparat: {nrow(kombinerad)} rader totalt"))
 
   invisible(NULL)

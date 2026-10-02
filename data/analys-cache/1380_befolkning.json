@@ -1,0 +1,29 @@
+{
+  "hash": "ad04f944b950e74ca2c99c1c0946f10f",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Halmstad är länets yngsta kommun men tillväxten har mattats",
+    "ingress": "Halmstad är Hallands största kommun och har länets lägsta medelålder, men befolkningen växer allt långsammare. Under 2025 ökade folkmängden med 0,22 procent, den lägsta takten i serien sedan 2000, och lika många dog som föddes.",
+    "i_korthet": [
+      {
+        "ledtext": "Tillväxten lägst sedan 2000",
+        "text": "Folkmängden ökade med 0,22 procent 2025, mot 1,64 procent 2016, medan länet växte med 0,29 procent."
+      },
+      {
+        "ledtext": "Invandringsöverskottet ger största bidraget",
+        "text": "Under 2025 bidrog invandringsöverskottet med 174 personer och inrikes flyttnetto med 50, medan födelsenettot var noll."
+      },
+      {
+        "ledtext": "Länets största andel i arbetsför ålder",
+        "text": "Andelen invånare 20–64 år var 55,8 procent, 2,5 procentenheter över länet men 0,7 procentenheter under riket."
+      }
+    ],
+    "stycken": [
+      "Halmstads befolkning växer fortfarande, men takten är den lägsta i serien som börjar år 2000. Folkmängden ökade med 0,22 procent under 2025, mot 1,64 procent år 2016. Det största bidraget kom från invandringsöverskottet, 174 personer, följt av inrikes flyttnetto med 50, medan födelsenettot var noll: antalet födda och döda var lika stort, 996. Invandringsöverskottet har varit den största komponenten varje år sedan 2021 och står för 1 847 av ökningen på 2 561 personer under 2021–2025, medan födelsenettot bidrog med 295 och inrikes flyttnetto med 289.",
+      "Halmstad växer långsammare än grannarna i norr men snabbare än riket. Kungsbacka och Varberg växte med 0,63 respektive 0,56 procent, länet med 0,29 och riket med 0,17 procent. Skillnaden mot länet syns tydligast i flyttningarna inom landet: länet hade ett inrikes flyttnetto på 2,50 per 1 000 invånare, Halmstad 0,50, näst lägst i Halland. Invandringsöverskottet är däremot större än i länet, 1,60 mot 0,90 per 1 000 invånare. Samtidigt har Halmstad länets lägsta medelålder, 42,2 år, 1,3 år under länet, och störst andel i arbetsför ålder.",
+      "Mönstret hänger sannolikt samman med Halmstads roll som högskole- och residensstad. Inrikes inflyttningar och utflyttningar är nästan lika många, 4 393 mot 4 343, vilket kan spegla att unga vuxna kommer för studier och arbete och sedan flyttar vidare. Fruktsamheten, 1,51 barn per kvinna, är dessutom lägst i länet. För planeringen betyder det att den lägsta försörjningskvoten bland Hallands kommuner, 79,2 unga och äldre per 100 invånare i arbetsför ålder, inte är given: kvoten har ökat med 4,9 sedan 2015, mer än rikets 3,1. Om inrikes flyttnetto förblir litet och födelsenettot ligger kring noll förblir tillväxten beroende av invandringsöverskottet."
+    ]
+  }
+}

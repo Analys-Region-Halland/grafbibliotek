@@ -1,0 +1,29 @@
+{
+  "hash": "cc8cca015ddd0bff624ffb82dddb8e58",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Andelen nya bostäder nära kollektivtrafik är den lägsta sedan 2014",
+    "ingress": "Varberg ligger nära länets nivå i de flesta transportmått, med kortare bilresor per invånare än alla kommuner i länet utom Halmstad och näst högst andel elbilar i Halland. Den tydligaste avvikelsen finns i bostadsbyggandet, där andelen nya bostäder i kollektivtrafiknära läge är den lägsta i kommunens serie.",
+    "i_korthet": [
+      {
+        "ledtext": "Lägre andel nya bostäder kollektivtrafiknära",
+        "text": "Andelen nytillkomna bostäder i kollektivtrafiknära läge var 52,5 procent 2024, 22,5 procentenheter lägre än året före och 38,9 procentenheter under riket."
+      },
+      {
+        "ledtext": "Utpendlingen har ökat",
+        "text": "Antalet utpendlare var 9 173 år 2024, näst flest i Halland, mot 7 767 år 2020."
+      },
+      {
+        "ledtext": "Näst högst elbilsandel i länet",
+        "text": "Elbilarna utgör 7,66 procent av personbilarna 2025, högst i Halland efter Kungsbacka men 0,92 procentenheter under riket."
+      }
+    ],
+    "stycken": [
+      "En mindre andel av Varbergs nya bostäder än tidigare ligger nära en trafikerad hållplats. Av bostäderna som tillkommit under den senaste treårsperioden ligger 52,5 procent i kollektivtrafiknära läge, den lägsta andelen i serien sedan 2014 och 22,5 procentenheter lägre än året innan. Det är 38,9 procentenheter under riket och långt under Halmstad och Kungsbacka med 95,7 respektive 93,6 procent. För befolkningen som helhet sjönk andelen som bor kollektivtrafiknära med 1,4 procentenheter till 73,6 procent.",
+      "Pendlingskvoten är 0,93, något över länets 0,87, och antalet utpendlare har ökat från 7 767 år 2020 till 9 173 år 2024, näst flest i Halland efter Kungsbacka. Invånarna kör i genomsnitt 675,8 mil per år med personbil, 7,9 mil mindre än i länet men 51,0 mil mer än i riket, och körsträckan har minskat med 45,6 mil på tio år, trots en ökning med 5,0 mil det senaste året. Elbilarna utgör 7,66 procent av personbilarna 2025, näst högst i länet men 0,92 procentenheter under riket.",
+      "Nedgången hänger samman med var de senaste årens bostäder har byggts. Om större projekt har legat i områden som ännu saknar täta avgångar sjunker andelen snabbt, och eftersom måttet avser en treårsperiod kan ett fåtal områden påverka utfallet kraftigt. Den ökande utpendlingen och de kortare bilresorna på tio år kan samtidigt spegla att pendeltåget norrut mot Kungsbacka och Göteborg används för en del av arbetsresorna. För planeringen betyder det att de nya bostädernas läge kan avgöra om körsträckorna förblir under länets nivå när nya områden byggs ut, och stadsutvecklingen i hamnområdet kan på sikt dra upp andelen igen."
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "hash": "6e7ba0bcba1488810db0962ed8e60066",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Länets högsta inkomster, men psykisk ohälsa bland unga ökar",
+    "ingress": "Kungsbacka har högst inkomster, lägst ohälsotal och lägst förtida dödlighet i Halland. Ett undantag är barn och unga, där andelen med psykisk ohälsa är näst högst i länet och har ökat snabbare än i riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Medianinkomst bland landets högsta",
+        "text": "Medianinkomsten var 406,3 tusen kronor 2024, 66,7 tusen kronor över riket och plats 11 bland landets 290 kommuner."
+      },
+      {
+        "ledtext": "Lägst ohälsotal i Halland",
+        "text": "Ohälsotalet var 17,0 dagar per person 2025, 5,0 dagar under riket och 4,2 dagar under länet."
+      },
+      {
+        "ledtext": "Psykisk ohälsa bland unga ökar",
+        "text": "Andelen barn och unga med psykisk ohälsa var 11,4 procent 2024, 1,4 procentenheter över riket och 3,3 procentenheter högre än 2019."
+      }
+    ],
+    "stycken": [
+      "Kungsbacka ligger först i Halland på inkomst och sist på ohälsotal och förtida dödlighet. Medianinkomsten var 406,3 tusen kronor 2024, 57,8 tusen kronor över länet. Ohälsotalet var 17,0 dagar per person 16–64 år och den förtida dödligheten 124,1 per 100 000 invånare 25–64 år, 48,9 under riket. Andelen vuxna med varaktigt låg ekonomisk standard var 2,7 procent, lägst i länet.",
+      "Bakom genomsnitten finns tecken på att avståndet till riket har minskat på några punkter. Ohälsotalet har ökat med 0,7 dagar sedan 2020 medan det sjunkit med 0,6 dagar i riket, och bland män 25–64 år har den förtida dödligheten stigit med 1,6 per 100 000 på fem år medan den fallit med 22,3 i riket. Andelen som uppger stress har ökat med 3,8 procentenheter på tio år, mot 3,0 i riket, och ligger med 15,6 procent i nivå med rikets 15,9 procent, en skillnad inom enkätens felmarginal. Inkomsterna är också mer ojämnt fördelade än i de andra halländska kommunerna: ginikoefficienten för disponibel inkomst är 0,32, högst i länet.",
+      "Barn och unga avviker från mönstret. Andelen 0–19-åringar med vårdkontakter eller läkemedelsbehandling för psykisk ohälsa var 11,4 procent, näst högst i Halland efter Hylte, och bland pojkar 11,9 procent, 1,8 procentenheter över riket. Eftersom måttet bygger på diagnoser, uthämtade läkemedel och slutenvård kan det spegla både fler besvär och skillnader i hur ofta familjer söker och får vård. För planeringen pekar det på att kommunens socioekonomiska läge inte räcker som förklaring till hur unga mår, och att utvecklingen bland barn och unga behöver följas även i en kommun där ohälsotal och dödlighet ligger under riket."
+    ]
+  }
+}

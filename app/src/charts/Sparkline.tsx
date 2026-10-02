@@ -2,7 +2,7 @@ import { memo, useRef, useEffect, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import * as d3 from "d3";
 import type { KpiRow } from "../types";
-import { fmt, fmtInt, fmtPeriod, isMonthly } from "../utils/format";
+import { fmt, fmtInt, fmtPeriod, isMonthly, kpiDecimaler } from "../utils/format";
 
 interface Props {
   data: KpiRow[];
@@ -12,9 +12,15 @@ interface Props {
   enhet?: string;
   /** Inverterar rankingfärgerna (grönt = lågt värde) */
   lagtArBra?: boolean;
+  /** Färg på senaste punkten (temats medelfärg) */
+  accent?: string;
+  /** Rita rikets serie som streckad referenslinje (värdeläge) */
+  visaRiket?: boolean;
 }
 
-const LINJE = "#00664D"; // gron-1 — enhetlig linjefärg
+const LINJE = "#00664D"; // gron-1 — rankingläget
+const VARDELINJE = "#3D4245"; // mörkgrå — värdeläget, temafärgen bär bara senaste punkten
+const RIKET = "#83888A"; // grå 1 — referens
 
 /** Rankingetikett: "högsta 14%" eller "lägsta 22%" beroende på position */
 function rankLabel(rang: number, n: number): string {
@@ -32,6 +38,7 @@ interface TipState {
 
 function SparklineInner({
   data, width = 130, height = 52, mode = "value", enhet = "", lagtArBra,
+  accent = LINJE, visaRiket = false,
 }: Props) {
   const ref = useRef<SVGSVGElement>(null);
   const [tip, setTip] = useState<TipState>({ text: "", x: 0, y: 0, visible: false });
@@ -147,8 +154,15 @@ function SparklineInner({
       const values = valueData.map((d) => d.varde!);
       if (values.length < 2) return;
 
-      // Utöka y-domänen med KI-gränser om de finns
+      // Rikets serie (samma perioder) som referens
+      const riket = visaRiket ? valueData.map((d) => d.riksvarde) : [];
+      const harRiket = riket.filter((v) => v != null).length >= 2;
+
+      // Utöka y-domänen med KI-gränser och riket om de finns
       let [yMin, yMax] = d3.extent(values) as [number, number];
+      if (harRiket) {
+        for (const v of riket) if (v != null) { yMin = Math.min(yMin, v); yMax = Math.max(yMax, v); }
+      }
       for (const d of valueData) {
         if (d.ki_lower != null) yMin = Math.min(yMin, d.ki_lower);
         if (d.ki_upper != null) yMax = Math.max(yMax, d.ki_upper);
@@ -181,12 +195,27 @@ function SparklineInner({
           .attr("stroke", "none");
       }
 
+      if (harRiket) {
+        const riketLinje = d3.line<number | null>()
+          .defined((d) => d != null)
+          .x((_, i) => x(i))
+          .y((d) => y(d!))
+          .curve(d3.curveMonotoneX);
+        svg.append("path")
+          .datum(riket)
+          .attr("d", riketLinje)
+          .attr("fill", "none")
+          .attr("stroke", RIKET)
+          .attr("stroke-width", 1)
+          .attr("stroke-dasharray", "3,2.5");
+      }
+
       svg.append("path")
         .datum(values)
         .attr("d", line)
         .attr("fill", "none")
-        .attr("stroke", LINJE)
-        .attr("stroke-width", 1.8);
+        .attr("stroke", VARDELINJE)
+        .attr("stroke-width", 1.5);
 
       // Månadsdata: små punkter vid samma månad alla föregående år
       if (monthly) {
@@ -202,12 +231,14 @@ function SparklineInner({
         });
       }
 
-      // Senaste punkt
+      // Senaste punkt i temafärg
       svg.append("circle")
         .attr("cx", x(values.length - 1))
         .attr("cy", y(values[values.length - 1]))
-        .attr("r", 2.5)
-        .attr("fill", LINJE);
+        .attr("r", 3)
+        .attr("fill", accent)
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 1.5);
 
       const focusLine = svg.append("line")
         .attr("y1", 0).attr("y2", height)
@@ -232,13 +263,16 @@ function SparklineInner({
           focusDot.attr("cx", x(idx)).attr("cy", y(row.varde)).attr("opacity", 1);
 
           const rect = svgEl.getBoundingClientRect();
-          const dec = Math.abs(row.varde) < 10 ? 2 : 1;
+          const dec = kpiDecimaler(row.varde, enhet);
           const v = enhet === "antal" ? fmtInt(row.varde) : fmt(row.varde, dec);
           const kiPart = row.ki_lower != null && row.ki_upper != null
             ? ` (${fmt(row.ki_lower, dec)}–${fmt(row.ki_upper, dec)})`
             : "";
+          const riketPart = harRiket && row.riksvarde != null
+            ? ` · riket ${enhet === "antal" ? fmtInt(row.riksvarde) : fmt(row.riksvarde, dec)}`
+            : "";
           setTip({
-            text: `${fmtPeriod(row.ar)}: ${v}${kiPart}`,
+            text: `${fmtPeriod(row.ar)}: ${v}${kiPart}${riketPart}`,
             x: rect.left + x(idx),
             y: rect.top - 4,
             visible: true,
@@ -250,7 +284,7 @@ function SparklineInner({
           setTip((prev) => ({ ...prev, visible: false }));
         });
     }
-  }, [data, width, height, mode, enhet]);
+  }, [data, width, height, mode, enhet, accent, visaRiket]);
 
   return (
     <div className="relative" onMouseLeave={hideTip}>
@@ -263,7 +297,7 @@ function SparklineInner({
           style={{
             left: tip.x,
             top: tip.y,
-            color: LINJE,
+            color: "#1F2224",
             transform: "translate(-50%, -100%)",
           }}
         >
@@ -279,6 +313,8 @@ const Sparkline = memo(SparklineInner, (prev, next) =>
   prev.width === next.width &&
   prev.height === next.height &&
   prev.mode === next.mode &&
+  prev.accent === next.accent &&
+  prev.visaRiket === next.visaRiket &&
   prev.data === next.data
 );
 export default Sparkline;

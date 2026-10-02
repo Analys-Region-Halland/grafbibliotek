@@ -1,0 +1,29 @@
+{
+  "hash": "dce499d946cd97bf1153f64e902417f4",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Utsläppen per invånare under riket men transporterna ligger över",
+    "ingress": "Halmstad har lägre växthusgasutsläpp per invånare än både Halland och riket. Bland de redovisade sektorerna ligger industrin klart under riket och jordbruket under länet, medan transporterna ligger över riket, och det senaste året steg de totala utsläppen.",
+    "i_korthet": [
+      {
+        "ledtext": "Utsläppen under länet och riket",
+        "text": "Halmstad släppte ut 4,08 ton koldioxidekvivalenter per invånare 2024, jämfört med 4,31 i Halland och 4,50 i riket."
+      },
+      {
+        "ledtext": "Transporterna ligger över riket",
+        "text": "Transportutsläppen var 1,84 ton per invånare, 0,25 ton över riket men 0,28 ton under länet."
+      },
+      {
+        "ledtext": "Senaste året steg utsläppen",
+        "text": "Totalutsläppen ökade med 0,54 ton per invånare från 3,53 ton 2023, medan riket ökade med 0,32 ton."
+      }
+    ],
+    "stycken": [
+      "Halmstads utsläpp per invånare ligger under både länets och rikets nivå, men nedgången har stannat av. Kommunen släppte 2024 ut 4,08 ton koldioxidekvivalenter per invånare, vilket är 0,23 ton under Halland och 0,42 ton under riket. Över fem år har nivån knappt rört sig: den är 0,02 ton högre än 2019, medan riket har minskat med 0,36 ton. Det senaste året steg utsläppen med 0,54 ton, från 3,53 ton 2023, som är seriens lägsta värde.",
+      "Bland de sektorer som redovisas skiljer sig Halmstad mest från riket i industrin och från länet i jordbruket. Industrins utsläpp är 0,21 ton per invånare, 1,02 ton under riket, och jordbrukets 0,50 ton, 0,51 ton under länet. Bland Hallands kommuner har bara Kungsbacka lägre totalutsläpp. Transporterna går åt andra hållet: med 1,84 ton per invånare ligger Halmstad 0,25 ton över riket, även om nivån är 0,28 ton under länet. Även uppvärmningen ligger något över riket, 0,08 mot 0,06 ton, men är lägst i länet.",
+      "Transportprofilen hänger sannolikt samman med kommunens roll som regional stad med hamn, logistik och trafik längs E6. Energianvändningen i transporter är 8,33 MWh per invånare, 1,44 MWh över riket. Över tio år har den minskat med 3,91 MWh, mer än rikets minskning på 1,96 MWh, men det senaste året ökade den med 0,81 MWh medan riket minskade med 0,53 MWh. Det pekar på att transporterna kan ligga bakom en del av den senaste utsläppsökningen. För planeringen är transporterna därmed den sektor där Halmstad ligger mest över riket, samtidigt som ett enskilt år inte räcker för att avgöra om ökningen är ett trendbrott."
+    ]
+  }
+}

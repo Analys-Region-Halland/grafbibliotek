@@ -1,0 +1,29 @@
+{
+  "hash": "4da166e9244cb6a01b11b2b090bfc019",
+  "period": "2024",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Halland har landets högsta arbetskraftsdeltagande men tydliga kommunskillnader",
+    "ingress": "En större andel av hallänningarna i arbetsför ålder arbetar eller söker arbete än i något annat län. Bakom länssnittet finns en tydlig skillnad mellan Kungsbacka och Varberg å ena sidan och Halmstad och Hylte å den andra, och den är störst bland utrikes födda.",
+    "i_korthet": [
+      {
+        "ledtext": "Högst arbetskraftsdeltagande i landet",
+        "text": "Andelen 20–64-åringar i arbetskraften var 87,8 procent 2024, högst av landets 21 regioner och 2,3 procentenheter över riket."
+      },
+      {
+        "ledtext": "Stor spridning mellan kommunerna",
+        "text": "Arbetslösheten var 2,4 procent i Kungsbacka och 7,2 procent i Hylte 2024, mot 4,3 procent i länet."
+      },
+      {
+        "ledtext": "Utrikes föddas arbetslöshet som rikets",
+        "text": "Bland utrikes födda var arbetslösheten 11,9 procent i både Halland och riket, medan inrikes födda låg 0,5 procentenheter under riket."
+      }
+    ],
+    "stycken": [
+      "Halland hör till de län där störst andel av befolkningen i arbetsför ålder arbetar. Sysselsättningsgraden bland 20–64-åringar var 84,0 procent 2024, vilket är 3,1 procentenheter över riket och tredje högst bland landets 21 regioner. Andelen i arbetskraften, alltså sysselsatta och arbetslösa tillsammans, var 87,8 procent och högst i landet. Det senaste året sjönk ändå sysselsättningsgraden med 0,9 procentenheter från 2023, mot 0,7 i riket, och arbetslösheten steg från 3,8 till 4,3 procent, lika mycket som i riket.",
+      "Länssnittet döljer en tydlig skillnad mellan kommunerna. Kungsbacka och Varberg hade sysselsättningsgrader på 87,9 och 86,2 procent, medan Halmstad och Hylte låg på 80,1 och 79,9 procent, alltså under rikets 80,9 procent. Arbetslösheten följer samma mönster, från 2,4 procent i Kungsbacka till 7,2 procent i Hylte. Skillnaden är störst bland utrikes födda, där arbetslösheten var 6,8 procent i Kungsbacka och 16,6 procent i Hylte. För länet som helhet låg utrikes föddas arbetslöshet på 11,9 procent, samma nivå som i riket, medan inrikes födda i Halland hade lägre arbetslöshet än riket.",
+      "Mönstret hänger sannolikt samman med kommunernas läge i förhållande till de stora arbetsmarknaderna. Om många boende kan pendla till Göteborg, som från Kungsbacka och Varberg, blir den arbetsmarknad de har tillgång till i praktiken större och fler kan hitta ett arbete som passar. Hylte har en mindre och mer industriinriktad arbetsmarknad, vilket kan göra den känsligare när efterfrågan på arbetskraft sviktar. För planeringen pekar siffrorna på att sysselsättningsgraden ligger över riket i Kungsbacka, Varberg, Falkenberg och Laholm men under riket i Halmstad och Hylte. Arbetslösheten bland utrikes födda är det mått där länet ligger på rikets nivå, med högst andel i Hylte och Halmstad."
+    ]
+  }
+}

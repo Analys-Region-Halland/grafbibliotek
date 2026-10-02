@@ -142,6 +142,8 @@ if (dir.exists("app")) {
   filer <- c("halland-meta.json", "halland-senaste.json",
              "halland-teman.json", "kommun-register.json",
              tema_filer)
+  # AI-analysen (kap03) följer med om den finns
+  if (file.exists("data/halland-analys.json")) filer <- c(filer, "halland-analys.json")
   for (f in filer) {
     file.copy(file.path("data", f), file.path(app_data_dir, f), overwrite = TRUE)
   }

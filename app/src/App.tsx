@@ -4,15 +4,18 @@ import { useHash } from "./hooks/useHash";
 import { HALLAND_KOMMUNER } from "./types";
 import type { KommunEntry } from "./types";
 import { TEMAN, getAllNettoKpis } from "./teman";
-import KommunValjare from "./components/KommunValjare";
-import TemaNav from "./components/TemaNav";
+import KommunValjare, { KommunSelect } from "./components/KommunValjare";
+import { Sidomeny, MobilNav } from "./components/Navigering";
+import type { Vy } from "./components/Navigering";
 import TemaBlock from "./components/TemaBlock";
+import AnalysPanel from "./components/AnalysPanel";
+import EnhetsAnalys from "./components/EnhetsAnalys";
+import { useAnalys } from "./hooks/useAnalys";
+import { TEMA_FARG_HEX } from "./teman";
+import { indexera } from "./utils/kpiStats";
 import KpiPopup from "./components/KpiPopup";
 import type { KommunGruppData } from "./components/ControlDrawer";
 import OmModal from "./components/OmModal";
-// Analys-vy (dold tills vidare)
-// import AnalysFeed from "./components/AnalysFeed";
-// import ArtikelVy from "./components/ArtikelVy";
 
 /** Alla netto-KPI:er samlade från samtliga teman */
 const NETTO_KPIS = getAllNettoKpis();
@@ -25,6 +28,8 @@ export default function App() {
   const [valdKommun, setValdKommun] = useState("0013");
   const [openKpi, setOpenKpi] = useState<string | null>(null);
   const [visaOm, setVisaOm] = useState(false);
+  const [visaAnalysPanel, setVisaAnalysPanel] = useState(false);
+  const analys = useAnalys();
 
   // Kommun-register + kommungrupper (laddas en gång)
   const [kommunRegister, setKommunRegister] = useState<KommunEntry[]>([]);
@@ -47,19 +52,31 @@ export default function App() {
 
   const aktivTemaConfig = TEMAN.find((t) => t.temaId === aktivtTema);
 
-  const isAnalysView = route.view === "analys" || route.view === "artikel";
+  const vy: Vy = route.view === "analys" ? "analys" : "nyckeltal";
 
+  const handleVy = useCallback((v: Vy) => {
+    navigate(v === "analys" ? "#/analys" : "#/");
+    window.scrollTo({ top: 0 });
+  }, [navigate]);
+
+  /** Områdesval: i nyckeltalsvyn byts tema, i analysvyn skrollas till temats avsnitt */
   const handleTemaChange = useCallback((temaId: string) => {
     setAktivtTema(temaId);
     setOpenKpi(null);
-    // Om vi är i analys-vy, navigera tillbaka till dashboard
+    if (vy === "analys") {
+      document.getElementById(`analys-${temaId}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scrollTo({ top: 0 });
+    }
+  }, [vy]);
+
+  const visaNyckeltal = useCallback((temaId: string) => {
+    setAktivtTema(temaId);
     navigate("#/");
+    window.scrollTo({ top: 0 });
   }, [navigate]);
 
-  // Analys-vy (dold tills vidare)
-  // const handleAnalysClick = useCallback(() => { navigate("#/analys"); }, [navigate]);
-  // const handleOpenArtikel = useCallback((slug: string) => { navigate(`#/analys/${slug}`); }, [navigate]);
-  // const handleBackToAnalys = useCallback(() => { navigate("#/analys"); }, [navigate]);
+  const temaAnalys = analys?.enheter[valdKommun]?.teman[aktivtTema];
 
   const handleOpenKpi = useCallback((kpiId: string) => setOpenKpi(kpiId), []);
 
@@ -129,7 +146,23 @@ export default function App() {
     }
 
     return grouped;
-  }, [data, valdKommun, isRegion]);
+  }, [data, valdKommun, isRegion, riketPopCache]);
+
+  // Index kpi → enhet → serie, för tabellerna (alla kommuner och regioner)
+  const kpiIndex = useMemo(() => indexera(data), [data]);
+  const enhetsnamn = useMemo(() => new Map(kommunRegister.map((k) => [k.k, k.n])), [kommunRegister]);
+
+  // Länets serier som jämförelse på korten när en kommun är vald
+  const hallandKpiData = useMemo(() => {
+    const m = new Map<string, typeof data>();
+    if (isRegion) return m;
+    for (const d of data) {
+      if (d.kommun_kod !== "0013") continue;
+      const arr = m.get(d.kpi_id);
+      if (arr) arr.push(d); else m.set(d.kpi_id, [d]);
+    }
+    return m;
+  }, [data, isRegion]);
 
   const openKpiMeta = meta.find((m) => m.kpi_id === openKpi);
 
@@ -167,106 +200,115 @@ export default function App() {
   return (
     <div className="min-h-screen bg-yta flex flex-col">
       {/* ── Header ── */}
-      <header className="sticky top-0 z-20 bg-white/95 backdrop-blur-md border-b border-neutral-200/60">
-        {/* Accentlinje */}
-        <div className="h-[3px] bg-gradient-to-r from-gron-1 via-gron-2 to-gron-3/60" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          {/* Rad 1: Logo + titel + kommunväljare + Om */}
-          <div className="flex items-center justify-between gap-3 pt-3 pb-2">
-            <div className="flex items-center gap-3 sm:gap-4 min-w-0">
-              <img
-                src={`${import.meta.env.BASE_URL}logo_farg.svg`}
-                alt="Region Halland"
-                className="h-7 sm:h-8 shrink-0 cursor-pointer"
-                onClick={() => navigate("#/")}
-              />
-              <div className="border-l border-neutral-200 pl-3 sm:pl-4 shrink-0">
-                <h1
-                  className="text-[17px] sm:text-[20px] font-bold text-neutral-900 tracking-tight leading-tight cursor-pointer"
-                  onClick={() => navigate("#/")}
-                >
-                  Halland i siffror
-                </h1>
-              </div>
-              {!isAnalysView && (
-                <div className="hidden lg:block ml-1">
-                  <KommunValjare vald={valdKommun} onChange={setValdKommun} />
-                </div>
-              )}
-            </div>
-            <button
-              onClick={() => setVisaOm(true)}
-              className="font-data text-[11px] font-medium text-neutral-500
-                         hover:text-neutral-800 hover:bg-neutral-100
-                         px-2.5 py-1 rounded-md transition-colors cursor-pointer shrink-0
-                         focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gron-2"
-            >
-              Om
+      <header className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-neutral-200">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between gap-3 h-[60px] lg:h-[68px]">
+            <button onClick={() => handleVy("nyckeltal")}
+                    className="flex items-center gap-3 sm:gap-4 min-w-0 cursor-pointer"
+                    aria-label="Halland i siffror, till startsidan">
+              <img src={`${import.meta.env.BASE_URL}logo_farg.svg`} alt="Region Halland" className="h-[22px] sm:h-7 shrink-0" />
+              <span className="border-l border-neutral-200 pl-3 sm:pl-4 text-[15px] sm:text-[19px] font-bold
+                               text-neutral-900 tracking-tight leading-tight whitespace-nowrap">
+                Halland i siffror
+              </span>
             </button>
-          </div>
-
-          {/* Mobil/tablet: kommunväljare på egen rad (bara på dashboard) */}
-          {!isAnalysView && (
-            <div className="lg:hidden pb-1.5">
+            <div className="hidden lg:block">
               <KommunValjare vald={valdKommun} onChange={setValdKommun} />
             </div>
-          )}
-
-          {/* Rad 2: Temanavigation */}
-          <div className="border-t border-neutral-100 py-1.5">
-            <TemaNav
-              aktivtTema={aktivtTema}
-              onChange={handleTemaChange}
-              /* onAnalysClick={handleAnalysClick} */
-              /* isAnalysActive={isAnalysView} */
-            />
+            <div className="flex items-center gap-1 shrink-0">
+              <div className="lg:hidden"><KommunSelect vald={valdKommun} onChange={setValdKommun} /></div>
+              <button
+                onClick={() => setVisaOm(true)}
+                className="hidden lg:block text-[12.5px] font-medium text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100
+                           px-2.5 py-1.5 rounded-md transition-colors cursor-pointer
+                           focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gron-2"
+              >
+                Om
+              </button>
+            </div>
+          </div>
+          <div className="lg:hidden border-t border-neutral-100">
+            <MobilNav vy={vy} aktivtTema={aktivtTema} onVy={handleVy} onTema={handleTemaChange} />
           </div>
         </div>
       </header>
 
       {/* ── Innehåll ── */}
-      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-8 flex-1">
-        {temaLoading ? (
-          <div className="flex flex-col items-center justify-center py-24 gap-3">
-            <div className="h-5 w-5 border-2 border-neutral-200 border-t-neutral-500 rounded-full animate-spin" />
-            <p className="text-neutral-400 text-[12px]">Laddar tema…</p>
-          </div>
-        ) : temaError ? (
-          <div className="flex flex-col items-center justify-center py-24 gap-3">
-            <p className="text-rose-600 text-sm">{temaError}</p>
-            <button
-              onClick={retryTema}
-              className="text-[12px] text-neutral-500 underline hover:no-underline cursor-pointer"
-            >
-              Försök igen
-            </button>
-          </div>
-        ) : aktivTemaConfig ? (
-          <TemaBlock
-            key={aktivtTema}
-            tema={aktivTemaConfig}
-            meta={meta}
-            kommunKpiData={kommunKpiData}
-            nettoKpis={NETTO_KPIS}
-            onOpenKpi={handleOpenKpi}
-          />
-        ) : null}
-      </main>
+      <div className="max-w-[1440px] mx-auto w-full px-4 sm:px-6 lg:px-8 flex-1
+                      lg:grid lg:grid-cols-[216px_minmax(0,1fr)] lg:gap-10">
+        <aside className="hidden lg:block pt-8">
+          <Sidomeny vy={vy} aktivtTema={aktivtTema} onVy={handleVy} onTema={handleTemaChange} />
+        </aside>
+
+        <main className="py-6 sm:py-8 min-w-0">
+          {vy === "analys" ? (
+            <EnhetsAnalys analys={analys} enhetKod={valdKommun} enhetNamn={kommunNamn}
+                          onVisaNyckeltal={visaNyckeltal} />
+          ) : temaLoading ? (
+            <div className="flex flex-col items-center justify-center py-24 gap-3">
+              <div className="h-5 w-5 border-2 border-neutral-200 border-t-neutral-500 rounded-full animate-spin" />
+              <p className="text-neutral-400 text-[12px]">Laddar tema…</p>
+            </div>
+          ) : temaError ? (
+            <div className="flex flex-col items-center justify-center py-24 gap-3">
+              <p className="text-rose-600 text-sm">{temaError}</p>
+              <button onClick={retryTema}
+                      className="text-[12px] text-neutral-500 underline hover:no-underline cursor-pointer">
+                Försök igen
+              </button>
+            </div>
+          ) : aktivTemaConfig ? (
+            <TemaBlock
+              key={`${aktivtTema}-${valdKommun}`}
+              tema={aktivTemaConfig}
+              meta={meta}
+              kommunKpiData={kommunKpiData}
+              hallandKpiData={hallandKpiData}
+              nettoKpis={NETTO_KPIS}
+              enhetNamn={isRegion ? "Halland (länet)" : kommunNamn}
+              analys={temaAnalys}
+              onOpenAnalys={() => setVisaAnalysPanel(true)}
+              onOpenKpi={handleOpenKpi}
+              idx={kpiIndex}
+              enhetsnamn={enhetsnamn}
+              valdKod={valdKommun}
+              onValjEnhet={setValdKommun}
+            />
+          ) : null}
+        </main>
+      </div>
 
       {/* ── Footer ── */}
       <footer className="mt-auto border-t border-neutral-200/60 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
             <img src={`${import.meta.env.BASE_URL}logo_farg.svg`} alt="Region Halland" className="h-5 opacity-50" />
             <span className="text-[10px] text-neutral-300">|</span>
             <span className="text-[10px] text-neutral-400 font-medium">Halland i siffror</span>
+            <span className="text-[10px] text-neutral-300">|</span>
+            <button onClick={() => setVisaOm(true)}
+                    className="text-[10px] text-neutral-500 font-medium underline underline-offset-2 cursor-pointer">
+              Om sidan
+            </button>
           </div>
           <p className="text-[10px] text-neutral-400">
-            Data: RKA Kolada · SCB · Folkhälsomyndigheten · Trafikanalys och bearbetningar av Region Halland
+            Data: RKA Kolada · SCB · Folkhälsomyndigheten · Tillväxtverket · Trafikanalys. Bearbetning: Region Halland
           </p>
         </div>
       </footer>
+
+      {/* Analys för valt tema och enhet */}
+      {visaAnalysPanel && temaAnalys && aktivTemaConfig && (
+        <AnalysPanel
+          temaNamn={aktivTemaConfig.temaNamn}
+          enhetNamn={isRegion ? "Halland" : kommunNamn}
+          accent={TEMA_FARG_HEX[aktivTemaConfig.temaFarg].djup}
+          text={temaAnalys}
+          genererad={analys?.genererad}
+          onClose={() => setVisaAnalysPanel(false)}
+          onVisaAllaTeman={() => { setVisaAnalysPanel(false); handleVy("analys"); }}
+        />
+      )}
 
       {/* Om-modal */}
       {visaOm && <OmModal onClose={() => setVisaOm(false)} />}

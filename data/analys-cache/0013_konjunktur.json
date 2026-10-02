@@ -1,0 +1,29 @@
+{
+  "hash": "e14d154bc373505d95494777c1012df8",
+  "period": "juni 2026",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-02",
+  "res": {
+    "rubrik": "Sysselsättningen över riket men jobben i länet minskar",
+    "ingress": "Halland har en större andel sysselsatta och lägre arbetslöshet än riket, och länet har landets största andel i arbetskraften. Under det senaste året har antalet jobb på länets arbetsställen ändå minskat medan riket växt, och nedgången syns främst i Halmstad.",
+    "i_korthet": [
+      {
+        "ledtext": "Sysselsättningen ligger över riket",
+        "text": "Preliminära uppgifter visar att 85,6 procent av befolkningen 20–64 år var sysselsatt i juli 2026, 3,1 procentenheter över riket."
+      },
+      {
+        "ledtext": "Jobben i länet minskar",
+        "text": "Antalet sysselsatta efter arbetsställe minskade med 0,2 procent på ett år, medan riket ökade med 0,7 procent."
+      },
+      {
+        "ledtext": "Halmstad och Hylte avviker",
+        "text": "Arbetslösheten var 5,4 procent i Halmstad och 5,6 procent i Hylte, mot 2,5 procent i Varberg och 5,0 procent i riket."
+      }
+    ],
+    "stycken": [
+      "Hallands arbetsmarknad ligger på en hög nivå jämfört med riket, men antalet jobb i länet har minskat det senaste året. Preliminära uppgifter för juli 2026 visar att 85,6 procent av befolkningen i åldern 20–64 år är sysselsatt, 3,1 procentenheter över riket och den tredje högsta andelen bland landets 21 regioner. Arbetslösheten är 3,7 procent mot 5,0 procent i riket, och andelen i arbetskraften, 89,0 procent, är den högsta i landet. Det senaste året sjönk arbetslösheten med 0,3 procentenheter, lika mycket som i riket, medan sysselsättningsgraden steg med 0,2 procentenheter mot 0,4 i riket. Antalet jobb på länets arbetsställen minskade med 0,2 procent medan riket växte med 0,7 procent, vilket ger Halland plats 19 av 21.",
+      "Skillnaderna mellan kommunerna är tydliga, med högst sysselsättning i norra Halland. Kungsbacka och Varberg har sysselsättningsgrader på 88,2 respektive 87,8 procent och en arbetslöshet kring 2,5 procent. Halmstad och Hylte har sysselsättningsgrader på 82,8 och 80,9 procent och en arbetslöshet på 5,4 och 5,6 procent, över rikets 5,0.",
+      "Nedgången i antalet jobb syns främst i Halmstad, där antalet sysselsatta på arbetsställena minskade med 1,9 procent, medan Falkenberg ökade med 1,7 procent. Bland branscherna minskade offentlig sektor och transport mest, med 418 respektive 404 färre sysselsatta, medan företagstjänster, hotell och restaurang och handel ökade. Halmstad har länets flesta transportjobb, 2 824, vilket kan peka på att hamn och logistik påverkats. Samtidigt ökade antalet sysselsatta som bor i länet med 0,5 procent, vilket kan spegla att fler av de boende arbetar utanför länet, till exempel genom pendling mot Göteborg. För planeringen pekar det på att pendlingsstråken och Halmstads arbetsmarknad är viktiga att följa."
+    ]
+  }
+}
