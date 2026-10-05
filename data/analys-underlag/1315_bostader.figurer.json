@@ -1,0 +1,90 @@
+[
+  {
+    "id": "N07905",
+    "namn": "Färdigställda småhus per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "uppdelning av N07917 (småhus och flerbostadshus)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N07906",
+    "namn": "Färdigställda lägenheter i flerbostadshus per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "uppdelning av N07917 (småhus och flerbostadshus)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N07907",
+    "namn": "Trångbodda hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Priser och trångboddhet",
+    "forsta": 2012,
+    "sista": 2025
+  },
+  {
+    "id": "N07908",
+    "namn": "Genomsnittligt pris för bostadsrätter, kr/kvm",
+    "enhet": "kr/kvm",
+    "roll": "indikator i bandet Priser och trångboddhet",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N07909",
+    "namn": "Genomsnittligt pris för småhus, tkr",
+    "enhet": "kr/kvm",
+    "roll": "indikator i bandet Priser och trångboddhet",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N07913",
+    "namn": "Antal bostäder per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "indikator i bandet Bostadsbestånd och byggande",
+    "forsta": 2013,
+    "sista": 2025
+  },
+  {
+    "id": "N07917",
+    "namn": "Nybyggda bostäder per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "indikator i bandet Bostadsbestånd och byggande",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N07923",
+    "namn": "Planberedskap för bostadsbyggande, antal bostäder i detaljplan",
+    "enhet": "antal/1 000 inv",
+    "roll": "indikator i bandet Bostadsbestånd och byggande",
+    "forsta": 2015,
+    "sista": 2015
+  },
+  {
+    "id": "N07956",
+    "namn": "Hyresrätter per 1 000 invånare",
+    "enhet": "procent",
+    "roll": "uppdelning av N07913 (upplåtelseformerna)",
+    "forsta": 2013,
+    "sista": 2025
+  },
+  {
+    "id": "N07957",
+    "namn": "Bostadsrätter per 1 000 invånare",
+    "enhet": "procent",
+    "roll": "uppdelning av N07913 (upplåtelseformerna)",
+    "forsta": 2013,
+    "sista": 2025
+  },
+  {
+    "id": "N07958",
+    "namn": "Äganderätter per 1 000 invånare",
+    "enhet": "procent",
+    "roll": "uppdelning av N07913 (upplåtelseformerna)",
+    "forsta": 2013,
+    "sista": 2025
+  }
+]

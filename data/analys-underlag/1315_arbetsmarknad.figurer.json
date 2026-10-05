@@ -1,0 +1,122 @@
+[
+  {
+    "id": "S_ARBL_INR",
+    "namn": "Arbetslösa bland inrikes födda 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARBL_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARBL_KV",
+    "namn": "Arbetslösa bland kvinnor 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARBL_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARBL_MAN",
+    "namn": "Arbetslösa bland män 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARBL_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARBL_TOT",
+    "namn": "Arbetslösa i arbetskraften 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Befolkningen 20–64 år",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARBL_UTR",
+    "namn": "Arbetslösa bland utrikes födda 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARBL_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARKR_INR",
+    "namn": "I arbetskraften bland inrikes födda 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARKR_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARKR_KV",
+    "namn": "I arbetskraften bland kvinnor 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARKR_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARKR_MAN",
+    "namn": "I arbetskraften bland män 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARKR_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARKR_TOT",
+    "namn": "I arbetskraften bland befolkningen 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Befolkningen 20–64 år",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_ARKR_UTR",
+    "namn": "I arbetskraften bland utrikes födda 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_ARKR_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_SYSS_INR",
+    "namn": "Sysselsatta bland inrikes födda 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_SYSS_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_SYSS_KV",
+    "namn": "Sysselsatta bland kvinnor 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_SYSS_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_SYSS_MAN",
+    "namn": "Sysselsatta bland män 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_SYSS_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_SYSS_TOT",
+    "namn": "Sysselsatta bland befolkningen 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Befolkningen 20–64 år",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_SYSS_UTR",
+    "namn": "Sysselsatta bland utrikes födda 20–64 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_SYSS_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  }
+]

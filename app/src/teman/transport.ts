@@ -4,8 +4,7 @@ const G = {
   PENDLING: "Pendling",
   KOLLEKTIV: "Kollektivtrafik och resande",
   FORDON: "Fordonsflotta och elektrifiering",
-  RESANDE: "Bilresande",
-  SAKERHET: "Trafiksäkerhet",
+  BIL: "Bilresande och trafiksäkerhet",
 };
 
 const transport: TemaConfig = {
@@ -15,154 +14,51 @@ const transport: TemaConfig = {
   nettoKpis: [],
   ingetIndex: [],
   sektioner: [
-    // ── Pendling ──
     {
-      id: "pendlkvot",
+      id: "pendling",
       gruppRubrik: G.PENDLING,
-      namn: "Pendlingskvot",
-      kpiIds: ["C_PENDLKVOT"],
-    },
-    {
-      id: "inpendling",
-      gruppRubrik: G.PENDLING,
-      namn: "Inpendlingsandel",
-      kpiIds: ["C_INPENDL_ANDEL"],
-    },
-    {
-      id: "utpendling",
-      gruppRubrik: G.PENDLING,
-      namn: "Utpendlingsandel",
-      kpiIds: ["C_UTPENDL_ANDEL"],
-    },
-    {
-      id: "inpendlare",
-      gruppRubrik: G.PENDLING,
-      namn: "Inpendlare",
-      kpiIds: ["S_INPENDL"],
-    },
-    {
-      id: "utpendlare",
-      gruppRubrik: G.PENDLING,
-      namn: "Utpendlare",
-      kpiIds: ["S_UTPENDL"],
-    },
-    {
-      id: "nettopendling",
-      gruppRubrik: G.PENDLING,
-      namn: "Nettopendling",
-      kpiIds: ["C_PENDL_NETTO"],
+      namn: "Pendling",
+      kpiIds: ["C_PENDLKVOT", "C_INPENDL_ANDEL", "C_UTPENDL_ANDEL", "C_PENDL_NETTO"],
       undersektioner: [
-        { namn: "Underlag", kpiIds: ["S_DAG_TOT", "S_NATT_TOT"] },
-      ],
-    },
-
-    // ── Kollektivtrafik och resande ──
-    {
-      id: "koll_resor",
-      gruppRubrik: G.KOLLEKTIV,
-      namn: "Resor med kollektivtrafik",
-      kpiIds: ["N60404"],
-    },
-    {
-      id: "kolltrafik",
-      gruppRubrik: G.KOLLEKTIV,
-      namn: "Befolkning i kollektivtrafiknära läge",
-      kpiIds: ["N07418"],
-      undersektioner: [
-        { namn: "Uppdelning", kpiIds: ["N07419", "N07412"] },
+        { namn: "inpendlare och utpendlare", delAv: "C_PENDL_NETTO", kpiIds: ["S_INPENDL", "S_UTPENDL"] },
+        { namn: "dag- och nattbefolkningen", delAv: "C_PENDL_NETTO", kpiIds: ["S_DAG_TOT", "S_NATT_TOT"] },
       ],
     },
     {
-      id: "kolltrafik_bost",
+      id: "kollektivtrafik",
       gruppRubrik: G.KOLLEKTIV,
-      namn: "Nytillkomna bostäder i kollektivtrafiknära läge",
-      kpiIds: ["N07410"],
+      namn: "Kollektivtrafik och resande",
+      kpiIds: ["N60404", "N07418", "N07410", "U60496", "U85001", "TR_FARDTJANST"],
+      undersektioner: [
+        { namn: "befolkningen inom och utanför tätort", delAv: "N07418", kpiIds: ["N07419", "N07412"] },
+      ],
     },
     {
-      id: "koll_fornybar",
-      gruppRubrik: G.KOLLEKTIV,
-      namn: "Förnybara drivmedel i kollektivtrafiken",
-      kpiIds: ["U60496"],
-    },
-    {
-      id: "koll_kostnad",
-      gruppRubrik: G.KOLLEKTIV,
-      namn: "Nettokostnad trafik",
-      kpiIds: ["U85001"],
-    },
-    {
-      id: "fardtjanst",
-      gruppRubrik: G.KOLLEKTIV,
-      namn: "Färdtjänstresor",
-      kpiIds: ["TR_FARDTJANST"],
-    },
-
-    // ── Fordonsflotta och elektrifiering ──
-    {
-      id: "bilar",
+      id: "fordon",
       gruppRubrik: G.FORDON,
-      namn: "Personbilar per 1 000 invånare",
-      kpiIds: ["N07935"],
-    },
-    {
-      id: "elbilar",
-      gruppRubrik: G.FORDON,
-      namn: "Elbilar",
-      kpiIds: ["N07945"],
+      namn: "Fordonsflotta och elektrifiering",
+      kpiIds: ["N07935", "N07945", "N07947", "U00501", "N07713"],
       undersektioner: [
-        { namn: "Antal", kpiIds: ["N07938"] },
+        { namn: "normalladdare och snabbladdare", delAv: "N07713", kpiIds: ["N07710", "N07711"] },
       ],
     },
     {
-      id: "laddhybrid",
-      gruppRubrik: G.FORDON,
-      namn: "Laddhybridbilar",
-      kpiIds: ["N07947"],
-      undersektioner: [
-        { namn: "Antal", kpiIds: ["N07940"] },
-      ],
-    },
-    {
-      id: "fossilo",
-      gruppRubrik: G.FORDON,
-      namn: "Fossiloberoende personbilar",
-      kpiIds: ["U00501"],
-    },
-    {
-      id: "laddpunkter",
-      gruppRubrik: G.FORDON,
-      namn: "Elbilsladdpunkter",
-      kpiIds: ["N07713"],
-      undersektioner: [
-        { namn: "Typ", kpiIds: ["N07710", "N07711"] },
-      ],
-    },
-
-    // ── Bilresande ──
-    {
-      id: "korstracka",
-      gruppRubrik: G.RESANDE,
-      namn: "Körsträcka med personbil",
-      kpiIds: ["U07917"],
-      undersektioner: [
-        { namn: "Per bil", kpiIds: ["U07918"] },
-      ],
-    },
-    {
-      id: "drivmedel",
-      gruppRubrik: G.RESANDE,
-      namn: "Drivmedelsleverans till vägtransporter",
-      kpiIds: ["N07782"],
-    },
-
-    // ── Trafiksäkerhet ──
-    {
-      id: "olyckor",
-      gruppRubrik: G.SAKERHET,
-      namn: "Trafikolyckor med räddningsinsatser",
-      kpiIds: ["N00799"],
+      id: "bilresande",
+      gruppRubrik: G.BIL,
+      namn: "Bilresande och trafiksäkerhet",
+      kpiIds: ["U07917", "N07782", "N00799"],
     },
   ],
+  kortNamn: {
+    S_INPENDL: "Inpendlare",
+    S_UTPENDL: "Utpendlare",
+    S_DAG_TOT: "Dagbefolkning",
+    S_NATT_TOT: "Nattbefolkning",
+    N07419: "Inom tätort",
+    N07412: "Utanför tätort",
+    N07710: "Normalladdare",
+    N07711: "Snabbladdare",
+  },
   visningsnamn: {
     C_PENDLKVOT: "Pendlingskvot (dag / natt)",
     C_PENDL_NETTO: "Nettopendling, antal",
@@ -193,21 +89,6 @@ const transport: TemaConfig = {
     U07918: "Genomsnittlig körsträcka med personbil, mil per bil och år",
     N07782: "Drivmedelsleverans till vägtransporter, liter per invånare",
     N00799: "Trafikolyckor med räddningsinsatser, antal per 1 000 invånare",
-  },
-  kortNamn: {
-    N02277: "Antal inpendlare",
-    N02278: "Antal utpendlare",
-    S_INPENDL: "Antal inpendlare",
-    S_UTPENDL: "Antal utpendlare",
-    S_DAG_TOT: "Dagbefolkning",
-    S_NATT_TOT: "Nattbefolkning",
-    N07938: "Antal per 1 000 invånare",
-    N07940: "Antal per 1 000 invånare",
-    N07710: "Normalladdare",
-    N07711: "Snabbladdare",
-    N07419: "Inom tätort",
-    N07412: "Utanför tätort",
-    U07918: "Mil per bil",
   },
   lagtArBra: ["N00799"],
 };

@@ -3,7 +3,7 @@ import type { KpiRow, KpiMeta, KommunEntry } from "../types";
 import Tidsserie, { downloadSvgAsPng, downloadSvgAsFile, calcLeftMargin } from "../charts/Tidsserie";
 import type { ExportHeader } from "../charts/Tidsserie";
 import KartaVy from "../charts/KartaVy";
-import type { KommunGruppData } from "./ControlDrawer";
+import type { KommunGruppData } from "../types";
 import { getAllVisningsnamn, getAllNettoKpis, getAllIngetIndex } from "../teman";
 import { fullKalla } from "../utils/kalla";
 import { fmtPeriod, fmt, isMonthly, sameMonthLastYear } from "../utils/format";
@@ -459,12 +459,14 @@ export default function KpiPopup({
   };
 
   const andelLabel = enhet === "procent" ? "Andel (%)" : enhet === "kvot" ? "Kvot" : enhetEtikett(enhet);
+  /** Det parade måttets etikett, t.ex. "Antal", "Per 1 000 inv." eller "Mil/bil" */
+  const parLabel = parMeta ? enhetEtikett(parMeta.enhet) : "Antal";
   const harMattVal = harPar || isNetto || kanVisaIndex;
 
   // ── Mått-värde för chip-label ──
   const mattValue = visaIndex ? "Index"
     : isNetto ? (nettoRatt ? "Antal" : "Per 1 000 inv.")
-    : visaAntal ? "Antal"
+    : visaAntal ? parLabel
     : andelLabel;
 
   // Stäng andra dropdowns
@@ -574,7 +576,7 @@ export default function KpiPopup({
                       <span className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0 ${visaAntal && !visaIndex ? "border-gron-2" : "border-neutral-300"}`}>
                         {visaAntal && !visaIndex && <span className="w-2 h-2 rounded-full bg-gron-2" />}
                       </span>
-                      <span className={`text-[12px] ${visaAntal && !visaIndex ? "font-medium text-neutral-800" : "text-neutral-600"}`}>Antal</span>
+                      <span className={`text-[12px] ${visaAntal && !visaIndex ? "font-medium text-neutral-800" : "text-neutral-600"}`}>{parLabel}</span>
                     </button>
                   </>)}
                   {isNetto && (<>

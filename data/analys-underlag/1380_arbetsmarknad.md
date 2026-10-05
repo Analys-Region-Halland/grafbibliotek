@@ -41,7 +41,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Arbetsmarknad, Halmstad
 
-## Sysselsättningsgrad, 20–64 år
+## Befolkningen 20–64 år: Sysselsättningsgrad, 20–64 år
 
 ### Sysselsatta bland befolkningen 20–64 år, andel (procent, 2024)
 Mäter: Andel sysselsatta av befolkningen 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.
@@ -54,29 +54,10 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Slutlig statistik från S
 - Hallands kommuner 2024 (högst först): Kungsbacka 87,9; Varberg 86,2; Falkenberg 84,0; Laholm 83,3; Halmstad 80,1; Hylte 79,9
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: -1,2 procentenheter (från 81,3 år 2023); riket -0,7 procentenheter
+- Halmstad år för år: 2020 78,6; 2021 80,3; 2022 81,1; 2023 81,3; 2024 80,1
 - Serien för Halmstad 2020–2024: högst 81,3 (2023), lägst 78,6 (2020)
 
-### Sysselsatta bland inrikes födda 20–64 år, andel [Födelseregion] (procent, 2024)
-- Halmstad: 84,3
-- Halland (länet): 87,0
-- Riket: 84,8
-- Skillnad Halmstad mot riket: -0,5 procentenheter
-- Skillnad Halmstad mot Halland: -2,7 procentenheter
-- Plats bland landets 290 kommuner: 218 (1 = högsta värdet)
-- Hallands kommuner 2024 (högst först): Kungsbacka 89,3; Varberg 88,2; Falkenberg 87,1; Laholm 86,5; Hylte 86,3; Halmstad 84,3
-- Plats bland Hallands 6 kommuner: 6
-
-### Sysselsatta bland utrikes födda 20–64 år, andel [Födelseregion] (procent, 2024)
-- Halmstad: 68,7
-- Halland (länet): 71,7
-- Riket: 70,4
-- Skillnad Halmstad mot riket: -1,7 procentenheter
-- Skillnad Halmstad mot Halland: -3,0 procentenheter
-- Plats bland landets 290 kommuner: 180 (1 = högsta värdet)
-- Hallands kommuner 2024 (högst först): Kungsbacka 77,4; Varberg 75,9; Falkenberg 72,6; Laholm 70,9; Halmstad 68,7; Hylte 65,7
-- Plats bland Hallands 6 kommuner: 5
-
-### Sysselsatta bland kvinnor 20–64 år, andel [Kvinnor och män] (procent, 2024)
+### Sysselsatta bland kvinnor 20–64 år, andel [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 79,8
 - Halland (länet): 83,5
 - Riket: 80,1
@@ -85,8 +66,9 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Slutlig statistik från S
 - Plats bland landets 290 kommuner: 200 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 87,6; Varberg 85,6; Falkenberg 83,2; Laholm 82,5; Halmstad 79,8; Hylte 76,6
 - Plats bland Hallands 6 kommuner: 5
+- Förändring 1 år: -1,0 procentenheter (från 80,8 år 2023); riket -0,5 procentenheter
 
-### Sysselsatta bland män 20–64 år, andel [Kvinnor och män] (procent, 2024)
+### Sysselsatta bland män 20–64 år, andel [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 80,4
 - Halland (länet): 84,5
 - Riket: 81,6
@@ -95,8 +77,31 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Slutlig statistik från S
 - Plats bland landets 290 kommuner: 240 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 88,2; Varberg 86,9; Falkenberg 84,8; Laholm 84,1; Hylte 82,6; Halmstad 80,4
 - Plats bland Hallands 6 kommuner: 6
+- Förändring 1 år: -1,3 procentenheter (från 81,7 år 2023); riket -0,9 procentenheter
 
-## Arbetskraftsdeltagande, 20–64 år
+### Sysselsatta bland inrikes födda 20–64 år, andel [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel: inrikes och utrikes födda] (procent, 2024)
+- Halmstad: 84,3
+- Halland (länet): 87,0
+- Riket: 84,8
+- Skillnad Halmstad mot riket: -0,5 procentenheter
+- Skillnad Halmstad mot Halland: -2,7 procentenheter
+- Plats bland landets 290 kommuner: 218 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Kungsbacka 89,3; Varberg 88,2; Falkenberg 87,1; Laholm 86,5; Hylte 86,3; Halmstad 84,3
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 1 år: -1,0 procentenheter (från 85,3 år 2023); riket -0,7 procentenheter
+
+### Sysselsatta bland utrikes födda 20–64 år, andel [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel: inrikes och utrikes födda] (procent, 2024)
+- Halmstad: 68,7
+- Halland (länet): 71,7
+- Riket: 70,4
+- Skillnad Halmstad mot riket: -1,7 procentenheter
+- Skillnad Halmstad mot Halland: -3,0 procentenheter
+- Plats bland landets 290 kommuner: 180 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Kungsbacka 77,4; Varberg 75,9; Falkenberg 72,6; Laholm 70,9; Halmstad 68,7; Hylte 65,7
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 1 år: -1,4 procentenheter (från 70,1 år 2023); riket -0,4 procentenheter
+
+## Befolkningen 20–64 år: Arbetskraftsdeltagande, 20–64 år
 
 ### I arbetskraften bland befolkningen 20–64 år, andel (procent, 2024)
 Mäter: Andel av befolkningen 20–64 år som ingår i arbetskraften (sysselsatta + arbetslösa). Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.
@@ -109,29 +114,10 @@ Mäter: Andel av befolkningen 20–64 år som ingår i arbetskraften (sysselsatt
 - Hallands kommuner 2024 (högst först): Kungsbacka 90,0; Varberg 89,1; Falkenberg 87,9; Laholm 87,3; Hylte 86,1; Halmstad 85,4
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: -0,6 procentenheter (från 86,0 år 2023); riket -0,3 procentenheter
+- Halmstad år för år: 2020 85,1; 2021 85,5; 2022 85,6; 2023 86,0; 2024 85,4
 - Serien för Halmstad 2020–2024: högst 86,0 (2023), lägst 85,1 (2020)
 
-### I arbetskraften bland inrikes födda 20–64 år, andel [Födelseregion] (procent, 2024)
-- Halmstad: 87,3
-- Halland (länet): 89,4
-- Riket: 87,6
-- Skillnad Halmstad mot riket: -0,3 procentenheter
-- Skillnad Halmstad mot Halland: -2,1 procentenheter
-- Plats bland landets 290 kommuner: 214 (1 = högsta värdet)
-- Hallands kommuner 2024 (högst först): Kungsbacka 91,0; Varberg 90,2; Falkenberg 89,4; Hylte 89,3; Laholm 89,2; Halmstad 87,3
-- Plats bland Hallands 6 kommuner: 6
-
-### I arbetskraften bland utrikes födda 20–64 år, andel [Födelseregion] (procent, 2024)
-- Halmstad: 80,3
-- Halland (länet): 81,4
-- Riket: 79,9
-- Skillnad Halmstad mot riket: +0,4 procentenheter
-- Skillnad Halmstad mot Halland: -1,1 procentenheter
-- Plats bland landets 290 kommuner: 129 (1 = högsta värdet)
-- Hallands kommuner 2024 (högst först): Varberg 83,2; Kungsbacka 83,1; Falkenberg 82,4; Halmstad 80,3; Laholm 80,3; Hylte 79,0
-- Plats bland Hallands 6 kommuner: 4
-
-### I arbetskraften bland kvinnor 20–64 år, andel [Kvinnor och män] (procent, 2024)
+### I arbetskraften bland kvinnor 20–64 år, andel [uppdelning av I arbetskraften bland befolkningen 20–64 år, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 84,8
 - Halland (länet): 87,1
 - Riket: 84,6
@@ -140,8 +126,9 @@ Mäter: Andel av befolkningen 20–64 år som ingår i arbetskraften (sysselsatt
 - Plats bland landets 290 kommuner: 184 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 89,8; Varberg 88,3; Falkenberg 86,8; Laholm 86,2; Halmstad 84,8; Hylte 83,7
 - Plats bland Hallands 6 kommuner: 5
+- Förändring 1 år: -0,4 procentenheter (från 85,2 år 2023); riket -0,2 procentenheter
 
-### I arbetskraften bland män 20–64 år, andel [Kvinnor och män] (procent, 2024)
+### I arbetskraften bland män 20–64 år, andel [uppdelning av I arbetskraften bland befolkningen 20–64 år, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 85,9
 - Halland (länet): 88,4
 - Riket: 86,3
@@ -150,8 +137,31 @@ Mäter: Andel av befolkningen 20–64 år som ingår i arbetskraften (sysselsatt
 - Plats bland landets 290 kommuner: 233 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 90,2; Varberg 89,9; Falkenberg 89,1; Laholm 88,4; Hylte 88,1; Halmstad 85,9
 - Plats bland Hallands 6 kommuner: 6
+- Förändring 1 år: -0,9 procentenheter (från 86,8 år 2023); riket -0,4 procentenheter
 
-## Arbetslöshet, 20–64 år
+### I arbetskraften bland inrikes födda 20–64 år, andel [uppdelning av I arbetskraften bland befolkningen 20–64 år, andel: inrikes och utrikes födda] (procent, 2024)
+- Halmstad: 87,3
+- Halland (länet): 89,4
+- Riket: 87,6
+- Skillnad Halmstad mot riket: -0,3 procentenheter
+- Skillnad Halmstad mot Halland: -2,1 procentenheter
+- Plats bland landets 290 kommuner: 214 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Kungsbacka 91,0; Varberg 90,2; Falkenberg 89,4; Hylte 89,3; Laholm 89,2; Halmstad 87,3
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 1 år: -0,6 procentenheter (från 87,9 år 2023); riket -0,4 procentenheter
+
+### I arbetskraften bland utrikes födda 20–64 år, andel [uppdelning av I arbetskraften bland befolkningen 20–64 år, andel: inrikes och utrikes födda] (procent, 2024)
+- Halmstad: 80,3
+- Halland (länet): 81,4
+- Riket: 79,9
+- Skillnad Halmstad mot riket: +0,4 procentenheter
+- Skillnad Halmstad mot Halland: -1,1 procentenheter
+- Plats bland landets 290 kommuner: 129 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Varberg 83,2; Kungsbacka 83,1; Falkenberg 82,4; Halmstad 80,3; Laholm 80,3; Hylte 79,0
+- Plats bland Hallands 6 kommuner: 4
+- Förändring 1 år: -0,6 procentenheter (från 80,9 år 2023); riket +0,1 procentenheter
+
+## Befolkningen 20–64 år: Arbetslöshet, 20–64 år
 
 ### Arbetslösa i arbetskraften 20–64 år, andel (procent, 2024)
 Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.
@@ -164,29 +174,10 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från 
 - Hallands kommuner 2024 (högst först): Hylte 7,20; Halmstad 6,20; Laholm 4,60; Falkenberg 4,40; Varberg 3,30; Kungsbacka 2,40
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: +0,70 procentenheter (från 5,50 år 2023); riket +0,50 procentenheter
+- Halmstad år för år: 2020 7,60; 2021 6,10; 2022 5,20; 2023 5,50; 2024 6,20
 - Serien för Halmstad 2020–2024: högst 7,60 (2020), lägst 5,20 (2022)
 
-### Arbetslösa bland inrikes födda 20–64 år, andel [Födelseregion] (procent, 2024)
-- Halmstad: 3,40
-- Halland (länet): 2,60
-- Riket: 3,10
-- Skillnad Halmstad mot riket: +0,30 procentenheter
-- Skillnad Halmstad mot Halland: +0,80 procentenheter
-- Plats bland landets 290 kommuner: 95 (1 = högsta värdet)
-- Hallands kommuner 2024 (högst först): Hylte 3,40; Halmstad 3,40; Laholm 3,00; Falkenberg 2,60; Varberg 2,30; Kungsbacka 1,80
-- Plats bland Hallands 6 kommuner: 2
-
-### Arbetslösa bland utrikes födda 20–64 år, andel [Födelseregion] (procent, 2024)
-- Halmstad: 14,5
-- Halland (länet): 11,9
-- Riket: 11,9
-- Skillnad Halmstad mot riket: +2,6 procentenheter
-- Skillnad Halmstad mot Halland: +2,6 procentenheter
-- Plats bland landets 290 kommuner: 71 (1 = högsta värdet)
-- Hallands kommuner 2024 (högst först): Hylte 16,6; Halmstad 14,5; Falkenberg 11,9; Laholm 11,7; Varberg 8,9; Kungsbacka 6,8
-- Plats bland Hallands 6 kommuner: 2
-
-### Arbetslösa bland kvinnor 20–64 år, andel [Kvinnor och män] (procent, 2024)
+### Arbetslösa bland kvinnor 20–64 år, andel [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 5,90
 - Halland (länet): 4,20
 - Riket: 5,40
@@ -195,8 +186,9 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från 
 - Plats bland landets 290 kommuner: 71 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 8,40; Halmstad 5,90; Laholm 4,30; Falkenberg 4,10; Varberg 3,10; Kungsbacka 2,50
 - Plats bland Hallands 6 kommuner: 2
+- Förändring 1 år: +0,70 procentenheter (från 5,20 år 2023); riket +0,50 procentenheter
 
-### Arbetslösa bland män 20–64 år, andel [Kvinnor och män] (procent, 2024)
+### Arbetslösa bland män 20–64 år, andel [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 6,50
 - Halland (länet): 4,50
 - Riket: 5,40
@@ -205,3 +197,26 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från 
 - Plats bland landets 290 kommuner: 45 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Halmstad 6,50; Hylte 6,30; Laholm 4,90; Falkenberg 4,80; Varberg 3,40; Kungsbacka 2,30
 - Plats bland Hallands 6 kommuner: 1
+- Förändring 1 år: +0,70 procentenheter (från 5,80 år 2023); riket +0,50 procentenheter
+
+### Arbetslösa bland inrikes födda 20–64 år, andel [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel: inrikes och utrikes födda] (procent, 2024)
+- Halmstad: 3,40
+- Halland (länet): 2,60
+- Riket: 3,10
+- Skillnad Halmstad mot riket: +0,30 procentenheter
+- Skillnad Halmstad mot Halland: +0,80 procentenheter
+- Plats bland landets 290 kommuner: 95 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Hylte 3,40; Halmstad 3,40; Laholm 3,00; Falkenberg 2,60; Varberg 2,30; Kungsbacka 1,80
+- Plats bland Hallands 6 kommuner: 2
+- Förändring 1 år: +0,50 procentenheter (från 2,90 år 2023); riket +0,30 procentenheter
+
+### Arbetslösa bland utrikes födda 20–64 år, andel [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel: inrikes och utrikes födda] (procent, 2024)
+- Halmstad: 14,5
+- Halland (länet): 11,9
+- Riket: 11,9
+- Skillnad Halmstad mot riket: +2,6 procentenheter
+- Skillnad Halmstad mot Halland: +2,6 procentenheter
+- Plats bland landets 290 kommuner: 71 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Hylte 16,6; Halmstad 14,5; Falkenberg 11,9; Laholm 11,7; Varberg 8,9; Kungsbacka 6,8
+- Plats bland Hallands 6 kommuner: 2
+- Förändring 1 år: +1,1 procentenheter (från 13,4 år 2023); riket +0,6 procentenheter

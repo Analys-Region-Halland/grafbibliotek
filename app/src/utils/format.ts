@@ -9,6 +9,22 @@ export function fmt(value: number | null | undefined, decimals = 1): string {
 }
 
 /**
+ * Stora tal förkortas så att de får plats i tabeller och figurer: från en miljon skrivs de
+ * med tre värdesiffror i miljoner (mn) eller miljarder (mdr), t.ex. 3,13 mn och 40,9 mdr.
+ * Mindre tal skrivs ut med `decimals` decimaler. `ref` styr enheten, så att en förändring
+ * skrivs i samma enhet som värdet den hör till: 3,13 mn (+0,43 mn). Exakta värden finns
+ * i tooltipen och i graf och karta.
+ */
+export function fmtStor(value: number | null | undefined, decimals: number, ref?: number | null): string {
+  if (value == null || isNaN(value)) return "–";
+  const a = Math.abs(ref ?? value);
+  const tre = (x: number) => (x >= 100 ? 0 : x >= 10 ? 1 : 2);
+  if (a >= 1e9) return `${fmt(value / 1e9, tre(a / 1e9))} mdr`;
+  if (a >= 1e6) return `${fmt(value / 1e6, tre(a / 1e6))} mn`;
+  return fmt(value, decimals);
+}
+
+/**
  * Decimaler för ett KPI-värde. Samma regel används i R/kap03-ai-analys.R så att
  * siffrorna i analystexten stämmer med korten: antal och tal ≥ 1 000 utan decimaler,
  * tal under 10 med två, övriga med en.

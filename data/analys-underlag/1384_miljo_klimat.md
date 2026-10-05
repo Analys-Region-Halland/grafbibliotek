@@ -41,7 +41,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Miljö & klimat, Kungsbacka
 
-## Växthusgasutsläpp
+## Utsläpp av växthusgaser: Växthusgasutsläpp
 
 ### Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare (ton CO2/inv, 2024)
 Mäter: Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mätt i ton koldioxidekvivalenter per invånare. Måttet inkluderar koldioxid, metan och lustgas från alla sektorer. Lägre värden innebär lägre klimatpåverkan per person.
@@ -53,11 +53,12 @@ Mäter: Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mät
 - Plats bland landets 290 kommuner: 252 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Laholm 6,48; Hylte 5,78; Falkenberg 5,47; Varberg 4,96; Halmstad 4,08; Kungsbacka 2,59
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: +0,32 ton CO2/inv (från 2,27 år 2023); riket +0,32 ton CO2/inv
 - Förändring 5 år: -0,12 ton CO2/inv (från 2,70 år 2019); riket -0,36 ton CO2/inv
+- Förändring 1 år: +0,32 ton CO2/inv (från 2,27 år 2023); riket +0,32 ton CO2/inv
+- Kungsbacka år för år: 2015 3,04; 2016 2,89; 2017 2,85; 2018 2,72; 2019 2,70; 2020 2,54; 2021 2,49; 2022 2,27; 2023 2,27; 2024 2,59
 - Serien för Kungsbacka 2010–2024: högst 3,76 (2010), lägst 2,27 (2023)
 
-### Växthusgasutsläpp transporter, ton CO2-ekvivalenter per invånare [Per sektor] (ton CO2/inv, 2024)
+### Växthusgasutsläpp transporter, ton CO2-ekvivalenter per invånare [uppdelning av Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare: utsläppen från fyra sektorer] (ton CO2/inv, 2024)
 - Kungsbacka: 1,83
 - Halland (länet): 2,13
 - Riket: 1,59
@@ -67,8 +68,9 @@ Mäter: Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mät
 - Hallands kommuner 2024 (högst först): Hylte 2,90; Falkenberg 2,66; Laholm 2,40; Varberg 2,33; Halmstad 1,84; Kungsbacka 1,83
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 5 år: -0,07 ton CO2/inv (från 1,91 år 2019); riket -0,04 ton CO2/inv
+- Förändring 1 år: +0,27 ton CO2/inv (från 1,56 år 2023); riket +0,27 ton CO2/inv
 
-### Växthusgasutsläpp industri, ton CO2-ekvivalenter per invånare [Per sektor] (ton CO2/inv, 2024)
+### Växthusgasutsläpp industri, ton CO2-ekvivalenter per invånare [uppdelning av Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare: utsläppen från fyra sektorer] (ton CO2/inv, 2024)
 - Kungsbacka: 0,01
 - Halland (länet): 0,30
 - Riket: 1,23
@@ -78,8 +80,9 @@ Mäter: Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mät
 - Hallands kommuner 2024 (högst först): Hylte 1,20; Varberg 0,71; Falkenberg 0,27; Halmstad 0,21; Laholm 0,20; Kungsbacka 0,01
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 5 år: -0,00 ton CO2/inv (från 0,01 år 2019); riket -0,22 ton CO2/inv
+- Förändring 1 år: -0,00 ton CO2/inv (från 0,01 år 2023); riket -0,02 ton CO2/inv
 
-### Växthusgasutsläpp jordbruk, ton CO2-ekvivalenter per invånare [Per sektor] (ton CO2/inv, 2024)
+### Växthusgasutsläpp jordbruk, ton CO2-ekvivalenter per invånare [uppdelning av Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare: utsläppen från fyra sektorer] (ton CO2/inv, 2024)
 - Kungsbacka: 0,32
 - Halland (länet): 1,01
 - Riket: 0,58
@@ -89,8 +92,9 @@ Mäter: Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mät
 - Hallands kommuner 2024 (högst först): Laholm 3,06; Falkenberg 1,80; Varberg 1,35; Hylte 0,85; Halmstad 0,50; Kungsbacka 0,32
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 5 år: +0,00 ton CO2/inv (från 0,32 år 2019); riket -0,02 ton CO2/inv
+- Förändring 1 år: +0,00 ton CO2/inv (från 0,32 år 2023); riket -0,00 ton CO2/inv
 
-### Växthusgasutsläpp uppvärmning, ton CO2-ekvivalenter per invånare [Per sektor] (ton CO2/inv, 2024)
+### Växthusgasutsläpp uppvärmning, ton CO2-ekvivalenter per invånare [uppdelning av Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare: utsläppen från fyra sektorer] (ton CO2/inv, 2024)
 - Kungsbacka: 0,10
 - Halland (länet): 0,11
 - Riket: 0,06
@@ -100,6 +104,7 @@ Mäter: Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mät
 - Hallands kommuner 2024 (högst först): Laholm 0,23; Falkenberg 0,16; Hylte 0,12; Kungsbacka 0,10; Varberg 0,10; Halmstad 0,08
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 5 år: -0,04 ton CO2/inv (från 0,14 år 2019); riket -0,02 ton CO2/inv
+- Förändring 1 år: -0,00 ton CO2/inv (från 0,10 år 2023); riket -0,00 ton CO2/inv
 
 ## Energi och omställning
 
@@ -113,8 +118,9 @@ Mäter: Slutanvändning av energi i transportsektorn per invånare, mätt i mega
 - Plats bland landets 280 kommuner: 225 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Laholm 11,14; Hylte 9,64; Falkenberg 9,10; Varberg 9,01; Halmstad 8,33; Kungsbacka 4,96
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 5 år: -0,92 MWh/inv (från 5,88 år 2019); riket -1,44 MWh/inv
 - Förändring 10 år: -1,16 MWh/inv (från 6,12 år 2014); riket -1,96 MWh/inv
+- Förändring 5 år: -0,92 MWh/inv (från 5,88 år 2019); riket -1,44 MWh/inv
+- Kungsbacka år för år: 2014 6,12; 2015 6,47; 2016 6,44; 2017 6,71; 2018 6,01; 2019 5,88; 2020 5,45; 2021 5,40; 2024 4,96
 - Serien för Kungsbacka 2010–2024: högst 7,00 (2010), lägst 4,96 (2024)
 
 ### Ekologiskt brukad åkermark, andel (procent, 2025)
@@ -127,7 +133,9 @@ Mäter: Andel av kommunens totala åkermark som brukas ekologiskt, inklusive mar
 - Plats bland landets 261 kommuner: 159 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Varberg 14,8; Kungsbacka 11,0; Halmstad 10,6; Hylte 9,7; Falkenberg 8,3; Laholm 4,4
 - Plats bland Hallands 6 kommuner: 2
-- Förändring 1 år: +2,1 procentenheter (från 8,9 år 2024); riket -0,7 procentenheter
-- Förändring 5 år: -1,2 procentenheter (från 12,2 år 2020); riket -4,4 procentenheter
+- Förändring hela serien sedan 2010: +4,0 procentenheter (från 6,9 år 2010); riket +1,3 procentenheter
 - Förändring 10 år: +3,5 procentenheter (från 7,5 år 2015); riket -1,3 procentenheter
+- Förändring 5 år: -1,2 procentenheter (från 12,2 år 2020); riket -4,4 procentenheter
+- Förändring 1 år: +2,1 procentenheter (från 8,9 år 2024); riket -0,7 procentenheter
+- Kungsbacka år för år: 2015 7,5; 2016 8,5; 2017 10,1; 2018 10,6; 2019 11,8; 2020 12,2; 2021 11,8; 2022 11,8; 2023 11,5; 2024 8,9; 2025 11,0
 - Serien för Kungsbacka 2010–2025: högst 12,2 (2020), lägst 6,5 (2013)

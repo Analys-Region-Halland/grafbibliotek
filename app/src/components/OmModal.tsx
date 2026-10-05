@@ -105,8 +105,8 @@ export default function OmModal({ onClose }: Props) {
               Analyser
             </h3>
             <p>
-              Varje område har en kort analys för länet och för varje kommun, och under
-              Analys finns alla områden samlade per kommun. Texterna är AI-genererade.
+              Varje område har en analys för länet och för varje kommun: rubrik och ingress
+              överst på sidan och hela texten under tabellen. Texterna är AI-genererade.
             </p>
             <AiForklaring />
           </section>

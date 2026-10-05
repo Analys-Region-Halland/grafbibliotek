@@ -1,6 +1,6 @@
 /**
  * Delad datacache — modul-nivå singleton som lever hela sessionen.
- * Används av både useData (dashboard) och useArtikelData (artiklar).
+ * Används av useData: kompakta tabellfiler för sidan och hela temafiler för graf och karta.
  */
 import type { KpiRow, KpiMeta, SlimRow, KommunEntry } from "../types";
 
@@ -131,6 +131,7 @@ let metaPromise: Promise<{
 
 const temaCache: Record<string, KpiRow[]> = {};
 const temaPromises: Record<string, Promise<KpiRow[]>> = {};
+const tabellPromises: Record<string, Promise<KpiRow[]>> = {};
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -156,7 +157,28 @@ export function ensureMeta() {
   return metaPromise;
 }
 
-/** Ladda en temafil (cachas per temaId) */
+/**
+ * Ladda temats kompakta tabellfil (cachas per temaId): det sidan behöver för tabellen,
+ * tooltipen och jämförelsen, en bråkdel av hela temafilen.
+ */
+export function loadTabell(temaId: string, onProgress?: (frac: number) => void): Promise<KpiRow[]> {
+  if (!tabellPromises[temaId]) {
+    tabellPromises[temaId] = (async () => {
+      const { metaMap, kommunMap } = await ensureMeta();
+      const url = `${BASE}data/halland-tabell-${temaId}.json`;
+      const slim = (onProgress ? await fetchMedProgress(url, onProgress) : await fetch(url).then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })) as SlimRow[];
+      return hydrate(slim, metaMap, kommunMap);
+    })();
+    // Ett misslyckat försök ska kunna göras om
+    tabellPromises[temaId].catch(() => { delete tabellPromises[temaId]; });
+  }
+  return tabellPromises[temaId];
+}
+
+/** Ladda hela temafilen (alla kommuner och år, för graf och karta; cachas per temaId) */
 export async function loadTema(temaId: string): Promise<KpiRow[]> {
   if (temaCache[temaId]) return temaCache[temaId];
 
@@ -170,17 +192,9 @@ export async function loadTema(temaId: string): Promise<KpiRow[]> {
       temaCache[temaId] = rows;
       return rows;
     })();
+    // Ett misslyckat försök ska kunna göras om
+    temaPromises[temaId].catch(() => { delete temaPromises[temaId]; });
   }
 
   return temaPromises[temaId];
-}
-
-/** Spara temadata i cachen (används av useData vid initial laddning med progress) */
-export function putTema(temaId: string, rows: KpiRow[]) {
-  temaCache[temaId] = rows;
-}
-
-/** Kolla om ett tema redan finns i cachen */
-export function hasTema(temaId: string): boolean {
-  return temaId in temaCache;
 }

@@ -65,8 +65,8 @@ R/
   kartor/                 Konvertering av shapefiler → GeoJSON
 app/                      Vite + React 19 + TypeScript + D3 + Tailwind 4
   src/teman/              Frontend-config per tema (sektioner, visningsnamn, färg)
-  src/components/         KpiKort, KpiModal, TemaBlock, JamforPanel, GuidadBerattelse …
-  src/charts/             D3-diagram: Tidsserie, Sparkline, Beeswarm, KartaVy, RangIndikator
+  src/components/         TemaBlock, TemaTabell, JamforTabell, RadTip, KpiPopup …
+  src/charts/             D3-diagram: Spar, Tidsserie, KartaVy
   public/data/            Exporterad JSON + GeoJSON (incheckad, används av bygget)
 data/                     Cache och mellanfiler från pipelinen (gitignorerad)
 kartor/                   Källshapefiler (SWEREF 99 TM) för kommuner och län
@@ -134,14 +134,30 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
   varje text, bland annat att Hallands tillväxt "vilar helt på inflyttning" fast
   invandringsöverskottet var nästan lika stort. Befolkningsunderlaget har därför ett
   avsnitt med befolkningsförändringens komponenter per år.
+- **Figurer** (`R/analys/figurregler.md`): en till tre per text i `res.figurer`, efter det stycke
+  vars påstående de visar. Typer: `utveckling`, `delar`, `halland`, `uppdelning`, `landet`.
+  KPI:erna får bara tas ur `data/analys-underlag/<id>.figurer.json` (temats tabell och
+  `figurKpiIds`); filen ingår inte i hashen. Rubriken är budskapet och kontrolleras som texten.
+  kap03 och `kontrollera-text.R` prövar varje figur; en ogiltig figur publiceras inte. Ritas av
+  `AnalysFigur.tsx` (`charts/SerieGraf`, `Delar`, `HallandStaplar`, `Spar`); månadsdata visas
+  som samma månad varje år, så att säsongen inte skymmer trenden.
+- **Tre tidsperspektiv** (systemprompten, avsnittet med samma namn): lång trend (hela serien
+  eller tio år), kortare trend (fem år) och senaste året, i den ordningen. Ett enskilt år får
+  aldrig stå för läget: Falkenberg "står inte still" när folkmängden vuxit stadigt sedan 2000
+  och bara var oförändrad det senaste året; rätt är att den växer men har bromsat in.
+  Underlaget ger därför förändring på flera horisonter (för antal även genomsnitt per år)
+  och värdena år för år de senaste tio åren. Granskningen kontrollerar detta särskilt.
 - **AI-märkning:** varje analys börjar med upplysningen i `app/src/components/AiUpplysning.tsx`
   (EU:s AI-förordning art. 50, Diggs och IMY:s riktlinjer): att texten är AI-genererad, hur den
   kontrolleras, förbehåll och kontakt. Texten säger att texterna inte granskats i sin helhet av
   en analytiker; ändra den där om arbetssättet ändras.
 - Befolkningssiffrorna för 2025 är preliminära och skyddade med SCB:s CKM-metod (små
   slumpavvikelser), så komponenterna summerar inte alltid exakt till folkmängdsförändringen.
-- Översikten per enhet (`<kod>_oversikt`) kommer upp i uppdragslistan först när enhetens
-  alla tio temaanalyser är aktuella.
+- **Övergång (oktober 2026):** temastrukturen (band och uppdelningar) har ändrats, så alla
+  texter är inaktuella mot underlaget tills de skrivits om, då med figurer. Den publicerade
+  `app/public/data/halland-analys.json` stämmer fortfarande i sak och ska inte skrivas över:
+  kör kap04 som `Rscript -e 'kopiera_analys <- FALSE; source("R/kap04-exportera.R")'` och
+  committa inte den filen förrän alla texter är klara. Översikten per enhet är borttagen.
 - Hashen i `data/analys-cache/` knyter texten till underlag + systemprompt. Ändras datan
   blir texten inaktuell och visas inte förrän den skrivits om.
 - Decimalregeln är densamma i R (`decimaler()`) och frontend (`kpiDecimaler()`), så att
@@ -149,27 +165,36 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
 
 ## Frontend
 
-- Sidomeny (bred skärm) / rad under huvudet (mobil): växel Nyckeltal ↔ Analys + områdena.
-- Nyckeltal: per tema ett analysband (rubrik + ingress → utfällbar panel med hela texten)
-  och tre visningslägen (valet sparas i webbläsaren):
-  - **Tabell** (standard, `TemaTabell.tsx`, stilar `.kt-*` i `index.css`): samma formspråk
-    som Läget i Halland (`../../lagetihalland/nyalaget/maluppfoljning.html`, GRAFIK.md där).
-    Kolumnhuvud i dagspressstil (rubrik + förklarande rad, 2 px linje), värdet med förändring
-    på tio år inom parentes och enheten under, riket, spåret (`charts/Spar.tsx`: axel med
-    ändvärden, landets kommuner som grå punkter staplade där de ligger tätt, riket svart,
-    Halland streckat, vald enhet med pulserande ring, Hallands kommuner tänds när raden pekas)
-    och plats som bricka med stege. Grupperna som tonade band. All fördjupning i radens
-    tooltip (`RadTip.tsx`): stort tal, tidsserie med riket och Halland, plats nu och vid
-    basåret, riket och Halland, högst i landet, spännvidden i Halland, beskrivning och källa.
-    Färg på förändring och bricka bara när önskvärd riktning är känd (`lagtArBra`).
-  - **Jämför kommuner** (`JamforTabell.tsx`): indikatorer × kommunerna (norr→söder), länet och
-    riket; cellfärg = läge bland landets kommuner i neutral blå skala (inte önskvärdhet).
-  - **Kort** (`KpiKort.tsx`): den tidigare kortvyn.
+- Adressen bär hela läget (`hooks/useHash.ts`): `#/<enhet>/<tema>` ett område,
+  `#/<enhet>/<tema>/<kpi>` öppen popup (bakåtknappen stänger den). Enhet = `halland`, en
+  kommun eller `alla`; ofullständiga och gamla adresser (`#/`, `#/analys`) leder till första
+  området. Det finns ingen översiktssida: datan ska stå i förgrunden.
+- Sidhuvud: kommunväljaren (Halland, kommunerna norr→söder, *Alla sida vid sida*). Sidomeny
+  (bred skärm) / rad under huvudet (mobil): de tio områdena.
+- Område (`TemaBlock.tsx`): ingången (analysens rubrik och ingress) → tabellen → hela analysen.
+  - **Tabell** (`TemaTabell.tsx`, stilar `.kt-*` i `index.css`): samma formspråk som Läget i
+    Halland (`../../lagetihalland/nyalaget/maluppfoljning.html`, GRAFIK.md där). Tre nivåer
+    (METODIK §8.0): band med block i områdesfärg → indikator → uppdelning, ihopfälld bakom en
+    textknapp under namnet (*Visa kvinnor och män*), med linje i områdesfärg och korta radnamn
+    (`kortNamn`). *Fäll ut alla uppdelningar* i kolumnhuvudet; utskrift fäller ut allt.
+    Kolumnhuvud i dagspressstil, värdet med förändring på tio år inom parentes och enheten
+    under, riket och spåret (`charts/Spar.tsx`) med kvartilerna tonade (mittersta hälften grå;
+    bästa och sämsta fjärdedelen grön och röd när riktningen är känd) och placeringen inom
+    parentes direkt efter, "(plats 17)". Placeringen visas bara där i raden. All fördjupning i
+    radens tooltip (`RadTip.tsx`), som slutar med "Klicka på raden för diagram och karta";
+    diagramsymbolen (`DiagramIkon.tsx`) efter namnet visar samma sak. Färg på förändring och
+    placering bara när önskvärd riktning är känd (`lagtArBra`).
+  - **Alla sida vid sida** (`JamforTabell.tsx`): indikatorer × kommunerna (norr→söder), länet
+    och riket med samma nivåer; cellfärg = läge bland landets kommuner i neutral blå skala
+    (inte önskvärdhet). Analysen är länets.
+- Stora tal (`fmtStor` i `utils/format.ts`): från en miljon med tre värdesiffror i mn eller mdr
+  (3,13 mn, 40,9 mdr) i tabeller, spår och figurer; förändringen i samma enhet som värdet
+  (3,13 mn (+0,43 mn)). Exakta värden i tooltipen, cellernas hjälptext och figurernas tabellvy.
+- Data: sidan laddar bara områdets kompakta `halland-tabell-<tema>.json` (0,2–2 MB); hela
+  `halland-data-<tema>.json` hämtas först när graf och karta öppnas (METODIK §10.3).
 - Kommunernas fasta färger (`ENHET_FARG` i `types.ts`) följer grafriktlinjen VIS-01.
-- Analys (`#/analys`): översikt för vald enhet följd av alla områden i tur och ordning.
 - Förändringar och rangplatser visas i neutral färg: de flesta indikatorer saknar en given
   önskvärd riktning (`lagtArBra` anges i temats config där den finns).
-- Den äldre artikelvyn (`AnalysFeed`, `ArtikelVy`) används inte.
 
 ## Fördjupning
 

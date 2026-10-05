@@ -8,7 +8,7 @@
 import { useState, useMemo } from "react";
 import type { KommunEntry } from "../types";
 import { HALLAND_KODER } from "../types";
-import type { KommunGruppData } from "./ControlDrawer";
+import type { KommunGruppData } from "../types";
 import type { JamforState, JamforAction } from "../hooks/useJamfor";
 import { fmt } from "../utils/format";
 

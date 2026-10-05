@@ -1,73 +1,72 @@
 import type { TemaConfig } from "./tema-config";
 
+const G = {
+  NIVA: "Utbildningsnivå, 25–64 år",
+  SKOLA: "Skolresultat",
+};
+
 const utbildning: TemaConfig = {
   temaId: "utbildning",
   temaNamn: "Utbildning och kompetens",
   temaFarg: "lila",
-  kortNamn: {
-    "N01982_KV": "Kvinnor",
-    "N01982_MAN": "Män",
-    "N01983_KV": "Kvinnor",
-    "N01983_MAN": "Män",
-    "N01984_KV": "Kvinnor",
-    "N01984_MAN": "Män",
-    "N15507_KV": "Flickor",
-    "N15507_MAN": "Pojkar",
-    "N15428_KV": "Flickor",
-    "N15428_MAN": "Pojkar",
-    "N17473_KV": "Kvinnor",
-    "N17473_MAN": "Män",
-  },
   sektioner: [
     {
       id: "forgymnasial",
+      gruppRubrik: G.NIVA,
       namn: "Förgymnasial utbildning, 25–64 år",
       kpiIds: ["N01984"],
-      undersektioner: [
-        { namn: "Kvinnor och män", kpiIds: ["N01984_KV", "N01984_MAN"] },
-      ],
+      undersektioner: [{ namn: "kvinnor och män", kpiIds: ["N01984_KV", "N01984_MAN"] }],
     },
     {
       id: "gymnasial",
+      gruppRubrik: G.NIVA,
       namn: "Gymnasial utbildning, 25–64 år",
       kpiIds: ["N01983"],
-      undersektioner: [
-        { namn: "Kvinnor och män", kpiIds: ["N01983_KV", "N01983_MAN"] },
-      ],
+      undersektioner: [{ namn: "kvinnor och män", kpiIds: ["N01983_KV", "N01983_MAN"] }],
     },
     {
       id: "eftergymnasial",
+      gruppRubrik: G.NIVA,
       namn: "Eftergymnasial utbildning, 25–64 år",
       kpiIds: ["N01982"],
-      undersektioner: [
-        { namn: "Kvinnor och män", kpiIds: ["N01982_KV", "N01982_MAN"] },
-      ],
+      undersektioner: [{ namn: "kvinnor och män", kpiIds: ["N01982_KV", "N01982_MAN"] }],
     },
     {
       id: "meritvarde",
+      gruppRubrik: G.SKOLA,
       namn: "Meritvärde åk 9",
       kpiIds: ["N15507"],
-      undersektioner: [
-        { namn: "Flickor och pojkar", kpiIds: ["N15507_KV", "N15507_MAN"] },
-      ],
+      undersektioner: [{ namn: "flickor och pojkar", kpiIds: ["N15507_KV", "N15507_MAN"] }],
     },
     {
       id: "behorighet",
+      gruppRubrik: G.SKOLA,
       namn: "Behörighet till yrkesprogram",
       kpiIds: ["N15428"],
-      undersektioner: [
-        { namn: "Flickor och pojkar", kpiIds: ["N15428_KV", "N15428_MAN"] },
-      ],
+      undersektioner: [{ namn: "flickor och pojkar", kpiIds: ["N15428_KV", "N15428_MAN"] }],
     },
     {
       id: "hogskolebeh",
+      gruppRubrik: G.SKOLA,
       namn: "Högskolebehörighet inom 3 år",
       kpiIds: ["N17473"],
-      undersektioner: [
-        { namn: "Kvinnor och män", kpiIds: ["N17473_KV", "N17473_MAN"] },
-      ],
+      undersektioner: [{ namn: "kvinnor och män", kpiIds: ["N17473_KV", "N17473_MAN"] }],
     },
   ],
+  kortNamn: {
+    N01984_KV: "Kvinnor",
+    N01984_MAN: "Män",
+    N01983_KV: "Kvinnor",
+    N01983_MAN: "Män",
+    N01982_KV: "Kvinnor",
+    N01982_MAN: "Män",
+    N15507_KV: "Flickor",
+    N15507_MAN: "Pojkar",
+    N15428_KV: "Flickor",
+    N15428_MAN: "Pojkar",
+    N17473_KV: "Kvinnor",
+    N17473_MAN: "Män",
+  },
   visningsnamn: {
     "N01982": "Invånare 25–64 år med eftergymnasial utbildning, andel (%)",
     "N01982_KV": "Kvinnor 25–64 år med eftergymnasial utbildning, andel (%)",

@@ -1,5 +1,5 @@
 import type { KpiRow } from "../types";
-import { HALLAND_KODER } from "../types";
+import { HALLAND_KODER, KOMMUNER_NORR_SODER } from "../types";
 
 /** kpi_id → kommun_kod → rader sorterade på period */
 export type KpiIndex = Map<string, Map<string, KpiRow[]>>;
@@ -97,6 +97,46 @@ export function sammanfatta(idx: KpiIndex, kpiId: string, kod: string): KpiSamma
     forandring: { 1: forandringMot(1), 5: manad ? null : forandringMot(5), 10: manad ? null : forandringMot(10) },
     ki: senaste.ki_lower != null && senaste.ki_upper != null ? [senaste.ki_lower, senaste.ki_upper] : null,
   };
+}
+
+/** Hallands kommuner (norr → söder), länet och riket: kolumnerna i jämförelsen */
+export const HALLAND_KOLUMNER = [...KOMMUNER_NORR_SODER, "0013", "0000"];
+
+export interface HallandCell { varde: number | null; percentil: number | null; rang: number | null; n: number }
+
+/**
+ * Kommunerna, länet och riket vid en gemensam period: länets senaste år, annars det senaste
+ * bland kommunerna. Percentil och rang gäller läget bland landets kommuner (1 = högst).
+ */
+export function hallandsCeller(idx: KpiIndex, kpiId: string): { period: number; celler: Map<string, HallandCell> } | null {
+  const perEnhet = idx.get(kpiId);
+  if (!perEnhet) return null;
+  const senaste = (kod: string) => {
+    const rows = perEnhet.get(kod)?.filter((r) => r.varde != null);
+    return rows && rows.length ? rows[rows.length - 1].ar : null;
+  };
+  const p = senaste("0013") ?? Math.max(...KOMMUNER_NORR_SODER.map((k) => senaste(k) ?? -Infinity));
+  if (!isFinite(p)) return null;
+  const vid = (kod: string) => perEnhet.get(kod)?.find((r) => r.ar === p)?.varde ?? null;
+  const kommunVarden: number[] = [];
+  for (const [kod, rows] of perEnhet) {
+    if (kod === "0000" || rows[0]?.kommun_typ !== "K") continue;
+    const v = vid(kod);
+    if (v != null) kommunVarden.push(v);
+  }
+  const n = kommunVarden.length;
+  const celler = new Map<string, HallandCell>();
+  for (const kod of HALLAND_KOLUMNER) {
+    const v = vid(kod);
+    const arKommun = KOMMUNER_NORR_SODER.includes(kod);
+    celler.set(kod, {
+      varde: v,
+      percentil: v != null && arKommun && n > 1 ? kommunVarden.filter((x) => x < v).length / (n - 1) : null,
+      rang: v != null && arKommun && n > 1 ? kommunVarden.filter((x) => x > v).length + 1 : null,
+      n,
+    });
+  }
+  return { period: p, celler };
 }
 
 /** Kvantil ur en sorterad vektor */

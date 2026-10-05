@@ -1,52 +1,59 @@
 import type { TemaConfig } from "./tema-config";
 
+const G = {
+  BEF: "Befolkningen 20–64 år",
+};
+
 const arbetsmarknad: TemaConfig = {
   temaId: "arbetsmarknad",
   temaNamn: "Arbetsmarknad",
   temaFarg: "bla",
-  kortNamn: {
-    "S_SYSS_INR": "Inrikes födda",
-    "S_SYSS_UTR": "Utrikes födda",
-    "S_SYSS_KV": "Kvinnor",
-    "S_SYSS_MAN": "Män",
-    "S_ARKR_INR": "Inrikes födda",
-    "S_ARKR_UTR": "Utrikes födda",
-    "S_ARKR_KV": "Kvinnor",
-    "S_ARKR_MAN": "Män",
-    "S_ARBL_INR": "Inrikes födda",
-    "S_ARBL_UTR": "Utrikes födda",
-    "S_ARBL_KV": "Kvinnor",
-    "S_ARBL_MAN": "Män",
-  },
   sektioner: [
     {
       id: "sysselsattning",
+      gruppRubrik: G.BEF,
       namn: "Sysselsättningsgrad, 20–64 år",
       kpiIds: ["S_SYSS_TOT"],
       undersektioner: [
-        { namn: "Födelseregion", kpiIds: ["S_SYSS_INR", "S_SYSS_UTR"] },
-        { namn: "Kvinnor och män", kpiIds: ["S_SYSS_KV", "S_SYSS_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["S_SYSS_KV", "S_SYSS_MAN"] },
+        { namn: "inrikes och utrikes födda", kpiIds: ["S_SYSS_INR", "S_SYSS_UTR"] },
       ],
     },
     {
       id: "arbetskraft",
+      gruppRubrik: G.BEF,
       namn: "Arbetskraftsdeltagande, 20–64 år",
       kpiIds: ["S_ARKR_TOT"],
       undersektioner: [
-        { namn: "Födelseregion", kpiIds: ["S_ARKR_INR", "S_ARKR_UTR"] },
-        { namn: "Kvinnor och män", kpiIds: ["S_ARKR_KV", "S_ARKR_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["S_ARKR_KV", "S_ARKR_MAN"] },
+        { namn: "inrikes och utrikes födda", kpiIds: ["S_ARKR_INR", "S_ARKR_UTR"] },
       ],
     },
     {
       id: "arbetsloshet",
+      gruppRubrik: G.BEF,
       namn: "Arbetslöshet, 20–64 år",
       kpiIds: ["S_ARBL_TOT"],
       undersektioner: [
-        { namn: "Födelseregion", kpiIds: ["S_ARBL_INR", "S_ARBL_UTR"] },
-        { namn: "Kvinnor och män", kpiIds: ["S_ARBL_KV", "S_ARBL_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["S_ARBL_KV", "S_ARBL_MAN"] },
+        { namn: "inrikes och utrikes födda", kpiIds: ["S_ARBL_INR", "S_ARBL_UTR"] },
       ],
     },
   ],
+  kortNamn: {
+    S_SYSS_KV: "Kvinnor",
+    S_SYSS_MAN: "Män",
+    S_SYSS_INR: "Inrikes födda",
+    S_SYSS_UTR: "Utrikes födda",
+    S_ARKR_KV: "Kvinnor",
+    S_ARKR_MAN: "Män",
+    S_ARKR_INR: "Inrikes födda",
+    S_ARKR_UTR: "Utrikes födda",
+    S_ARBL_KV: "Kvinnor",
+    S_ARBL_MAN: "Män",
+    S_ARBL_INR: "Inrikes födda",
+    S_ARBL_UTR: "Utrikes födda",
+  },
   visningsnamn: {
     "S_SYSS_TOT": "Sysselsatta bland befolkningen 20–64 år, andel (%)",
     "S_SYSS_TOT_N": "Sysselsatta i befolkningen 20–64 år, antal",

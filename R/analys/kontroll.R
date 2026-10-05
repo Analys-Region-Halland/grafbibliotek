@@ -20,7 +20,52 @@ tillatna_tal <- function(underlag) {
 hela_texten <- function(res) {
   paste(c(res$rubrik, res$ingress,
           unlist(lapply(res$i_korthet, function(p) c(p$ledtext, p$text))),
-          unlist(res$stycken)), collapse = "\n")
+          unlist(res$stycken),
+          unlist(lapply(res$figurer %||% list(), function(f) f$rubrik))), collapse = "\n")
+}
+
+# Figurtyperna och hur många KPI:er de tar (R/analys/figurregler.md)
+FIGURTYPER <- list(utveckling = c(1, 1), halland = c(1, 1), landet = c(1, 1),
+                   uppdelning = c(2, 5), delar = c(2, 5))
+
+#' Kontrollerar figurerna i en text. kpier = de KPI-id som texten får använda (temats
+#' tabell och figurKpiIds, med data för enheten; se data/analys-underlag/<id>.figurer.json).
+#' Ger fel (meddelanden) och giltiga (index på figurer som kan publiceras).
+kontrollera_figurer <- function(res, kpier) {
+  figurer <- res$figurer %||% list()
+  n_st <- length(res$stycken)
+  fel <- character()
+  giltiga <- integer()
+  upptagna <- integer()
+  if (length(figurer) > 3) fel <- c(fel, glue("{length(figurer)} figurer, högst tre"))
+  for (i in seq_along(figurer)) {
+    f <- figurer[[i]]
+    egna <- character()
+    typ <- f$typ %||% ""
+    k <- unlist(f$kpi)
+    if (!typ %in% names(FIGURTYPER)) {
+      egna <- c(egna, glue("okänd typ \"{typ}\""))
+    } else if (length(k) < FIGURTYPER[[typ]][1] || length(k) > FIGURTYPER[[typ]][2]) {
+      egna <- c(egna, glue("{typ} tar {paste(unique(FIGURTYPER[[typ]]), collapse = '–')} KPI:er, inte {length(k)}"))
+    }
+    okanda <- setdiff(c(k, f$summa), kpier)
+    if (length(okanda)) egna <- c(egna, glue("KPI som inte finns för texten: {paste(okanda, collapse = ', ')}"))
+    e <- f$efter
+    if (is.null(e) || !is.numeric(e) || e < 0 || e >= n_st) {
+      egna <- c(egna, "står efter ett stycke som inte finns")
+    } else if (e %in% upptagna) {
+      egna <- c(egna, glue("en figur till efter stycke {e}"))
+    }
+    if (!nzchar(f$rubrik %||% "")) egna <- c(egna, "saknar rubrik")
+    else if (length(str_split(str_trim(f$rubrik), "\\s+")[[1]]) > 12) egna <- c(egna, "rubriken har fler än tolv ord")
+    if (length(egna)) {
+      fel <- c(fel, glue("Figur {i}: {paste(egna, collapse = ', ')}"))
+    } else if (length(giltiga) < 3) {
+      giltiga <- c(giltiga, i)
+      upptagna <- c(upptagna, e)
+    }
+  }
+  list(fel = fel, giltiga = giltiga)
 }
 
 kontrollera <- function(res, tillatna) {

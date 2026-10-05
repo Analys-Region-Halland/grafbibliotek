@@ -1,0 +1,346 @@
+[
+  {
+    "id": "F_ALK_RISK",
+    "namn": "Riskkonsumtion av alkohol, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Levnadsvanor",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_ALK_RISK_KV",
+    "namn": "Riskkonsumtion av alkohol, kvinnor (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_ALK_RISK (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_ALK_RISK_MAN",
+    "namn": "Riskkonsumtion av alkohol, män (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_ALK_RISK (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_DINK",
+    "namn": "Ekonomisk standard, medianinkomst i tusenkronor",
+    "enhet": "tkr",
+    "roll": "indikator i bandet Inkomster och försörjning",
+    "forsta": 2011,
+    "sista": 2024
+  },
+  {
+    "id": "F_DINK_KV",
+    "namn": "Ekonomisk standard, kvinnor (tkr)",
+    "enhet": "tkr",
+    "roll": "uppdelning av F_DINK (kvinnor och män)",
+    "forsta": 2011,
+    "sista": 2024
+  },
+  {
+    "id": "F_DINK_MAN",
+    "namn": "Ekonomisk standard, män (tkr)",
+    "enhet": "tkr",
+    "roll": "uppdelning av F_DINK (kvinnor och män)",
+    "forsta": 2011,
+    "sista": 2024
+  },
+  {
+    "id": "F_FORTID",
+    "namn": "Förtida dödlighet 25–64 år, per 100 000 invånare",
+    "enhet": "per 100 000",
+    "roll": "indikator i bandet Hälsa",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "F_FORTID_KV",
+    "namn": "Förtida dödlighet, kvinnor 25–64 år, per 100 000",
+    "enhet": "per 100 000",
+    "roll": "uppdelning av F_FORTID (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "F_FORTID_MAN",
+    "namn": "Förtida dödlighet, män 25–64 år, per 100 000",
+    "enhet": "per 100 000",
+    "roll": "uppdelning av F_FORTID (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "F_HALSA_GOD",
+    "namn": "Självskattad god hälsa, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Hälsa",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_HALSA_GOD_KV",
+    "namn": "Självskattad god hälsa, kvinnor (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_HALSA_GOD (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_HALSA_GOD_MAN",
+    "namn": "Självskattad god hälsa, män (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_HALSA_GOD (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_MEDLIVS_KV",
+    "namn": "Medellivslängd vid födseln, kvinnor (år)",
+    "enhet": "år",
+    "roll": "indikator i bandet Hälsa",
+    "forsta": 2002,
+    "sista": 2025
+  },
+  {
+    "id": "F_MEDLIVS_MAN",
+    "namn": "Medellivslängd vid födseln, män (år)",
+    "enhet": "år",
+    "roll": "indikator i bandet Hälsa",
+    "forsta": 2002,
+    "sista": 2025
+  },
+  {
+    "id": "F_OVERVIKT",
+    "namn": "Övervikt och obesitas (BMI 25+), andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Levnadsvanor",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_OVERVIKT_KV",
+    "namn": "Övervikt och obesitas, kvinnor (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_OVERVIKT (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_OVERVIKT_MAN",
+    "namn": "Övervikt och obesitas, män (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_OVERVIKT (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_PSYK_PAFR",
+    "namn": "Allvarlig psykisk påfrestning, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Psykisk hälsa",
+    "forsta": 2022,
+    "sista": 2024
+  },
+  {
+    "id": "F_PSYK_PAFR_KV",
+    "namn": "Allvarlig psykisk påfrestning, kvinnor (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_PSYK_PAFR (kvinnor och män)",
+    "forsta": 2022,
+    "sista": 2024
+  },
+  {
+    "id": "F_PSYK_PAFR_MAN",
+    "namn": "Allvarlig psykisk påfrestning, män (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_PSYK_PAFR (kvinnor och män)",
+    "forsta": 2022,
+    "sista": 2024
+  },
+  {
+    "id": "F_STRESS",
+    "namn": "Stress, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Psykisk hälsa",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_STRESS_KV",
+    "namn": "Stress, kvinnor (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_STRESS (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_STRESS_MAN",
+    "namn": "Stress, män (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_STRESS (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_SUICID",
+    "namn": "Suicid 25+ år, per 100 000 invånare",
+    "enhet": "per 100 000",
+    "roll": "indikator i bandet Psykisk hälsa",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "F_SUICID_KV",
+    "namn": "Suicid, kvinnor, per 100 000",
+    "enhet": "per 100 000",
+    "roll": "uppdelning av F_SUICID (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "F_SUICID_MAN",
+    "namn": "Suicid, män, per 100 000",
+    "enhet": "per 100 000",
+    "roll": "uppdelning av F_SUICID (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "F_TOBAK",
+    "namn": "Daglig tobaksrökning, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Levnadsvanor",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_TOBAK_KV",
+    "namn": "Daglig tobaksrökning, kvinnor (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_TOBAK (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_TOBAK_MAN",
+    "namn": "Daglig tobaksrökning, män (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av F_TOBAK (kvinnor och män)",
+    "forsta": 2007,
+    "sista": 2024
+  },
+  {
+    "id": "F_VEK_VUX",
+    "namn": "Varaktigt låg ekonomisk standard, vuxna, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Inkomster och försörjning",
+    "forsta": 2014,
+    "sista": 2024
+  },
+  {
+    "id": "F_VINK_BARN",
+    "namn": "Varaktigt låg inkomststandard, barn och unga, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Inkomster och försörjning",
+    "forsta": 2014,
+    "sista": 2024
+  },
+  {
+    "id": "N00938",
+    "namn": "Sjukpenningtalet 16–64 år, dagar per försäkrad",
+    "enhet": "dagar",
+    "roll": "indikator i bandet Hälsa",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N00938_KV",
+    "namn": "Sjukpenningtal, kvinnor, dagar per försäkrad",
+    "enhet": "dagar",
+    "roll": "uppdelning av N00938 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N00938_MAN",
+    "namn": "Sjukpenningtal, män, dagar per försäkrad",
+    "enhet": "dagar",
+    "roll": "uppdelning av N00938 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N00956",
+    "namn": "Ginikoefficient, förvärvsinkomst",
+    "enhet": "index",
+    "roll": "indikator i bandet Inkomster och försörjning",
+    "forsta": 2012,
+    "sista": 2024
+  },
+  {
+    "id": "N00957",
+    "namn": "Ohälsotal, dagar",
+    "enhet": "dagar",
+    "roll": "indikator i bandet Hälsa",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N00957_KV",
+    "namn": "Ohälsotal, kvinnor, dagar",
+    "enhet": "dagar",
+    "roll": "uppdelning av N00957 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N00957_MAN",
+    "namn": "Ohälsotal, män, dagar",
+    "enhet": "dagar",
+    "roll": "uppdelning av N00957 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N00997",
+    "namn": "Ginikoefficient, disponibel inkomst",
+    "enhet": "index",
+    "roll": "indikator i bandet Inkomster och försörjning",
+    "forsta": 2011,
+    "sista": 2024
+  },
+  {
+    "id": "N31001",
+    "namn": "Kostnad ekonomiskt bistånd, kronor per invånare",
+    "enhet": "kr/inv",
+    "roll": "indikator i bandet Inkomster och försörjning",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N33820",
+    "namn": "Psykisk ohälsa bland barn och unga, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Psykisk hälsa",
+    "forsta": 2018,
+    "sista": 2024
+  },
+  {
+    "id": "N33820_KV",
+    "namn": "Psykisk ohälsa, flickor, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N33820 (flickor och pojkar)",
+    "forsta": 2018,
+    "sista": 2024
+  },
+  {
+    "id": "N33820_MAN",
+    "namn": "Psykisk ohälsa, pojkar, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N33820 (flickor och pojkar)",
+    "forsta": 2018,
+    "sista": 2024
+  }
+]

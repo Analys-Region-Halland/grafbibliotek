@@ -1,5 +1,6 @@
 import { createPortal } from "react-dom";
-import * as d3 from "d3";
+import SerieGraf from "../charts/SerieGraf";
+import DiagramIkon from "./DiagramIkon";
 import type { KpiRow } from "../types";
 import { ENHET_FARG } from "../types";
 import type { KpiSammanfattning } from "../utils/kpiStats";
@@ -18,6 +19,8 @@ interface Props {
   hallandSerie: KpiRow[] | null;
   enhetsnamn: Map<string, string>;
   fmt: (v: number) => string;
+  /** Exakt format för det stora talet och jämförelsen (fmt förkortar stora tal) */
+  fmtExakt?: (v: number) => string;
   /** Förändringen som text, t.ex. "(+0,6)", och dess klass */
   delta: { text: string; klass: string } | null;
   bricka: { klass: string };
@@ -25,51 +28,16 @@ interface Props {
   ankare: { x: number; topp: number; botten: number };
 }
 
-/** Kvadratisk tidsserie: vald enhet i sin färg, riket streckat, länet streckat grått */
-function Graf({ serie, riket, halland, farg, fmt }: {
-  serie: KpiRow[]; riket: KpiRow[]; halland: KpiRow[] | null; farg: string; fmt: (v: number) => string;
-}) {
-  const W = 212, H = 170, m = { t: 14, r: 40, b: 18, l: 30 };
-  const varden = (rows: KpiRow[]) => rows.filter((d) => d.varde != null) as (KpiRow & { varde: number })[];
-  const egen = varden(serie);
-  if (egen.length < 2) return null;
-  const forsta = egen[0].ar, sista = egen[egen.length - 1].ar;
-  const inom = (rows: KpiRow[]) => varden(rows).filter((d) => d.ar >= forsta && d.ar <= sista);
-  const r = inom(riket), h = halland ? inom(halland) : [];
-  const alla = [...egen, ...r, ...h].map((d) => d.varde);
-  const [lo, hi] = d3.extent(alla) as [number, number];
-  const pad = (hi - lo) * 0.08 || 1;
-  const manad = sista > 9999;
-  const tid = (a: number) => (manad ? Math.floor(a / 100) + ((a % 100) - 1) / 12 : a);
-  const x = d3.scaleLinear().domain([tid(forsta), tid(sista)]).range([m.l, W - m.r]);
-  const y = d3.scaleLinear().domain([lo - pad, hi + pad]).range([H - m.b, m.t]).nice(3);
-  const linje = d3.line<KpiRow & { varde: number }>().x((d) => x(tid(d.ar))).y((d) => y(d.varde)).curve(d3.curveMonotoneX);
-  const ticks = y.ticks(3);
-  const slut = egen[egen.length - 1];
-  return (
-    <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} aria-hidden>
-      {ticks.map((t) => (
-        <g key={t}>
-          <line x1={m.l} x2={W - m.r} y1={y(t)} y2={y(t)} stroke="#EEF0F2" />
-          <text x={m.l - 5} y={y(t) + 3.5} textAnchor="end" fontSize={10} fill="#83888A">{fmt(t)}</text>
-        </g>
-      ))}
-      <text x={m.l} y={H - 3} fontSize={10} fill="#83888A">{fmtPeriod(forsta)}</text>
-      <text x={W - m.r} y={H - 3} textAnchor="end" fontSize={10} fill="#83888A">{fmtPeriod(sista)}</text>
-      {h.length > 1 && <path d={linje(h) ?? ""} fill="none" stroke="#555" strokeWidth={1.2} strokeDasharray="3,2.5" />}
-      {r.length > 1 && <path d={linje(r) ?? ""} fill="none" stroke="#2D2E2D" strokeWidth={1.2} strokeDasharray="1.5,2.5" />}
-      <path d={linje(egen) ?? ""} fill="none" stroke={farg} strokeWidth={2} />
-      <circle cx={x(tid(slut.ar))} cy={y(slut.varde)} r={3.5} fill={farg} stroke="#fff" strokeWidth={1.5} />
-      <text x={x(tid(slut.ar)) + 6} y={y(slut.varde) + 4} fontSize={11} fontWeight={700} fill="#2D2E2D">{fmt(slut.varde)}</text>
-    </svg>
-  );
-}
+/** Seriens punkter med värde */
+const punkter = (rows: KpiRow[] | null) =>
+  (rows ?? []).filter((d) => d.varde != null).map((d) => ({ ar: d.ar, varde: d.varde as number }));
 
 export default function RadTip({
   temaNamn, farg, namn, enhet, beskrivning, s, enhetNamn, valdKod, riketSerie, hallandSerie,
-  enhetsnamn, fmt, delta, bricka, ankare,
+  enhetsnamn, fmt, fmtExakt = fmt, delta, bricka, ankare,
 }: Props) {
   const arRegion = valdKod === "0013";
+  const arAntal = enhet === "antal";
   const enhetsord = arRegion ? "regioner" : "kommuner";
   const hogst = s.enheter[s.enheter.length - 1];
   const hk = [...s.hallandKommuner].sort((a, b) => b.varde - a.varde);
@@ -93,17 +61,21 @@ export default function RadTip({
       <div className="kt-tip-kicker">{temaNamn}</div>
       <div className="kt-tip-rubrik">{namn}</div>
       <div className="kt-tip-stor">
-        <b>{fmt(s.varde)}</b>
+        <b>{fmtExakt(s.varde)}</b>
         {delta && <span className={`kt-delta ${delta.klass}`}>{delta.text}</span>}
         <span style={{ fontSize: 12.5, color: "#5B5B5B", fontFamily: "var(--font-sans)" }}>{enhet}</span>
         <span className="kt-tip-ar">{enhetNamn} {fmtPeriod(s.period)}</span>
       </div>
       {basVarde != null && forandring && (
-        <div className="kt-tip-fran">Jämfört med {fmt(basVarde)} år {fmtPeriod(forandring.sedan)}</div>
+        <div className="kt-tip-fran">Jämfört med {fmtExakt(basVarde)} år {fmtPeriod(forandring.sedan)}</div>
       )}
       <div className="kt-tip-kropp">
-        <Graf serie={s.serie} riket={riketSerie} halland={arRegion ? null : hallandSerie}
-              farg={ENHET_FARG[valdKod] ?? farg} fmt={fmt} />
+        <SerieGraf kompakt width={212} height={170} fmt={fmt} serier={[
+          // För antal ritas inte länet och riket: nivåerna är så olika att enhetens kurva blir platt
+          ...(arRegion || arAntal ? [] : [{ id: "halland", namn: "Halland", farg: "#555555", streck: "3,2.5", punkter: punkter(hallandSerie) }]),
+          ...(arAntal ? [] : [{ id: "riket", namn: "Riket", farg: "#2D2E2D", streck: "1.5,2.5", punkter: punkter(riketSerie) }]),
+          { id: "egen", namn: enhetNamn, farg: ENHET_FARG[valdKod] ?? farg, huvud: true, punkter: punkter(s.serie) },
+        ]} />
         <dl className="kt-fakta">
           {s.rang != null && (
             <div>
@@ -143,6 +115,7 @@ export default function RadTip({
           {beskr}{kalla ? ` Källa: ${kalla}` : ""}
         </div>
       )}
+      <div className="kt-tip-klick"><DiagramIkon className="" />Klicka på raden för diagram och karta</div>
     </div>,
     document.body,
   );

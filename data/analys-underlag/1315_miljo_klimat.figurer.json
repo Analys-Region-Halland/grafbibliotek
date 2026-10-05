@@ -1,0 +1,66 @@
+[
+  {
+    "id": "N00401",
+    "namn": "Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2/inv",
+    "roll": "indikator i bandet Utsläpp av växthusgaser",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N00403",
+    "namn": "Ekologiskt brukad åkermark, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Energi och omställning",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N45913",
+    "namn": "Energianvändning transporter, MWh per invånare",
+    "enhet": "MWh/inv",
+    "roll": "indikator i bandet Energi och omställning",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N45925",
+    "namn": "Elproduktion av förnybara energikällor, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Energi och omställning",
+    "forsta": 2024,
+    "sista": 2024
+  },
+  {
+    "id": "N85072",
+    "namn": "Växthusgasutsläpp uppvärmning, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2/inv",
+    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85073",
+    "namn": "Växthusgasutsläpp transporter, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2/inv",
+    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85077",
+    "namn": "Växthusgasutsläpp industri, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2/inv",
+    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85078",
+    "namn": "Växthusgasutsläpp jordbruk, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2/inv",
+    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "forsta": 2010,
+    "sista": 2024
+  }
+]

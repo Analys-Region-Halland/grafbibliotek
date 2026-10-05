@@ -41,7 +41,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Befolkning & demografi, Laholm
 
-## Folkmängd
+## Folkmängd och tillväxt
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
@@ -51,50 +51,64 @@ Mäter: Folkmängden den 31 december.
 - Plats bland landets 290 kommuner: 101 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
 - Plats bland Hallands 6 kommuner: 5
+- Förändring hela serien sedan 2000: +3 814 antal (från 22 747 år 2000), det vill säga +16,8 procent eller i genomsnitt +0,62 procent per år; riket +19,4 procent
+- Förändring 10 år: +2 366 antal (från 24 195 år 2015), det vill säga +9,8 procent eller i genomsnitt +0,94 procent per år; riket +7,6 procent
+- Förändring 5 år: +594 antal (från 25 967 år 2020), det vill säga +2,3 procent eller i genomsnitt +0,45 procent per år; riket +2,2 procent
 - Förändring 1 år: -34 antal (från 26 595 år 2024), det vill säga -0,1 procent; riket +0,1 procent
-- Förändring 5 år: +594 antal (från 25 967 år 2020), det vill säga +2,3 procent; riket +2,2 procent
-- Förändring 10 år: +2 366 antal (från 24 195 år 2015), det vill säga +9,8 procent; riket +7,6 procent
+- Laholm år för år: 2015 24 195; 2016 24 664; 2017 25 147; 2018 25 491; 2019 25 903; 2020 25 967; 2021 26 319; 2022 26 575; 2023 26 565; 2024 26 595; 2025 26 561
 - Serien för Laholm 2000–2025: högst 26 595 (2024), lägst 22 747 (2000)
 
-### Utrikes födda i befolkningen, andel [Sammansättning] (procent, 2024)
-- Laholm: 15,1
-- Halland (länet): 15,1
-- Riket: 20,8
-- Skillnad Laholm mot riket: -5,7 procentenheter
-- Plats bland landets 290 kommuner: 134 (1 = högsta värdet)
-- Hallands kommuner 2024 (högst först): Hylte 23,9; Halmstad 20,5; Falkenberg 15,4; Laholm 15,1; Varberg 11,8; Kungsbacka 9,6
-- Plats bland Hallands 6 kommuner: 4
-- Förändring 5 år: -0,3 procentenheter (från 15,4 år 2019); riket +1,2 procentenheter
+### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
+- Laholm: 22,3
+- Halland (länet): 23,3
+- Riket: 22,4
+- Skillnad Laholm mot riket: -0,1 procentenheter
+- Skillnad Laholm mot Halland: -1,0 procentenheter
+- Plats bland landets 290 kommuner: 120 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 25,3; Hylte 23,8; Halmstad 22,8; Falkenberg 22,6; Varberg 22,5; Laholm 22,3
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 10 år: +0,3 procentenheter (från 22,0 år 2015); riket -0,3 procentenheter
+- Förändring 5 år: -0,5 procentenheter (från 22,8 år 2020); riket -0,9 procentenheter
+- Förändring 1 år: -0,1 procentenheter (från 22,4 år 2024); riket -0,3 procentenheter
 
-### Kvinnor i befolkningen, andel [Sammansättning] (procent, 2025)
-- Laholm: 49,2
-- Halland (länet): 50,0
-- Riket: 49,8
-- Skillnad Laholm mot riket: -0,6 procentenheter
-- Skillnad Laholm mot Halland: -0,8 procentenheter
-- Plats bland landets 290 kommuner: 135 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 5 år: +0,1 procentenheter (från 49,1 år 2020); riket +0,1 procentenheter
+### Invånare 20–64 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
+- Laholm: 50,7
+- Halland (länet): 53,3
+- Riket: 56,5
+- Skillnad Laholm mot riket: -5,8 procentenheter
+- Skillnad Laholm mot Halland: -2,6 procentenheter
+- Plats bland landets 290 kommuner: 205 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 10 år: -3,1 procentenheter (från 53,8 år 2015); riket -1,0 procentenheter
+- Förändring 5 år: -1,0 procentenheter (från 51,7 år 2020); riket -0,1 procentenheter
+- Förändring 1 år: 0,0 procentenheter (från 50,7 år 2024); riket 0,0 procentenheter
 
-## Befolkningstäthet
+### Invånare 65–79 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
+- Laholm: 19,0
+- Halland (länet): 16,1
+- Riket: 14,6
+- Skillnad Laholm mot riket: +4,4 procentenheter
+- Skillnad Laholm mot Halland: +2,9 procentenheter
+- Plats bland landets 290 kommuner: 108 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 19,0; Falkenberg 17,9; Varberg 17,9; Hylte 17,2; Halmstad 14,6; Kungsbacka 14,3
+- Plats bland Hallands 6 kommuner: 1
+- Förändring 10 år: +1,0 procentenheter (från 18,0 år 2015); riket -0,1 procentenheter
+- Förändring 5 år: -0,2 procentenheter (från 19,2 år 2020); riket -0,3 procentenheter
+- Förändring 1 år: -0,3 procentenheter (från 19,3 år 2024); riket -0,1 procentenheter
 
-### Befolkningstäthet, invånare per kvadratkilometer (inv/kvm, 2025)
-Mäter: Befolkningstäthet: antal invånare per kvadratkilometer landareal.
-- Laholm: 30,0
-- Halland (länet): 63,5
-- Riket: 25,9
-- Skillnad Laholm mot riket: +4,1 inv/kvm
-- Skillnad Laholm mot Halland: -33,5 inv/kvm
-- Plats bland landets 290 kommuner: 141 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 141,7; Halmstad 104,4; Varberg 79,6; Falkenberg 42,5; Laholm 30,0; Hylte 10,6
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år: 0,0 inv/kvm (från 30,0 år 2024); riket +0,1 inv/kvm
-- Förändring 5 år: +0,6 inv/kvm (från 29,4 år 2020); riket +0,4 inv/kvm
-- Förändring 10 år: +2,6 inv/kvm (från 27,4 år 2015); riket +1,7 inv/kvm
-- Serien för Laholm 2000–2025: högst 30,1 (2023), lägst 25,6 (2000)
-
-## Befolkningsförändring
+### Invånare 80 år och äldre, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
+- Laholm: 8,00
+- Halland (länet): 7,30
+- Riket: 6,40
+- Skillnad Laholm mot riket: +1,60 procentenheter
+- Skillnad Laholm mot Halland: +0,70 procentenheter
+- Plats bland landets 290 kommuner: 133 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Plats bland Hallands 6 kommuner: 1
+- Förändring 10 år: +1,80 procentenheter (från 6,20 år 2015); riket +1,30 procentenheter
+- Förändring 5 år: +1,70 procentenheter (från 6,30 år 2020); riket +1,20 procentenheter
+- Förändring 1 år: +0,40 procentenheter (från 7,60 år 2024); riket +0,30 procentenheter
 
 ### Årlig befolkningsförändring, andel (procent, 2025)
 Mäter: Procentuell förändring av folkmängden sedan föregående år.
@@ -106,12 +120,31 @@ Mäter: Procentuell förändring av folkmängden sedan föregående år.
 - Plats bland landets 290 kommuner: 129 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Kungsbacka 0,63; Varberg 0,56; Halmstad 0,22; Falkenberg -0,03; Laholm -0,11; Hylte -1,00
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år: -0,22 procentenheter (från 0,11 år 2024); riket -0,17 procentenheter
-- Förändring 5 år: -0,36 procentenheter (från 0,25 år 2020); riket -0,33 procentenheter
+- Förändring hela serien sedan 2000: -0,18 procentenheter (från 0,07 år 2000); riket -0,07 procentenheter
 - Förändring 10 år: -1,85 procentenheter (från 1,74 år 2015); riket -0,89 procentenheter
+- Förändring 5 år: -0,36 procentenheter (från 0,25 år 2020); riket -0,33 procentenheter
+- Förändring 1 år: -0,22 procentenheter (från 0,11 år 2024); riket -0,17 procentenheter
+- Laholm år för år: 2015 1,74; 2016 1,94; 2017 1,96; 2018 1,37; 2019 1,62; 2020 0,25; 2021 1,36; 2022 0,97; 2023 -0,04; 2024 0,11; 2025 -0,11
 - Serien för Laholm 2000–2025: högst 1,96 (2017), lägst -0,11 (2025)
 
-## Födelsenetto
+### Befolkningstäthet, invånare per kvadratkilometer (inv/kvm, 2025)
+Mäter: Befolkningstäthet: antal invånare per kvadratkilometer landareal.
+- Laholm: 30,0
+- Halland (länet): 63,5
+- Riket: 25,9
+- Skillnad Laholm mot riket: +4,1 inv/kvm
+- Skillnad Laholm mot Halland: -33,5 inv/kvm
+- Plats bland landets 290 kommuner: 141 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 141,7; Halmstad 104,4; Varberg 79,6; Falkenberg 42,5; Laholm 30,0; Hylte 10,6
+- Plats bland Hallands 6 kommuner: 5
+- Förändring hela serien sedan 2000: +4,4 inv/kvm (från 25,6 år 2000); riket +4,3 inv/kvm
+- Förändring 10 år: +2,6 inv/kvm (från 27,4 år 2015); riket +1,7 inv/kvm
+- Förändring 5 år: +0,6 inv/kvm (från 29,4 år 2020); riket +0,4 inv/kvm
+- Förändring 1 år: 0,0 inv/kvm (från 30,0 år 2024); riket +0,1 inv/kvm
+- Laholm år för år: 2015 27,4; 2016 27,9; 2017 28,5; 2018 28,9; 2019 29,3; 2020 29,4; 2021 29,8; 2022 30,1; 2023 30,1; 2024 30,0; 2025 30,0
+- Serien för Laholm 2000–2025: högst 30,1 (2023), lägst 25,6 (2000)
+
+## Födda, döda och flyttningar
 
 ### Födelsenetto per 1 000 invånare (per 1 000 inv., 2025)
 Mäter: Födelseöverskott (födda minus döda) per 1 000 invånare.
@@ -123,100 +156,34 @@ Mäter: Födelseöverskott (födda minus döda) per 1 000 invånare.
 - Plats bland landets 290 kommuner: 128 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Varberg 0,20; Halmstad 0,00; Kungsbacka -0,40; Falkenberg -0,90; Laholm -2,40; Hylte -3,70
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år: -0,90 per 1 000 inv. (från -1,50 år 2024); riket -0,20 per 1 000 inv.
-- Förändring 5 år: -2,40 per 1 000 inv. (från 0,00 år 2020); riket -0,90 per 1 000 inv.
+- Förändring hela serien sedan 2000: -0,60 per 1 000 inv. (från -1,80 år 2000); riket +0,80 per 1 000 inv.
 - Förändring 10 år: -1,10 per 1 000 inv. (från -1,30 år 2015); riket -1,90 per 1 000 inv.
+- Förändring 5 år: -2,40 per 1 000 inv. (från 0,00 år 2020); riket -0,90 per 1 000 inv.
+- Förändring 1 år: -0,90 per 1 000 inv. (från -1,50 år 2024); riket -0,20 per 1 000 inv.
+- Laholm år för år: 2015 -1,30; 2016 0,20; 2017 -0,60; 2018 1,70; 2019 0,40; 2020 0,00; 2021 1,00; 2022 -1,00; 2023 -1,80; 2024 -1,50; 2025 -2,40
 - Serien för Laholm 2000–2025: högst 1,70 (2018), lägst -3,80 (2003)
 
-### Antal födda [Ingående] (antal, 2025)
+### Antal födda [uppdelning av Födelsenetto per 1 000 invånare: födda och döda] (antal, 2025)
 - Laholm: 238
 - Halland (länet): 3 050
 - Riket: 97 491
 - Plats bland landets 290 kommuner: 89 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 996; Kungsbacka 662; Varberg 650; Falkenberg 415; Laholm 238; Hylte 90
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 5 år: -33 antal (från 271 år 2020), det vill säga -12,2 procent; riket -13,8 procent
+- Förändring 10 år: +7 antal (från 231 år 2015), det vill säga +3,0 procent eller i genomsnitt +0,30 procent per år; riket -15,1 procent
+- Förändring 5 år: -33 antal (från 271 år 2020), det vill säga -12,2 procent eller i genomsnitt -2,56 procent per år; riket -13,8 procent
+- Förändring 1 år: +3 antal (från 235 år 2024), det vill säga +1,3 procent; riket -1,0 procent
 
-### Antal döda [Ingående] (antal, 2025)
+### Antal döda [uppdelning av Födelsenetto per 1 000 invånare: födda och döda] (antal, 2025)
 - Laholm: 303
 - Halland (länet): 3 220
 - Riket: 92 212
 - Plats bland landets 290 kommuner: 88 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 996; Kungsbacka 696; Varberg 639; Falkenberg 458; Laholm 303; Hylte 127
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 5 år: +32 antal (från 271 år 2020), det vill säga +11,8 procent; riket -6,0 procent
-
-## Inrikes flyttnetto
-
-### Inrikes flyttnetto per 1 000 invånare (per 1 000 inv., 2025)
-Mäter: Inrikes flyttningsöverskott per 1 000 invånare.
-- Laholm: 1,00
-- Halland (länet): 2,50
-- Riket: 0,00
-- Skillnad Laholm mot riket: +1,00 per 1 000 inv.
-- Skillnad Laholm mot Halland: -1,50 per 1 000 inv.
-- Plats bland landets 290 kommuner: 103 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 5,50; Varberg 5,00; Falkenberg 1,50; Laholm 1,00; Halmstad 0,50; Hylte -10,50
-- Plats bland Hallands 6 kommuner: 4
-- Förändring 1 år: -1,80 per 1 000 inv. (från 2,80 år 2024); riket 0,00 per 1 000 inv.
-- Förändring 5 år: +0,20 per 1 000 inv. (från 0,80 år 2020); riket 0,00 per 1 000 inv.
-- Förändring 10 år: -6,40 per 1 000 inv. (från 7,40 år 2015); riket 0,00 per 1 000 inv.
-- Serien för Laholm 2000–2025: högst 10,70 (2019), lägst -1,60 (2012)
-
-### Inrikes inflyttningar, antal [Ingående] (antal, 2025)
-- Laholm: 1 157
-- Halland (länet): 10 613
-- Riket: 0
-- Plats bland landets 290 kommuner: 104 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 4 393; Kungsbacka 3 660; Varberg 2 390; Falkenberg 1 611; Laholm 1 157; Hylte 408
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 5 år: -165 antal (från 1 322 år 2020), det vill säga -12,5 procent
-
-### Inrikes utflyttningar, antal [Ingående] (antal, 2025)
-- Laholm: 1 132
-- Halland (länet): 9 747
-- Riket: 0
-- Plats bland landets 290 kommuner: 103 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 4 343; Kungsbacka 3 181; Varberg 2 041; Falkenberg 1 537; Laholm 1 132; Hylte 512
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 5 år: -169 antal (från 1 301 år 2020), det vill säga -13,0 procent
-
-## Utrikes flyttnetto
-
-### Utrikes flyttnetto per 1 000 invånare (per 1 000 inv., 2025)
-Mäter: Invandringsöverskott per 1 000 invånare.
-- Laholm: 0,30
-- Halland (länet): 0,90
-- Riket: 1,10
-- Skillnad Laholm mot riket: -0,80 per 1 000 inv.
-- Skillnad Laholm mot Halland: -0,60 per 1 000 inv.
-- Plats bland landets 290 kommuner: 191 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Hylte 3,40; Halmstad 1,60; Kungsbacka 1,10; Varberg 0,50; Laholm 0,30; Falkenberg -0,90
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år: +0,10 per 1 000 inv. (från 0,20 år 2024); riket -1,70 per 1 000 inv.
-- Förändring 5 år: -0,70 per 1 000 inv. (från 1,00 år 2020); riket -2,10 per 1 000 inv.
-- Förändring 10 år: -10,60 per 1 000 inv. (från 10,90 år 2015); riket -6,90 per 1 000 inv.
-- Serien för Laholm 2000–2025: högst 11,40 (2016), lägst 0,00 (2000)
-
-### Invandringar, antal [Ingående] (antal, 2025)
-- Laholm: 149
-- Halland (länet): 1 860
-- Riket: 89 434
-- Plats bland landets 290 kommuner: 96 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 768; Kungsbacka 371; Varberg 268; Falkenberg 195; Laholm 149; Hylte 105
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 5 år: +32 antal (från 117 år 2020), det vill säga +27,4 procent; riket +8,4 procent
-
-### Utvandringar, antal [Ingående] (antal, 2025)
-- Laholm: 140
-- Halland (länet): 1 549
-- Riket: 77 483
-- Plats bland landets 290 kommuner: 91 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 594; Kungsbacka 280; Falkenberg 236; Varberg 232; Laholm 140; Hylte 71
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 5 år: +48 antal (från 92 år 2020), det vill säga +52,2 procent; riket +58,3 procent
-
-## Fruktsamhet
+- Förändring 10 år: +41 antal (från 262 år 2015), det vill säga +15,6 procent eller i genomsnitt +1,46 procent per år; riket +1,4 procent
+- Förändring 5 år: +32 antal (från 271 år 2020), det vill säga +11,8 procent eller i genomsnitt +2,26 procent per år; riket -6,0 procent
+- Förändring 1 år: +27 antal (från 276 år 2024), det vill säga +9,8 procent; riket +1,0 procent
 
 ### Summerad fruktsamhet, barn per kvinna (barn/kvinna, 2025)
 Mäter: Genomsnittligt antal barn per kvinna (summerat fruktsamhetstal).
@@ -228,12 +195,92 @@ Mäter: Genomsnittligt antal barn per kvinna (summerat fruktsamhetstal).
 - Plats bland landets 274 kommuner: 33 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Hylte 1,91; Laholm 1,81; Varberg 1,73; Falkenberg 1,62; Kungsbacka 1,58; Halmstad 1,51
 - Plats bland Hallands 6 kommuner: 2
-- Förändring 1 år: +0,09 barn/kvinna (från 1,72 år 2024); riket -0,01 barn/kvinna
-- Förändring 5 år: -0,21 barn/kvinna (från 2,02 år 2020); riket -0,24 barn/kvinna
+- Förändring hela serien sedan 2000: +0,04 barn/kvinna (från 1,77 år 2000); riket -0,12 barn/kvinna
 - Förändring 10 år: -0,14 barn/kvinna (från 1,95 år 2015); riket -0,43 barn/kvinna
+- Förändring 5 år: -0,21 barn/kvinna (från 2,02 år 2020); riket -0,24 barn/kvinna
+- Förändring 1 år: +0,09 barn/kvinna (från 1,72 år 2024); riket -0,01 barn/kvinna
+- Laholm år för år: 2015 1,95; 2016 2,35; 2017 2,03; 2018 2,03; 2019 2,13; 2020 2,02; 2021 2,03; 2022 1,72; 2023 1,74; 2024 1,72; 2025 1,81
 - Serien för Laholm 2000–2025: högst 2,35 (2016), lägst 1,72 (2022)
 
-## Medelålder
+### Inrikes flyttnetto per 1 000 invånare (per 1 000 inv., 2025)
+Mäter: Inrikes flyttningsöverskott per 1 000 invånare.
+- Laholm: 1,00
+- Halland (länet): 2,50
+- Riket: 0,00
+- Skillnad Laholm mot riket: +1,00 per 1 000 inv.
+- Skillnad Laholm mot Halland: -1,50 per 1 000 inv.
+- Plats bland landets 290 kommuner: 103 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 5,50; Varberg 5,00; Falkenberg 1,50; Laholm 1,00; Halmstad 0,50; Hylte -10,50
+- Plats bland Hallands 6 kommuner: 4
+- Förändring hela serien sedan 2000: -1,50 per 1 000 inv. (från 2,50 år 2000); riket 0,00 per 1 000 inv.
+- Förändring 10 år: -6,40 per 1 000 inv. (från 7,40 år 2015); riket 0,00 per 1 000 inv.
+- Förändring 5 år: +0,20 per 1 000 inv. (från 0,80 år 2020); riket 0,00 per 1 000 inv.
+- Förändring 1 år: -1,80 per 1 000 inv. (från 2,80 år 2024); riket 0,00 per 1 000 inv.
+- Laholm år för år: 2015 7,40; 2016 7,40; 2017 10,30; 2018 7,20; 2019 10,70; 2020 0,80; 2021 7,10; 2022 7,40; 2023 0,60; 2024 2,80; 2025 1,00
+- Serien för Laholm 2000–2025: högst 10,70 (2019), lägst -1,60 (2012)
+
+### Inrikes inflyttningar, antal [uppdelning av Inrikes flyttnetto per 1 000 invånare: inflyttningar och utflyttningar] (antal, 2025)
+- Laholm: 1 157
+- Halland (länet): 10 613
+- Riket: 0
+- Plats bland landets 290 kommuner: 104 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 4 393; Kungsbacka 3 660; Varberg 2 390; Falkenberg 1 611; Laholm 1 157; Hylte 408
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 10 år: +4 antal (från 1 153 år 2015), det vill säga +0,3 procent eller i genomsnitt +0,03 procent per år
+- Förändring 5 år: -165 antal (från 1 322 år 2020), det vill säga -12,5 procent eller i genomsnitt -2,63 procent per år
+- Förändring 1 år: -83 antal (från 1 240 år 2024), det vill säga -6,7 procent
+
+### Inrikes utflyttningar, antal [uppdelning av Inrikes flyttnetto per 1 000 invånare: inflyttningar och utflyttningar] (antal, 2025)
+- Laholm: 1 132
+- Halland (länet): 9 747
+- Riket: 0
+- Plats bland landets 290 kommuner: 103 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 4 343; Kungsbacka 3 181; Varberg 2 041; Falkenberg 1 537; Laholm 1 132; Hylte 512
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 10 år: +158 antal (från 974 år 2015), det vill säga +16,2 procent eller i genomsnitt +1,51 procent per år
+- Förändring 5 år: -169 antal (från 1 301 år 2020), det vill säga -13,0 procent eller i genomsnitt -2,74 procent per år
+- Förändring 1 år: -34 antal (från 1 166 år 2024), det vill säga -2,9 procent
+
+### Utrikes flyttnetto per 1 000 invånare (per 1 000 inv., 2025)
+Mäter: Invandringsöverskott per 1 000 invånare.
+- Laholm: 0,30
+- Halland (länet): 0,90
+- Riket: 1,10
+- Skillnad Laholm mot riket: -0,80 per 1 000 inv.
+- Skillnad Laholm mot Halland: -0,60 per 1 000 inv.
+- Plats bland landets 290 kommuner: 191 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 3,40; Halmstad 1,60; Kungsbacka 1,10; Varberg 0,50; Laholm 0,30; Falkenberg -0,90
+- Plats bland Hallands 6 kommuner: 5
+- Förändring hela serien sedan 2000: +0,30 per 1 000 inv. (från 0,00 år 2000); riket -1,70 per 1 000 inv.
+- Förändring 10 år: -10,60 per 1 000 inv. (från 10,90 år 2015); riket -6,90 per 1 000 inv.
+- Förändring 5 år: -0,70 per 1 000 inv. (från 1,00 år 2020); riket -2,10 per 1 000 inv.
+- Förändring 1 år: +0,10 per 1 000 inv. (från 0,20 år 2024); riket -1,70 per 1 000 inv.
+- Laholm år för år: 2015 10,90; 2016 11,40; 2017 9,30; 2018 4,40; 2019 4,40; 2020 1,00; 2021 4,40; 2022 2,30; 2023 0,50; 2024 0,20; 2025 0,30
+- Serien för Laholm 2000–2025: högst 11,40 (2016), lägst 0,00 (2000)
+
+### Invandringar, antal [uppdelning av Utrikes flyttnetto per 1 000 invånare: invandringar och utvandringar] (antal, 2025)
+- Laholm: 149
+- Halland (länet): 1 860
+- Riket: 89 434
+- Plats bland landets 290 kommuner: 96 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 768; Kungsbacka 371; Varberg 268; Falkenberg 195; Laholm 149; Hylte 105
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 10 år: -183 antal (från 332 år 2015), det vill säga -55,1 procent eller i genomsnitt -7,70 procent per år; riket -33,4 procent
+- Förändring 5 år: +32 antal (från 117 år 2020), det vill säga +27,4 procent eller i genomsnitt +4,95 procent per år; riket +8,4 procent
+- Förändring 1 år: +5 antal (från 144 år 2024), det vill säga +3,5 procent; riket -23,0 procent
+
+### Utvandringar, antal [uppdelning av Utrikes flyttnetto per 1 000 invånare: invandringar och utvandringar] (antal, 2025)
+- Laholm: 140
+- Halland (länet): 1 549
+- Riket: 77 483
+- Plats bland landets 290 kommuner: 91 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 594; Kungsbacka 280; Falkenberg 236; Varberg 232; Laholm 140; Hylte 71
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 10 år: +72 antal (från 68 år 2015), det vill säga +105,9 procent eller i genomsnitt +7,49 procent per år; riket +38,8 procent
+- Förändring 5 år: +48 antal (från 92 år 2020), det vill säga +52,2 procent eller i genomsnitt +8,76 procent per år; riket +58,3 procent
+- Förändring 1 år: +2 antal (från 138 år 2024), det vill säga +1,4 procent; riket -10,4 procent
+
+## Ålder och sammansättning
 
 ### Befolkningens medelålder, år (år, 2025)
 Mäter: Medelålder i befolkningen.
@@ -245,56 +292,12 @@ Mäter: Medelålder i befolkningen.
 - Plats bland landets 290 kommuner: 124 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 45,3; Falkenberg 44,6; Varberg 44,4; Hylte 44,0; Kungsbacka 43,0; Halmstad 42,2
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år: +0,2 år (från 45,1 år 2024); riket +0,2 år
-- Förändring 5 år: +1,0 år (från 44,3 år 2020); riket +1,0 år
+- Förändring hela serien sedan 2000: +3,6 år (från 41,7 år 2000); riket +2,1 år
 - Förändring 10 år: +1,1 år (från 44,2 år 2015); riket +1,2 år
+- Förändring 5 år: +1,0 år (från 44,3 år 2020); riket +1,0 år
+- Förändring 1 år: +0,2 år (från 45,1 år 2024); riket +0,2 år
+- Laholm år för år: 2015 44,2; 2016 44,0; 2017 43,9; 2018 44,0; 2019 44,0; 2020 44,3; 2021 44,4; 2022 44,6; 2023 44,9; 2024 45,1; 2025 45,3
 - Serien för Laholm 2000–2025: högst 45,3 (2025), lägst 41,7 (2000)
-
-### Invånare 0–19 år, andel av befolkningen [Åldersgrupper] (procent, 2025)
-- Laholm: 22,3
-- Halland (länet): 23,3
-- Riket: 22,4
-- Skillnad Laholm mot riket: -0,1 procentenheter
-- Skillnad Laholm mot Halland: -1,0 procentenheter
-- Plats bland landets 290 kommuner: 120 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 25,3; Hylte 23,8; Halmstad 22,8; Falkenberg 22,6; Varberg 22,5; Laholm 22,3
-- Plats bland Hallands 6 kommuner: 6
-- Förändring 5 år: -0,5 procentenheter (från 22,8 år 2020); riket -0,9 procentenheter
-
-### Invånare 20–64 år, andel av befolkningen [Åldersgrupper] (procent, 2025)
-- Laholm: 50,7
-- Halland (länet): 53,3
-- Riket: 56,5
-- Skillnad Laholm mot riket: -5,8 procentenheter
-- Skillnad Laholm mot Halland: -2,6 procentenheter
-- Plats bland landets 290 kommuner: 205 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
-- Plats bland Hallands 6 kommuner: 6
-- Förändring 5 år: -1,0 procentenheter (från 51,7 år 2020); riket -0,1 procentenheter
-
-### Invånare 65–79 år, andel av befolkningen [Åldersgrupper] (procent, 2025)
-- Laholm: 19,0
-- Halland (länet): 16,1
-- Riket: 14,6
-- Skillnad Laholm mot riket: +4,4 procentenheter
-- Skillnad Laholm mot Halland: +2,9 procentenheter
-- Plats bland landets 290 kommuner: 108 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 19,0; Falkenberg 17,9; Varberg 17,9; Hylte 17,2; Halmstad 14,6; Kungsbacka 14,3
-- Plats bland Hallands 6 kommuner: 1
-- Förändring 5 år: -0,2 procentenheter (från 19,2 år 2020); riket -0,3 procentenheter
-
-### Invånare 80 år och äldre, andel av befolkningen [Åldersgrupper] (procent, 2025)
-- Laholm: 8,00
-- Halland (länet): 7,30
-- Riket: 6,40
-- Skillnad Laholm mot riket: +1,60 procentenheter
-- Skillnad Laholm mot Halland: +0,70 procentenheter
-- Plats bland landets 290 kommuner: 133 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
-- Plats bland Hallands 6 kommuner: 1
-- Förändring 5 år: +1,70 procentenheter (från 6,30 år 2020); riket +1,20 procentenheter
-
-## Försörjningskvot
 
 ### Demografisk försörjningskvot (kvot, 2025)
 Mäter: Antal invånare 0–19 och 65+ per 100 invånare 20–64 år.
@@ -304,36 +307,81 @@ Mäter: Antal invånare 0–19 och 65+ per 100 invånare 20–64 år.
 - Plats bland landets 290 kommuner: 82 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 97,3; Falkenberg 93,9; Hylte 93,0; Varberg 92,1; Kungsbacka 87,9; Halmstad 79,2
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år: +0,1 kvot (från 97,2 år 2024); riket -0,1 kvot
-- Förändring 5 år: +3,8 kvot (från 93,5 år 2020); riket +0,4 kvot
+- Förändring hela serien sedan 2000: +16,0 kvot (från 81,3 år 2000); riket +6,6 kvot
 - Förändring 10 år: +11,3 kvot (från 86,0 år 2015); riket +3,1 kvot
+- Förändring 5 år: +3,8 kvot (från 93,5 år 2020); riket +0,4 kvot
+- Förändring 1 år: +0,1 kvot (från 97,2 år 2024); riket -0,1 kvot
+- Laholm år för år: 2015 86,0; 2016 88,2; 2017 89,3; 2018 91,8; 2019 92,7; 2020 93,5; 2021 93,9; 2022 94,3; 2023 95,9; 2024 97,2; 2025 97,3
 - Serien för Laholm 2000–2025: högst 97,3 (2025), lägst 77,9 (2007)
 
-### Försörjningskvot, yngre (0–19 / 20–64) [Uppdelning] (kvot, 2025)
+### Försörjningskvot, yngre (0–19 / 20–64) [uppdelning av Demografisk försörjningskvot: försörjningskvoten för yngre och äldre] (kvot, 2025)
 - Laholm: 43,9
 - Riket: 39,7
 - Skillnad Laholm mot riket: +4,2 kvot
 - Plats bland landets 290 kommuner: 79 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Kungsbacka 47,6; Hylte 45,9; Laholm 43,9; Falkenberg 43,8; Varberg 43,2; Halmstad 40,8
 - Plats bland Hallands 6 kommuner: 3
+- Förändring 10 år: +3,0 kvot (från 40,9 år 2015); riket +0,2 kvot
 - Förändring 5 år: -0,2 kvot (från 44,1 år 2020); riket -1,4 kvot
+- Förändring 1 år: -0,2 kvot (från 44,1 år 2024); riket -0,5 kvot
 
-### Försörjningskvot, äldre (65+ / 20–64) [Uppdelning] (kvot, 2025)
+### Försörjningskvot, äldre (65+ / 20–64) [uppdelning av Demografisk försörjningskvot: försörjningskvoten för yngre och äldre] (kvot, 2025)
 - Laholm: 53,3
 - Riket: 37,3
 - Skillnad Laholm mot riket: +16,0 kvot
 - Plats bland landets 290 kommuner: 107 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 53,3; Falkenberg 50,1; Varberg 48,9; Hylte 47,1; Kungsbacka 40,3; Halmstad 38,4
 - Plats bland Hallands 6 kommuner: 1
+- Förändring 10 år: +8,2 kvot (från 45,1 år 2015); riket +2,9 kvot
 - Förändring 5 år: +3,9 kvot (från 49,4 år 2020); riket +1,8 kvot
+- Förändring 1 år: +0,3 kvot (från 53,0 år 2024); riket +0,4 kvot
+
+### Utrikes födda i befolkningen, andel (procent, 2024)
+Mäter: Andelen av befolkningen som är födda utanför Sverige.
+- Laholm: 15,1
+- Halland (länet): 15,1
+- Riket: 20,8
+- Skillnad Laholm mot riket: -5,7 procentenheter
+- Plats bland landets 290 kommuner: 134 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Hylte 23,9; Halmstad 20,5; Falkenberg 15,4; Laholm 15,1; Varberg 11,8; Kungsbacka 9,6
+- Plats bland Hallands 6 kommuner: 4
+- Förändring hela serien sedan 2000: +8,6 procentenheter (från 6,5 år 2000); riket +9,5 procentenheter
+- Förändring 10 år: +4,1 procentenheter (från 11,0 år 2014); riket +4,3 procentenheter
+- Förändring 5 år: -0,3 procentenheter (från 15,4 år 2019); riket +1,2 procentenheter
+- Förändring 1 år: -0,1 procentenheter (från 15,2 år 2023); riket +0,2 procentenheter
+- Laholm år för år: 2014 11,0; 2015 12,3; 2016 13,6; 2017 14,6; 2018 14,9; 2019 15,4; 2020 15,2; 2021 15,1; 2022 15,3; 2023 15,2; 2024 15,1
+- Serien för Laholm 2000–2024: högst 15,4 (2019), lägst 6,5 (2000)
+
+### Kvinnor i befolkningen, andel (procent, 2025)
+Mäter: Andelen kvinnor av totalbefolkningen.
+- Laholm: 49,2
+- Halland (länet): 50,0
+- Riket: 49,8
+- Skillnad Laholm mot riket: -0,6 procentenheter
+- Skillnad Laholm mot Halland: -0,8 procentenheter
+- Plats bland landets 290 kommuner: 135 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
+- Plats bland Hallands 6 kommuner: 5
+- Förändring hela serien sedan 2000: -0,4 procentenheter (från 49,6 år 2000); riket -0,7 procentenheter
+- Förändring 10 år: -0,2 procentenheter (från 49,4 år 2015); riket -0,1 procentenheter
+- Förändring 5 år: +0,1 procentenheter (från 49,1 år 2020); riket +0,1 procentenheter
+- Förändring 1 år: 0,0 procentenheter (från 49,2 år 2024); riket +0,1 procentenheter
+- Laholm år för år: 2015 49,4; 2016 49,3; 2017 49,3; 2018 49,3; 2019 49,1; 2020 49,1; 2021 49,1; 2022 49,0; 2023 49,1; 2024 49,2; 2025 49,2
+- Serien för Laholm 2000–2025: högst 49,7 (2011), lägst 49,0 (2022)
 
 ## Befolkningsförändringens komponenter (antal personer)
 
-Förändringen av folkmängden i Laholm = födelsenetto + inrikes flyttnetto + utrikes flyttnetto (SCB:s justeringar gör att summan kan avvika något). Påståenden om vad som bär tillväxten ska väga alla tre.
+Förändringen av folkmängden i Laholm = födelsenetto + inrikes flyttnetto + utrikes flyttnetto (SCB:s justeringar gör att summan kan avvika något). Påståenden om vad som bär tillväxten ska väga alla tre, och det senaste året ska sättas i relation till hela perioden.
 
+- 2016: total förändring +469; födelsenetto +5; inrikes flyttnetto +182; utrikes flyttnetto (invandringsöverskott) +282
+- 2017: total förändring +483; födelsenetto -15; inrikes flyttnetto +258; utrikes flyttnetto (invandringsöverskott) +234
+- 2018: total förändring +344; födelsenetto +43; inrikes flyttnetto +183; utrikes flyttnetto (invandringsöverskott) +111
+- 2019: total förändring +412; födelsenetto +11; inrikes flyttnetto +276; utrikes flyttnetto (invandringsöverskott) +113
+- 2020: total förändring +64; födelsenetto 0; inrikes flyttnetto +21; utrikes flyttnetto (invandringsöverskott) +25
 - 2021: total förändring +352; födelsenetto +27; inrikes flyttnetto +187; utrikes flyttnetto (invandringsöverskott) +116
 - 2022: total förändring +256; födelsenetto -27; inrikes flyttnetto +197; utrikes flyttnetto (invandringsöverskott) +62
 - 2023: total förändring -10; födelsenetto -47; inrikes flyttnetto +15; utrikes flyttnetto (invandringsöverskott) +12
 - 2024: total förändring +30; födelsenetto -41; inrikes flyttnetto +74; utrikes flyttnetto (invandringsöverskott) +6
 - 2025: total förändring -30; födelsenetto -65; inrikes flyttnetto +26; utrikes flyttnetto (invandringsöverskott) +9
+- Summa 2016–2025: total förändring +2 370; födelsenetto -109; inrikes flyttnetto +1 419; utrikes flyttnetto +970
 - Summa 2021–2025: total förändring +598; födelsenetto -153; inrikes flyttnetto +499; utrikes flyttnetto +205

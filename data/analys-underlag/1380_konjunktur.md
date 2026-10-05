@@ -41,7 +41,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Konjunktur, Halmstad
 
-## Arbetsmarknad: Sysselsatta nattbefolkning 15–74 år (prelim.)
+## Sysselsättning: Sysselsatta nattbefolkning 15–74 år (prelim.)
 
 ### Sysselsatta nattbefolkning 15–74 år, antal (prelim.) (antal, juli 2026)
 Mäter: Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommunen). Preliminär statistik från SCB BAS.
@@ -51,10 +51,14 @@ Mäter: Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommun
 - Plats bland landets 290 kommuner: 16 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 54 680; Kungsbacka 46 134; Varberg 36 641; Falkenberg 24 403; Laholm 13 269; Hylte 4 926
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +108 antal (från 54 572 år juli 2025), det vill säga +0,2 procent; riket +0,7 procent
+- Förändring 5 år (samma månad): +1 574 antal (från 53 106 i juli 2021), det vill säga +3,0 procent eller i genomsnitt +0,59 procent per år; riket +4,7 procent
+- Förändring 3 år (samma månad): -188 antal (från 54 868 i juli 2023), det vill säga -0,3 procent eller i genomsnitt -0,11 procent per år; riket +0,5 procent
+- Förändring 1 år (samma månad året innan): +108 antal (från 54 572 i juli 2025), det vill säga +0,2 procent; riket +0,7 procent
+- Halmstad år för år: juli 2021 53 106; juli 2022 54 479; juli 2023 54 868; juli 2024 54 535; juli 2025 54 572; juli 2026 54 680
 - Serien för Halmstad januari 2020–juli 2026: högst 54 868 (juli 2023), lägst 48 959 (januari 2021)
 
-### Sysselsättningsgrad 15–74 år (prelim.) [Sysselsättningsgrad] (procent, juli 2026)
+### Sysselsättningsgrad 15–74 år (prelim.) (procent, juli 2026)
+Mäter: Andel sysselsatta av befolkningen 15–74 år, nattbefolkning. Preliminär statistik från SCB BAS.
 - Halmstad: 71,6
 - Halland (länet): 73,7
 - Riket: 71,7
@@ -63,9 +67,13 @@ Mäter: Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommun
 - Plats bland landets 290 kommuner: 147 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Kungsbacka 75,8; Varberg 75,0; Falkenberg 74,0; Laholm 72,6; Halmstad 71,6; Hylte 69,8
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): -0,1 procentenheter (från 71,7 år juli 2025); riket +0,4 procentenheter
+- Förändring 5 år (samma månad): +0,8 procentenheter (från 70,8 i juli 2021); riket +2,0 procentenheter
+- Förändring 3 år (samma månad): -1,0 procentenheter (från 72,6 i juli 2023); riket -0,1 procentenheter
+- Förändring 1 år (samma månad året innan): -0,1 procentenheter (från 71,7 i juli 2025); riket +0,4 procentenheter
+- Halmstad år för år: juli 2021 70,8; juli 2022 72,4; juli 2023 72,6; juli 2024 72,0; juli 2025 71,7; juli 2026 71,6
+- Serien för Halmstad januari 2020–juli 2026: högst 72,6 (juli 2023), lägst 65,3 (januari 2021)
 
-## Sysselsättningsgrad 20–64 år (prelim.)
+## Sysselsättning: Sysselsättningsgrad 20–64 år (prelim.)
 
 ### Sysselsatta bland befolkningen 20–64 år, andel (prelim.) (procent, juli 2026)
 Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
@@ -77,32 +85,13 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik fr�
 - Plats bland landets 290 kommuner: 177 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Kungsbacka 88,2; Varberg 87,8; Falkenberg 85,9; Laholm 84,8; Halmstad 82,8; Hylte 80,9
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): +0,1 procentenheter (från 82,7 år juli 2025); riket +0,4 procentenheter
+- Förändring 5 år (samma månad): +0,6 procentenheter (från 82,2 i juli 2021); riket +1,2 procentenheter
+- Förändring 3 år (samma månad): -0,6 procentenheter (från 83,4 i juli 2023); riket -0,2 procentenheter
+- Förändring 1 år (samma månad året innan): +0,1 procentenheter (från 82,7 i juli 2025); riket +0,4 procentenheter
+- Halmstad år för år: juli 2021 82,2; juli 2022 83,3; juli 2023 83,4; juli 2024 82,9; juli 2025 82,7; juli 2026 82,8
 - Serien för Halmstad januari 2020–juli 2026: högst 83,4 (juli 2023), lägst 78,1 (januari 2021)
 
-### Sysselsatta bland inrikes födda 20–64 år, andel (prelim.) [Födelseregion] (procent, juli 2026)
-- Halmstad: 87,1
-- Halland (länet): 88,5
-- Riket: 86,4
-- Skillnad Halmstad mot riket: +0,7 procentenheter
-- Skillnad Halmstad mot Halland: -1,4 procentenheter
-- Plats bland landets 290 kommuner: 121 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Varberg 89,7; Kungsbacka 89,6; Falkenberg 88,7; Laholm 87,8; Halmstad 87,1; Hylte 86,0
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): +0,1 procentenheter (från 87,0 år juli 2025); riket +0,1 procentenheter
-
-### Sysselsatta bland utrikes födda 20–64 år, andel (prelim.) [Födelseregion] (procent, juli 2026)
-- Halmstad: 71,0
-- Halland (länet): 73,9
-- Riket: 72,0
-- Skillnad Halmstad mot riket: -1,0 procentenheter
-- Skillnad Halmstad mot Halland: -2,9 procentenheter
-- Plats bland landets 290 kommuner: 186 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Varberg 78,1; Kungsbacka 78,0; Falkenberg 75,6; Laholm 73,5; Halmstad 71,0; Hylte 69,8
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): +0,3 procentenheter (från 70,7 år juli 2025); riket +0,9 procentenheter
-
-### Sysselsatta bland kvinnor 20–64 år, andel (prelim.) [Kvinnor och män] (procent, juli 2026)
+### Sysselsatta bland kvinnor 20–64 år, andel (prelim.) [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel (prelim.): kvinnor och män] (procent, juli 2026)
 - Halmstad: 82,2
 - Halland (länet): 85,1
 - Riket: 81,9
@@ -111,9 +100,11 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik fr�
 - Plats bland landets 290 kommuner: 167 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Kungsbacka 88,0; Varberg 87,3; Falkenberg 85,2; Laholm 84,0; Halmstad 82,2; Hylte 78,9
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): -0,2 procentenheter (från 82,4 år juli 2025); riket +0,3 procentenheter
+- Förändring 5 år (samma månad): +0,5 procentenheter (från 81,7 i juli 2021); riket +1,6 procentenheter
+- Förändring 3 år (samma månad): -1,0 procentenheter (från 83,2 i juli 2023); riket -0,1 procentenheter
+- Förändring 1 år (samma månad året innan): -0,2 procentenheter (från 82,4 i juli 2025); riket +0,3 procentenheter
 
-### Sysselsatta bland män 20–64 år, andel (prelim.) [Kvinnor och män] (procent, juli 2026)
+### Sysselsatta bland män 20–64 år, andel (prelim.) [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel (prelim.): kvinnor och män] (procent, juli 2026)
 - Halmstad: 83,3
 - Halland (länet): 86,1
 - Riket: 83,0
@@ -122,105 +113,35 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik fr�
 - Plats bland landets 290 kommuner: 188 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Varberg 88,3; Kungsbacka 88,3; Falkenberg 86,5; Laholm 85,7; Halmstad 83,3; Hylte 82,6
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): +0,4 procentenheter (från 82,9 år juli 2025); riket +0,4 procentenheter
+- Förändring 5 år (samma månad): +0,7 procentenheter (från 82,6 i juli 2021); riket +0,9 procentenheter
+- Förändring 3 år (samma månad): -0,3 procentenheter (från 83,6 i juli 2023); riket -0,4 procentenheter
+- Förändring 1 år (samma månad året innan): +0,4 procentenheter (från 82,9 i juli 2025); riket +0,4 procentenheter
 
-## Arbetslöshet 20–64 år (prelim.)
-
-### Arbetslösa i arbetskraften 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
-- Halmstad: 5,40
-- Halland (länet): 3,70
-- Riket: 5,00
-- Skillnad Halmstad mot riket: +0,40 procentenheter
-- Skillnad Halmstad mot Halland: +1,70 procentenheter
-- Plats bland landets 290 kommuner: 61 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Hylte 5,60; Halmstad 5,40; Laholm 3,90; Falkenberg 3,50; Kungsbacka 2,60; Varberg 2,50
-- Plats bland Hallands 6 kommuner: 2
-- Förändring 1 år (samma månad året innan): -0,50 procentenheter (från 5,90 år juli 2025); riket -0,30 procentenheter
-- Serien för Halmstad januari 2020–juli 2026: högst 7,90 (februari 2021), lägst 4,90 (juli 2023)
-
-### Arbetslösa bland inrikes födda 20–64 år, andel (prelim.) [Födelseregion] (procent, juli 2026)
-- Halmstad: 2,90
-- Halland (länet): 2,40
-- Riket: 3,10
-- Skillnad Halmstad mot riket: -0,20 procentenheter
-- Skillnad Halmstad mot Halland: +0,50 procentenheter
-- Plats bland landets 290 kommuner: 133 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Hylte 3,20; Halmstad 2,90; Laholm 2,60; Falkenberg 2,30; Varberg 2,00; Kungsbacka 2,00
-- Plats bland Hallands 6 kommuner: 2
-- Förändring 1 år (samma månad året innan): -0,30 procentenheter (från 3,20 år juli 2025); riket -0,10 procentenheter
-
-### Arbetslösa bland utrikes födda 20–64 år, andel (prelim.) [Födelseregion] (procent, juli 2026)
-- Halmstad: 12,9
-- Halland (länet): 9,9
-- Riket: 10,5
-- Skillnad Halmstad mot riket: +2,4 procentenheter
-- Skillnad Halmstad mot Halland: +3,0 procentenheter
-- Plats bland landets 290 kommuner: 54 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Halmstad 12,9; Hylte 11,7; Laholm 9,3; Falkenberg 8,4; Kungsbacka 6,5; Varberg 5,8
-- Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): -1,0 procentenheter (från 13,9 år juli 2025); riket -1,0 procentenheter
-
-### Arbetslösa bland kvinnor 20–64 år, andel (prelim.) [Kvinnor och män] (procent, juli 2026)
-- Halmstad: 5,50
-- Halland (länet): 3,70
-- Riket: 5,00
-- Skillnad Halmstad mot riket: +0,50 procentenheter
-- Skillnad Halmstad mot Halland: +1,80 procentenheter
-- Plats bland landets 290 kommuner: 63 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Hylte 5,90; Halmstad 5,50; Laholm 3,70; Falkenberg 3,30; Kungsbacka 2,50; Varberg 2,40
-- Plats bland Hallands 6 kommuner: 2
-- Förändring 1 år (samma månad året innan): -0,20 procentenheter (från 5,70 år juli 2025); riket -0,30 procentenheter
-
-### Arbetslösa bland män 20–64 år, andel (prelim.) [Kvinnor och män] (procent, juli 2026)
-- Halmstad: 5,30
-- Halland (länet): 3,80
-- Riket: 4,90
-- Skillnad Halmstad mot riket: +0,40 procentenheter
-- Skillnad Halmstad mot Halland: +1,50 procentenheter
-- Plats bland landets 290 kommuner: 67 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Halmstad 5,30; Hylte 5,20; Laholm 4,00; Falkenberg 3,60; Varberg 2,70; Kungsbacka 2,60
-- Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): -0,70 procentenheter (från 6,00 år juli 2025); riket -0,40 procentenheter
-
-## Arbetskraftsdeltagande 20–64 år (prelim.)
-
-### I arbetskraften bland befolkningen 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
-- Halmstad: 87,5
-- Halland (länet): 89,0
-- Riket: 86,8
+### Sysselsatta bland inrikes födda 20–64 år, andel (prelim.) [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel (prelim.): inrikes och utrikes födda] (procent, juli 2026)
+- Halmstad: 87,1
+- Halland (länet): 88,5
+- Riket: 86,4
 - Skillnad Halmstad mot riket: +0,7 procentenheter
-- Skillnad Halmstad mot Halland: -1,5 procentenheter
-- Plats bland landets 290 kommuner: 139 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Kungsbacka 90,5; Varberg 90,1; Falkenberg 89,0; Laholm 88,2; Halmstad 87,5; Hylte 85,7
-- Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): -0,3 procentenheter (från 87,8 år juli 2025); riket +0,1 procentenheter
-- Serien för Halmstad januari 2020–juli 2026: högst 87,8 (juli 2025), lägst 84,6 (februari 2020)
-
-### I arbetskraften bland kvinnor 20–64 år, andel (prelim.) [Kvinnor och män] (procent, juli 2026)
-- Halmstad: 87,0
-- Halland (länet): 88,4
-- Riket: 86,2
-- Skillnad Halmstad mot riket: +0,8 procentenheter
 - Skillnad Halmstad mot Halland: -1,4 procentenheter
-- Plats bland landets 290 kommuner: 122 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Kungsbacka 90,3; Varberg 89,5; Falkenberg 88,2; Laholm 87,2; Halmstad 87,0; Hylte 84,1
+- Plats bland landets 290 kommuner: 121 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Varberg 89,7; Kungsbacka 89,6; Falkenberg 88,7; Laholm 87,8; Halmstad 87,1; Hylte 86,0
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): -0,4 procentenheter (från 87,4 år juli 2025); riket 0,0 procentenheter
+- Förändring 5 år (samma månad): +0,4 procentenheter (från 86,7 i juli 2021); riket +0,5 procentenheter
+- Förändring 3 år (samma månad): -0,6 procentenheter (från 87,7 i juli 2023); riket -0,6 procentenheter
+- Förändring 1 år (samma månad året innan): +0,1 procentenheter (från 87,0 i juli 2025); riket +0,1 procentenheter
 
-### I arbetskraften bland män 20–64 år, andel (prelim.) [Kvinnor och män] (procent, juli 2026)
-- Halmstad: 87,9
-- Halland (länet): 89,5
-- Riket: 87,3
-- Skillnad Halmstad mot riket: +0,6 procentenheter
-- Skillnad Halmstad mot Halland: -1,6 procentenheter
-- Plats bland landets 290 kommuner: 164 (1 = högsta värdet)
-- Hallands kommuner juli 2026 (högst först): Varberg 90,7; Kungsbacka 90,7; Falkenberg 89,7; Laholm 89,2; Halmstad 87,9; Hylte 87,2
+### Sysselsatta bland utrikes födda 20–64 år, andel (prelim.) [uppdelning av Sysselsatta bland befolkningen 20–64 år, andel (prelim.): inrikes och utrikes födda] (procent, juli 2026)
+- Halmstad: 71,0
+- Halland (länet): 73,9
+- Riket: 72,0
+- Skillnad Halmstad mot riket: -1,0 procentenheter
+- Skillnad Halmstad mot Halland: -2,9 procentenheter
+- Plats bland landets 290 kommuner: 186 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Varberg 78,1; Kungsbacka 78,0; Falkenberg 75,6; Laholm 73,5; Halmstad 71,0; Hylte 69,8
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): -0,3 procentenheter (från 88,2 år juli 2025); riket 0,0 procentenheter
-
-## Årsförändring arbetsmarknad
+- Förändring 5 år (samma månad): +2,3 procentenheter (från 68,7 i juli 2021); riket +4,3 procentenheter
+- Förändring 3 år (samma månad): -0,5 procentenheter (från 71,5 i juli 2023); riket +0,7 procentenheter
+- Förändring 1 år (samma månad året innan): +0,3 procentenheter (från 70,7 i juli 2025); riket +0,9 procentenheter
 
 ### Sysselsättningsgrad, årsförändring (procentenheter) (procentenheter, juli 2026)
 Mäter: Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
@@ -232,8 +153,81 @@ Mäter: Förändring i procentenheter mot samma månad föregående år. Prelimi
 - Plats bland landets 290 kommuner: 168 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Hylte 0,80; Falkenberg 0,70; Laholm 0,40; Varberg 0,30; Halmstad 0,10; Kungsbacka 0,00
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): +0,30 procentenheter (från -0,20 år juli 2025); riket +0,70 procentenheter
+- Förändring 5 år (samma månad): -1,50 procentenheter (från 1,60 i juli 2021); riket -1,10 procentenheter
+- Förändring 3 år (samma månad): 0,00 procentenheter (från 0,10 i juli 2023); riket +0,30 procentenheter
+- Förändring 1 år (samma månad året innan): +0,30 procentenheter (från -0,20 i juli 2025); riket +0,70 procentenheter
+- Halmstad år för år: juli 2021 1,60; juli 2022 1,10; juli 2023 0,10; juli 2024 -0,50; juli 2025 -0,20; juli 2026 0,10
 - Serien för Halmstad januari 2021–juli 2026: högst 2,00 (januari 2022), lägst -1,00 (januari 2021)
+
+## Arbetslöshet och arbetskraft: Arbetslöshet 20–64 år (prelim.)
+
+### Arbetslösa i arbetskraften 20–64 år, andel (prelim.) (procent, juli 2026)
+Mäter: Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+- Halmstad: 5,40
+- Halland (länet): 3,70
+- Riket: 5,00
+- Skillnad Halmstad mot riket: +0,40 procentenheter
+- Skillnad Halmstad mot Halland: +1,70 procentenheter
+- Plats bland landets 290 kommuner: 61 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Hylte 5,60; Halmstad 5,40; Laholm 3,90; Falkenberg 3,50; Kungsbacka 2,60; Varberg 2,50
+- Plats bland Hallands 6 kommuner: 2
+- Förändring 5 år (samma månad): -0,60 procentenheter (från 6,00 i juli 2021); riket -1,00 procentenheter
+- Förändring 3 år (samma månad): +0,50 procentenheter (från 4,90 i juli 2023); riket +0,50 procentenheter
+- Förändring 1 år (samma månad året innan): -0,50 procentenheter (från 5,90 i juli 2025); riket -0,30 procentenheter
+- Halmstad år för år: juli 2021 6,00; juli 2022 5,00; juli 2023 4,90; juli 2024 5,50; juli 2025 5,90; juli 2026 5,40
+- Serien för Halmstad januari 2020–juli 2026: högst 7,90 (februari 2021), lägst 4,90 (juli 2023)
+
+### Arbetslösa bland kvinnor 20–64 år, andel (prelim.) [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel (prelim.): kvinnor och män] (procent, juli 2026)
+- Halmstad: 5,50
+- Halland (länet): 3,70
+- Riket: 5,00
+- Skillnad Halmstad mot riket: +0,50 procentenheter
+- Skillnad Halmstad mot Halland: +1,80 procentenheter
+- Plats bland landets 290 kommuner: 63 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Hylte 5,90; Halmstad 5,50; Laholm 3,70; Falkenberg 3,30; Kungsbacka 2,50; Varberg 2,40
+- Plats bland Hallands 6 kommuner: 2
+- Förändring 5 år (samma månad): -0,50 procentenheter (från 6,00 i juli 2021); riket -1,00 procentenheter
+- Förändring 3 år (samma månad): +0,70 procentenheter (från 4,80 i juli 2023); riket +0,40 procentenheter
+- Förändring 1 år (samma månad året innan): -0,20 procentenheter (från 5,70 i juli 2025); riket -0,30 procentenheter
+
+### Arbetslösa bland män 20–64 år, andel (prelim.) [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel (prelim.): kvinnor och män] (procent, juli 2026)
+- Halmstad: 5,30
+- Halland (länet): 3,80
+- Riket: 4,90
+- Skillnad Halmstad mot riket: +0,40 procentenheter
+- Skillnad Halmstad mot Halland: +1,50 procentenheter
+- Plats bland landets 290 kommuner: 67 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Halmstad 5,30; Hylte 5,20; Laholm 4,00; Falkenberg 3,60; Varberg 2,70; Kungsbacka 2,60
+- Plats bland Hallands 6 kommuner: 1
+- Förändring 5 år (samma månad): -0,70 procentenheter (från 6,00 i juli 2021); riket -1,10 procentenheter
+- Förändring 3 år (samma månad): +0,40 procentenheter (från 4,90 i juli 2023); riket +0,40 procentenheter
+- Förändring 1 år (samma månad året innan): -0,70 procentenheter (från 6,00 i juli 2025); riket -0,40 procentenheter
+
+### Arbetslösa bland inrikes födda 20–64 år, andel (prelim.) [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel (prelim.): inrikes och utrikes födda] (procent, juli 2026)
+- Halmstad: 2,90
+- Halland (länet): 2,40
+- Riket: 3,10
+- Skillnad Halmstad mot riket: -0,20 procentenheter
+- Skillnad Halmstad mot Halland: +0,50 procentenheter
+- Plats bland landets 290 kommuner: 133 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Hylte 3,20; Halmstad 2,90; Laholm 2,60; Falkenberg 2,30; Varberg 2,00; Kungsbacka 2,00
+- Plats bland Hallands 6 kommuner: 2
+- Förändring 5 år (samma månad): -0,10 procentenheter (från 3,00 i juli 2021); riket -0,10 procentenheter
+- Förändring 3 år (samma månad): +0,40 procentenheter (från 2,50 i juli 2023); riket +0,60 procentenheter
+- Förändring 1 år (samma månad året innan): -0,30 procentenheter (från 3,20 i juli 2025); riket -0,10 procentenheter
+
+### Arbetslösa bland utrikes födda 20–64 år, andel (prelim.) [uppdelning av Arbetslösa i arbetskraften 20–64 år, andel (prelim.): inrikes och utrikes födda] (procent, juli 2026)
+- Halmstad: 12,9
+- Halland (länet): 9,9
+- Riket: 10,5
+- Skillnad Halmstad mot riket: +2,4 procentenheter
+- Skillnad Halmstad mot Halland: +3,0 procentenheter
+- Plats bland landets 290 kommuner: 54 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Halmstad 12,9; Hylte 11,7; Laholm 9,3; Falkenberg 8,4; Kungsbacka 6,5; Varberg 5,8
+- Plats bland Hallands 6 kommuner: 1
+- Förändring 5 år (samma månad): -2,7 procentenheter (från 15,6 i juli 2021); riket -4,4 procentenheter
+- Förändring 3 år (samma månad): +0,7 procentenheter (från 12,2 i juli 2023); riket -0,2 procentenheter
+- Förändring 1 år (samma månad året innan): -1,0 procentenheter (från 13,9 i juli 2025); riket -1,0 procentenheter
 
 ### Arbetslöshet, årsförändring (procentenheter) (procentenheter, juli 2026)
 Mäter: Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
@@ -245,8 +239,55 @@ Mäter: Förändring i procentenheter mot samma månad föregående år. Prelimi
 - Plats bland landets 290 kommuner: 211 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Kungsbacka 0,10; Laholm -0,10; Falkenberg -0,30; Varberg -0,40; Halmstad -0,50; Hylte -1,30
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år (samma månad året innan): -0,90 procentenheter (från 0,40 år juli 2025); riket -0,60 procentenheter
+- Förändring 5 år (samma månad): +0,70 procentenheter (från -1,20 i juli 2021); riket +0,60 procentenheter
+- Förändring 3 år (samma månad): -0,40 procentenheter (från -0,10 i juli 2023); riket -0,10 procentenheter
+- Förändring 1 år (samma månad året innan): -0,90 procentenheter (från 0,40 i juli 2025); riket -0,60 procentenheter
+- Halmstad år för år: juli 2021 -1,20; juli 2022 -1,00; juli 2023 -0,10; juli 2024 0,60; juli 2025 0,40; juli 2026 -0,50
 - Serien för Halmstad januari 2021–juli 2026: högst 1,20 (januari 2021), lägst -1,80 (januari 2022)
+
+## Arbetslöshet och arbetskraft: Arbetskraftsdeltagande 20–64 år (prelim.)
+
+### I arbetskraften bland befolkningen 20–64 år, andel (prelim.) (procent, juli 2026)
+Mäter: Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+- Halmstad: 87,5
+- Halland (länet): 89,0
+- Riket: 86,8
+- Skillnad Halmstad mot riket: +0,7 procentenheter
+- Skillnad Halmstad mot Halland: -1,5 procentenheter
+- Plats bland landets 290 kommuner: 139 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Kungsbacka 90,5; Varberg 90,1; Falkenberg 89,0; Laholm 88,2; Halmstad 87,5; Hylte 85,7
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 5 år (samma månad): +0,1 procentenheter (från 87,4 i juli 2021); riket +0,4 procentenheter
+- Förändring 3 år (samma månad): -0,2 procentenheter (från 87,7 i juli 2023); riket +0,1 procentenheter
+- Förändring 1 år (samma månad året innan): -0,3 procentenheter (från 87,8 i juli 2025); riket +0,1 procentenheter
+- Halmstad år för år: juli 2021 87,4; juli 2022 87,7; juli 2023 87,7; juli 2024 87,8; juli 2025 87,8; juli 2026 87,5
+- Serien för Halmstad januari 2020–juli 2026: högst 87,8 (juli 2025), lägst 84,6 (februari 2020)
+
+### I arbetskraften bland kvinnor 20–64 år, andel (prelim.) [uppdelning av I arbetskraften bland befolkningen 20–64 år, andel (prelim.): kvinnor och män] (procent, juli 2026)
+- Halmstad: 87,0
+- Halland (länet): 88,4
+- Riket: 86,2
+- Skillnad Halmstad mot riket: +0,8 procentenheter
+- Skillnad Halmstad mot Halland: -1,4 procentenheter
+- Plats bland landets 290 kommuner: 122 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Kungsbacka 90,3; Varberg 89,5; Falkenberg 88,2; Laholm 87,2; Halmstad 87,0; Hylte 84,1
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 5 år (samma månad): 0,0 procentenheter (från 87,0 i juli 2021); riket +0,7 procentenheter
+- Förändring 3 år (samma månad): -0,3 procentenheter (från 87,3 i juli 2023); riket +0,2 procentenheter
+- Förändring 1 år (samma månad året innan): -0,4 procentenheter (från 87,4 i juli 2025); riket 0,0 procentenheter
+
+### I arbetskraften bland män 20–64 år, andel (prelim.) [uppdelning av I arbetskraften bland befolkningen 20–64 år, andel (prelim.): kvinnor och män] (procent, juli 2026)
+- Halmstad: 87,9
+- Halland (länet): 89,5
+- Riket: 87,3
+- Skillnad Halmstad mot riket: +0,6 procentenheter
+- Skillnad Halmstad mot Halland: -1,6 procentenheter
+- Plats bland landets 290 kommuner: 164 (1 = högsta värdet)
+- Hallands kommuner juli 2026 (högst först): Varberg 90,7; Kungsbacka 90,7; Falkenberg 89,7; Laholm 89,2; Halmstad 87,9; Hylte 87,2
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 5 år (samma månad): +0,1 procentenheter (från 87,8 i juli 2021); riket 0,0 procentenheter
+- Förändring 3 år (samma månad): -0,1 procentenheter (från 88,0 i juli 2023); riket 0,0 procentenheter
+- Förändring 1 år (samma månad året innan): -0,3 procentenheter (från 88,2 i juli 2025); riket 0,0 procentenheter
 
 ## Näringsliv (dagbefolkning): Sysselsatta dagbefolkning 15–74 år (prelim.)
 
@@ -258,127 +299,154 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Plats bland landets 290 kommuner: 18 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 56 213; Varberg 34 499; Kungsbacka 29 316; Falkenberg 23 067; Laholm 9 578; Hylte 4 695
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): -1 110 antal (från 57 323 år juli 2025), det vill säga -1,9 procent; riket +0,7 procent
+- Förändring 5 år (samma månad): +1 144 antal (från 55 069 i juli 2021), det vill säga +2,1 procent eller i genomsnitt +0,41 procent per år; riket +4,5 procent
+- Förändring 3 år (samma månad): -987 antal (från 57 200 i juli 2023), det vill säga -1,7 procent eller i genomsnitt -0,58 procent per år; riket +0,4 procent
+- Förändring 1 år (samma månad året innan): -1 110 antal (från 57 323 i juli 2025), det vill säga -1,9 procent; riket +0,7 procent
+- Halmstad år för år: juli 2021 55 069; juli 2022 56 553; juli 2023 57 200; juli 2024 56 997; juli 2025 57 323; juli 2026 56 213
 - Serien för Halmstad januari 2020–juli 2026: högst 57 323 (juli 2025), lägst 50 769 (januari 2021)
 
-### Sysselsatta inom jordbruk och skogsbruk (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom jordbruk och skogsbruk (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 747
 - Halland (länet): 4 251
 - Riket: 98 848
 - Plats bland landets 290 kommuner: 24 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Falkenberg 1 038; Varberg 966; Halmstad 747; Laholm 719; Kungsbacka 495; Hylte 287
 - Plats bland Hallands 6 kommuner: 3
-- Förändring 1 år (samma månad året innan): -39 antal (från 786 år juli 2025), det vill säga -5,0 procent; riket -0,4 procent
+- Förändring 5 år (samma månad): -75 antal (från 822 i juli 2021), det vill säga -9,1 procent eller i genomsnitt -1,90 procent per år; riket -5,4 procent
+- Förändring 3 år (samma månad): -46 antal (från 793 i juli 2023), det vill säga -5,8 procent eller i genomsnitt -1,97 procent per år; riket -1,1 procent
+- Förändring 1 år (samma månad året innan): -39 antal (från 786 i juli 2025), det vill säga -5,0 procent; riket -0,4 procent
 
-### Sysselsatta inom tillverkning (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom tillverkning (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 5 111
 - Halland (länet): 16 156
 - Riket: 577 060
 - Plats bland landets 290 kommuner: 25 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 5 111; Falkenberg 3 549; Varberg 3 151; Kungsbacka 1 515; Hylte 1 477; Laholm 1 358
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +13 antal (från 5 098 år juli 2025), det vill säga +0,3 procent; riket +0,2 procent
+- Förändring 5 år (samma månad): +149 antal (från 4 962 i juli 2021), det vill säga +3,0 procent eller i genomsnitt +0,59 procent per år; riket +1,3 procent
+- Förändring 3 år (samma månad): -145 antal (från 5 256 i juli 2023), det vill säga -2,8 procent eller i genomsnitt -0,93 procent per år; riket -1,3 procent
+- Förändring 1 år (samma månad året innan): +13 antal (från 5 098 i juli 2025), det vill säga +0,3 procent; riket +0,2 procent
 
-### Sysselsatta inom energi och miljö (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom energi och miljö (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 1 101
 - Halland (länet): 3 346
 - Riket: 65 688
 - Plats bland landets 290 kommuner: 13 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Varberg 1 700; Halmstad 1 101; Falkenberg 269; Laholm 137; Kungsbacka 131; Hylte 8
 - Plats bland Hallands 6 kommuner: 2
-- Förändring 1 år (samma månad året innan): -50 antal (från 1 151 år juli 2025), det vill säga -4,3 procent; riket +2,7 procent
+- Förändring 5 år (samma månad): +156 antal (från 945 i juli 2021), det vill säga +16,5 procent eller i genomsnitt +3,10 procent per år; riket +15,4 procent
+- Förändring 3 år (samma månad): -14 antal (från 1 115 i juli 2023), det vill säga -1,3 procent eller i genomsnitt -0,42 procent per år; riket +9,0 procent
+- Förändring 1 år (samma månad året innan): -50 antal (från 1 151 i juli 2025), det vill säga -4,3 procent; riket +2,7 procent
 
-### Sysselsatta inom byggverksamhet (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom byggverksamhet (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 3 563
 - Halland (länet): 12 903
 - Riket: 378 764
 - Plats bland landets 290 kommuner: 24 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 3 563; Varberg 3 321; Kungsbacka 3 018; Falkenberg 1 816; Laholm 909; Hylte 278
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +17 antal (från 3 546 år juli 2025), det vill säga +0,5 procent; riket +1,9 procent
+- Förändring 5 år (samma månad): +64 antal (från 3 499 i juli 2021), det vill säga +1,8 procent eller i genomsnitt +0,36 procent per år; riket -0,4 procent
+- Förändring 3 år (samma månad): -144 antal (från 3 707 i juli 2023), det vill säga -3,9 procent eller i genomsnitt -1,31 procent per år; riket -3,4 procent
+- Förändring 1 år (samma månad året innan): +17 antal (från 3 546 i juli 2025), det vill säga +0,5 procent; riket +1,9 procent
 
-### Sysselsatta inom handel (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom handel (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 7 670
 - Halland (länet): 23 964
 - Riket: 640 264
 - Plats bland landets 290 kommuner: 16 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 7 670; Kungsbacka 5 546; Varberg 4 730; Falkenberg 4 447; Laholm 1 180; Hylte 384
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +31 antal (från 7 639 år juli 2025), det vill säga +0,4 procent; riket -0,2 procent
+- Förändring 5 år (samma månad): +716 antal (från 6 954 i juli 2021), det vill säga +10,3 procent eller i genomsnitt +1,98 procent per år; riket +1,8 procent
+- Förändring 3 år (samma månad): -788 antal (från 8 458 i juli 2023), det vill säga -9,3 procent eller i genomsnitt -3,21 procent per år; riket -1,2 procent
+- Förändring 1 år (samma månad året innan): +31 antal (från 7 639 i juli 2025), det vill säga +0,4 procent; riket -0,2 procent
 
-### Sysselsatta inom transport (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom transport (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 2 824
 - Halland (länet): 5 625
 - Riket: 237 441
 - Plats bland landets 290 kommuner: 19 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 2 824; Varberg 894; Kungsbacka 756; Falkenberg 654; Laholm 329; Hylte 161
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): -296 antal (från 3 120 år juli 2025), det vill säga -9,5 procent; riket +0,1 procent
+- Förändring 5 år (samma månad): -835 antal (från 3 659 i juli 2021), det vill säga -22,8 procent eller i genomsnitt -5,05 procent per år; riket +1,4 procent
+- Förändring 3 år (samma månad): +474 antal (från 2 350 i juli 2023), det vill säga +20,2 procent eller i genomsnitt +6,32 procent per år; riket -0,1 procent
+- Förändring 1 år (samma månad året innan): -296 antal (från 3 120 i juli 2025), det vill säga -9,5 procent; riket +0,1 procent
 
-### Sysselsatta inom hotell och restaurang (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom hotell och restaurang (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 2 936
 - Halland (länet): 8 593
 - Riket: 233 181
 - Plats bland landets 290 kommuner: 11 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 2 936; Varberg 2 426; Falkenberg 1 515; Kungsbacka 1 155; Laholm 418; Hylte 144
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +201 antal (från 2 735 år juli 2025), det vill säga +7,3 procent; riket +2,6 procent
+- Förändring 5 år (samma månad): +837 antal (från 2 099 i juli 2021), det vill säga +39,9 procent eller i genomsnitt +6,94 procent per år; riket +31,2 procent
+- Förändring 3 år (samma månad): +339 antal (från 2 597 i juli 2023), det vill säga +13,1 procent eller i genomsnitt +4,17 procent per år; riket +4,2 procent
+- Förändring 1 år (samma månad året innan): +201 antal (från 2 735 i juli 2025), det vill säga +7,3 procent; riket +2,6 procent
 
-### Sysselsatta inom IT och kommunikation (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom IT och kommunikation (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 950
 - Halland (länet): 2 368
 - Riket: 242 940
 - Plats bland landets 290 kommuner: 28 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 950; Kungsbacka 677; Varberg 462; Falkenberg 203; Laholm 68; Hylte 10
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): -34 antal (från 984 år juli 2025), det vill säga -3,5 procent; riket -1,3 procent
+- Förändring 5 år (samma månad): +32 antal (från 918 i juli 2021), det vill säga +3,5 procent eller i genomsnitt +0,69 procent per år; riket +6,5 procent
+- Förändring 3 år (samma månad): -73 antal (från 1 023 i juli 2023), det vill säga -7,1 procent eller i genomsnitt -2,44 procent per år; riket -3,5 procent
+- Förändring 1 år (samma månad året innan): -34 antal (från 984 i juli 2025), det vill säga -3,5 procent; riket -1,3 procent
 
-### Sysselsatta inom finans och försäkring (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom finans och försäkring (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 827
 - Halland (länet): 1 789
 - Riket: 113 692
 - Plats bland landets 290 kommuner: 17 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 827; Varberg 463; Kungsbacka 198; Falkenberg 173; Laholm 78; Hylte 43
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +29 antal (från 798 år juli 2025), det vill säga +3,6 procent; riket +0,2 procent
+- Förändring 5 år (samma månad): +32 antal (från 795 i juli 2021), det vill säga +4,0 procent eller i genomsnitt +0,79 procent per år; riket +11,7 procent
+- Förändring 3 år (samma månad): -1 antal (från 828 i juli 2023), det vill säga -0,1 procent eller i genomsnitt -0,04 procent per år; riket +3,5 procent
+- Förändring 1 år (samma månad året innan): +29 antal (från 798 i juli 2025), det vill säga +3,6 procent; riket +0,2 procent
 
-### Sysselsatta inom fastighetsverksamhet (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom fastighetsverksamhet (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 934
 - Halland (länet): 2 567
 - Riket: 94 708
 - Plats bland landets 290 kommuner: 18 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 934; Varberg 570; Kungsbacka 495; Falkenberg 336; Laholm 134; Hylte 99
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): -170 antal (från 1 104 år juli 2025), det vill säga -15,4 procent; riket -0,3 procent
+- Förändring 5 år (samma månad): +34 antal (från 900 i juli 2021), det vill säga +3,8 procent eller i genomsnitt +0,74 procent per år; riket -0,2 procent
+- Förändring 3 år (samma månad): -58 antal (från 992 i juli 2023), det vill säga -5,8 procent eller i genomsnitt -1,99 procent per år; riket -0,4 procent
+- Förändring 1 år (samma månad året innan): -170 antal (från 1 104 i juli 2025), det vill säga -15,4 procent; riket -0,3 procent
 
-### Sysselsatta inom företagstjänster (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom företagstjänster (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 5 803
 - Halland (länet): 15 143
 - Riket: 691 614
 - Plats bland landets 290 kommuner: 21 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 5 803; Varberg 3 477; Kungsbacka 3 275; Falkenberg 1 720; Laholm 602; Hylte 262
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +44 antal (från 5 759 år juli 2025), det vill säga +0,8 procent; riket +0,8 procent
+- Förändring 5 år (samma månad): +43 antal (från 5 760 i juli 2021), det vill säga +0,7 procent eller i genomsnitt +0,15 procent per år; riket +8,6 procent
+- Förändring 3 år (samma månad): +109 antal (från 5 694 i juli 2023), det vill säga +1,9 procent eller i genomsnitt +0,63 procent per år; riket +1,1 procent
+- Förändring 1 år (samma månad året innan): +44 antal (från 5 759 i juli 2025), det vill säga +0,8 procent; riket +0,8 procent
 
-### Sysselsatta inom offentlig sektor (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom offentlig sektor (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 21 539
 - Halland (länet): 53 998
 - Riket: 1 848 822
 - Plats bland landets 290 kommuner: 19 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 21 539; Varberg 11 110; Kungsbacka 10 612; Falkenberg 6 321; Laholm 3 160; Hylte 1 257
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): -840 antal (från 22 379 år juli 2025), det vill säga -3,8 procent; riket +1,1 procent
+- Förändring 5 år (samma månad): -97 antal (från 21 636 i juli 2021), det vill säga -0,4 procent eller i genomsnitt -0,09 procent per år; riket +3,3 procent
+- Förändring 3 år (samma månad): -489 antal (från 22 028 i juli 2023), det vill säga -2,2 procent eller i genomsnitt -0,75 procent per år; riket +1,7 procent
+- Förändring 1 år (samma månad året innan): -840 antal (från 22 379 i juli 2025), det vill säga -3,8 procent; riket +1,1 procent
 
-### Sysselsatta inom kultur, nöje och fritid (prelim.) [Branscher] (antal, juli 2026)
+### Sysselsatta inom kultur, nöje och fritid (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
 - Halmstad: 2 170
 - Halland (länet): 6 507
 - Riket: 245 541
 - Plats bland landets 290 kommuner: 20 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 2 170; Kungsbacka 1 423; Varberg 1 190; Falkenberg 997; Laholm 447; Hylte 276
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +4 antal (från 2 166 år juli 2025), det vill säga +0,2 procent; riket +1,0 procent
-
-## Årsförändring dagbefolkning
+- Förändring 5 år (samma månad): +79 antal (från 2 091 i juli 2021), det vill säga +3,8 procent eller i genomsnitt +0,74 procent per år; riket +7,5 procent
+- Förändring 3 år (samma månad): -124 antal (från 2 294 i juli 2023), det vill säga -5,4 procent eller i genomsnitt -1,84 procent per år; riket +0,8 procent
+- Förändring 1 år (samma månad året innan): +4 antal (från 2 166 i juli 2025), det vill säga +0,2 procent; riket +1,0 procent
 
 ### Dagbefolkning, årsförändring (procent) (procent, juli 2026)
 Mäter: Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
@@ -390,10 +458,83 @@ Mäter: Procentuell förändring i antal sysselsatta dagbefolkning mot samma må
 - Plats bland landets 290 kommuner: 253 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Falkenberg 1,70; Kungsbacka 0,80; Varberg 0,50; Hylte 0,00; Laholm -0,10; Halmstad -1,90
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år (samma månad året innan): -2,50 procentenheter (från 0,60 år juli 2025); riket +0,70 procentenheter
+- Förändring 5 år (samma månad): -5,50 procentenheter (från 3,60 i juli 2021); riket -2,10 procentenheter
+- Förändring 3 år (samma månad): -3,00 procentenheter (från 1,10 i juli 2023); riket -0,30 procentenheter
+- Förändring 1 år (samma månad året innan): -2,50 procentenheter (från 0,60 i juli 2025); riket +0,70 procentenheter
+- Halmstad år för år: juli 2021 3,60; juli 2022 2,70; juli 2023 1,10; juli 2024 -0,40; juli 2025 0,60; juli 2026 -1,90
 - Serien för Halmstad januari 2021–juli 2026: högst 4,10 (januari 2022), lägst -1,90 (juni 2026)
 
-## Befolkningsutveckling: Befolkningsutveckling
+## Gästnätter
+
+### Gästnätter totalt (prelim.) (antal, augusti 2026)
+Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
+- Halmstad: 127 005
+- Halland (länet): 489 476
+- Riket: 9 341 439
+- Plats bland landets 236 kommuner: 9 (1 = högsta värdet)
+- Hallands kommuner augusti 2026 (högst först): Varberg 148 411; Falkenberg 131 045; Halmstad 127 005; Kungsbacka 32 036; Laholm 21 132; Hylte 8 154
+- Plats bland Hallands 6 kommuner: 3
+- Förändring 5 år (samma månad): -10 781 antal (från 137 786 i augusti 2021), det vill säga -7,8 procent eller i genomsnitt -1,62 procent per år; riket +11,0 procent
+- Förändring 3 år (samma månad): +12 699 antal (från 114 306 i augusti 2023), det vill säga +11,1 procent eller i genomsnitt +3,57 procent per år; riket +6,6 procent
+- Förändring 1 år (samma månad året innan): +929 antal (från 126 076 i augusti 2025), det vill säga +0,7 procent; riket +1,2 procent
+- Halmstad år för år: augusti 2021 137 786; augusti 2022 128 429; augusti 2023 114 306; augusti 2024 128 861; augusti 2025 126 076; augusti 2026 127 005
+- Serien för Halmstad januari 2020–augusti 2026: högst 234 623 (juli 2021), lägst 12 555 (december 2020)
+
+### Gästnätter svenska gäster [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
+- Halmstad: 105 933
+- Halland (länet): 394 887
+- Riket: 6 073 835
+- Plats bland landets 236 kommuner: 8 (1 = högsta värdet)
+- Hallands kommuner augusti 2026 (högst först): Varberg 126 708; Falkenberg 115 702; Halmstad 105 933; Kungsbacka 23 919; Laholm 14 743; Hylte 4 346
+- Plats bland Hallands 6 kommuner: 3
+- Förändring 5 år (samma månad): -21 505 antal (från 127 438 i augusti 2021), det vill säga -16,9 procent eller i genomsnitt -3,63 procent per år; riket -10,9 procent
+- Förändring 3 år (samma månad): +6 031 antal (från 99 902 i augusti 2023), det vill säga +6,0 procent eller i genomsnitt +1,97 procent per år; riket +1,1 procent
+- Förändring 1 år (samma månad året innan): +2 239 antal (från 103 694 i augusti 2025), det vill säga +2,2 procent; riket +0,7 procent
+
+### Gästnätter utländska gäster [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
+- Halmstad: 20 052
+- Halland (länet): 91 692
+- Riket: 3 131 069
+- Plats bland landets 236 kommuner: 27 (1 = högsta värdet)
+- Hallands kommuner augusti 2026 (högst först): Varberg 21 690; Halmstad 20 052; Falkenberg 15 327; Kungsbacka 8 110; Laholm 6 367; Hylte 3 799
+- Plats bland Hallands 6 kommuner: 2
+- Förändring 5 år (samma månad): +9 854 antal (från 10 198 i augusti 2021), det vill säga +96,6 procent eller i genomsnitt +14,48 procent per år; riket +102,1 procent
+- Förändring 3 år (samma månad): +5 740 antal (från 14 312 i augusti 2023), det vill säga +40,1 procent eller i genomsnitt +11,90 procent per år; riket +16,3 procent
+- Förändring 1 år (samma månad året innan): -1 561 antal (från 21 613 i augusti 2025), det vill säga -7,2 procent; riket +1,4 procent
+
+### Andel utländska gästnätter (procent, augusti 2026)
+Mäter: Andel utländska gästnätter av totala gästnätter.
+- Halmstad: 15,9
+- Halland (länet): 18,8
+- Riket: 34,0
+- Skillnad Halmstad mot riket: -18,1 procentenheter
+- Skillnad Halmstad mot Halland: -2,9 procentenheter
+- Plats bland landets 236 kommuner: 185 (1 = högsta värdet)
+- Hallands kommuner augusti 2026 (högst först): Hylte 46,6; Laholm 30,2; Kungsbacka 25,3; Halmstad 15,9; Varberg 14,6; Falkenberg 11,7
+- Plats bland Hallands 6 kommuner: 4
+- Förändring 5 år (samma månad): +8,5 procentenheter (från 7,4 i augusti 2021); riket +15,5 procentenheter
+- Förändring 3 år (samma månad): +3,4 procentenheter (från 12,5 i augusti 2023); riket +3,1 procentenheter
+- Förändring 1 år (samma månad året innan): -1,3 procentenheter (från 17,2 i augusti 2025); riket +0,1 procentenheter
+- Halmstad år för år: augusti 2021 7,4; augusti 2022 10,5; augusti 2023 12,5; augusti 2024 13,8; augusti 2025 17,2; augusti 2026 15,9
+- Serien för Halmstad januari 2020–augusti 2026: högst 17,2 (augusti 2025), lägst 1,7 (maj 2021)
+
+### Gästnätter, årsförändring (procent, augusti 2026)
+Mäter: Procentuell förändring i antal gästnätter mot samma månad föregående år.
+- Halmstad: 0,70
+- Halland (länet): -0,60
+- Riket: 1,20
+- Skillnad Halmstad mot riket: -0,50 procentenheter
+- Skillnad Halmstad mot Halland: +1,30 procentenheter
+- Plats bland landets 236 kommuner: 138 (1 = högsta värdet)
+- Hallands kommuner augusti 2026 (högst först): Hylte 6,70; Varberg 5,80; Falkenberg 3,50; Halmstad 0,70; Kungsbacka -0,70; Laholm -34,80
+- Plats bland Hallands 6 kommuner: 4
+- Förändring 5 år (samma månad): -13,80 procentenheter (från 14,50 i augusti 2021); riket -37,90 procentenheter
+- Förändring 3 år (samma månad): +11,70 procentenheter (från -11,00 i augusti 2023); riket +5,90 procentenheter
+- Förändring 1 år (samma månad året innan): +2,90 procentenheter (från -2,20 i augusti 2025); riket -0,10 procentenheter
+- Halmstad år för år: augusti 2021 14,50; augusti 2022 -6,80; augusti 2023 -11,00; augusti 2024 12,70; augusti 2025 -2,20; augusti 2026 0,70
+- Serien för Halmstad januari 2021–augusti 2026: högst 159,40 (november 2021), lägst -43,70 (februari 2021)
+
+## Befolkning och bostadsbyggande: Befolkningsutveckling
 
 ### Folkmängd (prelim.) (antal, juli 2026)
 Mäter: Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
@@ -403,7 +544,10 @@ Mäter: Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (B
 - Plats bland landets 290 kommuner: 17 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Halmstad 106 289; Kungsbacka 86 630; Varberg 69 835; Falkenberg 47 479; Laholm 26 508; Hylte 10 021
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +200 antal (från 106 089 år juli 2025), det vill säga +0,2 procent; riket +0,2 procent
+- Förändring 5 år (samma månad): +2 135 antal (från 104 154 i juli 2021), det vill säga +2,0 procent eller i genomsnitt +0,41 procent per år; riket +1,9 procent
+- Förändring 3 år (samma månad): +799 antal (från 105 490 i juli 2023), det vill säga +0,8 procent eller i genomsnitt +0,25 procent per år; riket +0,6 procent
+- Förändring 1 år (samma månad året innan): +200 antal (från 106 089 i juli 2025), det vill säga +0,2 procent; riket +0,2 procent
+- Halmstad år för år: juli 2021 104 154; juli 2022 104 844; juli 2023 105 490; juli 2024 105 877; juli 2025 106 089; juli 2026 106 289
 - Serien för Halmstad januari 2020–juli 2026: högst 106 430 (oktober 2025), lägst 102 851 (januari 2020)
 
 ### Befolkningsförändring mot samma månad fg. år (antal, juli 2026)
@@ -414,63 +558,13 @@ Mäter: Absolut förändring i folkmängd jämfört med samma månad föregåend
 - Plats bland landets 290 kommuner: 41 (1 = högsta värdet)
 - Hallands kommuner juli 2026 (högst först): Varberg 415; Kungsbacka 337; Halmstad 200; Falkenberg 38; Laholm -127; Hylte -135
 - Plats bland Hallands 6 kommuner: 3
-- Förändring 1 år (samma månad året innan): -12 antal (från 212 år juli 2025), det vill säga -5,7 procent; riket -47,5 procent
+- Förändring 5 år (samma månad): -644 antal (från 844 i juli 2021), det vill säga -76,3 procent eller i genomsnitt -25,02 procent per år; riket -70,9 procent
+- Förändring 3 år (samma månad): -446 antal (från 646 i juli 2023), det vill säga -69,0 procent eller i genomsnitt -32,35 procent per år; riket -69,2 procent
+- Förändring 1 år (samma månad året innan): -12 antal (från 212 i juli 2025), det vill säga -5,7 procent; riket -47,5 procent
+- Halmstad år för år: juli 2021 844; juli 2022 690; juli 2023 646; juli 2024 387; juli 2025 212; juli 2026 200
 - Serien för Halmstad januari 2021–juli 2026: högst 1 046 (april 2021), lägst 127 (maj 2026)
 
-## Gästnätter (turism): Gästnätter
-
-### Gästnätter totalt (prelim.) (antal, augusti 2026)
-Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
-- Halmstad: 127 005
-- Halland (länet): 489 476
-- Riket: 9 341 439
-- Plats bland landets 236 kommuner: 9 (1 = högsta värdet)
-- Hallands kommuner augusti 2026 (högst först): Varberg 148 411; Falkenberg 131 045; Halmstad 127 005; Kungsbacka 32 036; Laholm 21 132; Hylte 8 154
-- Plats bland Hallands 6 kommuner: 3
-- Förändring 1 år (samma månad året innan): +929 antal (från 126 076 år augusti 2025), det vill säga +0,7 procent; riket +1,2 procent
-- Serien för Halmstad januari 2020–augusti 2026: högst 234 623 (juli 2021), lägst 12 555 (december 2020)
-
-### Gästnätter svenska gäster [Marknad] (antal, augusti 2026)
-- Halmstad: 105 933
-- Halland (länet): 394 887
-- Riket: 6 073 835
-- Plats bland landets 236 kommuner: 8 (1 = högsta värdet)
-- Hallands kommuner augusti 2026 (högst först): Varberg 126 708; Falkenberg 115 702; Halmstad 105 933; Kungsbacka 23 919; Laholm 14 743; Hylte 4 346
-- Plats bland Hallands 6 kommuner: 3
-- Förändring 1 år (samma månad året innan): +2 239 antal (från 103 694 år augusti 2025), det vill säga +2,2 procent; riket +0,7 procent
-
-### Gästnätter utländska gäster [Marknad] (antal, augusti 2026)
-- Halmstad: 20 052
-- Halland (länet): 91 692
-- Riket: 3 131 069
-- Plats bland landets 236 kommuner: 27 (1 = högsta värdet)
-- Hallands kommuner augusti 2026 (högst först): Varberg 21 690; Halmstad 20 052; Falkenberg 15 327; Kungsbacka 8 110; Laholm 6 367; Hylte 3 799
-- Plats bland Hallands 6 kommuner: 2
-- Förändring 1 år (samma månad året innan): -1 561 antal (från 21 613 år augusti 2025), det vill säga -7,2 procent; riket +1,4 procent
-
-### Andel utländska gästnätter [Marknad] (procent, augusti 2026)
-- Halmstad: 15,9
-- Halland (länet): 18,8
-- Riket: 34,0
-- Skillnad Halmstad mot riket: -18,1 procentenheter
-- Skillnad Halmstad mot Halland: -2,9 procentenheter
-- Plats bland landets 236 kommuner: 185 (1 = högsta värdet)
-- Hallands kommuner augusti 2026 (högst först): Hylte 46,6; Laholm 30,2; Kungsbacka 25,3; Halmstad 15,9; Varberg 14,6; Falkenberg 11,7
-- Plats bland Hallands 6 kommuner: 4
-- Förändring 1 år (samma månad året innan): -1,3 procentenheter (från 17,2 år augusti 2025); riket +0,1 procentenheter
-
-### Gästnätter, årsförändring [Årsförändring] (procent, augusti 2026)
-- Halmstad: 0,70
-- Halland (länet): -0,60
-- Riket: 1,20
-- Skillnad Halmstad mot riket: -0,50 procentenheter
-- Skillnad Halmstad mot Halland: +1,30 procentenheter
-- Plats bland landets 236 kommuner: 138 (1 = högsta värdet)
-- Hallands kommuner augusti 2026 (högst först): Hylte 6,70; Varberg 5,80; Falkenberg 3,50; Halmstad 0,70; Kungsbacka -0,70; Laholm -34,80
-- Plats bland Hallands 6 kommuner: 4
-- Förändring 1 år (samma månad året innan): +2,90 procentenheter (från -2,20 år augusti 2025); riket -0,10 procentenheter
-
-## Bostadsmarknad: Bostadsmarknad
+## Befolkning och bostadsbyggande: Bostadsbyggande
 
 ### Påbörjade lägenheter, alla hustyper (kvartal) (antal, juni 2026)
 Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
@@ -480,23 +574,30 @@ Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
 - Plats bland landets 290 kommuner: 16 (1 = högsta värdet)
 - Hallands kommuner juni 2026 (högst först): Halmstad 107; Kungsbacka 50; Varberg 36; Falkenberg 13; Laholm 9; Hylte 1
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +81 antal (från 26 år juni 2025), det vill säga +311,5 procent; riket -2,7 procent
+- Förändring 5 år (samma månad): -94 antal (från 201 i juni 2021), det vill säga -46,8 procent eller i genomsnitt -11,85 procent per år; riket -60,5 procent
+- Förändring 3 år (samma månad): +88 antal (från 19 i juni 2023), det vill säga +463,2 procent eller i genomsnitt +77,91 procent per år; riket +4,7 procent
+- Förändring 1 år (samma månad året innan): +81 antal (från 26 i juni 2025), det vill säga +311,5 procent; riket -2,7 procent
+- Halmstad år för år: juni 2021 201; juni 2022 195; juni 2023 19; juni 2024 9; juni 2025 26; juni 2026 107
 - Serien för Halmstad mars 2020–juni 2026: högst 317 (september 2022), lägst 9 (juni 2024)
 
-### Påbörjade lägenheter, småhus (kvartal) [Hustyp] (antal, juni 2026)
+### Påbörjade lägenheter, småhus (kvartal) [uppdelning av Påbörjade lägenheter, alla hustyper (kvartal): småhus och flerbostadshus] (antal, juni 2026)
 - Halmstad: 35
 - Halland (länet): 99
 - Riket: 1 337
 - Plats bland landets 290 kommuner: 6 (1 = högsta värdet)
 - Hallands kommuner juni 2026 (högst först): Halmstad 35; Kungsbacka 23; Varberg 18; Falkenberg 13; Laholm 9; Hylte 1
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +22 antal (från 13 år juni 2025), det vill säga +169,2 procent; riket -26,2 procent
+- Förändring 5 år (samma månad): 0 antal (från 35 i juni 2021), det vill säga 0,0 procent eller i genomsnitt 0,00 procent per år; riket -64,7 procent
+- Förändring 3 år (samma månad): +16 antal (från 19 i juni 2023), det vill säga +84,2 procent eller i genomsnitt +22,59 procent per år; riket -23,9 procent
+- Förändring 1 år (samma månad året innan): +22 antal (från 13 i juni 2025), det vill säga +169,2 procent; riket -26,2 procent
 
-### Påbörjade lägenheter, flerbostadshus (kvartal) [Hustyp] (antal, juni 2026)
+### Påbörjade lägenheter, flerbostadshus (kvartal) [uppdelning av Påbörjade lägenheter, alla hustyper (kvartal): småhus och flerbostadshus] (antal, juni 2026)
 - Halmstad: 72
 - Halland (länet): 117
 - Riket: 6 076
 - Plats bland landets 290 kommuner: 20 (1 = högsta värdet)
 - Hallands kommuner juni 2026 (högst först): Halmstad 72; Kungsbacka 27; Varberg 18; Hylte 0; Laholm 0; Falkenberg 0
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år (samma månad året innan): +59 antal (från 13 år juni 2025), det vill säga +453,8 procent; riket +4,7 procent
+- Förändring 5 år (samma månad): -94 antal (från 166 i juni 2021), det vill säga -56,6 procent eller i genomsnitt -15,39 procent per år; riket -59,5 procent
+- Förändring 3 år (samma månad): +72 antal (från 0 i juni 2023); riket +14,2 procent
+- Förändring 1 år (samma månad året innan): +59 antal (från 13 i juni 2025), det vill säga +453,8 procent; riket +4,7 procent

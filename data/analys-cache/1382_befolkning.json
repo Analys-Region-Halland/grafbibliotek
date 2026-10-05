@@ -1,29 +1,58 @@
 {
-  "hash": "b3824715de762bb3979e40788aac7f37",
+  "hash": "a0a34d77e7c3d83b0760c0cc894d0773",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Falkenbergs befolkning minskade något 2025 och blir allt äldre",
-    "ingress": "Efter ett decennium med snabbare tillväxt än riket minskade folkmängden i Falkenberg med 36 personer under 2025. Fler dog än föddes och fler utvandrade än invandrade, medan inrikes flyttningar fortfarande gav ett överskott.",
+    "rubrik": "Falkenberg har vuxit stadigt men tillväxten har bromsat in",
+    "ingress": "Falkenbergs folkmängd har ökat med 21,9 procent sedan 2000, mot 19,4 procent i riket, men tillväxten har avtagit sedan 2021. Under 2025 var folkmängden i stort sett oförändrad, med 36 färre invånare än året innan.",
     "i_korthet": [
       {
-        "ledtext": "Tillväxten har stannat av",
-        "text": "Folkmängden minskade med 36 invånare till 47 301 under 2025, efter en ökning med 10,1 procent sedan 2015 mot 7,6 procent i riket."
+        "ledtext": "Lång tillväxt, svagare de senaste åren",
+        "text": "Folkmängden ökade med 10,1 procent på tio år, mot 7,6 procent i riket, men med 2,7 procent de senaste fem åren."
       },
       {
-        "ledtext": "Utrikes flyttnetto lägst i länet",
-        "text": "Utrikes flyttnetto var minus 0,9 per 1 000 invånare 2025, lägst bland Hallands kommuner och plats 262 av landets 290."
+        "ledtext": "Flyttningar har burit tillväxten",
+        "text": "Under 2016–2025 bidrog invandringsöverskottet med 2 339 personer och inrikes flyttnetto med 1 799, medan födelsenettot var 107."
       },
       {
-        "ledtext": "Försörjningskvoten stiger snabbare än riket",
-        "text": "Den demografiska försörjningskvoten är 93,9 mot 77,0 i riket och har ökat med 9,6 på tio år, mot 3,1 i riket."
+        "ledtext": "Försörjningskvoten har stigit i tio år",
+        "text": "Försörjningskvoten har stigit varje år sedan 2015 och är 93,9, den näst högsta i länet, mot 77,0 i riket."
       }
     ],
     "stycken": [
-      "Falkenbergs befolkning växte snabbare än rikets under tio år men minskade något under 2025. Sedan 2015 har folkmängden ökat med 10,1 procent, mot 7,6 procent i riket, och toppen nåddes 2024 med 47 337 invånare. Under 2025 drog två av tre komponenter nedåt: födelsenettot var minus 43 personer och utrikes flyttnetto minus 41, medan inrikes flyttnetto gav ett överskott på 73. För perioden 2021–2025 som helhet kom tillväxten främst från inrikes flyttnetto med 974 personer, men invandringsöverskottet bidrog med 264 och födelsenettot med minus 23.",
-      "I länet hamnar Falkenberg på fjärde plats i befolkningsförändring, efter Kungsbacka, Varberg och Halmstad, medan Laholm och Hylte minskade. Inrikes flyttnetto på 1,5 per 1 000 invånare ligger 1,0 under länet men över riket. Den tydligaste avvikelsen gäller utrikes flyttningar: utrikes flyttnetto är lägst i Halland och det lägsta i kommunens serie sedan 2000. Antalet invandringar har minskat med 36,9 procent på fem år, medan det ökade med 8,4 procent i riket, och antalet utvandringar har ökat med 101,7 procent.",
-      "Åldersstrukturen gör sannolikt befolkningsutvecklingen mer beroende av flyttningar. Medelåldern är 44,6 år, 2,2 år över riket, och försörjningskvoten är 93,9 invånare under 20 och över 64 år per 100 i åldern 20–64, mot 77,0 i riket. Om födelsenettot fortsätter att ligga kring noll eller under, så avgörs utvecklingen av hur många som flyttar in från andra kommuner och från utlandet. För planeringen pekar det på växande behov inom äldreomsorgen och en trängre arbetskraftsförsörjning, även om ett enskilt år inte räcker för att slå fast en ny trend."
+      "Falkenbergs befolkning har vuxit i ett kvarts sekel men växer nu långsammare. Folkmängden har ökat med 21,9 procent sedan 2000, i genomsnitt 0,79 procent per år, och med 10,1 procent sedan 2015, mot 7,6 procent i riket. De senaste fem åren var ökningen 2,7 procent, eller 0,54 procent per år: den årliga tillväxten sjönk från 1,57 procent 2021 och har sedan 2022 legat mellan minus 0,03 och 0,52 procent. Under 2025 minskade folkmängden med 36 personer till 47 301, den första minskningen under de senaste tio åren. Ett enskilt år är ännu ingen ny riktning, men inbromsningen har pågått i fyra år.",
+      "Tillväxten har kommit från flyttningar, men vilken typ som dominerar har skiftat. Under 2016–2025 bidrog invandringsöverskottet med 2 339 personer, inrikes flyttnetto med 1 799 och födelsenettot med 107. Invandringsöverskottet var störst till och med 2018, därefter inrikes flyttnetto, och de senaste fem åren bidrog inrikes flyttnetto med 974 personer mot 264 för invandringsöverskottet, medan födelsenettot var minus 23. Falkenberg minskade med 0,03 procent 2025 och låg fjärde i länet, efter Kungsbacka, Varberg och Halmstad, medan länet växte med 0,29 procent och riket med 0,17 procent.",
+      "Inbromsningen sammanfaller främst med att flyttningsöverskottet har krympt: inrikes flyttnetto sjönk från 467 personer 2021 till 73 år 2025 och invandringsöverskottet från 130 till minus 41, medan födelsenettot gick från 103 till minus 43. Samtidigt åldras befolkningen. Försörjningskvoten, antalet unga och äldre per 100 invånare 20–64 år, har stigit varje år sedan 2015 till 93,9, näst högst i länet efter Laholm, mot 77,0 i riket; mest har kvoten för äldre ökat, med 6,8 mot 2,8 för yngre. För planeringen innebär det att behoven inom äldreomsorgen sannolikt fortsätter att växa även om folkmängden ökar långsammare."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "S_BEF_FORANDR_PCT"
+        ],
+        "rubrik": "Tillväxten har avtagit sedan 2021 och var nära noll 2025"
+      },
+      {
+        "efter": 1,
+        "typ": "delar",
+        "kpi": [
+          "S_FODELSENETTO_ANTAL",
+          "S_INRIKES_NETTO_ANTAL",
+          "S_UTRIKES_NETTO_ANTAL"
+        ],
+        "summa": "S_BEF_FORANDR_ANTAL",
+        "rubrik": "Invandringsöverskottet var störst till 2018, sedan inrikes flyttnetto"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": [
+          "S_FORSORJ_TOTAL"
+        ],
+        "rubrik": "Försörjningskvoten har stigit varje år sedan 2015"
+      }
     ]
   }
 }

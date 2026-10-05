@@ -1,0 +1,186 @@
+[
+  {
+    "id": "C_INPENDL_ANDEL",
+    "namn": "Inpendlingsandel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Pendling",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "C_PENDLKVOT",
+    "namn": "Pendlingskvot (dag / natt)",
+    "enhet": "kvot",
+    "roll": "indikator i bandet Pendling",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "C_PENDL_NETTO",
+    "namn": "Nettopendling, antal",
+    "enhet": "antal",
+    "roll": "indikator i bandet Pendling",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "C_UTPENDL_ANDEL",
+    "namn": "Utpendlingsandel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Pendling",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N00799",
+    "namn": "Trafikolyckor med räddningsinsatser, antal per 1 000 invånare",
+    "enhet": "per 1 000 inv.",
+    "roll": "indikator i bandet Bilresande och trafiksäkerhet",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N07410",
+    "namn": "Nytillkomna bostäder i kollektivtrafiknära läge, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Kollektivtrafik och resande",
+    "forsta": 2014,
+    "sista": 2024
+  },
+  {
+    "id": "N07412",
+    "namn": "Befolkning utanför tätort i kollektivtrafiknära läge, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N07418 (befolkningen inom och utanför tätort)",
+    "forsta": 2014,
+    "sista": 2024
+  },
+  {
+    "id": "N07418",
+    "namn": "Befolkning i kollektivtrafiknära läge, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Kollektivtrafik och resande",
+    "forsta": 2014,
+    "sista": 2024
+  },
+  {
+    "id": "N07419",
+    "namn": "Befolkning inom tätort i kollektivtrafiknära läge, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N07418 (befolkningen inom och utanför tätort)",
+    "forsta": 2014,
+    "sista": 2024
+  },
+  {
+    "id": "N07710",
+    "namn": "Elbilsladdpunkter, normalladdare, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N07713 (normalladdare och snabbladdare)",
+    "forsta": 2023,
+    "sista": 2025
+  },
+  {
+    "id": "N07711",
+    "namn": "Elbilsladdpunkter, snabbladdare, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N07713 (normalladdare och snabbladdare)",
+    "forsta": 2023,
+    "sista": 2025
+  },
+  {
+    "id": "N07713",
+    "namn": "Elbilsladdpunkter, totalt antal i kommunen",
+    "enhet": "antal",
+    "roll": "indikator i bandet Fordonsflotta och elektrifiering",
+    "forsta": 2023,
+    "sista": 2025
+  },
+  {
+    "id": "N07782",
+    "namn": "Drivmedelsleverans till vägtransporter, liter per invånare",
+    "enhet": "liter/inv",
+    "roll": "indikator i bandet Bilresande och trafiksäkerhet",
+    "forsta": 2018,
+    "sista": 2023
+  },
+  {
+    "id": "N07935",
+    "namn": "Personbilar, antal per 1 000 invånare",
+    "enhet": "per 1 000 inv.",
+    "roll": "indikator i bandet Fordonsflotta och elektrifiering",
+    "forsta": 2013,
+    "sista": 2025
+  },
+  {
+    "id": "N07945",
+    "namn": "Elbilar, andel av personbilar (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Fordonsflotta och elektrifiering",
+    "forsta": 2013,
+    "sista": 2025
+  },
+  {
+    "id": "N07947",
+    "namn": "Laddhybridbilar, andel av personbilar (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Fordonsflotta och elektrifiering",
+    "forsta": 2013,
+    "sista": 2025
+  },
+  {
+    "id": "S_DAG_TOT",
+    "namn": "Dagbefolkning, antal sysselsatta",
+    "enhet": "antal",
+    "roll": "uppdelning av C_PENDL_NETTO (dag- och nattbefolkningen)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_INPENDL",
+    "namn": "Inpendlare, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av C_PENDL_NETTO (inpendlare och utpendlare)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_NATT_TOT",
+    "namn": "Nattbefolkning, antal sysselsatta",
+    "enhet": "antal",
+    "roll": "uppdelning av C_PENDL_NETTO (dag- och nattbefolkningen)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "S_UTPENDL",
+    "namn": "Utpendlare, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av C_PENDL_NETTO (inpendlare och utpendlare)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "TR_FARDTJANST",
+    "namn": "Färdtjänstresor, antal enkelresor under året",
+    "enhet": "antal",
+    "roll": "indikator i bandet Kollektivtrafik och resande",
+    "forsta": 2015,
+    "sista": 2025
+  },
+  {
+    "id": "U00501",
+    "namn": "Fossiloberoende personbilar, andel av totalt antal bilar (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Fordonsflotta och elektrifiering",
+    "forsta": 2020,
+    "sista": 2025
+  },
+  {
+    "id": "U07917",
+    "namn": "Genomsnittlig körsträcka med personbil, mil per invånare och år",
+    "enhet": "mil/inv",
+    "roll": "indikator i bandet Bilresande och trafiksäkerhet",
+    "forsta": 2010,
+    "sista": 2024
+  }
+]

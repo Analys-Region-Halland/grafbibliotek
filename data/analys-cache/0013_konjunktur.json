@@ -1,29 +1,55 @@
 {
-  "hash": "e14d154bc373505d95494777c1012df8",
+  "hash": "60581d62ee11b9281a8be5e11ee7fb4b",
   "period": "juni 2026",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Sysselsättningen över riket men jobben i länet minskar",
-    "ingress": "Halland har en större andel sysselsatta och lägre arbetslöshet än riket, och länet har landets största andel i arbetskraften. Under det senaste året har antalet jobb på länets arbetsställen ändå minskat medan riket växt, och nedgången syns främst i Halmstad.",
+    "rubrik": "Sysselsättningsgraden över rikets, men färre jobb i länet sedan 2023",
+    "ingress": "Hallands sysselsättningsgrad, 85,6 procent i juli 2026, är tredje högst bland regionerna; den nådde toppen 2023 och har sedan 2024 legat i stort sett oförändrad. Antalet sysselsatta med arbetsplats i länet har däremot minskat något varje år sedan juli 2023, medan det har ökat i riket.",
     "i_korthet": [
       {
-        "ledtext": "Sysselsättningen ligger över riket",
-        "text": "Preliminära uppgifter visar att 85,6 procent av befolkningen 20–64 år var sysselsatt i juli 2026, 3,1 procentenheter över riket."
+        "ledtext": "Oförändrad sysselsättning sedan 2024",
+        "text": "Sysselsättningsgraden var 85,6 procent i juli 2026 mot 82,5 i riket, efter toppen 86,1 procent i juli 2023."
       },
       {
-        "ledtext": "Jobben i länet minskar",
-        "text": "Antalet sysselsatta efter arbetsställe minskade med 0,2 procent på ett år, medan riket ökade med 0,7 procent."
+        "ledtext": "Färre jobb i länet sedan 2023",
+        "text": "Antalet sysselsatta med arbetsplats i Halland minskade med 1 453 på tre år, medan riket ökade med 0,4 procent."
       },
       {
-        "ledtext": "Halmstad och Hylte avviker",
-        "text": "Arbetslösheten var 5,4 procent i Halmstad och 5,6 procent i Hylte, mot 2,5 procent i Varberg och 5,0 procent i riket."
+        "ledtext": "Byggandet tillbaka på 2023 års nivå",
+        "text": "Under andra kvartalet 2026 påbörjades 216 lägenheter, lika många som 2023 men färre än 453 år 2021."
       }
     ],
     "stycken": [
-      "Hallands arbetsmarknad ligger på en hög nivå jämfört med riket, men antalet jobb i länet har minskat det senaste året. Preliminära uppgifter för juli 2026 visar att 85,6 procent av befolkningen i åldern 20–64 år är sysselsatt, 3,1 procentenheter över riket och den tredje högsta andelen bland landets 21 regioner. Arbetslösheten är 3,7 procent mot 5,0 procent i riket, och andelen i arbetskraften, 89,0 procent, är den högsta i landet. Det senaste året sjönk arbetslösheten med 0,3 procentenheter, lika mycket som i riket, medan sysselsättningsgraden steg med 0,2 procentenheter mot 0,4 i riket. Antalet jobb på länets arbetsställen minskade med 0,2 procent medan riket växte med 0,7 procent, vilket ger Halland plats 19 av 21.",
-      "Skillnaderna mellan kommunerna är tydliga, med högst sysselsättning i norra Halland. Kungsbacka och Varberg har sysselsättningsgrader på 88,2 respektive 87,8 procent och en arbetslöshet kring 2,5 procent. Halmstad och Hylte har sysselsättningsgrader på 82,8 och 80,9 procent och en arbetslöshet på 5,4 och 5,6 procent, över rikets 5,0.",
-      "Nedgången i antalet jobb syns främst i Halmstad, där antalet sysselsatta på arbetsställena minskade med 1,9 procent, medan Falkenberg ökade med 1,7 procent. Bland branscherna minskade offentlig sektor och transport mest, med 418 respektive 404 färre sysselsatta, medan företagstjänster, hotell och restaurang och handel ökade. Halmstad har länets flesta transportjobb, 2 824, vilket kan peka på att hamn och logistik påverkats. Samtidigt ökade antalet sysselsatta som bor i länet med 0,5 procent, vilket kan spegla att fler av de boende arbetar utanför länet, till exempel genom pendling mot Göteborg. För planeringen pekar det på att pendlingsstråken och Halmstads arbetsmarknad är viktiga att följa."
+      "Sysselsättningen i Halland ligger över rikets och har varit i stort sett oförändrad sedan 2024. Sysselsättningsgraden bland 20–64-åringar steg från 84,8 procent i juli 2021 till 86,1 procent två år senare, seriens högsta, och har sedan 2024 legat mellan 85,4 och 85,6 procent, mot 82,5 procent i riket i juli 2026. Det är den tredje högsta bland regionerna. Arbetslösheten sjönk till 3,30 procent i juli 2023, steg till 4,00 procent 2025 och var 3,70 procent i juli 2026, mot 5,00 procent i riket.",
+      "Antalet jobb i länet har däremot minskat sedan 2023. På fem år har antalet sysselsatta med arbetsplats i Halland ökat med 1,9 procent, mot 4,5 procent i riket, men sedan toppen i juli 2023 har det minskat med 1 453 till 157 366, medan riket ökade med 0,4 procent. Det senaste året minskade antalet med 0,2 procent, mot en ökning med 0,7 procent i riket; nedgången var störst i Halmstad, minus 1,90 procent, medan antalet ökade i Falkenberg, Kungsbacka och Varberg. Antalet sysselsatta som bor i länet har under samma tre år varit i stort sett oförändrat, vilket kan tyda på att fler boende arbetar utanför länet eller att färre pendlar in.",
+      "Folkmängden ökade med 731 personer på ett år, mot 3 256 i juli 2021. Bostadsbyggandet ligger under nivån för fem år sedan: under andra kvartalet 2026 påbörjades 216 lägenheter, mot 453 samma kvartal 2021 och 751 år 2022. Det är lika många som 2023 och fler än bottenkvartalet 2024, då 98 påbörjades. För planeringen betyder det att sysselsättningen ligger kvar över rikets nivå, medan antalet sysselsatta med arbetsplats i länet har minskat sedan 2023 och befolkningen växer långsammare än 2021."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "K_SYSS_TOT"
+        ],
+        "rubrik": "Sysselsättningsgraden toppade 2023 och ligger kvar över rikets"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": [
+          "K_DAG_TOT"
+        ],
+        "rubrik": "Antalet jobb i länet har minskat sedan sommaren 2023"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": [
+          "K_BYGG_TOT"
+        ],
+        "rubrik": "Byggandet har ökat från botten 2024 men ligger under 2021"
+      }
     ]
   }
 }

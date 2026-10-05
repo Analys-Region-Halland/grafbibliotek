@@ -486,6 +486,8 @@ mitt_tema_config <- function() {
 ```typescript
 import type { TemaConfig } from "./tema-config";
 
+const G = { SYSS: "Sysselsättning" };   // bandens rubriker
+
 const mittTema: TemaConfig = {
   temaId: "mitt_tema",
   temaNamn: "Mitt temanamn",
@@ -495,13 +497,22 @@ const mittTema: TemaConfig = {
   sektioner: [
     {
       id: "sektion_id",
+      gruppRubrik: G.SYSS,  // bandet i tabellen
       namn: "Sektionsnamn",
-      kpiIds: ["N02267", "N02268"],
+      kpiIds: ["N02267", "N02270"],
+      undersektioner: [
+        // namn är en nominalfras i gemener: knappen blir "Visa kvinnor och män"
+        { namn: "kvinnor och män", delAv: "N02267", kpiIds: ["N02267_KV", "N02267_MAN"] },
+      ],
     },
   ],
   visningsnamn: {
     "N02267": "Sysselsättningsgrad",
-    "N02268": "Sysselsättningsgrad, utrikes födda",
+    "N02270": "Arbetslöshet",
+  },
+  kortNamn: {               // korta namn på uppdelningens rader
+    "N02267_KV": "Kvinnor",
+    "N02267_MAN": "Män",
   },
 };
 
@@ -597,7 +608,7 @@ Per tema:
 
 ### Steg 3: AI-analys (kap03-ai-analys.R)
 
-- En analys per tema och enhet (Halland + sex kommuner) och en översikt per enhet
+- En analys per tema och enhet (Halland + sex kommuner)
 - Underlag ur bearbetad data, siffror kontrolleras mot underlaget, cache per hash
 - Se CLAUDE.md avsnitt "AI-analys" och R/analys/systemprompt.md
 
@@ -619,6 +630,29 @@ Rscript R/kap04-exportera.R
 
 
 ## 8. Indikatorurval (KPI:er)
+
+### 8.0 Band, indikatorer och uppdelningar
+
+Tabellen har tre nivåer, och temats config bestämmer var varje KPI hamnar:
+
+1. **Band** (`gruppRubrik`, eller sektionens `namn` när sektionen har flera indikatorer):
+   en grupp av indikatorer som hör ihop, till exempel *Födda, döda och flyttningar*.
+   Varje tema har två till fyra band med tre till sex indikatorer (konjunktur har fler).
+2. **Indikator** (`kpiIds`): ett mått med egen innebörd. Andel utrikes födda, andel
+   kvinnor, medelålder och försörjningskvot är indikatorer, inte uppdelningar av folkmängden.
+3. **Uppdelning** (`undersektioner`): visar hur en indikators helhet fördelar sig, antingen
+   samma mått för delgrupper (kön, födelseregion, åldersgrupper, bransch, boendeform) eller
+   flödena bakom ett netto (födda och döda, in- och utflyttningar, in- och utpendlare).
+   En uppdelning hör till exakt en indikator (`delAv`, krävs när sektionen har flera) och är
+   ihopfälld tills läsaren klickar på knappen under indikatorns namn. Uppdelningens `namn`
+   skrivs som nominalfras i gemener eftersom knappen blir *Visa {namn}*.
+
+Samma mått i en annan enhet (andel och antal, per invånare och per bil) är inte en uppdelning
+utan ett par: ange `par_kpi_id` i R-metan så att popupen kan växla mellan dem.
+
+En KPI förekommer en gång per tema. `node app/scripts/exportera-teman.mjs` kontrollerar
+strukturen (dubbletter, `delAv`, tomma och delade band) och avbryter med fel; kap03 stannar då.
+Analysunderlaget i kap03 följer samma ordning: varje uppdelning står direkt efter sin indikator.
 
 ### 8.1 Befolkning & demografi (tema_farg: grön)
 
@@ -742,27 +776,36 @@ tar emot tema-config, metadata och KPI-data. Inga temaspecifika
 if-satser eller switch-cases i App.tsx — allt styrs av konfigurationen.
 
 ### 10.3 Dataarkitektur
-- All data för hela Sverige (312 kommuner/regioner) laddas
-- Frontend filtrerar till Region Halland + kommuner i UI
+- Sidan laddar bara det aktiva områdets kompakta tabellfil, `halland-tabell-<tema>.json`
+  (0,2–2 MB): riket, Halland och de sex kommunerna med alla år och fält, övriga kommuner och
+  regioner bara vid de perioder som någon av de åtta har som senaste. Det räcker för
+  tabellen, tooltipen och jämförelsen; kap04 skriver filen ur temats config.
+- Hela temafilen, `halland-data-<tema>.json` (alla 312 enheter och år, 6–29 MB), hämtas
+  först när graf och karta öppnas (`useHelaTemat` i `hooks/useData.ts`).
+- Regionernas rang bland landets 21 regioner räknas i kap04, så att även Hallands plats
+  vid basåret finns.
 - Jämförelsepunkter (rikssnitt, rangordning bland 290) alltid synliga
-- JSON-filer laddas en gång, cachas i minnet
+- Filerna laddas en gång per område och cachas i minnet
 
 ### 10.4 Vyer och komponenter
 
-**Översiktsvyn (default)**
-1. Kommunväljare — pills, begränsad till Hallands kommuner + region
-2. TemaBlock per tema — sektioner med KPI-kort i rutnät
-3. Varje KPI-kort: nyckeltal + sparkline + ranking
+**Adress.** `#/<enhet>/<tema>` är ett område och `#/<enhet>/<tema>/<kpi>` en öppen
+indikator. Enheten är `halland`, en kommun eller `alla`. Startsidan är första området för
+Halland; det finns ingen översiktssida, så att datan står i förgrunden. Kommunväljaren i
+sidhuvudet har Halland, kommunerna norr till söder och *Alla sida vid sida*.
 
-**Detaljvy (klick på KPI-kort → modal)**
+**Område**
+1. Ingång: analysens rubrik och ingress med genväg till hela texten
+2. Tabellen (`TemaTabell`): band, indikatorer och uppdelningar (§8.0), med spår, plats och
+   tooltip per rad. Med *Alla sida vid sida* visas kommunerna i kolumner (`JamforTabell`)
+   tillsammans med länets analys.
+3. Hela analysen under tabellen
+
+**Detaljvy (klick på en indikator → popup)**
 1. Tidsserie (D3) — vald kommun + rikssnitt + alla kommuner, direktetiketterad
-2. Andel/antal-toggle, index-toggle, per-1000-toggle
-3. Tre visningslägen: alla kommuner, Halland, bara egen
+2. Växling mellan parade mått (andel och antal med mera), index, per 1 000 invånare
+3. Karta och jämförelser
 4. PNG/SVG-nedladdning
-
-**Guidad berättelse (knapp i tema-huvud)**
-1. Beeswarm-diagram med narrativ text
-2. Tangentbordsnavigering (pilar, Escape)
 
 ### 10.5 Designsystem — Tufte-principer
 

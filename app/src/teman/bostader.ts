@@ -1,5 +1,10 @@
 import type { TemaConfig } from "./tema-config";
 
+const G = {
+  BESTAND: "Bostadsbestånd och byggande",
+  PRISER: "Priser och trångboddhet",
+};
+
 const bostader: TemaConfig = {
   temaId: "bostader",
   temaNamn: "Bostäder",
@@ -7,41 +12,38 @@ const bostader: TemaConfig = {
   sektioner: [
     {
       id: "bestand",
+      gruppRubrik: G.BESTAND,
       namn: "Bostadsbestånd",
       kpiIds: ["N07913"],
-      undersektioner: [
-        { namn: "Upplåtelseform", kpiIds: ["N07956", "N07957", "N07958"] },
-      ],
+      undersektioner: [{ namn: "upplåtelseformerna", kpiIds: ["N07956", "N07957", "N07958"] }],
     },
     {
       id: "byggande",
+      gruppRubrik: G.BESTAND,
       namn: "Nybyggda bostäder",
       kpiIds: ["N07917"],
-      undersektioner: [
-        { namn: "Typ", kpiIds: ["N07905", "N07906", "N07923"] },
-      ],
+      undersektioner: [{ namn: "småhus och flerbostadshus", kpiIds: ["N07905", "N07906"] }],
     },
     {
-      id: "brpris",
-      namn: "Bostadsrättspris",
-      kpiIds: ["N07908"],
+      id: "planberedskap",
+      gruppRubrik: G.BESTAND,
+      namn: "Planberedskap",
+      kpiIds: ["N07923"],
     },
     {
-      id: "shpris",
-      namn: "Småhuspris",
-      kpiIds: ["N07909"],
-    },
-    {
-      id: "trang",
-      namn: "Trångboddhet",
-      kpiIds: ["N07907"],
-    },
-    {
-      id: "kolltrafik",
-      namn: "Kollektivtrafiknära",
-      kpiIds: ["N07418"],
+      id: "priser",
+      gruppRubrik: G.PRISER,
+      namn: "Priser och trångboddhet",
+      kpiIds: ["N07908", "N07909", "N07907"],
     },
   ],
+  kortNamn: {
+    N07956: "Hyresrätter",
+    N07957: "Bostadsrätter",
+    N07958: "Äganderätter",
+    N07905: "Småhus",
+    N07906: "Lägenheter i flerbostadshus",
+  },
   visningsnamn: {
     "N07913": "Antal bostäder per 1 000 invånare",
     "B_TOT": "Antal bostäder, totalt",
@@ -61,15 +63,6 @@ const bostader: TemaConfig = {
     "N07908": "Genomsnittligt pris för bostadsrätter, kr/kvm",
     "N07909": "Genomsnittligt pris för småhus, tkr",
     "N07907": "Trångbodda hushåll, andel (%)",
-    "N07418": "Bostäder i kollektivtrafiknära läge, andel (%)",
-  },
-  kortNamn: {
-    "N07956": "Andel hyresrätter",
-    "N07957": "Andel bostadsrätter",
-    "N07958": "Andel äganderätter (småhus m.fl.)",
-    "N07905": "Småhus",
-    "N07906": "Flerbostadshus",
-    "N07923": "Planberedskap",
   },
 };
 

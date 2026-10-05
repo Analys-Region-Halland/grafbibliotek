@@ -1,14 +1,6 @@
-import { useState, useEffect, useMemo, useRef } from "react";
-import type { KpiRow, KpiMeta, SlimRow } from "../types";
-import {
-  cleanRegionName,
-  fetchMedProgress,
-  hydrate,
-  ensureMeta,
-  putTema,
-  hasTema,
-  loadTema as loadTemaFromCache,
-} from "./dataCache";
+import { useState, useEffect, useMemo } from "react";
+import type { KpiRow, KpiMeta } from "../types";
+import { cleanRegionName, ensureMeta, loadTabell, loadTema } from "./dataCache";
 
 // Re-exportera cleanRegionName för App.tsx som importerar det härifrån
 export { cleanRegionName };
@@ -25,102 +17,69 @@ interface DataState {
 }
 
 /**
- * Lazy-laddar per-tema datasfiler (slim-format).
- * Befolkning laddas initialt (med progress), övriga teman vid behov.
- * Varje tema cachas efter första laddning för omedelbar återväxling.
+ * Laddar metadata och det aktiva områdets kompakta tabellfil (några hundra kB).
+ * Första laddningen visar förlopp; områden cachas för omedelbar återväxling.
+ * Hela temafilen, som graf och karta behöver, laddas av useHelaTemat.
  */
 export function useData(aktivtTema: string): DataState {
   const [meta, setMeta] = useState<KpiMeta[]>([]);
   const [cache, setCache] = useState<Record<string, KpiRow[]>>({});
-  const [initialLoading, setInitialLoading] = useState(true);
-  const [temaLoading, setTemaLoading] = useState(false);
+  const [forsta, setForsta] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [temaError, setTemaError] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
-  const [retryCount, setRetryCount] = useState(0);
-  const loadingRef = useRef<Set<string>>(new Set());
-  const metaMapRef = useRef<Map<string, KpiMeta>>(new Map());
-  const kommunMapRef = useRef<Map<string, { namn: string; typ: string }>>(new Map());
-  const base = import.meta.env.BASE_URL;
+  const [forsok, setForsok] = useState(0);
 
-  // Initial: meta + kommun-register + befolkning
   useEffect(() => {
-    Promise.all([
-      ensureMeta(),
-      fetchMedProgress(`${base}data/halland-data-befolkning.json`, setProgress),
-    ])
-      .then(([{ meta: metaArr, metaMap, kommunMap }, befSlim]) => {
-        setMeta(metaArr);
-        metaMapRef.current = metaMap;
-        kommunMapRef.current = kommunMap;
-
-        const befRows = hydrate(befSlim as SlimRow[], metaMap, kommunMap);
-        putTema("befolkning", befRows);
-        setCache({ befolkning: befRows });
-        setInitialLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setInitialLoading(false);
-      });
+    ensureMeta().then(({ meta: m }) => setMeta(m)).catch((e: Error) => setError(e.message));
   }, []);
 
-  // Ladda aktivt tema vid behov
   useEffect(() => {
-    if (initialLoading) return;
     if (cache[aktivtTema]) return;
-    if (loadingRef.current.has(aktivtTema)) return;
-
-    // Om redan i delad cache (laddad av artikelvy) — använd direkt
-    if (hasTema(aktivtTema)) {
-      loadTemaFromCache(aktivtTema).then((rows) => {
-        setCache((prev) => ({ ...prev, [aktivtTema]: rows }));
-      });
-      return;
-    }
-
-    loadingRef.current.add(aktivtTema);
-    setTemaLoading(true);
+    let aktiv = true;
     setTemaError(null);
-
-    fetch(`${base}data/halland-data-${aktivtTema}.json`)
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
-      .then((slim) => {
-        const rows = hydrate(
-          slim as SlimRow[],
-          metaMapRef.current,
-          kommunMapRef.current,
-        );
-        putTema(aktivtTema, rows);
+    loadTabell(aktivtTema, forsta ? setProgress : undefined)
+      .then((rows) => {
+        if (!aktiv) return;
         setCache((prev) => ({ ...prev, [aktivtTema]: rows }));
-        loadingRef.current.delete(aktivtTema);
-        setTemaLoading(false);
+        setForsta(false);
       })
-      .catch((err) => {
-        loadingRef.current.delete(aktivtTema);
-        setTemaError(`Kunde inte ladda tema: ${err.message}`);
-        setTemaLoading(false);
+      .catch((e: Error) => {
+        if (!aktiv) return;
+        if (forsta) setError(e.message);
+        else setTemaError(`Kunde inte ladda området: ${e.message}`);
       });
-  }, [aktivtTema, initialLoading, cache, retryCount]);
-
-  const retryTema = () => {
-    setTemaError(null);
-    setRetryCount((c) => c + 1);
-  };
+    return () => { aktiv = false; };
+  }, [aktivtTema, cache, forsta, forsok]);
 
   const data = useMemo(() => cache[aktivtTema] ?? [], [cache, aktivtTema]);
 
   return {
     data,
     meta,
-    loading: initialLoading,
-    temaLoading: temaLoading && !cache[aktivtTema],
+    loading: forsta && error == null,
+    temaLoading: !forsta && !cache[aktivtTema] && temaError == null,
     error,
     temaError: cache[aktivtTema] ? null : temaError,
     progress,
-    retryTema,
+    retryTema: () => { setTemaError(null); setForsok((n) => n + 1); },
   };
+}
+
+/** Hela temafilen (alla kommuner och år) för graf och karta; laddas först när den behövs */
+export function useHelaTemat(temaId: string | null): { rows: KpiRow[] | null; fel: string | null } {
+  const [laddat, setLaddat] = useState<{ temaId: string; rows: KpiRow[] } | null>(null);
+  const [fel, setFel] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!temaId) return;
+    let aktiv = true;
+    setFel(null);
+    loadTema(temaId)
+      .then((rows) => { if (aktiv) setLaddat({ temaId, rows }); })
+      .catch((e: Error) => { if (aktiv) setFel(e.message); });
+    return () => { aktiv = false; };
+  }, [temaId]);
+
+  return { rows: laddat && laddat.temaId === temaId ? laddat.rows : null, fel };
 }

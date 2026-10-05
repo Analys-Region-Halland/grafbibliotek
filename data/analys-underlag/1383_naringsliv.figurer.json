@@ -1,0 +1,498 @@
+[
+  {
+    "id": "N00999",
+    "namn": "Nystartade företag per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "indikator i bandet Yrkesställning och företagande",
+    "forsta": 2020,
+    "sista": 2025
+  },
+  {
+    "id": "N45700",
+    "namn": "Antal företagsförekomster per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "indikator i bandet Yrkesställning och företagande",
+    "forsta": 2020,
+    "sista": 2023
+  },
+  {
+    "id": "N_BR_A_A",
+    "namn": "Sysselsatta inom jordbruk och skogsbruk, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_BC_A",
+    "namn": "Sysselsatta inom tillverkning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_DE_A",
+    "namn": "Sysselsatta inom energi och miljö, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_F_A",
+    "namn": "Sysselsatta inom byggverksamhet, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_G_A",
+    "namn": "Sysselsatta inom handel, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_H_A",
+    "namn": "Sysselsatta inom transport, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_I_A",
+    "namn": "Sysselsatta inom hotell och restaurang, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_J_A",
+    "namn": "Sysselsatta inom IT och kommunikation, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_K_A",
+    "namn": "Sysselsatta inom finans och försäkring, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_L_A",
+    "namn": "Sysselsatta inom fastighetsverksamhet, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_MN_A",
+    "namn": "Sysselsatta inom företagstjänster, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_O_A",
+    "namn": "Sysselsatta inom offentlig förvaltning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_P_A",
+    "namn": "Sysselsatta inom utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_Q_A",
+    "namn": "Sysselsatta inom vård och omsorg, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_BR_RSTU_A",
+    "namn": "Sysselsatta inom övriga tjänster, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (branscherna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING",
+    "namn": "Sysselsatta i näringslivet 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "indikator i bandet Sysselsatta efter arbetsställe",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_INR",
+    "namn": "Sysselsatta inrikes födda i näringslivet 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_NARING (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_INR_TILLV",
+    "namn": "Årlig tillväxt, inrikes födda i näringslivet, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_NARING_TILLV (inrikes och utrikes födda)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_KV",
+    "namn": "Sysselsatta kvinnor i näringslivet 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_NARING (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_KV_TILLV",
+    "namn": "Årlig tillväxt, kvinnor i näringslivet, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_NARING_TILLV (kvinnor och män)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_MAN",
+    "namn": "Sysselsatta män i näringslivet 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_NARING (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_MAN_TILLV",
+    "namn": "Årlig tillväxt, män i näringslivet, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_NARING_TILLV (kvinnor och män)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_TILLV",
+    "namn": "Årlig tillväxt, förvärvsarbetande i näringslivet, förändring (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Tillväxt i antal sysselsatta",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_UTR",
+    "namn": "Sysselsatta utrikes födda i näringslivet 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_NARING (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_NARING_UTR_TILLV",
+    "namn": "Årlig tillväxt, utrikes födda i näringslivet, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_NARING_TILLV (inrikes och utrikes födda)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF",
+    "namn": "Sysselsatta i offentlig sektor 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "indikator i bandet Sysselsatta efter arbetsställe",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_INR",
+    "namn": "Sysselsatta inrikes födda i offentlig sektor 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_OFF (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_INR_TILLV",
+    "namn": "Årlig tillväxt, inrikes födda i offentlig sektor, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_OFF_TILLV (inrikes och utrikes födda)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_KV",
+    "namn": "Sysselsatta kvinnor i offentlig sektor 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_OFF (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_KV_TILLV",
+    "namn": "Årlig tillväxt, kvinnor i offentlig sektor, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_OFF_TILLV (kvinnor och män)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_MAN",
+    "namn": "Sysselsatta män i offentlig sektor 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_OFF (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_MAN_TILLV",
+    "namn": "Årlig tillväxt, män i offentlig sektor, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_OFF_TILLV (kvinnor och män)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_TILLV",
+    "namn": "Årlig tillväxt, förvärvsarbetande i offentlig sektor, förändring (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Tillväxt i antal sysselsatta",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_UTR",
+    "namn": "Sysselsatta utrikes födda i offentlig sektor 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_OFF (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_OFF_UTR_TILLV",
+    "namn": "Årlig tillväxt, utrikes födda i offentlig sektor, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_OFF_TILLV (inrikes och utrikes födda)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT",
+    "namn": "Sysselsatta dagbefolkning 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "indikator i bandet Sysselsatta efter arbetsställe",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_INR",
+    "namn": "Sysselsatta inrikes födda 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_INR_TILLV",
+    "namn": "Årlig tillväxt, förvärvsarbetande inrikes födda, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT_TILLV (inrikes och utrikes födda)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_KV",
+    "namn": "Sysselsatta kvinnor 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_KV_TILLV",
+    "namn": "Årlig tillväxt, förvärvsarbetande kvinnor, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT_TILLV (kvinnor och män)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_MAN",
+    "namn": "Sysselsatta män 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_TOT (kvinnor och män)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_MAN_TILLV",
+    "namn": "Årlig tillväxt, förvärvsarbetande män, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT_TILLV (kvinnor och män)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_TILLV",
+    "namn": "Årlig tillväxt, förvärvsarbetande totalt, förändring (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Tillväxt i antal sysselsatta",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_UTR",
+    "namn": "Sysselsatta utrikes födda 15–74 år, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av N_SEK_TOT (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_SEK_TOT_UTR_TILLV",
+    "namn": "Årlig tillväxt, förvärvsarbetande utrikes födda, förändring (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT_TILLV (inrikes och utrikes födda)",
+    "forsta": 2021,
+    "sista": 2024
+  },
+  {
+    "id": "N_UTB_EFTGYM_A",
+    "namn": "Sysselsatta med eftergymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (utbildningsnivåerna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_UTB_FORGYM_A",
+    "namn": "Sysselsatta med förgymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (utbildningsnivåerna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_UTB_GYM_A",
+    "namn": "Sysselsatta med gymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_SEK_TOT (utbildningsnivåerna)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_ANST_A",
+    "namn": "Anställda bland förvärvsarbetande 15–74 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Yrkesställning och företagande",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_ANST_INR_A",
+    "namn": "Anställda bland inrikes födda 15–74 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_ANST_A (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_ANST_KV_A",
+    "namn": "Andel kvinnor bland anställda 15–74 år (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_ANST_A (andelen kvinnor)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_ANST_UTR_A",
+    "namn": "Anställda bland utrikes födda 15–74 år, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_ANST_A (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGAB_A",
+    "namn": "Företagare i AB bland förvärvsarbetande 15–74 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Yrkesställning och företagande",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGAB_INR_A",
+    "namn": "Företagare i AB bland inrikes födda, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_EGAB_A (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGAB_KV_A",
+    "namn": "Andel kvinnor bland företagare i AB (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_EGAB_A (andelen kvinnor)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGAB_UTR_A",
+    "namn": "Företagare i AB bland utrikes födda, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_EGAB_A (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGFOR_A",
+    "namn": "Egenföretagare bland förvärvsarbetande 15–74 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Yrkesställning och företagande",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGFOR_INR_A",
+    "namn": "Egenföretagare bland inrikes födda, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_EGFOR_A (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGFOR_KV_A",
+    "namn": "Andel kvinnor bland egenföretagare (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_EGFOR_A (andelen kvinnor)",
+    "forsta": 2020,
+    "sista": 2024
+  },
+  {
+    "id": "N_YRK_EGFOR_UTR_A",
+    "namn": "Egenföretagare bland utrikes födda, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N_YRK_EGFOR_A (inrikes och utrikes födda)",
+    "forsta": 2020,
+    "sista": 2024
+  }
+]

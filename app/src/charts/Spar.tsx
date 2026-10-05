@@ -1,6 +1,7 @@
 import { memo, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { ENHET_FARG, HALLAND_KODER } from "../types";
+import { kvantil } from "../utils/kpiStats";
 
 interface Props {
   /** Jämförbara enheter (kommuner eller regioner), sorterade stigande på värde */
@@ -14,6 +15,10 @@ interface Props {
   logSkala?: boolean;
   width: number;
   height?: number;
+  /** Tona fördelningens kvartiler: mittersta hälften neutral, ytterfjärdedelarna efter riktning */
+  kvartiler?: boolean;
+  /** Lågt värde är önskvärt: lägsta fjärdedelen tonas grön och högsta röd (annars bara neutral ton) */
+  lagtArBra?: boolean;
   /** Visa Hallands kommuner i sina färger (när raden pekas) */
   visaHalland: boolean;
   ariaLabel: string;
@@ -32,10 +37,13 @@ interface Fack { x: number; fran: number; till: number; antal: number }
  * Spåret: en axel per rad med skalans ändvärden utskrivna, landets enheter som små grå
  * punkter staplade där de ligger tätt (fördelningens form), riket som svart streck,
  * länet som streckat, den valda enheten som punkt med vit halo och pulserande ring.
- * Peka på en punkt för namn och värde; Hallands kommuner tänds när raden pekas.
+ * Kvartilerna kan tonas bakom punkterna (mittersta hälften neutral, ytterfjärdedelarna efter
+ * önskvärd riktning när den är känd). Peka på en punkt för namn och värde; Hallands kommuner
+ * tänds när raden pekas.
  */
 function SparInner({
   enheter, valdKod, riket, halland, namn, fmt, logSkala, width, height = 26, visaHalland, ariaLabel,
+  kvartiler = false, lagtArBra = false,
 }: Props) {
   const [tip, setTip] = useState<{ text: React.ReactNode; sx: number; sy: number } | null>(null);
   const mid = height / 2;
@@ -62,11 +70,12 @@ function SparInner({
     }
     const maxStapel = Math.max(1, Math.floor((height - 4) / STEG));
     const perPrick = Math.max(1, Math.ceil(Math.max(...fack.map((f) => f.antal)) / maxStapel));
-    return { x, x0, x1, fack, perPrick, logg, loV, hiV };
+    const q25 = kvantil(vals, 0.25), q75 = kvantil(vals, 0.75);
+    return { x, x0, x1, fack, perPrick, logg, loV, hiV, q25, q75 };
   }, [enheter, riket, halland, logSkala, width, height, valdKod]);
 
   if (enheter.length < 2) return null;
-  const { x, x0, x1, fack, perPrick, logg, loV, hiV } = layout;
+  const { x, x0, x1, fack, perPrick, logg, loV, hiV, q25, q75 } = layout;
   const vald = enheter.find((e) => e.kod === valdKod);
   const hallandEnheter = enheter.filter((e) => HALLAND_KODER.includes(e.kod) && e.kod !== valdKod);
   const n = enheter.length;
@@ -102,6 +111,16 @@ function SparInner({
     <div className="kt-spar" onMouseMove={(e) => e.stopPropagation()}>
       <svg width={width} height={height} role="img" aria-label={ariaLabel} className="block overflow-visible"
            onMouseMove={onMove} onMouseLeave={() => setTip(null)}>
+        {kvartiler && (!logg || q25 > 0) && (() => {
+          const a = x(q25), b = x(q75), y = 1, h = height - 2;
+          return (
+            <g aria-hidden>
+              {lagtArBra && <rect x={x0} y={y} width={Math.max(0, a - x0)} height={h} rx={2} fill="#E3F4E2" />}
+              <rect x={a} y={y} width={Math.max(1, b - a)} height={h} rx={2} fill="#EEF0F2" />
+              {lagtArBra && <rect x={b} y={y} width={Math.max(0, x1 - b)} height={h} rx={2} fill="#FEE6E7" />}
+            </g>
+          );
+        })()}
         <line x1={x0} x2={x1} y1={mid} y2={mid} stroke="#D6D6D6" />
         <line x1={x0} x2={x0} y1={mid - 4} y2={mid + 4} stroke="#B4B8BB" />
         <line x1={x1} x2={x1} y1={mid - 4} y2={mid + 4} stroke="#B4B8BB" />

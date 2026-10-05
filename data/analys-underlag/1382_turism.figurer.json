@@ -1,0 +1,146 @@
+[
+  {
+    "id": "T_ANDEL_UTL",
+    "namn": "Andel utländska gästankomster",
+    "enhet": "procent",
+    "roll": "indikator i bandet Gästankomster",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_ANDEL_UTL_NATTER",
+    "namn": "Andel utländska gästnätter",
+    "enhet": "procent",
+    "roll": "indikator i bandet Gästnätter",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_ANKOMST_SVE",
+    "namn": "Gästankomster, svenska",
+    "enhet": "antal",
+    "roll": "indikator i bandet Gästankomster",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_ANKOMST_UTL",
+    "namn": "Gästankomster, utländska",
+    "enhet": "antal",
+    "roll": "indikator i bandet Gästankomster",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_ANLAGGNINGAR",
+    "namn": "Antal anläggningar",
+    "enhet": "antal",
+    "roll": "indikator i bandet Kapacitet och beläggning",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_BELAGG_BADD",
+    "namn": "Bäddbeläggning",
+    "enhet": "procent",
+    "roll": "indikator i bandet Kapacitet och beläggning",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_BELAGG_RUM",
+    "namn": "Rumsbeläggning",
+    "enhet": "procent",
+    "roll": "indikator i bandet Kapacitet och beläggning",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_CAMPING",
+    "namn": "Gästnätter, camping",
+    "enhet": "antal",
+    "roll": "uppdelning av T_GAST_TOT (boendeformerna)",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_HOTELL",
+    "namn": "Gästnätter, hotell",
+    "enhet": "antal",
+    "roll": "uppdelning av T_GAST_TOT (boendeformerna)",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_PER_ANLAGG",
+    "namn": "Gästnätter per anläggning",
+    "enhet": "antal",
+    "roll": "indikator i bandet Kapacitet och beläggning",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_PER_INV",
+    "namn": "Gästnätter per invånare",
+    "enhet": "antal",
+    "roll": "indikator i bandet Gästnätter",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_SVE",
+    "namn": "Gästnätter, svenska gäster",
+    "enhet": "antal",
+    "roll": "uppdelning av T_GAST_TOT (svenska och utländska gäster)",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_TILLVAXT",
+    "namn": "Gästnätter, årlig förändring",
+    "enhet": "procent",
+    "roll": "indikator i bandet Gästnätter",
+    "forsta": 2009,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_TOT",
+    "namn": "Gästnätter, totalt",
+    "enhet": "antal",
+    "roll": "indikator i bandet Gästnätter",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_GAST_UTL",
+    "namn": "Gästnätter, utländska gäster",
+    "enhet": "antal",
+    "roll": "uppdelning av T_GAST_TOT (svenska och utländska gäster)",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_INTAKT_PER_GAST",
+    "namn": "Logiintäkt per gästnatt",
+    "enhet": "kr",
+    "roll": "indikator i bandet Intäkter",
+    "forsta": 2008,
+    "sista": 2025
+  },
+  {
+    "id": "T_INTAKT_TILLVAXT",
+    "namn": "Logiintäkter, årlig förändring",
+    "enhet": "procent",
+    "roll": "indikator i bandet Intäkter",
+    "forsta": 2009,
+    "sista": 2025
+  },
+  {
+    "id": "T_LOGIINTAKT",
+    "namn": "Logiintäkter",
+    "enhet": "kr",
+    "roll": "indikator i bandet Intäkter",
+    "forsta": 2008,
+    "sista": 2025
+  }
+]

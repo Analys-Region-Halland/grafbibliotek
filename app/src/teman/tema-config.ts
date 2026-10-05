@@ -1,8 +1,24 @@
-/** Typer för tema-konfiguration */
+/**
+ * Typer för tema-konfiguration.
+ *
+ * Tabellen har tre nivåer: band (gruppRubrik) → indikator (kpiIds) → uppdelning (undersektioner).
+ * En uppdelning visar hur förälderns helhet fördelar sig: samma mått för delgrupper (kön,
+ * födelseregion, åldersgrupper, bransch) eller flödena bakom ett netto (födda och döda).
+ * Ett mått med egen innebörd, som andel utrikes födda, är en egen indikator i ett band.
+ * Se METODIK.md §8.0.
+ */
 
 export interface Undersektion {
+  /**
+   * Uppdelningen som nominalfras i gemener; knappen blir "Visa {namn}" och vid flera
+   * uppdelningar blir namnet med versal rubrik över raderna. T.ex. "kvinnor och män".
+   */
   namn: string;
   kpiIds: string[];
+  /** Indikatorn som delas upp; standard är sektionens första. Krävs när sektionen har flera. */
+  delAv?: string;
+  /** Sortera raderna efter den valda enhetens senaste värde (fallande), t.ex. branscher */
+  sorteraEfterVarde?: boolean;
 }
 
 export interface Sektion {
@@ -10,9 +26,7 @@ export interface Sektion {
   namn: string;
   kpiIds: string[];
   undersektioner?: Undersektion[];
-  /** Sortera kort efter senaste värde (fallande) */
-  sorteraEfterVarde?: boolean;
-  /** Grupprubrik — renderas som rubrik ovanför kortet när gruppen ändras */
+  /** Bandets rubrik i tabellen; följande sektioner med samma rubrik hamnar i samma band */
   gruppRubrik?: string;
 }
 
@@ -22,8 +36,10 @@ export interface TemaConfig {
   temaFarg: TemaFarg;
   sektioner: Sektion[];
   visningsnamn: Record<string, string>;
-  /** Korta namn för kort i fler-KPI-sektioner */
+  /** Korta namn på uppdelningarnas rader, där förälderns namn står ovanför (t.ex. "Kvinnor") */
   kortNamn?: Record<string, string>;
+  /** KPI:er som bara används i analysens figurer (inte i tabellen), t.ex. komponenter i antal */
+  figurKpiIds?: string[];
   /** KPI-ID:n som visas per 1 000 invånare */
   nettoKpis?: string[];
   /** KPI-ID:n som saknar index-toggle (netto-KPI:er) */

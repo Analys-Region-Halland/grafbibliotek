@@ -1,0 +1,218 @@
+[
+  {
+    "id": "S_BEF_0_19_ANDEL",
+    "namn": "Invånare 0–19 år, andel av befolkningen (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_BEF_TOTALT (åldersgrupperna)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_BEF_20_64_ANDEL",
+    "namn": "Invånare 20–64 år, andel av befolkningen (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_BEF_TOTALT (åldersgrupperna)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_BEF_65_79_ANDEL",
+    "namn": "Invånare 65–79 år, andel av befolkningen (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_BEF_TOTALT (åldersgrupperna)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_BEF_80_ANDEL",
+    "namn": "Invånare 80 år och äldre, andel av befolkningen (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av S_BEF_TOTALT (åldersgrupperna)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_BEF_FORANDR_ANTAL",
+    "namn": "Årlig befolkningsförändring, antal",
+    "enhet": "antal",
+    "roll": "bara i figurer",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_BEF_FORANDR_PCT",
+    "namn": "Årlig befolkningsförändring, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Folkmängd och tillväxt",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_BEF_TATHET",
+    "namn": "Befolkningstäthet, invånare per kvadratkilometer",
+    "enhet": "inv/kvm",
+    "roll": "indikator i bandet Folkmängd och tillväxt",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_BEF_TOTALT",
+    "namn": "Folkmängd, antal invånare",
+    "enhet": "antal",
+    "roll": "indikator i bandet Folkmängd och tillväxt",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_DODA_ANTAL",
+    "namn": "Antal döda",
+    "enhet": "antal",
+    "roll": "uppdelning av S_FODELSENETTO_PROMILLE (födda och döda)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_FODDA_ANTAL",
+    "namn": "Antal födda",
+    "enhet": "antal",
+    "roll": "uppdelning av S_FODELSENETTO_PROMILLE (födda och döda)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_FODELSENETTO_ANTAL",
+    "namn": "Födelsenetto, antal",
+    "enhet": "antal",
+    "roll": "bara i figurer",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_FODELSENETTO_PROMILLE",
+    "namn": "Födelsenetto per 1 000 invånare",
+    "enhet": "per 1 000 inv.",
+    "roll": "indikator i bandet Födda, döda och flyttningar",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_FORSORJ_ALD",
+    "namn": "Försörjningskvot, äldre (65+ / 20–64)",
+    "enhet": "kvot",
+    "roll": "uppdelning av S_FORSORJ_TOTAL (försörjningskvoten för yngre och äldre)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_FORSORJ_TOTAL",
+    "namn": "Demografisk försörjningskvot",
+    "enhet": "kvot",
+    "roll": "indikator i bandet Ålder och sammansättning",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_FORSORJ_UNG",
+    "namn": "Försörjningskvot, yngre (0–19 / 20–64)",
+    "enhet": "kvot",
+    "roll": "uppdelning av S_FORSORJ_TOTAL (försörjningskvoten för yngre och äldre)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_FRUKTSAMHET",
+    "namn": "Summerad fruktsamhet, barn per kvinna",
+    "enhet": "barn/kvinna",
+    "roll": "indikator i bandet Födda, döda och flyttningar",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_INRIKES_INFLYTT_ANTAL",
+    "namn": "Inrikes inflyttningar, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av S_INRIKES_NETTO_PROMILLE (inflyttningar och utflyttningar)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_INRIKES_NETTO_ANTAL",
+    "namn": "Inrikes flyttnetto, antal",
+    "enhet": "antal",
+    "roll": "bara i figurer",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_INRIKES_NETTO_PROMILLE",
+    "namn": "Inrikes flyttnetto per 1 000 invånare",
+    "enhet": "per 1 000 inv.",
+    "roll": "indikator i bandet Födda, döda och flyttningar",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_INRIKES_UTFLYTT_ANTAL",
+    "namn": "Inrikes utflyttningar, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av S_INRIKES_NETTO_PROMILLE (inflyttningar och utflyttningar)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_INVANDRING_ANTAL",
+    "namn": "Invandringar, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av S_UTRIKES_NETTO_PROMILLE (invandringar och utvandringar)",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_KVINNOR_ANDEL",
+    "namn": "Kvinnor i befolkningen, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Ålder och sammansättning",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_MEDELALDER",
+    "namn": "Befolkningens medelålder, år",
+    "enhet": "år",
+    "roll": "indikator i bandet Ålder och sammansättning",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_UTRIKES_FODDA_ANDEL",
+    "namn": "Utrikes födda i befolkningen, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Ålder och sammansättning",
+    "forsta": 2000,
+    "sista": 2024
+  },
+  {
+    "id": "S_UTRIKES_NETTO_ANTAL",
+    "namn": "Utrikes flyttnetto, antal",
+    "enhet": "antal",
+    "roll": "bara i figurer",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_UTRIKES_NETTO_PROMILLE",
+    "namn": "Utrikes flyttnetto per 1 000 invånare",
+    "enhet": "per 1 000 inv.",
+    "roll": "indikator i bandet Födda, döda och flyttningar",
+    "forsta": 2000,
+    "sista": 2025
+  },
+  {
+    "id": "S_UTVANDRING_ANTAL",
+    "namn": "Utvandringar, antal",
+    "enhet": "antal",
+    "roll": "uppdelning av S_UTRIKES_NETTO_PROMILLE (invandringar och utvandringar)",
+    "forsta": 2000,
+    "sista": 2025
+  }
+]

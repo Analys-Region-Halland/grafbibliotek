@@ -21,7 +21,7 @@ const socioekonomi: TemaConfig = {
       namn: "Ohälsotal",
       kpiIds: ["N00957"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["N00957_KV", "N00957_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["N00957_KV", "N00957_MAN"] },
       ],
     },
     {
@@ -30,7 +30,7 @@ const socioekonomi: TemaConfig = {
       namn: "Sjukpenningtal",
       kpiIds: ["N00938"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["N00938_KV", "N00938_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["N00938_KV", "N00938_MAN"] },
       ],
     },
     {
@@ -39,7 +39,7 @@ const socioekonomi: TemaConfig = {
       namn: "Självskattad hälsa",
       kpiIds: ["F_HALSA_GOD"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_HALSA_GOD_KV", "F_HALSA_GOD_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_HALSA_GOD_KV", "F_HALSA_GOD_MAN"] },
       ],
     },
     {
@@ -54,7 +54,7 @@ const socioekonomi: TemaConfig = {
       namn: "Förtida dödlighet",
       kpiIds: ["F_FORTID"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_FORTID_KV", "F_FORTID_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_FORTID_KV", "F_FORTID_MAN"] },
       ],
     },
 
@@ -65,7 +65,7 @@ const socioekonomi: TemaConfig = {
       namn: "Allvarlig psykisk påfrestning",
       kpiIds: ["F_PSYK_PAFR"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_PSYK_PAFR_KV", "F_PSYK_PAFR_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_PSYK_PAFR_KV", "F_PSYK_PAFR_MAN"] },
       ],
     },
     {
@@ -74,7 +74,7 @@ const socioekonomi: TemaConfig = {
       namn: "Stress",
       kpiIds: ["F_STRESS"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_STRESS_KV", "F_STRESS_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_STRESS_KV", "F_STRESS_MAN"] },
       ],
     },
     {
@@ -83,7 +83,7 @@ const socioekonomi: TemaConfig = {
       namn: "Psykisk ohälsa, barn och unga",
       kpiIds: ["N33820"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["N33820_KV", "N33820_MAN"] },
+        { namn: "flickor och pojkar", kpiIds: ["N33820_KV", "N33820_MAN"] },
       ],
     },
     {
@@ -92,7 +92,7 @@ const socioekonomi: TemaConfig = {
       namn: "Suicid",
       kpiIds: ["F_SUICID"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_SUICID_KV", "F_SUICID_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_SUICID_KV", "F_SUICID_MAN"] },
       ],
     },
 
@@ -103,7 +103,7 @@ const socioekonomi: TemaConfig = {
       namn: "Övervikt och obesitas",
       kpiIds: ["F_OVERVIKT"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_OVERVIKT_KV", "F_OVERVIKT_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_OVERVIKT_KV", "F_OVERVIKT_MAN"] },
       ],
     },
     {
@@ -112,7 +112,7 @@ const socioekonomi: TemaConfig = {
       namn: "Daglig tobaksrökning",
       kpiIds: ["F_TOBAK"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_TOBAK_KV", "F_TOBAK_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_TOBAK_KV", "F_TOBAK_MAN"] },
       ],
     },
     {
@@ -121,7 +121,7 @@ const socioekonomi: TemaConfig = {
       namn: "Riskkonsumtion alkohol",
       kpiIds: ["F_ALK_RISK"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_ALK_RISK_KV", "F_ALK_RISK_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_ALK_RISK_KV", "F_ALK_RISK_MAN"] },
       ],
     },
 
@@ -132,7 +132,7 @@ const socioekonomi: TemaConfig = {
       namn: "Ekonomisk standard",
       kpiIds: ["F_DINK"],
       undersektioner: [
-        { namn: "Kön", kpiIds: ["F_DINK_KV", "F_DINK_MAN"] },
+        { namn: "kvinnor och män", kpiIds: ["F_DINK_KV", "F_DINK_MAN"] },
       ],
     },
     {
@@ -234,7 +234,7 @@ const socioekonomi: TemaConfig = {
     "F_VEK_VUX", "F_VINK_BARN",
   ],
   kortNamn: {
-    // Medellivslängd (multi-kort)
+    // Medellivslängd
     F_MEDLIVS_KV: "Kvinnor",
     F_MEDLIVS_MAN: "Män",
     // Könsnedbrytningar
@@ -252,8 +252,8 @@ const socioekonomi: TemaConfig = {
     F_STRESS_MAN: "Män",
     N33820_KV: "Flickor",
     N33820_MAN: "Pojkar",
-    F_SUICID_KV: "Kvinnor 25+ år",
-    F_SUICID_MAN: "Män 25+ år",
+    F_SUICID_KV: "Kvinnor 25 år och äldre",
+    F_SUICID_MAN: "Män 25 år och äldre",
     F_OVERVIKT_KV: "Kvinnor",
     F_OVERVIKT_MAN: "Män",
     F_TOBAK_KV: "Kvinnor",

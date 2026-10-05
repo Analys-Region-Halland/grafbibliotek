@@ -10,89 +10,68 @@ const befolkning: TemaConfig = {
   ingetIndex: [],
   sektioner: [
     {
-      id: "folkmagd",
-      namn: "Folkmängd",
-      kpiIds: ["S_BEF_TOTALT"],
+      id: "folkmangd",
+      namn: "Folkmängd och tillväxt",
+      kpiIds: ["S_BEF_TOTALT", "S_BEF_FORANDR_PCT", "S_BEF_TATHET"],
       undersektioner: [
         {
-          namn: "Sammansättning",
-          kpiIds: ["S_UTRIKES_FODDA_ANDEL", "S_KVINNOR_ANDEL"],
+          namn: "åldersgrupperna",
+          delAv: "S_BEF_TOTALT",
+          kpiIds: ["S_BEF_0_19_ANDEL", "S_BEF_20_64_ANDEL", "S_BEF_65_79_ANDEL", "S_BEF_80_ANDEL"],
         },
       ],
     },
     {
-      id: "tathet",
-      namn: "Befolkningstäthet",
-      kpiIds: ["S_BEF_TATHET"],
-    },
-    {
-      id: "forandring",
-      namn: "Befolkningsförändring",
-      kpiIds: ["S_BEF_FORANDR_PCT"],
-    },
-    {
-      id: "fodelsenetto",
-      namn: "Födelsenetto",
-      kpiIds: ["S_FODELSENETTO_PROMILLE"],
+      id: "floden",
+      namn: "Födda, döda och flyttningar",
+      kpiIds: ["S_FODELSENETTO_PROMILLE", "S_FRUKTSAMHET", "S_INRIKES_NETTO_PROMILLE", "S_UTRIKES_NETTO_PROMILLE"],
       undersektioner: [
+        { namn: "födda och döda", delAv: "S_FODELSENETTO_PROMILLE", kpiIds: ["S_FODDA_ANTAL", "S_DODA_ANTAL"] },
         {
-          namn: "Ingående",
-          kpiIds: ["S_FODDA_ANTAL", "S_DODA_ANTAL"],
-        },
-      ],
-    },
-    {
-      id: "inrikes_flytt",
-      namn: "Inrikes flyttnetto",
-      kpiIds: ["S_INRIKES_NETTO_PROMILLE"],
-      undersektioner: [
-        {
-          namn: "Ingående",
+          namn: "inflyttningar och utflyttningar",
+          delAv: "S_INRIKES_NETTO_PROMILLE",
           kpiIds: ["S_INRIKES_INFLYTT_ANTAL", "S_INRIKES_UTFLYTT_ANTAL"],
         },
-      ],
-    },
-    {
-      id: "utrikes_flytt",
-      namn: "Utrikes flyttnetto",
-      kpiIds: ["S_UTRIKES_NETTO_PROMILLE"],
-      undersektioner: [
         {
-          namn: "Ingående",
+          namn: "invandringar och utvandringar",
+          delAv: "S_UTRIKES_NETTO_PROMILLE",
           kpiIds: ["S_INVANDRING_ANTAL", "S_UTVANDRING_ANTAL"],
         },
       ],
     },
     {
-      id: "fruktsamhet",
-      namn: "Fruktsamhet",
-      kpiIds: ["S_FRUKTSAMHET"],
-    },
-    {
-      id: "alder",
-      namn: "Medelålder",
-      kpiIds: ["S_MEDELALDER"],
+      id: "sammansattning",
+      namn: "Ålder och sammansättning",
+      kpiIds: ["S_MEDELALDER", "S_FORSORJ_TOTAL", "S_UTRIKES_FODDA_ANDEL", "S_KVINNOR_ANDEL"],
       undersektioner: [
         {
-          namn: "Åldersgrupper",
-          kpiIds: [
-            "S_BEF_0_19_ANDEL",
-            "S_BEF_20_64_ANDEL",
-            "S_BEF_65_79_ANDEL",
-            "S_BEF_80_ANDEL",
-          ],
+          namn: "försörjningskvoten för yngre och äldre",
+          delAv: "S_FORSORJ_TOTAL",
+          kpiIds: ["S_FORSORJ_UNG", "S_FORSORJ_ALD"],
         },
       ],
     },
-    {
-      id: "forssorjning",
-      namn: "Försörjningskvot",
-      kpiIds: ["S_FORSORJ_TOTAL"],
-      undersektioner: [
-        { namn: "Uppdelning", kpiIds: ["S_FORSORJ_UNG", "S_FORSORJ_ALD"] },
-      ],
-    },
   ],
+  // Befolkningsförändringens komponenter i antal, för analysens figur (typ "delar")
+  figurKpiIds: ["S_BEF_FORANDR_ANTAL", "S_FODELSENETTO_ANTAL", "S_INRIKES_NETTO_ANTAL", "S_UTRIKES_NETTO_ANTAL"],
+  kortNamn: {
+    S_BEF_FORANDR_ANTAL: "Befolkningsförändring",
+    S_FODELSENETTO_ANTAL: "Födelsenetto",
+    S_INRIKES_NETTO_ANTAL: "Inrikes flyttnetto",
+    S_UTRIKES_NETTO_ANTAL: "Utrikes flyttnetto",
+    S_BEF_0_19_ANDEL: "0–19 år",
+    S_BEF_20_64_ANDEL: "20–64 år",
+    S_BEF_65_79_ANDEL: "65–79 år",
+    S_BEF_80_ANDEL: "80 år och äldre",
+    S_FODDA_ANTAL: "Födda",
+    S_DODA_ANTAL: "Döda",
+    S_INRIKES_INFLYTT_ANTAL: "Inflyttningar",
+    S_INRIKES_UTFLYTT_ANTAL: "Utflyttningar",
+    S_INVANDRING_ANTAL: "Invandringar",
+    S_UTVANDRING_ANTAL: "Utvandringar",
+    S_FORSORJ_UNG: "Yngre, 0–19 år per 20–64 år",
+    S_FORSORJ_ALD: "Äldre, 65 år och äldre per 20–64 år",
+  },
   visningsnamn: {
     S_BEF_TOTALT: "Folkmängd, antal invånare",
     S_BEF_TATHET: "Befolkningstäthet, invånare per kvadratkilometer",
@@ -127,28 +106,6 @@ const befolkning: TemaConfig = {
     S_KVINNOR_ANTAL: "Kvinnor i befolkningen, antal",
     S_UTRIKES_FODDA_ANDEL: "Utrikes födda i befolkningen, andel (%)",
     S_UTRIKES_FODDA_ANTAL: "Utrikes födda i befolkningen, antal",
-  },
-  kortNamn: {
-    // Under Folkmängd
-    S_UTRIKES_FODDA_ANDEL: "Utrikes födda",
-    S_KVINNOR_ANDEL: "Andel kvinnor",
-    // Under Födelsenetto
-    S_FODDA_ANTAL: "Födda",
-    S_DODA_ANTAL: "Döda",
-    // Under Inrikes flytt
-    S_INRIKES_INFLYTT_ANTAL: "Inflyttade",
-    S_INRIKES_UTFLYTT_ANTAL: "Utflyttade",
-    // Under Utrikes flytt
-    S_INVANDRING_ANTAL: "Invandrade",
-    S_UTVANDRING_ANTAL: "Utvandrade",
-    // Åldersgrupper
-    S_BEF_0_19_ANDEL: "0–19 år",
-    S_BEF_20_64_ANDEL: "20–64 år",
-    S_BEF_65_79_ANDEL: "65–79 år",
-    S_BEF_80_ANDEL: "80+ år",
-    // Försörjningskvoter
-    S_FORSORJ_UNG: "Från yngre (0–19 / 20–64)",
-    S_FORSORJ_ALD: "Från äldre (65+ / 20–64)",
   },
 };
 

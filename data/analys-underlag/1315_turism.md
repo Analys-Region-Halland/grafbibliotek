@@ -51,10 +51,52 @@ Mäter: Totalt antal gästnätter vid samtliga kommersiella boenden (hotell, stu
 - Plats bland landets 235 kommuner: 190 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Falkenberg 945 360; Halmstad 872 543; Varberg 831 069; Kungsbacka 170 096; Laholm 163 712; Hylte 38 220
 - Plats bland Hallands 6 kommuner: 6
+- Förändring hela serien sedan 2008: +6 209 antal (från 32 011 år 2008), det vill säga +19,4 procent eller i genomsnitt +1,05 procent per år; riket +41,2 procent
+- Förändring 10 år: +5 276 antal (från 32 944 år 2015), det vill säga +16,0 procent eller i genomsnitt +1,50 procent per år; riket +17,8 procent
+- Förändring 5 år: +2 912 antal (från 35 308 år 2020), det vill säga +8,2 procent eller i genomsnitt +1,60 procent per år; riket +63,4 procent
 - Förändring 1 år: -2 697 antal (från 40 917 år 2024), det vill säga -6,6 procent; riket +2,5 procent
-- Förändring 5 år: +2 912 antal (från 35 308 år 2020), det vill säga +8,2 procent; riket +63,4 procent
-- Förändring 10 år: +5 276 antal (från 32 944 år 2015), det vill säga +16,0 procent; riket +17,8 procent
+- Hylte år för år: 2015 32 944; 2016 34 193; 2017 31 959; 2018 33 663; 2019 37 304; 2020 35 308; 2021 41 599; 2022 46 702; 2023 41 676; 2024 40 917; 2025 38 220
 - Serien för Hylte 2008–2025: högst 46 702 (2022), lägst 29 452 (2010)
+
+### Gästnätter, svenska gäster [uppdelning av Gästnätter, totalt: svenska och utländska gäster] (antal, 2025)
+- Hylte: 26 005
+- Halland (länet): 2 658 827
+- Riket: 51 439 128
+- Plats bland landets 235 kommuner: 195 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Falkenberg 846 271; Halmstad 762 670; Varberg 728 646; Kungsbacka 141 664; Laholm 132 199; Hylte 26 005
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 10 år: +513 antal (från 25 492 år 2015), det vill säga +2,0 procent eller i genomsnitt +0,20 procent per år; riket +14,7 procent
+- Förändring 5 år: -7 566 antal (från 33 571 år 2020), det vill säga -22,5 procent eller i genomsnitt -4,98 procent per år; riket +34,9 procent
+- Förändring 1 år: -5 194 antal (från 31 199 år 2024), det vill säga -16,6 procent; riket +2,6 procent
+
+### Gästnätter, utländska gäster [uppdelning av Gästnätter, totalt: svenska och utländska gäster] (antal, 2025)
+- Hylte: 12 128
+- Halland (länet): 464 537
+- Riket: 18 311 128
+- Plats bland landets 235 kommuner: 159 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 105 231; Varberg 102 020; Falkenberg 98 955; Laholm 31 387; Kungsbacka 28 419; Hylte 12 128
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 10 år: +4 708 antal (från 7 420 år 2015), det vill säga +63,5 procent eller i genomsnitt +5,04 procent per år; riket +30,8 procent
+- Förändring 5 år: +10 401 antal (från 1 727 år 2020), det vill säga +602,3 procent eller i genomsnitt +47,67 procent per år; riket +286,0 procent
+- Förändring 1 år: +2 476 antal (från 9 652 år 2024), det vill säga +25,7 procent; riket +8,9 procent
+
+### Gästnätter, hotell [uppdelning av Gästnätter, totalt: boendeformerna] (antal, 2022)
+- Hylte: 12 723
+- Halland (länet): 1 142 911
+- Riket: 39 681 368
+- Plats bland landets 111 kommuner: 111 (1 = högsta värdet)
+- Hallands kommuner 2022 (högst först): Halmstad 454 754; Varberg 289 266; Falkenberg 273 501; Kungsbacka 90 483; Hylte 12 723
+- Plats bland Hallands 5 kommuner: 5
+- Förändring 1 år: +3 835 antal (från 8 888 år 2021), det vill säga +43,1 procent; riket +36,3 procent
+
+### Gästnätter, camping [uppdelning av Gästnätter, totalt: boendeformerna] (antal, 2025)
+- Hylte: 27 216
+- Halland (länet): 1 654 047
+- Riket: 17 259 921
+- Plats bland landets 57 kommuner: 57 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Falkenberg 557 412; Varberg 489 561; Halmstad 365 326; Laholm 123 992; Kungsbacka 90 540; Hylte 27 216
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 1 år: -445 antal (från 27 661 år 2024), det vill säga -1,6 procent; riket +3,1 procent
 
 ### Gästnätter per invånare (antal, 2025)
 Mäter: Antal gästnätter per invånare. Mäter turismintensiteten i förhållande till kommunens storlek. Beräknat med totalbefolkning.
@@ -64,54 +106,29 @@ Mäter: Antal gästnätter per invånare. Mäter turismintensiteten i förhålla
 - Plats bland landets 235 kommuner: 162 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Falkenberg 20; Varberg 12; Halmstad 8; Laholm 6; Hylte 4; Kungsbacka 2
 - Plats bland Hallands 6 kommuner: 5
+- Förändring hela serien sedan 2008: +1 antal (från 3 år 2008), det vill säga +22,6 procent eller i genomsnitt +1,20 procent per år; riket +24,1 procent
+- Förändring 10 år: +1 antal (från 3 år 2015), det vill säga +22,6 procent eller i genomsnitt +2,06 procent per år; riket +9,8 procent
+- Förändring 5 år: +0 antal (från 3 år 2020), det vill säga +15,2 procent eller i genomsnitt +2,86 procent per år; riket +59,5 procent
 - Förändring 1 år: -0 antal (från 4 år 2024), det vill säga -5,0 procent; riket +3,1 procent
-- Förändring 5 år: +0 antal (från 3 år 2020), det vill säga +15,2 procent; riket +59,5 procent
-- Förändring 10 år: +1 antal (från 3 år 2015), det vill säga +22,6 procent; riket +9,8 procent
+- Hylte år för år: 2015 3; 2016 3; 2017 3; 2018 3; 2019 3; 2020 3; 2021 4; 2022 4; 2023 4; 2024 4; 2025 4
 - Serien för Hylte 2008–2025: högst 4 (2022), lägst 3 (2010)
 
-### Gästnätter, hotell [Per anläggningstyp] (antal, 2022)
-- Hylte: 12 723
-- Halland (länet): 1 142 911
-- Riket: 39 681 368
-- Plats bland landets 111 kommuner: 111 (1 = högsta värdet)
-- Hallands kommuner 2022 (högst först): Halmstad 454 754; Varberg 289 266; Falkenberg 273 501; Kungsbacka 90 483; Hylte 12 723
-- Plats bland Hallands 5 kommuner: 5
-
-### Gästnätter, camping [Per anläggningstyp] (antal, 2025)
-- Hylte: 27 216
-- Halland (länet): 1 654 047
-- Riket: 17 259 921
-- Plats bland landets 57 kommuner: 57 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Falkenberg 557 412; Varberg 489 561; Halmstad 365 326; Laholm 123 992; Kungsbacka 90 540; Hylte 27 216
+### Gästnätter, årlig förändring (procent, 2025)
+Mäter: Gästnätternas förändring jämfört med föregående år, procent.
+- Hylte: -6,60
+- Halland (länet): 5,40
+- Riket: 2,50
+- Skillnad Hylte mot riket: -9,10 procentenheter
+- Skillnad Hylte mot Halland: -12,00 procentenheter
+- Plats bland landets 235 kommuner: 197 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 9,80; Varberg 6,50; Falkenberg 6,00; Halmstad 5,30; Kungsbacka -2,60; Hylte -6,60
 - Plats bland Hallands 6 kommuner: 6
-
-## Inhemska och utländska gäster
-
-### Gästnätter, svenska gäster (antal, 2025)
-Mäter: Antal gästnätter av gäster med hemland Sverige.
-- Hylte: 26 005
-- Halland (länet): 2 658 827
-- Riket: 51 439 128
-- Plats bland landets 235 kommuner: 195 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Falkenberg 846 271; Halmstad 762 670; Varberg 728 646; Kungsbacka 141 664; Laholm 132 199; Hylte 26 005
-- Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: -5 194 antal (från 31 199 år 2024), det vill säga -16,6 procent; riket +2,6 procent
-- Förändring 5 år: -7 566 antal (från 33 571 år 2020), det vill säga -22,5 procent; riket +34,9 procent
-- Förändring 10 år: +513 antal (från 25 492 år 2015), det vill säga +2,0 procent; riket +14,7 procent
-- Serien för Hylte 2008–2025: högst 38 308 (2022), lägst 23 123 (2011)
-
-### Gästnätter, utländska gäster (antal, 2025)
-Mäter: Antal gästnätter av gäster med hemland utanför Sverige.
-- Hylte: 12 128
-- Halland (länet): 464 537
-- Riket: 18 311 128
-- Plats bland landets 235 kommuner: 159 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 105 231; Varberg 102 020; Falkenberg 98 955; Laholm 31 387; Kungsbacka 28 419; Hylte 12 128
-- Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: +2 476 antal (från 9 652 år 2024), det vill säga +25,7 procent; riket +8,9 procent
-- Förändring 5 år: +10 401 antal (från 1 727 år 2020), det vill säga +602,3 procent; riket +286,0 procent
-- Förändring 10 år: +4 708 antal (från 7 420 år 2015), det vill säga +63,5 procent; riket +30,8 procent
-- Serien för Hylte 2008–2025: högst 12 128 (2025), lägst 1 727 (2020)
+- Förändring hela serien sedan 2009: -12,90 procentenheter (från 6,30 år 2009); riket +0,70 procentenheter
+- Förändring 10 år: -9,20 procentenheter (från 2,60 år 2015); riket -3,90 procentenheter
+- Förändring 5 år: -1,20 procentenheter (från -5,40 år 2020); riket +38,20 procentenheter
+- Förändring 1 år: -4,80 procentenheter (från -1,80 år 2024); riket +1,80 procentenheter
+- Hylte år för år: 2015 2,60; 2016 3,80; 2017 -6,50; 2018 5,30; 2019 10,80; 2020 -5,40; 2021 17,80; 2022 12,30; 2023 -10,80; 2024 -1,80; 2025 -6,60
+- Serien för Hylte 2009–2025: högst 30,70 (2012), lägst -17,50 (2013)
 
 ### Andel utländska gästnätter (procent, 2025)
 Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent.
@@ -123,10 +140,14 @@ Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent.
 - Plats bland landets 235 kommuner: 41 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Hylte 31,8; Laholm 19,2; Kungsbacka 16,7; Varberg 12,3; Halmstad 12,1; Falkenberg 10,5
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år: +8,2 procentenheter (från 23,6 år 2024); riket +1,2 procentenheter
-- Förändring 5 år: +26,9 procentenheter (från 4,9 år 2020); riket +15,2 procentenheter
+- Förändring hela serien sedan 2008: +10,8 procentenheter (från 21,0 år 2008); riket +2,8 procentenheter
 - Förändring 10 år: +9,3 procentenheter (från 22,5 år 2015); riket +2,5 procentenheter
+- Förändring 5 år: +26,9 procentenheter (från 4,9 år 2020); riket +15,2 procentenheter
+- Förändring 1 år: +8,2 procentenheter (från 23,6 år 2024); riket +1,2 procentenheter
+- Hylte år för år: 2015 22,5; 2016 25,5; 2017 26,8; 2018 28,7; 2019 27,4; 2020 4,9; 2021 12,8; 2022 17,8; 2023 26,0; 2024 23,6; 2025 31,8
 - Serien för Hylte 2008–2025: högst 31,8 (2025), lägst 4,9 (2020)
+
+## Gästankomster
 
 ### Gästankomster, svenska (antal, 2025)
 Mäter: Antal ankomster av svenska gäster till kommersiella boenden.
@@ -136,9 +157,11 @@ Mäter: Antal ankomster av svenska gäster till kommersiella boenden.
 - Plats bland landets 235 kommuner: 191 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Falkenberg 453 205; Halmstad 383 796; Varberg 369 644; Kungsbacka 77 644; Laholm 56 491; Hylte 13 171
 - Plats bland Hallands 6 kommuner: 6
+- Förändring hela serien sedan 2008: +3 150 antal (från 10 021 år 2008), det vill säga +31,4 procent eller i genomsnitt +1,62 procent per år; riket +48,1 procent
+- Förändring 10 år: +2 249 antal (från 10 922 år 2015), det vill säga +20,6 procent eller i genomsnitt +1,89 procent per år; riket +20,8 procent
+- Förändring 5 år: -946 antal (från 14 117 år 2020), det vill säga -6,7 procent eller i genomsnitt -1,38 procent per år; riket +55,3 procent
 - Förändring 1 år: -2 207 antal (från 15 378 år 2024), det vill säga -14,4 procent; riket +4,4 procent
-- Förändring 5 år: -946 antal (från 14 117 år 2020), det vill säga -6,7 procent; riket +55,3 procent
-- Förändring 10 år: +2 249 antal (från 10 922 år 2015), det vill säga +20,6 procent; riket +20,8 procent
+- Hylte år för år: 2015 10 922; 2016 11 255; 2017 11 178; 2018 11 141; 2019 12 591; 2020 14 117; 2021 16 013; 2022 17 923; 2023 15 475; 2024 15 378; 2025 13 171
 - Serien för Hylte 2008–2025: högst 17 923 (2022), lägst 9 551 (2011)
 
 ### Gästankomster, utländska (antal, 2025)
@@ -149,9 +172,11 @@ Mäter: Antal ankomster av utländska gäster till kommersiella boenden.
 - Plats bland landets 235 kommuner: 162 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 63 620; Falkenberg 54 977; Varberg 52 510; Kungsbacka 15 835; Laholm 15 068; Hylte 5 059
 - Plats bland Hallands 6 kommuner: 6
+- Förändring hela serien sedan 2008: +2 751 antal (från 2 308 år 2008), det vill säga +119,2 procent eller i genomsnitt +4,72 procent per år; riket +76,8 procent
+- Förändring 10 år: +2 409 antal (från 2 650 år 2015), det vill säga +90,9 procent eller i genomsnitt +6,68 procent per år; riket +30,3 procent
+- Förändring 5 år: +4 448 antal (från 611 år 2020), det vill säga +728,0 procent eller i genomsnitt +52,62 procent per år; riket +331,5 procent
 - Förändring 1 år: +972 antal (från 4 087 år 2024), det vill säga +23,8 procent; riket -2,8 procent
-- Förändring 5 år: +4 448 antal (från 611 år 2020), det vill säga +728,0 procent; riket +331,5 procent
-- Förändring 10 år: +2 409 antal (från 2 650 år 2015), det vill säga +90,9 procent; riket +30,3 procent
+- Hylte år för år: 2015 2 650; 2016 3 369; 2017 3 484; 2018 3 675; 2019 3 967; 2020 611; 2021 2 223; 2022 3 408; 2023 4 218; 2024 4 087; 2025 5 059
 - Serien för Hylte 2008–2025: högst 5 059 (2025), lägst 611 (2020)
 
 ### Andel utländska gästankomster (procent, 2025)
@@ -164,44 +189,44 @@ Mäter: Utländska gästankomster som andel av samtliga ankomster, procent.
 - Plats bland landets 235 kommuner: 56 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Hylte 27,8; Laholm 21,1; Kungsbacka 16,9; Halmstad 14,2; Varberg 12,4; Falkenberg 10,8
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 1 år: +6,8 procentenheter (från 21,0 år 2024); riket -1,3 procentenheter
-- Förändring 5 år: +23,7 procentenheter (från 4,1 år 2020); riket +13,7 procentenheter
+- Förändring hela serien sedan 2008: +9,1 procentenheter (från 18,7 år 2008); riket +3,0 procentenheter
 - Förändring 10 år: +8,3 procentenheter (från 19,5 år 2015); riket +1,3 procentenheter
+- Förändring 5 år: +23,7 procentenheter (från 4,1 år 2020); riket +13,7 procentenheter
+- Förändring 1 år: +6,8 procentenheter (från 21,0 år 2024); riket -1,3 procentenheter
+- Hylte år för år: 2015 19,5; 2016 23,0; 2017 23,8; 2018 24,8; 2019 24,0; 2020 4,1; 2021 12,2; 2022 16,0; 2023 21,4; 2024 21,0; 2025 27,8
 - Serien för Hylte 2008–2025: högst 27,8 (2025), lägst 4,1 (2020)
 
-## Utveckling och tillväxt
+## Kapacitet och beläggning
 
-### Gästnätter, årlig förändring (procent, 2025)
-Mäter: Gästnätternas förändring jämfört med föregående år, procent.
-- Hylte: -6,60
-- Halland (länet): 5,40
-- Riket: 2,50
-- Skillnad Hylte mot riket: -9,10 procentenheter
-- Skillnad Hylte mot Halland: -12,00 procentenheter
-- Plats bland landets 235 kommuner: 197 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 9,80; Varberg 6,50; Falkenberg 6,00; Halmstad 5,30; Kungsbacka -2,60; Hylte -6,60
+### Antal anläggningar (antal, 2025)
+Mäter: Totalt antal kommersiella boendeanläggningar.
+- Hylte: 10
+- Halland (länet): 145
+- Riket: 4 395
+- Plats bland landets 235 kommuner: 110 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 35; Varberg 32; Falkenberg 28; Laholm 18; Kungsbacka 15; Hylte 10
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: -4,80 procentenheter (från -1,80 år 2024); riket +1,80 procentenheter
-- Förändring 5 år: -1,20 procentenheter (från -5,40 år 2020); riket +38,20 procentenheter
-- Förändring 10 år: -9,20 procentenheter (från 2,60 år 2015); riket -3,90 procentenheter
-- Serien för Hylte 2009–2025: högst 30,70 (2012), lägst -17,50 (2013)
+- Förändring hela serien sedan 2008: +6 antal (från 4 år 2008), det vill säga +150,0 procent eller i genomsnitt +5,54 procent per år; riket +2,8 procent
+- Förändring 10 år: +6 antal (från 4 år 2015), det vill säga +150,0 procent eller i genomsnitt +9,60 procent per år; riket -0,4 procent
+- Förändring 5 år: +4 antal (från 6 år 2020), det vill säga +66,7 procent eller i genomsnitt +10,76 procent per år; riket -2,2 procent
+- Förändring 1 år: -1 antal (från 11 år 2024), det vill säga -9,1 procent; riket -1,5 procent
+- Hylte år för år: 2015 4; 2016 5; 2017 5; 2018 5; 2019 6; 2020 6; 2021 6; 2022 6; 2023 11; 2024 11; 2025 10
+- Serien för Hylte 2008–2025: högst 11 (2024), lägst 3 (2010)
 
-### Logiintäkter, årlig förändring (procent, 2025)
-Mäter: Logiintäkternas förändring jämfört med föregående år, procent.
-- Hylte: -10,2
-- Halland (länet): 8,0
-- Riket: 4,4
-- Skillnad Hylte mot riket: -14,6 procentenheter
-- Skillnad Hylte mot Halland: -18,2 procentenheter
-- Plats bland landets 235 kommuner: 211 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Falkenberg 21,8; Laholm 17,6; Varberg 6,5; Halmstad 1,7; Kungsbacka -6,3; Hylte -10,2
+### Gästnätter per anläggning (antal, 2025)
+Mäter: Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.
+- Hylte: 3 822
+- Halland (länet): 21 615
+- Riket: 16 096
+- Plats bland landets 235 kommuner: 223 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Falkenberg 33 763; Varberg 25 971; Halmstad 24 930; Kungsbacka 11 340; Laholm 9 095; Hylte 3 822
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: -4,9 procentenheter (från -5,3 år 2024); riket +1,50 procentenheter
-- Förändring 5 år: +6,5 procentenheter (från -16,7 år 2020); riket +51,10 procentenheter
-- Förändring 10 år: +36,4 procentenheter (från -46,6 år 2015); riket -3,80 procentenheter
-- Serien för Hylte 2009–2025: högst 142,0 (2019), lägst -46,6 (2015)
-
-## Kapacitet och intäkter
+- Förändring hela serien sedan 2008: -4 181 antal (från 8 003 år 2008), det vill säga -52,2 procent eller i genomsnitt -4,25 procent per år; riket +37,3 procent
+- Förändring 10 år: -4 414 antal (från 8 236 år 2015), det vill säga -53,6 procent eller i genomsnitt -7,39 procent per år; riket +18,3 procent
+- Förändring 5 år: -2 063 antal (från 5 885 år 2020), det vill säga -35,1 procent eller i genomsnitt -8,27 procent per år; riket +67,1 procent
+- Förändring 1 år: +102 antal (från 3 720 år 2024), det vill säga +2,7 procent; riket +4,0 procent
+- Hylte år för år: 2015 8 236; 2016 6 839; 2017 6 392; 2018 6 733; 2019 6 217; 2020 5 885; 2021 6 933; 2022 7 784; 2023 3 789; 2024 3 720; 2025 3 822
+- Serien för Hylte 2008–2025: högst 10 360 (2011), lägst 3 720 (2024)
 
 ### Rumsbeläggning (procent, 2025)
 Mäter: Andel belagda rum av totalt antal disponibla rum, procent. Omfattar hotell, stugbyar och vandrarhem.
@@ -213,9 +238,11 @@ Mäter: Andel belagda rum av totalt antal disponibla rum, procent. Omfattar hote
 - Plats bland landets 235 kommuner: 174 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Varberg 59,2; Falkenberg 53,8; Halmstad 51,4; Kungsbacka 46,4; Hylte 33,2; Laholm 31,1
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år: -2,7 procentenheter (från 35,9 år 2024); riket -0,3 procentenheter
-- Förändring 5 år: +9,3 procentenheter (från 23,9 år 2020); riket +20,8 procentenheter
+- Förändring hela serien sedan 2008: -5,6 procentenheter (från 38,8 år 2008); riket +4,9 procentenheter
 - Förändring 10 år: -15,6 procentenheter (från 48,8 år 2015); riket 0,0 procentenheter
+- Förändring 5 år: +9,3 procentenheter (från 23,9 år 2020); riket +20,8 procentenheter
+- Förändring 1 år: -2,7 procentenheter (från 35,9 år 2024); riket -0,3 procentenheter
+- Hylte år för år: 2015 48,8; 2016 39,9; 2017 40,8; 2018 37,7; 2019 34,1; 2020 23,9; 2021 33,8; 2022 38,7; 2023 38,5; 2024 35,9; 2025 33,2
 - Serien för Hylte 2008–2025: högst 48,8 (2015), lägst 23,9 (2020)
 
 ### Bäddbeläggning (procent, 2025)
@@ -228,10 +255,14 @@ Mäter: Andel belagda bäddar av totalt antal disponibla bäddar, procent.
 - Plats bland landets 235 kommuner: 159 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Varberg 48,6; Halmstad 38,4; Falkenberg 37,3; Kungsbacka 36,7; Hylte 25,6; Laholm 22,0
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år: -2,2 procentenheter (från 27,8 år 2024); riket -1,0 procentenheter
-- Förändring 5 år: +7,6 procentenheter (från 18,0 år 2020); riket +14,2 procentenheter
+- Förändring hela serien sedan 2008: -0,5 procentenheter (från 26,1 år 2008); riket +5,2 procentenheter
 - Förändring 10 år: +2,0 procentenheter (från 23,6 år 2015); riket -0,1 procentenheter
+- Förändring 5 år: +7,6 procentenheter (från 18,0 år 2020); riket +14,2 procentenheter
+- Förändring 1 år: -2,2 procentenheter (från 27,8 år 2024); riket -1,0 procentenheter
+- Hylte år för år: 2015 23,6; 2016 27,0; 2017 29,8; 2018 28,7; 2019 27,4; 2020 18,0; 2021 24,3; 2022 29,3; 2023 29,0; 2024 27,8; 2025 25,6
 - Serien för Hylte 2008–2025: högst 36,1 (2011), lägst 18,0 (2020)
+
+## Intäkter
 
 ### Logiintäkter (kr, 2025)
 Mäter: Totala logiintäkter i kronor vid kommersiella boenden.
@@ -243,9 +274,11 @@ Mäter: Totala logiintäkter i kronor vid kommersiella boenden.
 - Plats bland landets 235 kommuner: 194 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 420 141 115; Varberg 390 552 565; Falkenberg 362 781 156; Kungsbacka 72 838 402; Laholm 43 555 138; Hylte 13 881 151
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: -1 579 066 kr (från 15 460 217 år 2024); riket +1 738 864 764 kr
-- Förändring 5 år: +4 841 272 kr (från 9 039 879 år 2020); riket +24 073 838 942 kr
+- Förändring hela serien sedan 2008: +11 075 778 kr (från 2 805 373 år 2008); riket +22 832 052 854 kr
 - Förändring 10 år: +11 559 640 kr (från 2 321 511 år 2015); riket +17 663 193 112 kr
+- Förändring 5 år: +4 841 272 kr (från 9 039 879 år 2020); riket +24 073 838 942 kr
+- Förändring 1 år: -1 579 066 kr (från 15 460 217 år 2024); riket +1 738 864 764 kr
+- Hylte år för år: 2015 2 321 511; 2016 3 243 688; 2017 4 478 954; 2018 4 484 041; 2019 10 853 568; 2020 9 039 879; 2021 12 314 569; 2022 16 224 419; 2023 16 323 899; 2024 15 460 217; 2025 13 881 151
 - Serien för Hylte 2008–2025: högst 16 323 899 (2023), lägst 2 321 511 (2015)
 
 ### Logiintäkt per gästnatt (kr, 2025)
@@ -258,33 +291,26 @@ Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala lo
 - Plats bland landets 235 kommuner: 163 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 482,0; Varberg 470,0; Kungsbacka 428,0; Falkenberg 384,0; Hylte 363,0; Laholm 266,0
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 1 år: -15,0 kr (från 378,0 år 2024); riket +11,0 kr
-- Förändring 5 år: +107,0 kr (från 256,0 år 2020); riket +189,0 kr
+- Förändring hela serien sedan 2008: +275,0 kr (från 88,0 år 2008); riket +217,0 kr
 - Förändring 10 år: +293,0 kr (från 70,0 år 2015); riket +191,0 kr
+- Förändring 5 år: +107,0 kr (från 256,0 år 2020); riket +189,0 kr
+- Förändring 1 år: -15,0 kr (från 378,0 år 2024); riket +11,0 kr
+- Hylte år för år: 2015 70,0; 2016 95,0; 2017 140,0; 2018 133,0; 2019 291,0; 2020 256,0; 2021 296,0; 2022 347,0; 2023 392,0; 2024 378,0; 2025 363,0
 - Serien för Hylte 2008–2025: högst 392,0 (2023), lägst 70,0 (2015)
 
-### Gästnätter per anläggning (antal, 2025)
-Mäter: Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.
-- Hylte: 3 822
-- Halland (länet): 21 615
-- Riket: 16 096
-- Plats bland landets 235 kommuner: 223 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Falkenberg 33 763; Varberg 25 971; Halmstad 24 930; Kungsbacka 11 340; Laholm 9 095; Hylte 3 822
+### Logiintäkter, årlig förändring (procent, 2025)
+Mäter: Logiintäkternas förändring jämfört med föregående år, procent.
+- Hylte: -10,2
+- Halland (länet): 8,0
+- Riket: 4,4
+- Skillnad Hylte mot riket: -14,6 procentenheter
+- Skillnad Hylte mot Halland: -18,2 procentenheter
+- Plats bland landets 235 kommuner: 211 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Falkenberg 21,8; Laholm 17,6; Varberg 6,5; Halmstad 1,7; Kungsbacka -6,3; Hylte -10,2
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: +102 antal (från 3 720 år 2024), det vill säga +2,7 procent; riket +4,0 procent
-- Förändring 5 år: -2 063 antal (från 5 885 år 2020), det vill säga -35,1 procent; riket +67,1 procent
-- Förändring 10 år: -4 414 antal (från 8 236 år 2015), det vill säga -53,6 procent; riket +18,3 procent
-- Serien för Hylte 2008–2025: högst 10 360 (2011), lägst 3 720 (2024)
-
-### Antal anläggningar (antal, 2025)
-Mäter: Totalt antal kommersiella boendeanläggningar.
-- Hylte: 10
-- Halland (länet): 145
-- Riket: 4 395
-- Plats bland landets 235 kommuner: 110 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 35; Varberg 32; Falkenberg 28; Laholm 18; Kungsbacka 15; Hylte 10
-- Plats bland Hallands 6 kommuner: 6
-- Förändring 1 år: -1 antal (från 11 år 2024), det vill säga -9,1 procent; riket -1,5 procent
-- Förändring 5 år: +4 antal (från 6 år 2020), det vill säga +66,7 procent; riket -2,2 procent
-- Förändring 10 år: +6 antal (från 4 år 2015), det vill säga +150,0 procent; riket -0,4 procent
-- Serien för Hylte 2008–2025: högst 11 (2024), lägst 3 (2010)
+- Förändring hela serien sedan 2009: -17,3 procentenheter (från 7,1 år 2009); riket +8,80 procentenheter
+- Förändring 10 år: +36,4 procentenheter (från -46,6 år 2015); riket -3,80 procentenheter
+- Förändring 5 år: +6,5 procentenheter (från -16,7 år 2020); riket +51,10 procentenheter
+- Förändring 1 år: -4,9 procentenheter (från -5,3 år 2024); riket +1,50 procentenheter
+- Hylte år för år: 2015 -46,6; 2016 39,7; 2017 38,1; 2018 0,1; 2019 142,0; 2020 -16,7; 2021 36,2; 2022 31,7; 2023 0,6; 2024 -5,3; 2025 -10,2
+- Serien för Hylte 2009–2025: högst 142,0 (2019), lägst -46,6 (2015)

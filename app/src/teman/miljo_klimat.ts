@@ -9,13 +9,11 @@ const miljoKlimat: TemaConfig = {
   sektioner: [
     {
       id: "utslapp",
+      gruppRubrik: "Utsläpp av växthusgaser",
       namn: "Växthusgasutsläpp",
       kpiIds: ["N00401"],
       undersektioner: [
-        {
-          namn: "Per sektor",
-          kpiIds: ["N85073", "N85077", "N85078", "N85072"],
-        },
+        { namn: "utsläppen från fyra sektorer", kpiIds: ["N85073", "N85077", "N85078", "N85072"] },
       ],
     },
     {
@@ -24,6 +22,12 @@ const miljoKlimat: TemaConfig = {
       kpiIds: ["N45913", "N45925", "N00403"],
     },
   ],
+  kortNamn: {
+    N85073: "Transporter",
+    N85077: "Industri",
+    N85078: "Jordbruk",
+    N85072: "Uppvärmning",
+  },
   visningsnamn: {
     N00401: "Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare",
     N07702: "Växthusgasutsläpp totalt, ton CO2-ekvivalenter",
@@ -39,12 +43,6 @@ const miljoKlimat: TemaConfig = {
     N45945: "Energianvändning transporter, MWh",
     N45925: "Elproduktion av förnybara energikällor, andel (%)",
     N00403: "Ekologiskt brukad åkermark, andel (%)",
-  },
-  kortNamn: {
-    N85073: "Transporter",
-    N85077: "Industri",
-    N85078: "Jordbruk",
-    N85072: "Uppvärmning",
   },
   lagtArBra: [
     "N00401", "N07702", "N85073", "N85533", "N85077", "N85537",

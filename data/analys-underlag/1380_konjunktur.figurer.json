@@ -1,0 +1,338 @@
+[
+  {
+    "id": "K_ANDEL_UTL",
+    "namn": "Andel utländska gästnätter (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Gästnätter",
+    "forsta": 202001,
+    "sista": 202608
+  },
+  {
+    "id": "K_ARBL_FORANDR",
+    "namn": "Arbetslöshet, årsförändring (procentenheter)",
+    "enhet": "procentenheter",
+    "roll": "indikator i bandet Arbetslöshet och arbetskraft",
+    "forsta": 202101,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARBL_INR",
+    "namn": "Arbetslösa bland inrikes födda 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_ARBL_TOT (inrikes och utrikes födda)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARBL_KV",
+    "namn": "Arbetslösa bland kvinnor 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_ARBL_TOT (kvinnor och män)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARBL_MAN",
+    "namn": "Arbetslösa bland män 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_ARBL_TOT (kvinnor och män)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARBL_TOT",
+    "namn": "Arbetslösa i arbetskraften 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Arbetslöshet och arbetskraft",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARBL_UTR",
+    "namn": "Arbetslösa bland utrikes födda 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_ARBL_TOT (inrikes och utrikes födda)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARKR_KV",
+    "namn": "I arbetskraften bland kvinnor 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_ARKR_TOT (kvinnor och män)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARKR_MAN",
+    "namn": "I arbetskraften bland män 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_ARKR_TOT (kvinnor och män)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_ARKR_TOT",
+    "namn": "I arbetskraften bland befolkningen 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Arbetslöshet och arbetskraft",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_BEF_FORANDR",
+    "namn": "Befolkningsförändring mot samma månad fg. år",
+    "enhet": "antal",
+    "roll": "indikator i bandet Befolkning och bostadsbyggande",
+    "forsta": 202101,
+    "sista": 202607
+  },
+  {
+    "id": "K_BEF_TOT",
+    "namn": "Folkmängd (prelim.)",
+    "enhet": "antal",
+    "roll": "indikator i bandet Befolkning och bostadsbyggande",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_BYGG_FLERBO",
+    "namn": "Påbörjade lägenheter, flerbostadshus (kvartal)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_BYGG_TOT (småhus och flerbostadshus)",
+    "forsta": 202003,
+    "sista": 202606
+  },
+  {
+    "id": "K_BYGG_SMAHUS",
+    "namn": "Påbörjade lägenheter, småhus (kvartal)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_BYGG_TOT (småhus och flerbostadshus)",
+    "forsta": 202003,
+    "sista": 202606
+  },
+  {
+    "id": "K_BYGG_TOT",
+    "namn": "Påbörjade lägenheter, alla hustyper (kvartal)",
+    "enhet": "antal",
+    "roll": "indikator i bandet Befolkning och bostadsbyggande",
+    "forsta": 202003,
+    "sista": 202606
+  },
+  {
+    "id": "K_DAG_BYG",
+    "namn": "Sysselsatta inom byggverksamhet (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_ENMI",
+    "namn": "Sysselsatta inom energi och miljö (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_FAST",
+    "namn": "Sysselsatta inom fastighetsverksamhet (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_FINANS",
+    "namn": "Sysselsatta inom finans och försäkring (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_FORETJ",
+    "namn": "Sysselsatta inom företagstjänster (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_HAND",
+    "namn": "Sysselsatta inom handel (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_HOTEL",
+    "namn": "Sysselsatta inom hotell och restaurang (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_IND",
+    "namn": "Sysselsatta inom tillverkning (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_IT",
+    "namn": "Sysselsatta inom IT och kommunikation (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_JORD",
+    "namn": "Sysselsatta inom jordbruk och skogsbruk (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_KULT",
+    "namn": "Sysselsatta inom kultur, nöje och fritid (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_OFF",
+    "namn": "Sysselsatta inom offentlig sektor (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_TILLVAXT",
+    "namn": "Dagbefolkning, årsförändring (procent)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Näringsliv (dagbefolkning)",
+    "forsta": 202101,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_TOT",
+    "namn": "Sysselsatta dagbefolkning 15–74 år, antal (prelim.)",
+    "enhet": "antal",
+    "roll": "indikator i bandet Näringsliv (dagbefolkning)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_DAG_TRANS",
+    "namn": "Sysselsatta inom transport (prelim.)",
+    "enhet": "antal",
+    "roll": "uppdelning av K_DAG_TOT (branscherna)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_GAST_SVE",
+    "namn": "Gästnätter svenska gäster",
+    "enhet": "antal",
+    "roll": "uppdelning av K_GAST_TOT (svenska och utländska gäster)",
+    "forsta": 202001,
+    "sista": 202608
+  },
+  {
+    "id": "K_GAST_TILLVAXT",
+    "namn": "Gästnätter, årsförändring (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Gästnätter",
+    "forsta": 202101,
+    "sista": 202608
+  },
+  {
+    "id": "K_GAST_TOT",
+    "namn": "Gästnätter totalt (prelim.)",
+    "enhet": "antal",
+    "roll": "indikator i bandet Gästnätter",
+    "forsta": 202001,
+    "sista": 202608
+  },
+  {
+    "id": "K_GAST_UTL",
+    "namn": "Gästnätter utländska gäster",
+    "enhet": "antal",
+    "roll": "uppdelning av K_GAST_TOT (svenska och utländska gäster)",
+    "forsta": 202001,
+    "sista": 202608
+  },
+  {
+    "id": "K_NATT_ANT",
+    "namn": "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+    "enhet": "antal",
+    "roll": "indikator i bandet Sysselsättning",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_NATT_GRAD",
+    "namn": "Sysselsättningsgrad 15–74 år (prelim.)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Sysselsättning",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_SYSS_FORANDR",
+    "namn": "Sysselsättningsgrad, årsförändring (procentenheter)",
+    "enhet": "procentenheter",
+    "roll": "indikator i bandet Sysselsättning",
+    "forsta": 202101,
+    "sista": 202607
+  },
+  {
+    "id": "K_SYSS_INR",
+    "namn": "Sysselsatta bland inrikes födda 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_SYSS_TOT (inrikes och utrikes födda)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_SYSS_KV",
+    "namn": "Sysselsatta bland kvinnor 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_SYSS_TOT (kvinnor och män)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_SYSS_MAN",
+    "namn": "Sysselsatta bland män 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_SYSS_TOT (kvinnor och män)",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_SYSS_TOT",
+    "namn": "Sysselsatta bland befolkningen 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Sysselsättning",
+    "forsta": 202001,
+    "sista": 202607
+  },
+  {
+    "id": "K_SYSS_UTR",
+    "namn": "Sysselsatta bland utrikes födda 20–64 år, andel (%) (prelim.)",
+    "enhet": "procent",
+    "roll": "uppdelning av K_SYSS_TOT (inrikes och utrikes födda)",
+    "forsta": 202001,
+    "sista": 202607
+  }
+]

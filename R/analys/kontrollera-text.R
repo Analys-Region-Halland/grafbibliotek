@@ -2,9 +2,9 @@
 #
 # Användning:  Rscript R/analys/kontrollera-text.R 1380_transport 1381_transport ...
 #
-# Läser data/analys-cache/<id>.json och data/analys-underlag/<id>.md. För en översikt
-# (<kod>_oversikt) räknas även enhetens alla temaunderlag som tillåtna källor.
-# Kontrollerar också att hashen stämmer med uppdragslistan (data/analys-uppdrag.md).
+# Läser data/analys-cache/<id>.json, data/analys-underlag/<id>.md och <id>.figurer.json.
+# Kontrollerar siffrorna, figurerna (R/analys/figurregler.md) och att hashen stämmer med
+# uppdragslistan (data/analys-uppdrag.md).
 
 suppressPackageStartupMessages({
   library(dplyr); library(stringr); library(jsonlite); library(readr); library(glue)
@@ -23,12 +23,10 @@ for (id in commandArgs(trailingOnly = TRUE)) {
     message(glue("{id}: JSON saknar fält eller går inte att läsa")); fel_totalt <- fel_totalt + 1; next
   }
   kallor <- read_file(under)
-  if (grepl("_oversikt$", id)) {
-    kod <- sub("_oversikt$", "", id)
-    ovr <- setdiff(list.files("data/analys-underlag", paste0("^", kod, "_"), full.names = TRUE), under)
-    kallor <- paste(c(kallor, vapply(ovr, read_file, "")), collapse = "\n")
-  }
   problem <- kontrollera(c$res, tillatna_tal(kallor))
+  fu_fil <- file.path("data", "analys-underlag", paste0(id, ".figurer.json"))
+  kpier <- if (file.exists(fu_fil)) vapply(fromJSON(fu_fil, simplifyVector = FALSE), `[[`, "", "id") else character()
+  problem <- c(problem, kontrollera_figurer(c$res, kpier)$fel)
   rad <- uppdrag[grepl(paste0("^\\| ", id, " \\|"), uppdrag)]
   if (length(rad) == 1 && !grepl(c$hash %||% "saknas", rad, fixed = TRUE)) {
     problem <- c(problem, "Hashen stämmer inte med uppdragslistan")

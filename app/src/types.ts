@@ -22,21 +22,24 @@ export interface KpiRow {
   ki_upper: number | null;
 }
 
-/** Slim JSON-format från per-tema-filer (korta nycklar, inga redundanta kolumner) */
+/**
+ * Slim JSON-format från per-tema-filer (korta nycklar, inga redundanta kolumner).
+ * I de kompakta tabellfilerna har övriga kommuner bara värdet; saknade fält är null.
+ */
 export interface SlimRow {
   k: string;   // kpi_id
   m: string;   // kommun_kod
   t: string;   // kommun_typ
   a: number;   // ar
-  v: number | null;   // varde
-  r: number | null;   // riksvarde
-  rg: number | null;  // rang_total
-  n: number | null;   // antal_kommuner
-  t1: number | null;  // trend_1ar
-  t5: number | null;  // trend_5ar
-  t10: number | null; // trend_10ar
-  kl: number | null;  // ki_lower
-  kh: number | null;  // ki_upper
+  v?: number | null;   // varde
+  r?: number | null;   // riksvarde
+  rg?: number | null;  // rang_total
+  n?: number | null;   // antal_kommuner
+  t1?: number | null;  // trend_1ar (äldre filer)
+  t5?: number | null;  // trend_5ar (äldre filer)
+  t10?: number | null; // trend_10ar (äldre filer)
+  kl?: number | null;  // ki_lower
+  kh?: number | null;  // ki_upper
 }
 
 /** Kommun-register: kort nyckelformat */
@@ -84,49 +87,32 @@ export const HALLAND_KODER: string[] = HALLAND_KOMMUNER
   .filter((k) => k.typ === "K")
   .map((k) => k.kod);
 
-// ─── Artiklar & Analys ───
+// ─── Kommungrupper (SKR:s indelning, för jämförelser i popupen) ───
 
-import type { TemaFarg } from "./teman/tema-config";
-
-export interface GrafConfig {
-  grafTyp: "tidsserie" | "karta";
-  kpiId: string;
-  temaId: string;
-  kommunKod?: string;
-  enhet?: string;
-  indexMode?: boolean;
-  showRiksnitt?: boolean;
-  showLanssnitt?: boolean;
-  extraLinjer?: string[];
-  bildtext?: string;
+export interface KommunGrupp {
+  kod: string;
+  namn: string;
+  huvudgrupp: string;
 }
 
-export type ArtikelBlock =
-  | { typ: "text"; innehall: string }
-  | { typ: "rubrik"; innehall: string; niva: 2 | 3 }
-  | { typ: "citat"; innehall: string; kalla?: string }
-  | { typ: "graf"; config: GrafConfig }
-  | { typ: "fakta"; titel: string; innehall: string };
-
-export interface ArtikelMeta {
-  slug: string;
-  titel: string;
-  ingress: string;
-  datum: string;
-  tema: string[];
-  temaFarg: TemaFarg;
-  forfattare?: string;
-  epost?: string;
+export interface KommunGruppData {
+  grupper: KommunGrupp[];
+  kommuner: Record<string, string>; // kommun_kod → gruppkod
 }
 
-export interface Artikel extends ArtikelMeta {
-  block: ArtikelBlock[];
-}
+// ─── Adresser ───
 
-export interface LoggPost {
-  datum: string;
-  typ: "artikel" | "data" | "funktion";
-  titel: string;
-  beskrivning?: string;
-  artikelSlug?: string;
-}
+/** Valet "Alla sida vid sida" i kommunväljaren */
+export const ALLA = "alla";
+
+/** Enhetens namn i adressen, t.ex. #/halmstad/befolkning */
+export const ENHET_SLUG: Record<string, string> = {
+  "0013": "halland",
+  "1384": "kungsbacka",
+  "1383": "varberg",
+  "1382": "falkenberg",
+  "1380": "halmstad",
+  "1381": "laholm",
+  "1315": "hylte",
+  [ALLA]: "alla",
+};

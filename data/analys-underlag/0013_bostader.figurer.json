@@ -1,0 +1,34 @@
+[
+  {
+    "id": "N07905",
+    "namn": "Färdigställda småhus per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "uppdelning av N07917 (småhus och flerbostadshus)",
+    "forsta": 2020,
+    "sista": 2025
+  },
+  {
+    "id": "N07906",
+    "namn": "Färdigställda lägenheter i flerbostadshus per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "uppdelning av N07917 (småhus och flerbostadshus)",
+    "forsta": 2020,
+    "sista": 2025
+  },
+  {
+    "id": "N07907",
+    "namn": "Trångbodda hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Priser och trångboddhet",
+    "forsta": 2012,
+    "sista": 2025
+  },
+  {
+    "id": "N07917",
+    "namn": "Nybyggda bostäder per 1 000 invånare",
+    "enhet": "antal/1 000 inv",
+    "roll": "indikator i bandet Bostadsbestånd och byggande",
+    "forsta": 2020,
+    "sista": 2025
+  }
+]

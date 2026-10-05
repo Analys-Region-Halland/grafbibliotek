@@ -1,0 +1,146 @@
+[
+  {
+    "id": "N01982",
+    "namn": "Invånare 25–64 år med eftergymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Utbildningsnivå, 25–64 år",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01982_KV",
+    "namn": "Kvinnor 25–64 år med eftergymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N01982 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01982_MAN",
+    "namn": "Män 25–64 år med eftergymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N01982 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01983",
+    "namn": "Invånare 25–64 år med gymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Utbildningsnivå, 25–64 år",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01983_KV",
+    "namn": "Kvinnor 25–64 år med gymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N01983 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01983_MAN",
+    "namn": "Män 25–64 år med gymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N01983 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01984",
+    "namn": "Invånare 25–64 år med förgymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Utbildningsnivå, 25–64 år",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01984_KV",
+    "namn": "Kvinnor 25–64 år med förgymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N01984 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N01984_MAN",
+    "namn": "Män 25–64 år med förgymnasial utbildning, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N01984 (kvinnor och män)",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
+    "id": "N15428",
+    "namn": "Behöriga till gymnasiets yrkesprogram efter årskurs 9, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Skolresultat",
+    "forsta": 2010,
+    "sista": 2026
+  },
+  {
+    "id": "N15428_KV",
+    "namn": "Behöriga till yrkesprogram efter årskurs 9, flickor, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N15428 (flickor och pojkar)",
+    "forsta": 2010,
+    "sista": 2026
+  },
+  {
+    "id": "N15428_MAN",
+    "namn": "Behöriga till yrkesprogram efter årskurs 9, pojkar, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N15428 (flickor och pojkar)",
+    "forsta": 2010,
+    "sista": 2026
+  },
+  {
+    "id": "N15507",
+    "namn": "Genomsnittligt meritvärde i årskurs 9, poäng",
+    "enhet": "poäng",
+    "roll": "indikator i bandet Skolresultat",
+    "forsta": 2015,
+    "sista": 2026
+  },
+  {
+    "id": "N15507_KV",
+    "namn": "Genomsnittligt meritvärde i årskurs 9, flickor, poäng",
+    "enhet": "poäng",
+    "roll": "uppdelning av N15507 (flickor och pojkar)",
+    "forsta": 2015,
+    "sista": 2026
+  },
+  {
+    "id": "N15507_MAN",
+    "namn": "Genomsnittligt meritvärde i årskurs 9, pojkar, poäng",
+    "enhet": "poäng",
+    "roll": "uppdelning av N15507 (flickor och pojkar)",
+    "forsta": 2015,
+    "sista": 2026
+  },
+  {
+    "id": "N17473",
+    "namn": "Högskolebehörighet inom 3 år efter gymnasiet, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Skolresultat",
+    "forsta": 2014,
+    "sista": 2025
+  },
+  {
+    "id": "N17473_KV",
+    "namn": "Högskolebehörighet inom 3 år efter gymnasiet, kvinnor, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N17473 (kvinnor och män)",
+    "forsta": 2014,
+    "sista": 2025
+  },
+  {
+    "id": "N17473_MAN",
+    "namn": "Högskolebehörighet inom 3 år efter gymnasiet, män, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N17473 (kvinnor och män)",
+    "forsta": 2014,
+    "sista": 2025
+  }
+]
