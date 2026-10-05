@@ -263,6 +263,9 @@ const socioekonomi: TemaConfig = {
     F_DINK_KV: "Kvinnor",
     F_DINK_MAN: "Män",
   },
+  hogtArBra: [
+    "F_HALSA_GOD", "F_HALSA_GOD_KV", "F_HALSA_GOD_MAN", "F_MEDLIVS_KV", "F_MEDLIVS_MAN",
+  ],
 };
 
 export default socioekonomi;

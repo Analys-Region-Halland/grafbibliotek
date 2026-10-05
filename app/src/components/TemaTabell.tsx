@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type { KpiMeta } from "../types";
-import type { TemaConfig } from "../teman/tema-config";
+import type { TemaConfig, Riktning } from "../teman/tema-config";
 import { TEMA_FARG_HEX } from "../teman/tema-config";
 import { sammanfatta } from "../utils/kpiStats";
 import type { KpiIndex, KpiSammanfattning } from "../utils/kpiStats";
@@ -34,20 +34,29 @@ const enhetText = (enhet: string) => (enhet === "procent" ? "procent" : enhet);
  * Förändringen inom parentes; färg bara när önskvärd riktning är känd (lågt är bra).
  * I tabellen i samma förkortade enhet som värdet, i tooltipen exakt.
  */
-function deltaFor(s: KpiSammanfattning, dec: number, lagtArBra: boolean, exakt = false) {
+function deltaFor(s: KpiSammanfattning, dec: number, riktning: Riktning, exakt = false) {
   const f = s.forandring[s.period > 9999 ? 1 : 10];
   if (!f) return null;
   const v = f.varde;
   const tal = (x: number) => (exakt ? fmt(x, dec) : kort(x, dec, s.varde));
   const text = v === 0 ? "(±0)" : v > 0 ? `(+${tal(v)})` : `(${tal(v)})`;
-  const klass = !lagtArBra || v === 0 ? "" : v < 0 ? "kt-battre" : "kt-samre";
+  const klass = !riktning || v === 0 ? "" : (v < 0) === (riktning === "lagt") ? "kt-battre" : "kt-samre";
   return { text, klass };
 }
 
+/**
+ * Hur bra platsen är, 0 till 1 (1 = bäst i landet), när önskvärd riktning är känd. Plats 1 är
+ * det högsta värdet: bäst när högt är bra, sämst när lågt är bra.
+ */
+function braAndel(s: KpiSammanfattning, riktning: Riktning) {
+  if (!riktning || s.rang == null || s.n < 2) return null;
+  return riktning === "lagt" ? s.rang / s.n : (s.n - s.rang + 1) / s.n;
+}
+
 /** Platsens bricka: fyra färgsteg bara när önskvärd riktning är känd, annars neutral */
-function brickaFor(s: KpiSammanfattning, lagtArBra: boolean) {
-  if (!lagtArBra || s.rang == null || s.n < 2) return { klass: "" };
-  const andel = s.rang / s.n; // lågt värde är bra: hög platssiffra = lågt värde
+function brickaFor(s: KpiSammanfattning, riktning: Riktning) {
+  const andel = braAndel(s, riktning);
+  if (andel == null) return { klass: "" };
   return { klass: andel > 0.75 ? "kt-topp" : andel > 0.5 ? "kt-ovre" : andel > 0.25 ? "kt-nedre" : "kt-botten" };
 }
 
@@ -55,9 +64,9 @@ function brickaFor(s: KpiSammanfattning, lagtArBra: boolean) {
  * Platsens färg i texten bredvid spåret: bara när önskvärd riktning är känd, och bara i
  * ytterfjärdedelarna (samma fjärdedelar som spårets tonade fält)
  */
-function platsKlass(s: KpiSammanfattning, lagtArBra: boolean) {
-  if (!lagtArBra || s.rang == null || s.n < 2) return "";
-  const andel = s.rang / s.n; // lågt värde är bra: hög platssiffra = lågt värde
+function platsKlass(s: KpiSammanfattning, riktning: Riktning) {
+  const andel = braAndel(s, riktning);
+  if (andel == null) return "";
   return andel > 0.75 ? "kt-battre" : andel <= 0.25 ? "kt-samre" : "";
 }
 
@@ -147,7 +156,7 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
     const harNed = !sub && r.nedbrytningar.length > 0;
     const arOppen = oppna.has(r.kpiId);
     const arAntal = r.enhet === "antal";
-    const delta = deltaFor(s, dec, r.lagtArBra);
+    const delta = deltaFor(s, dec, r.riktning);
     const gammal = s.period < s.nyastePeriod;
 
     const aria = [`${r.helaNamn}: ${fmt(s.varde, dec)} ${enhetText(r.enhet)}${gammal ? ` (${fmtPeriod(s.period)})` : ""}`,
@@ -192,12 +201,12 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
               namn={enhetsnamn} fmt={(v) => kort(v, dec)} logSkala={arAntal}
               width={Math.max(200, sparBredd || 260)} height={sub ? 21 : 26}
               visaHalland={!arRegion && pekad === r.kpiId}
-              kvartiler lagtArBra={r.lagtArBra}
+              kvartiler riktning={r.riktning}
               ariaLabel={aria}
             />
           </div>
           <div className="kt-c-plats kt-plats-text">
-            {s.rang != null && <>(plats <b className={platsKlass(s, r.lagtArBra)}>{s.rang}</b>)</>}
+            {s.rang != null && <>(plats <b className={platsKlass(s, r.riktning)}>{s.rang}</b>)</>}
           </div>
         </div>
         {harNed && arOppen && (
@@ -235,7 +244,7 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
         <div className="kt-c-spar" ref={sparRef}>
           {enhetNamn} och landets {enhetsord}
           <small>
-            Grå punkter är {enhetsord}, det tonade fältet den mittersta hälften. Svart streck
+            Grå punkter är {enhetsord}, det grå fältet den mittersta hälften; grönt och rött där önskvärd riktning är känd. Svart streck
             riket{arRegion ? "" : ", streckat Halland"}. Platsen inom parentes bland {nEnheter}, 1 = högst.
           </small>
         </div>
@@ -260,7 +269,7 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
             riketSerie={idx.get(tipRad.kpiId)?.get("0000") ?? []}
             hallandSerie={idx.get(tipRad.kpiId)?.get("0013") ?? null}
             enhetsnamn={enhetsnamn} fmt={(v) => kort(v, dec)} fmtExakt={(v) => fmt(v, dec)}
-            delta={deltaFor(tipS, dec, tipRad.lagtArBra, true)} bricka={brickaFor(tipS, tipRad.lagtArBra)}
+            delta={deltaFor(tipS, dec, tipRad.riktning, true)} bricka={brickaFor(tipS, tipRad.riktning)}
             ankare={tip.ankare}
           />
         );

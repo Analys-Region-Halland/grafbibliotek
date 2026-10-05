@@ -110,6 +110,10 @@ const arbetsmarknad: TemaConfig = {
     "S_ARBL_UTR", "S_ARBL_UTR_N", "S_ARBL_KV", "S_ARBL_KV_N",
     "S_ARBL_MAN", "S_ARBL_MAN_N", "N03942", "N02797", "N03954",
   ],
+  hogtArBra: [
+    "S_SYSS_TOT", "S_SYSS_KV", "S_SYSS_MAN", "S_SYSS_INR", "S_SYSS_UTR", "S_ARKR_TOT",
+    "S_ARKR_KV", "S_ARKR_MAN", "S_ARKR_INR", "S_ARKR_UTR",
+  ],
 };
 
 export default arbetsmarknad;

@@ -91,6 +91,9 @@ const transport: TemaConfig = {
     N00799: "Trafikolyckor med räddningsinsatser, antal per 1 000 invånare",
   },
   lagtArBra: ["N00799"],
+  hogtArBra: [
+    "N07418", "N07419", "N07412", "N07410", "N60404", "U60496", "N07945", "U00501",
+  ],
 };
 
 export default transport;

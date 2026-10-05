@@ -44,8 +44,19 @@ export interface TemaConfig {
   nettoKpis?: string[];
   /** KPI-ID:n som saknar index-toggle (netto-KPI:er) */
   ingetIndex?: string[];
-  /** KPI-ID:n där lågt värde är önskvärt (inverterad färgskala för ranking) */
+  /** KPI-ID:n där lågt värde entydigt är önskvärt (arbetslöshet, utsläpp, ohälsa) */
   lagtArBra?: string[];
+  /** KPI-ID:n där högt värde entydigt är önskvärt (sysselsättning, behörighet, förnybart) */
+  hogtArBra?: string[];
+}
+
+/** Önskvärd riktning: styr färg på förändring, plats och spårets ytterfjärdedelar */
+export type Riktning = "lagt" | "hogt" | null;
+
+export function riktningFor(tema: TemaConfig, kpiId: string): Riktning {
+  if (tema.lagtArBra?.includes(kpiId)) return "lagt";
+  if (tema.hogtArBra?.includes(kpiId)) return "hogt";
+  return null;
 }
 
 /** Tillgängliga temafärger — mappar till Tailwind-klasser */

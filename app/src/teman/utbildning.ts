@@ -87,6 +87,10 @@ const utbildning: TemaConfig = {
     "N17473_KV": "Högskolebehörighet inom 3 år efter gymnasiet, kvinnor, andel (%)",
     "N17473_MAN": "Högskolebehörighet inom 3 år efter gymnasiet, män, andel (%)",
   },
+  hogtArBra: [
+    "N15507", "N15507_KV", "N15507_MAN", "N15428", "N15428_KV", "N15428_MAN", "N17473",
+    "N17473_KV", "N17473_MAN",
+  ],
 };
 
 export default utbildning;

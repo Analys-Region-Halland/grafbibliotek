@@ -708,10 +708,14 @@ uppdelningarna som fälls ut under indikatorn.
 - Hälsa, psykisk hälsa och levnadsvanor: de flesta [kvinnor och män]
 - Inkomster och försörjning: ekonomisk standard [kvinnor och män], ginikoefficienter, varaktigt låg ekonomisk standard, ekonomiskt bistånd
 
-**Önskvärd riktning (`lagtArBra`).** Förändringar, platsens färg och spårets tonade
-ytterfjärdedelar visas bara för indikatorer där ett lågt värde entydigt är bättre:
-arbetslöshet, trångboddhet, ansträngd boendeekonomi, utsläpp, ohälsa, olyckor och
-liknande. Övriga visas neutralt, även där ett högt värde ofta ses som bättre.
+**Önskvärd riktning (`lagtArBra`, `hogtArBra`).** Förändringar, platsens färg och spårets
+tonade ytterfjärdedelar färgas bara där riktningen är entydig. Lågt är bra: arbetslöshet,
+trångboddhet, ansträngd boendeekonomi, utsläpp, ohälsa, olyckor. Högt är bra:
+sysselsättning och arbetskraftsdeltagande, meritvärde och behörighet, förnybar el,
+materialåtervinning, ekologisk åkermark, skyddad natur, kollektivtrafiknära läge och
+resande, förnybart i kollektivtrafiken, elbilar och fossiloberoende bilar, självskattad
+hälsa och medellivslängd. Övriga visas neutralt (befolkning, priser, branschstruktur,
+utbildningsnivå, inkomster), eftersom ett högre eller lägre värde där inte i sig är bättre.
 
 **Beskrivningarna** följer källans definition (för Kolada: KPI:ns definition i
 Kolada) och slutar med källan. Tolkningar ("måttet visar att ...") hör inte hemma i
@@ -842,7 +846,7 @@ i spåret och #999999 i diagram.
 
 **Önskvärd riktning:** förbättring #00664D (grön 1) och försämring #A51300 (röd 1) på
 förändringen och platsen; i spåret ljusgrön #E3F4E2 och ljusröd #FEE6E7 på de yttre
-fjärdedelarna, grå #EEF0F2 på den mittersta hälften. Bara när `lagtArBra` är satt.
+fjärdedelarna, grå #EEF0F2 på den mittersta hälften. Bara när `lagtArBra` eller `hogtArBra` är satt.
 
 **Jämför kommuner:** cellfärgen visar läget bland landets kommuner i en neutral blå
 skala, inte önskvärdhet.

@@ -174,6 +174,10 @@ const konjunktur: TemaConfig = {
     "K_ARBL_TOT", "K_ARBL_ANT", "K_ARBL_INR", "K_ARBL_UTR",
     "K_ARBL_KV", "K_ARBL_MAN", "K_ARBL_FORANDR",
   ],
+  hogtArBra: [
+    "K_NATT_GRAD", "K_SYSS_TOT", "K_SYSS_FORANDR", "K_SYSS_KV", "K_SYSS_MAN", "K_SYSS_INR",
+    "K_SYSS_UTR", "K_ARKR_TOT", "K_ARKR_KV", "K_ARKR_MAN",
+  ],
 };
 
 export default konjunktur;

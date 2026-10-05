@@ -2,6 +2,10 @@ import { memo, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { ENHET_FARG, HALLAND_KODER } from "../types";
 import { kvantil } from "../utils/kpiStats";
+import type { Riktning } from "../teman/tema-config";
+
+const BRA = "#E3F4E2";
+const DALIGT = "#FEE6E7";
 
 interface Props {
   /** Jämförbara enheter (kommuner eller regioner), sorterade stigande på värde */
@@ -17,8 +21,8 @@ interface Props {
   height?: number;
   /** Tona fördelningens kvartiler: mittersta hälften neutral, ytterfjärdedelarna efter riktning */
   kvartiler?: boolean;
-  /** Lågt värde är önskvärt: lägsta fjärdedelen tonas grön och högsta röd (annars bara neutral ton) */
-  lagtArBra?: boolean;
+  /** Önskvärd riktning: den bästa fjärdedelen tonas grön och den sämsta röd (annars bara neutral ton) */
+  riktning?: Riktning;
   /** Visa Hallands kommuner i sina färger (när raden pekas) */
   visaHalland: boolean;
   ariaLabel: string;
@@ -43,7 +47,7 @@ interface Fack { x: number; fran: number; till: number; antal: number }
  */
 function SparInner({
   enheter, valdKod, riket, halland, namn, fmt, logSkala, width, height = 26, visaHalland, ariaLabel,
-  kvartiler = false, lagtArBra = false,
+  kvartiler = false, riktning = null,
 }: Props) {
   const [tip, setTip] = useState<{ text: React.ReactNode; sx: number; sy: number } | null>(null);
   const mid = height / 2;
@@ -115,9 +119,9 @@ function SparInner({
           const a = x(q25), b = x(q75), y = 1, h = height - 2;
           return (
             <g aria-hidden>
-              {lagtArBra && <rect x={x0} y={y} width={Math.max(0, a - x0)} height={h} rx={2} fill="#E3F4E2" />}
+              {riktning && <rect x={x0} y={y} width={Math.max(0, a - x0)} height={h} rx={2} fill={riktning === "lagt" ? BRA : DALIGT} />}
               <rect x={a} y={y} width={Math.max(1, b - a)} height={h} rx={2} fill="#EEF0F2" />
-              {lagtArBra && <rect x={b} y={y} width={Math.max(0, x1 - b)} height={h} rx={2} fill="#FEE6E7" />}
+              {riktning && <rect x={b} y={y} width={Math.max(0, x1 - b)} height={h} rx={2} fill={riktning === "lagt" ? DALIGT : BRA} />}
             </g>
           );
         })()}

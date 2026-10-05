@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import type { KpiMeta } from "../types";
 import { ENHET_FARG, HALLAND_KOMMUNER } from "../types";
 import type { TemaConfig } from "../teman/tema-config";
+import { riktningFor } from "../teman/tema-config";
 import type { Figur } from "../hooks/useAnalys";
 import type { KpiIndex } from "../utils/kpiStats";
 import { hallandsCeller, HALLAND_KOLUMNER, sammanfatta } from "../utils/kpiStats";
@@ -130,7 +131,7 @@ export default function AnalysFigur({ figur, idx, meta, tema, valdKod, enhetNamn
       <>
         <Spar enheter={s.enheter} valdKod={valdKod} riket={arAntal ? null : s.riket} halland={arAntal ? null : s.halland}
               namn={enhetsnamn} fmt={fmt} logSkala={arAntal} width={w} height={58} visaHalland={valdKod !== "0013"}
-              kvartiler lagtArBra={(tema.lagtArBra ?? []).includes(figur.kpi[0])}
+              kvartiler riktning={riktningFor(tema, figur.kpi[0])}
               ariaLabel={`${enhetNamn} ${fmt(s.varde)}, plats ${s.rang} av ${s.n} ${ord}`} />
         {s.rang != null && (
           <p className="af-not">{enhetNamn} har {fmt(s.varde)} och plats {s.rang} av {s.n} {ord}, där 1 är det högsta värdet.</p>

@@ -1,5 +1,6 @@
 import type { KpiMeta } from "../types";
-import type { TemaConfig } from "../teman/tema-config";
+import type { TemaConfig, Riktning } from "../teman/tema-config";
+import { riktningFor } from "../teman/tema-config";
 import type { KpiIndex } from "./kpiStats";
 
 export interface TabellRad {
@@ -10,7 +11,8 @@ export interface TabellRad {
   helaNamn: string;
   enhet: string;
   beskrivning: string;
-  lagtArBra: boolean;
+  /** Önskvärd riktning när den är känd, annars null (neutral färg) */
+  riktning: Riktning;
   /** Uppdelningar av indikatorn, var och en med sitt namn ("kvinnor och män") */
   nedbrytningar: Uppdelning[];
 }
@@ -45,7 +47,6 @@ export function uppdelningsText(nedbrytningar: Uppdelning[]): string {
  * indikator (delAv, annars sektionens första KPI).
  */
 export function byggGrupper(tema: TemaConfig, meta: KpiMeta[], idx: KpiIndex): TabellGrupp[] {
-  const lagt = new Set(tema.lagtArBra ?? []);
   const metaMap = new Map(meta.map((m) => [m.kpi_id, m]));
   const rad = (id: string, kort: boolean, nedbrytningar: Uppdelning[] = []): TabellRad | null => {
     const m = metaMap.get(id);
@@ -57,7 +58,7 @@ export function byggGrupper(tema: TemaConfig, meta: KpiMeta[], idx: KpiIndex): T
       helaNamn,
       enhet: m.enhet,
       beskrivning: m.beskrivning,
-      lagtArBra: lagt.has(id),
+      riktning: riktningFor(tema, id),
       nedbrytningar,
     };
   };

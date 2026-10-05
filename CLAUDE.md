@@ -183,7 +183,7 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
     parentes direkt efter, "(plats 17)". Placeringen visas bara där i raden. All fördjupning i
     radens tooltip (`RadTip.tsx`), som slutar med "Klicka på raden för diagram och karta";
     diagramsymbolen (`DiagramIkon.tsx`) efter namnet visar samma sak. Färg på förändring och
-    placering bara när önskvärd riktning är känd (`lagtArBra`).
+    placering bara när önskvärd riktning är känd (`lagtArBra` eller `hogtArBra`).
   - **Alla sida vid sida** (`JamforTabell.tsx`): indikatorer × kommunerna (norr→söder), länet
     och riket med samma nivåer; cellfärg = läge bland landets kommuner i neutral blå skala
     (inte önskvärdhet). Analysen är länets.
@@ -194,7 +194,8 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
   `halland-data-<tema>.json` hämtas först när graf och karta öppnas (METODIK §10.3).
 - Kommunernas fasta färger (`ENHET_FARG` i `types.ts`) följer grafriktlinjen VIS-01.
 - Förändringar och rangplatser visas i neutral färg: de flesta indikatorer saknar en given
-  önskvärd riktning (`lagtArBra` anges i temats config där den finns).
+  önskvärd riktning. Där den är entydig anges den i temats config: `lagtArBra` (arbetslöshet,
+  utsläpp, ohälsa) eller `hogtArBra` (sysselsättning, behörighet, förnybart, skyddad natur).
 
 ## Fördjupning
 
