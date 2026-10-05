@@ -153,11 +153,16 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
   en analytiker; ändra den där om arbetssättet ändras.
 - Befolkningssiffrorna för 2025 är preliminära och skyddade med SCB:s CKM-metod (små
   slumpavvikelser), så komponenterna summerar inte alltid exakt till folkmängdsförändringen.
-- **Övergång (oktober 2026):** temastrukturen (band och uppdelningar) har ändrats, så alla
-  texter är inaktuella mot underlaget tills de skrivits om, då med figurer. Den publicerade
-  `app/public/data/halland-analys.json` stämmer fortfarande i sak och ska inte skrivas över:
-  kör kap04 som `Rscript -e 'kopiera_analys <- FALSE; source("R/kap04-exportera.R")'` och
-  committa inte den filen förrän alla texter är klara. Översikten per enhet är borttagen.
+- **Omskrivningen 2026-10-05:** alla 70 texter skrevs om med figurer av parallella agenter
+  (instruktion: tre till fyra texter var, systemprompt, figurregler, de granskade förlagorna
+  `1382_befolkning`, `0013_befolkning`, `0013_konjunktur`) och granskades sedan av fristående
+  agenter påstående för påstående; granskarna hittade och rättade två till åtta fel per text.
+  Vanligast: ett enskilt år som fick stå för trenden, superlativ utan årtal, antal och andel
+  sammanblandade, jämförelser från ett toppår, mekanismer skrivna som fakta och ökningar i
+  kronor lästa som takt. `"granskad"` i cachefilen anger datum. Översikten per enhet finns inte.
+- **Rättelser som bara ändrar underlagets text** (visningsnamn, beskrivning, bortplockad
+  länsjämförelse) gör granskade texter inaktuella fast siffrorna står kvar: uppdatera då hashen
+  och kör `kontrollera-text.R` på alla texter i stället för att skriva om dem.
 - Hashen i `data/analys-cache/` knyter texten till underlag + systemprompt. Ändras datan
   blir texten inaktuell och visas inte förrän den skrivits om.
 - Decimalregeln är densamma i R (`decimaler()`) och frontend (`kpiDecimaler()`), så att
@@ -192,6 +197,15 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
   (3,13 mn (+0,43 mn)). Exakta värden i tooltipen, cellernas hjälptext och figurernas tabellvy.
 - Data: sidan laddar bara områdets kompakta `halland-tabell-<tema>.json` (0,2–2 MB); hela
   `halland-data-<tema>.json` hämtas först när graf och karta öppnas (METODIK §10.3).
+- **Länet som inte går att jämföra** (`lanEjJamforbar` i temats config, med `lanEjJamforbarText`):
+  pendlingsandelarna avser länsgränsen för länet men kommungränsen för kommunerna, och
+  folkhälsoenkätens länsvärden bygger på det nationella urvalet (för Halland drygt 1 000 svar)
+  medan kommunernas bygger på ett större regionalt urval. Länet visas då inte som jämförelse i
+  kommunvyerna (spår, tooltip, figurer, kap03-underlaget) och får en asterisk och fotnot i
+  *Alla sida vid sida*.
+- **Seriebrott** (`serie_fran` i temats R-config): åren före brottet tas bort i kap02, så att
+  förändringar i tabell, figurer och underlag inte spänner över brottet. Bostäder: hushåll,
+  hushållstyper, upplåtelseformer och bostäder per 1 000 invånare börjar 2016.
 - Kommunernas fasta färger (`ENHET_FARG` i `types.ts`) följer grafriktlinjen VIS-01.
 - Förändringar och rangplatser visas i neutral färg: de flesta indikatorer saknar en given
   önskvärd riktning. Där den är entydig anges den i temats config: `lagtArBra` (arbetslöshet,

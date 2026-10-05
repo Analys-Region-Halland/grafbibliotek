@@ -1,1 +1,49 @@
-{"hash": "b5dce451cd242a4b795cbccd9120d97c", "period": "2024", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Äganderätten dominerar och bostadsbyggandet har nästan stannat av", "ingress": "Laholms bostäder är till största delen äganderätter, och bostadsrätter är ovanliga. Byggtakten 2025 var den lägsta i serien sedan 2010, och allt som färdigställdes var småhus.", "i_korthet": [{"ledtext": "Äganderätten dominerar bostadsbeståndet", "text": "Äganderätter utgör 68,1 procent av bostäderna, vilket är 31,5 procentenheter över riket och den högsta andelen i Halland."}, {"ledtext": "Nybyggandet är lägst sedan 2010", "text": "Under 2025 färdigställdes 0,87 bostäder per 1 000 invånare, mot 3,83 i länet och 2,96 i riket."}, {"ledtext": "Färre bor nära kollektivtrafik", "text": "Andelen som bor nära en trafikerad hållplats är 63,4 procent, vilket är 13,4 procentenheter under länet och 17,5 under riket."}], "stycken": ["Bostadsbeståndet i Laholm domineras av äganderätter. De utgör 68,1 procent av bostäderna, vilket är 31,5 procentenheter över riket och den högsta andelen bland Hallands kommuner. Bostadsrätterna är få, 4,50 procent mot 24,32 procent i riket, och hyresrätterna utgör 27,4 procent, 11,7 procentenheter under riket. Det betyder att hyres- och bostadsrätter utgör en betydligt mindre del av beståndet än i Halmstad och Varberg, där hyresrätterna utgör 47,9 respektive 37,7 procent.", "Bostadsbyggandet har minskat kraftigt sedan toppåret 2021. Då färdigställdes 8,32 bostäder per 1 000 invånare, medan siffran 2025 var 0,87, den lägsta i serien sedan 2010. Det är femte plats i länet, långt under Halland med 3,83 och riket med 2,96. Allt som blev klart 2025 var småhus, där Laholm ligger i nivå med länet, medan inga lägenheter i flerbostadshus färdigställdes. Kungsbacka och Halmstad har länets högsta byggtakt för flerbostadshus, 6,65 respektive 3,33 lägenheter per 1 000 invånare.", "Mönstret hänger sannolikt samman med Laholms karaktär av landsbygd och kustorter, där efterfrågan kan antas riktas mot egna hus och där priserna ligger under länets övriga kustkommuner. Ett bostadsrättspris på 18 918 kronor per kvadratmeter, mot 39 813 i riket, kan göra det svårare att få nyproduktion av lägenheter att bära sig. Planberedskapen var 2021 den högsta av de tre halländska kommuner som redovisar den, 35,0 bostäder per 1 000 invånare, vilket tyder på att planlagd mark då inte begränsade byggandet. För planeringen kan det tala för att nya lägenheter placeras nära hållplatser: andelen invånare som bor kollektivtrafiknära är 63,4 procent, 13,4 procentenheter under länet och 17,5 under riket."]}}
+{
+  "hash": "92383703423ab33322aae113464d12db",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Byggandet svänger kraftigt och har minskat de två senaste åren",
+    "ingress": "Byggandet i Laholm svänger kraftigt mellan åren: efter toppåren 2021 och 2023 har det minskat två år i rad, till 0,87 bostäder per 1 000 invånare 2025, den lägsta nivån sedan serien började 2010. Beståndet domineras av äganderätter, och småhusen kostar mindre per kvadratmeter än i riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Byggandet svänger kraftigt",
+        "text": "Sedan 2015 har antalet färdigställda bostäder legat mellan 0,87 och 8,32 per 1 000 invånare och år."
+      },
+      {
+        "ledtext": "Inga flerbostadshus två år i rad",
+        "text": "Under 2024 och 2025 färdigställdes inga lägenheter i flerbostadshus, och 2025 var byggandet 0,87 per 1 000 invånare mot 3,83 i länet."
+      },
+      {
+        "ledtext": "Länets högsta andel äganderätter",
+        "text": "Äganderätterna utgör 68,1 procent av bostäderna, mot 36,6 procent i riket."
+      }
+    ],
+    "stycken": [
+      "Byggandet i Laholm svänger kraftigt och har minskat de två senaste åren. Sedan 2015 har antalet färdigställda bostäder legat mellan 0,87 och 8,32 per 1 000 invånare och år, med toppar 2021 och 2023. Nivån 2025 var 1,90 lägre än 2015 och 1,71 lägre än 2020, men med så stora svängningar säger enskilda år lite om trenden. Under 2025 färdigställdes 0,87 bostäder per 1 000 invånare, den lägsta nivån sedan serien började 2010, och inga lägenheter i flerbostadshus färdigställdes 2024 eller 2025. Två år med lägre byggande räcker ännu inte för att tala om en ny riktning.",
+      "Under 2025 byggde Laholm mindre än länet och riket, som låg på 3,83 och 2,96; bara Hylte låg lägre i Halland. Äganderätterna utgör 68,1 procent av bostäderna, högst i länet och 31,5 procentenheter mer än i riket, men 1,7 procentenheter mindre än 2020. Priset för småhus var 21 068 kronor per kvadratmeter 2025, näst lägst i länet och 7 816 kronor under riket. Det har stigit med 9 223 kronor på tio år och 3 262 på fem år, mot 4 065 i riket, men sjönk något 2025.",
+      "Det lägre byggandet kan hänga samman med att hushållen blir fler i allt lägre takt: ökningen har avtagit varje år sedan 2022, till 9 hushåll 2025. Planberedskapen var 35,0 möjliga bostäder per 1 000 invånare 2021, högst av de tre hallandskommuner som redovisade, men nyare uppgifter saknas. Trångboddheten i flerbostadshusen har samtidigt minskat: enligt den striktare norm 3 sjönk andelen från 44,8 procent 2018 till 38,5 procent 2025, i nivå med rikets 38,7, och på fem år med 3,7 procentenheter mot 1,8 i riket. För planeringen behövs några år till innan det går att säga om nivån sjunkit varaktigt."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N07917"],
+        "rubrik": "Byggandet svänger kraftigt, med toppar 2021 och 2023"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N07958"],
+        "rubrik": "Laholm har länets högsta andel äganderätter"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N07914"],
+        "rubrik": "Trångboddheten har minskat sedan toppen 2018"
+      }
+    ]
+  }
+}

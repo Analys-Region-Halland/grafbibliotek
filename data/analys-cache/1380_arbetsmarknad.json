@@ -1,29 +1,49 @@
 {
-  "hash": "3f1a2864c1838c8996c2fcc79a48ad76",
-  "period": "2024",
+  "hash": "2dae5ec820833cc4234dff0ba2ed77ef",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Halmstads arbetsmarknad liknar rikets mer än länets",
-    "ingress": "Sysselsättningen i Halmstad ligger nära rikets nivå men tydligt under länets, och mellan 2023 och 2024 sjönk sysselsättningen medan arbetslösheten steg. Avståndet till länet är störst i männens sysselsättning och i utrikes föddas arbetslöshet.",
+    "rubrik": "Lägre sysselsättning och högre arbetslöshet än i länet och riket",
+    "ingress": "Halmstads sysselsättningsgrad, 80,1 procent 2024, ligger under både länets och rikets, och arbetslösheten, 6,20 procent, över båda. Arbetslösheten sjönk till 5,20 procent 2022 men har sedan stigit två år i rad.",
     "i_korthet": [
       {
-        "ledtext": "Sysselsättningen ligger under länet",
-        "text": "Andelen sysselsatta 20–64 år var 80,1 procent 2024, vilket är 3,9 procentenheter under Halland och 0,8 procentenheter under riket."
+        "ledtext": "Sysselsättningen under länet och riket",
+        "text": "Sysselsättningsgraden var 80,1 procent 2024, 3,9 procentenheter under länet och 0,8 under riket."
       },
       {
-        "ledtext": "Arbetslösheten steg under 2024",
-        "text": "Arbetslösheten ökade med 0,7 procentenheter till 6,2 procent, jämfört med en ökning på 0,5 procentenheter i riket."
+        "ledtext": "Arbetslösheten har stigit sedan 2022",
+        "text": "Arbetslösheten sjönk från 7,60 procent 2020 till 5,20 procent 2022 och steg sedan till 6,20 procent 2024."
       },
       {
-        "ledtext": "Störst avstånd i utrikes föddas arbetslöshet",
-        "text": "Bland utrikes födda var 14,5 procent arbetslösa, 2,6 procentenheter över både länet och riket."
+        "ledtext": "Inkomsten har ökat mindre i kronor",
+        "text": "Medianen av sammanräknad förvärvsinkomst har ökat med 98 100 kronor på tio år, mot 110 300 i riket, och var 383 800 kronor 2024."
       }
     ],
     "stycken": [
-      "Halmstads arbetsmarknad ser ut som rikets snarare än som länets. Andelen sysselsatta i åldern 20–64 år var 80,1 procent 2024, 0,8 procentenheter under riket men 3,9 procentenheter under länet, och den sjönk med 1,2 procentenheter från 2023. Arbetskraftsdeltagandet, alltså andelen som arbetar eller söker arbete, var 85,4 procent och därmed i nivå med riket. Det som skiljer Halmstad från riket är därför främst att en större del av arbetskraften saknar jobb: arbetslösheten var 6,2 procent, 0,8 procentenheter över riket, och steg med 0,7 procentenheter från 2023, något mer än i riket.",
-      "Bland Hallands kommuner har Halmstad och Hylte lägst sysselsättning och högst arbetslöshet. Halmstad har femte högst sysselsättning av länets sex kommuner och näst högst arbetslöshet efter Hylte, medan Kungsbacka och Varberg har 87,9 respektive 86,2 procent sysselsatta. Avståndet till länet är störst bland män, vars sysselsättning ligger 4,1 procentenheter under länet, och männens arbetslöshet på 6,5 procent är den högsta i länet. Bland inrikes födda är sysselsättningen 84,3 procent, den lägsta i Halland, och bland utrikes födda är 14,5 procent arbetslösa.",
-      "Mönstret hänger sannolikt samman med Halmstads roll som största kommun i södra Halland. Om en stad har högskola, hamn och logistik kan där samlas fler som studerar, söker sitt första jobb eller arbetar i branscher som påverkas snabbt av konjunkturen, vilket kan hålla nere sysselsättningen. Länets nivå dras samtidigt upp av Kungsbacka och Varberg, de kommuner som ligger närmast Göteborg. För planeringen pekar det på att Halmstad rimligen jämförs med riket lika mycket som med länet. Förändringen 2024 gäller ett enda år och behöver följas innan den tolkas som en trend."
+      "Halmstad har en mindre andel sysselsatta och en större andel arbetslösa än både länet och riket. Sysselsättningsgraden bland 20–64-åringar var 80,1 procent 2024, 3,9 procentenheter under länet och 0,8 under riket, och arbetslösheten 6,20 procent, mot 4,30 i länet och 5,40 i riket. Registerserien börjar 2020, så längre trender saknas: sysselsättningsgraden steg från 78,6 procent 2020 till 81,3 procent 2023 och sjönk 2024 med 1,2 procentenheter, mer än rikets 0,7. Arbetslösheten sjönk från 7,60 procent 2020 till 5,20 procent 2022 och har sedan stigit två år i rad.",
+      "Bland Hallands kommuner hade bara Hylte lägre sysselsättning, 79,9 procent, medan grannkommunerna Falkenberg och Laholm låg på 84,0 och 83,3 procent. Skillnaden mot länet finns i alla redovisade grupper. Bland män var sysselsättningsgraden 80,4 procent, lägst i länet, och arbetslösheten 6,50 procent, högst. Bland inrikes födda var sysselsättningsgraden 84,3 procent, också lägst, och bland utrikes födda var arbetslösheten 14,5 procent, 2,6 procentenheter över både länet och riket. Andelen i arbetskraften, 85,4 procent, var lägst i länet men i nivå med rikets 85,5.",
+      "Den lägre sysselsättningen kan delvis hänga samman med högskolan, eftersom studerande som inte arbetar står utanför arbetskraften. Det kan däremot knappast förklara den högre arbetslösheten, som mäts bland dem i arbetskraften. Medianen av sammanräknad förvärvsinkomst var 383 800 kronor 2024, 17 600 under riket. Den har ökat med 98 100 kronor på tio år, 53 200 på fem år och 12 300 det senaste året, mot 110 300, 62 500 och 15 000 i riket, så avståndet till riket i kronor har vuxit. Bland de arbetslösa hade 62,7 procent varit det i minst sex månader 2025, näst högst i länet. För planeringen pekar det på att den högre arbetslösheten finns i alla grupper och ofta är långvarig."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_ARBL_TOT"],
+        "rubrik": "Arbetslösheten sjönk till 2022 och har stigit sedan dess"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["S_SYSS_TOT"],
+        "rubrik": "Bara Hylte har lägre sysselsättning än Halmstad i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N00906"],
+        "rubrik": "Medianinkomsten har ökat sedan 2000 men ligger under rikets"
+      }
     ]
   }
 }

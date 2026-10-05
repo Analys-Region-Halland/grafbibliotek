@@ -6,6 +6,8 @@ interface Props {
   celler: Map<string, HallandCell>;
   /** Kommunen som analysen gäller lyfts fram i sin färg; länet ger alla kommuner samma ton */
   valdKod: string;
+  /** Länets värde mäter något annat än kommunernas och ritas inte som referens */
+  utanLan?: boolean;
   namn: (kod: string) => string;
   fmt: (v: number) => string;
   width: number;
@@ -20,13 +22,13 @@ const LAN = "#8A9096";
  * Hallands sex kommuner som liggande staplar, sorterade efter värde, med länet (streckat)
  * och riket (heldraget) som lodräta referenslinjer. Värdet står vid stapelns ände.
  */
-export default function HallandStaplar({ celler, valdKod, namn, fmt, width }: Props) {
+export default function HallandStaplar({ celler, valdKod, utanLan = false, namn, fmt, width }: Props) {
   const kommuner = KOMMUNER_NORR_SODER
     .map((kod) => ({ kod, varde: celler.get(kod)?.varde ?? null }))
     .filter((d): d is { kod: string; varde: number } => d.varde != null)
     .sort((a, b) => b.varde - a.varde);
   if (kommuner.length === 0) return null;
-  const lan = celler.get("0013")?.varde ?? null;
+  const lan = utanLan ? null : celler.get("0013")?.varde ?? null;
   const riket = celler.get("0000")?.varde ?? null;
 
   const namnBredd = 96;

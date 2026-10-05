@@ -1,29 +1,49 @@
 {
-  "hash": "316ffa26cf1858024107ca7e1e448ad6",
+  "hash": "ee25609fbb44752507962339e2b93407",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Utländska gäster växer medan svenska gästnätter minskar i Hylte",
-    "ingress": "Hylte har länets minsta besöksnäring men den största andelen utländska gäster. Under 2025 minskade gästnätterna med 6,6 procent: ökningen bland utländska gäster vägde inte upp tappet bland svenska.",
+    "rubrik": "Fler gästnätter än 2015 men färre sedan toppen 2022",
+    "ingress": "Hyltes gästnätter vid kommersiella boenden har ökat med 16,0 procent på tio år, mot 17,8 procent i riket, och nådde seriens högsta nivå 2022. Sedan dess har de minskat tre år i rad, medan de utländska gästernas andel av nätterna steg till 31,8 procent 2025, den högsta i länet.",
     "i_korthet": [
       {
-        "ledtext": "Högst utländsk andel i länet",
-        "text": "Utländska gäster står för 31,8 procent av gästnätterna, mot 14,9 procent i Halland och 26,3 procent i riket."
+        "ledtext": "Tre års nedgång efter toppen 2022",
+        "text": "Gästnätterna minskade från 46 702 år 2022 till 38 220 år 2025, fler än något år 2015–2019."
       },
       {
-        "ledtext": "Svenska gästnätter minskar tydligt",
-        "text": "Svenska gästnätter minskade med 16,6 procent under 2025, medan utländska ökade med 25,7 procent."
+        "ledtext": "Tioårsökningen främst från utländska gäster",
+        "text": "På tio år ökade de utländska gästnätterna med 4 708 och de svenska med 513."
       },
       {
-        "ledtext": "Beläggningen ligger under länet",
-        "text": "Rumsbeläggningen var 33,2 procent, vilket är 19,0 procentenheter under länet och 21,1 procentenheter under riket."
+        "ledtext": "Länets högsta andel utländska gäster",
+        "text": "De utländska gästnätternas andel var 31,8 procent 2025, mot 14,9 procent i länet och 26,3 procent i riket."
       }
     ],
     "stycken": [
-      "Utländska gäster står för en växande del av besöksnäringen i Hylte. Utländska gästnätter ökade med 25,7 procent under 2025 till 12 128, den högsta nivån i serien sedan 2008. Svenska gästnätter minskade samtidigt med 16,6 procent till 26 005, ett tapp på 5 194 nätter mot en ökning på 2 476 bland de utländska. Det betyder att andelen utländska gästnätter steg till 31,8 procent, från 23,6 procent året innan. Totalt minskade gästnätterna med 6,6 procent till 38 220, vilket ligger under toppåret 2022 med 46 702.",
-      "Mönstret skiljer Hylte från övriga Halland. Andelen utländska gästnätter ligger 16,9 procentenheter över länet och 5,5 procentenheter över riket, och närmast bland kommunerna kommer Laholm med 19,2 procent. Gästnätterna minskade bara i Hylte och Kungsbacka under 2025, medan länet som helhet ökade med 5,4 procent. Även logiintäkterna gick åt motsatt håll: de föll med 10,2 procent i Hylte men ökade med 8,0 procent i länet.",
-      "Strukturen pekar på en liten näring med små anläggningar och stort inslag av camping. Hylte har 10 anläggningar med i genomsnitt 3 822 gästnätter vardera, mot 16 096 i riket, och campingen svarar för 27 216 av gästnätterna. Rumsbeläggningen på 33,2 procent ligger 19,0 procentenheter under länet, och logiintäkten per gästnatt på 363 kronor ligger 64 kronor under länet. Det kan hänga samman med att Hylte saknar den kust som ger volymerna i övriga Halland. För planeringen innebär de små volymerna att enskilda anläggningar eller gästgrupper kan svänga siffrorna kraftigt, och de svenska gästerna, som fortfarande står för flertalet gästnätter, väger tyngst för hur totalen utvecklas."
+      "Hyltes gästnätter har ökat på lång sikt men minskat sedan toppen 2022. Sedan 2008 har de ökat med 19,4 procent och på tio år med 16,0 procent, mot 41,2 respektive 17,8 procent i riket. Åren 2015–2019 låg de mellan 31 959 och 37 304. Pandemiåret 2020 minskade de med 5,4 procent, men 2021 och 2022 ökade de med 17,8 respektive 12,3 procent till seriens högsta nivå, 46 702. Sedan dess har de minskat tre år i rad, till 38 220 år 2025, ändå fler än något år 2015–2019. Femårsökningen, 8,2 procent, räknas från pandemiåret 2020.",
+      "Hylte har länets minsta antal gästnätter men den största andelen utländska gäster. De utländska gästnätternas andel var 31,8 procent, 16,9 procentenheter över länet och 5,5 över riket. Andelen låg mellan 22,5 och 28,7 procent åren 2015–2019, föll till 4,9 procent pandemiåret 2020 och steg 2025 med 8,2 procentenheter till seriens högsta. Under 2025 minskade gästnätterna med 6,6 procent, mest i länet, medan länet ökade med 5,4 och riket med 2,5 procent.",
+      "Tioårsökningen kommer främst från utländska gäster. På tio år ökade de utländska gästnätterna med 4 708 och de svenska med 513. De svenska nätterna har minskat med 22,5 procent sedan pandemiåret 2020; under 2025 minskade de med 5 194 medan de utländska ökade med 2 476. Gästnätterna per anläggning har minskat från 8 236 år 2015 till 3 822, länets lägsta, mest 2023, då antalet anläggningar ökade från 6 till 11. Antalet anläggningar visar dock inte kapaciteten, och bäddbeläggningen, 25,6 procent 2025, ligger nära nivån 2008 och 2015, 26,1 respektive 23,6 procent. För planeringen betyder det att fler anläggningar inte behöver innebära överkapacitet, medan efterfrågan i högre grad än i övriga länet kommer från utländska gäster."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["T_GAST_TOT"],
+        "rubrik": "Gästnätterna ökade till toppen 2022 och har sedan minskat"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["T_ANDEL_UTL_NATTER"],
+        "rubrik": "Hylte har länets högsta andel utländska gästnätter"
+      },
+      {
+        "efter": 2,
+        "typ": "uppdelning",
+        "kpi": ["T_GAST_SVE", "T_GAST_UTL"],
+        "rubrik": "Utländska gästnätter har ökat mer än svenska sedan 2015"
+      }
     ]
   }
 }

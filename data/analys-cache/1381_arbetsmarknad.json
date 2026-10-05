@@ -1,1 +1,49 @@
-{"hash": "c81448abb7005778c140838e3a1311d0", "period": "2024", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Laholm ligger över riket men sysselsättningen sjönk 2024", "ingress": "Laholms arbetsmarknad ligger nära länets nivå och tydligt över rikets, men 2024 sjönk sysselsättningen och arbetslösheten steg. Sysselsättningsgraden är fjärde högst av Hallands sex kommuner, både totalt och i varje redovisad grupp.", "i_korthet": [{"ledtext": "Sysselsättningen ligger över riket", "text": "Andelen sysselsatta 20–64 år var 83,3 procent 2024, vilket är 2,4 procentenheter över riket och 0,7 procentenheter under Halland."}, {"ledtext": "Nedgången var större än rikets", "text": "Sysselsättningsgraden sjönk med 1,1 procentenheter från 84,4 procent år 2023, mot 0,7 procentenheter i riket."}, {"ledtext": "Arbetslösheten steg till 4,6 procent", "text": "Arbetslösheten ökade från 3,9 procent år 2023 och ligger 0,3 procentenheter över länet men 0,8 procentenheter under riket."}], "stycken": ["Laholms arbetsmarknad har ett försprång mot riket, men 2024 sjönk sysselsättningen. Andelen sysselsatta i åldern 20–64 år var 83,3 procent, vilket är 2,4 procentenheter över riket och 0,7 procentenheter under Halland. Andelen sjönk med 1,1 procentenheter från 84,4 procent år 2023, den högsta nivån i serien sedan 2020, och nedgången var något större än rikets 0,7 procentenheter. Samtidigt steg arbetslösheten från 3,9 till 4,6 procent, 0,3 procentenheter över länet men 0,8 under riket, och arbetskraftsdeltagandet minskade något, till 87,3 procent. Det kan tyda på att en del av dem som arbetade 2023 blev arbetslösa eller lämnade arbetskraften.", "I länet ligger Laholm i mitten: fjärde plats av sex på sysselsättning, både totalt och för kvinnor, män, inrikes och utrikes födda. Kungsbacka och Varberg har 87,9 respektive 86,2 procent sysselsatta, medan Halmstad och Hylte ligger på 80,1 och 79,9 procent. Arbetslösheten är tredje högst i länet, under Hylte med 7,2 procent och Halmstad med 6,2 procent. Skillnaden mellan grupperna följer samma mönster som i riket: bland utrikes födda är 70,9 procent sysselsatta och 11,7 procent arbetslösa, mot 86,5 respektive 3,0 procent bland inrikes födda.", "Mönstret hänger sannolikt samman med Laholms läge mellan Halmstad och nordvästra Skåne. Om många invånare pendlar ut, så följer kommunens sysselsättning i hög grad efterfrågan på grannkommunernas arbetsmarknader. För planeringen betyder det att förbindelserna till arbetsplatserna i grannkommunerna sannolikt har stor betydelse för Laholms utveckling. Ett enskilt år räcker ändå inte för att tala om en trend: sysselsättningsgraden 2024 ligger fortfarande över nivån 2020, då den var 81,5 procent."]}}
+{
+  "hash": "a06c2cdf5f80de6c948e11d7b5ac84fe",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Laholm ligger mellan riket och länet i sysselsättning och arbetslöshet",
+    "ingress": "Laholms sysselsättningsgrad, 83,3 procent 2024, ligger över rikets men under länets, och arbetslösheten, 4,60 procent, under rikets men över länets. Andelen unga som varken arbetar eller studerar har stigit två år i rad, mest 2024, och är näst högst i länet.",
+    "i_korthet": [
+      {
+        "ledtext": "Sysselsättningen mellan riket och länet",
+        "text": "Sysselsättningsgraden var 83,3 procent 2024, 2,4 procentenheter över riket och 0,7 under länet."
+      },
+      {
+        "ledtext": "Inkomsten under riket och länet",
+        "text": "Medianen av sammanräknad förvärvsinkomst var 380 300 kronor 2024, 21 100 under riket och näst lägst i länet."
+      },
+      {
+        "ledtext": "Andelen unga utanför arbete och studier steg",
+        "text": "Andelen 16–24-åringar som varken arbetar eller studerar steg från 5,83 procent 2022 till 7,76 procent 2024, mest det senaste året, mot 6,16 i riket."
+      }
+    ],
+    "stycken": [
+      "Laholm ligger mellan riket och länet i både sysselsättning och arbetslöshet. Sysselsättningsgraden bland 20–64-åringar var 83,3 procent 2024, 2,4 procentenheter över riket och 0,7 under länet, och arbetslösheten 4,60 procent, mot 5,40 i riket och 4,30 i länet. Registerserien börjar 2020, så längre trender saknas: sysselsättningsgraden steg från 81,5 procent 2020 till 84,4 procent 2023 och sjönk 2024 med 1,1 procentenheter, mot 0,7 i riket. Arbetslösheten sjönk från 5,60 procent 2020 till 3,90 procent 2022, låg kvar där 2023 och steg 2024 med 0,70 procentenheter. Nedgången 2024 gällde främst män, vars sysselsättningsgrad sjönk med 1,8 procentenheter mot 0,2 för kvinnor.",
+      "I länet hade Laholm fjärde högst sysselsättningsgrad, före grannkommunen Halmstad med 80,1 procent. Medianen av sammanräknad förvärvsinkomst var däremot 380 300 kronor 2024, 21 100 under riket och näst lägst i länet. Den har ökat med 103 300 kronor på tio år och 13 700 det senaste året, något mindre i kronor än rikets 110 300 och 15 000. Från en lägre nivå behöver det inte betyda att inkomsten växer långsammare.",
+      "Med pendling mot Halmstad och nordvästra Skåne hänger sysselsättningen sannolikt samman även med efterfrågan på arbetskraft där. Att inkomsten ligger under rikets trots högre sysselsättning kan spegla vilka branscher invånarna arbetar i. Bland unga är läget ett annat: andelen 16–24-åringar som varken arbetar eller studerar sjönk till 5,83 procent 2022 och steg sedan två år i rad till 7,76 procent 2024, den högsta sedan 2016 och näst högst i länet, mot 6,16 i riket. På tio år har andelen ökat med 1,22 procentenheter, medan den minskat med 1,30 i riket. Hela tioårsökningen kom det senaste året, då andelen steg med 1,55 procentenheter. Ett enskilt år visar ingen ny riktning, men för planeringen är gruppen värd att följa."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_SYSS_TOT"],
+        "rubrik": "Sysselsättningsgraden steg till 2023 och sjönk 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N00906"],
+        "rubrik": "Laholm har näst lägst medianinkomst i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N02797"],
+        "rubrik": "Andelen unga utanför arbete och studier är högst sedan 2016"
+      }
+    ]
+  }
+}

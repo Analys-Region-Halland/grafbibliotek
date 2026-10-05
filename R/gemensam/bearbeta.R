@@ -119,6 +119,14 @@ bearbeta_tema <- function(tema_config) {
     left_join(kpi_meta_full, by = "kpi_id") |>
     filter(!is.na(varde))
 
+  # Seriebrott: åren före brottet går inte att jämföra med senare år och tas bort
+  # (tema_config$serie_fran = c(<kpi_id> = första år)). Beräknade antal följer med.
+  if (length(tema_config$serie_fran)) {
+    fran <- tema_config$serie_fran
+    bearbetad <- bearbetad |> filter(!(kpi_id %in% names(fran) & ar < fran[kpi_id]))
+    message(glue("  Seriebrott: {length(fran)} KPI:er börjar {paste(unique(fran), collapse = ', ')}"))
+  }
+
   message(glue("  {nrow(bearbetad)} rader efter filtrering"))
 
   # --- Beräknade KPI:er (antal från andel × totalbefolkning) ---

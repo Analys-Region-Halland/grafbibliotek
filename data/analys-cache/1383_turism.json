@@ -1,29 +1,49 @@
 {
-  "hash": "9f8066bceda26d8e066a5de505a3b922",
+  "hash": "06f8422f0d47ee0ae3c191d4c7e2df20",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Lika många gästnätter som 2015 men högre logiintäkter",
-    "ingress": "Varberg tar emot lika många gästnätter som för tio år sedan, men på färre anläggningar och med högre logiintäkt per gästnatt. Bäddarna är de mest belagda i Halland och bland de mest belagda i landet, även om beläggningen sjönk det senaste året.",
+    "rubrik": "Lika många gästnätter som 2015, men fler utländska gäster",
+    "ingress": "Varbergs gästnätter vid kommersiella boenden var 831 069 år 2025, i stort sett lika många som 2015, efter svängningar kring pandemin och tre års minskning 2022–2024. Under samma tio år har de utländska gästnätterna ökat ungefär lika mycket som de svenska har minskat, och bäddbeläggningen är länets högsta.",
     "i_korthet": [
       {
-        "ledtext": "Volymen är densamma som 2015",
-        "text": "Gästnätterna uppgick till 831 069 år 2025, i stort sett lika många som 2015."
+        "ledtext": "Samma nivå som 2015",
+        "text": "Gästnätterna var 831 069 år 2025 och 176 färre än 2015, medan riket ökade med 17,8 procent på tio år."
       },
       {
-        "ledtext": "Högst bäddbeläggning i Halland",
-        "text": "Bäddbeläggningen var 48,6 procent 2025, högst i länet, men sjönk från 51,9 procent året innan."
+        "ledtext": "Utländska nätter vägde nästan upp svenska",
+        "text": "På tio år ökade de utländska gästnätterna med 38 561 och de svenska minskade med 38 972."
       },
       {
-        "ledtext": "Intäkten per gästnatt har stigit",
-        "text": "Logiintäkten per gästnatt var 470 kronor 2025, samma som året innan men upp från 188 kronor 2015."
+        "ledtext": "Länets högsta bäddbeläggning",
+        "text": "Bäddbeläggningen var 48,6 procent 2025, 9,5 procentenheter över riket, efter seriens högsta värde, 51,9 procent, år 2024."
       }
     ],
     "stycken": [
-      "Besöksnäringen i Varberg har på tio år vuxit i värde snarare än i volym. Gästnätterna uppgick till 831 069 år 2025, i stort sett lika många som 2015, medan logiintäkterna nådde den högsta nivån i hela serien. Det betyder att intäktsökningen kommer från högre intäkt per gästnatt, som har gått från 188 till 470 kronor på tio år men var oförändrad det senaste året. Samtidigt har antalet anläggningar minskat från 36 till 32, och gästnätterna per anläggning är de flesta i serien. Det senaste året ökade gästnätterna med 6,5 procent, efter en minskning med 3,0 procent året innan.",
-      "Varberg har länets högsta beläggning. Bäddbeläggningen var 48,6 procent och rumsbeläggningen 59,2 procent, men båda sjönk det senaste året, bäddbeläggningen från 51,9 och rumsbeläggningen från 64,1 procent. Räknat per invånare tar kommunen emot 12 gästnätter, fler än länet med 9 och riket med 7 men färre än Falkenberg med 20. Utländska gäster står för 12,3 procent av gästnätterna, 14,0 procentenheter under riket.",
-      "Den oförändrade volymen hänger sannolikt samman med att campingen står för en stor del av gästnätterna, med 489 561 nätter och plats 4 bland de 57 kommuner som redovisar camping, och att den delen knappt har vuxit sedan 2020, medan hotellnätterna ökat med 25,6 procent. På tio år har de svenska gästnätterna minskat med 38 972 och de utländska ökat med 38 561, så utländska gäster har vägt upp nästan hela den inhemska nedgången. För planeringen betyder det att fler gästnätter kan kräva ny kapacitet när beläggningen redan är länets högsta, medan intäkterna hittills har ökat genom högre intäkt per gästnatt."
+      "Varbergs gästnätter har svängt kring samma nivå i tio år. Sedan 2008 har de ökat med 11,5 procent och på tio år är de i stort sett oförändrade, mot 41,2 respektive 17,8 procent i riket. Åren 2015–2019 låg de mellan 804 413 och 881 365. Pandemiåret 2020 minskade de med 10,0 procent och 2021 ökade de med 12,5 procent, seriens största ökning. Därefter minskade de tre år i rad, innan de ökade med 6,5 procent till 831 069 år 2025. Femårsökningen, 6,7 procent, räknas från pandemiåret 2020.",
+      "Varberg har fler gästnätter per invånare än länet och riket, och bäddarna är de mest belagda i Halland. Kommunen hade 12 gästnätter per invånare 2025, näst flest i länet efter Falkenberg, mot 9 i länet och 7 i riket. Bäddbeläggningen har ökat med 16,0 procentenheter sedan 2008, mot 5,2 i riket. Den steg varje år från pandemiåret 2020 till seriens högsta, 51,9 procent, år 2024 och var 48,6 procent 2025, 9,5 procentenheter över riket.",
+      "Bakom den i stort sett oförändrade volymen har sammansättningen ändrats. På tio år har de svenska gästnätterna minskat med 38 972 och de utländska ökat med 38 561, och de utländska nätternas andel har stigit från 7,6 till 12,3 procent, 14,0 procentenheter under riket. Ökningen 2025 kom främst från svenska gäster, vars nätter ökade med 44 305, mot 6 483 för de utländska. Hotellnätterna har ökat med 27,8 procent sedan 2015 och campingnätterna minskat med 10,0 procent; under 2025 ökade campingnätterna med 61 886 och hotellnätterna minskade med 7 363. Att beläggningen har stigit sedan 2015 utan fler gästnätter kan spegla att utbudet av bäddar inte har vuxit. För planeringen betyder det att fler gästnätter kan kräva mer kapacitet, eftersom bäddarna redan är länets mest belagda."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["T_GAST_TOT"],
+        "rubrik": "Gästnätterna har svängt kring samma nivå sedan 2015"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["T_BELAGG_BADD"],
+        "rubrik": "Bäddbeläggningen har ökat mer än rikets sedan 2008"
+      },
+      {
+        "efter": 2,
+        "typ": "uppdelning",
+        "kpi": ["T_GAST_SVE", "T_GAST_UTL"],
+        "rubrik": "Fler utländska och färre svenska gästnätter än 2015"
+      }
     ]
   }
 }

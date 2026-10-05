@@ -1,29 +1,49 @@
 {
-  "hash": "cd326c9c53e83c083df7ddff1cdb0bbe",
+  "hash": "cce4188b3d3d7a56899f61a047ee7831",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Hylte kör långt och har länets lägsta andel elbilar",
-    "ingress": "I Hylte bor en mindre andel av invånarna nära en hållplats med regelbunden trafik än i någon annan halländsk kommun, och bilinnehav och körsträckor ligger över länet. Samtidigt har omställningen av bilparken kommit kortare än i länet och riket.",
+    "rubrik": "Hylte har länets lägsta andel nära kollektivtrafik och ökande bilinnehav",
+    "ingress": "Av Hyltes invånare bor 60,7 procent nära en trafikerad hållplats, lägst i länet, även om andelen har ökat mer än rikets på tio år. Antalet personbilar per invånare har ökat varje år sedan 2021 och är näst högst i länet, medan elbilarna utgör en mindre andel av bilarna än i länets övriga kommuner.",
     "i_korthet": [
       {
-        "ledtext": "Lägst andel nära en hållplats",
-        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter var 60,7 procent 2024, 16,1 procentenheter under länet och 20,2 under riket."
+        "ledtext": "Lägst andel nära kollektivtrafik i länet",
+        "text": "Av invånarna bor 60,7 procent nära en trafikerad hållplats, mot 76,8 procent i länet, efter en ökning med 5,1 procentenheter på tio år."
       },
       {
-        "ledtext": "Fler bilar och längre körsträckor",
-        "text": "Hylte hade 569,1 personbilar per 1 000 invånare 2025, 93,9 fler än riket, och invånarna körde i genomsnitt 762,2 mil per person 2024."
+        "ledtext": "Bilinnehavet har ökat sedan 2021",
+        "text": "Antalet personbilar i trafik var 569,1 per 1 000 invånare 2025, näst högst i länet, och har ökat varje år sedan 2021."
       },
       {
-        "ledtext": "Elbilsandelen lägst i Halland",
-        "text": "Rena elbilar utgjorde 4,27 procent av personbilarna 2025, mot 8,09 procent i länet och 8,59 procent i riket."
+        "ledtext": "Flest räddningsinsatser vid trafikolyckor per invånare",
+        "text": "Räddningstjänsten gjorde i genomsnitt 3,66 insatser vid trafikolyckor per 1 000 invånare och år 2023–2025, högst i länet, mot 1,41 i riket."
       }
     ],
     "stycken": [
-      "Bilen har en starkare ställning i Hylte än i länet och riket. Kommunen hade 569,1 personbilar per 1 000 invånare 2025, 93,9 fler än riket. Invånarna körde i genomsnitt 762,2 mil per person 2024, 137,4 mil mer än i riket. Samtidigt bor 60,7 procent av befolkningen inom 500 meter från en hållplats med minst en avgång i timmen, den lägsta andelen i länet. Utanför tätorterna gäller det 13,1 procent, mot 84,5 procent inom tätort.",
-      "Omställningen av bilparken har kommit kortare i Hylte än i resten av Halland. Rena elbilar utgjorde 4,27 procent av personbilarna 2025, lägst i länet, mot 8,59 procent i riket. Under fem år har andelen ökat med 3,36 procentenheter mot 7,46 i riket, vilket betyder att avståndet till landet har vuxit. Andelen fossiloberoende bilar, 18,2 procent, är också lägst i länet, och kommunen har färst laddpunkter i länet.",
-      "Mönstret hänger sannolikt samman med att Hylte är en gles inlandskommun där avstånden till arbete och service är långa. Pendlingen går åt båda hållen: 29,9 procent av dem som arbetar i Hylte bor i en annan kommun, den högsta andelen i länet, och 33,1 procent av de sysselsatta invånarna arbetar utanför kommunen. Om resorna går mellan orter med glesa förbindelser blir bilen det praktiska valet, och få laddpunkter kan göra elbilen till ett mindre självklart alternativ. För planeringen pekar siffrorna på att bostädernas läge spelar roll: av de bostäder som tillkommit under den senaste treårsperioden ligger 20,0 procent i kollektivtrafiknära läge, mot 81,5 procent i länet. Byggandet är litet, så andelen kan svänga kraftigt mellan perioderna."
+      "Hylte har länets lägsta andel invånare nära kollektivtrafik, men andelen har ökat. Av befolkningen har 60,7 procent en trafikerad hållplats inom 500 meter fågelvägen, mot 76,8 procent i länet och 80,9 i riket. Andelen har ökat med 5,1 procentenheter på tio år och 1,3 på fem år, mer än i riket, men var oförändrad det senaste året. Inom tätort är andelen 84,5 procent, nära länets 86,3, och utanför tätort 13,1 procent mot länets 20,7. Att skillnaden mot länet är större totalt än i båda grupperna pekar på att en större del av invånarna än i länet bor utanför tätort.",
+      "Bilinnehavet är näst högst i länet: antalet personbilar i trafik var 569,1 per 1 000 invånare 2025, mot 475,2 i riket. Antalet låg mellan 542,4 och 551,2 under 2015–2021 och har sedan stigit varje år; tioårsökningen är 18,3, mot 1,5 i riket. Körsträckan per invånare med bilar registrerade i kommunen var 762,2 mil 2024, näst högst i länet; den har minskat med 53,5 mil på tio år men ökat årligen sedan 2021. Elbilarna utgör 4,27 procent av personbilarna, lägst i länet, mot 8,59 i riket.",
+      "Med en större andel boende utanför tätort och mycket pendling över kommungränsen kan bilen vara svårare att ersätta. Av dem som arbetar i Hylte bor 29,9 procent i en annan kommun, högst bland länets kommuner, och av de sysselsatta invånarna arbetar 33,1 procent utanför kommunen. Antalet räddningsinsatser vid trafikolyckor, i genomsnitt 3,66 per 1 000 invånare och år 2023–2025, är högst i länet, mot 1,41 i riket. Nivån har stigit sedan 2010 men är lägre än 2020 och 2023, och med liten befolkning kan måttet skifta mycket. För planeringen innebär det att kollektivtrafiken når en mindre del av invånarna än i länets övriga kommuner."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N07418"],
+        "rubrik": "Andelen nära kollektivtrafik har ökat men ligger under länets"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["N07935"],
+        "rubrik": "Antalet bilar per invånare har ökat varje år sedan 2021"
+      },
+      {
+        "efter": 2,
+        "typ": "halland",
+        "kpi": ["N00799"],
+        "rubrik": "Flest räddningsinsatser vid trafikolyckor per invånare i länet"
+      }
     ]
   }
 }

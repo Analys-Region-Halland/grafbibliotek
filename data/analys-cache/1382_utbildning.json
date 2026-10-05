@@ -1,29 +1,56 @@
 {
-  "hash": "e5b6cc7acc1f645e4e90506a0763f9af",
+  "hash": "b775fa682dd858723ac6f1d8601bfed9",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Gymnasial profil bland vuxna, pojkarnas meritvärde under riket",
-    "ingress": "Falkenbergs vuxna befolkning har oftare gymnasial och mer sällan eftergymnasial utbildning än länet och riket. Avståndet till riket i eftergymnasial utbildning består, samtidigt som pojkarnas meritvärde i årskurs 9 har sjunkit de senaste fem åren.",
+    "rubrik": "Utbildningsnivån stiger, men pojkarnas meritvärde ligger 16 poäng under rikets",
+    "ingress": "Andelen invånare 25–64 år med eftergymnasial utbildning i Falkenberg har de senaste tio åren ökat något snabbare än i riket, till 37,1 procent 2025, men ligger 11,5 procentenheter under riket. Bland elever folkbokförda i kommunen har pojkarnas meritvärde i årskurs 9 minskat på tio år, medan rikets ökat, och var 206 poäng 2026, 16,0 under rikets; flickornas låg nära rikets.",
     "i_korthet": [
       {
-        "ledtext": "Hälften har gymnasial utbildning",
-        "text": "Bland invånarna 25–64 år har 50,4 procent gymnasial utbildning som högsta nivå, 11,0 procentenheter över riket."
+        "ledtext": "Något snabbare ökning än i riket",
+        "text": "Andelen eftergymnasialt utbildade ökade med 7,6 procentenheter på tio år och 4,4 på fem år, mot 7,0 och 4,1 i riket."
       },
       {
-        "ledtext": "Eftergymnasial andel växer i rikets takt",
-        "text": "Andelen med eftergymnasial utbildning har ökat med 7,6 procentenheter sedan 2015 till 37,1 procent, mot 7,0 procentenheter i riket."
+        "ledtext": "Pojkarnas meritvärde allt längre under rikets",
+        "text": "Pojkarnas meritvärde var 206 poäng 2026, 16,0 poäng under riket, och har minskat med 8,0 poäng på tio år medan rikets ökat."
       },
       {
-        "ledtext": "Pojkarnas meritvärde har sjunkit",
-        "text": "Pojkarnas meritvärde i årskurs 9 är 206 poäng, 16 poäng under riket, efter en minskning med 10 poäng på fem år."
+        "ledtext": "Behörigheten minskar mer än i riket",
+        "text": "Andelen behöriga till yrkesprogram har minskat med 5,2 procentenheter på tio år, mer än i riket, och var 81,0 procent 2026."
       }
     ],
     "stycken": [
-      "Falkenbergs vuxna befolkning har en tydlig gymnasial profil. Bland invånarna 25–64 år har 50,4 procent gymnasial utbildning som högsta nivå, vilket är 11,0 procentenheter över riket och 6,5 över länet. Andelen med eftergymnasial utbildning är 37,1 procent, 11,5 procentenheter under riket. Utvecklingen går ändå åt samma håll som i landet: den eftergymnasiala andelen har ökat med 7,6 procentenheter sedan 2015, mot 7,0 i riket, och andelen med enbart förgymnasial utbildning har minskat snabbare än i riket. Avståndet består alltså, men det vidgas inte.",
-      "I Halland liknar Falkenbergs utbildningsprofil närmast Laholms. Andelen eftergymnasialt utbildade är 37,1 procent, mot 35,9 procent i Laholm, 45,1 procent i Varberg, 46,7 procent i Halmstad och 54,3 procent i Kungsbacka. Meritvärdet i årskurs 9 är 220 poäng, 10 poäng under riket, men skillnaden ligger främst hos pojkarna: de når 206 poäng, 16 under riket, medan flickorna ligger 3 poäng under. Behörigheten till yrkesprogram, 81,0 procent, är den lägsta i serien 2010–2026, och pojkarnas andel på 79,9 procent är lägst i länet.",
-      "Mönstret kan hänga samman med kommunens näringsliv. Om livsmedels- och tillverkningsindustrin efterfrågar gymnasial yrkesutbildning, och jobb som kräver längre utbildning i högre grad finns i Halmstad och Göteborgsregionen, så kan det hålla nere den eftergymnasiala andelen. För planeringen är pojkarnas resultat den del som rör sig bort från riket: om behörigheten till yrkesprogram fortsätter att minska kan det försvåra kompetensförsörjningen till de branscher som präglar kommunen. Högskolebehörigheten steg med 7,7 procentenheter på ett år till 56,6 procent, men serien har varierat mellan 46,3 och 58,8 procent och en enskild årsuppgång bör tolkas försiktigt."
+      "Andelen eftergymnasialt utbildade i Falkenberg ökar något snabbare än i riket. Bland invånare 25–64 år har andelen ökat varje år sedan 2015 och var 37,1 procent 2025, seriens högsta. Ökningen var 7,6 procentenheter på tio år och 4,4 på fem år, mot 7,0 och 4,1 i riket, och 0,8 det senaste året, lika mycket som i riket. Andelen med högst förgymnasial utbildning har minskat snabbare än i riket, med 5,1 procentenheter på tio år till 10,4 procent. Gymnasial utbildning är fortfarande vanligast, med 50,4 procent, 11,0 procentenheter mer än i riket.",
+      "Falkenberg ligger ändå 11,5 procentenheter under riket och 8,6 under länet i andelen eftergymnasialt utbildade, fjärde i länet, medan andelen med högst förgymnasial utbildning är näst högst efter Hylte. Avståndet till riket är större bland män: 28,5 procent av männen har eftergymnasial utbildning, 13,0 procentenheter under riket, mot 46,0 procent av kvinnorna, 9,9 under. Kvinnornas andel har ökat med 10,2 procentenheter på tio år, mer än rikets 8,9, medan männens ökat i rikets takt. Mönstret kan spegla en arbetsmarknad med livsmedels- och tillverkningsindustri.",
+      "Bland elever folkbokförda i Falkenberg har andelen behöriga till gymnasiets yrkesprogram sjunkit till den lägsta nivån sedan nuvarande behörighetskrav infördes 2012. Den har minskat med 5,2 procentenheter på tio år och 4,0 på fem år, mer än i riket, och efter 84,2 till 85,7 procent 2021–2024 sjönk den två år i rad till 81,0 procent 2026. På tio år har den minskat mest bland pojkar, vars andel, 79,9 procent, är lägst i länet, men det senaste året mest bland flickor. Flickornas meritvärde var 235 poäng 2026, 3,0 under riket, medan pojkarnas, 206 poäng och näst lägst i länet, låg 16,0 under riket efter en minskning med 8,0 poäng på tio år, då rikets ökade."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "N01982"
+        ],
+        "rubrik": "Andelen har sedan 2015 ökat något snabbare än i riket"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": [
+          "N01982"
+        ],
+        "rubrik": "Falkenberg har fjärde högst andel eftergymnasialt utbildade i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": [
+          "N15428"
+        ],
+        "fran": 2012,
+        "rubrik": "Behörigheten till yrkesprogram har sjunkit till seriens lägsta nivå"
+      }
     ]
   }
 }

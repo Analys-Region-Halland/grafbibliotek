@@ -1,1 +1,49 @@
-{"hash": "831367bb5e9a0806fe5108666652b907", "period": "2023", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Länets tätaste företagande men antalet jobb minskade 2024", "ingress": "Laholms näringsliv består i ovanligt hög grad av egna företag, med länets högsta andel egenföretagare och flest företag per invånare. Samtidigt minskade antalet sysselsatta på arbetsställen i kommunen mer än i någon annan halländsk kommun under 2024.", "i_korthet": [{"ledtext": "Flest egenföretagare i Halland", "text": "Egenföretagare utgör 10,7 procent av de sysselsatta i Laholm, vilket är 6,5 procentenheter över riket."}, {"ledtext": "Sysselsättningen minskade mest i länet", "text": "Antalet sysselsatta i kommunen minskade med 2,3 procent under 2024, mot 0,7 procent i länet och 0,4 procent i riket."}, {"ledtext": "Jordbruk och tillverkning väger tungt", "text": "Jordbruk och skogsbruk står för 7,5 procent av de sysselsatta och tillverkning för 15,3 procent, mot 1,8 respektive 10,7 procent i riket."}], "stycken": ["Laholms näringsliv bygger på många egna företag. Egenföretagare utgör 10,7 procent av dem som arbetar i kommunen, vilket är 6,5 procentenheter över riket och högst i Halland. Kommunen har också 71,7 företagsförekomster per 1 000 invånare år 2023, mot 54,0 i riket. Det betyder att en mindre del av de sysselsatta är anställda: andelen är 80,9 procent, den lägsta i länet och 9,1 procentenheter under riket. Egenföretagarandelen har dock sjunkit från 13,4 procent år 2020.", "Under 2024 minskade antalet sysselsatta i Laholm mer än i någon annan halländsk kommun. Dagbefolkningen, alltså de som arbetar i kommunen oavsett var de bor, minskade med 2,3 procent till 9 213 personer, medan länet minskade med 0,7 procent och riket med 0,4 procent. Nedgången syns både i näringslivet, med 2,2 procent, och i offentlig sektor, med 2,6 procent. Nyföretagandet går åt andra hållet: med 12,9 nystartade företag per 1 000 invånare år 2025 ligger Laholm högst i länet.", "Mönstret hänger sannolikt samman med branschstrukturen. Jordbruk och skogsbruk står för 7,5 procent av de sysselsatta och tillverkning för 15,3 procent, mot 1,8 respektive 10,7 procent i riket. Om en stor del av jordbruket drivs som egna företag kan det förklara en del av den höga egenföretagarandelen. Företagstjänster väger lättare, 6,2 procent mot 12,9 procent i riket, och andelen sysselsatta med eftergymnasial utbildning ligger 14,3 procentenheter under riket. Det kan spegla att kunskapsintensiva jobb i högre grad finns i Halmstad och nordvästra Skåne, dit många invånare pendlar. Ett enskilt år med minskning räcker dock inte för att fastställa en trend."]}}
+{
+  "hash": "934429ac3e7aceb94965ed19f1fda48a",
+  "period": "2023",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Företagandet präglar Laholm, där jobben minskat två år i rad",
+    "ingress": "Laholm har länets största andel egenföretagare och minsta andel anställda bland de sysselsatta med arbetsställe i kommunen, och jordbruk och tillverkning väger tyngre än i länet. Antalet sysselsatta ökade till och med 2022 men har sedan minskat två år i rad, under 2024 med 2,3 procent.",
+    "i_korthet": [
+      {
+        "ledtext": "Länets största andel egenföretagare",
+        "text": "Egenföretagarna utgör 10,7 procent av de sysselsatta, högst i länet och 6,5 procentenheter över riket."
+      },
+      {
+        "ledtext": "Jobben har minskat sedan 2022",
+        "text": "Antalet sysselsatta med arbetsställe i Laholm sjönk från 9 608 år 2022 till 9 213 år 2024, det lägsta sedan serien började 2020."
+      },
+      {
+        "ledtext": "Jordbruk och tillverkning väger tungt",
+        "text": "Jordbruk och skogsbruk står för 7,50 procent av de sysselsatta, högst i länet, och tillverkning för 15,3 procent, näst högst efter Hylte."
+      }
+    ],
+    "stycken": [
+      "Antalet sysselsatta med arbetsställe i Laholm, oavsett var de bor, ökade till och med 2022 men har sedan minskat två år i rad. Antalet steg från 9 270 år 2020 till 9 608 år 2022 och sjönk sedan till 9 213 år 2024, det lägsta i serien. Den årliga förändringen gick från en ökning med 2,40 procent 2021 till minskningar med 1,80 procent 2023 och 2,30 procent 2024. Det senaste året var minskningen den största i länet, mot 0,7 procent i länet och 0,4 procent i riket. Näringslivet minskade med 137 och offentlig sektor med 81 sysselsatta.",
+      "Eget företagande väger tyngre i Laholm än i övriga kommuner i länet. Andelen anställda bland de sysselsatta är lägst i länet, 80,9 procent, medan egenföretagarna utgör 10,7 procent, högst i länet och 6,5 procentenheter över riket, och företagarna i aktiebolag 8,40 procent, näst högst efter Kungsbacka. Jordbruk och skogsbruk står för 7,50 procent av de sysselsatta, högst i länet, och tillverkning för 15,3 procent, näst högst efter Hylte. Företagstjänster ligger i stället 6,70 procentenheter under riket.",
+      "Företagandet har skiftat form sedan 2020. Andelen egenföretagare har minskat från 13,4 till 10,7 procent, mest 2024, 1,6 procentenheter, då den minskade även i riket. Andelen företagare i aktiebolag har samtidigt ökat från 6,80 till 8,40 procent, vilket delvis kan spegla en övergång till aktiebolag. Nyföretagandet, nystartade företag per 1 000 invånare 16–64 år, sjönk från 13,0 år 2021 till 10,4 år 2024 och steg till 12,9 år 2025, högst i länet; ett enskilt år är ännu ingen ny riktning. Företagarandelen hänger sannolikt samman med jordbruket och landsbygden. Eftersom statistiken räknar jobben där arbetsstället ligger syns inte boende som pendlar till Halmstad och nordvästra Skåne, så minskningen säger mer om kommunens arbetsställen än om de boendes sysselsättning."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N_SEK_TOT"],
+        "rubrik": "Antalet sysselsatta har minskat sedan toppen 2022"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N_YRK_EGFOR_A"],
+        "rubrik": "Andelen egenföretagare är högst i Laholm"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N_YRK_EGAB_A"],
+        "rubrik": "Andelen företagare i aktiebolag har ökat sedan 2020"
+      }
+    ]
+  }
+}

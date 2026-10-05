@@ -1,29 +1,50 @@
 {
-  "hash": "ab4a3c8ce6622f2a10bf690f72a7b6d2",
-  "period": "2024",
+  "hash": "4eb7a9f913adf9e834879785701dbe9d",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Trångboddheten i Hylte är landets högsta trots länets lägsta priser",
-    "ingress": "Hylte har den högsta andelen trångbodda i flerbostadshus bland landets kommuner, samtidigt som bostadspriserna och nybyggandet är de lägsta i Halland. Trångboddheten har minskat sedan toppen 2019, men nivån ligger långt över både länet och riket.",
+    "rubrik": "Trångboddheten i flerbostadshus, länets högsta, har minskat sedan 2019",
+    "ingress": "Hylte har länets högsta trångboddhet i flerbostadshus och högsta andel invånare med ansträngd boendeekonomi, men båda har minskat varje år sedan 2019. Bostäderna har länets lägsta kvadratmeterpriser och få nya byggs.",
     "i_korthet": [
       {
-        "ledtext": "Högst trångboddhet i landet",
-        "text": "Av de boende i flerbostadshus är 31,0 procent trångbodda, mot 12,6 procent i Halland och 15,1 procent i riket."
+        "ledtext": "Högst trångboddhet i länet, men minskande",
+        "text": "Enligt norm 3 var 52,0 procent av de boende i flerbostadshus trångbodda 2025, mot 64,1 procent 2019 och 38,7 procent i riket."
       },
       {
-        "ledtext": "Nybyggandet är lägst i länet",
-        "text": "Under 2025 färdigställdes 0,59 bostäder per 1 000 invånare, mot 3,83 i länet och 2,96 i riket, och inga av dem i flerbostadshus."
+        "ledtext": "Ansträngd boendeekonomi har minskat sedan 2019",
+        "text": "Andelen invånare med ansträngd boendeekonomi var 5,49 procent 2024, högst i länet, efter en minskning med 3,20 procentenheter på fem år."
       },
       {
-        "ledtext": "Länets lägsta småhuspriser",
-        "text": "Ett småhus kostade i genomsnitt 10 072 kronor per kvadratmeter, mot 21 068 i Laholm och 28 884 i riket."
+        "ledtext": "Lägst priser, få nya bostäder",
+        "text": "Småhusen kostade 10 072 kronor per kvadratmeter 2025 och nybyggandet var 0,59 bostäder per 1 000 invånare, båda lägst i länet."
       }
     ],
     "stycken": [
-      "Trångboddheten i Hylte är den högsta bland landets 290 kommuner: 31,0 procent av de boende i flerbostadshus bor med fler än två personer per rum, kök och vardagsrum oräknade. Det är 15,9 procentenheter över riket och 18,4 procentenheter över länet. Andelen har sjunkit från 42,0 procent 2019 och minskade med 7,6 procentenheter på fem år, mot 2,3 i riket. Måttet gäller bara boende i flerbostadshus, medan 62,9 procent av bostäderna i Hylte är äganderätter, så det beskriver sannolikt en mindre del av beståndet.",
-      "Antalet bostäder i förhållande till befolkningen skiljer inte ut Hylte. Med 489,3 bostäder per 1 000 invånare ligger kommunen näst högst i Halland efter Halmstad och 9,6 under riket. Skillnaden ligger i priser och byggande: småhuspriset är lägst i länet och i stort sett oförändrat det senaste året, medan riket steg med 862 kronor per kvadratmeter. Nybyggandet är också lägst i länet, långt efter Kungsbacka med 7,91 per 1 000 invånare, och bostadsrätterna utgör 2,35 procent av beståndet mot 24,32 procent i riket.",
-      "Mönstret kan hänga samman med att marknadsvärdet ligger så långt under riket att nya hus sällan bär sin byggkostnad, vilket kan förklara varför byggandet 2025 bestod av småhus. Trångboddheten mäts däremot i flerbostadshusen, och hyresrätterna har ökat med 0,5 procentenheter som andel av beståndet på fem år. Nya småhus påverkar därför sannolikt måttet lite. För planeringen pekar det mot lägenheter i lägen med god kollektivtrafik, där Hylte ligger lägst i länet: 60,7 procent av invånarna hade 2024 en hållplats med minst en avgång i timmen inom 500 meter."
+      "Trångboddheten i Hyltes flerbostadshus är länets högsta men har minskat varje år sedan 2019. Enligt norm 3, fler än en person per rum utöver kök och vardagsrum, var 52,0 procent av de boende trångbodda 2025, mot 34,2 i länet och 38,7 i riket. Andelen steg från 46,2 procent 2012 till 64,1 procent 2019 och har sedan sjunkit varje år. På tio år har den minskat med 5,4 procentenheter, mot 1,5 i riket, på fem år med 10,3, mot 1,8, och det senaste året med 1,4. Enligt den mindre strikta norm 2 var andelen 31,0 procent, högst bland landets 290 kommuner.",
+      "Även boendeekonomin och priserna skiljer Hylte från övriga länet. Andelen invånare med ansträngd boendeekonomi var 5,49 procent 2024, högst i länet och 1,59 procentenheter över riket. Den nådde också sin topp 2019, 8,69 procent, och har sedan minskat varje år, med 3,20 procentenheter på fem år mot 1,17 i riket. På tio år är minskningen däremot 0,32 procentenheter, mot 2,02 i riket. Småhusen kostade 10 072 kronor per kvadratmeter 2025, lägst i länet och 18 812 kronor under riket; priset har stigit med 4 818 kronor sedan 2015 men inte det senaste året.",
+      "Byggandet är lågt: åren 2015–2025 färdigställdes färre än 1 bostad per 1 000 invånare per år utom 2021 och 2023, och 2025 var nivån 0,59, lägst i länet, samtliga i småhus. Antalet hushåll har minskat sedan toppen 2017, med 1,2 procent på fem år, mot en ökning med 4,7 procent i riket. Antalet bostäder per 1 000 invånare har ändå ökat, med 26,7 på fem år mot 13,6 i riket, vilket kan förklara en del av den minskade trångboddheten. Underlaget visar inte om ökningen beror på färre invånare eller fler bostäder i beståndet."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N07914"],
+        "rubrik": "Trångboddheten har minskat varje år sedan toppen 2019"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["N66081"],
+        "rubrik": "Andelen med ansträngd boendeekonomi har minskat varje år sedan 2019"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N02938"],
+        "fran": 2016,
+        "rubrik": "Antalet hushåll har minskat sedan toppen 2017"
+      }
     ]
   }
 }

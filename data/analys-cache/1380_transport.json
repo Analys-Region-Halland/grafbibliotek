@@ -1,29 +1,49 @@
 {
-  "hash": "7634d9157f358829194a220d7112cb94",
+  "hash": "7c339d18456d6db1aa94e76458c15e77",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Halmstad drar till sig pendlare och har länets lägsta biltäthet",
-    "ingress": "Halmstad är den enda halländska kommunen där fler pendlar in än ut, och en större andel av invånarna bor nära kollektivtrafik än i riket. Bilinnehavet och körsträckorna är lägst i länet, men elbilarna utgör en mindre andel av bilparken än i både länet och riket.",
+    "rubrik": "Halmstad är länets största pendlingsmål med störst andel nära kollektivtrafik",
+    "ingress": "Halmstad är den enda kommunen i Halland där fler pendlar in än ut, och 90,3 procent av invånarna har en trafikerad hållplats inom 500 meter. Biltätheten och körsträckan per invånare är lägst i länet, medan elbilarnas andel av personbilarna ökar långsammare än i riket.",
     "i_korthet": [
       {
         "ledtext": "Enda kommunen i länet med nettoinpendling",
-        "text": "Nettoinpendlingen var 2 327 personer 2024 och pendlingskvoten 1,04, högst i Halland och 0,05 över riket."
+        "text": "Nettoinpendlingen var 2 327 personer 2024 och pendlingskvoten 1,04, samma kvot som varje år sedan 2020."
       },
       {
         "ledtext": "Störst andel nära kollektivtrafik i länet",
-        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter var 90,3 procent, 9,4 procentenheter över riket."
+        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter var 90,3 procent 2024, 9,4 procentenheter över riket."
       },
       {
-        "ledtext": "Elbilsandelen under länet och riket",
-        "text": "Elbilar utgjorde 6,87 procent av personbilarna 2025, 1,21 procentenheter under länet och 1,71 under riket."
+        "ledtext": "Elbilsandelen ökar långsammare än i riket",
+        "text": "Elbilarnas andel av personbilarna ökade med 6,77 procentenheter på tio år till 6,87 procent, mot 8,48 procentenheter i riket."
       }
     ],
     "stycken": [
-      "Halmstad är ett arbetsplatscentrum som tar emot fler pendlare än det skickar ut. Antalet sysselsatta som arbetar i kommunen översteg antalet sysselsatta invånare med 2 327 år 2024, och pendlingskvoten var 1,04, högst i länet och plats 39 bland landets 290 kommuner. Med 11 077 inpendlare tar Halmstad emot flest pendlare i Halland, samtidigt som 16,9 procent av de sysselsatta invånarna arbetar i en annan kommun, lägst i länet. Det betyder att de flesta som bor i Halmstad också arbetar där.",
-      "Tillgången till kollektivtrafik skiljer sig tydligt från grannkommunernas. I Halmstad har 90,3 procent av invånarna en trafikerad hållplats inom 500 meter, 13,5 procentenheter över länet, mot 63,4 procent i Laholm och 60,7 procent i Hylte. Bostadsbyggandet följer samma linje: av de bostäder som tillkommit under den senaste treårsperioden ligger 95,7 procent nära kollektivtrafik, högst i länet. Biltätheten, 496,3 personbilar per 1 000 invånare, är lägst i Halland men 21,1 över riket, och körsträckan på 620,8 mil per invånare ligger 4,0 mil under riket och 62,9 mil under länet.",
-      "Mönstret hänger sannolikt samman med att Halmstad är länets största kommun och residensstad. Om arbete och service ligger nära bostaden blir resorna kortare, vilket kan förklara de kortare körsträckorna. Elektrifieringen av bilparken går däremot långsammare än i riket: elbilarnas andel har ökat med 5,87 procentenheter på fem år mot 7,46 i riket, trots att kommunen har flest publika laddpunkter i Halland, 636. Andelen laddhybrider ökade samtidigt något mer än i riket det senaste året, 1,32 mot 1,12 procentenheter. För planeringen pekar siffrorna på att resandet i Halmstad kan påverkas av var bostäder och arbetsplatser placeras."
+      "Halmstad är länets arbetsplatscentrum. Under 2024 arbetade 54 225 sysselsatta i kommunen och 51 898 bodde där, en nettoinpendling på 2 327 personer och en pendlingskvot på 1,04, den enda över 1,0 i länet. Kvoten har varit 1,04 varje år sedan serien börjar 2020, och nettoinpendlingen har ökat från 1 933 personer, med en nedgång 2022. Halmstad tar emot flest inpendlare i länet, 11 077, och 16,9 procent av de sysselsatta invånarna arbetar i en annan kommun, lägst bland länets kommuner.",
+      "Tillgången till kollektivtrafik är större än i övriga länet och i riket. Av invånarna har 90,3 procent en hållplats med minst en avgång i timmen vardagar 6–20 inom 500 meter, 13,5 procentenheter över länet och 9,4 över riket, och andelen har legat mellan 89,6 och 90,3 procent sedan 2014. Av de bostäder som tillkom 2024 låg 95,7 procent nära en sådan hållplats, högst i länet, och andelen har varit över 90 procent alla år sedan 2014 utom 2022. Biltätheten 2025, 496,3 personbilar i trafik per 1 000 invånare, är lägst i Halland men 21,1 över riket och i stort sett oförändrad på tio år.",
+      "Mönstret hänger sannolikt samman med att fler arbetar i Halmstad än i någon annan kommun i länet. Om arbete och bostad ligger nära varandra blir resorna kortare, vilket kan förklara att körsträckan per invånare är lägst i länet, 620,8 mil 2024, 4,0 mil under riket; den har minskat med 20,5 mil på tio år men ökat varje år sedan 2020. Elbilarnas andel av personbilarna, 6,87 procent, ökar däremot långsammare än i riket, med 6,77 procentenheter på tio år och 1,07 det senaste året, mot 8,48 och 1,39. För planeringen pekar siffrorna på att resandet påverkas av var nya bostäder och arbetsplatser placeras."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["C_PENDL_NETTO"],
+        "rubrik": "Nettoinpendlingen har ökat sedan 2020, med en nedgång 2022"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N07418"],
+        "rubrik": "Halmstad har störst andel invånare nära kollektivtrafik i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N07945"],
+        "rubrik": "Elbilarnas andel ökar men långsammare än i riket"
+      }
     ]
   }
 }

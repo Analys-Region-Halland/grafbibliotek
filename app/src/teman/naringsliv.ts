@@ -271,7 +271,7 @@ const naringsliv: TemaConfig = {
     "N_YRK_EGFOR_KV_A": "Andel kvinnor bland egenföretagare (%)",
     "N_YRK_EGFOR_KV": "Antal kvinnor bland egenföretagare",
     // Kolada
-    "N00999": "Nystartade företag per 1 000 invånare",
+    "N00999": "Nystartade företag per 1 000 invånare 16–64 år",
     "N01003": "Nystartade företag, antal",
     "N45700": "Antal företagsförekomster per 1 000 invånare",
   },

@@ -1,29 +1,43 @@
 {
-  "hash": "3799917312cdb86b23ceafab6f3b809a",
+  "hash": "22ebe55c45affa07ba093d74f702dc77",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Hylte har länets högsta utsläpp från transporter och industri",
-    "ingress": "Hylte släpper ut näst mest växthusgaser per invånare i Halland, och utsläppen har ökat de senaste fem åren medan de minskat i riket. Transporter och industri ligger högst i länet, samtidigt som nästan all el som produceras i kommunen är förnybar.",
+    "rubrik": "Utsläppen har minskat sedan 2010 men ligger över rikets",
+    "ingress": "Hyltes växthusgasutsläpp per invånare har sjunkit från 9,91 ton 2010 till 5,78 ton 2024 men är näst högst i Halland, 1,28 ton över riket. Efter seriens lägsta värde 2023 steg utsläppen med 0,72 ton under 2024, främst genom transporterna.",
     "i_korthet": [
       {
         "ledtext": "Näst högst utsläpp i länet",
-        "text": "Utsläppen var 5,78 ton koldioxidekvivalenter per invånare 2024, 1,47 ton över länet och 1,28 ton över riket."
+        "text": "Utsläppen var 5,78 ton koldioxidekvivalenter per invånare 2024, efter Laholms 6,48 ton, och 1,47 ton över länet."
       },
       {
-        "ledtext": "Utsläppen ökar medan riket minskar",
-        "text": "På fem år har utsläppen ökat med 0,23 ton per invånare, medan de minskat med 0,36 ton i riket."
+        "ledtext": "Transporter och industri högst i länet",
+        "text": "Transporterna gav 2,90 ton per invånare och industrin 1,20 ton, de högsta nivåerna bland Hallands kommuner."
       },
       {
-        "ledtext": "Nästan all lokal el är förnybar",
-        "text": "Förnybara källor stod för 99,6 procent av elproduktionen i kommunen, mot 67,3 procent i riket."
+        "ledtext": "Kväveoxiderna har minskat sedan 2019",
+        "text": "Utsläppen av kväveoxider minskade med 18,1 kg per invånare på fem år till 17,8 kg 2024, seriens lägsta värde."
       }
     ],
     "stycken": [
-      "Hylte har en utsläppsprofil som skiljer sig från resten av Halland: både transporter och industri ligger högst i länet. Utsläppen inom kommunens gräns var 5,78 ton koldioxidekvivalenter per invånare 2024, näst mest i Halland efter Laholm och 1,28 ton över riket. Transporterna stod för 2,90 ton per invånare, 1,31 ton över riket, och industrin för 1,20 ton, i nivå med rikets 1,23 ton men långt över länets 0,30 ton. Nivån är lägre än 2010, då utsläppen var 9,91 ton, men den steg med 0,72 ton mellan 2023 och 2024, från seriens lägsta värde.",
-      "Över fem år går utvecklingen i motsatt riktning mot riket. Utsläppen har ökat med 0,23 ton per invånare, medan de minskat med 0,36 ton i riket. Transporternas utsläpp har ökat med 0,27 ton under samma period, mot en minskning på 0,04 ton i landet. Hylte har högre transportutsläpp än grannkommunerna Falkenberg, 2,66 ton, och Halmstad, 1,84 ton, och hamnar på plats 53 bland landets 290 kommuner.",
-      "Mönstret hänger sannolikt samman med Hyltes läge och näringsliv. I en inlandskommun med liten befolkning och pendling mot Halmstad och Falkenberg blir avstånden långa och bilen ett naturligt val, och eftersom utsläppen räknas per invånare kan trafik som passerar kommunen väga tungt. Industriutsläppen kan spegla traditionen av tillverkningsindustri, där enskilda anläggningar kan påverka siffrorna mycket när befolkningen är liten. Samtidigt kommer 99,6 procent av elen som produceras i kommunen från förnybara källor, mot 67,3 procent i riket. För planeringen pekar det på att utsläppen främst påverkas genom transporterna och industrins omställning, och att förändringar i enskilda verksamheter kan ge stora utslag."
+      "Hyltes växthusgasutsläpp per invånare har minskat sedan 2010 men har växlat utan tydlig riktning de senaste fem åren. Utsläppen inom kommunens gräns var 9,91 ton koldioxidekvivalenter per invånare 2010 och 6,59 ton 2015 och sjönk till 5,06 ton 2023, seriens lägsta värde. Under 2024 steg de med 0,72 ton till 5,78 ton, mot 0,32 ton i riket, och ligger därmed 0,23 ton över 2019, medan riket minskade med 0,36 ton. Ökningen 2024 kom främst från transporterna, plus 0,65 ton, medan övriga sektorer förändrades med högst 0,09 ton.",
+      "Hylte har näst högst utsläpp per invånare i Halland, efter Laholm med 6,48 ton, och ligger 1,47 ton över länet. Transporterna, 2,90 ton per invånare, och industrin, 1,20 ton, är högst i länet, liksom arbetsmaskiner och avfall och avlopp; industrin ligger i nivå med riket och transporterna 1,31 ton över. Kväveoxiderna är näst högst i länet efter Varberg men har minskat med 18,1 kg per invånare på fem år, mot 9,7 kg i riket, till 17,8 kg 2024, seriens lägsta värde. Mest föll nivån 2020, till 23,3 kg.",
+      "Mönstret hänger sannolikt samman med Hyltes läge och näringsliv. Utsläppen räknas inom kommunens gräns och fördelas på en liten befolkning, så enskilda anläggningar kan ge stora utslag per invånare, vilket kan förklara industrins nivå. Fallet i kväveoxider 2020 kan spegla förändringar i trafiken eller vid enskilda anläggningar. Läget i inlandet och pendlingen mot Halmstad och Falkenberg kan bidra till transporternas nivå. Transporternas utsläpp steg också i riket 2024, vilket kan tyda på att ökningen delvis har orsaker som gäller hela landet. Samtidigt kommer 99,6 procent av elproduktionen i kommunen från förnybara källor, mot 67,3 procent i riket. För planeringen pekar det på att transporterna och industrin i stor utsträckning avgör kommunens utsläpp per invånare."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N00401"],
+        "rubrik": "Utsläppen har sjunkit sedan 2010 men varierat de senaste åren"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["N85047"],
+        "rubrik": "Kväveoxiderna föll 2020 och är nu på seriens lägsta nivå"
+      }
     ]
   }
 }

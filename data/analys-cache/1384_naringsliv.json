@@ -1,29 +1,49 @@
 {
-  "hash": "a9b37a70f045bab4fac5513a8a227175",
+  "hash": "7220ef23af03ed7d64cfa0361df15808",
   "period": "2023",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Högst andel AB-företagare i länet, lägst andel inom tillverkning",
-    "ingress": "Kungsbacka har en av landets största andelar företagare i aktiebolag, handel är den största branschen och tillverkningen har länets lägsta andel av de sysselsatta. Under 2024 var antalet sysselsatta i näringslivet oförändrat, medan offentlig sektor minskade.",
+    "rubrik": "Fler arbetar i Kungsbacka än 2020, men antalet minskade 2024",
+    "ingress": "Antalet sysselsatta med arbetsställe i Kungsbacka ökade varje år fram till 2023 och minskade sedan med 0,6 procent 2024, främst i offentlig sektor. Kommunen har länets största andel företagare i aktiebolag, och andelen har ökat varje år sedan 2020.",
     "i_korthet": [
       {
-        "ledtext": "Andelen företagare i AB länets högsta",
-        "text": "Av dem som arbetar i Kungsbacka är 12,2 procent företagare i aktiebolag, 6,4 procentenheter över riket och plats 12 bland landets 290 kommuner."
+        "ledtext": "Ökning till 2023, minskning 2024",
+        "text": "Antalet steg från 27 717 år 2020 till 28 586 år 2023 och sjönk till 28 426 år 2024, en minskning med 0,6 procent."
       },
       {
-        "ledtext": "Handel och bygg över rikets nivå",
-        "text": "Handeln står för 17,9 procent och byggverksamheten för 10,9 procent av de sysselsatta, 6,4 respektive 3,8 procentenheter över riket."
+        "ledtext": "Nedgången främst i offentlig sektor",
+        "text": "Under 2024 blev de sysselsatta i offentlig sektor 151 färre, medan näringslivet var i stort sett oförändrat med 9 färre."
       },
       {
-        "ledtext": "Näringslivet oförändrat 2024",
-        "text": "Antalet sysselsatta i näringslivet var oförändrat 2024, medan det minskade med 0,6 procent i riket och med 1,6 procent i Kungsbackas offentliga sektor."
+        "ledtext": "Länets största andel företagare i aktiebolag",
+        "text": "Företagare i aktiebolag är 12,2 procent av de sysselsatta, mot 7,2 procent i länet och 5,8 procent i riket."
       }
     ],
     "stycken": [
-      "Kungsbackas näringsliv präglas av företagare i aktiebolag och av handel och byggverksamhet. Andelen företagare i aktiebolag bland de sysselsatta är 12,2 procent, vilket ger plats 12 bland landets 290 kommuner och ligger 6,4 procentenheter över riket. Samma bild syns i andelen anställda, som med 82,7 procent ligger 7,3 procentenheter under riket. Handel är den största branschen med 17,9 procent av de sysselsatta, och byggverksamheten står för 10,9 procent, länets högsta andel. Tillverkningen stannar vid 5,6 procent, den lägsta andelen i länet.",
-      "Mot övriga Halland skiljer sig Kungsbacka tydligt i industrin: tillverkningen ligger 4,8 procentenheter under länet. Kungsbacka har i stället länets högsta andelar inom byggverksamhet, företagstjänster (11,4 procent) och IT och kommunikation (2,6 procent), även om de två senare ligger under riket. Under 2024 var antalet sysselsatta i näringslivet oförändrat, medan det minskade med 0,7 procent i länet och 0,6 procent i riket. Bakom nollan finns en uppdelning: män i näringslivet ökade med 0,9 procent och kvinnor minskade med 1,5 procent, den största minskningen för kvinnor i länet. Den totala nedgången på 160 sysselsatta kom nästan helt från offentlig sektor, som minskade med 151.",
-      "Mönstret hänger sannolikt samman med att Kungsbacka ingår i Göteborgs arbetsmarknadsregion. Om många förvärvsarbetande pendlar norrut, kan det lokala näringslivet i högre grad bestå av verksamheter som betjänar hushållen och villabebyggelsen, vilket kan förklara tyngden i handel och bygg. För planeringen pekar det på att det lokala näringslivet kan vara känsligt för bostadsbyggandet och hushållens efterfrågan. Måtten avser var arbetsstället ligger och säger inget om var de sysselsatta bor."
+      "Antalet personer som arbetar i Kungsbacka växte under 2020–2023 men minskade 2024. Måttet räknar de sysselsatta efter arbetsställets kommun, oavsett var de bor. Antalet steg från 27 717 år 2020 till 28 586 år 2023, med 1,1 procent 2021 och 1,7 procent 2022, men ökningen bromsade in till 0,3 procent 2023. Under 2024 minskade antalet med 160 till 28 426, eller 0,6 procent, den första minskningen i serien, som börjar 2020. Nedgången låg främst i offentlig sektor, som blev 151 färre och nådde seriens lägsta nivå, medan näringslivet var i stort sett oförändrat med 9 färre. Ett enskilt år är ännu ingen ny riktning.",
+      "Minskningen 2024 låg nära länets, 0,7 procent, och var något större än rikets, 0,4 procent. Varberg var den enda kommunen i länet som ökade, och Kungsbacka låg trea. I branschprofilen har handeln 17,9 procent av de sysselsatta på arbetsställen i kommunen, näst mest i länet efter Falkenberg och 6,4 procentenheter mer än i riket. Utbildning, 14,9 procent, och byggverksamhet, 10,9 procent, har länets högsta andelar, medan tillverkningen har länets lägsta, 5,6 procent, och ligger 5,1 procentenheter under riket.",
+      "Profilen kan hänga samman med att Kungsbacka ingår i Göteborgs arbetsmarknadsregion: många av de förvärvsarbetande som bor i kommunen pendlar norrut, medan jobben i kommunen oftare än i riket ligger i handel, utbildning och byggande. Företagare i aktiebolag är 12,2 procent av de sysselsatta, länets högsta andel och den tolfte högsta bland landets kommuner, och andelen har ökat varje år från 10,6 procent 2020. Andelen egenföretagare har samtidigt sjunkit varje år, från 7,1 till 5,1 procent, vilket kan spegla att fler driver sin verksamhet som aktiebolag. För planeringen betyder det att ökningen bromsade in redan 2023 och att måttet inte omfattar invånare som arbetar i andra kommuner."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N_SEK_TOT_TILLV"],
+        "rubrik": "Ökningen bromsade in 2023 och blev en minskning 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N_BR_G_A"],
+        "rubrik": "Handeln har länets största andelar i Falkenberg och Kungsbacka"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N_YRK_EGAB_A"],
+        "rubrik": "Andelen företagare i aktiebolag har ökat varje år sedan 2020"
+      }
     ]
   }
 }

@@ -1,29 +1,49 @@
 {
-  "hash": "5bc9de4eeaa25e01ed80e74b3194ae23",
+  "hash": "ab438dd46669c14f58b655d5024ac2b8",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Hylte har länets lägsta andel eftergymnasialt utbildade",
-    "ingress": "I Hylte har drygt hälften av invånarna 25–64 år gymnasial utbildning som högsta nivå, medan andelen med eftergymnasial utbildning är lägst i Halland. Mönstret syns redan i skolan, där meritvärde och högskolebehörighet är lägst i länet och under riket.",
+    "rubrik": "Länets lägsta andel eftergymnasialt utbildade ökar långsammare än rikets",
+    "ingress": "Andelen Hyltebor 25–64 år med eftergymnasial utbildning har ökat varje år sedan 2020 och var 27,8 procent 2025, lägst i länet, men den ökar långsammare än i riket. Mer än hälften av de vuxna har gymnasial utbildning som högsta nivå, och skolresultaten ligger under rikets men varierar kraftigt mellan åren.",
     "i_korthet": [
       {
-        "ledtext": "Lägst andel eftergymnasialt utbildade i länet",
-        "text": "Andelen 25–64-åringar med eftergymnasial utbildning är 27,8 procent, 20,8 procentenheter under riket och 17,9 procentenheter under länet."
+        "ledtext": "Lägst andel eftergymnasialt utbildade",
+        "text": "Andelen var 27,8 procent 2025, 17,9 procentenheter under länet och 20,8 under riket."
       },
       {
-        "ledtext": "Gymnasiet är vanligaste högsta utbildning",
-        "text": "Andelen med gymnasial utbildning som högsta nivå är 53,2 procent, 13,7 procentenheter över riket och högst i Halland."
+        "ledtext": "Ökningen går långsammare än i riket",
+        "text": "Andelen ökade med 4,5 procentenheter på tio år och 2,9 på fem år, mot 7,0 respektive 4,1 i riket."
       },
       {
-        "ledtext": "Unga män står still",
-        "text": "Bland män nådde 31,2 procent högskolebehörighet inom tre år efter gymnasiet, 20,5 procentenheter under riket och samma andel som 2020."
+        "ledtext": "Skolresultaten varierar kraftigt mellan åren",
+        "text": "Meritvärdet i årskurs 9 har sedan 2016 legat mellan 195 och 217 poäng och var 199,0 poäng 2026, 31,0 under riket."
       }
     ],
     "stycken": [
-      "Hyltes vuxna befolkning har länets tydligaste tyngdpunkt på gymnasial utbildning. Av invånarna 25–64 år har 53,2 procent gymnasial utbildning som högsta nivå, högst i Halland och 13,7 procentenheter över riket. Andelen med eftergymnasial utbildning är 27,8 procent, vilket ger plats 262 bland landets 290 kommuner. Andelen är den högsta i kommunens serie sedan 2010, men den har ökat med 4,5 procentenheter på tio år mot 7,0 i riket, så avståndet till landet har vuxit.",
-      "Avståndet till grannkommunerna är tydligt. Eftergymnasialt utbildade utgör 35,9 procent i Laholm och 37,1 procent i Falkenberg, medan länet som helhet ligger på 45,7 procent. Andelen med förgymnasial utbildning som högsta nivå, 15,6 procent, är den högsta i Halland och placerar Hylte på plats 12 i landet. Samma mönster syns bland de unga: meritvärdet i årskurs 9 är 199,0 poäng mot 230,0 i riket, lägst i länet, och 47,3 procent av gymnasieeleverna når högskolebehörighet inom tre år mot 57,5 procent i riket.",
-      "Avståndet till riket är större bland män än bland kvinnor, och det kan hänga samman med den lokala arbetsmarknaden. Av männen 25–64 år har 19,6 procent eftergymnasial utbildning, och bland unga män når 31,2 procent högskolebehörighet inom tre år, samma andel som 2020. Om tillverkningsindustrin efterfrågar yrkesutbildad arbetskraft blir ett gymnasieprogram en rimlig väg in i arbetslivet, särskilt för män. Unga som läser vidare kan dessutom flytta till högskoleorter. För planeringen betyder det att behovet av eftergymnasialt utbildad arbetskraft sannolikt behöver mötas genom pendling, inflyttning och vuxenutbildning snarare än genom de egna ungdomskullarna."
+      "Andelen eftergymnasialt utbildade i Hylte ökar, men långsammare än i riket. Bland 25–64-åringar har den ökat från 20,0 procent 2010 till 27,8 procent 2025, med 7,8 procentenheter mot 10,2 i riket, och på tio år med 4,5 mot 7,0. Andelen låg mellan 24,8 och 24,9 procent 2017–2020 och har sedan ökat varje år, med 2,9 procentenheter på fem år och 0,6 det senaste året, mot 4,1 respektive 0,8 i riket. Under samma tio år har andelen med förgymnasial utbildning minskat snabbare än i riket, med 5,2 procentenheter mot 3,1, medan andelen med gymnasial är i stort sett oförändrad och högst i länet.",
+      "I länet har Hylte lägst utbildningsnivå, och skillnaden mot riket är störst bland männen. Andelen eftergymnasialt utbildade är 17,9 procentenheter under länets och 20,8 under rikets, och Hylte har plats 262 bland landets 290 kommuner. Av männen har 19,6 procent eftergymnasial utbildning, 22,0 procentenheter under riket mot 19,1 för kvinnorna, och männens andel har ökat med 2,1 procentenheter på tio år mot 5,2 i riket.",
+      "Skolresultaten varierar kraftigt mellan åren, sannolikt eftersom en liten befolkning ger små årskullar, så enskilda år säger lite om utvecklingen. Meritvärdet i årskurs 9 för elever folkbokförda i kommunen har sedan 2016 legat mellan 195 och 217 poäng och var 199,0 poäng 2026, lägst i länet och 31,0 under riket. Behörigheten till gymnasiets yrkesprogram har sedan 2016 växlat mellan 69,8 och 82,1 procent och var 80,0 procent 2026, strax under Laholm och Falkenberg. Högskolebehörigheten inom tre år efter gymnasiet har sedan 2015 växlat mellan 39,2 och 58,6 procent och var 47,3 procent 2025, 10,2 procentenheter under riket. Utbildningsprofilen kan spegla en lång tradition av tillverkningsindustri; för planeringen betyder utvecklingen att avståndet till riket i eftergymnasial utbildning växer trots att andelen stiger."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N01982"],
+        "rubrik": "Andelen eftergymnasialt utbildade stiger, men långsammare än i riket"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N01982"],
+        "rubrik": "Hylte har lägst andel eftergymnasialt utbildade i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N15507"],
+        "rubrik": "Meritvärdet varierar kraftigt mellan åren"
+      }
     ]
   }
 }

@@ -1,29 +1,49 @@
 {
-  "hash": "a535675a783941f80eda1b5d836c5873",
+  "hash": "4cf341ca0eccdccaff8b21ef78189eaa",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Varberg ligger nära länets topp i både hälsa och inkomst",
-    "ingress": "Varbergsborna lever längre och har högre inkomster än genomsnittet i riket, och en mindre andel har varaktigt låg ekonomisk standard. En avvikelse är kostnaden för ekonomiskt bistånd, som 2025 nådde den högsta nivån i kommunens serie.",
+    "rubrik": "Förtida dödlighet och utsatthet minskar, men biståndskostnaden stiger",
+    "ingress": "Varberg har näst högst medellivslängd och medianinkomst i länet efter Kungsbacka, och den förtida dödligheten har sjunkit varje år sedan 2018. Kostnaden för ekonomiskt bistånd har däremot ökat mer än i riket på tio år och var 2025 den högsta i kommunens serie, men ligger fortfarande under rikets nivå.",
     "i_korthet": [
       {
-        "ledtext": "Näst längst medellivslängd i länet",
-        "text": "Medellivslängden för män var 83,4 år 2025, 1,6 år över riket och näst högst i Halland efter Kungsbacka."
+        "ledtext": "Dödligheten före 65 sjunker",
+        "text": "Den förtida dödligheten var 142,1 per 100 000 invånare 25–64 år 2024, 37,6 lägre än tio år tidigare och 30,9 under riket."
       },
       {
-        "ledtext": "Varaktigt låg standard under riket",
-        "text": "Andelen vuxna med varaktigt låg ekonomisk standard var 4,3 procent 2024, mot 7,1 procent i riket."
+        "ledtext": "Mindre andel med varaktigt låg standard",
+        "text": "Andelen vuxna med varaktigt låg ekonomisk standard har minskat med 1,2 procentenheter på tio år och varje år sedan 2021, till 4,3 procent, mot 7,1 procent i riket."
       },
       {
-        "ledtext": "Biståndskostnaden ökar snabbare än i riket",
-        "text": "Kostnaden för ekonomiskt bistånd steg med 256,1 kronor per invånare på tio år till 847,7 kronor, mot en ökning med 140 kronor i riket."
+        "ledtext": "Biståndskostnaden högst i serien",
+        "text": "Kostnaden för ekonomiskt bistånd var 847,7 kronor per invånare 2025, 256,1 kronor mer än 2015 men 671,2 kronor under riket."
       }
     ],
     "stycken": [
-      "Varberg hör till de kommuner i landet där befolkningen lever längst, och försprånget mot riket har vuxit på tio år. Medellivslängden vid födseln är 83,4 år för män och 86,1 år för kvinnor, 1,6 respektive 1,0 år över riket och näst högst i Halland efter Kungsbacka. Den förtida dödligheten, alltså dödsfall före 65 års ålder, var 142,1 per 100 000 invånare 25–64 år, 30,9 under riket.",
-      "Hälsoläget sammanfaller med en ekonomisk bild där en mindre andel än i riket har låga inkomster. Medianinkomsten var 351,7 tusen kronor 2024, 12,1 tusen kronor över riket och näst högst i länet. Andelen vuxna med varaktigt låg ekonomisk standard var 4,3 procent mot 7,1 procent i riket, och andelen barn i hushåll med varaktigt låg inkomststandard var 0,6 procent, den lägsta i länet. I folkhälsoenkäten uppger 5,8 procent allvarlig psykisk påfrestning mot 10,0 procent i riket, en skillnad som ligger utanför enkätens felmarginal. Suicidtalet är däremot det högsta i länet, 15,8 per 100 000 invånare 25 år och äldre, 0,8 över riket.",
-      "Det ekonomiska biståndet går åt andra hållet. Kostnaden var 847,7 kronor per invånare 2025, fortfarande 671,2 kronor under riket men den högsta nivån i kommunens serie sedan 2010. På tio år har kostnaden ökat med 256,1 kronor per invånare, mot 140 kronor i riket, varav 77,4 kronor det senaste året. Underlaget räcker inte för att avgöra om det speglar bostadssituationen, arbetsmarknadsläget eller befolkningens sammansättning. För planeringen betyder det att kostnaden behöver följas, eftersom den stiger trots att andelen vuxna med varaktigt låg ekonomisk standard har minskat med 1,5 procentenheter på fem år."
+      "Dödligheten i arbetsför ålder har sjunkit länge i Varberg. Den förtida dödligheten, dödsfall bland 25–64-åringar som femårsmedelvärde, var 142,1 per 100 000 invånare 2024, seriens lägsta och 30,9 under riket. Den har minskat med 37,6 på tio år, i linje med riket, och med 26,3 på fem år mot 18,3 i riket; nedgången har fortsatt varje år sedan 2018, med 3,4 det senaste året. Minskningen på fem år gäller främst män. Medellivslängden var 2025 seriens högsta för både kvinnor och män.",
+      "Varberg ligger näst efter Kungsbacka i länet i både medellivslängd och inkomst: medianinkomsten var 351,7 tusen kronor 2024, 12,1 tusen över riket. Den har ökat med 27,4 tusen på tio år men 3,1 på fem år, eftersom den sjönk två år i rad efter toppen 2021; det senaste året steg den med 6,9. Andelen vuxna med varaktigt låg ekonomisk standard har minskat med 1,2 procentenheter på tio år och varje år sedan 2021, till 4,3 procent, mot 5,4 procent i länet och 7,1 procent i riket.",
+      "Två mått går åt andra hållet. Sjukpenningtalet, dagar med sjukpenning och rehabiliteringspenning per försäkrad, är i stort sett oförändrat på tio år men steg från 9,1 dagar 2020 till 10,3 dagar 2024 och var 10,0 dagar 2025, i nivå med riket. Ohälsotalet, som även räknar sjuk- och aktivitetsersättning, har däremot sjunkit med 4,6 dagar på tio år (0,6 på fem år), vilket kan spegla att en mindre andel har sådan ersättning, fast måtten räknas på olika befolkningar. Biståndskostnaden har ökat med 256,1 kronor per invånare på tio år, mot 140 i riket, och efter en nedgång 2021–2023 nådde den 847,7 kronor 2025, näst lägst i länet och 671,2 under riket. Underlaget förklarar inte ökningen, eftersom andelen med varaktigt låg standard samtidigt har minskat."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["F_FORTID"],
+        "rubrik": "Den förtida dödligheten har sjunkit varje år sedan 2018"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["F_DINK"],
+        "rubrik": "Varberg har länets näst högsta medianinkomst efter Kungsbacka"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N31001"],
+        "rubrik": "Biståndskostnaden har ökat på tio år till seriens högsta"
+      }
     ]
   }
 }

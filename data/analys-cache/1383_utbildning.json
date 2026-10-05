@@ -1,29 +1,49 @@
 {
-  "hash": "60822441c8ff5e6b9a26b05c0c89d3c0",
+  "hash": "35e11d599ffa63d8a21c6251d0a2adf9",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Andelen eftergymnasialt utbildade växer snabbare än i riket",
-    "ingress": "Varbergs vuxna befolkning är nästan jämnt delad mellan gymnasial och eftergymnasial utbildning, och balansen förskjuts mot eftergymnasial. Avståndet till riket ligger framför allt hos männen, och skolresultaten visar en blandad bild.",
+    "rubrik": "Andelen eftergymnasialt utbildade ökar stadigt men ligger under rikets",
+    "ingress": "Andelen Varbergsbor 25–64 år med eftergymnasial utbildning har ökat varje år sedan 2015, något snabbare än i riket, och var 45,1 procent 2025, 3,4 procentenheter under riket. Skolresultaten ligger nära rikets nivå, men behörigheten till gymnasiets yrkesprogram har sjunkit på tio år, främst efter 2022.",
     "i_korthet": [
       {
-        "ledtext": "Eftergymnasial utbildning ökar snabbare än riket",
-        "text": "Andelen 25–64 år med eftergymnasial utbildning har ökat med 8,0 procentenheter sedan 2015, mot 7,0 i riket, och uppgår nu till 45,1 procent."
+        "ledtext": "Ökar något snabbare än riket",
+        "text": "Andelen med eftergymnasial utbildning ökade med 8,0 procentenheter på tio år och 4,8 på fem år, mot 7,0 respektive 4,1 i riket."
       },
       {
         "ledtext": "Avståndet till riket främst bland män",
-        "text": "Bland män har 35,3 procent eftergymnasial utbildning, 6,2 procentenheter under riket, medan kvinnorna ligger 0,7 procentenheter under."
+        "text": "Av männen har 35,3 procent eftergymnasial utbildning, 6,2 procentenheter under riket, medan kvinnornas andel är 0,7 procentenheter under."
       },
       {
-        "ledtext": "Högskolebehörigheten har minskat sedan 2020",
-        "text": "Andelen med högskolebehörighet inom tre år efter gymnasiet minskade med 3,5 procentenheter på fem år, medan den ökade med 3,2 i riket, och det senaste året steg den med 0,2."
+        "ledtext": "Yrkesbehörigheten har sjunkit på tio år",
+        "text": "Andelen behöriga till yrkesprogram minskade med 5,1 procentenheter på tio år, mot 3,7 i riket, och var 84,8 procent 2026, 1,2 procentenheter över riket."
       }
     ],
     "stycken": [
-      "Varbergs vuxna befolkning befinner sig mitt i en förskjutning mot längre utbildning. Av invånarna 25–64 år har 45,3 procent gymnasiet som högsta utbildning och 45,1 procent eftergymnasial utbildning. Sedan 2015 har den eftergymnasiala andelen ökat med 8,0 procentenheter, mot 7,0 i riket, samtidigt som andelen med enbart förgymnasial utbildning har minskat från 12,50 till 7,70 procent. Det betyder att Varberg sakta närmar sig riket, men den eftergymnasiala andelen ligger fortfarande 3,4 procentenheter under rikssnittet.",
-      "I Halland placerar sig Varberg i mitten: tredje plats för eftergymnasial utbildning, efter Kungsbacka med 54,3 procent och Halmstad med 46,7 procent. Skillnaden mot riket är främst en fråga om män. Bland kvinnor har 55,1 procent eftergymnasial utbildning, näst flest i länet och 0,7 procentenheter under riket. Bland män är andelen 35,3 procent, 6,2 procentenheter under riket, medan andelen män med gymnasial utbildning ligger 8,0 procentenheter över. I skolan är behörigheten till gymnasiets yrkesprogram 84,8 procent, 1,2 procentenheter över riket, medan meritvärdet i årskurs 9 ligger 5,0 poäng under.",
-      "Männens utbildningsprofil kan hänga samman med en arbetsmarknad där yrken med gymnasial utbildning väger tungt, till exempel inom besöksnäringen vid kusten. Ökningen av eftergymnasialt utbildade kan spegla inflyttning som pendeltåget mot Göteborg och stadsutvecklingen gör möjlig. Bland ungdomarna går utvecklingen åt andra hållet: högskolebehörigheten inom tre år efter gymnasiet är 58,0 procent, 0,5 procentenheter över riket, men den har minskat med 3,5 procentenheter på fem år medan riket ökat med 3,2, trots en ökning med 0,2 det senaste året. För kompetensförsörjningen kan det innebära att utbildningsnivån framöver blir mer beroende av inflyttning än av de egna ungdomarna."
+      "Utbildningsnivån bland Varbergs vuxna stiger stadigt och något snabbare än i riket. Andelen 25–64-åringar med eftergymnasial utbildning har ökat från 33,7 procent 2010 till 45,1 procent 2025, med 11,4 procentenheter mot 10,2 i riket. Den har ökat varje år sedan 2015: med 8,0 procentenheter på tio år och 4,8 på fem år, mot 7,0 respektive 4,1 i riket, och med 0,9 det senaste året. Sedan 2015 har andelen med förgymnasial utbildning sjunkit från 12,50 till 7,70 procent och andelen med gymnasial från 49,3 till 45,3, så att gymnasial och eftergymnasial utbildning nu är nästan lika vanliga.",
+      "I länet ligger Varberg i mitten, och avståndet till riket finns främst bland männen. Andelen eftergymnasialt utbildade är tredje högst i Halland, efter Kungsbacka och Halmstad, 0,5 procentenheter under länets och 3,4 under rikets. Av kvinnorna har 55,1 procent eftergymnasial utbildning, 0,7 procentenheter under riket, men av männen 35,3 procent, 6,2 procentenheter under. Andelen män med gymnasial utbildning är däremot 8,0 procentenheter högre än i riket men lägre än i de flesta kommuner, plats 204 av 290.",
+      "Skolresultaten för elever folkbokförda i Varberg ligger nära rikets men har utvecklats svagare på tio år. Meritvärdet i årskurs 9 låg mellan 227 och 232 poäng 2016–2022, har sedan växlat mellan 221 och 232 och var 225,0 poäng 2026, 5,0 under riket. Behörigheten till yrkesprogram har minskat med 5,1 procentenheter på tio år, mot 3,7 i riket, främst efter 2022, och var 84,8 procent 2026, 1,2 procentenheter över riket. Högskolebehörigheten inom tre år efter gymnasiet var 58,0 procent 2025 och har ökat med 1,5 procentenheter på tio år men minskat med 3,5 på fem år, medan rikets ökade med 4,1 respektive 3,2. För planeringen betyder det att ungdomarnas behörighet inte har följt med de vuxnas stigande utbildningsnivå."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N01982"],
+        "rubrik": "Andelen eftergymnasialt utbildade har ökat varje år sedan 2015"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N01982"],
+        "rubrik": "Varberg har tredje högst andel i länet, under rikets nivå"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N15428"],
+        "rubrik": "Yrkesbehörigheten har sjunkit, främst efter 2022"
+      }
     ]
   }
 }

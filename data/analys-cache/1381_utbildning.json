@@ -1,1 +1,56 @@
-{"hash": "369f9b95ae8593ecfc05ba837ff6d42e", "period": "2025", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Gymnasial utbildning dominerar, eftergymnasial ligger långt under riket", "ingress": "Laholms vuxna befolkning har oftare gymnasial och mer sällan eftergymnasial utbildning än riket och länet. Andelen med eftergymnasial utbildning stiger, men i samma takt som i landet, så avståndet ligger kvar.", "i_korthet": [{"ledtext": "Gymnasial utbildning är vanligast", "text": "Av invånarna 25–64 år har 51,1 procent gymnasial utbildning som högsta nivå, mot 39,5 procent i riket."}, {"ledtext": "Eftergymnasial andel långt under riket", "text": "Andelen med eftergymnasial utbildning är 35,9 procent, 12,7 procentenheter under riket och 9,8 under Halland."}, {"ledtext": "Skillnaden störst bland män", "text": "Bland män har 26,2 procent eftergymnasial utbildning, 15,4 procentenheter under riket."}], "stycken": ["Laholms vuxna befolkning har i huvudsak gymnasial utbildning som högsta nivå. Av invånarna 25–64 år har 51,1 procent gymnasial utbildning, mot 39,5 procent i riket, medan andelen med eftergymnasial utbildning är 35,9 procent, 12,7 procentenheter under riket och 9,8 under länet. Andelen eftergymnasialt utbildade har ökat med 7,0 procentenheter på tio år, lika mycket som i riket. Där Laholm skiljer sig från riket är längst ner i utbildningsskalan: andelen med förgymnasial utbildning som högsta nivå har minskat med 6,1 procentenheter på tio år, mot 3,1 i riket.", "I Halland liknar Laholm Falkenberg och Hylte mer än Kungsbacka, Varberg och Halmstad. Andelen eftergymnasialt utbildade är femte högst av länets sex kommuner, mellan Falkenberg med 37,1 och Hylte med 27,8 procent. Skillnaden mot riket är störst bland män, där andelen är 26,2 procent, 15,4 procentenheter under riket. Även bland unga ligger Laholm under riket: meritvärdet i årskurs 9 var 221 poäng 2026, 9 poäng under riket, och högskolebehörigheten inom tre år efter gymnasiet var 54,5 procent 2025, 3,1 procentenheter under riket. Unga kvinnor har med 56,1 procent den lägsta behörigheten i länet, medan unga män ligger 1,1 procentenheter över riket.", "Mönstret hänger sannolikt samman med kommunens näringsliv och läge. Om en stor del av jobben finns inom jordbruk och yrken där gymnasial utbildning räcker, så präglar det också befolkningens utbildningsprofil. Pendlingen mot Halmstad och nordvästra Skåne kan också innebära att de som studerar vidare flyttar närmare högskolor och större arbetsmarknader. För planeringen pekar siffrorna på att avståndet till riket ligger kvar så länge den eftergymnasiala andelen växer i samma takt som i landet."]}}
+{
+  "hash": "1208f68accad2bdb0d2e3b794f8a5236",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Andelen eftergymnasialt utbildade ökar, men avståndet till riket består",
+    "ingress": "Andelen invånare 25–64 år med eftergymnasial utbildning i Laholm har ökat i samma takt som i riket, till 35,9 procent 2025, men ligger 12,7 procentenheter under riket. Andelen med högst förgymnasial utbildning har minskat snabbare än i riket, från 20,0 procent 2010 till 10,1 procent.",
+    "i_korthet": [
+      {
+        "ledtext": "Ökning i rikets takt",
+        "text": "Andelen eftergymnasialt utbildade ökade med 7,0 procentenheter på tio år och 4,3 på fem år, mot 7,0 och 4,1 i riket."
+      },
+      {
+        "ledtext": "Andelen förgymnasialt utbildade minskar snabbare",
+        "text": "Andelen med högst förgymnasial utbildning minskade med 6,1 procentenheter på tio år, mot 3,1 i riket, och var 10,1 procent 2025."
+      },
+      {
+        "ledtext": "Meritvärdet varierar kraftigt mellan åren",
+        "text": "Meritvärdet i årskurs 9 har sedan 2016 pendlat mellan 206 och 230 poäng och var 221 poäng 2026, det högsta sedan 2021."
+      }
+    ],
+    "stycken": [
+      "Andelen eftergymnasialt utbildade i Laholm ökar i samma takt som i riket, men från en lägre nivå. Bland invånare 25–64 år har andelen ökat varje år sedan 2015 och var 35,9 procent 2025, seriens högsta. Ökningen var 7,0 procentenheter på tio år och 4,3 på fem år, mot 7,0 och 4,1 i riket, och 0,9 det senaste året, i linje med trenden. Andelen med högst förgymnasial utbildning har minskat från 20,0 procent 2010 till 10,1 procent, med 6,1 procentenheter på tio år mot 3,1 i riket. Gymnasial utbildning är fortfarande vanligast: 51,1 procent har den som högsta utbildning, 11,6 procentenheter mer än i riket.",
+      "Andelen eftergymnasialt utbildade ligger 9,8 procentenheter under länets och är näst lägst bland kommunerna efter Hylte. Avståndet till riket är störst bland män: 26,2 procent av männen har eftergymnasial utbildning, 15,4 procentenheter under riket, mot 46,0 procent av kvinnorna. Kvinnornas andel har ökat med 10,1 procentenheter på tio år, mer än rikets 8,9, medan männens ökat med 4,1, mindre än i riket. Bland män har andelen med gymnasial utbildning ökat med 1,3 procentenheter på tio år, men inte de senaste fem åren, medan den minskat i riket. Att gymnasial utbildning är vanligare än i riket kan spegla landsbygdens och jordbrukets arbetsmarknad.",
+      "Skolresultaten bland elever folkbokförda i Laholm varierar kraftigt mellan åren, så ett enskilt år säger lite om riktningen. Meritvärdet i årskurs 9 har sedan 2016 pendlat mellan 206 och 230 poäng och steg 2026 till 221, det högsta sedan 2021 men 9,0 poäng under riket. Andelen behöriga till yrkesprogram har minskat med 5,9 procentenheter på tio år, mer än i riket, och med 3,0 på fem år, ungefär som i riket. År 2026 steg den med 3,7 procentenheter till 80,9 procent, mot 83,6 i riket."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "N01982"
+        ],
+        "rubrik": "Andelen ökar i rikets takt, avståndet till riket består"
+      },
+      {
+        "efter": 1,
+        "typ": "uppdelning",
+        "kpi": [
+          "N01982_KV",
+          "N01982_MAN"
+        ],
+        "rubrik": "Kvinnornas andel ökar snabbare än männens"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": [
+          "N15507"
+        ],
+        "rubrik": "Meritvärdet varierar kraftigt och steg 2026 efter fyra lägre år"
+      }
+    ]
+  }
+}

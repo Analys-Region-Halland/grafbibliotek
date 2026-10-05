@@ -1,29 +1,49 @@
 {
-  "hash": "09ccadc80563cccf8f01f67d8b86d9c8",
+  "hash": "a827475dbbc4d86145d4677c92edca86",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Kungsbacka har länets största utpendling och högsta elbilsandel",
-    "ingress": "Mer än hälften av de sysselsatta som bor i Kungsbacka arbetar i en annan kommun, och bilarna körs längre per bil än i någon annan halländsk kommun. Samtidigt har Kungsbacka länets högsta andel elbilar, på plats 10 i landet.",
+    "rubrik": "Över hälften av de sysselsatta Kungsbackaborna arbetar i andra kommuner",
+    "ingress": "Kungsbacka är mer av bostadsort än någon annan kommun i länet: 55,3 procent av de sysselsatta invånarna arbetar i en annan kommun, en andel som har varit i stort sett oförändrad sedan 2020. Kommunen har också länets högsta andel elbilar, och den har ökat mer än rikets på både tio och fem år.",
     "i_korthet": [
       {
-        "ledtext": "Mer än hälften pendlar ut",
-        "text": "Utpendlingsandelen är 55,3 procent, högst i Halland och 33,2 procentenheter över länet."
+        "ledtext": "Störst utpendling bland länets kommuner",
+        "text": "Av de sysselsatta invånarna arbetar 55,3 procent utanför kommunen, högst bland länets kommuner, och andelen har varit i stort sett oförändrad sedan 2020."
       },
       {
-        "ledtext": "Högst elbilsandel i Halland",
-        "text": "Elbilarna utgör 12,4 procent av personbilarna, 3,8 procentenheter över riket och plats 10 bland landets 290 kommuner."
+        "ledtext": "Större andel nära kollektivtrafik än 2014",
+        "text": "Av befolkningen bor 68,5 procent nära en trafikerad hållplats, 3,0 procentenheter mer än 2014 men under toppåret 2020, mot 80,9 procent i riket."
       },
       {
-        "ledtext": "Lägst andel kollektivtrafiknära i tätort",
-        "text": "Inom tätort har 74,5 procent en trafikerad hållplats inom 500 meter, lägst i Halland och 15,0 procentenheter under riket."
+        "ledtext": "Högst andel elbilar i länet",
+        "text": "Elbilarna utgör 12,4 procent av personbilarna, länets högsta andel, efter en ökning med 12,3 procentenheter på tio år mot 8,48 i riket."
       }
     ],
     "stycken": [
-      "Kungsbacka fungerar i hög grad som bostadsort i Göteborgs arbetsmarknadsregion. Av de sysselsatta som bor i kommunen arbetar 55,3 procent i en annan kommun, och antalet utpendlare är 24 687. Pendlingskvoten är 0,64, den lägsta i Halland, vilket betyder att kommunen har betydligt färre sysselsatta på sina arbetsställen än sysselsatta invånare. Nettoutpendlingen uppgår till 16 236 personer och placerar Kungsbacka på plats 287 av landets 290 kommuner.",
-      "Pendlingen kan också synas i hur bilarna används. Varje bil i Kungsbacka körs i genomsnitt 1 231 mil per år, mest i Halland och 90 mil mer än i riket, och sträckan per bil har ökat med 13 mil sedan 2019 medan den har minskat med 30 mil i riket. Antalet personbilar, 529,0 per 1 000 invånare, är något lägre än i länet men 53,9 fler än i riket. Elbilarna utgör 12,4 procent av personbilarna mot 8,6 procent i riket, och de fossiloberoende bilarna 29,3 procent, båda högst i Halland. Inom tätorterna har 74,5 procent en trafikerad hållplats inom 500 meter, den lägsta andelen i länet.",
-      "Den långa körsträckan per bil hänger sannolikt samman med daglig pendling norrut mot Göteborg, och villabebyggelsen kan förklara varför tätorternas invånare oftare har längre till en hållplats än i de andra halländska kommunerna. Om många hushåll har egen parkering och kan ladda hemma blir steget till elbil kortare. För planeringen pekar siffrorna åt två håll. Av de bostäder som tillkommit under den senaste treårsperioden ligger 93,6 procent kollektivtrafiknära, mot 91,4 procent i riket, medan resandet från de befintliga villaområdena sannolikt även framöver vilar mycket på bilen."
+      "Kungsbacka är mer av bostadsort än någon annan kommun i länet, och mönstret har legat fast sedan 2020. Av de 44 662 sysselsatta som bodde i kommunen 2024 (nattbefolkningen) arbetade 55,3 procent i en annan kommun, högst bland länets kommuner, medan 28 426 sysselsatta hade sin arbetsplats i Kungsbacka (dagbefolkningen). Pendlingskvoten, 0,64, är länets lägsta och har legat mellan 0,63 och 0,64 sedan 2020, då serien börjar. Nettoutpendlingen var 16 236 personer 2024, bland de största i landet.",
+      "Kungsbackaborna bor i mindre utsträckning nära kollektivtrafik än länets och rikets invånare, men andelen har ökat på tio år. Av befolkningen har 68,5 procent en hållplats med minst en avgång i timmen vardagar klockan 6–20 inom 500 meter fågelvägen, mot 76,8 procent i länet och 80,9 procent i riket. Andelen har ökat med 3,0 procentenheter på tio år, 2,0 på fem år och 0,5 det senaste året, mer än riket i alla tre perioderna, men ligger under toppåret 2020 (69,2 procent). Inom tätorterna är andelen 74,5 procent, länets lägsta, och utanför tätort 27,2 procent, länets högsta.",
+      "Pendlingen hänger sannolikt samman med närheten till Göteborg, och bilinnehav och körsträcka ligger över rikets. Bilinnehavet, 529,0 personbilar i trafik per 1 000 invånare 2025 mot 475,2 i riket, har varit i stort sett oförändrat i tio år. Körsträckan per invånare med bilar registrerade i kommunen var 707,0 mil 2024, 82,2 mil mer än i riket; den har minskat med 51,3 mil på tio år och 19,4 på fem år, men ökat varje år sedan 2021. Elbilarnas andel, 12,4 procent, är högst i länet och har ökat med 12,3 procentenheter på tio år mot 8,48 i riket. För planeringen betyder det att många arbetsresor korsar kommungränsen och att tätortsbefolkningen har länets lägsta andel nära kollektivtrafik."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "halland",
+        "kpi": ["C_UTPENDL_ANDEL"],
+        "rubrik": "Kungsbacka har störst andel utpendlare bland Hallands kommuner"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["N07418"],
+        "rubrik": "Andelen nära kollektivtrafik har ökat något men ligger under länets"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N07945"],
+        "rubrik": "Elbilsandelen har ökat mer än rikets sedan 2015"
+      }
     ]
   }
 }

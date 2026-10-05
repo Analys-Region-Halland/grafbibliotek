@@ -1,1 +1,55 @@
-{"hash": "f9e987d000e381d143cef7ba39a83198", "period": "2025", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Laholm har länets näst högsta ohälsotal och inkomster under länet", "ingress": "I Laholm är ohälsotalet högre och inkomsterna lägre än i Halland som helhet, och kvinnornas sjukskrivning har ökat snabbare än i riket under fem år. Medellivslängden ligger ändå över riket, och färre vuxna rapporterar allvarlig psykisk påfrestning än i länet.", "i_korthet": [{"ledtext": "Näst högst ohälsotal i länet", "text": "Ohälsotalet var 23,8 dagar per person 16–64 år 2025, 2,6 dagar över länet och 1,8 dagar över riket."}, {"ledtext": "Kvinnors sjukskrivning har ökat", "text": "Sjukpenningtalet för kvinnor steg med 2,6 dagar på fem år till 14,9 dagar, mot en ökning med 1,3 dagar i riket."}, {"ledtext": "Inkomsterna under länet", "text": "Medianen för ekonomisk standard var 320,9 tusen kronor 2024, 27,6 tusen kronor under länet och 18,7 tusen kronor under riket."}], "stycken": ["Ohälsotalet i Laholm ligger över både länet och riket, och skillnaden är störst bland kvinnor. Ohälsotalet var 23,8 dagar per person 16–64 år 2025, 2,6 dagar över länet och 1,8 över riket, näst högst i Halland efter Falkenberg. För kvinnor var det 29,1 dagar, 3,8 dagar över länet. Den kortare sjukfrånvaron har ökat på fem år: sjukpenningtalet steg med 1,9 dagar mot 0,8 i riket, och bland kvinnor med 2,6 dagar till 14,9, mot 1,3 i riket. Det senaste året minskade sjukpenningtalet dock med 0,3 dagar.", "Inkomsterna ligger under länet och har inte följt rikets utveckling. Medianen för ekonomisk standard var 320,9 tusen kronor 2024, 27,6 tusen kronor under länet och 18,7 under riket, och det senaste året ökade den med 0,5 tusen kronor mot 6,6 i riket. Kostnaden för ekonomiskt bistånd steg med 203 kronor per invånare till 1 270 kronor 2025, näst högst i länet men under rikets 1 519. Andra hälsomått ger en annan bild: kvinnors medellivslängd, 85,5 år, har ökat med 1,5 år på fem år mot 0,8 i riket, och både suicid och allvarlig psykisk påfrestning ligger under länet och riket.", "Mönstret kan hänga samman med näringsstrukturen: om fler arbetar i jordbruk och andra yrken med fysisk belastning kan det bidra till både högre ohälsotal och lägre inkomster. Kvinnorna sticker ut även i dödligheten: förtida dödlighet bland kvinnor 25–64 år var 158,9 per 100 000, 24,5 över riket, medan männens låg 37,8 under riket. För planeringen pekar siffrorna på kvinnors ohälsa och det senaste årets ökning av kostnaden för ekonomiskt bistånd som områden att följa."]}}
+{
+  "hash": "7edbe6455a190aa3d7aa12d8dc92c36b",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Sjuktalen ligger över rikets, medan ekonomisk utsatthet har minskat",
+    "ingress": "Laholm har länets näst högsta ohälsotal och sjukpenningtal, och båda ligger över rikets: ohälsotalet sjönk fram till 2020 och har sedan legat i stort sett oförändrat, medan sjukpenningtalet har stigit sedan 2019. Andelen vuxna med varaktigt låg ekonomisk standard har samtidigt minskat sedan 2021 och ligger under rikets, även om medianinkomsten är lägre än både länets och rikets.",
+    "i_korthet": [
+      {
+        "ledtext": "Sjuktalen näst högst i länet",
+        "text": "Ohälsotalet var 23,8 dagar 2025, mot 22,0 i riket, och sjukpenningtalet 10,9 dagar, båda näst högst i länet efter Falkenberg."
+      },
+      {
+        "ledtext": "Sjukpenningtalet har stigit sedan 2019",
+        "text": "Sjukpenningtalet steg från 8,8 dagar 2019 till 11,2 dagar 2024, seriens högsta, och var 10,9 dagar 2025, mot 9,8 dagar 2015."
+      },
+      {
+        "ledtext": "Ekonomisk utsatthet har minskat sedan 2021",
+        "text": "Andelen vuxna med varaktigt låg ekonomisk standard sjönk från 9,1 procent 2021 till 6,5 procent 2024, 0,6 procentenheter under riket."
+      }
+    ],
+    "stycken": [
+      "Laholms ohälsotal och sjukpenningtal ligger över rikets och är näst högst i länet efter Falkenberg. Ohälsotalet, ersatta sjukdagar inklusive sjuk- och aktivitetsersättning per invånare 16–64 år, har minskat med 6,2 dagar på tio år, men hela minskningen skedde fram till 2020; 2025 var det 23,8 dagar, mot 22,0 i riket. Sjukpenningtalet, som bara räknar sjukpenning och rehabiliteringspenning per försäkrad, var 9,8 dagar 2015, sjönk till 8,8 dagar 2019 och steg sedan till 11,2 dagar 2024, seriens högsta. På fem år ökade det med 1,9 dagar, mot 0,8 i riket, och 2025 var det 10,9 dagar. Kvinnornas sjukpenningtal, 14,9 dagar, ligger 1,5 dagar över rikets.",
+      "Inkomsterna ligger under länets och rikets, men den varaktiga ekonomiska utsattheten har minskat. Medianinkomsten var 320,9 tusen kronor 2024, näst lägst i länet och 18,7 tusen under riket; den har ökat med 18,7 tusen på tio år, mot 24,0 i riket, men är i stort sett oförändrad sedan 2019. Andelen vuxna med varaktigt låg ekonomisk standard steg från 7,7 procent 2014 till 9,1 procent 2021 och var 6,5 procent 2024, 0,6 procentenheter under riket.",
+      "Livslängden har samtidigt ökat. Kvinnornas medellivslängd sjönk till 83,1 år 2018 men har sedan stigit till 85,5 år 2025, seriens högsta; på fem år ökade den med 1,5 år, mot 0,8 i riket. Männens, 82,4 år, ligger 0,6 år över riket men har ökat långsammare, 1,1 år på tio år mot 1,7. Förtida dödlighet har sjunkit med 28,5 per 100 000 invånare 25–64 år på tio år, mindre än i riket, men ökade det senaste året och var 166,0 år 2024, under rikets 173,0. För planeringen pekar det stigande sjukpenningtalet på ett ökat behov av stöd vid sjukskrivning, inte minst bland kvinnor, vars sjukpenningtal ökade med 2,6 dagar på fem år."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "N00938"
+        ],
+        "rubrik": "Sjukpenningtalet har stigit sedan 2019 och ligger över rikets"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": [
+          "F_VEK_VUX"
+        ],
+        "rubrik": "Varaktigt låg ekonomisk standard har minskat sedan toppen 2021"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": [
+          "F_MEDLIVS_KV"
+        ],
+        "rubrik": "Kvinnornas medellivslängd har ökat sedan 2018 och ligger över rikets"
+      }
+    ]
+  }
+}

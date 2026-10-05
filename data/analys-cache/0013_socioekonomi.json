@@ -1,29 +1,49 @@
 {
-  "hash": "78d220318a115203414d360c779d26ff",
+  "hash": "50dbd2af5d991aececf74601859811a7",
   "period": "2024",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Hälsa och inkomster över rikets nivå, med tydliga kommunskillnader",
-    "ingress": "Hallänningarna bedömer oftare sin hälsa som god, lever längre och har högre medianinkomst än invånarna i riket, och männens medellivslängd är den högsta i landet. Bakom länssnittet finns en tydlig skillnad mellan Kungsbacka och Hylte, och skillnaden mot riket i inkomst och ohälsotal har minskat något de senaste fem åren.",
+    "rubrik": "Hälsa och inkomster i regionernas topp, men ojämnt inom länet",
+    "ingress": "Halland har högst andel med god självskattad hälsa och längst medellivslängd för män bland landets 21 regioner, och medianinkomsten är näst högst, men skillnaderna mellan Kungsbacka och Hylte är tydliga. Medianinkomsten har ökat och ohälsotalet sjunkit på tio år, men båda ligger i stort sett på samma nivå som för fem år sedan.",
     "i_korthet": [
       {
-        "ledtext": "Högst andel med god hälsa",
-        "text": "Av invånarna 16–84 år bedömde 75,0 procent sin hälsa som god 2024, högst bland landets 21 regioner och 4,0 procentenheter över riket."
+        "ledtext": "I topp bland regionerna",
+        "text": "Av invånarna 16–84 år bedömde 75,0 procent sin hälsa som god 2024, och männens medellivslängd var 82,7 år 2025, i båda fallen högst bland regionerna."
       },
       {
-        "ledtext": "Männen lever längst i landet",
-        "text": "Medellivslängden för män var 82,7 år 2025, högst i landet och 0,9 år över riket."
+        "ledtext": "Inkomsten på 2019 års nivå",
+        "text": "Medianinkomsten ökade med 22,1 tusen kronor på tio år, mot 24,0 i riket, men ligger under toppen från 2021 och på samma nivå som 2019."
       },
       {
-        "ledtext": "Tydlig inkomstskillnad mellan kommunerna",
-        "text": "Medianinkomsten var 406,3 tusen kronor i Kungsbacka och 302,5 tusen kronor i Hylte 2024, mot 348,5 tusen kronor i länet."
+        "ledtext": "Störst skillnad mellan Kungsbacka och Hylte",
+        "text": "Medianinkomsten var 406,3 tusen kronor i Kungsbacka och 302,5 i Hylte, och förtida dödlighet 124,1 respektive 219,6 per 100 000 invånare 25–64 år."
       }
     ],
     "stycken": [
-      "Halland ligger över riket på flera mått samtidigt: självskattad hälsa, livslängd och ekonomisk standard. Andelen som bedömer sin hälsa som god är 75,0 procent, högst bland landets 21 regioner, och medellivslängden för män, 82,7 år, är den högsta i landet. Förtida dödlighet, alltså dödsfall före 65 års ålder, var 153,7 per 100 000 invånare 25–64 år, mot 173,0 i riket. Medianinkomsten efter skatt, justerad för hushållets storlek, var 348,5 tusen kronor 2024 och näst högst i landet, och andelen vuxna med varaktigt låg ekonomisk standard, 5,4 procent, var lägst av alla regioner.",
-      "Länssnittet rymmer en tydlig skillnad mellan Kungsbacka i norr och Hylte i inlandet. Medianinkomsten var 406,3 tusen kronor i Kungsbacka och 302,5 i Hylte, och andelen vuxna med varaktigt låg ekonomisk standard var 2,7 procent mot 10,3 procent. Samma ordning syns i hälsan: förtida dödlighet var 124,1 per 100 000 i Kungsbacka och 219,6 i Hylte, och männens medellivslängd var 83,7 respektive 80,0 år.",
-      "Mönstret hänger sannolikt samman med var invånarna arbetar: om många i norra Halland pendlar till Göteborgs arbetsmarknad kan det lyfta inkomsterna och de förutsättningar för hälsa som följer med dem. Skillnaden mot riket har minskat något: medianinkomsten ökade med 0,6 tusen kronor på fem år mot 1,9 i riket, och ohälsotalet steg med 0,1 dagar medan det sjönk med 0,6 i riket. Andelen som uppger stress har ökat från 9,4 till 16,8 procent på tio år, men skillnaden mot rikets 15,9 procent ligger inom enkätens felmarginal. För planeringen pekar siffrorna på att ekonomisk utsatthet och förtida dödlighet är vanligast i Hylte, Halmstad och Laholm."
+      "Halland ligger i topp bland regionerna i hälsa och livslängd. Männens medellivslängd har ökat med 4,2 år sedan 2002 till 82,7 år 2025, högst bland regionerna, och kvinnornas, 85,7 år, är tredje högst. De senaste fem åren ökade den med 0,6 år för både män och kvinnor, mot 1,0 respektive 0,8 år i riket, och det senaste året med 0,1 år. Förtida dödlighet har sjunkit varje år sedan 2014 och var 153,7 per 100 000 invånare 25–64 år 2024, näst lägst bland regionerna. Andelen med god självskattad hälsa har legat kring 75 procent sedan 2014 och är med 75,0 procent 2024 högst bland regionerna, 4,0 procentenheter över riket, en skillnad utanför enkätens felmarginal.",
+      "Medianinkomsten har ökat och ohälsotalet sjunkit på tio år, men båda ligger nära nivån för fem år sedan. Medianinkomsten, disponibel inkomst per konsumtionsenhet, var 348,5 tusen kronor 2024, näst högst bland regionerna och 8,9 tusen över riket. Den har ökat med 22,1 tusen på tio år, mot 24,0 i riket, men ligger trots en ökning det senaste året under toppen från 2021. Ohälsotalet, ersatta sjukdagar per invånare 16–64 år, sjönk från 26,0 dagar 2015 till 20,6 år 2022 och har sedan ökat något, till 21,2 dagar 2025, mot 22,0 i riket.",
+      "Kungsbacka och Hylte ligger i var sin ände av länet i inkomst, ekonomisk utsatthet och förtida dödlighet. Medianinkomsten var 406,3 tusen kronor i Kungsbacka och 302,5 i Hylte, andelen vuxna med varaktigt låg ekonomisk standard 2,7 respektive 10,3 procent och förtida dödlighet 124,1 respektive 219,6 per 100 000. Kungsbacka har också länets största inkomstspridning, ginikoefficient 0,32 för disponibel inkomst, vilket kan spegla pendlingen till Göteborgsregionen. För planeringen pekar siffrorna på att ekonomisk utsatthet och förtida dödlighet är störst i Hylte och Halmstad."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["F_FORTID"],
+        "rubrik": "Förtida dödlighet har sjunkit varje år sedan 2014"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["F_DINK"],
+        "rubrik": "Medianinkomsten toppade 2021 och låg 2024 nära 2019 års nivå"
+      },
+      {
+        "efter": 2,
+        "typ": "halland",
+        "kpi": ["F_VEK_VUX"],
+        "rubrik": "Varaktigt låg ekonomisk standard är vanligast i Hylte och Halmstad"
+      }
     ]
   }
 }

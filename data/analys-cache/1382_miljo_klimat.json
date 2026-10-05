@@ -1,29 +1,49 @@
 {
-  "hash": "eb4aeef67e908a58f552e82557b880bb",
+  "hash": "758f34fa7bb7f46176a01cbfe7c5e14f",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Transporter och jordbruk lyfter Falkenbergs utsläpp över riket",
-    "ingress": "Växthusgasutsläppen inom Falkenbergs gränser ligger 0,97 ton per invånare över riket och 1,16 ton över länet. Transporter och jordbruk ligger 1,07 respektive 1,21 ton över riket, medan industrins utsläpp ligger 0,96 ton under.",
+    "rubrik": "Transporter och jordbruk ger Falkenberg högre utsläpp än länet",
+    "ingress": "Falkenberg släppte ut 5,47 ton koldioxidekvivalenter per invånare 2024, 1,16 ton mer än länet och 0,97 ton mer än riket, främst genom transporter och jordbruk. Utsläppen har minskat sedan 2010 och lika mycket som rikets på fem år, trots en ökning under 2024.",
     "i_korthet": [
       {
-        "ledtext": "Utsläppen ligger över riket och länet",
-        "text": "Falkenberg släppte ut 5,47 ton koldioxidekvivalenter per invånare 2024, mot 4,50 i riket och 4,31 i Halland."
+        "ledtext": "Tredje högst i länet",
+        "text": "Utsläppen var 5,47 ton per invånare, 1,16 ton mer än länet och tredje mest efter Laholm och Hylte."
       },
       {
-        "ledtext": "Jordbrukets utsläpp näst högst i länet",
-        "text": "Jordbrukets utsläpp var 1,80 ton per invånare, 1,21 ton över riket och näst högst i länet efter Laholm."
+        "ledtext": "Transporter och jordbruk över länet",
+        "text": "Transporterna gav 2,66 ton och jordbruket 1,80 ton per invånare, 0,54 respektive 0,78 ton mer än länet."
       },
       {
-        "ledtext": "Utsläppen steg det senaste året",
-        "text": "De totala utsläppen ökade med 0,60 ton per invånare från 2023, jämfört med 0,32 ton i riket."
+        "ledtext": "Minskning lika stor som rikets",
+        "text": "På fem år minskade utsläppen med 0,36 ton, lika mycket som i riket, trots en ökning med 0,60 ton under 2024."
       }
     ],
     "stycken": [
-      "Transporter och jordbruk är de största av de redovisade utsläppskällorna inom Falkenbergs gränser. Totalt släpptes 5,47 ton koldioxidekvivalenter per invånare ut 2024. Transporterna stod för 2,66 ton och jordbruket för 1,80 ton, medan industrin bidrog med 0,27 ton, vilket är 0,96 ton under riket. Det betyder att kommunens livsmedels- och tillverkningsindustri syns betydligt mindre i utsläppsstatistiken än transporterna och jordbruket.",
-      "I Halland hamnar Falkenberg på tredje plats, efter Laholm och Hylte. Mönstret liknar Laholms: båda har jordbruksutsläpp långt över riket, där Laholm når 3,06 ton och Falkenberg 1,80 ton per invånare. Över fem år har Falkenbergs utsläpp minskat med 0,36 ton, lika mycket som i riket. Det senaste året steg de däremot med 0,60 ton från 4,86 ton 2023, seriens lägsta nivå. Energianvändningen för transporter rörde sig åt samma håll: den ökade med 0,58 MWh per invånare medan riket minskade med 0,53.",
-      "Utsläppsprofilen hänger sannolikt samman med kommunens läge och struktur. Om E6 passerar kommunen och inlandet mot Småland är glest, så blir körsträckorna längre och en del av utsläppen kan komma från genomfartstrafik som kommunen har begränsad rådighet över. Energianvändningen för transporter, 9,10 MWh per invånare mot 6,89 i riket, pekar åt samma håll. Ekologiskt brukad åkermark omfattar 8,27 procent, 5,83 procentenheter under riket, men andelen har ökat med 3,49 procentenheter på tio år medan riket minskat. För planeringen pekar sektorerna mot resmönster och jordbruk, där utsläppen per invånare ligger mest över riket, och ettårsuppgången behöver följas innan den tolkas som ett trendbrott."
+      "Falkenbergs utsläpp av växthusgaser har minskat under lång tid men ökade under 2024. Utsläppen inom kommunens gräns sjönk från 7,58 ton koldioxidekvivalenter per invånare 2010 till 6,18 ton 2015 och vidare, med 2017 som enda avbrott, till 4,86 ton 2023, seriens lägsta värde. Under 2024 ökade de med 0,60 ton till 5,47 ton, mot 0,32 ton i riket. På fem år har utsläppen ändå minskat med 0,36 ton, lika mycket som i riket. Transporterna stod för den största delen av ökningen 2024, 0,50 ton, följda av arbetsmaskiner med 0,07 och jordbruket med 0,03 ton. Ett enskilt år är ännu ingen ny riktning.",
+      "Falkenberg har länets tredje högsta utsläpp per invånare, efter Laholm och Hylte, och skillnaden mot länet, 1,16 ton, kommer främst från transporter och jordbruk. Transporterna ger 2,66 ton per invånare och jordbruket 1,80 ton, 0,54 respektive 0,78 ton mer än länet och näst mest i länet efter Hylte respektive Laholm. Utsläppen från el och fjärrvärme är däremot 0,31 ton lägre än länets, eftersom nästan bara Halmstad har sådana. Minskningen på fem år var bred: jordbruket minskade med 0,16 ton, industrin med 0,08, transporterna med 0,07 och uppvärmningen med 0,06, medan arbetsmaskiner ökade med 0,05 ton.",
+      "Profilen kan hänga samman med trafiken på E6 och med jordbruket: utsläppen räknas där de uppstår och delas med kommunens invånare. Energianvändningen för transporter i kommunen har minskat med 1,55 MWh per invånare på tio år men ökade med 0,58 MWh under 2024, samma år som transportutsläppen ökade. Andelen ekologiskt brukad åkermark har ökat med 3,49 procentenheter på tio år till 8,27 procent 2025, medan den minskade i riket, men den har sjunkit sedan toppen 2023. För planeringen innebär det att transporterna och jordbruket väger tyngst för hur utsläppen utvecklas."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N00401"],
+        "rubrik": "Utsläppen har minskat sedan 2010 men ökade under 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N85073"],
+        "rubrik": "Falkenberg har länets näst högsta transportutsläpp per invånare"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N00403"],
+        "rubrik": "Ekologisk åkermark har ökat sedan 2010 men minskat sedan 2023"
+      }
     ]
   }
 }

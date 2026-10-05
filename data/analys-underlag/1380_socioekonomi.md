@@ -130,10 +130,8 @@ Mäter: Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning pe
 ### Självskattad god hälsa, andel (procent, 2024)
 Mäter: Andel av befolkningen 16–84 år som uppger att de har bra eller mycket bra allmänt hälsotillstånd. Uppgifterna bygger på Nationella folkhälsoenkäten och redovisas som 4-årsmedelvärden för att ge tillräckligt underlag på kommunnivå.
 - Halmstad: 73,1
-- Halland (länet): 75,0
 - Riket: 71,0
 - Skillnad Halmstad mot riket: +2,1 procentenheter
-- Skillnad Halmstad mot Halland: -1,9 procentenheter
 - Plats bland landets 237 kommuner: 36 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 75,9; Varberg 74,0; Halmstad 73,1; Laholm 72,8; Falkenberg 71,1; Hylte 69,7
 - Plats bland Hallands 6 kommuner: 3
@@ -145,10 +143,8 @@ Mäter: Andel av befolkningen 16–84 år som uppger att de har bra eller mycket
 
 ### Självskattad god hälsa, kvinnor [uppdelning av Självskattad god hälsa, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 70,4
-- Halland (länet): 72,7
 - Riket: 68,5
 - Skillnad Halmstad mot riket: +1,9 procentenheter
-- Skillnad Halmstad mot Halland: -2,3 procentenheter
 - Plats bland landets 211 kommuner: 41 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Varberg 72,3; Laholm 71,9; Kungsbacka 71,5; Halmstad 70,4; Hylte 68,8; Falkenberg 68,4
 - Plats bland Hallands 6 kommuner: 4
@@ -157,10 +153,8 @@ Mäter: Andel av befolkningen 16–84 år som uppger att de har bra eller mycket
 
 ### Självskattad god hälsa, män [uppdelning av Självskattad god hälsa, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 75,9
-- Halland (länet): 77,3
 - Riket: 73,4
 - Skillnad Halmstad mot riket: +2,5 procentenheter
-- Skillnad Halmstad mot Halland: -1,4 procentenheter
 - Plats bland landets 211 kommuner: 28 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 80,2; Halmstad 75,9; Varberg 75,6; Laholm 73,7; Falkenberg 73,7; Hylte 70,5
 - Plats bland Hallands 6 kommuner: 2
@@ -252,10 +246,8 @@ Mäter: Antal dödsfall per 100 000 invånare i åldern 25–64 år, åldersstan
 ### Allvarlig psykisk påfrestning, andel (procent, 2024)
 Mäter: Andel av befolkningen 16–84 år som skattar sin psykiska hälsa som allvarligt nedsatt, mätt med instrumentet Kessler 6 (K6). K6 innehåller sex frågor om psykiska besvär de senaste 30 dagarna och används internationellt som screeninginstrument. Redovisas som 4-årsmedelvärden.
 - Halmstad: 9,60
-- Halland (länet): 9,20
 - Riket: 10,00
 - Skillnad Halmstad mot riket: -0,40 procentenheter
-- Skillnad Halmstad mot Halland: +0,40 procentenheter
 - Plats bland landets 237 kommuner: 89 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Halmstad 9,60; Falkenberg 8,20; Hylte 8,00; Kungsbacka 7,40; Laholm 6,50; Varberg 5,80
 - Plats bland Hallands 6 kommuner: 1
@@ -263,10 +255,8 @@ Mäter: Andel av befolkningen 16–84 år som skattar sin psykiska hälsa som al
 
 ### Allvarlig psykisk påfrestning, kvinnor [uppdelning av Allvarlig psykisk påfrestning, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 11,0
-- Halland (länet): 10,3
 - Riket: 11,2
 - Skillnad Halmstad mot riket: -0,2 procentenheter
-- Skillnad Halmstad mot Halland: +0,7 procentenheter
 - Plats bland landets 211 kommuner: 75 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Halmstad 11,0; Falkenberg 10,5; Hylte 9,2; Kungsbacka 8,7; Laholm 8,3; Varberg 8,0
 - Plats bland Hallands 6 kommuner: 1
@@ -274,10 +264,8 @@ Mäter: Andel av befolkningen 16–84 år som skattar sin psykiska hälsa som al
 
 ### Allvarlig psykisk påfrestning, män [uppdelning av Allvarlig psykisk påfrestning, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 8,10
-- Halland (länet): 8,20
 - Riket: 8,80
 - Skillnad Halmstad mot riket: -0,70 procentenheter
-- Skillnad Halmstad mot Halland: -0,10 procentenheter
 - Plats bland landets 211 kommuner: 88 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Halmstad 8,10; Hylte 7,00; Falkenberg 6,10; Kungsbacka 6,10; Laholm 4,90; Varberg 3,60
 - Plats bland Hallands 6 kommuner: 1
@@ -288,10 +276,8 @@ Mäter: Andel av befolkningen 16–84 år som skattar sin psykiska hälsa som al
 ### Stress, andel (procent, 2024)
 Mäter: Andel av befolkningen 16–84 år som uppger att de känner sig stressade. Självrapporterad stress i Nationella folkhälsoenkäten. Redovisas som 4-årsmedelvärden på kommunnivå.
 - Halmstad: 13,9
-- Halland (länet): 16,8
 - Riket: 15,9
 - Skillnad Halmstad mot riket: -2,0 procentenheter
-- Skillnad Halmstad mot Halland: -2,9 procentenheter
 - Plats bland landets 237 kommuner: 116 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 15,6; Halmstad 13,9; Laholm 12,7; Falkenberg 12,5; Varberg 12,4; Hylte 11,3
 - Plats bland Hallands 6 kommuner: 2
@@ -303,10 +289,8 @@ Mäter: Andel av befolkningen 16–84 år som uppger att de känner sig stressad
 
 ### Stress, kvinnor [uppdelning av Stress, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 18,4
-- Halland (länet): 20,6
 - Riket: 19,6
 - Skillnad Halmstad mot riket: -1,2 procentenheter
-- Skillnad Halmstad mot Halland: -2,2 procentenheter
 - Plats bland landets 212 kommuner: 78 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Halmstad 18,4; Kungsbacka 18,2; Falkenberg 17,6; Laholm 16,6; Varberg 15,5; Hylte 14,9
 - Plats bland Hallands 6 kommuner: 1
@@ -315,10 +299,8 @@ Mäter: Andel av befolkningen 16–84 år som uppger att de känner sig stressad
 
 ### Stress, män [uppdelning av Stress, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 9,30
-- Halland (länet): 12,90
 - Riket: 12,30
 - Skillnad Halmstad mot riket: -3,00 procentenheter
-- Skillnad Halmstad mot Halland: -3,60 procentenheter
 - Plats bland landets 212 kommuner: 123 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 12,90; Varberg 9,40; Halmstad 9,30; Laholm 9,30; Hylte 8,20; Falkenberg 7,50
 - Plats bland Hallands 6 kommuner: 3
@@ -408,10 +390,8 @@ Mäter: Antal suicid (avsiktlig självdestruktiv handling med dödlig utgång) p
 ### Övervikt och obesitas (BMI 25+), andel (procent, 2024)
 Mäter: Andel av befolkningen 16–84 år med övervikt eller obesitas, definierat som BMI 25,0 eller högre. Baseras på självrapporterad längd och vikt i Nationella folkhälsoenkäten. Redovisas som 4-årsmedelvärden.
 - Halmstad: 51,3
-- Halland (länet): 51,7
 - Riket: 52,3
 - Skillnad Halmstad mot riket: -1,0 procentenheter
-- Skillnad Halmstad mot Halland: -0,4 procentenheter
 - Plats bland landets 237 kommuner: 199 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 57,2; Laholm 55,4; Halmstad 51,3; Varberg 51,2; Falkenberg 49,6; Kungsbacka 47,3
 - Plats bland Hallands 6 kommuner: 3
@@ -423,10 +403,8 @@ Mäter: Andel av befolkningen 16–84 år med övervikt eller obesitas, definier
 
 ### Övervikt och obesitas, kvinnor [uppdelning av Övervikt och obesitas (BMI 25+), andel: kvinnor och män] (procent, 2024)
 - Halmstad: 47,4
-- Halland (länet): 46,1
 - Riket: 46,8
 - Skillnad Halmstad mot riket: +0,6 procentenheter
-- Skillnad Halmstad mot Halland: +1,3 procentenheter
 - Plats bland landets 212 kommuner: 165 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 53,9; Halmstad 47,4; Laholm 46,5; Falkenberg 46,1; Varberg 44,5; Kungsbacka 41,5
 - Plats bland Hallands 6 kommuner: 2
@@ -435,10 +413,8 @@ Mäter: Andel av befolkningen 16–84 år med övervikt eller obesitas, definier
 
 ### Övervikt och obesitas, män [uppdelning av Övervikt och obesitas (BMI 25+), andel: kvinnor och män] (procent, 2024)
 - Halmstad: 55,4
-- Halland (länet): 57,2
 - Riket: 57,6
 - Skillnad Halmstad mot riket: -2,2 procentenheter
-- Skillnad Halmstad mot Halland: -1,8 procentenheter
 - Plats bland landets 212 kommuner: 181 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Laholm 63,2; Hylte 60,1; Varberg 57,7; Halmstad 55,4; Kungsbacka 52,9; Falkenberg 52,8
 - Plats bland Hallands 6 kommuner: 4
@@ -450,10 +426,8 @@ Mäter: Andel av befolkningen 16–84 år med övervikt eller obesitas, definier
 ### Daglig tobaksrökning, andel (procent, 2024)
 Mäter: Andel av befolkningen 16–84 år som röker tobak dagligen. Baseras på Nationella folkhälsoenkäten och redovisas som 4-årsmedelvärden på kommunnivå.
 - Halmstad: 5,10
-- Halland (länet): 5,20
 - Riket: 5,60
 - Skillnad Halmstad mot riket: -0,50 procentenheter
-- Skillnad Halmstad mot Halland: -0,10 procentenheter
 - Plats bland landets 237 kommuner: 151 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 7,80; Laholm 6,70; Varberg 5,50; Halmstad 5,10; Falkenberg 5,00; Kungsbacka 3,80
 - Plats bland Hallands 6 kommuner: 4
@@ -465,10 +439,8 @@ Mäter: Andel av befolkningen 16–84 år som röker tobak dagligen. Baseras på
 
 ### Daglig tobaksrökning, kvinnor [uppdelning av Daglig tobaksrökning, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 6,20
-- Halland (länet): 5,80
 - Riket: 6,00
 - Skillnad Halmstad mot riket: +0,20 procentenheter
-- Skillnad Halmstad mot Halland: +0,40 procentenheter
 - Plats bland landets 212 kommuner: 118 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 8,30; Laholm 8,00; Falkenberg 6,50; Halmstad 6,20; Varberg 5,90; Kungsbacka 3,60
 - Plats bland Hallands 6 kommuner: 4
@@ -477,10 +449,8 @@ Mäter: Andel av befolkningen 16–84 år som röker tobak dagligen. Baseras på
 
 ### Daglig tobaksrökning, män [uppdelning av Daglig tobaksrökning, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 3,90
-- Halland (länet): 4,50
 - Riket: 5,20
 - Skillnad Halmstad mot riket: -1,30 procentenheter
-- Skillnad Halmstad mot Halland: -0,60 procentenheter
 - Plats bland landets 212 kommuner: 163 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 7,30; Laholm 5,60; Varberg 5,10; Kungsbacka 4,00; Halmstad 3,90; Falkenberg 3,50
 - Plats bland Hallands 6 kommuner: 5
@@ -492,10 +462,8 @@ Mäter: Andel av befolkningen 16–84 år som röker tobak dagligen. Baseras på
 ### Riskkonsumtion av alkohol, andel (procent, 2024)
 Mäter: Andel av befolkningen 16–84 år med riskkonsumtion av alkohol. Riskkonsumtion bedöms utifrån AUDIT-C, ett internationellt vedertaget screeninginstrument med tre frågor om dryckesfrekvens, mängd och intensivkonsumtion. Redovisas som 4-årsmedelvärden.
 - Halmstad: 13,9
-- Halland (länet): 15,8
 - Riket: 15,5
 - Skillnad Halmstad mot riket: -1,6 procentenheter
-- Skillnad Halmstad mot Halland: -1,9 procentenheter
 - Plats bland landets 237 kommuner: 98 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Varberg 15,3; Kungsbacka 14,9; Halmstad 13,9; Falkenberg 13,6; Hylte 13,2; Laholm 12,9
 - Plats bland Hallands 6 kommuner: 3
@@ -507,10 +475,8 @@ Mäter: Andel av befolkningen 16–84 år med riskkonsumtion av alkohol. Riskkon
 
 ### Riskkonsumtion av alkohol, kvinnor [uppdelning av Riskkonsumtion av alkohol, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 11,8
-- Halland (länet): 12,3
 - Riket: 13,4
 - Skillnad Halmstad mot riket: -1,6 procentenheter
-- Skillnad Halmstad mot Halland: -0,5 procentenheter
 - Plats bland landets 212 kommuner: 64 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Varberg 14,0; Kungsbacka 12,4; Halmstad 11,8; Falkenberg 11,5; Laholm 10,8; Hylte 10,0
 - Plats bland Hallands 6 kommuner: 3
@@ -519,10 +485,8 @@ Mäter: Andel av befolkningen 16–84 år med riskkonsumtion av alkohol. Riskkon
 
 ### Riskkonsumtion av alkohol, män [uppdelning av Riskkonsumtion av alkohol, andel: kvinnor och män] (procent, 2024)
 - Halmstad: 16,2
-- Halland (länet): 19,3
 - Riket: 17,6
 - Skillnad Halmstad mot riket: -1,4 procentenheter
-- Skillnad Halmstad mot Halland: -3,1 procentenheter
 - Plats bland landets 212 kommuner: 100 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 17,4; Varberg 16,6; Halmstad 16,2; Hylte 16,0; Falkenberg 15,6; Laholm 14,8
 - Plats bland Hallands 6 kommuner: 3

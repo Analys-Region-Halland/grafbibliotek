@@ -1,1 +1,50 @@
-{"hash": "fd7eb9948a25e9a9a45b4b93f54620f8", "period": "2025", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Laholm har länets äldsta befolkning och tillväxten har stannat", "ingress": "Laholm har vuxit snabbare än riket under tio år, men 2025 minskade folkmängden något. Fler dog än föddes, och överskotten från inrikes flyttningar och invandring var för små för att väga upp det.", "i_korthet": [{"ledtext": "Folkmängden minskade något 2025", "text": "Befolkningen minskade med 0,11 procent till 26 561 invånare, medan länet växte med 0,29 procent och riket med 0,17 procent."}, {"ledtext": "Högst medelålder i Halland", "text": "Medelåldern är 45,3 år, vilket är 1,8 år över länet och 2,9 år över riket."}, {"ledtext": "Fler döda än födda", "text": "Födelsenettot var −2,40 per 1 000 invånare 2025, länets näst lägsta, trots att fruktsamheten på 1,81 barn per kvinna ligger klart över rikets 1,42."}], "stycken": ["Laholms befolkningstillväxt har mattats av sedan toppåret 2017, då folkmängden ökade med 1,96 procent, och vände 2025 till en svag minskning. Folkmängden sjönk med 34 personer till 26 561 invånare, en förändring på −0,11 procent, medan länet växte med 0,29 och riket med 0,17 procent. Det är den lägsta förändringen i serien sedan 2000. Över tio år har Laholm ändå vuxit med 9,8 procent, mer än rikets 7,6 procent.", "Ingen halländsk kommun har en högre medelålder än Laholm, 45,3 år, vilket är 1,8 år över länet och 2,9 år över riket. Andelen invånare i arbetsför ålder, 20–64 år, är 50,7 procent, länets lägsta och 5,8 procentenheter under riket. Den demografiska försörjningskvoten, alltså antalet unga och äldre per 100 invånare i arbetsför ålder, är 97,3 mot 77,0 i riket och den högsta i länet. Laholm var 2025 en av tre halländska kommuner där folkmängden minskade, tillsammans med Falkenberg och Hylte.", "Minskningen hänger sannolikt samman med åldersstrukturen. Fruktsamheten är länets näst högsta, 1,81 barn per kvinna mot 1,42 i riket, men 2025 föddes 238 barn och 303 personer dog, ett födelseunderskott på 65 personer eller −2,40 per 1 000 invånare. Inrikes flyttnetto gav ett överskott på 26 personer och invandringsöverskottet 9, vilket inte räckte för att väga upp. Under 2021–2025 som helhet växte folkmängden med 598 personer: inrikes flyttnetto bidrog med 499 och invandringsöverskottet med 205, medan födelseunderskottet drog ner med 153. För planeringen pekar mönstret mot ett växande behov av äldreomsorg: andelen 80 år och äldre har ökat med 1,70 procentenheter på fem år till 8,00 procent."]}}
+{
+  "hash": "1bb6c1354e3bf8fc6e4825d0046af452",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Efter lång tillväxt har Laholm stått still i tre år",
+    "ingress": "Laholms folkmängd har ökat med 9,8 procent på tio år, mer än rikets 7,6 procent, men har i stort sett varit oförändrad sedan 2022. Varje år sedan 2022 har fler dött än fötts, och sedan 2023 har flyttningsöverskotten ungefär vägt upp födelseunderskottet.",
+    "i_korthet": [
+      {
+        "ledtext": "Tillväxt till 2022, sedan stillastående",
+        "text": "Folkmängden ökade med 9,8 procent sedan 2015 men har sedan 2022 legat mellan 26 561 och 26 595 invånare."
+      },
+      {
+        "ledtext": "Fler döda än födda sedan 2022",
+        "text": "Födelsenettot har varit negativt varje år sedan 2022 och var minus 2,40 per 1 000 invånare 2025, mot minus 0,50 i länet, trots att fruktsamheten är näst högst i länet."
+      },
+      {
+        "ledtext": "Högst försörjningskvot bland länets kommuner",
+        "text": "Försörjningskvoten är 97,3, högst bland länets kommuner, mot 77,0 i riket, och den har stigit varje år sedan 2015."
+      }
+    ],
+    "stycken": [
+      "Laholm har vuxit snabbare än riket på tio år men i stort sett stått still sedan 2022. Sedan 2000 har folkmängden ökat med 16,8 procent, mindre än rikets 19,4, men sedan 2015 med 9,8 procent, mer än rikets 7,6. Åren 2015–2019 växte folkmängden med mellan 1,37 och 1,96 procent per år, och efter ett svagt 2020 med 1,36 och 0,97 procent 2021 och 2022. Sedan 2022 har den legat mellan 26 561 och 26 595 invånare, så ökningen på fem år, 2,3 procent mot rikets 2,2, kom i stort sett 2021 och 2022. Under 2025 minskade folkmängden med 0,11 procent, det lägsta värdet sedan 2000, medan länet växte med 0,29.",
+      "Flyttningarna har burit tillväxten, medan fler har dött än fötts. Under 2016–2025 bidrog inrikes flyttnetto med 1 419 personer och invandringsöverskottet med 970, medan födelsenettot var minus 109; de senaste fem åren var bidragen 499, 205 respektive minus 153. Båda flyttningsöverskotten har krympt: under 2023–2025 var inrikes flyttnetto mellan 15 och 74 personer per år och invandringsöverskottet mellan 6 och 12, mot 197 respektive 62 år 2022. Födelsenettot har varit negativt varje år sedan 2022, och sedan 2023 har flyttningsöverskotten sammantaget ungefär vägt upp underskottet. Uppgifterna för 2025 är preliminära.",
+      "Födelseunderskottet hänger sannolikt samman med åldersstrukturen: fruktsamheten, 1,81 barn per kvinna, är näst högst i länet, men medelåldern, 45,3 år, är högst och födelsenettot, minus 2,40 per 1 000 invånare mot minus 0,50 i länet, näst lägst efter Hylte. Försörjningskvoten, antalet unga och äldre per 100 invånare 20–64 år, har stigit varje år sedan 2015 till 97,3, högst i länet, mot 77,0 i riket, och mest har kvoten för äldre ökat, med 8,2 mot 3,0 för yngre. För planeringen innebär det att behoven inom äldreomsorgen sannolikt växer även utan befolkningstillväxt."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_BEF_FORANDR_PCT"],
+        "rubrik": "Tillväxten toppade 2015–2019 och har legat nära noll sedan 2023"
+      },
+      {
+        "efter": 1,
+        "typ": "delar",
+        "kpi": ["S_FODELSENETTO_ANTAL", "S_INRIKES_NETTO_ANTAL", "S_UTRIKES_NETTO_ANTAL"],
+        "summa": "S_BEF_FORANDR_ANTAL",
+        "rubrik": "Sedan 2023 väger flyttningsöverskotten ungefär upp födelseunderskottet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["S_FORSORJ_TOTAL"],
+        "rubrik": "Försörjningskvoten har stigit varje år sedan 2015, mer än rikets"
+      }
+    ]
+  }
+}

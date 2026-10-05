@@ -48,6 +48,13 @@ export interface TemaConfig {
   lagtArBra?: string[];
   /** KPI-ID:n där högt värde entydigt är önskvärt (sysselsättning, behörighet, förnybart) */
   hogtArBra?: string[];
+  /**
+   * KPI-ID:n där länets värde mäter något annat än kommunernas, t.ex. pendling över länsgränsen
+   * mot pendling över kommungränsen. Länet visas då inte som jämförelse för en kommun.
+   */
+  lanEjJamforbar?: string[];
+  /** Förklaringen till lanEjJamforbar, som fotnot i jämförelsetabellen */
+  lanEjJamforbarText?: string;
 }
 
 /** Önskvärd riktning: styr färg på förändring, plats och spårets ytterfjärdedelar */

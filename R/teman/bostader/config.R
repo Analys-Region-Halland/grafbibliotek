@@ -26,6 +26,11 @@ bostader_config <- function() {
     tema_farg  = "gul",
     datakalla  = c("kolada", "scb"),
     startar    = 2010,
+    # Seriebrott 2015/2016: hushållen ökar med 206 000 i riket mot cirka 60 000 andra år,
+    # upplåtelseformerna och hushållstyperna hoppar samma år och bostäder per 1 000 invånare
+    # har ett avvikande lågt värde 2015. Åren före 2016 går inte att jämföra med senare år.
+    serie_fran = c(N07913 = 2016, N07956 = 2016, N07957 = 2016, N07958 = 2016,
+                   N02938 = 2016, N02942 = 2016, N02943 = 2016, N02944 = 2016),
 
     # ── Kolada KPI:er (andelar, per 1 000 inv, priser, kvalitet) ──
     kpier = c(

@@ -1,5 +1,6 @@
 import type { KpiRow } from "../types";
 import { HALLAND_KODER, KOMMUNER_NORR_SODER } from "../types";
+import { LAN_EJ_JAMFORBAR } from "../teman";
 
 /** kpi_id → kommun_kod → rader sorterade på period */
 export type KpiIndex = Map<string, Map<string, KpiRow[]>>;
@@ -83,7 +84,7 @@ export function sammanfatta(idx: KpiIndex, kpiId: string, kod: string): KpiSamma
   const percentil = n > 1 ? fordelning.filter((v) => v < varde).length / (n - 1) : null;
 
   const riket = vardeVid(perEnhet.get("0000"), p) ?? senaste.riksvarde ?? null;
-  const halland = kod === "0013" ? null : vardeVid(perEnhet.get("0013"), p);
+  const halland = kod === "0013" || LAN_EJ_JAMFORBAR.has(kpiId) ? null : vardeVid(perEnhet.get("0013"), p);
 
   // Förändring: årsdata mot 1/5/10 år tidigare, månadsdata mot samma månad året innan
   const manad = p > 9999;

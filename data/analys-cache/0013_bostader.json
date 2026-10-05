@@ -1,29 +1,50 @@
 {
-  "hash": "defcad6f117f84bec4d1c6c56d263f7d",
+  "hash": "91ffa5c89551eb696dfc6c0d45b5504a",
   "period": "2024",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Halland bygger mer per invånare än riket, främst i Kungsbacka",
-    "ingress": "Halland färdigställer fler bostäder per invånare än riket, och byggtakten steg 2025 när den föll i landet. Byggandet per invånare är störst i Kungsbacka och Halmstad och minst i Hylte och Laholm, där trångboddheten också är större än i länet som helhet.",
+    "rubrik": "Lägre trångboddhet i flerbostadshus än i riket, men skillnaden krymper",
+    "ingress": "En lägre andel av de boende i Hallands flerbostadshus är trångbodda än i riket, och en lägre andel av invånarna har ansträngd boendeekonomi. Skillnaden mot riket har dock krympt under tio år, och skillnaderna mellan länets kommuner är stora.",
     "i_korthet": [
       {
-        "ledtext": "Byggtakten över rikets nivå",
-        "text": "Halland färdigställde 3,83 bostäder per 1 000 invånare 2025, vilket är 0,87 fler än riket och ger plats 6 av 21 regioner."
+        "ledtext": "Lägre trångboddhet än i riket",
+        "text": "Enligt norm 3 var 34,2 procent av de boende i flerbostadshus trångbodda 2025, mot 38,7 procent i riket."
       },
       {
-        "ledtext": "Kungsbacka bygger mest per invånare",
-        "text": "Kungsbacka färdigställde 7,91 och Halmstad 3,87 bostäder per 1 000 invånare, mot 0,87 i Laholm och 0,59 i Hylte."
+        "ledtext": "Skillnaden mot riket har krympt",
+        "text": "På tio år ökade andelen trångbodda enligt norm 3 med 1,1 procentenheter i Halland och minskade med 1,5 i riket."
       },
       {
-        "ledtext": "Trångboddheten skiljer sig kraftigt",
-        "text": "I Hylte är 31,0 procent av de boende i flerbostadshus trångbodda, mot 7,6 procent i Kungsbacka och 12,6 procent i länet."
+        "ledtext": "Byggandet svänger kraftigt mellan åren",
+        "text": "Sedan 2020 har länet färdigställt mellan 2,59 och 9,84 bostäder per 1 000 invånare och år, och 3,83 år 2025."
       }
     ],
     "stycken": [
-      "Bostadsbyggandet i Halland ligger över rikets nivå och vände uppåt 2025. Länet färdigställde 3,83 nya bostäder per 1 000 invånare, 0,87 fler än riket, vilket ger plats 6 bland landets 21 regioner. Jämfört med 2024 steg byggtakten med 1,24 bostäder per 1 000 invånare, samtidigt som den sjönk med 1,34 i riket. Serien svänger dock kraftigt: toppen på 9,84 år 2023 följdes av 2,59 året efter. Ett enskilt år säger därför lite om den långsiktiga nivån.",
-      "Byggandet per invånare är störst i Kungsbacka och Halmstad. Kungsbacka färdigställde 7,91 och Halmstad 3,87 bostäder per 1 000 invånare, medan Laholm låg på 0,87 och Hylte på 0,59, och i Hylte och Laholm färdigställdes inga lägenheter i flerbostadshus 2025. Småhusen ger Halland en särprägel i landet: med 0,84 färdigställda småhus per 1 000 invånare, mot 0,52 i riket, hamnar länet på plats 2. Trångboddheten, mätt bland dem som bor i flerbostadshus, är 12,6 procent i länet, 2,5 procentenheter under riket, men 31,0 procent i Hylte och 15,8 procent i Halmstad, mot 7,6 procent i Kungsbacka.",
-      "Mönstret hänger sannolikt samman med var efterfrågan finns: Kungsbacka ingår i Göteborgs arbetsmarknad och Halmstad har länets största arbetsmarknad söder om Varberg. Där få nya lägenheter tillkommer kan trångboddheten i det befintliga beståndet bestå längre. Läget vid kollektivtrafiken pekar på en avvägning för planeringen: i Halland bor 76,8 procent inom 500 meter från en trafikerad hållplats, 4,1 procentenheter under riket, med Halmstad på 90,3 procent och Hylte på 60,7. Att Kungsbacka bygger mest per invånare men har 68,5 procent av befolkningen nära en hållplats kan spegla villabebyggelsen, där bostäderna är utspridda över större ytor."
+      "Andelen trångbodda i Hallands flerbostadshus är lägre än i riket, men skillnaden har krympt. Enligt norm 3, där ett hushåll är trångbott om det bor mer än en person per rum utöver kök och vardagsrum, var 34,2 procent av de boende trångbodda 2025, mot 38,7 i riket. Andelen steg till 35,4 procent 2018 och har sjunkit något sedan 2022. På tio år ökade den med 1,1 procentenheter, medan rikets minskade med 1,5; på fem år och det senaste året minskade den med 0,9 och 0,2, mot 1,8 och 0,4 i riket. Enligt den mindre strikta norm 2 har den minskat varje år sedan 2019, till 12,6 procent.",
+      "Inom länet är skillnaderna stora. Enligt norm 3 var andelen trångbodda 52,0 procent i Hylte och 39,9 i Halmstad, mot 28,1 i Kungsbacka och 26,8 i Varberg. Ansträngd boendeekonomi, att hushållets inkomst inte räcker till en baskonsumtion med ortens genomsnittshyra, följer ett liknande mönster: 5,49 procent av invånarna i Hylte mot 1,49 i Kungsbacka. För länet var andelen 2,80 procent 2024, näst lägst bland landets 21 regioner, mot 3,91 i riket. Även här har avståndet krympt: på tio år sjönk andelen med 0,89 procentenheter, mot 2,02 i riket.",
+      "Att båda andelarna är högst i Hylte och Halmstad kan spegla skillnader i hushållens inkomster i förhållande till boendekostnaderna. Att de minskat mindre än i riket på fem år kan hänga samman med att länet redan låg lägre. Byggandet svänger kraftigt: sedan 2020, då serien börjar, har det legat mellan 2,59 och 9,84 bostäder per 1 000 invånare och år, och 2025 var nivån 3,83, mot 2,96 i riket. För planeringen säger därför ett enskilt år lite om huruvida bostäderna räcker till hushållen, som blev 5,2 procent fler på fem år, mot 4,7 i riket."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N07914"],
+        "rubrik": "Andelen under rikets, men avståndet har minskat sedan 2015"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N07914"],
+        "rubrik": "Hylte har länets högsta andel trångbodda och Varberg den lägsta"
+      },
+      {
+        "efter": 2,
+        "typ": "delar",
+        "kpi": ["N07905", "N07906"],
+        "summa": "N07917",
+        "rubrik": "Byggandet svänger kraftigt mellan åren, med en topp 2023"
+      }
     ]
   }
 }

@@ -1,29 +1,50 @@
 {
-  "hash": "890e84c4f0af674c8be494d4bc764906",
-  "period": "2024",
+  "hash": "b5fb7a7114503b6887f22045e1e40fa1",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Bostadsbyggandet har bromsat in medan småhuspriserna stiger",
-    "ingress": "Varberg har gått från seriens högsta byggtakt 2023 till den lägsta sedan serien började 2010. Småhuspriserna ligger samtidigt näst högst i Halland och har stigit mer än i riket, både det senaste året och på fem år.",
+    "rubrik": "Byggandet svänger kraftigt och småhuspriserna stiger mer än i riket",
+    "ingress": "Bostadsbyggandet i Varberg går i vågor, med toppår 2021 och 2023 och seriens lägsta nivå 2025. Småhusen är näst dyrast i länet och priset har stigit mer än i riket de senaste fem åren, medan bostadsrätterna kostar mindre än i riket.",
     "i_korthet": [
       {
-        "ledtext": "Byggandet har fallit från toppnivå",
-        "text": "Färdigställda bostäder var 2,02 per 1 000 invånare 2025, mot 20,14 år 2023, och nivån ligger 0,94 under riket."
+        "ledtext": "Byggandet svänger kraftigt mellan åren",
+        "text": "Färdigställda bostäder var 20,14 per 1 000 invånare 2023, seriens högsta värde, och 2,02 år 2025, seriens lägsta, mot 2,96 i riket."
       },
       {
         "ledtext": "Småhusen dyrare än i riket",
-        "text": "Småhuspriset var 35 431 kronor per kvadratmeter 2025, 6 547 kronor över riket och näst högst i Halland efter Kungsbacka."
+        "text": "Småhuspriset var 35 431 kronor per kvadratmeter 2025, 6 547 kronor över riket, och har stigit med 5 835 kronor på fem år mot 4 065 i riket."
       },
       {
-        "ledtext": "Trångboddheten under länet och riket",
-        "text": "Andelen trångbodda i flerbostadshus var 8,15 procent 2025, 4,43 procentenheter under länet och näst lägst i Halland."
+        "ledtext": "Lägst trångboddhet i länet (norm 3)",
+        "text": "Enligt norm 3 var 26,8 procent av de boende i flerbostadshus trångbodda 2025, lägst i Halland och 12,0 procentenheter under riket."
       }
     ],
     "stycken": [
-      "Varbergs bostadsbyggande har på två år gått från seriens högsta nivå till en nivå under riket. År 2023 färdigställdes 20,14 bostäder per 1 000 invånare, det högsta värdet sedan 2010, och 2024 var nivån 5,68. År 2025 var den 2,02, den lägsta i serien och 0,94 under riket. Svängningarna kan spegla att större projekt blev klara samtidigt.",
-      "Inom länet ligger Varberg på tredje plats i byggtakt, efter Kungsbacka med 7,91 och Halmstad med 3,87 bostäder per 1 000 invånare. Skillnaden ligger i flerbostadshusen: Varberg färdigställde 1,14 lägenheter per 1 000 invånare mot 2,99 i länet, medan småhusbyggandet på 0,88 låg över både länet och riket. Småhuspriset var 35 431 kronor per kvadratmeter, 6 547 kronor över riket och näst högst i länet efter Kungsbacka, och det steg med 2 058 kronor på ett år. Bostadsrättspriset sjönk samtidigt med 726 kronor, medan det steg i riket. Trångboddheten i flerbostadshus är 8,15 procent, 4,43 procentenheter under länet och näst lägst i Halland.",
-      "Att småhuspriserna stiger medan bostadsrättspriserna sjunker kan spegla en fortsatt efterfrågan på småhus i en kommun med pendeltåg mot Göteborg, medan det stora tillskottet av bostäder 2023 kan ha dämpat bostadsrättspriserna. Planberedskapen pekar på utrymme för fortsatt byggande: gällande detaljplaner rymmer 20,2 bostäder per 1 000 invånare, mer än i Kungsbacka, den enda andra halländska kommun som redovisar uppgiften, men på plats 134 av 198 kommuner i landet. Andelen invånare med en trafikerad hållplats inom 500 meter var 73,6 procent 2024, 7,3 procentenheter under riket och 1,4 procentenheter lägre än året innan, och nya bostäder nära stationen och i hamnområdet kan dra upp andelen."
+      "Bostadsbyggandet i Varberg går i vågor, och 2025, efter två toppår, var nivån den lägsta i serien. Åren 2015–2020 färdigställdes mellan 3,13 och 6,03 bostäder per 1 000 invånare per år, medan 2021 och 2023 stack ut med 13,40 och 20,14. Under 2025 var nivån 2,02, mot 2,96 i riket och 3,83 i länet. Nedgången kom främst från flerbostadshusen, från 4,34 till 1,14 lägenheter per 1 000 invånare, medan småhusen sjönk från 1,33 till 0,88. Toppåren kan spegla att stora projekt blev klara samtidigt.",
+      "Varberg har länets näst högsta bostadspriser efter Kungsbacka. Småhusen kostade 35 431 kronor per kvadratmeter 2025, 6 547 kronor över riket. Priset har ökat med 13 252 kronor sedan 2015 och 5 835 på fem år, mot 4 065 i riket, och var 2025 seriens högsta. Bostadsrätterna kostade 35 352 kronor per kvadratmeter, 4 461 under riket, och priset har ökat med 2 262 kronor på fem år, mot 5 074 i riket. Trångboddheten i flerbostadshus enligt norm 3, fler än en person per rum utöver kök och vardagsrum, är lägst i länet: 26,8 procent, 12,0 procentenheter under riket.",
+      "Prisbilden kan spegla en efterfrågan på småhus i en kommun med pendeltåg mot Göteborg. Att bostadsrättspriserna stigit mindre än i riket kan hänga samman med utbudet: bostadsrätternas andel av beståndet har ökat med 2,2 procentenheter på fem år, mot 0,6 i riket. Antalet hushåll har ökat varje år sedan 2015, med 8,5 procent på fem år mot 4,7 i riket, men 2025 med 0,6 procent, lika mycket som i riket. För planeringen säger ett enskilt år lite om byggtakten; gällande detaljplaner rymde 20,2 bostäder per 1 000 invånare 2025, mer än i Kungsbacka, den enda andra kommunen i länet med uppgiften."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N07917"],
+        "rubrik": "Byggandet går i vågor, med toppar 2021 och 2023"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N07909"],
+        "rubrik": "Småhusen är dyrast i Kungsbacka och Varberg"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N02938"],
+        "fran": 2016,
+        "rubrik": "Antalet hushåll har ökat varje år"
+      }
     ]
   }
 }

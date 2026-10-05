@@ -4,7 +4,7 @@
     "namn": "Hushåll, antal",
     "enhet": "antal",
     "roll": "indikator i bandet Hushåll och boende",
-    "forsta": 2011,
+    "forsta": 2016,
     "sista": 2025
   },
   {
@@ -12,7 +12,7 @@
     "namn": "Ensamstående hushåll, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N02938 (hushållstyperna)",
-    "forsta": 2011,
+    "forsta": 2016,
     "sista": 2025
   },
   {
@@ -20,7 +20,7 @@
     "namn": "Sammanboende hushåll, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N02938 (hushållstyperna)",
-    "forsta": 2011,
+    "forsta": 2016,
     "sista": 2025
   },
   {
@@ -28,7 +28,7 @@
     "namn": "Övriga hushåll, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N02938 (hushållstyperna)",
-    "forsta": 2011,
+    "forsta": 2016,
     "sista": 2025
   },
   {
@@ -76,7 +76,7 @@
     "namn": "Antal bostäder per 1 000 invånare",
     "enhet": "antal/1 000 inv",
     "roll": "indikator i bandet Bostadsbestånd och byggande",
-    "forsta": 2013,
+    "forsta": 2016,
     "sista": 2025
   },
   {
@@ -108,7 +108,7 @@
     "namn": "Hyresrätter i bostadsbeståndet, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N07913 (upplåtelseformerna)",
-    "forsta": 2013,
+    "forsta": 2016,
     "sista": 2025
   },
   {
@@ -116,7 +116,7 @@
     "namn": "Bostadsrätter i bostadsbeståndet, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N07913 (upplåtelseformerna)",
-    "forsta": 2013,
+    "forsta": 2016,
     "sista": 2025
   },
   {
@@ -124,7 +124,7 @@
     "namn": "Äganderätter i bostadsbeståndet, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N07913 (upplåtelseformerna)",
-    "forsta": 2013,
+    "forsta": 2016,
     "sista": 2025
   },
   {

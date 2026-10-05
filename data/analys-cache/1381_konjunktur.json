@@ -1,1 +1,49 @@
-{"hash": "bc31b4c07d36cb44b32e1892af1463e4", "period": "juni 2026", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Stabil arbetsmarknad men befolkning och gästnätter backar", "ingress": "Laholms invånare arbetar i högre grad än i riket och arbetslösheten ligger under riket. Samtidigt minskar folkmängden, och preliminära uppgifter visar ett kraftigt fall i gästnätterna i augusti 2026.", "i_korthet": [{"ledtext": "Sysselsättningen högst sedan 2020", "text": "Andelen sysselsatta 20–64 år var 84,8 procent i juli 2026, vilket är 2,3 procentenheter över riket men 0,8 under Halland."}, {"ledtext": "Folkmängden minskar", "text": "Laholm har 127 färre invånare än i juli 2025, en minskning med 0,5 procent medan riket växer med 0,2 procent."}, {"ledtext": "Gästnätterna föll i augusti", "text": "Gästnätterna minskade med 34,8 procent mot augusti 2025, medan riket ökade med 1,2 procent."}], "stycken": ["Laholms arbetsmarknad står stadigt, och sysselsättningsgraden är den högsta sedan 2020. I juli 2026 var 84,8 procent av befolkningen 20–64 år sysselsatta enligt preliminära uppgifter, det högsta värdet i serien som börjar i januari 2020, och andelen steg med 0,4 procentenheter på ett år, lika mycket som i riket. Arbetslösheten är 3,9 procent och har sjunkit med 0,1 procentenheter på ett år, mot 0,3 procentenheter i riket.", "Laholm ligger i mitten av Halland: sysselsättningsgraden är fjärde högst och arbetslösheten tredje högst av länets sex kommuner. Sysselsättningsgraden är 2,3 procentenheter över riket och 0,8 under länet, och arbetslösheten är 1,1 procentenheter under riket men 0,2 över länet. Avvikelserna syns i stället i befolkning och besöksnäring: folkmängden minskade med 127 personer eller 0,5 procent på ett år, medan riket växte med 0,2 procent, och bara Hylte minskade med fler personer i länet. Gästnätterna i augusti föll med 34,8 procent, vilket placerar Laholm på plats 234 av 236 kommuner.", "Fler invånare har arbete än det finns sysselsatta på arbetsställen i kommunen: 13 269 mot 9 578. Det speglar sannolikt pendling mot Halmstad och nordvästra Skåne, vilket gör att sysselsättningsgraden delvis följer grannkommunernas arbetsmarknader. Antalet sysselsatta invånare minskade med 25 personer på ett år samtidigt som andelen steg, vilket kan hänga samman med att befolkningen minskar. Fallet i gästnätter avviker från både länet, som minskade med 0,6 procent, och riket, som ökade med 1,2 procent, och gäller både svenska och utländska gäster, vilket pekar på en lokal förklaring snarare än en konjunkturell. Gästnätterna gäller dock en enda månad och är preliminära."]}}
+{
+  "hash": "70648efd6af1f8b348e9665bc80cb4e1",
+  "period": "juni 2026",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Högre sysselsättningsgrad men färre jobb i Laholm sedan 2022",
+    "ingress": "Preliminära uppgifter visar att sysselsättningsgraden i Laholm, 84,8 procent i juli 2026, är den högsta sedan serien började 2020 och 2,3 procentenheter över rikets. Antalet jobb, det vill säga sysselsatta med arbetsplats i kommunen, har däremot minskat varje år sedan 2022, och folkmängden, som var i stort sett oförändrad 2023–2025, minskade det senaste året.",
+    "i_korthet": [
+      {
+        "ledtext": "Högsta sysselsättningsgraden i serien",
+        "text": "Sysselsättningsgraden bland 20–64-åringar steg från 83,1 procent i juli 2021 till 84,8 procent i juli 2026, 2,3 procentenheter över rikets."
+      },
+      {
+        "ledtext": "Färre jobb i kommunen sedan 2022",
+        "text": "Antalet sysselsatta med arbetsplats i Laholm minskade från 10 034 i juli 2022 till 9 578 i juli 2026."
+      },
+      {
+        "ledtext": "Folkmängden har slutat växa",
+        "text": "Ökningen mot samma månad året innan sjönk från 344 personer i juli 2022 till 3 i juli 2025, och det senaste året minskade folkmängden med 127 personer."
+      }
+    ],
+    "stycken": [
+      "Preliminära uppgifter visar att en större andel av Laholms invånare är sysselsatta än för fem år sedan. Sysselsättningsgraden bland 20–64-åringar steg från 83,1 procent i juli 2021 till 84,3 procent 2022, låg mellan 84,2 och 84,4 procent till 2025 och var 84,8 procent i juli 2026, seriens högsta, 2,3 procentenheter över rikets och 0,8 under länets. Arbetslösheten sjönk från 4,60 procent i juli 2021 till 3,50 procent 2022, steg till 4,10 procent 2024 och var 3,90 procent i juli 2026, mot 3,70 i länet och 5,00 i riket.",
+      "Antalet sysselsatta med arbetsplats i Laholm, här kallat jobb, har däremot minskat varje år sedan juli 2022, från 10 034 till 9 578. På fem år minskade antalet med 2,5 procent, medan riket ökade med 4,5. Det senaste året var antalet i stort sett oförändrat; Halmstad minskade med 1,9 procent och Falkenberg ökade med 1,7. På tre år har tillverkningen minskat mest, med 180 personer, följd av offentlig sektor med 94 och transport med 60. Gästnätterna i augusti 2026 var 34,8 procent färre än ett år tidigare och färre än i augusti något år sedan 2021, enligt preliminära uppgifter.",
+      "Befolkningstillväxten har stannat av: ökningen mot samma månad året innan sjönk från 344 personer i juli 2022 till 3 i juli 2025, och det senaste året minskade folkmängden med 127; i länet minskade bara Laholm och Hylte. Sysselsättningsgraden har stigit fast antalet sysselsatta invånare har minskat med 183 sedan juli 2023, vilket betyder att invånarna i arbetsför ålder har minskat i snabbare takt. Antalet jobb minskade samtidigt med 373. Det kan tyda på att fler invånare arbetar i andra kommuner eller att färre pendlar in, men underlaget mäter inte pendlingen. För planeringen kan invånarnas sysselsättning ha blivit mer beroende av arbetsplatser utanför kommunen."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["K_SYSS_TOT"],
+        "rubrik": "Sysselsättningsgraden har stigit sedan 2021 och är högst i serien"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["K_DAG_TOT"],
+        "rubrik": "Antalet jobb i Laholm har minskat varje år sedan 2022"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["K_BEF_FORANDR"],
+        "rubrik": "Folkmängden har slutat växa och minskade det senaste året"
+      }
+    ]
+  }
+}

@@ -1,76 +1,76 @@
 # Kontrollogg: analystexter
 
-Kontrollerad 2026-10-05 09:15.
+Kontrollerad 2026-10-05 10:42.
 
 | Text | Status | Kontroll | Figurer |
 |---|---|---|---|
 | 0013_befolkning | klar | ✓ | ✓ (3) |
-| 1380_befolkning | inaktuell | | |
-| 1381_befolkning | inaktuell | | |
+| 1380_befolkning | klar | ✓ | ✓ (3) |
+| 1381_befolkning | klar | ✓ | ✓ (3) |
 | 1382_befolkning | klar | ✓ | ✓ (3) |
-| 1383_befolkning | inaktuell | | |
-| 1384_befolkning | inaktuell | | |
-| 1315_befolkning | inaktuell | | |
-| 0013_arbetsmarknad | inaktuell | | |
-| 1380_arbetsmarknad | inaktuell | | |
-| 1381_arbetsmarknad | inaktuell | | |
-| 1382_arbetsmarknad | inaktuell | | |
-| 1383_arbetsmarknad | inaktuell | | |
-| 1384_arbetsmarknad | inaktuell | | |
-| 1315_arbetsmarknad | inaktuell | | |
-| 0013_utbildning | inaktuell | | |
-| 1380_utbildning | inaktuell | | |
-| 1381_utbildning | inaktuell | | |
-| 1382_utbildning | inaktuell | | |
-| 1383_utbildning | inaktuell | | |
-| 1384_utbildning | inaktuell | | |
-| 1315_utbildning | inaktuell | | |
-| 0013_bostader | inaktuell | | |
-| 1380_bostader | inaktuell | | |
-| 1381_bostader | inaktuell | | |
-| 1382_bostader | inaktuell | | |
-| 1383_bostader | inaktuell | | |
-| 1384_bostader | inaktuell | | |
-| 1315_bostader | inaktuell | | |
-| 0013_naringsliv | inaktuell | | |
-| 1380_naringsliv | inaktuell | | |
-| 1381_naringsliv | inaktuell | | |
-| 1382_naringsliv | inaktuell | | |
-| 1383_naringsliv | inaktuell | | |
-| 1384_naringsliv | inaktuell | | |
-| 1315_naringsliv | inaktuell | | |
-| 0013_turism | inaktuell | | |
-| 1380_turism | inaktuell | | |
-| 1381_turism | inaktuell | | |
-| 1382_turism | inaktuell | | |
-| 1383_turism | inaktuell | | |
-| 1384_turism | inaktuell | | |
-| 1315_turism | inaktuell | | |
+| 1383_befolkning | klar | ✓ | ✓ (3) |
+| 1384_befolkning | klar | ✓ | ✓ (3) |
+| 1315_befolkning | klar | ✓ | ✓ (3) |
+| 0013_arbetsmarknad | klar | ✓ | ✓ (3) |
+| 1380_arbetsmarknad | klar | ✓ | ✓ (3) |
+| 1381_arbetsmarknad | klar | ✓ | ✓ (3) |
+| 1382_arbetsmarknad | klar | ✓ | ✓ (3) |
+| 1383_arbetsmarknad | klar | ✓ | ✓ (3) |
+| 1384_arbetsmarknad | klar | ✓ | ✓ (3) |
+| 1315_arbetsmarknad | klar | ✓ | ✓ (3) |
+| 0013_utbildning | klar | ✓ | ✓ (3) |
+| 1380_utbildning | klar | ✓ | ✓ (3) |
+| 1381_utbildning | klar | ✓ | ✓ (3) |
+| 1382_utbildning | klar | ✓ | ✓ (3) |
+| 1383_utbildning | klar | ✓ | ✓ (3) |
+| 1384_utbildning | klar | ✓ | ✓ (3) |
+| 1315_utbildning | klar | ✓ | ✓ (3) |
+| 0013_bostader | klar | ✓ | ✓ (3) |
+| 1380_bostader | klar | ✓ | ✓ (3) |
+| 1381_bostader | klar | ✓ | ✓ (3) |
+| 1382_bostader | klar | ✓ | ✓ (3) |
+| 1383_bostader | klar | ✓ | ✓ (3) |
+| 1384_bostader | klar | ✓ | ✓ (3) |
+| 1315_bostader | klar | ✓ | ✓ (3) |
+| 0013_naringsliv | klar | ✓ | ✓ (3) |
+| 1380_naringsliv | klar | ✓ | ✓ (3) |
+| 1381_naringsliv | klar | ✓ | ✓ (3) |
+| 1382_naringsliv | klar | ✓ | ✓ (3) |
+| 1383_naringsliv | klar | ✓ | ✓ (3) |
+| 1384_naringsliv | klar | ✓ | ✓ (3) |
+| 1315_naringsliv | klar | ✓ | ✓ (2) |
+| 0013_turism | klar | ✓ | ✓ (3) |
+| 1380_turism | klar | ✓ | ✓ (3) |
+| 1381_turism | klar | ✓ | ✓ (3) |
+| 1382_turism | klar | ✓ | ✓ (3) |
+| 1383_turism | klar | ✓ | ✓ (3) |
+| 1384_turism | klar | ✓ | ✓ (3) |
+| 1315_turism | klar | ✓ | ✓ (3) |
 | 0013_konjunktur | klar | ✓ | ✓ (3) |
-| 1380_konjunktur | inaktuell | | |
-| 1381_konjunktur | inaktuell | | |
-| 1382_konjunktur | inaktuell | | |
-| 1383_konjunktur | inaktuell | | |
-| 1384_konjunktur | inaktuell | | |
-| 1315_konjunktur | inaktuell | | |
-| 0013_miljo_klimat | inaktuell | | |
-| 1380_miljo_klimat | inaktuell | | |
-| 1381_miljo_klimat | inaktuell | | |
-| 1382_miljo_klimat | inaktuell | | |
-| 1383_miljo_klimat | inaktuell | | |
-| 1384_miljo_klimat | inaktuell | | |
-| 1315_miljo_klimat | inaktuell | | |
-| 0013_transport | inaktuell | | |
-| 1380_transport | inaktuell | | |
-| 1381_transport | inaktuell | | |
-| 1382_transport | inaktuell | | |
-| 1383_transport | inaktuell | | |
-| 1384_transport | inaktuell | | |
-| 1315_transport | inaktuell | | |
-| 0013_socioekonomi | inaktuell | | |
-| 1380_socioekonomi | inaktuell | | |
-| 1381_socioekonomi | inaktuell | | |
-| 1382_socioekonomi | inaktuell | | |
-| 1383_socioekonomi | inaktuell | | |
-| 1384_socioekonomi | inaktuell | | |
-| 1315_socioekonomi | inaktuell | | |
+| 1380_konjunktur | klar | ✓ | ✓ (3) |
+| 1381_konjunktur | klar | ✓ | ✓ (3) |
+| 1382_konjunktur | klar | ✓ | ✓ (3) |
+| 1383_konjunktur | klar | ✓ | ✓ (3) |
+| 1384_konjunktur | klar | ✓ | ✓ (3) |
+| 1315_konjunktur | klar | ✓ | ✓ (3) |
+| 0013_miljo_klimat | klar | ✓ | ✓ (3) |
+| 1380_miljo_klimat | klar | ✓ | ✓ (3) |
+| 1381_miljo_klimat | klar | ✓ | ✓ (3) |
+| 1382_miljo_klimat | klar | ✓ | ✓ (3) |
+| 1383_miljo_klimat | klar | ✓ | ✓ (3) |
+| 1384_miljo_klimat | klar | ✓ | ✓ (2) |
+| 1315_miljo_klimat | klar | ✓ | ✓ (2) |
+| 0013_transport | klar | ✓ | ✓ (3) |
+| 1380_transport | klar | ✓ | ✓ (3) |
+| 1381_transport | klar | ✓ | ✓ (3) |
+| 1382_transport | klar | ✓ | ✓ (3) |
+| 1383_transport | klar | ✓ | ✓ (3) |
+| 1384_transport | klar | ✓ | ✓ (3) |
+| 1315_transport | klar | ✓ | ✓ (3) |
+| 0013_socioekonomi | klar | ✓ | ✓ (3) |
+| 1380_socioekonomi | klar | ✓ | ✓ (3) |
+| 1381_socioekonomi | klar | ✓ | ✓ (3) |
+| 1382_socioekonomi | klar | ✓ | ✓ (3) |
+| 1383_socioekonomi | klar | ✓ | ✓ (3) |
+| 1384_socioekonomi | klar | ✓ | ✓ (3) |
+| 1315_socioekonomi | klar | ✓ | ✓ (3) |

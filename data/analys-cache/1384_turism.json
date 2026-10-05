@@ -1,29 +1,49 @@
 {
-  "hash": "0a0a70a909f43193d34df1429013460f",
+  "hash": "c914687beb4eb00ac418f5c10ec38ceb",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Kungsbacka tappade gästnätter när kustkommunerna i söder växte",
-    "ingress": "Besöksnäringen i Kungsbacka är liten i förhållande till befolkningen och minskade under 2025, samtidigt som länet växte. Utländska gäster ökar, men det räcker inte för att väga upp färre svenska gästnätter.",
+    "rubrik": "Gästnätterna har minskat sedan 2022 och är färre än 2015",
+    "ingress": "Kungsbackas gästnätter vid kommersiella boenden ökade varje år 2017–2019, föll med 31,1 procent 2020 och nådde seriens högsta nivå 2022, men har sedan minskat tre år i rad. Med 170 096 nätter år 2025 var de 7,0 procent färre än 2015, medan riket ökade med 17,8 procent.",
     "i_korthet": [
       {
-        "ledtext": "Lägst turismintensitet i Halland",
-        "text": "Kungsbacka har 2 gästnätter per invånare, mot 9 i länet och 7 i riket, vilket ger plats 211 av 235 kommuner."
+        "ledtext": "Tre års nedgång efter toppen 2022",
+        "text": "Gästnätterna minskade från 198 362 år 2022 till 170 096 år 2025, färre än något år 2015–2019."
       },
       {
-        "ledtext": "Minskning när länet ökade",
-        "text": "Gästnätterna minskade med 2,6 procent under 2025, medan Halland ökade med 5,4 procent och riket med 2,5 procent."
+        "ledtext": "Färre svenska gästnätter än 2015",
+        "text": "På tio år minskade de svenska gästnätterna med 20 941 medan de utländska ökade med 8 035."
       },
       {
-        "ledtext": "Utländska gäster ökar sin andel",
-        "text": "Andelen utländska gästnätter är 16,7 procent, 1,8 procentenheter över länet men 9,6 procentenheter under riket."
+        "ledtext": "Färst gästnätter per invånare i länet",
+        "text": "Kungsbacka hade 2 gästnätter per invånare 2025, mot 9 i länet och 7 i riket."
       }
     ],
     "stycken": [
-      "Turismen väger lätt i Kungsbacka i förhållande till kommunens storlek, och under 2025 krympte den. Kommersiella boenden hade 170 096 gästnätter, vilket motsvarar 2 per invånare: lägst i Halland och plats 211 av landets 235 kommuner. Antalet gästnätter minskade med 2,6 procent på ett år och ligger 7,0 procent under nivån 2015. Sett över tio år har Kungsbacka alltså inte följt rikets ökning, där gästnätterna har vuxit med 17,8 procent.",
-      "Jämfört med de flesta andra halländska kommunerna går utvecklingen åt motsatt håll. Halland ökade antalet gästnätter med 5,4 procent, och Laholm, Varberg, Falkenberg och Halmstad växte alla, medan bara Hylte minskade mer än Kungsbacka. Nedgången gäller de svenska gästerna, vars gästnätter minskade med 4,3 procent, medan de utländska ökade med 12,3 procent. Andelen utländska gästnätter når därmed 16,7 procent, den högsta nivån i serien sedan 2008. Logiintäkten per gästnatt, 428 kronor, ligger i nivå med länet men 150 kronor under riket.",
-      "Mönstret hänger sannolikt samman med att Kungsbacka ingår i Göteborgs arbetsmarknadsregion och präglas av villabebyggelse: besökare kan bo i Göteborg och resa söderut över dagen. Anläggningarna är också mindre än i Falkenberg, Varberg och Halmstad, mätt i gästnätter per anläggning. Utbudet har krympt, från 18 anläggningar 2024 till 15 år 2025. De som finns kvar har fler gästnätter var, 16,9 procent fler per anläggning, men rumsbeläggningen på 46,4 procent ligger 5,8 procentenheter under länet. Det pekar på att efterfrågan snarare än antalet rum sätter gränsen, och att enskilda anläggningar kan få stort genomslag i en så liten bas."
+      "Kungsbackas gästnätter är fler än 2008 men färre än något år 2015–2019, efter tre års minskning sedan toppen 2022. Sedan 2008 har de ökat med 12,9 procent och på tio år minskat med 7,0 procent, mot ökningar med 41,2 respektive 17,8 procent i riket. Gästnätterna ökade varje år 2017–2019. Pandemiåret 2020 föll de med 31,1 procent, seriens största minskning, och 2022 nådde de seriens högsta nivå, 198 362. Därefter har de minskat tre år i rad, till 170 096 år 2025. Femårsökningen, 28,3 procent, räknas från seriens lägsta nivå 2020 och speglar främst återhämtningen.",
+      "Kungsbacka har lägst antal gästnätter per invånare i länet, 2 mot 9 i länet och 7 i riket. Det speglar sannolikt att kommunen i första hand är en bostadsort i Göteborgs arbetsmarknadsregion, med stor utpendling. Under 2025 minskade gästnätterna med 2,6 procent, medan de ökade med 5,4 procent i länet och 2,5 procent i riket; i länet minskade bara Hylte mer. Rumsbeläggningen, 46,4 procent, låg 5,8 procentenheter under länet och 7,9 under riket. Logiintäkten per gästnatt, 428 kronor, är i nivå med länets men 150 kronor under riket.",
+      "Tioårsnedgången gäller de svenska gästerna. På tio år har de svenska gästnätterna minskat med 20 941 och de utländska ökat med 8 035; under 2025 minskade de svenska med 6 392 och de utländska ökade med 3 102. Antalet svenska ankomster ökade samtidigt med 1,4 procent på tio år, vilket pekar på att svenska gäster i genomsnitt stannar färre nätter än 2015. De utländska nätternas andel, 16,7 procent, är seriens högsta men 9,6 procentenheter under riket. För planeringen betyder det att utländska gäster och kortare vistelser väger tyngre än tidigare, samtidigt som antalet anläggningar har minskat från 21 år 2015 till 15."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["T_GAST_TOT"],
+        "rubrik": "Gästnätterna har minskat tre år i rad efter toppen 2022"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["T_GAST_PER_INV"],
+        "rubrik": "Kungsbacka har färst gästnätter per invånare i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "uppdelning",
+        "kpi": ["T_GAST_SVE", "T_GAST_UTL"],
+        "rubrik": "Färre svenska och fler utländska gästnätter än 2015"
+      }
     ]
   }
 }

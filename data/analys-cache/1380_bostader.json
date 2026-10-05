@@ -1,29 +1,49 @@
 {
-  "hash": "f0b9ff8846481a59523fbdf2e742831a",
-  "period": "2024",
+  "hash": "ae86d5e3ca997a413bf3043761ec14b6",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Halmstad är Hallands hyresrättskommun och bygger främst flerbostadshus",
-    "ingress": "Halmstad har störst andel hyresrätter och flest bostäder per invånare i länet, och nybyggandet 2025 dominerades av flerbostadshus. Trångboddheten ligger samtidigt över både länet och riket.",
+    "rubrik": "Trångboddheten enligt norm 3 har inte minskat som i riket",
+    "ingress": "Halmstad har flest bostäder per invånare i länet, i nivå med riket, och antalet har ökat mer än i riket de senaste fem åren. Andelen trångbodda i flerbostadshus enligt norm 3 har däremot legat kvar kring 40 procent sedan 2019 och är högre än i riket, där den har minskat.",
     "i_korthet": [
       {
-        "ledtext": "Störst andel hyresrätter i länet",
-        "text": "Hyresrätterna utgör 47,9 procent av bostäderna, 8,8 procentenheter över riket och högst bland Hallands kommuner."
+        "ledtext": "Fler bostäder per invånare",
+        "text": "Antalet bostäder per 1 000 invånare ökade med 16,6 på fem år, mot 13,6 i riket, och var 499,2 år 2025."
       },
       {
-        "ledtext": "Nybyggandet sker i flerbostadshus",
-        "text": "År 2025 färdigställdes 3,33 lägenheter i flerbostadshus per 1 000 invånare mot 2,43 i riket, medan småhusen stannade vid 0,54, lägst i länet."
+        "ledtext": "Trångboddheten har inte minskat",
+        "text": "Enligt norm 3 var 39,9 procent av de boende i flerbostadshus trångbodda 2025, samma andel som 2020, medan andelen i riket minskade med 1,8 procentenheter."
       },
       {
-        "ledtext": "Trångboddheten ligger över länet",
-        "text": "Av de boende i flerbostadshus är 15,8 procent trångbodda, 3,2 procentenheter över Halland och 0,7 procentenheter över riket."
+        "ledtext": "Byggandet svänger kraftigt",
+        "text": "Antalet färdigställda bostäder per 1 000 invånare var 11,00 år 2023, 0,87 år 2024 och 3,87 år 2025."
       }
     ],
     "stycken": [
-      "Halmstads bostadsbestånd skiljer sig från övriga Halland genom att hyresrätten är den största upplåtelseformen. Hyresrätterna utgör 47,9 procent av bostäderna, 8,8 procentenheter över riket, vilket ger plats 13 bland landets 290 kommuner. Äganderätterna är 38,8 procent, lägst i länet, och bostadsrätterna 13,3 procent, 11,0 procentenheter under riket. Nybyggandet förstärker mönstret: av 3,87 nybyggda bostäder per 1 000 invånare 2025 var 3,33 lägenheter i flerbostadshus.",
-      "Inom länet byggde bara Kungsbacka mer 2025, med 7,91 nya bostäder per 1 000 invånare, medan Varberg, Falkenberg, Laholm och Hylte låg klart under Halmstad. Småhusbyggandet är däremot lägst i länet, 0,54 per 1 000 invånare mot 0,84 i Halland. Priserna placerar Halmstad i mitten av länet: bostadsrätter kostar 27 305 kronor per kvadratmeter och småhus 30 024, i båda fallen efter Kungsbacka och Varberg. Trångboddheten har ökat med 1,8 procentenheter på tio år medan riket minskat med 2,5, men sedan toppen på 17,8 procent 2019 har den sjunkit, med 1,5 procentenheter på fem år.",
-      "Mönstret hänger sannolikt samman med Halmstads roll som residensstad, högskoleort och södra Hallands största arbetsmarknad, där efterfrågan på hyrda och mindre bostäder kan väntas vara större än i villakommunerna. Det täta boendet kan också avläsas i att 90,3 procent av befolkningen bor nära en trafikerad hållplats, 13,5 procentenheter över länet. Eftersom flerbostadshusen står för det mesta av nybyggandet och trångboddheten bland de boende där ligger över länet blir lägenheternas storlek en planeringsfråga. Byggtakten svänger kraftigt, från 11,00 per 1 000 invånare 2023 till 0,87 året därpå, och planberedskapen på 14,8 bostäder per 1 000 invånare 2023 ger plats 141 av 199 kommuner, vilket kan begränsa möjligheten att hålla en jämn nivå."
+      "Bostäderna i Halmstad har blivit fler per invånare, men trångboddheten enligt norm 3 har inte minskat som i riket. Antalet bostäder per 1 000 invånare har ökat varje år sedan 2018 till 499,2, högst i länet, med 16,6 på fem år och 8,8 det senaste året, mot 13,6 och 2,1 i riket. Enligt norm 3, där hushållet är trångbott med mer än en person per rum utöver kök och vardagsrum, steg andelen trångbodda i flerbostadshus till 40,0 procent 2019 och har sedan legat mellan 39,5 och 40,5. Den ökade med 3,8 procentenheter på tio år, var i stort sett oförändrad på fem och steg 0,4 det senaste året, medan rikets minskade under alla tre perioderna.",
+      "Beståndet och hushållen skiljer sig från grannkommunernas. Hyresrätterna utgör 47,9 procent av bostäderna och de ensamstående 49,0 procent av hushållen, båda högst i länet. Andelen trångbodda enligt norm 3 är näst högst i länet efter Hylte och 1,2 procentenheter över riket. Detsamma gäller andelen invånare med ansträngd boendeekonomi, 4,26 procent 2024 mot 3,91 i riket.",
+      "Att andelen enligt norm 3 inte minskat trots fler bostäder per invånare kan hänga samman med att fler hushåll är ensamstående: deras andel har ökat med 2,1 procentenheter på fem år, mot 1,6 i riket. Enligt den mindre strikta norm 2, som inte räknar personer i ensamhushåll, minskade andelen trångbodda däremot med 1,5 procentenheter på fem år, mot 2,3 i riket. Byggandet svänger kraftigt: åren 2015–2022 färdigställdes mellan 3,48 och 6,50 bostäder per 1 000 invånare och år, 2023 seriens högsta 11,00, 2024 0,87 och 2025 3,87. Planberedskapen, möjliga bostäder i gällande detaljplaner, var 14,8 per 1 000 invånare 2023, mot 20,4 i Kungsbacka. För planeringen säger antalet nya bostäder därför inte ensamt om de möter de trångboddas behov."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N07914"],
+        "rubrik": "Trångboddheten steg 2015–2019 och har sedan legat kvar"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N07956"],
+        "rubrik": "Halmstad har länets högsta andel hyresrätter"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N07917"],
+        "rubrik": "Byggandet svänger kraftigt mellan åren, med en topp 2023"
+      }
     ]
   }
 }

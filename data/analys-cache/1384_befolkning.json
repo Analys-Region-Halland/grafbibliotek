@@ -1,29 +1,50 @@
 {
-  "hash": "1c2eaae07c9173862c8cd6d06fafa407",
+  "hash": "9240d55c3eeb19c24f23701b594d7817",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Inrikes flyttningar bar det mesta av ökningen 2025",
-    "ingress": "Kungsbacka växte snabbast av Hallands kommuner 2025, främst genom inrikes flyttningar men också genom ett invandringsöverskott. Samtidigt dog fler än det föddes, och andelen 80 år och äldre ökar snabbare än i riket.",
+    "rubrik": "Kungsbacka växer långsammare än före 2020, även med uppgången 2025",
+    "ingress": "Kungsbackas folkmängd har ökat med 32,6 procent sedan 2000, mot 19,4 procent i riket, men tillväxten har mattats sedan toppen 2017 och var de senaste fem åren lägre än rikets. Under 2025 växte kommunen snabbast i länet, främst genom inrikes flyttnetto, medan fler dog än föddes.",
     "i_korthet": [
       {
-        "ledtext": "Snabbast tillväxt i Halland",
-        "text": "Folkmängden ökade med 0,63 procent 2025, jämfört med 0,29 procent i länet och 0,17 procent i riket."
+        "ledtext": "Lång tillväxt, svagare sedan 2020",
+        "text": "Folkmängden ökade med 9,1 procent på tio år, mot 7,6 procent i riket, men med 1,6 procent på fem år, mot 2,2 procent i riket."
       },
       {
-        "ledtext": "Inrikes flyttnetto största bidraget 2025",
-        "text": "Inrikes flyttnetto tillförde 476 personer, invandringsöverskottet 91 personer och födelsenettot minus 34 personer."
+        "ledtext": "Inrikes flyttnetto bidrog mest 2016–2025",
+        "text": "Under 2016–2025 bidrog inrikes flyttnetto med 3 920 personer, invandringsöverskottet med 2 123 och födelsenettot med 1 020."
       },
       {
-        "ledtext": "Fler döda än födda",
-        "text": "Under 2025 föddes 662 barn medan 696 personer dog, vilket ger ett födelsenetto på minus 0,4 per 1 000 invånare."
+        "ledtext": "Högst andel unga, växande andel äldre",
+        "text": "Andelen 0–19 år är 25,3 procent, högst i länet, medan andelen 80 år och äldre har ökat med 2,60 procentenheter på tio år, mot 1,30 i riket."
       }
     ],
     "stycken": [
-      "Tillväxten tog fart igen 2025, och det mesta av ökningen kom från inrikes flyttningar. Folkmängden ökade med 531 personer till 86 323. Inrikes flyttnetto, alltså skillnaden mellan in- och utflyttade inom Sverige, tillförde 476 personer och vände från minus 1,1 per 1 000 invånare 2024 till 5,5 per 1 000 invånare. Invandringsöverskottet bidrog med 91 personer, medan födelsenettot blev minus 34 när 662 barn föddes och 696 personer dog. Över perioden 2021–2025 ser fördelningen annorlunda ut: invandringsöverskottet gav 717 personer, inrikes flyttnetto 425 och födelsenettot 182.",
-      "Kungsbacka och Varberg växer snabbast i Halland. Kungsbacka ökade med 0,63 procent, Varberg med 0,56 procent och Halmstad med 0,22 procent, medan Falkenberg, Laholm och Hylte minskade. Inrikes flyttnetto följer samma mönster, med 5,5 per 1 000 invånare i Kungsbacka och 5,0 i Varberg mot 0,5 i Halmstad. Uppgången är dock ny: över fem år växte Kungsbacka med 1,6 procent, mindre än rikets 2,2 procent, och tempot ligger under toppåret 2017 då folkmängden ökade med 1,92 procent.",
-      "Mönstret hänger sannolikt samman med närheten till Göteborg och inflyttningen av barnfamiljer till villaområden. Andelen 0–19 år är 25,3 procent, högst i Halland och 2,9 procentenheter över riket, men den har minskat med 1,4 procentenheter på fem år. Fruktsamheten är 1,58 barn per kvinna, den lägsta nivån sedan 2000, medan andelen 80 år och äldre ökade med 1,80 procentenheter på fem år, mot 1,20 i riket. För planeringen betyder det att en stor barnbefolkning och en växande andel äldre behöver hanteras samtidigt. När födelsenettot är negativt beror tillväxten på flyttningar, både inrikes och utrikes, och de har svängt mellan åren."
+      "Kungsbackas folkmängd har ökat mer än rikets sedan 2000, men tillväxten har mattats sedan toppen 2017. Sedan 2000 har folkmängden ökat med 32,6 procent och sedan 2015 med 9,1 procent, mot 19,4 respektive 7,6 procent i riket. De senaste fem åren var ökningen 1,6 procent, mindre än rikets 2,2 procent: den årliga tillväxten sjönk från 1,92 procent 2017 till minus 0,17 procent 2023, det lägsta sedan 2000. Under 2025 ökade folkmängden enligt preliminära uppgifter med 531 personer, och tillväxttakten, 0,63 procent, var densamma som 2020.",
+      "Inrikes flyttnetto har gett det största bidraget över tio år men också svängt mest. Under 2016–2025 bidrog inrikes flyttnetto med 3 920 personer, invandringsöverskottet med 2 123 och födelsenettot med 1 020. De senaste fem åren var invandringsöverskottet störst, 717 personer, mot 425 för inrikes flyttnetto och 182 för födelsenettot, sedan inrikes flyttnetto sjunkit från 1 172 personer 2017 till minus 174 år 2023. Under 2025 bidrog inrikes flyttnetto med 476 personer, invandringsöverskottet med 91 och födelsenettot med minus 34. Kungsbacka växte 2025 snabbast i länet, före Varberg med 0,56 procent, medan länet växte med 0,29 och riket med 0,17 procent.",
+      "Mönstret hänger sannolikt samman med närheten till Göteborg och inflyttningen av barnfamiljer. Andelen 0–19 år är 25,3 procent, högst i länet och 2,9 procentenheter över riket, men den har minskat med 1,3 procentenheter på tio år. Samtidigt föds färre och fler dör: antalet födda har minskat med 11,9 procent sedan 2015 och antalet döda ökat med 18,8 procent, och födelsenettot var 2025 det lägsta sedan 2000. Andelen 80 år och äldre har ökat med 2,60 procentenheter på tio år, mot 1,30 i riket. För planeringen pekar det mot växande behov inom äldreomsorgen samtidigt som barnkullarna har blivit mindre."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_BEF_FORANDR_PCT"],
+        "rubrik": "Tillväxten har mattats sedan toppen 2017 men ökade 2025"
+      },
+      {
+        "efter": 1,
+        "typ": "delar",
+        "kpi": ["S_FODELSENETTO_ANTAL", "S_INRIKES_NETTO_ANTAL", "S_UTRIKES_NETTO_ANTAL"],
+        "summa": "S_BEF_FORANDR_ANTAL",
+        "rubrik": "Inrikes flyttnetto sjönk efter 2017 men steg igen 2025"
+      },
+      {
+        "efter": 2,
+        "typ": "uppdelning",
+        "kpi": ["S_BEF_0_19_ANDEL", "S_BEF_80_ANDEL"],
+        "rubrik": "Andelen unga minskar medan andelen 80 år och äldre ökar"
+      }
     ]
   }
 }

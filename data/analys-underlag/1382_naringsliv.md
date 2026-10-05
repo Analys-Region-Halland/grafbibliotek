@@ -715,7 +715,7 @@ Mäter: Andel egenföretagare av samtliga sysselsatta 15–74 år, dagbefolkning
 
 ## Yrkesställning och företagande: Nyföretagande
 
-### Nystartade företag per 1 000 invånare (antal/1 000 inv, 2025)
+### Nystartade företag per 1 000 invånare 16–64 år (antal/1 000 inv, 2025)
 Mäter: Antal nystartade företag delat med antalet tusen invånare, 16-64 år, föregående år. Ett nystartat företag definieras enligt Eurostat rekommendation som ett helt nystartat företag frånräknat olika former av ombildningar av existerade företag. Enskilda näringsidkare vilka inte registrerat firmanamn hos Bolagsverket ingår. Data bygger på bearbetningar av SCB:s företagsregister.
 - Falkenberg: 12,0
 - Halland (länet): 11,7

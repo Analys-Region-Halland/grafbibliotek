@@ -1,29 +1,43 @@
 {
-  "hash": "337a9fc6b5ef4c2e3af1de3b744b5b1c",
+  "hash": "d35b5dfc7016641c628c361a868002c6",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Lägst utsläpp per invånare i länet, transporterna över riket",
-    "ingress": "Kungsbacka släpper ut minst växthusgaser per invånare av Hallands kommuner, med länets lägsta nivåer inom industri, jordbruk och transporter. Transporterna står för den största delen av utsläppen och ligger över rikets nivå.",
+    "rubrik": "Utsläppen är lägst i länet och har minskat sedan 2015",
+    "ingress": "Kungsbackas växthusgasutsläpp per invånare är lägst i Halland och minskade varje år från 3,04 ton 2015 till 2,27 ton 2023. Under 2024 steg de med 0,32 ton till 2,59 ton, lika mycket som i riket, främst genom transporterna.",
     "i_korthet": [
       {
-        "ledtext": "Lägst utsläpp per invånare i Halland",
-        "text": "Växthusgasutsläppen var 2,59 ton koldioxidekvivalenter per invånare 2024, 1,72 ton under länet och 1,92 ton under riket."
+        "ledtext": "Lägst utsläpp per invånare i länet",
+        "text": "Utsläppen var 2,59 ton koldioxidekvivalenter per invånare 2024, 1,72 ton under länet och 1,92 ton under riket."
+      },
+      {
+        "ledtext": "Åtta års minskning bröts 2024",
+        "text": "Utsläppen sjönk varje år från 3,04 ton 2015 till 2,27 ton 2023 och steg 2024 med 0,32 ton, lika mycket som i riket."
       },
       {
         "ledtext": "Transporterna ligger över riket",
-        "text": "Transporterna gav 1,83 ton per invånare, lägst i länet men 0,24 ton över riket."
-      },
-      {
-        "ledtext": "Mindre minskning än i riket",
-        "text": "Utsläppen har minskat med 0,12 ton per invånare på fem år, mot 0,36 ton i riket."
+        "text": "Transporterna gav 1,83 ton per invånare 2024, lägst i länet men 0,24 ton över riket."
       }
     ],
     "stycken": [
-      "Kungsbacka har lägst klimatutsläpp per invånare i Halland, och skillnaden syns i flera sektorer. Utsläppen inom kommunens gräns var 2,59 ton koldioxidekvivalenter per invånare 2024, 1,72 ton under länet och 1,92 ton under riket, vilket ger plats 252 bland landets 290 kommuner. Industrin bidrar med 0,01 ton per invånare mot 1,23 ton i riket, och jordbruket med 0,32 ton mot 1,01 ton i länet. Transporterna, 1,83 ton per invånare, står för den klart största delen av kommunens utsläpp.",
-      "Transportutsläppen är låga jämfört med de andra halländska kommunerna men inte jämfört med riket. Kungsbacka och Halmstad har länets lägsta nivåer, 1,83 respektive 1,84 ton per invånare, medan Hylte och Falkenberg ligger på 2,90 och 2,66 ton. Riket ligger på 1,59 ton, alltså 0,24 ton under Kungsbacka. De totala utsläppen har minskat långsammare än i landet: med 0,12 ton på fem år, mot 0,36 ton i riket. Mellan 2023 och 2024 steg de med 0,32 ton, i samma takt som i riket, från seriens lägsta nivå 2,27 ton.",
-      "Mönstret hänger sannolikt samman med Kungsbackas roll som bostadskommun i Göteborgsregionen. Statistiken räknar utsläpp inom kommunens geografiska gräns, och om tung industri och storskaligt jordbruk i huvudsak finns på annat håll hamnar deras utsläpp där. Villabebyggelse och pendling norrut kan samtidigt göra bilen till ett vanligt färdmedel, vilket kan förklara att transporterna ligger över riket trots att de är lägst i länet. För planeringen pekar det på att kommunens egna utsläpp främst kan påverkas genom resandet, och att en låg nivå per invånare inte i sig betyder att omställningen går snabbare än i landet."
+      "Kungsbackas växthusgasutsläpp per invånare har minskat under lång tid, men minskningen bröts 2024. Utsläppen inom kommunens gräns var 3,76 ton koldioxidekvivalenter per invånare 2010, seriens högsta värde. Från 3,04 ton 2015 sjönk de sedan varje år till 2,27 ton 2023, och de senaste fem åren minskade de med 0,12 ton, mot 0,36 ton i riket. Under 2024 steg utsläppen med 0,32 ton till 2,59 ton, lika mycket som i riket, och det var den första ökningen efter åtta år av minskning. Transporterna ökade med 0,27 ton, arbetsmaskinerna med 0,03 och produktanvändningen med 0,02, medan övriga sektorer var i stort sett oförändrade.",
+      "Kungsbacka har lägst utsläpp per invånare i Halland, 1,72 ton under länet och 1,92 ton under riket, och plats 252 bland landets 290 kommuner. Mot riket ligger skillnaden främst i industrin, som släpper ut 0,01 ton per invånare mot 1,23 ton i riket, men också i el och fjärrvärme, jordbruk och arbetsmaskiner. Transporterna är den största sektorn och går åt andra hållet: 1,83 ton per invånare är lägst i länet, i nivå med Halmstads 1,84 ton, men 0,24 ton över riket.",
+      "Mönstret hänger sannolikt samman med Kungsbackas roll som bostadskommun i Göteborgsregionen. Utsläppen räknas inom kommunens gräns, och när industri, jordbruk och el och fjärrvärme ger små utsläpp blir nivån per invånare lägre än i länet, medan trafiken på E6 och pendlingen norrut kan hålla transporterna över riket. Att både totalen och transporterna steg lika mycket som i riket 2024 kan tyda på att ökningen har orsaker som gäller hela landet. För planeringen pekar det på att transporterna, den största sektorn, i första hand avgör hur kommunens utsläpp utvecklas."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N00401"],
+        "rubrik": "Utsläppen har minskat sedan 2010 men steg 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N85073"],
+        "rubrik": "Transporternas utsläpp är lägst i länet men över riket"
+      }
     ]
   }
 }

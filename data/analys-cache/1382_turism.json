@@ -1,29 +1,49 @@
 {
-  "hash": "29756dc78de2c8ed628ed6d5e4547815",
+  "hash": "bf77fdb68bf2221c01a7d74b26d5bafd",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Flest gästnätter i Halland, främst camping och svenska gäster",
-    "ingress": "Falkenberg hade 2025 flest gästnätter av Hallands kommuner och 20 gästnätter per invånare, plats 20 bland landets 235 kommuner. De flesta nätterna gäller svenska gäster och camping, och intäkten per natt ligger under Halmstad, Varberg och länet, men logiintäkterna ökade med 21,8 procent under 2025.",
+    "rubrik": "Gästnätterna har mer än fördubblats sedan 2008 och ökar fortfarande",
+    "ingress": "Falkenberg hade 945 360 gästnätter vid kommersiella boenden 2025, flest i länet, och antalet har ökat med 124,4 procent sedan 2008, mot 41,2 procent i riket. Efter nedgången under pandemin har antalet ökat varje år sedan 2021, och campingen är den största boendeformen.",
     "i_korthet": [
       {
-        "ledtext": "Flest gästnätter i länet",
-        "text": "Falkenberg hade 945 360 gästnätter 2025, plats 7 bland landets 235 kommuner, och 20 gästnätter per invånare mot 9 i Halland och 7 i riket."
+        "ledtext": "Snabbare ökning än riket",
+        "text": "Gästnätterna ökade med 124,4 procent sedan 2008 och med 29,5 procent sedan 2015, mot 41,2 respektive 17,8 procent i riket."
       },
       {
-        "ledtext": "Svenska gäster dominerar",
-        "text": "Utländska gäster stod för 10,5 procent av gästnätterna, lägst i Halland och 15,8 procentenheter under riket."
+        "ledtext": "Hotellen har ökat mest sedan 2015",
+        "text": "Hotellnätterna ökade med 164 996 och campingnätterna med 39 171, men campingen är med 557 412 gästnätter fortfarande störst."
       },
       {
-        "ledtext": "Intäkterna ökade snabbare än nätterna",
-        "text": "Logiintäkterna ökade med 21,8 procent 2025, högst i länet, medan gästnätterna ökade med 6,0 procent."
+        "ledtext": "Lägst andel utländska i länet",
+        "text": "Andelen utländska gästnätter var 10,5 procent 2025, lägst i Halland och 15,8 procentenheter under riket."
       }
     ],
     "stycken": [
-      "Falkenberg är länets största turistkommun mätt i gästnätter, och campingen står för den största delen. Under 2025 registrerades 945 360 gästnätter, flest i Halland och plats 7 bland landets 235 kommuner. Campingen stod för 557 412 av dem och hotellen för 360 524, och campingvolymen är den tredje största bland de 57 kommuner som redovisas. Nivån är den högsta sedan serien började 2008, och på tio år har gästnätterna ökat med 29,5 procent mot 17,8 procent i riket.",
-      "Mot grannarna sticker Falkenberg ut i turismens omfattning men ligger lägre i intäkt per natt och andel utländska gäster. Kommunen har 20 gästnätter per invånare, mot 12 i Varberg, 9 i länet och 7 i riket. Andelen utländska gästnätter är 10,5 procent, lägst i Halland och 4,4 procentenheter under länet. Logiintäkten per gästnatt är 384 kronor, jämfört med 482 kronor i Halmstad, 470 kronor i Varberg och 427 kronor i länet. Den lägre intäkten hänger sannolikt samman med campingens stora andel.",
-      "Under 2025 växte intäkterna klart snabbare än antalet nätter. Logiintäkterna ökade med 21,8 procent och intäkten per gästnatt steg med 50 kronor, vilket kan spegla högre priser eller att fler gäster valde dyrare boende. Samtidigt föll rumsbeläggningen på hotell, stugbyar och vandrarhem med 7,9 procentenheter till 53,8 procent, trots att gästnätterna totalt ökade. Antalet anläggningar är 28, samma som året innan, och med 33 763 gästnätter per anläggning har Falkenberg flest i länet. För planeringen pekar det på en besöksnäring med förhållandevis stora anläggningar och en övervägande svensk publik, där utvecklingen hos enskilda anläggningar kan få stort genomslag."
+      "Gästnätterna i Falkenberg har ökat snabbare än i riket och har vuxit varje år sedan pandemiåret 2020. Sedan 2008 har antalet ökat med 124,4 procent och sedan 2015 med 29,5 procent, mot 41,2 respektive 17,8 procent i riket. Efter en nedgång 2016 ökade antalet med omkring 9 procent per år till 868 298 år 2019. Under 2020 föll det med 27,3 procent, seriens största minskning, och först 2023 var det över 2019 års nivå; ökningen med 49,8 procent på fem år räknas därför från pandemiåret. Under 2025 ökade antalet med 6,0 procent till 945 360, seriens högsta värde, mot 2,5 procent i riket.",
+      "Falkenberg har flest gästnätter i länet och flest per invånare, 20 mot 12 i Varberg och 9 i länet. Campingen är den största boendeformen, med 557 412 gästnätter och plats 3 bland 57 kommuner med uppgift, men hotellen har ökat mest. Sedan 2015 har hotellnätterna ökat med 164 996, eller 84,4 procent, och campingnätterna med 39 171, medan övriga boendeformer inte redovisas för kommunen. Gästnätterna gäller främst svenska gäster: andelen utländska var 10,5 procent, lägst i länet och 15,8 procentenheter under riket, ungefär som före pandemin.",
+      "Logiintäkten per gästnatt, 384 kronor 2025, ligger under länets 427 och rikets 578, vilket delvis kan hänga samman med campingens stora vikt, även om Varberg med 489 561 campingnätter har 470 kronor. Efter att ha legat mellan 318 och 343 kronor 2020–2024 steg den med 50 kronor 2025, då logiintäkterna ökade med 21,8 procent, mest i länet. Samtidigt sjönk rumsbeläggningen på hotell, stugbyar och vandrarhem med 7,9 procentenheter till 53,8 procent, trots fler hotellnätter. Ett enskilt år är ingen ny riktning. För planeringen innebär 33 763 gästnätter per anläggning, flest i länet, att förändringar vid enskilda anläggningar kan få stort genomslag."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["T_GAST_TOT"],
+        "rubrik": "Gästnätterna har ökat varje år sedan pandemiåret 2020"
+      },
+      {
+        "efter": 1,
+        "typ": "uppdelning",
+        "kpi": ["T_GAST_CAMPING", "T_GAST_HOTELL"],
+        "rubrik": "Campingen är störst, men hotellen har ökat mest sedan 2015"
+      },
+      {
+        "efter": 2,
+        "typ": "halland",
+        "kpi": ["T_INTAKT_PER_GAST"],
+        "rubrik": "Lägre intäkt per gästnatt än i länet och riket"
+      }
     ]
   }
 }

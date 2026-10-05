@@ -1,29 +1,49 @@
 {
-  "hash": "8f92b07c1e67d02d857ff93af08f7286",
+  "hash": "0f7b58923e996c7f1f25203a030499da",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Halland är ett utpendlingslän med högre biltäthet än riket",
-    "ingress": "Fler hallänningar pendlar ut ur länet än det pendlar in, och länet har fler bilar och längre körsträckor per invånare än riket. Bakom länssnittet finns en tydlig skillnad mellan Halmstad, som drar till sig pendlare, och Kungsbacka, där mer än hälften arbetar i en annan kommun.",
+    "rubrik": "Halland har nettoutpendling och fler bilar per invånare än riket",
+    "ingress": "Fler sysselsatta bor i Halland än arbetar där, och pendlingskvoten är näst lägst bland landets regioner. Bilarna är fler och körs längre per invånare än i riket, medan resandet med kollektivtrafik har ökat sedan 2021 men ligger under nivån 2019.",
     "i_korthet": [
       {
-        "ledtext": "Näst lägst pendlingskvot bland regionerna",
-        "text": "Pendlingskvoten var 0,87 år 2024 mot 0,99 i riket, plats 20 bland landets 21 regioner."
+        "ledtext": "Fler pendlar ut än in",
+        "text": "Under 2024 arbetade 38 210 av länets sysselsatta invånare utanför Halland, mot 16 734 som pendlade in, och pendlingskvoten var 0,87 mot 0,99 i riket."
       },
       {
-        "ledtext": "Fler bilar och längre körsträckor",
-        "text": "Halland hade 532,6 personbilar per 1 000 invånare 2025, 57,4 fler än riket, och körsträckan per invånare var 58,9 mil längre än i riket 2024."
+        "ledtext": "Halmstad enda kommunen med nettoinpendling",
+        "text": "Halmstad hade en nettoinpendling på 2 327 personer 2024, medan Kungsbacka hade en nettoutpendling på 16 236."
       },
       {
-        "ledtext": "Kollektivtrafiken når en mindre andel",
-        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter var 76,8 procent, 4,1 procentenheter under riket."
+        "ledtext": "Resandet under nivån 2019",
+        "text": "Resorna med kollektivtrafik var 55,0 per invånare 2025, mot 60,0 år 2019 och 33,1 år 2021."
       }
     ],
     "stycken": [
-      "Halland fungerar delvis som bostadsregion åt arbetsmarknader utanför länet. Av de sysselsatta som bor i Halland arbetar 22,1 procent utanför länet, och nettoutpendlingen var 22 133 personer 2024. Pendlingskvoten, alltså antalet arbetstillfällen i förhållande till antalet sysselsatta invånare, var 0,87 mot 0,99 i riket, näst lägst bland landets 21 regioner. Inom länet har Kungsbacka störst nettoutpendling, 16 236 personer, och där arbetar 55,3 procent av de sysselsatta invånarna i en annan kommun, medan Halmstad är den enda kommunen där fler pendlar in än ut.",
-      "Hallänningarna har fler bilar och kör längre än genomsnittet i riket. Halland hade 532,6 personbilar per 1 000 invånare 2025, 57,4 fler än riket, och körsträckan var 683,7 mil per invånare 2024, 58,9 mil mer än i landet. Kollektivtrafiken gav 55,0 resor per invånare mot 143,0 i riket, men länet ligger ändå på plats 8 bland regionerna, vilket kan spegla att rikssnittet dras upp av storstadsregionerna. Inom länet är skillnaderna stora: i Halmstad har 90,3 procent en trafikerad hållplats inom 500 meter, i Hylte 60,7 procent.",
-      "Mönstret hänger sannolikt samman med länets form, med kuststäder längs ett stråk mot Göteborg och glesare landsbygd och inland runt dem. Om arbetsplatsen ligger i en annan kommun och bostäderna är utspridda kan bilen bli det enklaste valet, och körsträckorna är längst i Laholm och Hylte, 795,1 och 762,2 mil per invånare. Av de bostäder som tillkommit under den senaste treårsperioden ligger 81,5 procent nära kollektivtrafik, 9,9 procentenheter under riket, med 20,0 procent i Hylte. För planeringen pekar siffrorna på att bostädernas läge är en av de faktorer länet och kommunerna själva kan påverka."
+      "Halland är ett län där fler sysselsatta bor än arbetar. Under 2024 arbetade 22,1 procent av de sysselsatta invånarna, 38 210 personer, utanför länet, medan 16 734 pendlade in. Pendlingskvoten var 0,87 mot 0,99 i riket, näst lägst bland landets 21 regioner. Sedan serien börjar 2020 steg utpendlingsandelen från 21,3 till 22,1 procent 2022 och nettoutpendlingen från 19 566 till 22 378 personer; därefter har båda legat i stort sett stilla.",
+      "Inom länet skiljer sig kommunerna tydligt. Halmstad är den enda kommunen där fler pendlar in än ut, med en nettoinpendling på 2 327 personer, medan Kungsbacka har en nettoutpendling på 16 236 och 55,3 procent av de sysselsatta invånarna arbetar i en annan kommun. I Halmstad har 90,3 procent av invånarna en hållplats med minst en avgång i timmen vardagar 6–20 inom 500 meter, mot 60,7 procent i Hylte och 76,8 procent i länet, 4,1 procentenheter under riket. Biltätheten är lägst i Halmstad, 496,3 personbilar i trafik per 1 000 invånare, och högst i Laholm, 614,9, mot 532,6 i länet och 475,2 i riket 2025.",
+      "Resandet med kollektivtrafik har återhämtat sig sedan 2021 men ligger under toppen. Resorna per invånare steg från 45,0 år 2010 till 60,0 år 2019, föll till 33,1 år 2021 och var 55,0 år 2025, i nivå med åren sedan 2022. Det är långt under rikets 143,0, men länet ligger åttonde bland 21 regioner, så rikets värde lyfts sannolikt av ett fåtal regioner med mer resande. Bilarna körs längre per invånare än i riket, 683,7 mil mot 624,8 år 2024; körsträckan har minskat med 36,8 mil på tio år men ökat varje år sedan 2021. När arbetet ligger i en annan kommun och bostaden långt från en hållplats blir bilen sannolikt ett vanligare val."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["C_UTPENDL_ANDEL"],
+        "rubrik": "Utpendlingsandelen steg till 2022 och har sedan varit oförändrad"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["C_PENDLKVOT"],
+        "rubrik": "Halmstad är enda kommunen där fler pendlar in än ut"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N60404"],
+        "rubrik": "Resandet har ökat sedan 2021 men ligger under toppen 2019"
+      }
     ]
   }
 }

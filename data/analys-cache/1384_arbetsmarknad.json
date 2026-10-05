@@ -1,29 +1,49 @@
 {
-  "hash": "8ba4aed8609a12f768e2bfcfe78f1e7e",
-  "period": "2024",
+  "hash": "9f4a997993b7948d5b6de923a2a9a369",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Kungsbacka har länets högsta sysselsättning och lägsta arbetslöshet",
-    "ingress": "Kungsbacka har den största andelen sysselsatta och den minsta andelen arbetslösa bland Hallands kommuner och hör till landets tio högsta kommuner i sysselsättningsgrad. Mönstret gäller kvinnor och män, inrikes och utrikes födda.",
+    "rubrik": "Kungsbacka har länets högsta sysselsättning och inkomst",
+    "ingress": "Av Kungsbackas invånare 20–64 år var 87,9 procent sysselsatta 2024, högst i länet och 7,0 procentenheter över riket. Medianen av förvärvsinkomsten har ökat mer än i riket både sedan 2000 och de senaste fem åren, medan arbetslösheten har stigit från 1,80 procent 2022 till 2,40 procent 2024 men är lägre än 2020.",
     "i_korthet": [
       {
-        "ledtext": "Högst sysselsättningsgrad i länet",
-        "text": "Av invånarna 20–64 år var 87,9 procent sysselsatta 2024, vilket är 7,0 procentenheter över riket och plats 7 av 290 kommuner."
+        "ledtext": "Högst sysselsättning i länet",
+        "text": "Sysselsättningsgraden var 87,9 procent 2024, plats 7 bland landets 290 kommuner, mot 84,0 i länet och 80,9 i riket."
       },
       {
-        "ledtext": "Lägst arbetslöshet i Halland",
-        "text": "Arbetslösheten var 2,4 procent av arbetskraften, 1,9 procentenheter under länet och 3,0 procentenheter under riket."
+        "ledtext": "Inkomsten ökar mer än i riket",
+        "text": "Medianen av sammanräknad förvärvsinkomst var 469 500 kronor 2024 och har ökat med 77 300 kronor på fem år, mot 62 500 i riket."
       },
       {
-        "ledtext": "Utrikes födda: lägst arbetslöshet i länet",
-        "text": "Bland utrikes födda var arbetslösheten 6,8 procent, jämfört med 11,9 procent i både Halland och riket."
+        "ledtext": "Arbetslösheten har stigit sedan 2022",
+        "text": "Arbetslösheten steg från 1,80 procent 2022 till 2,40 procent 2024, lägre än 2020 och lägst i länet, mot 5,40 procent i riket."
       }
     ],
     "stycken": [
-      "Kungsbacka har den största andelen sysselsatta i Halland och hör till de tio högsta i landet. Av invånarna i åldern 20–64 år var 87,9 procent sysselsatta 2024, vilket ger plats 7 av landets 290 kommuner. Arbetslösheten var 2,4 procent av arbetskraften, den lägsta i länet. Det senaste året har sysselsättningen ändå minskat något: sysselsättningsgraden sjönk med 0,8 procentenheter från 88,7 procent 2023 och arbetslösheten steg med 0,4 procentenheter, i stort sett i takt med riket.",
-      "Kungsbacka har högst sysselsättningsgrad och lägst arbetslöshet i länet i alla grupper som underlaget redovisar. Sysselsättningsgraden ligger 3,9 procentenheter över länet och 7,0 procentenheter över riket. Varberg ligger närmast med 86,2 procent, medan Halmstad med 80,1 procent och Hylte med 79,9 procent ligger strax under riket. Bland kvinnor är andelen sysselsatta 87,6 procent, 7,5 procentenheter över riket och plats 6 i landet. Störst är skillnaden mot länet bland utrikes födda: sysselsättningsgraden är 77,4 procent mot 71,7 procent i Halland, och arbetslösheten är 6,8 procent mot 11,9 procent i både länet och riket.",
-      "Mönstret hänger sannolikt samman med att Kungsbacka ingår i Göteborgs arbetsmarknadsregion. Statistiken avser de som bor i kommunen, och om en stor del av de förvärvsarbetande pendlar norrut kan siffrorna i hög grad spegla efterfrågan på arbetskraft i hela Göteborgsregionen. Inflyttningen av barnfamiljer kan också bidra, eftersom den troligen för med sig många i yrkesverksam ålder som redan har arbete. För planeringen pekar det på en liten arbetskraftsreserv: redan 90,0 procent av befolkningen 20–64 år ingår i arbetskraften. Kommunens arbetsmarknadsläge är därmed sannolikt nära knutet till pendlingsförbindelserna mot Göteborg och till konjunkturen där."
+      "Kungsbacka har länets högsta sysselsättning, plats 7 bland landets 290 kommuner, och andelen steg fram till 2022, planade ut och sjönk sedan något. Av invånarna 20–64 år var 86,8 procent sysselsatta 2020, då SCB:s serie börjar, och 88,7 procent både 2022 och 2023, seriens högsta. Under 2024 sjönk andelen till 87,9 procent, samma nivå som 2021, en minskning med 0,8 procentenheter mot 0,7 i riket. Arbetslösheten sjönk från 3,10 procent 2020 till 1,80 procent 2022 och har sedan stigit två år i rad, till 2,40 procent 2024. Det är lägst i länet, mot 5,40 procent i riket, och lägre än 2020.",
+      "Sysselsättningen i Kungsbacka ligger över länets och rikets bland både kvinnor och män och bland både inrikes och utrikes födda. Bland utrikes födda var 77,4 procent sysselsatta, högst i länet och 5,7 procentenheter över länet, och deras arbetslöshet var 6,80 procent mot 11,90 i länet och riket. Totalt ligger Varberg närmast med 86,2 procent, mot 84,0 i länet och 80,9 i riket. Även bland unga 18–24 år är arbetslösheten lägst i länet, 4,41 procent 2025 mot 6,29 i länet, i en serie som börjar 2023.",
+      "Läget hänger sannolikt samman med att Kungsbacka ingår i Göteborgs arbetsmarknadsregion och att en stor andel av de förvärvsarbetande pendlar norrut. Inkomsten följer samma mönster: medianen av den sammanräknade förvärvsinkomsten, där pension och sjukpenning ingår, var 469 500 kronor 2024, högst i länet och 68 100 kronor över riket. Sedan 2000 har den ökat med 263 600 kronor, mot 210 000 i riket, och de senaste fem åren med 77 300 kronor, mot 62 500. Även 2024 ökade den mer i kronor än i riket. För planeringen kan det betyda att invånarnas sysselsättning påverkas av arbetsmarknaden i Göteborgsregionen, inte bara av kommunens egna arbetsplatser."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_SYSS_TOT"],
+        "rubrik": "Sysselsättningsgraden var högst 2022 och 2023 och sjönk något 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["S_SYSS_UTR"],
+        "rubrik": "Bland utrikes födda är sysselsättningen högst i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N00906"],
+        "rubrik": "Inkomsten har ökat mer än i riket sedan 2000"
+      }
     ]
   }
 }

@@ -218,6 +218,15 @@ const socioekonomi: TemaConfig = {
     F_ALK_RISK_KV: "Riskkonsumtion av alkohol, kvinnor (%)",
     F_ALK_RISK_MAN: "Riskkonsumtion av alkohol, män (%)",
   },
+  // Folkhälsoenkäten: länets värde bygger på det nationella urvalet (för Halland drygt 1 000 svar
+  // 2021–2024), kommunernas på ett större regionalt urval, så de går inte att jämföra
+  lanEjJamforbar: [
+    "F_HALSA_GOD", "F_HALSA_GOD_KV", "F_HALSA_GOD_MAN", "F_PSYK_PAFR", "F_PSYK_PAFR_KV",
+    "F_PSYK_PAFR_MAN", "F_STRESS", "F_STRESS_KV", "F_STRESS_MAN", "F_OVERVIKT",
+    "F_OVERVIKT_KV", "F_OVERVIKT_MAN", "F_TOBAK", "F_TOBAK_KV", "F_TOBAK_MAN", "F_ALK_RISK",
+    "F_ALK_RISK_KV", "F_ALK_RISK_MAN",
+  ],
+  lanEjJamforbarText: "Länets enkätvärden bygger på Folkhälsomyndighetens nationella urval och kommunernas på ett större regionalt urval, så de går inte att jämföra.",
   lagtArBra: [
     "N00957", "N00957_KV", "N00957_MAN",
     "N00938", "N00938_KV", "N00938_MAN",

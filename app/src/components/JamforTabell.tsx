@@ -9,6 +9,7 @@ import { byggGrupper, uppdelningsText } from "../utils/temaRader";
 import type { TabellRad } from "../utils/temaRader";
 import { fmtPeriod, kpiDecimaler } from "../utils/format";
 import { fmt as fmtBas, fmtStor } from "../utils/format";
+import { LAN_EJ_JAMFORBAR } from "../teman";
 
 /** Typografiskt minustecken i tabellerna */
 const fmt = (v: number | null | undefined, dec: number) => fmtBas(v, dec).replace(/^-/, "−");
@@ -86,6 +87,7 @@ export default function JamforTabell({ tema, meta, idx, valdKod, onOpenKpi, onVa
             const cell = c.celler.get(kod)!;
             const vald = kod === valdKod;
             const referens = kod === "0013" || kod === "0000";
+            const annatMatt = kod === "0013" && LAN_EJ_JAMFORBAR.has(r.kpiId);
             return (
               <td key={kod}
                   className={`py-2 px-2.5 text-right align-middle tabular-nums whitespace-nowrap ${niva ? "text-[12.5px]" : "text-[13px]"}
@@ -95,8 +97,8 @@ export default function JamforTabell({ tema, meta, idx, valdKod, onOpenKpi, onVa
                     background: cell.percentil != null ? stegFor(cell.percentil) : undefined,
                     boxShadow: vald ? `inset 0 0 0 1.5px ${ENHET_FARG[kod]}` : undefined,
                   }}
-                  title={`${namnFor(kod)}: ${cell.varde != null ? fmt(cell.varde, dec) : "uppgift saknas"}${cell.rang != null ? `, plats ${cell.rang} av ${cell.n} kommuner (1 = högst)` : ""}`}>
-                {cell.varde != null ? kort(cell.varde, dec) : "–"}
+                  title={`${namnFor(kod)}: ${cell.varde != null ? fmt(cell.varde, dec) : "uppgift saknas"}${cell.rang != null ? `, plats ${cell.rang} av ${cell.n} kommuner (1 = högst)` : ""}${annatMatt ? ". Går inte att jämföra med kommunernas värden" : ""}`}>
+                {cell.varde != null ? kort(cell.varde, dec) : "–"}{annatMatt && cell.varde != null && <sup aria-hidden>*</sup>}
               </td>
             );
           })}
@@ -180,6 +182,7 @@ export default function JamforTabell({ tema, meta, idx, valdKod, onOpenKpi, onVa
       <p className="mt-3 text-[11.5px] leading-relaxed text-neutral-500 max-w-[80ch]">
         Kommunerna står i ordning från norr till söder, med Hylte i inlandet sist. Alla värden gäller samma period per rad.
         Halland och riket är vägda värden och färgas inte.
+        {tema.lanEjJamforbarText ? ` * ${tema.lanEjJamforbarText}` : ""}
       </p>
     </div>
   );

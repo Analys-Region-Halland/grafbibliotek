@@ -1,29 +1,49 @@
 {
-  "hash": "11c073f46f62ff1eece952a06e81fd27",
-  "period": "2024",
+  "hash": "947a8fa96894194b39cd6ce76892110b",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Länets högsta arbetslöshet, tydligast bland kvinnor och utrikes födda",
-    "ingress": "Hylte har den högsta arbetslösheten och den lägsta sysselsättningsgraden bland Hallands kommuner. Avståndet till länet och riket är störst bland kvinnor och utrikes födda, medan inrikes födda och män har en sysselsättningsgrad över rikets.",
+    "rubrik": "Hylte har lägst sysselsättning i länet men högre än 2020",
+    "ingress": "Av Hyltes invånare 20–64 år var 79,9 procent sysselsatta 2024, lägst i länet och 1,0 procentenhet under riket. Andelen steg från 77,4 procent 2020 till 81,3 procent 2022 men sjönk 2024 mer än i riket, och bland de arbetslösa är andelen långtidsarbetslösa högst i länet.",
     "i_korthet": [
       {
-        "ledtext": "Arbetslösheten är högst i länet",
-        "text": "Andelen arbetslösa var 7,2 procent 2024, vilket är 2,9 procentenheter över Halland och 1,8 procentenheter över riket."
+        "ledtext": "Lägst sysselsättning i länet",
+        "text": "Sysselsättningsgraden var 79,9 procent 2024, 4,1 procentenheter under länet och strax under Halmstads 80,1 procent."
       },
       {
-        "ledtext": "Utrikes födda står längst ifrån arbete",
-        "text": "Bland utrikes födda var 16,6 procent arbetslösa, 4,7 procentenheter över både länet och riket."
+        "ledtext": "Lägst bland kvinnor och utrikes födda",
+        "text": "Bland kvinnor var 76,6 procent sysselsatta och bland utrikes födda 65,7 procent, i båda fallen lägst i länet."
       },
       {
-        "ledtext": "Kvinnors arbetslöshet sticker ut nationellt",
-        "text": "Kvinnors arbetslöshet på 8,4 procent placerar Hylte på plats 15 av landets 290 kommuner."
+        "ledtext": "Andelen långtidsarbetslösa fjärde högst i landet",
+        "text": "Av de arbetslösa 18–65 år hade 68,4 procent varit arbetslösa i minst sex månader 2025, plats 4 bland 252 kommuner, mot 61,0 procent i riket."
       }
     ],
     "stycken": [
-      "Hylte har länets högsta arbetslöshet och lägsta sysselsättningsgrad. Av arbetskraften 20–64 år var 7,2 procent arbetslösa 2024, vilket är 2,9 procentenheter över Halland och 1,8 procentenheter över riket. Andelen steg med 1,0 procentenheter på ett år, medan riket ökade med 0,5. Sysselsättningsgraden var 79,9 procent, lägst i länet och 1,0 procentenheter under riket. Arbetslösheten ligger under 2020 års 9,9 procent, det högsta värdet sedan dess, men ökade det senaste året mer än i riket.",
-      "Avståndet till övriga Halland är störst bland kvinnor och utrikes födda. Bland inrikes födda är sysselsättningsgraden 86,3 procent, 1,5 procentenheter över riket, och männens 82,6 procent ligger 1,0 procentenheter över riket. Bland utrikes födda är däremot 16,6 procent arbetslösa, 4,7 procentenheter över både länet och riket, och kvinnornas arbetslöshet på 8,4 procent är 3,0 procentenheter över riket. Halmstad har näst högst värden i båda grupperna med 14,5 respektive 5,9 procent, så Hylte ligger tydligt för sig även jämfört med länets största kommun.",
-      "Mönstret kan hänga samman med en lokal arbetsmarknad som präglas av tillverkningsindustri, där män traditionellt har varit fler bland de anställda. Kvinnors arbetskraftsdeltagande är 83,7 procent, 0,9 procentenheter under riket, medan deras sysselsättningsgrad ligger 3,5 procentenheter under: en större del av avståndet gäller alltså kvinnor som söker arbete utan att ha det. Den som saknar jobb i kommunen är då beroende av pendling mot Halmstad och Falkenberg, något som kan vara svårare för den som saknar bil. För planeringen betyder det att utbildning, matchning och kollektivtrafik mot grannkommunerna rimligen väger tyngre i Hylte än i kustkommunerna."
+      "Andelen sysselsatta i Hylte är högre än 2020 men sjönk 2024 mer än i riket. Den var 77,4 procent 2020, då SCB:s serie börjar, steg till 81,3 procent 2022 och låg kvar där 2023. Under 2024 sjönk den till 79,9 procent, en minskning med 1,4 procentenheter mot 0,7 i riket. Arbetslösheten sjönk varje år från 9,90 procent 2020 till 6,20 procent 2023 och steg 2024 till 7,20 procent, högst i länet, en ökning med 1,00 procentenhet mot 0,50 i riket.",
+      "Sysselsättningen ligger 4,1 procentenheter under länets 84,0 procent och strax under Halmstads 80,1, och avståndet till länet är störst bland kvinnor och utrikes födda. Bland kvinnor var 76,6 procent sysselsatta, 6,9 procentenheter under länet, och bland utrikes födda 65,7 procent, 6,0 under länet, med en arbetslöshet på 16,6 procent mot 11,9 i länet och riket. Medianen av den sammanräknade förvärvsinkomsten, där pension och sjukpenning ingår, var 372 800 kronor 2024, lägst i länet, och har ökat med färre kronor än i riket sedan 2000, de senaste fem åren och 2024.",
+      "I Hylte har en större andel av de arbetslösa varit utan arbete länge än i övriga länet. Av de arbetslösa 18–65 år hade 68,4 procent varit arbetslösa i minst sex månader 2025, plats 4 bland landets 252 kommuner, mot 61,0 i riket. Andelen har ökat med 19,2 procentenheter sedan 2010, mot 7,0 i riket, men har sedan 2015 svängt mellan 62,5 och 73,0 procent och steg med 3,8 procentenheter det senaste året, svängningar som kan bero på att kommunen är liten. Bland unga 18–24 år steg arbetslösheten från 5,64 procent 2023 till 9,01 procent 2025, högst i länet. En liten arbetsmarknad i inlandet ger sannolikt färre jobb inom räckhåll, vilket gör pendlingen till Halmstad och Falkenberg viktig för planeringen."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_SYSS_TOT"],
+        "rubrik": "Sysselsättningsgraden steg till 2022, låg kvar 2023 och sjönk 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["S_SYSS_KV"],
+        "rubrik": "Kvinnornas sysselsättningsgrad är lägst i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N03954"],
+        "rubrik": "Andelen långtidsarbetslösa har ökat sedan 2010 men svänger mycket"
+      }
     ]
   }
 }

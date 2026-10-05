@@ -1,29 +1,49 @@
 {
-  "hash": "f7089076abbe9f5e4739183f1b6f7702",
+  "hash": "769dc0f3ddb7bf210c3efeafc343c581",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Utsläppen per invånare ligger kvar på 2019 års nivå",
-    "ingress": "Varbergs växthusgasutsläpp per invånare ligger på samma nivå som 2019, medan rikets har minskat under samma period. Transporter och jordbruk ligger klart över riket medan industrin ligger under, men industrins utsläpp har ökat.",
+    "rubrik": "Utsläppen har ökat sedan 2022 efter en längre minskning",
+    "ingress": "Varbergs växthusgasutsläpp per invånare sjönk från 6,13 ton 2010 till 4,31 ton 2022 men har sedan ökat till 4,96 ton 2024, i nivå med 2019, medan rikets utsläpp minskade från 2019 till 2024. Utsläppen av kväveoxider och partiklar per invånare är högst i länet.",
     "i_korthet": [
       {
-        "ledtext": "Samma nivå som för fem år sedan",
-        "text": "Utsläppen var 4,96 ton per invånare 2024 mot 4,94 ton 2019, efter en ökning med 0,49 ton det senaste året, medan riket minskade med 0,36 ton på fem år."
-      },
-      {
-        "ledtext": "Transporterna ligger klart över riket",
-        "text": "Transporterna gav 2,33 ton per invånare 2024, vilket är 0,74 ton över riket."
+        "ledtext": "Tillbaka på 2019 års nivå",
+        "text": "Utsläppen var 4,96 ton koldioxidekvivalenter per invånare 2024 mot 4,94 ton 2019, medan riket minskade med 0,36 ton på fem år."
       },
       {
         "ledtext": "Industrins utsläpp har ökat",
-        "text": "Industrins utsläpp ökade med 0,25 ton per invånare på fem år, medan rikets minskade med 0,22 ton."
+        "text": "Industrins utsläpp ökade med 0,25 ton per invånare på fem år till 0,71 ton, näst högst i länet efter Hylte."
+      },
+      {
+        "ledtext": "Högst kväveoxider och partiklar i länet",
+        "text": "Utsläppen av kväveoxider var 34,7 kg per invånare 2024 och av partiklar 3,19 kg, mot 18,8 respektive 1,60 kg i riket."
       }
     ],
     "stycken": [
-      "Varbergs växthusgasutsläpp per invånare ligger på samma nivå som för fem år sedan, medan rikets är lägre än då. Utsläppen uppgick 2024 till 4,96 ton koldioxidekvivalenter per invånare, i nivå med 4,94 ton 2019, medan riket minskade med 0,36 ton under samma period. Nivån sjönk från 6,13 ton 2010 till som lägst 4,27 ton 2022 men har därefter stigit. Det senaste året ökade Varbergs utsläpp med 0,49 ton från 4,48 ton 2023, mer än rikets ökning på 0,32 ton.",
-      "Varberg ligger 0,46 ton över riket och 0,65 ton över länet och hamnar på fjärde plats bland Hallands kommuner, mellan Falkenberg med 5,47 ton och Halmstad med 4,08 ton. Avståndet till riket finns främst i två sektorer. Transporterna ger 2,33 ton per invånare, 0,74 ton över riket, och jordbruket 1,35 ton, 0,77 ton över riket. Industrin drar åt andra hållet: den ligger 0,51 ton under riket men är näst högst i Halland efter Hylte, och den har ökat med 0,25 ton på fem år medan rikets industriutsläpp minskat med 0,22 ton.",
-      "Transportnivån hänger sannolikt samman med läget längs E6: utsläppen räknas inom kommunens gräns, så genomfartstrafik och bilpendling kan bidra. Energianvändningen i transporter är 9,01 MWh per invånare, 2,12 MWh över riket, och den ökade med 0,72 MWh det senaste året när riket minskade med 0,53 MWh. Jordbruket väger tyngre än i riket, samtidigt som 14,8 procent av åkermarken brukades ekologiskt 2025, högst i länet. För planeringen pekar det på att transporterna, den största utsläppskällan per invånare, och industrin, vars utsläpp har ökat, i första hand avgör utsläppsutvecklingen."
+      "Varbergs växthusgasutsläpp per invånare minskade under lång tid men har ökat de två senaste åren. Utsläppen inom kommunens gräns sjönk från 6,13 ton koldioxidekvivalenter per invånare 2010 till 4,31 ton 2022, seriens lägsta värde. Sedan dess har de stigit till 4,96 ton, i nivå med 4,94 ton 2019, medan riket minskade med 0,36 ton på fem år. Det senaste året ökade utsläppen med 0,49 ton, mot 0,32 ton i riket. Ökningen kom främst från transporterna, plus 0,44 ton; övriga sektorer förändrades med högst 0,05 ton.",
+      "Varberg ligger 0,46 ton över riket och 0,65 ton över länet, fjärde högst i Halland. Störst är transporterna, 2,33 ton per invånare, och jordbruket, 1,35 ton, som ligger 0,74 respektive 0,77 ton över riket. Industrin, 0,71 ton, är näst högst i länet efter Hylte men under rikets 1,23 ton, och har ökat med 0,25 ton på fem år medan flertalet övriga sektorer minskade något. Varberg har också länets högsta utsläpp av kväveoxider, 34,7 kg per invånare, och partiklar, 3,19 kg, mot 18,8 respektive 1,60 kg i riket. Kväveoxiderna har legat mellan 33,1 och 40,6 kg sedan 2015 och minskade med 2,3 kg på fem år, varav 2,2 kg det senaste året, mot 9,7 kg i riket.",
+      "Mönstret hänger sannolikt samman med att utsläppen räknas inom kommunens gräns: trafiken på E6, jordbruket och enskilda industrier kan ge höga värden per invånare. Trafik och industri kan också ge länets högsta utsläpp av kväveoxider, och för partiklarna kan även vedeldning bidra. För planeringen pekar det på att transporterna och industrin till stor del avgör hur utsläppen utvecklas. Avfallet följer ett annat mönster: insamlat kommunalt avfall har minskat med 133 kg per invånare på tio år och 56 kg på fem år, till 419 kg 2025, lägst i länet."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N00401"],
+        "rubrik": "Utsläppen minskade till 2022 och har sedan ökat igen"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N85047"],
+        "rubrik": "Varberg har länets högsta utsläpp av kväveoxider per invånare"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["U07801"],
+        "rubrik": "Avfallet per invånare har minskat under tio år"
+      }
     ]
   }
 }

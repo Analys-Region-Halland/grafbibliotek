@@ -1,1 +1,49 @@
-{"hash": "931585e3e4957b9c0816b51813b4e20b", "period": "2025", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Laholm har länets högsta biltäthet och längsta körsträcka per invånare", "ingress": "Nästan hälften av de sysselsatta som bor i Laholm arbetar i en annan kommun. Laholm har flest personbilar per invånare och längst körsträcka per invånare i Halland, medan andelen som bor nära kollektivtrafik ligger klart under riket.", "i_korthet": [{"ledtext": "Flest bilar per invånare i Halland", "text": "Laholm har 614,9 personbilar per 1 000 invånare, 82,4 fler än länet och 139,8 fler än riket."}, {"ledtext": "Nästan hälften pendlar ut", "text": "Utpendlingsandelen är 46,1 procent, näst högst i Halland efter Kungsbacka och 24,0 procentenheter över länet."}, {"ledtext": "Få nära hållplats utanför tätort", "text": "Utanför tätorterna har 10,0 procent en trafikerad hållplats inom 500 meter, lägst i Halland och mot 19,9 procent i riket."}], "stycken": ["Laholm är en bostadskommun där arbetsresorna ofta går över kommungränsen. Av de sysselsatta som bor i kommunen arbetar 46,1 procent i en annan kommun, 24,0 procentenheter mer än i länet, och pendlingskvoten är 0,72. Det betyder att kommunen har klart färre sysselsatta på arbetsställen än sysselsatta invånare, och nettoutpendlingen uppgår till 3 628 personer. Personbilarna i kommunen körs 795,1 mil per invånare och år, längst i Halland och 170,3 mil mer än i riket. Biltätheten, 614,9 personbilar per 1 000 invånare, är också den högsta i länet, 82,4 fler än i länet och 139,8 fler än i riket.", "Kollektivtrafiken når en mindre del av befolkningen än i de flesta grannkommunerna. Andelen som har en trafikerad hållplats inom 500 meter är 63,4 procent, 13,4 procentenheter under länet och 17,5 procentenheter under riket, och bara Hylte ligger lägre i Halland. Skillnaden mot länet är störst utanför tätorterna, där 10,0 procent bor kollektivtrafiknära mot 20,7 procent i länet och 19,9 i riket. Elbilarna utgör också en mindre andel: 5,85 procent av personbilarna mot 8,59 procent i riket.", "Mönstret hänger sannolikt samman med Laholms karaktär av landsbygdskommun med kustorter och pendling mot Halmstad och nordvästra Skåne. Om bostäder och arbetsplatser ligger utspridda blir det svårt att bära täta avgångar och bilen blir det praktiska valet. Den lägre elbilsandelen kan spegla både inkomstnivåer och att kommunen har färre publika laddpunkter, 135, än länets större kommuner. För planeringen pekar siffrorna på att de nya bostädernas läge har betydelse: av de nytillkomna bostäderna ligger 69,7 procent kollektivtrafiknära, mot 91,4 procent i riket. Andelen varierar dock kraftigt mellan åren."]}}
+{
+  "hash": "5d5f26b6b5424532b5b49dfc9782b5ee",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Laholm har länets högsta biltäthet och nästan hälften pendlar ut",
+    "ingress": "I Laholm arbetar 46,1 procent av de sysselsatta invånarna i en annan kommun, en andel som har ökat varje år sedan 2020. Biltätheten och körsträckan per invånare är högst i länet, och en mindre andel av invånarna bor nära kollektivtrafik än i länet och riket.",
+    "i_korthet": [
+      {
+        "ledtext": "Nästan hälften pendlar ut",
+        "text": "Utpendlingsandelen var 46,1 procent 2024, näst högst i länet efter Kungsbacka, och har ökat varje år sedan 2020."
+      },
+      {
+        "ledtext": "Högst biltäthet i länet",
+        "text": "Laholm hade 614,9 personbilar i trafik per 1 000 invånare 2025, 82,4 fler än i länet och 139,8 fler än i riket."
+      },
+      {
+        "ledtext": "Lägre andel nära kollektivtrafik än riket",
+        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter var 63,4 procent 2024, 17,5 procentenheter under riket."
+      }
+    ],
+    "stycken": [
+      "Laholm är mer bostadsort än arbetsort, och andelen som pendlar ut har ökat. Under 2024 arbetade 46,1 procent av de sysselsatta invånarna i en annan kommun, näst högst i länet efter Kungsbacka, och andelen har ökat varje år sedan serien börjar 2020, då den var 43,1 procent. Nettoutpendlingen, antalet sysselsatta som bor i kommunen minus antalet som arbetar där, växte från 3 143 personer 2020 till 3 638 år 2023 och var i stort sett oförändrad 2024.",
+      "Tillgången till kollektivtrafik är mindre än i länet och riket. Av invånarna har 63,4 procent en hållplats med minst en avgång i timmen vardagar 6–20 inom 500 meter, 13,4 procentenheter under länet och 17,5 under riket; bara Hylte har en lägre andel i Halland. Andelen har legat mellan 61,1 och 65,5 procent sedan 2014, och utanför tätorterna är den 10,0 procent, lägst i länet. Biltätheten 2025 är den högsta i länet, 614,9 personbilar i trafik per 1 000 invånare, 82,4 fler än i länet och 139,8 fler än i riket, och har legat mellan 605,8 och 617,3 sedan 2015.",
+      "Mönstret hänger sannolikt samman med att Laholm har mycket landsbygd och pendling mot Halmstad och nordvästra Skåne. Om arbetet ligger i en annan kommun och hållplatsen långt från bostaden blir bilen ett vanligare val, vilket kan förklara att körsträckan per invånare är högst i länet, 795,1 mil 2024, 170,3 mil mer än i riket. Den har minskat med 51,2 mil på tio år men ökat sedan 2022, då den var 766,2 mil. Elbilarnas andel av personbilarna, 5,85 procent, har ökat långsammare än i riket, med 4,88 procentenheter på fem år mot 7,46. För planeringen innebär det att tillgången till kollektivtrafik utanför tätorterna sannolikt påverkar hur mycket bilen behövs."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["C_PENDL_NETTO"],
+        "rubrik": "Nettoutpendlingen växte varje år fram till 2023"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N07935"],
+        "rubrik": "Laholm har flest personbilar per invånare i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["U07917"],
+        "rubrik": "Körsträckan har minskat sedan 2012 men ökat sedan 2022"
+      }
+    ]
+  }
+}

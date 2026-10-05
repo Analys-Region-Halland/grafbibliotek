@@ -44,7 +44,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 ## Pendling
 
 ### Pendlingskvot (dag / natt) (kvot, 2024)
-Mäter: Kvoten mellan dagbefolkning och nattbefolkning (sysselsatta efter arbetsställe dividerat med sysselsatta efter bostad). Kvot över 1,0 innebär att kommunen har fler arbetstillfällen än sysselsatta invånare — ett arbetsplatscentrum som drar till sig pendlare. Kvot under 1,0 innebär att fler pendlar ut.
+Mäter: Dagbefolkningen dividerad med nattbefolkningen (sysselsatta efter arbetsställe delat med sysselsatta efter bostad). Över 1,0 finns fler sysselsatta med arbetsställe i kommunen än sysselsatta som bor där, under 1,0 färre. För länet avses pendling över länsgränsen.
 - Halland: 0,87
 - Riket: 0,99
 - Skillnad Halland mot riket: -0,12 kvot
@@ -55,7 +55,7 @@ Mäter: Kvoten mellan dagbefolkning och nattbefolkning (sysselsatta efter arbets
 - Serien för Halland 2020–2024: högst 0,88 (2021), lägst 0,87 (2022)
 
 ### Inpendlingsandel (procent, 2024)
-Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanför kommunen. Beräknat som antal inpendlare dividerat med dagbefolkning.
+Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanför kommunen: antal inpendlare dividerat med dagbefolkningen. För länet avses de som bor utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Halland: 11,1
 - Hallands kommuner 2024 (högst först): Hylte 29,9; Kungsbacka 29,7; Laholm 24,8; Falkenberg 22,4; Halmstad 20,4; Varberg 20,4
 - Förändring 1 år: +0,1 procentenheter (från 11,0 år 2023)
@@ -63,7 +63,7 @@ Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanf
 - Serien för Halland 2020–2024: högst 11,2 (2021), lägst 10,9 (2022)
 
 ### Utpendlingsandel (procent, 2024)
-Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanför kommunen. Beräknat som antal utpendlare dividerat med nattbefolkning.
+Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanför kommunen: antal utpendlare dividerat med nattbefolkningen. För länet avses de som arbetar utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Halland: 22,1
 - Hallands kommuner 2024 (högst först): Kungsbacka 55,3; Laholm 46,1; Hylte 33,1; Falkenberg 28,5; Varberg 26,2; Halmstad 16,9
 - Förändring 1 år: 0,0 procentenheter (från 22,1 år 2023)

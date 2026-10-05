@@ -1,29 +1,55 @@
 {
-  "hash": "6e7ba0bcba1488810db0962ed8e60066",
+  "hash": "4b22a513a35fe0bd990e1c2ff80b46cd",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Länets högsta inkomster, men psykisk ohälsa bland unga ökar",
-    "ingress": "Kungsbacka har högst inkomster, lägst ohälsotal och lägst förtida dödlighet i Halland. Ett undantag är barn och unga, där andelen med psykisk ohälsa är näst högst i länet och har ökat snabbare än i riket.",
+    "rubrik": "Länets högsta inkomster, men stress och ungas psykiska ohälsa ökar",
+    "ingress": "Kungsbacka har länets högsta inkomster och medellivslängd och de lägsta värdena för ohälsotal, förtida dödlighet och varaktigt låg ekonomisk standard. Andelen som uppger stress har däremot ökat sedan 2014, ungefär som i riket, och andelen barn och unga med psykisk ohälsa varje år sedan 2018, mer än i riket. Skillnaden mot riket i ohälsotal har krympt både på tio och på fem år.",
     "i_korthet": [
       {
-        "ledtext": "Medianinkomst bland landets högsta",
-        "text": "Medianinkomsten var 406,3 tusen kronor 2024, 66,7 tusen kronor över riket och plats 11 bland landets 290 kommuner."
+        "ledtext": "Inkomsten växer snabbare än i riket",
+        "text": "Medianinkomsten var 406,3 tusen kronor 2024, högst i länet, och har ökat med 35,8 tusen kronor på tio år mot 24,0 i riket."
       },
       {
-        "ledtext": "Lägst ohälsotal i Halland",
-        "text": "Ohälsotalet var 17,0 dagar per person 2025, 5,0 dagar under riket och 4,2 dagar under länet."
+        "ledtext": "Lägst ohälsotal, men skillnaden krymper",
+        "text": "Ohälsotalet var 17,0 dagar 2025, 5,0 dagar under riket, men har ökat med 0,7 dagar på fem år medan riket minskat med 0,6."
       },
       {
-        "ledtext": "Psykisk ohälsa bland unga ökar",
-        "text": "Andelen barn och unga med psykisk ohälsa var 11,4 procent 2024, 1,4 procentenheter över riket och 3,3 procentenheter högre än 2019."
+        "ledtext": "Ungas psykiska ohälsa ökar",
+        "text": "Andelen barn och unga med psykisk ohälsa har ökat varje år sedan 2018 till 11,4 procent 2024, 1,4 procentenheter över riket."
       }
     ],
     "stycken": [
-      "Kungsbacka ligger först i Halland på inkomst och sist på ohälsotal och förtida dödlighet. Medianinkomsten var 406,3 tusen kronor 2024, 57,8 tusen kronor över länet. Ohälsotalet var 17,0 dagar per person 16–64 år och den förtida dödligheten 124,1 per 100 000 invånare 25–64 år, 48,9 under riket. Andelen vuxna med varaktigt låg ekonomisk standard var 2,7 procent, lägst i länet.",
-      "Bakom genomsnitten finns tecken på att avståndet till riket har minskat på några punkter. Ohälsotalet har ökat med 0,7 dagar sedan 2020 medan det sjunkit med 0,6 dagar i riket, och bland män 25–64 år har den förtida dödligheten stigit med 1,6 per 100 000 på fem år medan den fallit med 22,3 i riket. Andelen som uppger stress har ökat med 3,8 procentenheter på tio år, mot 3,0 i riket, och ligger med 15,6 procent i nivå med rikets 15,9 procent, en skillnad inom enkätens felmarginal. Inkomsterna är också mer ojämnt fördelade än i de andra halländska kommunerna: ginikoefficienten för disponibel inkomst är 0,32, högst i länet.",
-      "Barn och unga avviker från mönstret. Andelen 0–19-åringar med vårdkontakter eller läkemedelsbehandling för psykisk ohälsa var 11,4 procent, näst högst i Halland efter Hylte, och bland pojkar 11,9 procent, 1,8 procentenheter över riket. Eftersom måttet bygger på diagnoser, uthämtade läkemedel och slutenvård kan det spegla både fler besvär och skillnader i hur ofta familjer söker och får vård. För planeringen pekar det på att kommunens socioekonomiska läge inte räcker som förklaring till hur unga mår, och att utvecklingen bland barn och unga behöver följas även i en kommun där ohälsotal och dödlighet ligger under riket."
+      "Kungsbacka har länets högsta inkomster och längsta medellivslängd, och skillnaden mot riket i inkomst har vuxit. Medianinkomsten var 406,3 tusen kronor 2024 och har ökat med 35,8 tusen på tio år och 8,3 på fem år, mot 24,0 respektive 1,9 i riket; det senaste året steg den med 8,8 efter två års nedgång. Den förtida dödligheten, dödsfall bland 25–64-åringar, var 124,1 per 100 000 invånare 2024, lägst i länet och i serien, efter en minskning med 33,0 på tio år, något mindre än rikets 38,3.",
+      "De senaste fem åren har skillnaden mot riket däremot krympt i ohälsotalet och bland män. Ohälsotalet var 17,0 dagar 2025, 5,0 under riket, men sjönk med 2,7 dagar på tio år mot rikets 6,0 och har stigit sedan 2022; på fem år har det ökat med 0,7 medan rikets minskat med 0,6. Männens förtida dödlighet är i stort sett oförändrad på fem år, medan rikets minskat med 22,3, och deras medellivslängd har ökat med 2,1 år på tio år men 0,4 på fem år, mot 1,7 och 1,0 i riket. Kvinnornas förtida dödlighet har i stället minskat mer än rikets, 32,5 mot 14,4 på fem år.",
+      "Den psykiska hälsan avviker delvis från mönstret. Andelen som uppger stress har ökat med 3,8 procentenheter sedan 2014, till 15,6 procent, ungefär som rikets 3,0 och mer än enkätens felmarginal. Den är i nivå med riket och högst bland länets kommuner, men skillnaden mot Halmstad ryms inom felmarginalen. Allvarlig psykisk påfrestning är mindre vanlig än i riket, 7,4 mot 10,0 procent. Andelen barn och unga med psykisk ohälsa, mätt som diagnoser, läkemedel och slutenvård, har ökat varje år sedan 2018 till 11,4 procent, 1,4 procentenheter över riket. Det kan spegla både fler besvär och att fler söker vård."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "F_DINK"
+        ],
+        "rubrik": "Medianinkomsten har ökat mer än i riket på tio år"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": [
+          "N00957"
+        ],
+        "rubrik": "Ohälsotalet sjönk fram till 2022 och har sedan stigit något"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": [
+          "N33820"
+        ],
+        "rubrik": "Ungas psykiska ohälsa har ökat varje år sedan 2018"
+      }
     ]
   }
 }

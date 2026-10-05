@@ -1,29 +1,50 @@
 {
-  "hash": "c0eaf561695c4b76822a628b25c5826b",
+  "hash": "ac885b1ee35af1d95df4b0437266cfb2",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Varberg växer främst genom inrikes flyttningar och blir äldre",
-    "ingress": "Varberg växer snabbare än både länet och riket. Största delen av ökningen kommer från inrikes flyttnetto, med mindre bidrag från invandringsöverskott och födelsenetto, samtidigt som befolkningen är äldre än i riket och andelen i arbetsför ålder minskar.",
+    "rubrik": "Varberg växer främst genom inrikes flyttningar, men långsammare sedan 2023",
+    "ingress": "Varbergs folkmängd har ökat med 31,8 procent sedan 2000, mot 19,4 procent i riket, och de senaste tio åren har inrikes flyttnetto gett det största bidraget. Tillväxten toppade 2021 och har varit lägre sedan 2023, men Varberg växer fortfarande snabbare än länet och riket.",
     "i_korthet": [
       {
-        "ledtext": "Snabbare tillväxt än länet och riket",
-        "text": "Folkmängden ökade med 0,56 procent 2025, mot 0,29 procent i Halland och 0,17 procent i riket."
+        "ledtext": "Snabbare tillväxt än riket",
+        "text": "Folkmängden ökade med 13,7 procent på tio år och 6,1 procent på fem år, mot 7,6 respektive 2,2 procent i riket."
       },
       {
-        "ledtext": "Inrikes flyttnetto bär största delen",
-        "text": "Under 2021–2025 bidrog inrikes flyttnetto med 3 087 personer, invandringsöverskottet med 712 och födelsenettot med 199."
+        "ledtext": "Inrikes flyttnetto har bidragit mest",
+        "text": "Under 2016–2025 bidrog inrikes flyttnetto med 5 511 personer, invandringsöverskottet med 2 316 och födelsenettot med 481."
       },
       {
-        "ledtext": "Försörjningskvoten stiger snabbare än riket",
-        "text": "Kvoten var 92,1 år 2025 och har ökat med 10,4 på tio år, jämfört med 3,1 i riket."
+        "ledtext": "Försörjningskvoten stiger snabbare än rikets",
+        "text": "Kvoten har ökat med 10,4 på tio år till 92,1, mot en ökning med 3,1 i riket."
       }
     ],
     "stycken": [
-      "Varberg växer snabbare än både länet och riket. Folkmängden ökade med 0,56 procent 2025, mot 0,29 procent i Halland och 0,17 procent i riket, och har ökat med 13,7 procent på tio år mot 7,6 procent i riket. Inrikes flyttnetto står för den största delen av ökningen: under 2021–2025 bidrog det med 3 087 personer, medan invandringsöverskottet bidrog med 712 och födelsenettot med 199. Takten har ändå mattats, eftersom den årliga ökningen var 1,09 procent 2024 och 1,93 procent 2021.",
-      "I Halland ligger Varberg näst efter Kungsbacka i både tillväxttakt och inrikes flyttnetto 2025, medan Falkenberg, Laholm och Hylte minskade. Varberg är den enda kommunen i länet med ett födelseöverskott, alltså fler födda än döda, men det är litet: 0,2 per 1 000 invånare. Fruktsamheten är 1,73 barn per kvinna, 0,31 över riket. Invandringsöverskottet var 0,5 per 1 000 invånare 2025 mot 1,1 i riket, efter 2,5 året innan, och andelen utrikes födda var 11,8 procent 2024, 9,0 procentenheter under riket.",
-      "Inflyttningen hänger sannolikt samman med pendeltågsförbindelsen mot Göteborg och den stadsutveckling som tunneln har öppnat för. Medelåldern är 44,4 år, 2,0 år över riket, och andelen 65–79 år är 17,9 procent, 3,3 procentenheter över riket. Försörjningskvoten, antalet unga och äldre per 100 invånare i arbetsför ålder, har stigit till 92,1 och har ökat med 10,4 på tio år mot 3,1 i riket. För planeringen pekar det på behov av både skola och äldreomsorg. Inrikes flyttnetto har samtidigt sjunkit från 13,3 per 1 000 invånare 2021 till 5,0 år 2025, så tillväxttakten framöver hänger till stor del på hur flyttnettot utvecklas."
+      "Varbergs befolkning har vuxit snabbare än rikets sedan 2000, men tillväxten har bromsat in sedan 2023. Folkmängden har ökat med 31,8 procent sedan 2000, 13,7 procent sedan 2015 och 6,1 procent de senaste fem åren, mot 19,4, 7,6 respektive 2,2 procent i riket. Den årliga tillväxten nådde 1,93 procent 2021, den högsta sedan 2000, och 1,71 procent 2022, men har sedan 2023 legat mellan 0,56 och 1,09 procent. Takten 2025 är den lägsta på tio år men högre än rikets 0,17 procent.",
+      "Inrikes flyttningar har gett störst bidrag: under 2016–2025 bidrog inrikes flyttnetto med 5 511 personer, invandringsöverskottet med 2 316 och födelsenettot med 481, och inrikes flyttnetto har varit störst varje år sedan 2017. Inbromsningen syns i alla tre komponenterna, mest i inrikes flyttnetto: enligt preliminära uppgifter var det 350 personer 2025 mot 886 år 2021, invandringsöverskottet 36 mot 257 och födelsenettot 11 mot 101. Under 2025 minskade de inrikes inflyttningarna med 3,1 procent, medan utflyttningarna ökade med 7,5 procent.",
+      "I länet växte bara Kungsbacka snabbare än Varberg under 2025, 0,63 mot 0,56 procent, och länet växte med 0,29. Samma år hade Varberg länets näst högsta inrikes flyttnetto, 5,00 per 1 000 invånare mot 2,50 i länet, och var enligt preliminära uppgifter den enda kommunen där fler föddes än dog, medan invandringsöverskottet var lägre än länets, 0,50 mot 0,90. Inflyttningsöverskottet kan hänga samman med pendeltågsförbindelsen mot Göteborg. Samtidigt blir befolkningen äldre: medelåldern har stigit varje år sedan 2016 till 44,4 år, 2,0 år över riket, och försörjningskvoten, antalet unga och äldre per 100 invånare 20–64 år, har ökat med 10,4 på tio år till 92,1, mot 3,1 i riket. Mest har kvoten för äldre ökat, med 7,7 mot 2,7 för yngre, vilket pekar mot växande behov inom äldreomsorgen."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_BEF_FORANDR_PCT"],
+        "rubrik": "Tillväxten toppade 2021–2022 och har bromsat in sedan dess"
+      },
+      {
+        "efter": 1,
+        "typ": "delar",
+        "kpi": ["S_FODELSENETTO_ANTAL", "S_INRIKES_NETTO_ANTAL", "S_UTRIKES_NETTO_ANTAL"],
+        "summa": "S_BEF_FORANDR_ANTAL",
+        "rubrik": "Inrikes flyttnetto har varit störst sedan 2017 och toppade 2021"
+      },
+      {
+        "efter": 2,
+        "typ": "uppdelning",
+        "kpi": ["S_FORSORJ_UNG", "S_FORSORJ_ALD"],
+        "rubrik": "Det är främst kvoten för äldre som har stigit"
+      }
     ]
   }
 }

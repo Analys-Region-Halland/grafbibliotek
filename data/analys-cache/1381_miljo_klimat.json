@@ -1,1 +1,49 @@
-{"hash": "ed0df8440c12408d4523151e228cb1bd", "period": "2025", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Länets högsta utsläpp per invånare, med jordbruket som största sektor", "ingress": "Laholm har de största växthusgasutsläppen per invånare bland Hallands kommuner, och jordbruket är den sektor som väger tyngst. Även transporterna ligger över länet och riket, medan industrin släpper ut mindre per invånare än i riket.", "i_korthet": [{"ledtext": "Högst utsläpp per invånare i Halland", "text": "Laholm släppte ut 6,48 ton koldioxidekvivalenter per invånare 2024, mot 4,31 ton i länet och 4,50 ton i riket."}, {"ledtext": "Jordbruket är största utsläppssektorn", "text": "Jordbrukets utsläpp var 3,06 ton per invånare, 2,47 ton över riket och plats 22 bland landets 290 kommuner."}, {"ledtext": "Minst ekologisk åkermark i länet", "text": "Andelen ekologiskt brukad åkermark var 4,36 procent 2025, mot 9,70 procent i länet och 14,10 procent i riket."}], "stycken": ["Laholms utsläpp av växthusgaser per invånare är de största i Halland, och den största skillnaden mot länet finns i jordbruket. Kommunen släppte ut 6,48 ton koldioxidekvivalenter per invånare 2024, mot 4,31 ton i länet och 4,50 ton i riket. Jordbruket står för 3,06 ton per invånare, 2,05 ton över länet och 2,47 ton över riket, och är den största sektorn före transporterna med 2,40 ton. Transporterna ligger 0,28 ton och uppvärmningen 0,12 ton över länet, medan industrin ligger på 0,20 ton mot 1,23 ton i riket.", "I jordbruket ligger Laholm långt före Falkenberg på 1,80 ton och Halmstad på 0,50 ton. De totala utsläppen har minskat mindre än i riket: 0,20 ton på fem år mot 0,36 ton. Det senaste året ökade de med 0,62 ton från seriens lägsta nivå på 5,86 ton, mer än rikets ökning på 0,32 ton.", "Mönstret hänger sannolikt samman med att jordbruket har en större plats i Laholm än i övriga Halland, och jordbrukets utsläpp av metan och lustgas kan vara svåra att minska snabbt. Energianvändningen i transporter är den högsta i länet, 11,1 MWh per invånare och 4,3 MWh över riket, och den har ökat med 3,0 MWh på fem år medan den minskat i riket. Det kan spegla genomfartstrafik på E6 och pendling, eftersom måttet räknar all trafik inom kommunen. För planeringen pekar underlaget på jordbruk och transporter som de sektorer där utsläppen per invånare är störst. Andelen ekologiskt brukad åkermark, 4,36 procent mot 9,70 i länet och 14,10 i riket, är den lägsta i länet."]}}
+{
+  "hash": "81292e9c745d22f17aec36c8978300e5",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Jordbruket ger Laholm länets högsta utsläpp per invånare",
+    "ingress": "Laholm släppte ut 6,48 ton koldioxidekvivalenter per invånare 2024, mest i länet och 1,98 ton mer än riket, och jordbruket är den största källan. Utsläppen har minskat sedan 2010 men ökade under 2024, efter att ha minskat varje år sedan 2015.",
+    "i_korthet": [
+      {
+        "ledtext": "Högst utsläpp i länet",
+        "text": "Utsläppen var 6,48 ton per invånare, 2,17 ton mer än länet och mest bland Hallands kommuner."
+      },
+      {
+        "ledtext": "Jordbruket största källan",
+        "text": "Jordbruket gav 3,06 ton per invånare, 2,05 ton mer än länet och plats 22 bland landets 290 kommuner."
+      },
+      {
+        "ledtext": "Ökning 2024 efter lång minskning",
+        "text": "Utsläppen minskade varje år från 7,82 ton 2015 till 5,86 ton 2023 och ökade med 0,62 ton under 2024."
+      }
+    ],
+    "stycken": [
+      "Laholms utsläpp av växthusgaser är länets högsta och har minskat under lång tid, men ökade under 2024. Utsläppen inom kommunens gräns sjönk från 9,00 ton koldioxidekvivalenter per invånare 2010 till 7,82 ton 2015 och därefter varje år till 5,86 ton 2023, seriens lägsta värde. Under 2024 ökade de med 0,62 ton till 6,48 ton, mot 0,32 ton i riket. På fem år har utsläppen därmed minskat med 0,20 ton, mot 0,36 ton i riket. Transporterna stod för den största delen av ökningen 2024, 0,45 ton, följda av arbetsmaskiner med 0,09 och jordbruket med 0,05 ton. Ett enskilt år är ännu ingen ny riktning.",
+      "Jordbruket är den största källan och står för det mesta av skillnaden mot länet. Med 3,06 ton per invånare ligger jordbruket 2,05 ton över länet, av en total skillnad på 2,17 ton, och på plats 22 bland landets 290 kommuner. Transporterna ger 2,40 ton, tredje mest i länet efter Hylte och Falkenberg, och uppvärmningen 0,23 ton, länets högsta och plats 11 i landet. På fem år har jordbrukets utsläpp ökat något, med 0,04 ton; minskningen kom främst från industrin, 0,18 ton, och uppvärmningen, 0,08 ton, medan arbetsmaskiner ökade med 0,05 ton.",
+      "Nivån speglar sannolikt att Laholm är en landsbygdskommun med mycket jordbruk, vars utsläpp räknas där de uppstår. Andelen ekologiskt brukad åkermark, 4,36 procent 2025, är länets lägsta; den har ökat med 1,28 procentenheter sedan 2010 men minskat sedan toppen 7,18 procent 2017, och kommunvärdena ska tolkas med försiktighet. Partikelutsläppen, 1,94 kg per invånare, ligger 0,34 kg över riket, vilket kan spegla egen uppvärmning, till exempel vedeldning, men de har minskat med 0,66 kg på fem år, mer än rikets 0,56 kg. För planeringen innebär det att jordbruket och transporterna väger tyngst för hur kommunens utsläpp utvecklas."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N00401"],
+        "rubrik": "Utsläppen har minskat sedan 2010 men ökade 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N85078"],
+        "rubrik": "Laholm har länets högsta utsläpp från jordbruket"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N00403"],
+        "rubrik": "Andelen ekologisk åkermark steg till 2017 och har sedan minskat"
+      }
+    ]
+  }
+}

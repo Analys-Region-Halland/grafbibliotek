@@ -44,12 +44,10 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 ## Pendling
 
 ### Pendlingskvot (dag / natt) (kvot, 2024)
-Mäter: Kvoten mellan dagbefolkning och nattbefolkning (sysselsatta efter arbetsställe dividerat med sysselsatta efter bostad). Kvot över 1,0 innebär att kommunen har fler arbetstillfällen än sysselsatta invånare — ett arbetsplatscentrum som drar till sig pendlare. Kvot under 1,0 innebär att fler pendlar ut.
+Mäter: Dagbefolkningen dividerad med nattbefolkningen (sysselsatta efter arbetsställe delat med sysselsatta efter bostad). Över 1,0 finns fler sysselsatta med arbetsställe i kommunen än sysselsatta som bor där, under 1,0 färre. För länet avses pendling över länsgränsen.
 - Kungsbacka: 0,64
-- Halland (länet): 0,87
 - Riket: 0,99
 - Skillnad Kungsbacka mot riket: -0,35 kvot
-- Skillnad Kungsbacka mot Halland: -0,23 kvot
 - Plats bland landets 290 kommuner: 250 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Halmstad 1,04; Hylte 0,96; Varberg 0,93; Falkenberg 0,92; Laholm 0,72; Kungsbacka 0,64
 - Plats bland Hallands 6 kommuner: 6
@@ -58,10 +56,8 @@ Mäter: Kvoten mellan dagbefolkning och nattbefolkning (sysselsatta efter arbets
 - Serien för Kungsbacka 2020–2024: högst 0,64 (2024), lägst 0,63 (2022)
 
 ### Inpendlingsandel (procent, 2024)
-Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanför kommunen. Beräknat som antal inpendlare dividerat med dagbefolkning.
+Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanför kommunen: antal inpendlare dividerat med dagbefolkningen. För länet avses de som bor utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Kungsbacka: 29,7
-- Halland (länet): 11,1
-- Skillnad Kungsbacka mot Halland: +18,6 procentenheter
 - Plats bland landets 290 kommuner: 136 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 29,9; Kungsbacka 29,7; Laholm 24,8; Falkenberg 22,4; Halmstad 20,4; Varberg 20,4
 - Plats bland Hallands 6 kommuner: 2
@@ -70,10 +66,8 @@ Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanf
 - Serien för Kungsbacka 2020–2024: högst 30,2 (2021), lägst 29,7 (2022)
 
 ### Utpendlingsandel (procent, 2024)
-Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanför kommunen. Beräknat som antal utpendlare dividerat med nattbefolkning.
+Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanför kommunen: antal utpendlare dividerat med nattbefolkningen. För länet avses de som arbetar utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Kungsbacka: 55,3
-- Halland (länet): 22,1
-- Skillnad Kungsbacka mot Halland: +33,2 procentenheter
 - Plats bland landets 290 kommuner: 65 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 55,3; Laholm 46,1; Hylte 33,1; Falkenberg 28,5; Varberg 26,2; Halmstad 16,9
 - Plats bland Hallands 6 kommuner: 1

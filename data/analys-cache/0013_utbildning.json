@@ -1,29 +1,50 @@
 {
-  "hash": "7b14ff6e7a8dcfb124360f3e35cfeed8",
+  "hash": "2f52be42fadfd951e900dd365fcdeb89",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Utbildningsnivån stiger men andelen behöriga till yrkesprogram sjunker",
-    "ingress": "Andelen invånare med eftergymnasial utbildning ökar i Halland i samma takt som i riket, men skillnaderna mellan kommunerna är stora. Andelen niondeklassare som är behöriga till gymnasiets yrkesprogram har sjunkit mer än i riket på både fem och tio år, och det senaste året sjönk den medan rikets steg något.",
+    "rubrik": "Andelen eftergymnasialt utbildade växer i samma takt som i riket",
+    "ingress": "Andelen invånare 25–64 år med eftergymnasial utbildning i Halland har ökat från 35,5 procent 2010 till 45,7 procent 2025, lika mycket som i riket, och ligger kvar under riket med 2,9 procentenheter. Skillnaderna inom länet är större: från 54,3 procent i Kungsbacka till 27,8 procent i Hylte.",
     "i_korthet": [
       {
-        "ledtext": "Eftergymnasialt utbildade ökar i rikets takt",
-        "text": "Bland invånare 25–64 år har 45,7 procent eftergymnasial utbildning, en ökning med 7,0 procentenheter sedan 2015, lika mycket som i riket."
+        "ledtext": "Ökning i rikets takt",
+        "text": "Andelen eftergymnasialt utbildade ökade med 7,0 procentenheter på tio år och 4,2 på fem år, mot 7,0 och 4,1 i riket."
       },
       {
-        "ledtext": "Kungsbacka och Hylte är ytterpunkter",
-        "text": "I Kungsbacka har 54,3 procent eftergymnasial utbildning, i Hylte 27,8 procent."
+        "ledtext": "Avståndet till riket störst bland män",
+        "text": "Bland män har 37,3 procent eftergymnasial utbildning, 4,2 procentenheter under riket, bland kvinnor 54,2 procent, 1,6 procentenheter under."
       },
       {
-        "ledtext": "Behörigheten sjönk medan rikets steg",
-        "text": "Andelen behöriga till yrkesprogram föll med 2,0 procentenheter till 83,9 procent det senaste året, medan riket ökade med 0,1 procentenheter."
+        "ledtext": "Behörigheten har minskat mer än rikets",
+        "text": "Andelen elever behöriga till yrkesprogram var 83,9 procent 2025, 4,7 procentenheter lägre än 2015, medan rikets andel minskade med 1,4."
       }
     ],
     "stycken": [
-      "Halland har en vuxenbefolkning där gymnasieutbildning väger tyngre än i riket, men där andelen eftergymnasialt utbildade växer i samma takt som i övriga landet. Bland invånare 25–64 år har 45,7 procent eftergymnasial utbildning och 43,9 procent gymnasial, jämfört med 48,5 och 39,5 procent i riket. Andelen eftergymnasialt utbildade har ökat med 7,0 procentenheter sedan 2015, precis som i riket, och är nu den högsta sedan serien började 2010. Det betyder att länet under tioårsperioden varken har knappat in eller tappat mot riket.",
-      "Halland ligger 2,9 procentenheter under riket i andelen eftergymnasialt utbildade men ändå på plats 7 av 21 regioner, vilket pekar på att ett fåtal regioner drar upp rikssnittet. Inom länet är skillnaderna större än mellan Halland och riket. Kungsbacka ligger på 54,3 procent och Halmstad på 46,7 procent, medan Hylte stannar på 27,8 procent. I Hylte har dessutom 15,61 procent som högst förgymnasial utbildning, mot 5,65 procent i Kungsbacka. Skillnaden mot riket gäller främst män: deras andel ligger 4,2 procentenheter under riket, kvinnornas 1,6 procentenheter.",
-      "Mönstret hänger sannolikt samman med arbetsmarknaden: Kungsbacka ingår i Göteborgs arbetsmarknadsregion och Halmstad har högskolan, medan Hylte, Laholm och Falkenberg har en tradition av industri och jordbruk där gymnasial yrkesutbildning länge kan ha räckt. Det gör utvecklingen i grundskolan viktig att följa. Andelen behöriga till yrkesprogram är 83,9 procent, nära seriens lägsta nivå på 83,8 procent från 2017. Pojkarnas andel har minskat med 3,6 procentenheter på fem år, mot 0,7 i riket, och Laholm och Hylte har lägst andel med 77,2 och 79,7 procent. Om en mindre andel blir behörig kan det på sikt försvåra kompetensförsörjningen i de kommuner där gymnasial utbildning är vanligast."
+      "Utbildningsnivån i Halland stiger stadigt och i samma takt som i riket. Andelen invånare 25–64 år med eftergymnasial utbildning har ökat varje år sedan 2015 och var 45,7 procent 2025, seriens högsta värde. Ökningen var 7,0 procentenheter på tio år och 4,2 på fem år, mot 7,0 och 4,1 i riket, och 0,9 procentenheter det senaste året, i linje med trenden. Andelen med gymnasial utbildning som högsta utbildning minskar, men är med 43,9 procent fortfarande större än rikets 39,5.",
+      "Halland ligger 2,9 procentenheter under riket i andelen eftergymnasialt utbildade men är ändå sjunde bland landets 21 regioner: de flesta regioner ligger alltså längre under riket. Avståndet är störst bland män: 37,3 procent av männen har eftergymnasial utbildning, 4,2 procentenheter under riket, mot 54,2 procent av kvinnorna, 1,6 under. Männens andel har också ökat långsammare, 4,4 procentenheter på tio år mot 5,2 i riket. Inom länet är skillnaderna större än mot riket. Kungsbacka har 54,3 procent eftergymnasialt utbildade, Halmstad 46,7 och Varberg 45,1, medan Falkenberg har 37,1, Laholm 35,9 och Hylte 27,8 procent.",
+      "Skillnaderna kan spegla arbetsmarknaden: Kungsbacka ingår i Göteborgs arbetsmarknadsregion och Halmstad har högskolan, medan Hylte och Falkenberg har tillverkningsindustri och Laholm jordbruk, där fler arbeten sannolikt efterfrågar gymnasial utbildning. På sikt kan utbildningsnivån också påverkas av hur många elever som blir behöriga till gymnasiet. Bland elever folkbokförda i länet var 83,9 procent behöriga till yrkesprogram efter årskurs 9 år 2025, mot 84,2 procent i riket, och andelen har sedan 2016 pendlat mellan 83,8 och 87,0 procent. På tio år har den minskat med 4,7 procentenheter, mot 1,4 i riket, och det senaste året sjönk den med 2,0, medan rikets var i stort sett oförändrad. Minskningen är störst bland pojkar: 3,6 procentenheter på fem år, mot 0,7 i riket."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N01982"],
+        "rubrik": "Andelen eftergymnasialt utbildade ökar i samma takt som i riket"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N01982"],
+        "rubrik": "Kungsbacka har högst andel eftergymnasialt utbildade, Hylte lägst"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N15428"],
+        "fran": 2012,
+        "rubrik": "Behörigheten har sedan 2016 pendlat under 2015 års nivå"
+      }
     ]
   }
 }

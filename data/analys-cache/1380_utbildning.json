@@ -1,29 +1,57 @@
 {
-  "hash": "79431f4ed1e0c46a422cac036359bfe7",
+  "hash": "9a4b80e623cf07d99aed460142b62f85",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Utbildningsnivån näst högst i länet men ökar långsammare än riket",
-    "ingress": "Halmstad har efter Kungsbacka den högsta andelen eftergymnasialt utbildade i Halland, men andelen har ökat långsammare än i riket. Meritvärdet i årskurs 9 är också näst högst i länet, medan flickornas behörighet till yrkesprogram är lägst bland länets kommuner.",
+    "rubrik": "Andelen eftergymnasialt utbildade växer, men långsammare än i riket",
+    "ingress": "Andelen invånare 25–64 år med eftergymnasial utbildning i Halmstad, 46,7 procent 2025, är näst högst i länet men har ökat långsammare än i riket och ligger 1,8 procentenheter under. Bland elever folkbokförda i kommunen har flickornas resultat i årskurs 9 sjunkit på tio år, medan pojkarnas i stort sett har legat kvar.",
     "i_korthet": [
       {
-        "ledtext": "Näst högst utbildningsnivå i länet",
-        "text": "Andelen 25–64-åringar med eftergymnasial utbildning är 46,7 procent, vilket är 1,1 procentenheter över länet och 1,8 procentenheter under riket."
+        "ledtext": "Näst högst andel i länet",
+        "text": "Andelen eftergymnasialt utbildade är 46,7 procent, 1,1 procentenheter över länet och 1,8 under riket."
       },
       {
-        "ledtext": "Långsammare ökning än riket",
-        "text": "Andelen eftergymnasialt utbildade har ökat med 5,4 procentenheter på tio år, mot 7,0 procentenheter i riket."
+        "ledtext": "Långsammare ökning än i riket",
+        "text": "Andelen har ökat med 5,4 procentenheter på tio år och 3,3 på fem år, mot 7,0 och 4,1 i riket."
       },
       {
-        "ledtext": "Flickornas behörighet lägst i länet",
-        "text": "Av flickorna i årskurs 9 är 79,5 procent behöriga till yrkesprogram, vilket är 3,9 procentenheter under riket."
+        "ledtext": "Flickornas behörighet har sjunkit",
+        "text": "Andelen behöriga flickor minskade med 10,9 procentenheter på tio år till 79,5 procent 2026, lägst bland Hallands kommuner."
       }
     ],
     "stycken": [
-      "Halmstad har den näst högsta utbildningsnivån i Halland, men avståndet till riket har vuxit under de senaste tio åren. Andelen invånare 25–64 år med eftergymnasial utbildning är 46,7 procent 2025, det högsta värdet i serien sedan 2010 och plats 55 bland landets 290 kommuner. Ökningen har ändå gått långsammare än i landet som helhet: plus 5,4 procentenheter på tio år mot 7,0 i riket. Det betyder att Halmstad nu ligger 1,8 procentenheter under rikssnittet men 1,1 procentenheter över länet. Det senaste året ökade andelen lika mycket som i riket, 0,8 procentenheter.",
-      "Inom Halland placerar sig Halmstad mellan Kungsbacka med 54,3 procent och Varberg med 45,1 procent, och klart över Falkenberg, Laholm och Hylte. I skolan har Halmstad samma placering: meritvärdet i årskurs 9 är 228,0 poäng, näst högst i länet och 2,0 poäng under riket. Flickorna avviker från mönstret: andelen behöriga till yrkesprogram är 79,5 procent, lägst bland länets kommuner och 3,9 procentenheter under riket. Andelen har minskat med 6,1 procentenheter på fem år, mot 3,9 i riket, medan pojkarnas behörighet på 84,2 procent ligger 0,4 procentenheter över riket.",
-      "Högskolan och länets största arbetsmarknad söder om Varberg hänger sannolikt samman med att Halmstad ligger över grannkommunerna söderut och i inlandet. Att riket ökar snabbare kan spegla att högutbildade i högre grad söker sig till storstadsregionerna, och Kungsbackas nivå kan på samma sätt spegla närheten till Göteborg. Högskolebehörigheten inom tre år, 57,9 procent, föll med 3,9 procentenheter på ett år, men enskilda årskullar kan variera. För planeringen pekar mönstret på två frågor: hur kommunen behåller och lockar högutbildade, och varför flickornas behörighet har sjunkit snabbare än i landet."
+      "Utbildningsnivån i Halmstad stiger stadigt men långsammare än i riket. Andelen invånare 25–64 år med eftergymnasial utbildning har ökat varje år sedan 2015 och var 46,7 procent 2025, seriens högsta. Sedan 2010 har andelen ökat med 8,2 procentenheter och på tio år med 5,4, mot 10,2 och 7,0 i riket. De senaste fem åren var ökningen 3,3 procentenheter mot 4,1 i riket, och det senaste året lika stor som i riket, 0,8 procentenheter. Halmstad har därmed tappat mot riket och ligger 1,8 procentenheter under.",
+      "I länet har bara Kungsbacka en större andel eftergymnasialt utbildade, och Halmstad ligger 1,1 procentenheter över länet, vilket sannolikt hänger samman med högskolan och arbetsmarknaden. Andelen med högst förgymnasial utbildning, 9,37 procent, är större än länets 8,48 och något större än rikets 9,17; den har minskat med 2,37 procentenheter på tio år, mot 3,09 i riket. Avståndet till riket i eftergymnasial utbildning är störst bland män, vars andel ökat med 3,0 procentenheter på tio år mot 5,2 i riket.",
+      "Bland elever folkbokförda i Halmstad har flickornas skolresultat sjunkit på tio år, medan pojkarnas i stort sett har legat kvar. Flickornas meritvärde i årskurs 9 har på tio år minskat med 10,0 poäng till 233 poäng 2026, mot 4,6 i riket, men på fem år lika mycket som rikets, 7,0 poäng. Deras andel behöriga till yrkesprogram har på tio år minskat med 10,9 procentenheter till 79,5 procent, lägst i länet. Pojkarnas meritvärde och behörighet ligger nära nivåerna 2021, efter en uppgång det senaste året. För alla elever var meritvärdet 228 poäng 2026, näst högst i länet, och har sedan 2018 legat mellan 224 och 232. Högskolebehörigheten inom tre år efter gymnasiet har sedan 2015 pendlat mellan 55,5 och 62,5 procent och var 57,9 procent 2025, nära rikets."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "N01982"
+        ],
+        "rubrik": "Andelen ökar stadigt men långsammare än i riket"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": [
+          "N01982"
+        ],
+        "rubrik": "Halmstad har näst högst andel eftergymnasialt utbildade i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "uppdelning",
+        "kpi": [
+          "N15428_KV",
+          "N15428_MAN"
+        ],
+        "fran": 2012,
+        "rubrik": "Flickornas behörighet har sjunkit mer än pojkarnas sedan 2016"
+      }
     ]
   }
 }

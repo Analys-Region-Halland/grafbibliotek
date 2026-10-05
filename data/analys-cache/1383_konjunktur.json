@@ -1,29 +1,49 @@
 {
-  "hash": "eefd9c5acfe91493a949f0c441635e20",
+  "hash": "9e0a3fd9709386bf32f23dae545e2739",
   "period": "juni 2026",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Varberg har länets lägsta arbetslöshet och växer fortfarande",
-    "ingress": "Preliminära uppgifter för juli 2026 visar att Varberg har länets lägsta arbetslöshet och en av landets högsta sysselsättningsgrader. Folkmängden ökade mer i antal än i någon annan kommun i länet.",
+    "rubrik": "Varberg har länets lägsta arbetslöshet och växer, men långsammare",
+    "ingress": "Preliminära uppgifter visar att Varberg i juli 2026 hade länets lägsta arbetslöshet, 2,50 procent, och en sysselsättningsgrad nära toppen från 2023. Både folkmängden och antalet sysselsatta med arbetsplats i kommunen har ökat sedan 2021, men i lägre takt de senaste tre åren.",
     "i_korthet": [
       {
         "ledtext": "Länets lägsta arbetslöshet",
-        "text": "Arbetslösheten var 2,5 procent i juli 2026, 1,2 procentenheter under länet och 2,5 procentenheter under riket."
+        "text": "Arbetslösheten var 2,50 procent i juli 2026, mot 3,20 procent i juli 2021, 3,70 i länet och 5,00 i riket."
       },
       {
-        "ledtext": "Utrikes födda sysselsatta över riket",
-        "text": "Av utrikes födda 20–64 år var 78,1 procent sysselsatta i juli 2026, länets högsta andel och 6,1 procentenheter över riket."
+        "ledtext": "Sysselsättningsgraden nära toppen från 2023",
+        "text": "Andelen sysselsatta 20–64 år var 87,8 procent i juli 2026, nära toppen 88,0 procent i juli 2023 och 5,3 procentenheter över riket."
       },
       {
-        "ledtext": "Störst befolkningsökning i länet",
-        "text": "Folkmängden ökade med 415 personer på ett år, mest av länets sex kommuner."
+        "ledtext": "Antalet jobb ökar långsammare",
+        "text": "Antalet sysselsatta med arbetsplats i Varberg ökade med i genomsnitt 0,72 procent per år på fem år men 0,16 procent per år de senaste tre åren."
       }
     ],
     "stycken": [
-      "Varberg har en av landets högsta sysselsättningsgrader. Preliminära uppgifter visar att 87,8 procent av invånarna 20–64 år var sysselsatta i juli 2026, vilket ger plats 10 bland landets 290 kommuner. Arbetslösheten var samtidigt 2,5 procent av arbetskraften, 0,4 procentenheter lägre än ett år tidigare. Med ett arbetskraftsdeltagande på 90,1 procent är utrymmet att öka sysselsättningen bland dem som redan bor i kommunen sannolikt begränsat.",
-      "Varberg ligger i nivå med Kungsbacka, medan Halmstad och Hylte har klart högre arbetslöshet, 5,4 respektive 5,6 procent. Arbetslösheten i Varberg är 1,2 procentenheter under länet och 2,5 procentenheter under riket. Skillnaden mot riket är störst bland utrikes födda: 78,1 procent av dem var sysselsatta, 6,1 procentenheter över riket, och arbetslösheten i gruppen sjönk till 5,8 procent, mot 9,9 procent i länet och 10,5 procent i riket. Det kan peka på att arbetsmarknaden i Varberg även tar emot grupper som på andra håll står längre från arbete.",
-      "Mönstret hänger sannolikt samman med att kommunen växer både som bostadsort och arbetsort. Folkmängden ökade med 415 personer på ett år och antalet sysselsatta med arbetsplats i kommunen steg med 0,5 procent, när länet minskade med 0,2 procent och riket ökade med 0,7 procent. Störst tillskott kom inom företagstjänster med 106 fler sysselsatta, medan bland annat transport och offentlig sektor minskade. För planeringen betyder det att fortsatt sysselsättningstillväxt sannolikt främst kan komma genom inflyttning, vilket ställer krav på bostäder. Byggandet är fortfarande begränsat, med 36 påbörjade lägenheter under kvartalet till och med juni 2026, fler än 17 ett år tidigare men långt under toppen på 250 i september 2020."
+      "Sysselsättningsgraden i Varberg ligger nära toppen från 2023. Preliminära uppgifter visar att 87,8 procent av invånarna 20–64 år var sysselsatta i juli 2026, mot 86,8 procent i juli 2021 och 88,0 procent i juli 2023, seriens högsta värde. Andelen sjönk därefter till 87,5 procent i juli 2025 och steg med 0,3 procentenheter det senaste året, ungefär som rikets 0,4. Arbetslösheten har rört sig åt motsatt håll: den sjönk från 3,20 procent i juli 2021 till 2,30 procent 2022 och 2023, låg på 2,90 procent 2024 och 2025 och var 2,50 procent i juli 2026.",
+      "Varberg och Kungsbacka har länets högsta sysselsättningsgrad och lägsta arbetslöshet. Sysselsättningsgraden i Varberg är näst högst efter Kungsbackas 88,2 procent, 2,2 procentenheter över länet och 5,3 över riket. Arbetslösheten är länets lägsta, mot 2,60 procent i Kungsbacka, 3,70 i länet och 5,00 i riket. Skillnaden mot riket är störst bland utrikes födda: deras sysselsättningsgrad, 78,1 procent, är 6,1 procentenheter över rikets, och deras arbetslöshet är 5,80 procent, mot 10,50 i riket.",
+      "Antalet jobb och invånare ökar, men långsammare än 2021–2023. Antalet sysselsatta med arbetsplats i Varberg ökade med i genomsnitt 0,72 procent per år på fem år men 0,16 procent per år de senaste tre åren och det senaste året med 0,5 procent, medan länet minskade med 0,2 procent. Folkmängden ökade med i genomsnitt 1,06 procent per år på fem år och 0,73 procent på tre år; det senaste året ökade den med 415 personer, mest i länet. Under andra kvartalet 2026 påbörjades 36 lägenheter, mot 137 samma kvartal 2021 och 14 samma kvartal 2024. Med 90,1 procent av invånarna 20–64 år redan i arbetskraften kan fler jobb behöva fyllas av personer som flyttar till kommunen eller pendlar in, vilket ställer krav på bostäder och pendling."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["K_SYSS_TOT"],
+        "rubrik": "Sysselsättningsgraden toppade 2023 och ligger nära den nivån"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["K_ARBL_TOT"],
+        "rubrik": "Varberg och Kungsbacka har länets lägsta arbetslöshet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["K_DAG_TOT"],
+        "rubrik": "Antalet jobb har ökat, men långsammare sedan 2023"
+      }
     ]
   }
 }

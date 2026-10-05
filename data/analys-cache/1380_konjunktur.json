@@ -1,29 +1,49 @@
 {
-  "hash": "a62b51e5b55bac2f9fa6f06a2d80f397",
+  "hash": "202f22e71f11588866d8fa1ffd307402",
   "period": "juni 2026",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Antalet jobb i Halmstad minskar medan arbetslösheten sjunker",
-    "ingress": "Preliminära uppgifter visar att antalet sysselsatta med arbetsplats i Halmstad minskade det senaste året, mest bland länets kommuner, samtidigt som arbetslösheten sjönk. Arbetslösheten ligger ändå kvar över både länet och riket, och avståndet är störst bland utrikes födda.",
+    "rubrik": "Sysselsättningsgraden under toppen 2023 och färre jobb senaste året",
+    "ingress": "Preliminära uppgifter visar att sysselsättningsgraden i Halmstad, 82,8 procent i juli 2026, är högre än 2021 men lägre än toppen 2023, och att arbetslösheten, 5,40 procent, är näst högst i länet. Antalet jobb, det vill säga sysselsatta med arbetsplats i kommunen, minskade med 1 110 mellan juli 2025 och juli 2026, den största minskningen i länet, men är högre än i juli 2021.",
     "i_korthet": [
       {
-        "ledtext": "Arbetsställena tappar sysselsatta",
-        "text": "Antalet sysselsatta med arbetsplats i Halmstad minskade med 1,9 procent till juli 2026, mest bland Hallands kommuner, medan riket ökade med 0,7 procent."
+        "ledtext": "Sysselsättningen under toppen 2023",
+        "text": "Sysselsättningsgraden bland 20–64-åringar var 82,8 procent i juli 2026, mot 83,4 procent i juli 2023 och 82,5 procent i riket."
       },
       {
-        "ledtext": "Arbetslösheten sjunker men ligger över riket",
-        "text": "Arbetslösheten 20–64 år var 5,4 procent i juli 2026, 0,4 procentenheter över riket och 1,7 över länet, efter en nedgång med 0,5 procentenheter på ett år."
+        "ledtext": "Arbetslösheten över länets och rikets",
+        "text": "Arbetslösheten var 5,40 procent i juli 2026, mot 3,70 procent i länet och 5,00 procent i riket."
       },
       {
-        "ledtext": "Utrikes föddas arbetslöshet högst i länet",
-        "text": "Bland utrikes födda var 12,9 procent arbetslösa, högst bland Hallands kommuner och 2,4 procentenheter över riket."
+        "ledtext": "Färre jobb, mest i offentlig sektor",
+        "text": "Antalet sysselsatta med arbetsplats i Halmstad minskade med 1 110 på ett år, och offentlig sektor minskade mest, med 840."
       }
     ],
     "stycken": [
-      "Preliminära uppgifter visar att Halmstad har tappat arbetstillfällen det senaste året, medan antalet sysselsatta invånare i stort sett står still. Antalet sysselsatta med arbetsplats i kommunen minskade med 1 110 till 56 213 i juli 2026, det vill säga 1,9 procent, medan riket ökade med 0,7 procent. Nedgången är störst i offentlig sektor, som minskade med 840 sysselsatta, följd av transport med 296 och fastighetsverksamhet med 170, medan hotell och restaurang ökade med 201. Antalet sysselsatta som bor i kommunen ökade samtidigt med 108 personer, eller 0,2 procent, mot 0,7 procent i riket.",
-      "Arbetslösheten sjunker snabbare än i länet och riket men ligger kvar över båda. Andelen arbetslösa 20–64 år var 5,4 procent i juli 2026, 0,4 procentenheter över riket och 1,7 över Halland, och i länet låg bara Hylte högre. Sysselsättningsgraden på 82,8 procent ligger strax över riket men 2,8 procentenheter under länet, den näst lägsta bland de halländska kommunerna. Avståndet är störst bland utrikes födda: 12,9 procent av dem är arbetslösa, högst i Halland och 2,4 procentenheter över riket.",
-      "Nedgången i arbetslöshet pekar delvis på att färre finns i arbetskraften och i mindre grad på att fler har fått jobb: andelen i arbetskraften föll med 0,3 procentenheter medan sysselsättningsgraden steg med 0,1, mot 0,4 i riket. Minskningen i offentlig sektor, 3,8 procent, skiljer sig tydligt från riket där sektorn ökade med 1,1 procent, och eftersom uppgifterna är preliminära behöver bilden prövas mot den slutliga statistiken. Samtidigt påbörjades 107 lägenheter under kvartalet till juni 2026, mot 26 ett år tidigare, vilket kan tyda på att byggandet tar fart igen från en låg nivå."
+      "Preliminära uppgifter visar att sysselsättningen i Halmstad är något högre än för fem år sedan men lägre än toppen 2023. Sysselsättningsgraden bland 20–64-åringar steg från 82,2 procent i juli 2021 till 83,4 procent 2023, seriens högsta, och har sedan legat mellan 82,7 och 82,9 procent i juli; i juli 2026 var den 82,8 procent, mot 82,5 procent i riket. Bara Hylte har lägre sysselsättningsgrad i länet. Arbetslösheten sjönk från 6,00 procent i juli 2021 till 4,90 procent 2023, steg till 5,90 procent 2025 och var 5,40 procent i juli 2026, mot 3,70 procent i länet och 5,00 procent i riket.",
+      "Antalet sysselsatta med arbetsplats i Halmstad, här kallat jobb, är 2,1 procent högre än i juli 2021, mot 4,5 procent i riket, men minskade det senaste året. Efter seriens högsta nivå i juli 2025 minskade antalet med 1 110 till 56 213 i juli 2026. Minskningen, 1,9 procent, är den största bland länets kommuner och den största för juli sedan 2021. Offentlig sektor minskade mest, med 840 personer, följd av transport med 296, medan hotell och restaurang ökade med 201. Antalet sysselsatta som bor i kommunen ökade samtidigt med 108, vilket kan tyda på att färre pendlar in eller att fler boende arbetar på annat håll.",
+      "Befolkningen växer, men långsammare för varje år: ökningen mot samma månad året innan har minskat från 844 personer i juli 2021 till 200 i juli 2026. Bostadsbyggandet har däremot ökat från en låg nivå. Under andra kvartalet 2026 påbörjades 107 lägenheter, flest i länet, mot 9 samma kvartal 2024 och 201 samma kvartal 2021. För planeringen betyder det att byggandet har ökat igen medan sysselsättningsgraden och antalet jobb är lägre än 2023. Ett enskilt år i preliminära uppgifter är ännu ingen ny riktning."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["K_SYSS_TOT"],
+        "rubrik": "Sysselsättningsgraden toppade 2023 och ligger strax över rikets"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["K_DAG_TOT"],
+        "rubrik": "Antalet jobb är högre än 2021 men minskade senaste året"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["K_BYGG_TOT"],
+        "rubrik": "Byggandet har ökat från botten 2024 men ligger under 2021"
+      }
     ]
   }
 }

@@ -1,29 +1,49 @@
 {
-  "hash": "b10bbb6f8c7def299a0d686345836b44",
+  "hash": "0f6a58bef56619718ec7ddfb9ae725b5",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Utsläppen per invånare under riket, men transporter och jordbruk över",
-    "ingress": "Halland släpper ut något mindre växthusgaser per invånare än riket, men länets profil skiljer sig: transporter och jordbruk väger tyngre och industrin lättare. Mellan kommunerna är skillnaderna stora, och de senaste fem åren har utsläppen minskat långsammare än i landet.",
+    "rubrik": "Lägre utsläpp än riket, men mer från transporter och jordbruk",
+    "ingress": "Hallands utsläpp av växthusgaser har minskat från 6,49 ton koldioxidekvivalenter per invånare 2010 till 4,31 ton 2024, något under rikets 4,50 ton, trots en ökning under 2024. Transporter och jordbruk ger mer utsläpp per invånare än i riket, industrin mindre.",
     "i_korthet": [
       {
-        "ledtext": "Transporterna ligger över riksnivån",
-        "text": "Transportutsläppen uppgick till 2,13 ton koldioxidekvivalenter per invånare 2024, vilket är 0,53 ton mer än i riket."
+        "ledtext": "Lång minskning, ökning 2024",
+        "text": "Utsläppen minskade varje år från 2015 till 3,81 ton per invånare 2023 och ökade med 0,50 ton under 2024, mot 0,32 ton i riket."
       },
       {
-        "ledtext": "Stor spridning mellan kommunerna",
-        "text": "Laholm släppte ut 6,48 ton per invånare och Kungsbacka 2,59 ton, medan länet låg på 4,31 ton."
+        "ledtext": "Transporter och jordbruk över riket",
+        "text": "Transporterna gav 2,13 ton och jordbruket 1,01 ton per invånare, 0,53 respektive 0,43 ton mer än i riket."
       },
       {
-        "ledtext": "Lägre andel förnybar el än riket",
-        "text": "Förnybara källor stod för 13,5 procent av elproduktionen i länet 2022, mot 65,6 procent i riket."
+        "ledtext": "Laholm högst, Kungsbacka lägst",
+        "text": "Utsläppen var 6,48 ton per invånare i Laholm och 2,59 ton i Kungsbacka, mot 4,31 ton i länet."
       }
     ],
     "stycken": [
-      "Halland släpper ut något mindre växthusgaser per invånare än riket, men sammansättningen skiljer sig tydligt. Utsläppen uppgick till 4,31 ton koldioxidekvivalenter per invånare 2024, vilket är 0,19 ton under riket. Transporter stod för 2,13 ton och jordbruk för 1,01 ton, alltså 0,53 respektive 0,43 ton över riksnivån. Det som framför allt håller nere totalen är industrin: med 0,30 ton per invånare ligger den 0,93 ton under riket.",
-      "Skillnaderna mellan kommunerna är större än skillnaden mot riket. Laholm har de högsta utsläppen med 6,48 ton per invånare och Kungsbacka de lägsta med 2,59 ton. Jordbruket förklarar en stor del av Laholms nivå med 3,06 ton, medan Hylte sticker ut med industriutsläpp på 1,20 ton och länets högsta transportutsläpp på 2,90 ton. Bland landets 21 regioner har Halland det tredje högsta värdet för jordbruk och det femte högsta för transporter. Minskningen har också gått långsammare än i landet: på fem år sjönk utsläppen med 0,07 ton mot 0,36 ton i riket, och 2024 ökade de med 0,50 ton mot 0,32 ton i riket.",
-      "Mönstret hänger sannolikt samman med länets läge mellan två storstadsregioner. Om många reser med bil längs E6 och utsläppen räknas där trafiken sker, hamnar transportutsläppen högt i kustkommunerna, medan Kungsbackas energianvändning för transporter, länets lägsta med 4,96 MWh per invånare, kan spegla att en del av körningen sker inom Göteborgs gräns. Samtidigt kom 13,5 procent av den el som producerades i länet 2022 från förnybara källor, lägst bland de tio regioner som redovisas. För planeringen pekar det på att transporter, jordbruk och lokal elproduktion är de områden där länet skiljer sig mest från riket, med olika tyngdpunkt i olika kommuner."
+      "Hallands utsläpp av växthusgaser har minskat under lång tid, men nedgången bröts 2024. Utsläppen inom länets gräns sjönk från 6,49 ton koldioxidekvivalenter per invånare 2010 till 4,85 ton 2015 och därefter varje år till 3,81 ton 2023, seriens lägsta värde. Under 2024 ökade de med 0,50 ton till 4,31 ton, mot 0,32 ton i riket. På fem år har utsläppen därmed minskat med 0,07 ton, mot 0,36 ton i riket. Transporterna stod för den största delen av ökningen, 0,40 ton, följda av arbetsmaskiner med 0,05 och el och fjärrvärme med 0,03 ton. Ett enskilt år är ännu ingen ny riktning.",
+      "Länets utsläpp ligger 0,19 ton under rikets, men sammansättningen skiljer sig. Transporterna är den största sektorn med 2,13 ton per invånare och jordbruket ger 1,01 ton, 0,53 respektive 0,43 ton mer än i riket; bland landets 21 regioner har Halland den femte respektive tredje högsta nivån. Industrin ger 0,30 ton, 0,93 ton mindre än i riket. Mellan kommunerna är skillnaderna större: Laholm släppte ut 6,48 ton per invånare och Kungsbacka 2,59. Laholm har länets högsta utsläpp från jordbruk, 3,06 ton, Hylte från industri och transporter, 1,20 och 2,90 ton, och Halmstad från el och fjärrvärme, 1,01 ton mot högst 0,03 i övriga kommuner.",
+      "Skillnaderna hänger sannolikt samman med att utsläppen räknas där de uppstår och delas med kommunens invånare. Trafik på stora vägar, jordbruk och enskilda anläggningar kan då ge höga värden per invånare i kommuner med liten befolkning eller mycket landsbygd. Utsläppen av kväveoxider har minskat från 28,2 kg per invånare 2010 till 16,6 kg 2024, seriens lägsta värde, men på fem år mindre än i riket, 4,1 mot 9,7 kg. För planeringen innebär det att transporter och jordbruk, länets två största utsläppskällor, väger tyngst för hur utsläppen utvecklas."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N00401"],
+        "rubrik": "Utsläppen har minskat sedan 2010 men ökade 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N00401"],
+        "rubrik": "Högst utsläpp per invånare i Laholm, lägst i Kungsbacka"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N85047"],
+        "rubrik": "Kväveoxiderna har minskat till seriens lägsta nivå"
+      }
     ]
   }
 }

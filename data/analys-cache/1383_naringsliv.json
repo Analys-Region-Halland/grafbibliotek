@@ -1,29 +1,49 @@
 {
-  "hash": "8927df2bc535accbb047de05212d616a",
+  "hash": "4d953b002fcb68422c7dc724eb2c1829",
   "period": "2023",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Antalet sysselsatta i Varberg ökade när resten av länet backade",
-    "ingress": "Antalet sysselsatta med arbetsplats i Varberg ökade svagt 2024, medan både länet och riket backade. Offentlig sektor växte mer än näringslivet minskade, och andelarna inom energi och miljö, bygg samt hotell och restaurang är större än i riket.",
+    "rubrik": "Antalet som arbetar i Varberg växer, men allt långsammare",
+    "ingress": "Antalet sysselsatta med arbetsställe i Varberg har ökat varje år sedan 2020, men ökningen har avtagit från 2,3 procent 2021 till 0,1 procent 2024. Varberg var ändå den enda kommunen i länet där antalet ökade 2024, och ökningen kom från offentlig sektor medan näringslivet minskade något.",
     "i_korthet": [
       {
-        "ledtext": "Enda växande kommunen i Halland",
-        "text": "Antalet sysselsatta med arbetsplats i Varberg ökade med 0,1 procent 2024, medan riket minskade med 0,4 procent och alla andra kommuner i länet backade."
+        "ledtext": "Ökning varje år sedan 2020",
+        "text": "Antalet steg från 31 380 år 2020 till 32 484 år 2024, men med 0,1 procent det senaste året mot 2,3 procent 2021."
       },
       {
-        "ledtext": "Energi och miljö sticker ut",
-        "text": "Branschen står för 4,9 procent av de sysselsatta, högst i länet och 3,7 procentenheter över riket."
+        "ledtext": "Enda ökningen i länet 2024",
+        "text": "Antalet ökade med 0,1 procent i Varberg, medan det minskade med 0,7 procent i länet och 0,4 procent i riket."
       },
       {
-        "ledtext": "IT-sektorn är liten jämfört med riket",
-        "text": "IT och kommunikation har 1,4 procent av de sysselsatta i Varberg, 3,3 procentenheter under riket."
+        "ledtext": "Energi och miljö störst i länet",
+        "text": "Branschen har 4,9 procent av de sysselsatta på arbetsställen i Varberg, högst i länet och 3,7 procentenheter mer än i riket."
       }
     ],
     "stycken": [
-      "Antalet sysselsatta med arbetsplats i Varberg ökade 2024 med 0,1 procent till 32 484, medan riket minskade med 0,4 procent. Offentlig sektor växte med 78 sysselsatta, eller 0,8 procent, medan näringslivet minskade med 47, eller 0,2 procent. Bland kvinnor ökade antalet med 1,1 procent och bland utrikes födda med 1,8 procent, medan det minskade med 0,9 procent bland män och 0,2 procent bland inrikes födda. Tempot har mattats sedan 2021, då ökningen var 2,3 procent.",
-      "Varberg var den enda kommunen i Halland där antalet sysselsatta ökade, medan Halmstad backade med 1,1 procent och Laholm med 2,3 procent. Branschprofilen avviker också från rikets: energi och miljö står för 4,9 procent av de sysselsatta, högst i länet och 3,7 procentenheter över riket, och byggverksamheten för 10,4 procent, 3,3 procentenheter över riket. Hotell och restaurang har 5,2 procent, samma andel som i Falkenberg och länets högsta nivå. IT och kommunikation har däremot 1,4 procent av de sysselsatta, 3,3 procentenheter under riket, och företagstjänsterna ligger 3,0 procentenheter under.",
-      "Den stora byggsektorn kan spegla stadsutvecklingen i hamnområdet efter tunneln, och den gör sysselsättningen känslig för byggtakten. Andelen sjönk från 11,1 till 10,4 procent på ett år. Koncentrationen inom energi och miljö kan peka på att ett fåtal arbetsställen väger tungt, och närheten till Göteborg via pendeltåget kan bidra till att kunskapsintensiva tjänster som IT och företagstjänster i högre grad finns där. För planeringen betyder det att ökningen 2024 kom från offentlig sektor, medan näringslivet minskade något. Nyföretagandet ökade 2025 till 11,9 företag per 1 000 invånare 16–64 år, 0,4 över riket."
+      "Antalet personer som arbetar i Varberg har ökat varje år sedan 2020, men allt långsammare. Måttet räknar de sysselsatta efter arbetsställets kommun, oavsett var de bor, och serien börjar 2020. Antalet steg från 31 380 år 2020 till 32 484 år 2024, seriens högsta värde, medan den årliga ökningen sjönk från 2,3 procent 2021 till 0,9 procent 2022 och 0,2 procent 2023. Under 2024 blev de sysselsatta 31 fler, en ökning med 0,1 procent. Offentlig sektor har vuxit varje år och ökade med 78 det senaste året, medan näringslivet minskade med 47 och har minskat något varje år sedan toppen 2022.",
+      "Varberg var den enda kommunen i Halland där antalet sysselsatta ökade 2024. Länet minskade med 0,7 procent och riket med 0,4 procent, och grannkommunerna Falkenberg och Kungsbacka minskade med 0,3 respektive 0,6 procent. Även branschprofilen skiljer sig från rikets. Energi och miljö har 4,9 procent av de sysselsatta på arbetsställen i Varberg, länets högsta andel och den femte högsta bland landets kommuner. Byggverksamheten har 10,4 procent och hotell och restaurang 5,2 procent, 3,3 respektive 1,4 procentenheter mer än i riket, medan IT och kommunikation och företagstjänster har 3,3 respektive 3,0 procentenheter lägre andelar.",
+      "Den jämförelsevis stora byggsektorn kan spegla stadsutvecklingen i hamnområdet efter tunneln och kan göra antalet sysselsatta känsligare för byggtakten. Byggverksamhetens andel sjönk från 11,1 till 10,4 procent på ett år. Samtidigt har andelen företagare i aktiebolag ökat varje år, från 6,1 procent 2020 till 7,1 procent 2024, medan andelen egenföretagare sjönk från 5,9 till 4,8 procent. Det kan spegla att fler driver sin verksamhet som aktiebolag. För planeringen betyder det att ökningen har avtagit varje år sedan 2021 och att den under 2023 och 2024 kom från offentlig sektor, medan näringslivet minskade något båda åren."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N_SEK_TOT_TILLV"],
+        "rubrik": "Ökningen har avtagit varje år sedan 2021"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N_BR_DE_A"],
+        "rubrik": "Varberg har länets största andel sysselsatta inom energi och miljö"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N_YRK_EGAB_A"],
+        "rubrik": "Andelen företagare i aktiebolag har ökat varje år sedan 2020"
+      }
     ]
   }
 }

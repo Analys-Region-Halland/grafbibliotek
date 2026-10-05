@@ -1,29 +1,49 @@
 {
-  "hash": "c95089c8d70ceb290505e6a442e7149e",
-  "period": "2024",
+  "hash": "8815d359e49e4d94fda43503d3b8bac9",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Bostadsbyggandet har minskat kraftigt sedan toppåret 2020",
-    "ingress": "Falkenberg bygger i dag betydligt färre bostäder per invånare än länet och riket, efter en topp 2020. Antalet bostäder per invånare ökar långsammare än i riket, beståndet domineras av äganderätter och priserna sjönk det senaste året.",
+    "rubrik": "Byggandet svänger kraftigt och har legat nära botten sedan 2024",
+    "ingress": "Falkenberg färdigställde mellan 2,93 och 8,79 bostäder per 1 000 invånare per år 2015–2023, men 1,16 år 2024 och 1,29 år 2025. Antalet bostäder per invånare har ökat mindre än i riket de senaste fem åren, och hushållen blir fler i lägre takt än före 2020.",
     "i_korthet": [
       {
-        "ledtext": "Byggandet har fallit sedan 2020",
-        "text": "Nybyggda bostäder sjönk från 8,79 per 1 000 invånare år 2020 till 1,29 år 2025, mot 3,83 i länet och 2,96 i riket."
+        "ledtext": "Byggandet nära seriens lägsta nivå",
+        "text": "Under 2024 färdigställdes 1,16 bostäder per 1 000 invånare, det lägsta sedan serien började 2010, och 2025 1,29, mot 2,96 i riket."
       },
       {
         "ledtext": "Färre bostäder per invånare än riket",
-        "text": "Falkenberg har 469,8 bostäder per 1 000 invånare, 29,1 färre än riket och näst lägst bland Hallands kommuner."
+        "text": "Antalet bostäder per 1 000 invånare var 469,8 år 2025, mot 498,9 i riket, och har ökat mindre än i riket både på fem år och det senaste året."
       },
       {
-        "ledtext": "Priserna sjönk senaste året",
-        "text": "Småhuspriset sjönk med 651 kronor per kvadratmeter till 26 108, medan det steg med 862 kronor i riket."
+        "ledtext": "Lägre trångboddhet än i riket",
+        "text": "Enligt norm 3 var 33,8 procent av de boende i flerbostadshus trångbodda 2025, mot 38,7 procent i riket."
       }
     ],
     "stycken": [
-      "Bostadsbyggandet i Falkenberg har mattats av kraftigt efter toppen 2020. Det året färdigställdes 8,79 bostäder per 1 000 invånare, den högsta nivån i serien sedan 2010, mot 1,29 år 2025, en liten ökning från seriens lägsta nivå 1,16 året innan. Både småhus och flerbostadshus har minskat: på fem år sjönk färdigställda småhus från 5,08 till 0,70 och lägenheter i flerbostadshus från 3,71 till 0,59 per 1 000 invånare. Antalet bostäder per 1 000 invånare har ökat med 26,2 på tio år, mot 43,1 i riket.",
-      "I länet bygger Kungsbacka med 7,91 och Halmstad med 3,87 per 1 000 invånare mer än länets 3,83, medan Falkenberg hamnar på fjärde plats. Skillnaden mot riket ligger i flerbostadshusen: småhusbyggandet på 0,70 per 1 000 invånare är högre än rikets 0,52, om än under länets 0,84, men lägenhetsbyggandet ligger 1,84 under riket. Beståndet har samma tyngdpunkt: äganderätter utgör 54,1 procent, 17,5 procentenheter över riket, och hyresrätter 29,8 procent, 9,2 procentenheter under.",
-      "En möjlig förklaring till det låga lägenhetsbyggandet är prisnivån. Bostadsrätter kostar 21 778 kronor per kvadratmeter mot 39 813 i riket, och både bostadsrätts- och småhuspriserna sjönk senaste året när rikets steg. Om priserna ligger lägre kan det bli svårare att få flerbostadshus att bära sina byggkostnader. Planberedskapen år 2019, med 39,7 bostäder i detaljplan per 1 000 invånare, pekar på att planlagd mark då inte saknades, även om uppgiften är äldre. För planeringen innebär det att tillskottet av lägenheter är litet, samtidigt som trångboddheten i flerbostadshus ligger 0,8 procentenheter över länet men 1,7 under riket."
+      "Byggandet i Falkenberg svänger kraftigt och har de senaste två åren legat nära seriens botten. Åren 2015–2023 färdigställdes mellan 2,93 och 8,79 bostäder per 1 000 invånare per år, med toppar 2020 och 2022. Under 2024 sjönk nivån till 1,16, seriens lägsta, och 2025 steg den något, till 1,29, medan riket minskade med 1,34. Nivån är 2,53 lägre än 2015, mot 0,56 i riket, och 7,51 lägre än toppåret 2020. Nedgången gäller både småhus och flerbostadshus. Två år räcker inte för att tala om en ny riktning, men båda åren ligger under samtliga år 2015–2023.",
+      "Under 2025 låg Falkenberg fjärde i länet, efter Kungsbacka, Halmstad och Varberg, och under både länets 3,83 och rikets 2,96. Antalet bostäder per 1 000 invånare var 469,8, näst lägst i länet, och har ökat med 7,1 på fem år och 1,3 det senaste året, mot 13,6 och 2,1 i riket. Priset för småhus var 26 108 kronor per kvadratmeter, 2 776 kronor under riket, efter att ha stigit med 5 314 kronor på fem år, mer än rikets 4 065, men sjunkit med 651 kronor det senaste året.",
+      "Det lägre byggandet kan hänga samman med att hushållen blir fler i lägre takt: antalet ökade från 19 247 år 2016 till 20 665 år 2020, men under de fem år som följde med 930. Trångboddheten har inte ökat: enligt den striktare norm 3 har andelen trångbodda i flerbostadshus legat mellan 33,8 och 36,1 procent sedan 2015 och var 33,8 procent 2025, mot 38,7 i riket. Planberedskapen var 39,7 möjliga bostäder per 1 000 invånare 2019, ned från 139,7 år 2015, men nyare uppgifter saknas. För planeringen visar först de kommande åren om 2024 och 2025 var en svacka eller en ny, lägre nivå."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N07917"],
+        "rubrik": "Byggandet toppade 2020 och har legat nära botten sedan 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N07913"],
+        "rubrik": "Falkenberg har näst lägst antal bostäder per invånare i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N07914"],
+        "rubrik": "Trångboddheten har legat mellan 33,8 och 36,1 procent sedan 2015"
+      }
     ]
   }
 }

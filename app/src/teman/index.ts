@@ -25,6 +25,9 @@ export const TEMAN: TemaConfig[] = [
   socioekonomi,
 ];
 
+/** KPI:er där länets värde inte är jämförbart med kommunernas (se lanEjJamforbar) */
+export const LAN_EJ_JAMFORBAR = new Set(TEMAN.flatMap((t) => t.lanEjJamforbar ?? []));
+
 /** Hämta ett tema baserat på ID */
 export function getTema(temaId: string): TemaConfig | undefined {
   return TEMAN.find((t) => t.temaId === temaId);

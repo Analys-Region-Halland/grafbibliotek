@@ -1,1 +1,49 @@
-{"hash": "8a8a72711bec697353e211a5a6a73294", "period": "2025", "skriven_av": "Claude Code", "granskad": "2026-10-02", "res": {"rubrik": "Snabbast ökning i länet, lägst intäkt per gästnatt", "ingress": "Gästnätterna i Laholm ökade snabbare än i någon annan halländsk kommun 2025, men på tio års sikt är volymen något lägre än 2015. Besöksnäringen präglas av camping, länets lägsta beläggning och den lägsta intäkten per gästnatt i länet.", "i_korthet": [{"ledtext": "Högst tillväxt i länet 2025", "text": "Gästnätterna ökade med 9,8 procent, jämfört med 5,4 procent i Halland och 2,5 procent i riket."}, {"ledtext": "Ingen ökning på tio år", "text": "Antalet gästnätter är 1,4 procent lägre än 2015, medan riket ökat med 17,8 procent under samma period."}, {"ledtext": "Lägst intäkt per gästnatt", "text": "Logiintäkten per gästnatt är 266 kronor, mot 427 kronor i Halland och 578 kronor i riket."}], "stycken": ["Besöksnäringen i Laholm växte snabbare än i övriga Halland 2025, efter en minskning med 4,0 procent året innan. Gästnätterna ökade med 9,8 procent till 163 712, mot 5,4 procent i länet och 2,5 i riket, och logiintäkterna steg med 17,6 procent mot 8,0 procent i länet. På tio års sikt är bilden en annan: antalet gästnätter är 1,4 procent lägre än 2015, medan riket ökat med 17,8 procent. Det betyder att Laholm 2025 kom nära sin tidigare toppnivå från 2015, men inte förbi den.", "Jämfört med grannkommunerna är Laholm en mindre destination med tydlig campingprägel. Kommunen har 6 gästnätter per invånare, mot 9 i Halland, 7 i riket och 20 i Falkenberg. Camping står för 123 992 av kommunens 163 712 gästnätter. Beläggningen på hotell, stugbyar och vandrarhem är den lägsta i länet: rumsbeläggningen är 31,1 procent, vilket är 21,1 procentenheter under Halland. Utländska gäster står för 19,2 procent av gästnätterna, näst högst i länet men 7,1 procentenheter under riket.", "Mönstret hänger sannolikt samman med ett utbud som domineras av camping och mindre anläggningar, med 9 095 gästnätter per anläggning mot 21 615 i länet. Intäkten per gästnatt är 266 kronor, mot 427 i länet och 578 i riket. Om en stor del av nätterna säljs som campingplatser blir intäkten per natt lägre, och om efterfrågan samlas till sommaren står rum och bäddar outnyttjade resten av året. För planeringen pekar siffrorna på att intäkterna från besöksnäringen beror på intäkten per gästnatt och beläggningen, inte bara på antalet gästnätter."]}}
+{
+  "hash": "c74bb39ca3cfaae3bbd00533351ee6c2",
+  "period": "2025",
+  "skriven_av": "Claude Code",
+  "granskad": "2026-10-05",
+  "res": {
+    "rubrik": "Ungefär lika många gästnätter som 2015, men fler utländska",
+    "ingress": "Laholm hade 163 712 gästnätter vid kommersiella boenden 2025, 1,4 procent färre än 2015, efter en nedgång före pandemin och en återhämtning efter den. De svenska gästnätterna har blivit färre och de utländska fler, och campingen står för de flesta nätterna.",
+    "i_korthet": [
+      {
+        "ledtext": "I stort sett oförändrat sedan 2015",
+        "text": "Gästnätterna minskade med 1,4 procent sedan 2015, mot en ökning med 17,8 procent i riket, men ökade med 9,8 procent 2025, mest i länet."
+      },
+      {
+        "ledtext": "Fler utländska, färre svenska gästnätter",
+        "text": "Sedan 2015 har de utländska gästnätterna ökat med 11 366 och de svenska minskat med 13 669."
+      },
+      {
+        "ledtext": "Lägst intäkt per natt i länet",
+        "text": "Logiintäkten per gästnatt var 266 kronor 2025, mot 427 kronor i länet och 578 kronor i riket."
+      }
+    ],
+    "stycken": [
+      "Antalet gästnätter i Laholm är ungefär detsamma som för tio år sedan, efter en nedgång före pandemin och en återhämtning efter den. Från seriens högsta värde, 166 035 år 2015, minskade antalet varje år utom 2017 till 139 788 år 2019. Pandemiåret 2020 föll det till 114 106, seriens lägsta, men redan 2021 låg det över 2019 års nivå. Efter nedgångar 2023 och 2024 ökade antalet med 9,8 procent 2025 till 163 712, mest i länet. Det är 1,4 procent färre än 2015, medan riket ökade med 17,8 procent, och ökningen med 43,5 procent på fem år räknas från den lägsta nivån 2020.",
+      "Bakom den i stort sett oförändrade nivån har de svenska gästnätterna blivit färre och de utländska fler. Sedan 2015 har de svenska minskat med 13 669, eller 9,4 procent, och de utländska ökat med 11 366, eller 56,8 procent. Andelen utländska gästnätter har ökat med 7,1 procentenheter sedan 2015, mot 2,5 i riket, med ett fall under pandemin, och var 19,2 procent 2025. Det är näst högst i länet efter Hylte och 4,3 procentenheter över länet, men under rikets 26,3 procent. Med 6 gästnätter per invånare ligger Laholm under länets 9 och grannkommunen Halmstads 8.",
+      "Campingen står för de flesta gästnätterna, 123 992 av 163 712 år 2025, vilket sannolikt bidrar till att logiintäkten per gästnatt, 266 kronor, är lägst i länet: 161 kronor under länets och 312 kronor under rikets. Rumsbeläggningen på hotell, stugbyar och vandrarhem var 31,1 procent, också lägst i länet, och har sjunkit varje år sedan 2022, då den var 40,9 procent. För planeringen innebär det att volymen finns på campingen, medan rummen på hotell, stugbyar och vandrarhem används i lägre grad än i länet och riket."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["T_GAST_TOT"],
+        "rubrik": "Efter nedgång och pandemi är gästnätterna nära 2015 års nivå"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["T_ANDEL_UTL_NATTER"],
+        "rubrik": "Andelen utländska gästnätter har stigit mer än i riket"
+      },
+      {
+        "efter": 2,
+        "typ": "halland",
+        "kpi": ["T_INTAKT_PER_GAST"],
+        "rubrik": "Laholm har lägst intäkt per gästnatt i länet"
+      }
+    ]
+  }
+}

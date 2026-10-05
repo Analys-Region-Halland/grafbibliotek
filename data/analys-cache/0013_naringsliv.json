@@ -1,29 +1,49 @@
 {
-  "hash": "18daf52df25642af5ad4baa6876837ba",
+  "hash": "31f4ccf511f1f5d3c4e80c0f430b0576",
   "period": "2023",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Handel och eget företagande präglar Hallands näringsliv",
-    "ingress": "Halland har landets största andel sysselsatta inom handel och landets största andel företagare i aktiebolag. Kunskapsintensiva tjänster väger däremot lättare än i riket, och kommunerna skiljer sig tydligt åt i näringsstruktur.",
+    "rubrik": "Handel och företagande präglar Halland medan jobbtillväxten har avtagit",
+    "ingress": "Halland har störst andel sysselsatta inom handel och störst andel företagare i aktiebolag bland landets 21 regioner. Antalet sysselsatta med arbetsställe i länet växte till och med 2023 i allt lägre takt och minskade med 0,7 procent 2024, mot 0,4 procent i riket.",
     "i_korthet": [
       {
-        "ledtext": "Störst handelsandel i landet",
-        "text": "Handeln sysselsätter 14,9 procent i Halland, 3,4 procentenheter över riket och högst bland landets 21 regioner."
+        "ledtext": "Störst handelsandel bland regionerna",
+        "text": "Handeln står för 14,9 procent av de sysselsatta på arbetsställen i länet, 3,4 procentenheter över riket och högst bland landets 21 regioner."
       },
       {
-        "ledtext": "Högst andel företagare i aktiebolag",
-        "text": "Företagare i aktiebolag utgör 7,2 procent av de sysselsatta mot 5,8 procent i riket, den högsta andelen i landet."
+        "ledtext": "Jobbtillväxten har avtagit sedan 2021",
+        "text": "Antalet sysselsatta med arbetsställe i länet ökade med 2,50 procent 2021 och 0,30 procent 2023 men minskade med 0,70 procent 2024."
       },
       {
-        "ledtext": "Kunskapstjänster ligger under riket",
-        "text": "IT och kommunikation ligger 3,1 procentenheter och företagstjänster 3,4 procentenheter under rikets andelar."
+        "ledtext": "Växande andel företagare i aktiebolag",
+        "text": "Andelen företagare i aktiebolag har ökat varje år från 6,40 procent 2020 till 7,20 procent 2024, högst bland landets regioner."
       }
     ],
     "stycken": [
-      "Hallands näringsliv har en tydlig profil: handel, bygg och eget företagande väger tyngre än i riket, medan kunskapsintensiva tjänster väger lättare. Handeln står för 14,9 procent av sysselsättningen, 3,4 procentenheter över riket och högst bland landets regioner. Andelen företagare i aktiebolag är 7,2 procent mot 5,8 procent i riket, också den högsta i landet, och byggverksamheten ligger 1,5 procentenheter över riket. Omvänt ligger IT och kommunikation 3,1 procentenheter och företagstjänster 3,4 procentenheter under riket, och andelen sysselsatta med eftergymnasial utbildning är 6,7 procentenheter lägre.",
-      "Bakom länets genomsnitt finns kommuner med mycket olika näringsstruktur. Hylte är länets industrikommun, där tillverkningen står för 34,2 procent av sysselsättningen mot 10,4 procent i länet. Kungsbacka har störst andel företagare i aktiebolag med 12,2 procent, medan Laholm har störst andel egenföretagare, 10,7 procent, och jordbruk, 7,5 procent. Halmstad är länets mest anställningspräglade kommun med 91,5 procent anställda. Under 2024 minskade antalet sysselsatta med arbetsställe i länet med 0,7 procent mot 0,4 procent i riket, med ett spann från en ökning på 0,1 procent i Varberg till en minskning på 2,3 procent i Laholm.",
-      "Profilen hänger sannolikt samman med läget mellan Göteborg och Malmö. Statistiken mäter jobb där arbetsstället ligger: om många hallänningar med eftergymnasial utbildning pendlar till storstädernas tjänsteföretag, så syns de jobben där och inte i Halland. Den stora andelen företagare i aktiebolag i Kungsbacka kan spegla en inflyttad befolkning som driver företag nära bostaden. För planeringen pekar mönstret på två saker: Hyltes sysselsättning är mer koncentrerad till tillverkning än någon annan kommuns i länet, och antalet förvärvsarbetande utrikes födda minskade med 1,0 procent när det ökade med 0,7 procent i riket, vilket gav plats 20 av 21 regioner."
+      "Antalet sysselsatta med arbetsställe i Halland, oavsett var de bor, växte från 2020 till 2023 i allt lägre takt och minskade 2024. Antalet steg från 145 491 år 2020 till 151 593 år 2023, medan den årliga tillväxten sjönk från 2,50 procent 2021 till 0,30 procent 2023. Under 2024 minskade antalet med 1 105 personer, eller 0,7 procent, mot 0,4 procent i riket. Näringslivet minskade med 724 sysselsatta, andra året i rad, och offentlig sektor med 381 efter att ha växt varje år till och med 2023.",
+      "Branschsammansättningen skiljer Halland från riket. Handeln står för 14,9 procent av de sysselsatta på arbetsställen i länet, 3,4 procentenheter över riket och högst bland regionerna, och byggverksamheten för 8,60 procent, 1,50 procentenheter över riket. IT och kommunikation samt företagstjänster ligger i stället 3,10 respektive 3,40 procentenheter under riket. Inom länet skiljer sig kommunerna åt: handeln väger tyngst i Falkenberg, 19,8 procent, och tillverkningen i Hylte, 34,2 procent mot 10,4 procent i länet. Under 2024 ökade antalet bara i Varberg, medan Laholm och Hylte minskade mest, med 2,30 och 2,00 procent.",
+      "Företagandet är mer utbrett än i riket och har skiftat form. Andelen företagare i aktiebolag har ökat varje år, från 6,40 procent 2020 till 7,20 procent 2024, högst bland regionerna, medan andelen egenföretagare har sjunkit från 6,50 till 5,10 procent, mest 2024, då även rikets andel sjönk. Det kan delvis spegla en övergång till aktiebolag. Att IT och kommunikation väger lättare än i de flesta regioner, plats 17 av 21, kan hänga samman med pendlingen till Göteborgsregionen och Skåne: statistiken räknar jobben där arbetsstället ligger, så den som pendlar ut ur länet räknas inte här. För planeringen betyder det att jobben i länet och de boendes jobb behöver följas var för sig."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N_SEK_TOT_TILLV"],
+        "rubrik": "Tillväxten i antalet sysselsatta har avtagit varje år sedan 2021"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N_BR_G_A"],
+        "rubrik": "Handelns andel överstiger rikets i alla kommuner utom Hylte"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N_YRK_EGAB_A"],
+        "rubrik": "Andelen företagare i aktiebolag har ökat varje år sedan 2020"
+      }
     ]
   }
 }

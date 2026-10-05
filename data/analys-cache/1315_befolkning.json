@@ -1,29 +1,50 @@
 {
-  "hash": "35ead5aeac55a6af95fe401b9be2b647",
+  "hash": "8bdaa9652d56dff489e85d4c168ab19a",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Hylte krymper när fler flyttar ut och dör än föds",
-    "ingress": "Hylte är den halländska kommun som tappar invånare snabbast. Både födelsenettot och det inrikes flyttnettot är lägst i länet, och bara invandringsöverskottet drar åt andra hållet.",
+    "rubrik": "Hyltes folkmängd har minskat varje år sedan toppen 2017",
+    "ingress": "Hyltes folkmängd har minskat med 3,5 procent sedan 2000, medan rikets har ökat med 19,4 procent. Efter en kort ökning fram till 2017 har den minskat varje år, med 5,0 procent de senaste fem åren, när inrikes flyttnetto och födelsenetto har varit negativa och invandringsöverskottet har krympt sedan toppen 2016.",
     "i_korthet": [
       {
-        "ledtext": "Befolkningen har minskat sedan 2020",
-        "text": "Folkmängden har minskat med 5,0 procent på fem år, medan riket har vuxit med 2,2 procent."
+        "ledtext": "Minskning varje år sedan 2017",
+        "text": "Folkmängden har minskat med 3,8 procent på tio år och 5,0 procent på fem år, medan riket ökade med 7,6 respektive 2,2 procent."
       },
       {
-        "ledtext": "Inrikes flyttnetto lägst i länet",
-        "text": "Inrikes flyttnetto är -10,5 per 1 000 invånare, lägst i Halland, där länet ligger på 2,5."
+        "ledtext": "Inrikes flyttnetto negativt sedan 2000",
+        "text": "Under 2016–2025 var inrikes flyttnetto minus 1 739 personer, invandringsöverskottet 1 277 och födelsenettot minus 30."
       },
       {
-        "ledtext": "Fler dör än föds",
-        "text": "Med 127 döda och 90 födda blev födelsenettot -3,70 per 1 000 invånare, trots att fruktsamheten på 1,91 barn per kvinna är högst i länet."
+        "ledtext": "Färre födda, lägst födelsenetto i länet",
+        "text": "Antalet födda har minskat med 29,1 procent på tio år, mot 15,1 procent i riket, och födelsenettot var minus 3,70 per 1 000 invånare 2025, lägst i länet."
       }
     ],
     "stycken": [
-      "Hylte krymper, och minskningen har två källor samtidigt. Folkmängden var 10 117 vid utgången av 2025, 532 färre än 2020 eller 5,0 procent, medan riket växte med 2,2 procent. Den största källan är det inrikes flyttnettot: under 2021–2025 flyttade 607 fler personer från Hylte till andra delar av Sverige än tvärtom, medan födelsenettot gav ett underskott på 137 personer. Invandringsöverskottet gick åt andra hållet och lade till 167 personer. Mönstret gäller också 2025, då inrikes flyttnetto var -106 personer, födelsenettot -37 och invandringsöverskottet 34.",
-      "Hylte avviker tydligt från övriga Halland. Länet växte med 0,29 procent 2025 medan Hylte minskade med 1,00 procent, mest av länets kommuner. Samtliga kustkommuner har ett inrikes flyttöverskott, medan Hylte hamnar på plats 268 av landets 290 kommuner. Invandringsöverskottet, 3,40 per 1 000 invånare, är däremot det högsta i länet, och andelen utrikes födda var 23,9 procent 2024, högst i länet och 3,1 procentenheter över riket.",
-      "Att fruktsamheten är högst i länet samtidigt som fler dör än föds kan spegla att relativt få invånare befinner sig i barnafödande ålder. Det kan hänga samman med att unga vuxna flyttar mot kuststädernas utbildning och arbetsmarknader, och andelen kvinnor, 48,5 procent, är den lägsta i länet. Befolkningen åldras också snabbare än i riket: medelåldern har stigit med 1,5 år på fem år mot 1,0 år i riket. Den demografiska försörjningskvoten, alltså antalet unga och äldre per 100 invånare i arbetsför ålder, är 93,0 mot 77,0 i riket. För planeringen kan det innebära mindre barnkullar men ett växande omsorgsbehov, som färre i yrkesverksam ålder ska bära."
+      "Hyltes befolkning har minskat varje år sedan toppen 2017. Folkmängden var som lägst 10 001 år 2013 och som högst 10 990 år 2017, och har minskat med 3,5 procent sedan 2000, medan riket växte med 19,4 procent. På tio år har den minskat med 3,8 procent och på fem år med 5,0 procent, medan riket ökade med 7,6 respektive 2,2 procent. Under 2025 minskade den enligt preliminära uppgifter med 79 personer till 10 117, i linje med de senaste åren.",
+      "Inrikes flyttnetto har varit negativt varje år sedan 2000, och invandringsöverskottet har krympt. Under 2016–2025 var inrikes flyttnetto minus 1 739 personer, invandringsöverskottet 1 277 och födelsenettot minus 30. De senaste fem åren var inrikes flyttnetto minus 607, födelsenettot minus 137 och invandringsöverskottet 167, sedan invandringsöverskottet sjunkit från 52,80 per 1 000 invånare 2016 till 0,10 år 2024. Under 2025 var inrikes flyttnetto minus 106, födelsenettot minus 37 och invandringsöverskottet 34; de preliminära uppgifterna summerar inte exakt. Hylte minskade 2025 mest i länet, med länets lägsta inrikes flyttnetto, minus 10,5 per 1 000 invånare, medan länet växte med 0,29 procent.",
+      "Flyttmönstret kan spegla Hyltes läge som liten inlandskommun med pendling mot Halmstad och Falkenberg. Samtidigt föds färre: antalet födda har minskat med 29,1 procent på tio år, mot 15,1 procent i riket, och fler har dött än fötts varje år sedan 2021. Fruktsamheten har sjunkit från 2,31 till 1,91 barn per kvinna på tio år men är högst i länet. Försörjningskvoten, antalet unga och äldre per 100 invånare 20–64 år, steg från 85,1 år 2015 till 92,5 år 2020 och har sedan legat mellan 92,1 och 93,1, mot 77,0 i riket. För planeringen betyder det att folkmängden beror på om invandringsöverskottet väger upp det negativa inrikes flytt- och födelsenettot."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_BEF_TOTALT"],
+        "rubrik": "Folkmängden har minskat varje år sedan toppen 2017"
+      },
+      {
+        "efter": 1,
+        "typ": "delar",
+        "kpi": ["S_FODELSENETTO_ANTAL", "S_INRIKES_NETTO_ANTAL", "S_UTRIKES_NETTO_ANTAL"],
+        "summa": "S_BEF_FORANDR_ANTAL",
+        "rubrik": "Inrikes flyttnetto är negativt och invandringsöverskottet har krympt"
+      },
+      {
+        "efter": 2,
+        "typ": "uppdelning",
+        "kpi": ["S_FODDA_ANTAL", "S_DODA_ANTAL"],
+        "rubrik": "Fler har dött än fötts varje år sedan 2021"
+      }
     ]
   }
 }

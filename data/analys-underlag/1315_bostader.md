@@ -51,11 +51,10 @@ Mäter: Bostäder totalt (hyres-, bostads-, äganderätter och där information 
 - Plats bland landets 290 kommuner: 188 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 499,2; Hylte 489,3; Laholm 481,4; Varberg 479,6; Falkenberg 469,8; Kungsbacka 423,8
 - Plats bland Hallands 6 kommuner: 2
-- Förändring 10 år: +44,5 antal/1 000 inv (från 444,8 år 2015); riket +43,1 antal/1 000 inv
 - Förändring 5 år: +26,7 antal/1 000 inv (från 462,6 år 2020); riket +13,6 antal/1 000 inv
 - Förändring 1 år: +6,4 antal/1 000 inv (från 482,9 år 2024); riket +2,1 antal/1 000 inv
-- Hylte år för år: 2015 444,8; 2016 443,7; 2017 445,8; 2018 449,6; 2019 452,2; 2020 462,6; 2021 464,5; 2022 469,7; 2023 479,0; 2024 482,9; 2025 489,3
-- Serien för Hylte 2013–2025: högst 489,3 (2025), lägst 443,7 (2016)
+- Hylte år för år: 2016 443,7; 2017 445,8; 2018 449,6; 2019 452,2; 2020 462,6; 2021 464,5; 2022 469,7; 2023 479,0; 2024 482,9; 2025 489,3
+- Serien för Hylte 2016–2025: högst 489,3 (2025), lägst 443,7 (2016)
 
 ### Hyresrätter i bostadsbeståndet, andel [uppdelning av Antal bostäder per 1 000 invånare: upplåtelseformerna] (procent, 2025)
 - Hylte: 34,7
@@ -64,7 +63,6 @@ Mäter: Bostäder totalt (hyres-, bostads-, äganderätter och där information 
 - Plats bland landets 290 kommuner: 121 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 47,9; Varberg 37,7; Hylte 34,7; Falkenberg 29,8; Laholm 27,4; Kungsbacka 24,3
 - Plats bland Hallands 6 kommuner: 3
-- Förändring 10 år: +3,1 procentenheter (från 31,6 år 2015); riket +4,0 procentenheter
 - Förändring 5 år: +0,5 procentenheter (från 34,2 år 2020); riket +0,9 procentenheter
 - Förändring 1 år: +0,1 procentenheter (från 34,6 år 2024); riket +0,1 procentenheter
 
@@ -75,7 +73,6 @@ Mäter: Bostäder totalt (hyres-, bostads-, äganderätter och där information 
 - Plats bland landets 290 kommuner: 258 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Falkenberg 16,03; Varberg 14,61; Halmstad 13,31; Kungsbacka 12,11; Laholm 4,50; Hylte 2,35
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 10 år: -0,37 procentenheter (från 2,72 år 2015); riket +0,6 procentenheter
 - Förändring 5 år: -0,01 procentenheter (från 2,35 år 2020); riket +0,6 procentenheter
 - Förändring 1 år: -0,01 procentenheter (från 2,36 år 2024); riket +0,0 procentenheter
 
@@ -86,7 +83,6 @@ Mäter: Bostäder totalt (hyres-, bostads-, äganderätter och där information 
 - Plats bland landets 290 kommuner: 69 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 68,1; Kungsbacka 63,6; Hylte 62,9; Falkenberg 54,1; Varberg 47,7; Halmstad 38,8
 - Plats bland Hallands 6 kommuner: 3
-- Förändring 10 år: -2,8 procentenheter (från 65,7 år 2015); riket -4,6 procentenheter
 - Förändring 5 år: -0,5 procentenheter (från 63,5 år 2020); riket -1,4 procentenheter
 - Förändring 1 år: -0,1 procentenheter (från 63,1 år 2024); riket -0,1 procentenheter
 
@@ -154,11 +150,10 @@ Mäter: Antal hushåll 31/12 år T.
 - Plats bland landets 290 kommuner: 227 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 50 249; Kungsbacka 35 736; Varberg 32 039; Falkenberg 21 595; Laholm 12 067; Hylte 4 523
 - Plats bland Hallands 6 kommuner: 6
-- Förändring 10 år: +101 antal (från 4 422 år 2015), det vill säga +2,3 procent eller i genomsnitt +0,23 procent per år; riket +15,5 procent
 - Förändring 5 år: -57 antal (från 4 580 år 2020), det vill säga -1,2 procent eller i genomsnitt -0,25 procent per år; riket +4,7 procent
 - Förändring 1 år: -39 antal (från 4 562 år 2024), det vill säga -0,9 procent; riket +0,6 procent
-- Hylte år för år: 2015 4 422; 2016 4 648; 2017 4 662; 2018 4 643; 2019 4 633; 2020 4 580; 2021 4 597; 2022 4 580; 2023 4 574; 2024 4 562; 2025 4 523
-- Serien för Hylte 2011–2025: högst 4 662 (2017), lägst 4 247 (2012)
+- Hylte år för år: 2016 4 648; 2017 4 662; 2018 4 643; 2019 4 633; 2020 4 580; 2021 4 597; 2022 4 580; 2023 4 574; 2024 4 562; 2025 4 523
+- Serien för Hylte 2016–2025: högst 4 662 (2017), lägst 4 523 (2025)
 
 ### Ensamstående hushåll, andel [uppdelning av Hushåll, antal: hushållstyperna] (procent, 2025)
 - Hylte: 43,8
@@ -169,7 +164,6 @@ Mäter: Antal hushåll 31/12 år T.
 - Plats bland landets 290 kommuner: 237 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Halmstad 49,0; Varberg 44,1; Falkenberg 43,9; Hylte 43,8; Laholm 41,8; Kungsbacka 37,0
 - Plats bland Hallands 6 kommuner: 4
-- Förändring 10 år: +3,2 procentenheter (från 40,6 år 2015); riket +4,0 procentenheter
 - Förändring 5 år: +2,3 procentenheter (från 41,5 år 2020); riket +1,6 procentenheter
 - Förändring 1 år: +0,1 procentenheter (från 43,7 år 2024); riket +0,2 procentenheter
 
@@ -182,7 +176,6 @@ Mäter: Antal hushåll 31/12 år T.
 - Plats bland landets 290 kommuner: 66 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Kungsbacka 58,1; Laholm 53,5; Varberg 51,7; Falkenberg 51,4; Hylte 50,8; Halmstad 46,2
 - Plats bland Hallands 6 kommuner: 5
-- Förändring 10 år: -2,4 procentenheter (från 53,1 år 2015); riket -2,5 procentenheter
 - Förändring 5 år: -1,6 procentenheter (från 52,4 år 2020); riket -0,7 procentenheter
 - Förändring 1 år: -0,1 procentenheter (från 50,9 år 2024); riket -0,0 procentenheter
 
@@ -195,7 +188,6 @@ Mäter: Antal hushåll 31/12 år T.
 - Plats bland landets 290 kommuner: 50 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Hylte 5,39; Kungsbacka 4,84; Halmstad 4,78; Falkenberg 4,78; Laholm 4,65; Varberg 4,14
 - Plats bland Hallands 6 kommuner: 1
-- Förändring 10 år: -0,82 procentenheter (från 6,22 år 2015); riket -1,50 procentenheter
 - Förändring 5 år: -0,72 procentenheter (från 6,11 år 2020); riket -0,90 procentenheter
 - Förändring 1 år: -0,04 procentenheter (från 5,44 år 2024); riket -0,20 procentenheter
 

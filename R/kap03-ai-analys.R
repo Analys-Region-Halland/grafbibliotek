@@ -49,6 +49,9 @@ if (system2("node", c("app/scripts/exportera-teman.mjs", "data/frontend-teman.js
   stop("Temainställningarna har fel, se utskriften ovan")
 }
 TEMAN <- fromJSON("data/frontend-teman.json", simplifyVector = FALSE)
+# KPI:er där länets värde mäter något annat än kommunernas (pendling över länsgränsen):
+# länet redovisas då inte som jämförelse i kommunernas underlag
+LAN_EJ_JAMFORBAR <- unique(unlist(lapply(TEMAN, function(t) unlist(t$lanEjJamforbar))))
 
 SYSTEMPROMPT <- read_file("R/analys/systemprompt.md")
 BAKGRUND     <- read_file("R/analys/bakgrund.md")
@@ -104,7 +107,7 @@ kpi_fakta <- function(rows, kpi_id, namn, beskr, enhet, kod, enhet_namn, kompakt
   f <- function(x, tecken = FALSE) fmt_sv(x, dec, tecken)
 
   riket <- varde_for(rows, "0000", p)
-  hall  <- varde_for(rows, "0013", p)
+  hall  <- if (kpi_id %in% LAN_EJ_JAMFORBAR) NA_real_ else varde_for(rows, "0013", p)
   ut <- c(glue("### {namn} ({enhet_text(enhet)}, {fmt_period(p)})"))
   if (!kompakt && nzchar(beskr)) ut <- c(ut, glue("Mäter: {beskr}"))
 

@@ -1,29 +1,49 @@
 {
-  "hash": "ce3c53dc9c42d35ef49220db12a87724",
+  "hash": "f8b680d4da4c89f32f38908e14efaa26",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Högst utbildningsnivå i länet men försprånget i behörighet krymper",
-    "ingress": "Kungsbacka har den högsta utbildningsnivån bland vuxna i Halland, och eleverna har högre meritvärden och behörighet än i riket. Försprånget mot riket i skolresultaten är dock mindre än för tio år sedan.",
+    "rubrik": "Länets högsta utbildningsnivå fortsätter att stiga",
+    "ingress": "Av Kungsbackas invånare 25–64 år har 54,3 procent eftergymnasial utbildning, högst i länet och 5,7 procentenheter över riket, och andelen har ökat varje år sedan 2015. Skolresultaten är också högst i länet, men behörigheten till gymnasiets yrkesprogram har sjunkit och var 2026 lägre än något år sedan 2010.",
     "i_korthet": [
       {
-        "ledtext": "Länets högsta andel eftergymnasialt utbildade",
-        "text": "Av invånarna 25–64 år har 54,3 procent eftergymnasial utbildning, vilket är 5,7 procentenheter över riket och 8,6 procentenheter över Halland."
+        "ledtext": "Ökar något snabbare än riket",
+        "text": "Andelen med eftergymnasial utbildning ökade med 7,7 procentenheter på tio år och 4,7 på fem år, mot 7,0 respektive 4,1 i riket."
       },
       {
-        "ledtext": "Större andel högskolebehöriga än riket",
-        "text": "Andelen med högskolebehörighet inom tre år efter gymnasiet är 68,0 procent mot 57,5 procent i riket."
+        "ledtext": "Högst skolresultat i länet",
+        "text": "Meritvärdet i årskurs 9 var 240,0 poäng 2026, 10,0 över riket, och högskolebehörigheten 68,0 procent 2025, 10,5 procentenheter över riket."
       },
       {
-        "ledtext": "Yrkesbehörigheten sjunker snabbare än i riket",
-        "text": "Andelen behöriga till yrkesprogram minskade med 4,3 procentenheter på fem år, jämfört med 2,9 procentenheter i riket."
+        "ledtext": "Yrkesbehörigheten sjunker mer än rikets",
+        "text": "Andelen behöriga till yrkesprogram har minskat med 7,0 procentenheter på tio år, mot 3,7 i riket, till 87,1 procent 2026."
       }
     ],
     "stycken": [
-      "Kungsbacka har den högsta utbildningsnivån bland vuxna i Halland, och skillnaden syns i båda ändar av utbildningsskalan. Bland invånarna 25–64 år har 54,3 procent eftergymnasial utbildning, vilket placerar kommunen på plats 27 bland landets 290 kommuner. Samtidigt har 5,65 procent förgymnasial utbildning som högsta nivå, den lägsta andelen i länet. Andelen eftergymnasialt utbildade har ökat med 7,7 procentenheter sedan 2015, något mer än rikets 7,0. Det betyder att försprånget mot riket har vidgats något.",
-      "Avståndet till de andra halländska kommunerna är större än avståndet till riket. Kungsbacka ligger 8,6 procentenheter över Halland, och närmast kommer Halmstad med 46,7 procent och Varberg med 45,1 procent. Mönstret återkommer i skolan: meritvärdet i årskurs 9 är 240 poäng 2026 mot 230 i riket. Av eleverna når 68,0 procent högskolebehörighet inom tre år efter gymnasiet, vilket är 10,5 procentenheter över riket. Försprånget i behörighet har däremot krympt, eftersom högskolebehörigheten ökat med 0,3 procentenheter på fem år mot 3,2 i riket, och behörigheten till yrkesprogram har sjunkit med 4,3 procentenheter mot rikets 2,9.",
-      "Utbildningsnivån hänger sannolikt samman med Kungsbackas läge i Göteborgs arbetsmarknadsregion. Närheten till en stor arbetsmarknad kan göra kommunen attraktiv för utbildade barnfamiljer som söker villaboende, och föräldrarnas utbildningsbakgrund kan slå igenom i barnens betyg. För planeringen pekar det på två saker: en del av kompetensen används sannolikt på en arbetsmarknad utanför kommungränsen, och skolans resultat följer inte automatiskt vuxenbefolkningens utbildningsnivå. Att behörigheten till yrkesprogram har gått från 94,1 procent 2016 till 87,1 procent 2026 kan spegla förändringar i elevsammansättningen, men underlaget räcker inte för att avgöra orsaken."
+      "Kungsbacka har länets högsta utbildningsnivå, och den fortsätter att stiga. Andelen 25–64-åringar med eftergymnasial utbildning har ökat från 43,0 procent 2010 till 54,3 procent 2025, med 11,3 procentenheter mot 10,2 i riket. Den har ökat varje år sedan 2015: med 7,7 procentenheter på tio år och 4,7 på fem år, mot 7,0 respektive 4,1 i riket, och med 1,0 det senaste året. Sedan 2021 har mer än hälften av de vuxna eftergymnasial utbildning, medan andelen med förgymnasial utbildning har sjunkit till 5,65 procent, lägst i länet.",
+      "Avståndet till länet och riket är stort och gäller både kvinnor och män. Andelen eftergymnasialt utbildade är 8,6 procentenheter över länets och 5,7 över rikets, och Kungsbacka har plats 27 bland landets 290 kommuner. Av kvinnorna har 61,7 procent eftergymnasial utbildning och av männen 46,7 procent, 5,9 respektive 5,2 procentenheter över riket. Männens andel har dock ökat något långsammare än rikets på tio år, 4,8 procentenheter mot 5,2, och kvinnornas snabbare, 10,4 mot 8,9. Den höga utbildningsnivån hänger sannolikt samman med närheten till Göteborg och inflyttningen av barnfamiljer.",
+      "Skolresultaten för elever folkbokförda i Kungsbacka är högst i länet, men behörigheten har utvecklats svagare än i riket. Meritvärdet i årskurs 9 har legat mellan 237 och 247 poäng sedan 2015 och var 240,0 poäng 2026, 10,0 över riket. Högskolebehörigheten inom tre år efter gymnasiet var 68,0 procent 2025, 10,5 procentenheter över riket, men har ökat mindre än rikets på tio och fem år. Behörigheten till gymnasiets yrkesprogram har minskat med 7,0 procentenheter på tio år och 4,3 på fem år, mot 3,7 och 2,9 i riket, och var 87,1 procent 2026, lägre än något år sedan 2010. För planeringen innebär det att en växande andel elever lämnar årskurs 9 utan behörighet till ett yrkesprogram."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N01982"],
+        "rubrik": "Andelen har stigit stadigt och passerade hälften 2021"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N01982"],
+        "rubrik": "Kungsbacka har länets högsta andel eftergymnasialt utbildade"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N15428"],
+        "rubrik": "Yrkesbehörigheten har sjunkit och är den lägsta i serien"
+      }
     ]
   }
 }

@@ -1,29 +1,49 @@
 {
-  "hash": "362773e319ee23dccd932b2d92fc2575",
+  "hash": "f34b1bab1dac699bc1884ae2833d8787",
   "period": "2023",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Länets största arbetsmarknad präglas av anställning och offentlig sektor",
-    "ingress": "Halmstad har länets klart största arbetsmarknad, och profilen präglas av offentlig verksamhet och anställning snarare än eget företagande. Under 2024 minskade sysselsättningen i näringslivet snabbare än i länet och riket.",
+    "rubrik": "Halmstad har flest jobb i länet men tillväxten har avtagit",
+    "ingress": "Halmstad är länets största arbetsmarknad och har större andelar sysselsatta i offentlig förvaltning, vård och omsorg och transport än övriga kommuner i länet. Antalet sysselsatta med arbetsställe i kommunen växte till och med 2023 i allt lägre takt och minskade med 1,1 procent 2024, mer än i länet och riket.",
     "i_korthet": [
       {
-        "ledtext": "Offentlig förvaltning större än i länet",
-        "text": "Offentlig förvaltning står för 9,6 procent av de sysselsatta i Halmstad, 2,9 procentenheter över riket och 3,4 över länet."
+        "ledtext": "Länets största arbetsmarknad",
+        "text": "Med 54 225 sysselsatta på arbetsställen i kommunen 2024 har Halmstad flest i länet, trots en minskning med 586 det året."
       },
       {
-        "ledtext": "Lägst företagstäthet i länet",
-        "text": "Halmstad hade 48,1 företagsförekomster per 1 000 invånare år 2023, 5,9 färre än riket och lägst bland Hallands kommuner."
+        "ledtext": "Tillväxten har avtagit sedan 2021",
+        "text": "Antalet sysselsatta ökade med 3,30 procent 2021 och 1,20 procent 2023 men minskade med 1,10 procent 2024, mot 0,40 procent i riket."
       },
       {
-        "ledtext": "Näringslivet krympte under 2024",
-        "text": "Sysselsättningen i näringslivet minskade med 1,4 procent 2024, mot 0,7 procent i länet och 0,6 procent i riket."
+        "ledtext": "Högst andel anställda i länet",
+        "text": "Andelen anställda bland de sysselsatta är 91,5 procent, högst i länet, och andelen egenföretagare 3,50 procent, lägst i länet."
       }
     ],
     "stycken": [
-      "Halmstads arbetsmarknad är störst i länet och har en tydlig profil av anställning och offentlig verksamhet. Med 54 225 sysselsatta som arbetar i kommunen ligger Halmstad långt före Varberg med 32 484. Offentlig förvaltning står för 9,6 procent av de sysselsatta, 2,9 procentenheter över riket och 3,4 över länet, och vård och omsorg för 19,3 procent, båda högst i länet. Andelen anställda är 91,5 procent, den högsta i Halland. Det betyder att en större del av jobben än i grannkommunerna är anställningar och en mindre del eget företagande.",
-      "Företagandet är på motsvarande sätt mindre utbrett än i länet och riket. Företagare i aktiebolag utgör 4,9 procent av de sysselsatta, 2,3 procentenheter under länet, och egenföretagarnas andel på 3,5 procent är lägst i Halland. Med 48,1 företagsförekomster per 1 000 invånare år 2023 har Halmstad också lägst företagstäthet i länet, 5,9 färre än riket. Under 2024 minskade dessutom sysselsättningen i näringslivet med 1,4 procent, 0,8 procentenheter mer än i riket, medan Kungsbacka, Falkenberg och Varberg låg nära noll.",
-      "Mönstret hänger sannolikt samman med Halmstads roll som residensstad och regionalt centrum: om offentliga arbetsgivare och högskola samlas i staden blir andelen anställda större och de små företagens del av arbetsmarknaden mindre. Andelen sysselsatta med eftergymnasial utbildning, 44,3 procent, är högst i länet och pekar åt samma håll. Hamnen och logistiken kan också avläsas i att transport står för 5,1 procent av de sysselsatta, länets största andel. För planeringen kan profilen innebära ett större beroende av offentliga arbetsgivare, och nyföretagandet på 10,7 per 1 000 invånare i åldern 16–64 år 2025, 0,8 under riket, blir därför en indikator att följa."
+      "Halmstad är länets största arbetsmarknad, och antalet sysselsatta med arbetsställe i kommunen, oavsett var de bor, växte från 2020 till 2023 i allt lägre takt och minskade 2024. Antalet steg från 51 564 år 2020 till 54 811 år 2023, medan den årliga tillväxten sjönk från 3,30 procent 2021 till 1,20 procent 2023. Under 2024 minskade antalet med 586 personer till 54 225, eller 1,1 procent, mot 0,7 procent i länet och 0,4 procent i riket. Näringslivet minskade med 462 och offentlig sektor med 124 sysselsatta. Minskningen var större bland män, 422 personer, än bland kvinnor, 166, och bland män i näringslivet var den 2,0 procent.",
+      "Halmstads branschsammansättning skiljer sig från övriga kommuners i länet. Offentlig förvaltning står för 9,60 procent av de sysselsatta på arbetsställen i kommunen, 3,40 procentenheter över länet, och vård och omsorg för 19,3 procent; båda andelarna är högst i länet. Även transport, 5,10 procent, och finans och försäkring, 1,50 procent, är högst i länet. Byggverksamheten, 6,30 procent, och tillverkningen, 9,00 procent, ligger däremot under både länet och riket. Andelen sysselsatta med eftergymnasial utbildning, 44,3 procent, är högst i länet men 2,5 procentenheter under riket.",
+      "Arbetsmarknaden präglas mer av anställningar och mindre av eget företagande än i grannkommunerna. Andelen anställda har ökat från 90,8 procent 2020 till 91,5 procent 2024, medan andelen egenföretagare har minskat varje år från 4,60 till 3,50 procent. Andelen företagare i aktiebolag, 4,90 procent, ligger 2,30 procentenheter under länet, och nyföretagandet 2025, 10,7 nystartade företag per 1 000 invånare 16–64 år, under länets 11,7. Mönstret hänger sannolikt samman med rollen som residensstad med högskola, hamn och logistik. För planeringen innebär det att en större del av jobben i kommunen än i grannkommunerna finns inom offentlig förvaltning, vård och omsorg och transport."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["N_SEK_TOT_TILLV"],
+        "rubrik": "Tillväxten i antalet sysselsatta har avtagit varje år sedan 2021"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["N_BR_O_A"],
+        "rubrik": "Offentlig förvaltning väger tyngre i Halmstad än i övriga kommuner"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N_YRK_EGFOR_A"],
+        "rubrik": "Andelen egenföretagare har minskat varje år sedan 2020"
+      }
     ]
   }
 }

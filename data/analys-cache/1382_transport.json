@@ -1,29 +1,49 @@
 {
-  "hash": "eb0879c288163a116a11551c2dea5468",
+  "hash": "eec1ddcc8b528d75e900f92b1c7398d5",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Kollektivtrafiken når många i Falkenberg men få nya bostäder",
-    "ingress": "Falkenberg har näst störst andel invånare nära en trafikerad hållplats i Halland och en pendlingskvot på 0,92, över länet men under riket. Det nya bostadsbyggandet följer inte samma mönster: en klart mindre andel av de nya bostäderna ligger kollektivtrafiknära än i länet och riket.",
+    "rubrik": "En växande andel av Falkenbergs sysselsatta arbetar i andra kommuner",
+    "ingress": "Andelen av Falkenbergs sysselsatta invånare som arbetar i en annan kommun har ökat varje år sedan 2020, till 28,5 procent 2024. Kommunen har näst störst andel invånare nära kollektivtrafik i länet, men av de bostäder som tillkom 2024 låg en mindre andel nära en trafikerad hållplats än något år sedan 2014, i en serie som svänger kraftigt mellan åren.",
     "i_korthet": [
       {
-        "ledtext": "Många bor nära kollektivtrafik",
-        "text": "Andelen invånare med en trafikerad hållplats inom 500 meter är 77,2 procent, näst högst i Halland och 0,4 procentenheter över länet."
+        "ledtext": "Utpendlingsandelen har ökat varje år",
+        "text": "Andelen sysselsatta invånare som arbetar i en annan kommun steg från 26,5 procent 2020 till 28,5 procent 2024."
       },
       {
-        "ledtext": "Få nya bostäder kollektivtrafiknära",
-        "text": "Av de nytillkomna bostäderna ligger 36,4 procent i kollektivtrafiknära läge, 55,0 procentenheter under riket och lägst i kommunens serie."
+        "ledtext": "Andelen nya bostäder nära hållplats svänger",
+        "text": "Av de bostäder som tillkom 2024 låg 36,4 procent nära en trafikerad hållplats, seriens lägsta värde, mot 93,9 procent 2022 och 91,4 procent i riket."
       },
       {
-        "ledtext": "Många laddpunkter, färre elbilar",
-        "text": "Kommunen har 554 publika laddpunkter, näst flest av de halländska kommuner som redovisas, medan elbilarna utgör 5,89 procent av personbilarna mot 8,59 procent i riket."
+        "ledtext": "Räddningsinsatserna vid trafikolyckor har minskat",
+        "text": "Räddningsinsatserna vid trafikolyckor var 1,65 per 1 000 invånare 2025 som treårsgenomsnitt, mot 2,83 år 2019, men 0,24 över riket."
       }
     ],
     "stycken": [
-      "Falkenbergs invånare har jämförelsevis nära till kollektivtrafiken. Andelen som har en trafikerad hållplats inom 500 meter är 77,2 procent, vilket bara Halmstad överträffar i länet, även om nivån ligger 3,7 procentenheter under riket. Utanför tätorterna är andelen 25,7 procent, 5,8 procentenheter över riket. Pendlingskvoten är 0,92, över länets 0,87 men under rikets 0,99, vilket betyder att kommunen har något färre arbetstillfällen än sysselsatta invånare. Av de sysselsatta invånarna pendlar 28,5 procent ut.",
-      "Det nya bostadsbyggandet drar åt ett annat håll. Av de bostäder som tillkommit under den senaste treårsperioden ligger 36,4 procent i kollektivtrafiknära läge, mot 81,5 procent i länet och 91,4 procent i riket. Så sent som 2022 var andelen 93,9 procent, och bara det senaste året sjönk den med 23,6 procentenheter. I Halmstad och Kungsbacka är andelen 95,7 respektive 93,6 procent, och i Halland har endast Hylte en lägre andel. Biltätheten, 557,2 personbilar per 1 000 invånare, ligger 82,0 över riket och är tredje högst i länet.",
-      "Förändringen kan hänga samman med var det har funnits mark att bygga på. Om nya bostadsområden läggs i tätorternas utkanter eller i mindre orter med glesare trafik hamnar fler hushåll långt från en hållplats, och eftersom måttet avser en treårsperiod kan enskilda större projekt slå igenom kraftigt. Samtidigt har Falkenberg 554 publika laddpunkter, plats 16 av 217 kommuner i landet, medan elbilsandelen ligger under riket, vilket pekar på att laddinfrastrukturen ensam inte avgör omställningen av bilparken. För planeringen betyder det att de nya bostädernas läge får stor betydelse för om den förhållandevis höga tillgången till kollektivtrafik kan behållas."
+      "Falkenberg har blivit mer av en bostadsort de senaste åren. Andelen sysselsatta invånare som arbetar i en annan kommun har ökat varje år sedan serien börjar 2020, från 26,5 till 28,5 procent. Nettoutpendlingen, antalet sysselsatta som bor i kommunen minus antalet som arbetar där, växte från 1 381 personer 2020 till 1 858 år 2023 och var i stort sett oförändrad 2024; pendlingskvoten sjönk från 0,94 till 0,92. Samtidigt bor 22,4 procent av dem som arbetar i Falkenberg i en annan kommun.",
+      "Tillgången till kollektivtrafik är näst störst i länet men under riket. Av invånarna har 77,2 procent en hållplats med minst en avgång i timmen vardagar 6–20 inom 500 meter, mot 90,3 procent i Halmstad och 80,9 procent i riket, och andelen har legat mellan 75,1 och 77,6 procent sedan 2014. Av de bostäder som tillkom 2024 låg däremot 36,4 procent nära en sådan hållplats, seriens lägsta värde och under rikets 91,4 procent, mot 93,9 procent 2022 och 60,0 procent 2023. Andelen har svängt kraftigt mellan åren, så två år visar ännu ingen ny riktning.",
+      "Bilarna är fler och körs längre per invånare än i riket, medan räddningsinsatserna vid trafikolyckor har minskat. Biltätheten är 557,2 personbilar i trafik per 1 000 invånare 2025, 82,0 fler än i riket, och körsträckan 714,8 mil per invånare 2024, 90,0 mil mer; efter toppen 783,9 mil 2018 har körsträckan legat mellan 704,7 och 715,3 mil sedan 2020. Räddningsinsatserna vid trafikolyckor, ett genomsnitt över tre år, var 1,65 per 1 000 invånare 2025, det lägsta värdet i serien sedan 2010, mot 2,83 år 2019, men 0,24 över riket. Om nya bostäder oftare hamnar långt från hållplatser samtidigt som en växande andel arbetar i andra kommuner, ökar sannolikt behovet av bil för arbetsresor."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["C_PENDL_NETTO"],
+        "rubrik": "Nettoutpendlingen växte varje år fram till 2023"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["N07410"],
+        "rubrik": "Andelen nya bostäder nära hållplats svänger och var lägst 2024"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N00799"],
+        "rubrik": "Räddningsinsatserna vid trafikolyckor har minskat sedan toppen 2019"
+      }
     ]
   }
 }

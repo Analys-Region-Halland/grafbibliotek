@@ -722,6 +722,22 @@ Kolada) och slutar med källan. Tolkningar ("måttet visar att ...") hör inte h
 beskrivningen. Kontroll: hämta Koladas definitioner med `https://api.kolada.se/v3/kpi/<id>`
 och jämför, se §12 Steg 4.
 
+**Jämförbarhet.** Två inställningar skyddar mot jämförelser som datan inte bär:
+
+- `serie_fran` (R-config) tar bort åren före ett seriebrott i kap02. Bostäder: hushåll,
+  hushållstyper, upplåtelseformer och bostäder per 1 000 invånare börjar 2016 (hushållen i riket
+  ökar med 206 000 mellan 2015 och 2016 mot cirka 60 000 andra år).
+- `lanEjJamforbar` och `lanEjJamforbarText` (frontend-config) markerar KPI:er där länets värde
+  mäter något annat än kommunernas: pendlingsandelar och pendlingskvot (länsgränsen mot
+  kommungränsen) och folkhälsoenkätens mått (nationellt urval för länet, regionalt urval för
+  kommunerna). Länet visas då inte som jämförelse för en kommun, varken i tabellen, figurerna
+  eller analysunderlaget.
+
+Kända egenheter i källorna som inte rättas i pipelinen: Koladas utsläppsserier saknar
+2011–2014 (ingen tioårsförändring), turismens logiintäkter hoppar 2019 utan motsvarande
+ökning i gästnätterna, och befolkningens komponenter 2025 (CKM) summerar inte exakt till
+folkmängdens förändring.
+
 ## 9. AI-analys — specifikation
 
 ### 9.1 Arbetssätt

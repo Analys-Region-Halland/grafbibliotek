@@ -72,7 +72,7 @@ export default function RadTip({
       <div className="kt-tip-kropp">
         <SerieGraf kompakt width={212} height={170} fmt={fmt} serier={[
           // För antal ritas inte länet och riket: nivåerna är så olika att enhetens kurva blir platt
-          ...(arRegion || arAntal ? [] : [{ id: "halland", namn: "Halland", farg: "#555555", streck: "3,2.5", punkter: punkter(hallandSerie) }]),
+          ...(arRegion || arAntal || s.halland == null ? [] : [{ id: "halland", namn: "Halland", farg: "#555555", streck: "3,2.5", punkter: punkter(hallandSerie) }]),
           ...(arAntal ? [] : [{ id: "riket", namn: "Riket", farg: "#2D2E2D", streck: "1.5,2.5", punkter: punkter(riketSerie) }]),
           { id: "egen", namn: enhetNamn, farg: ENHET_FARG[valdKod] ?? farg, huvud: true, punkter: punkter(s.serie) },
         ]} />

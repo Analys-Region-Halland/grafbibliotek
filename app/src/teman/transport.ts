@@ -91,6 +91,9 @@ const transport: TemaConfig = {
     N00799: "Trafikolyckor med räddningsinsatser, antal per 1 000 invånare",
   },
   lagtArBra: ["N00799"],
+  // För länet avser pendlingen länsgränsen, för kommunerna kommungränsen
+  lanEjJamforbar: ["C_PENDLKVOT", "C_INPENDL_ANDEL", "C_UTPENDL_ANDEL"],
+  lanEjJamforbarText: "Länets pendling avser länsgränsen och går inte att jämföra med kommunernas, som avser kommungränsen.",
   hogtArBra: [
     "N07418", "N07419", "N07412", "N07410", "N60404", "U60496", "N07945", "U00501",
   ],

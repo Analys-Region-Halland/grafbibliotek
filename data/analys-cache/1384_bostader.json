@@ -1,29 +1,50 @@
 {
-  "hash": "1e75aaa19b624890f2ba64f636951702",
-  "period": "2024",
+  "hash": "15ba02941002d6e4d4c03d8a1bc717ea",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Högst byggtakt i länet, nu främst i flerbostadshus",
-    "ingress": "Kungsbacka har länets minsta bostadsbestånd i förhållande till befolkningen men bygger i en takt som få kommuner i landet når. Tillskottet består i dag främst av lägenheter i flerbostadshus, i en kommun som präglas av äganderätter och länets högsta bostadspriser.",
+    "rubrik": "Länets högsta priser och en växande andel hyresrätter",
+    "ingress": "Kungsbacka har länets högsta bostadspriser och lägsta andel hyresrätter, men andelen hyresrätter har ökat mer än i riket de senaste fem åren. Byggandet svänger mellan åren och var 2025 det högsta i länet, främst genom nya lägenheter i flerbostadshus.",
     "i_korthet": [
       {
-        "ledtext": "Byggtakten bland landets högsta",
-        "text": "Under 2025 färdigställdes 7,91 bostäder per 1 000 invånare, mot 3,83 i Halland och 2,96 i riket, vilket ger plats 9 av 290 kommuner."
+        "ledtext": "Andelen hyresrätter ökar, lägst i länet",
+        "text": "Hyresrätterna var 24,3 procent av bostäderna 2025, 14,7 procentenheter under riket, men andelen har ökat med 1,5 procentenheter på fem år, mot 0,9 i riket."
       },
       {
-        "ledtext": "Lägst andel hyresrätter i länet",
-        "text": "Hyresrätter utgör 24,3 procent av beståndet, 14,7 procentenheter under riket, medan äganderätter står för 63,6 procent."
+        "ledtext": "Byggandet svänger, toppår 2025",
+        "text": "Under 2025 färdigställdes 7,91 bostäder per 1 000 invånare, högst i länet och högst sedan 2018, mot mellan 2,92 och 4,09 åren 2020–2024."
       },
       {
-        "ledtext": "Länets högsta priser på småhus",
-        "text": "Ett småhus kostar i genomsnitt 43 273 kronor per kvadratmeter, mot 28 884 kronor i riket."
+        "ledtext": "Länets högsta bostadspriser",
+        "text": "Småhusen kostade 43 273 och bostadsrätterna 42 254 kronor per kvadratmeter 2025, 14 389 respektive 2 441 kronor över riket."
       }
     ],
     "stycken": [
-      "Kungsbacka bygger bostäder i en takt som få kommuner i landet når. Under 2025 färdigställdes 7,91 bostäder per 1 000 invånare, upp från 3,57 året innan, vilket ger plats 9 bland landets 290 kommuner. Tillskottet domineras av flerbostadshus: 6,65 lägenheter per 1 000 invånare, jämfört med 1,34 år 2020. Det betyder att en kommun präglad av villor nu växer främst genom lägenheter, även om småhusbyggandet på 1,26 per 1 000 invånare också är länets högsta.",
-      "Byggtakten skiljer ut Kungsbacka från resten av Halland och går mot utvecklingen i riket, där byggandet har minskat. I riket sjönk antalet färdigställda bostäder med 1,34 per 1 000 invånare under det senaste året, medan Kungsbacka ökade med 4,34. Samtidigt har kommunen länets minsta bestånd i förhållande till befolkningen, 423,8 bostäder per 1 000 invånare mot 498,9 i riket. Hyresrätter utgör 24,3 procent av beståndet, lägst i länet, medan äganderätter står för 63,6 procent. Priserna är länets högsta: ett småhus kostar i genomsnitt 43 273 kronor per kvadratmeter, mot 28 884 i riket.",
-      "Mönstret hänger sannolikt samman med kommunens läge i Göteborgs arbetsmarknadsregion och inflyttningen av barnfamiljer. Om hushållen är stora och många bor i egna hus, behövs färre bostäder per invånare. Trångboddheten i flerbostadshus är samtidigt lägst i länet, 7,64 procent mot 15,09 procent i riket. Prisnivån kan spegla en efterfrågan som är stor i förhållande till utbudet. För planeringen gäller frågan var det fortsatta tillskottet ska hamna. Planberedskapen motsvarar 18,5 bostäder per 1 000 invånare, plats 143 av 198 kommuner, och 2024 bodde 68,5 procent av befolkningen kollektivtrafiknära, 12,4 procentenheter under riket."
+      "Bostadsbeståndet i Kungsbacka domineras av äganderätter, men andelen hyresrätter ökar. Äganderätterna var 63,6 procent av bostäderna 2025, näst högst i länet efter Laholm och 27,0 procentenheter över riket, och hyresrätterna 24,3 procent, lägst i länet. Andelen hyresrätter har ökat med 1,5 procentenheter på fem år, mot 0,9 i riket, och med 0,1 det senaste året, medan andelen äganderätter har minskat med 1,7 respektive 0,6 procentenheter. Serierna börjar 2016, då äldre uppgifter inte är jämförbara. Kommunen har också länets lägsta antal bostäder per invånare, 423,8 per 1 000, vilket sannolikt hänger samman med att fler bor ihop: 58,1 procent av hushållen är sammanboende, högst i länet och sjätte högst i landet.",
+      "Byggandet svänger kraftigt mellan åren, och 2025 var ett toppår. Åren 2016–2019 färdigställdes mellan 4,21 och 8,39 bostäder per 1 000 invånare per år och 2020–2024 mellan 2,92 och 4,09. Under 2025 steg nivån till 7,91, den högsta sedan 2018 och högst i länet, mot 3,83 i länet och 2,96 i riket. Ökningen kom från flerbostadshusen, från 2,18 till 6,65 lägenheter per 1 000 invånare, medan småhusen minskade något till 1,26, ändå högst i länet.",
+      "Priserna är länets högsta och har stigit mer än i riket de senaste fem åren. Småhusen kostade 43 273 kronor per kvadratmeter 2025, 14 389 kronor över riket, efter en ökning med 13 754 kronor sedan 2015 och 6 428 på fem år, mot 4 065 i riket. Bostadsrätterna kostade 42 254 kronor per kvadratmeter, 2 441 över riket. Båda priserna ligger under toppen 2022 men har stigit de två senaste åren. Närheten till Göteborg och inflyttningen av barnfamiljer kan förklara både prisnivån och den stora andelen sammanboende. För planeringen kan fler lägenheter bredda utbudet för hushåll som inte söker ett småhus."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "uppdelning",
+        "kpi": ["N07956", "N07957", "N07958"],
+        "fran": 2016,
+        "rubrik": "Äganderätterna dominerar, men andelen hyresrätter ökar"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": ["N07917"],
+        "rubrik": "Byggandet svänger, och 2025 var det högsta sedan 2018"
+      },
+      {
+        "efter": 2,
+        "typ": "halland",
+        "kpi": ["N07909"],
+        "rubrik": "Småhusen är dyrast i Kungsbacka, före Varberg och Halmstad"
+      }
     ]
   }
 }

@@ -1,29 +1,55 @@
 {
-  "hash": "874ad718ed732f955d57c68ba97ffa46",
+  "hash": "2b2af6b5d0cf91550be569a53be9aaee",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Falkenberg har länets högsta sjukfrånvaro, särskilt bland kvinnor",
-    "ingress": "I Falkenberg tar invånarna i arbetsför ålder ut fler dagar med sjukpenning och sjukersättning än i någon annan halländsk kommun, och den kortare sjukskrivningen har ökat mer än i riket sedan 2020, även om den minskade något det senaste året. Samtidigt uppger färre stress än i riket, och männens medellivslängd är längre än rikets.",
+    "rubrik": "Länets högsta ohälsotal och sjukpenningtal, med ökat avstånd till riket",
+    "ingress": "Falkenberg har länets högsta ohälsotal och sjukpenningtal, båda över rikets, medan andelen vuxna med varaktigt låg ekonomisk standard är den lägsta sedan serien började 2014. Ohälsotalet sjönk fram till 2019 men har ökat något de senaste fem åren, medan rikets sjönk, och sjukpenningtalet steg varje år 2019–2024 men var 2025 0,4 dagar högre än 2015.",
     "i_korthet": [
       {
-        "ledtext": "Högst ohälsotal i Halland",
-        "text": "Ohälsotalet var 24,5 dagar per person 2025, 2,5 dagar över riket och 3,3 dagar över länet."
+        "ledtext": "Högst ohälsotal och sjukpenningtal i länet",
+        "text": "Ohälsotalet var 24,5 dagar och sjukpenningtalet 11,8 dagar 2025, mot 22,0 respektive 10,1 i riket."
       },
       {
-        "ledtext": "Sjukskrivningarna har ökat sedan 2020",
-        "text": "Sjukpenningtalet steg med 1,7 dagar på fem år till 11,8 dagar, medan riket ökade med 0,8 dagar, men det minskade med 0,4 dagar det senaste året."
+        "ledtext": "Sjukpenningtalet har stigit sedan 2019",
+        "text": "Sjukpenningtalet sjönk till 9,7 dagar 2019 men steg sedan varje år till 12,2 dagar 2024, seriens högsta, och var 11,8 dagar 2025, 0,4 dagar mer än 2015."
       },
       {
-        "ledtext": "Inkomsten under länet och riket",
-        "text": "Medianinkomsten var 327,1 tusen kronor 2024, 12,5 tusen kronor under riket och 21,4 tusen kronor under länet."
+        "ledtext": "Ekonomisk utsatthet lägst i serien",
+        "text": "Andelen vuxna med varaktigt låg ekonomisk standard var 6,3 procent 2024 och andelen barn och unga med varaktigt låg inkomststandard 1,3 procent, båda de lägsta sedan serierna började 2014."
       }
     ],
     "stycken": [
-      "Falkenberg har den största sjukfrånvaron bland Hallands kommuner. Ohälsotalet, alltså antalet ersatta dagar med sjukpenning, rehabiliteringspenning och sjuk- eller aktivitetsersättning per person 16–64 år, var 24,5 dagar 2025, 2,5 dagar över riket och 3,3 dagar över länet. På tio år har talet sjunkit med 4,3 dagar, mot 6,0 i riket. Den kortare sjukskrivningen har ökat: sjukpenningtalet steg med 1,7 dagar sedan 2020 till 11,8, medan riket ökade med 0,8 dagar, men det senaste året minskade det med 0,4 dagar från seriens högsta nivå.",
-      "Mönstret gäller både kvinnor och män men är tydligast bland kvinnor. Kvinnornas ohälsotal var 29,7 dagar, 4,4 dagar över länet, och männens 19,6 dagar, 2,4 dagar över länet, båda högst i Halland. Andra hälsomått ger en blandad bild. Medellivslängden för män är 82,9 år, 1,1 år över riket, och andelen som uppger stress är 12,5 procent mot 15,9 procent i riket. Andelen med god självskattad hälsa, 71,1 procent, är i nivå med riket men under länets 75,0 procent.",
-      "Att sjukfrånvaron sticker ut mer än flera andra hälsomått kan spegla hur arbetsmarknaden ser ut. Om en större del av de sysselsatta arbetar i livsmedels- och tillverkningsindustrin, där arbetet kan vara fysiskt krävande, kan besvär oftare leda till sjukskrivning än i kommuner med fler kontorsjobb. Inkomsterna ligger under länet men är jämnare fördelade än i flertalet halländska kommuner: ginikoefficienten för förvärvsinkomst, 0,34, är tillsammans med Varbergs den lägsta i Halland. Andelen vuxna med varaktigt låg ekonomisk standard är 6,3 procent, under rikets 7,1 men över länets 5,4. För planeringen pekar det mot arbetsmiljö och återgång i arbete efter sjukskrivning som en central fråga."
+      "Falkenberg har länets högsta ohälsotal och sjukpenningtal, och skillnaden mot riket har vuxit på tio år. Ohälsotalet, ersatta sjukdagar inklusive sjuk- och aktivitetsersättning per invånare 16–64 år, har minskat med 4,3 dagar på tio år, mot 6,0 i riket, men ökat med 0,7 dagar de senaste fem åren, medan rikets minskade med 0,6. År 2025 var det 24,5 dagar, mot 22,0 i riket. Sjukpenningtalet, som bara räknar sjukpenning och rehabiliteringspenning per försäkrad, sjönk från 11,4 dagar 2015 till 9,7 dagar 2019 men steg sedan varje år till 12,2 dagar 2024 och var 11,8 dagar 2025, mot 10,1 i riket.",
+      "Livslängden ligger däremot över rikets. Männens medellivslängd har ökat med 4,5 år sedan 2002, lika mycket som i riket, till 82,9 år 2025, 1,1 år över riket. Kvinnornas, 85,6 år, ligger 0,5 år över riket men har ökat långsammare, 0,5 år på tio år mot 1,3. Förtida dödlighet har sjunkit från 188,7 per 100 000 invånare 25–64 år 2014 till 157,9 år 2024, seriens lägsta och under rikets 173,0, men minskningen på tio år var mindre än rikets.",
+      "Ekonomiskt ligger Falkenberg nära mitten i länet, och utsattheten har minskat sedan 2021. Medianinkomsten, 327,1 tusen kronor 2024, är tredje högst i länet men 12,5 tusen under riket; den har ökat med 18,9 tusen på tio år, mot 24,0 i riket, och var lägre 2024 än 2019. Andelen vuxna med varaktigt låg ekonomisk standard, 6,3 procent, och andelen barn och unga i hushåll med varaktigt låg inkomststandard, 1,3 procent, är seriernas lägsta. De höga sjuktalen sammanfaller alltså inte med större ekonomisk utsatthet än i riket och kan i stället spegla arbetsmarknadens sammansättning. För planeringen pekar det på ett större behov av stöd vid sjukskrivning än i riket, bland både kvinnor och män."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": [
+          "N00938"
+        ],
+        "rubrik": "Sjukpenningtalet steg varje år 2019–2024 och ligger över rikets"
+      },
+      {
+        "efter": 1,
+        "typ": "utveckling",
+        "kpi": [
+          "F_FORTID"
+        ],
+        "rubrik": "Förtida dödlighet har sjunkit sedan 2014 och ligger under rikets"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": [
+          "F_VEK_VUX"
+        ],
+        "rubrik": "Varaktigt låg ekonomisk standard har minskat sedan toppen 2021"
+      }
     ]
   }
 }

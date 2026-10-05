@@ -1,29 +1,49 @@
 {
-  "hash": "bb4d9096693c0412805f246c81f3228a",
+  "hash": "d53eda368de32ec5aa4d9027158d81bb",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Flest gästnätter sedan 2008 men lägre intäkt per natt",
-    "ingress": "Halmstad hade fler gästnätter 2025 än något år sedan 2008, men logiintäkterna växte långsammare än i länet och intäkten per gästnatt sjönk. Kommunen har flest hotellnätter och störst logiintäkter i länet, men en mindre andel utländska gästnätter än riket.",
+    "rubrik": "Gästnätterna har ökat, och hotellen har dragit ifrån campingen",
+    "ingress": "Gästnätterna vid Halmstads kommersiella boenden har ökat med 28,1 procent sedan 2008, mindre än rikets 41,2 procent, men med 30,2 procent sedan 2015, mer än rikets 17,8 procent. Hotellen har dragit ifrån campingen, och logiintäkten per gästnatt är högst i länet men har minskat sedan 2023.",
     "i_korthet": [
       {
-        "ledtext": "Flest gästnätter sedan 2008",
-        "text": "Gästnätterna uppgick till 872 543 under 2025, en ökning med 5,3 procent på ett år mot 2,5 procent i riket."
+        "ledtext": "Snabbare än riket på tio år",
+        "text": "Gästnätterna ökade med 30,2 procent på tio år, mot 17,8 procent i riket, men med 28,1 procent sedan 2008, mot rikets 41,2 procent."
       },
       {
-        "ledtext": "Intäkterna följer inte med",
-        "text": "Logiintäkterna ökade med 1,7 procent mot 8,0 procent i länet, och intäkten per gästnatt sjönk från 499 till 482 kronor."
+        "ledtext": "Hotellen har dragit ifrån campingen",
+        "text": "Hotellnätterna ökade från 304 634 år 2015 till 483 776 år 2025, medan campingnätterna ökade från 316 914 till 365 326."
       },
       {
-        "ledtext": "Utländska gäster ökar från en lägre nivå",
-        "text": "Utländska gäster stod för 12,1 procent av gästnätterna, 14,2 procentenheter under riket, men deras gästnätter ökade med 20,9 procent på ett år."
+        "ledtext": "Högst intäkt per natt i länet",
+        "text": "Logiintäkten per gästnatt var 482 kronor 2025, 55 kronor över länet men 96 kronor under riket."
       }
     ],
     "stycken": [
-      "Halmstad hade fler gästnätter 2025 än något år sedan serien börjar 2008, men intäkterna har inte följt med. Gästnätterna uppgick till 872 543 och ökade med 5,3 procent på ett år mot 2,5 procent i riket. Logiintäkterna ökade samtidigt med 1,7 procent. Det betyder att varje gästnatt i genomsnitt gav mindre: intäkten sjönk från 499 till 482 kronor. Rumsbeläggningen minskade också, med 1,4 procentenheter till 51,4 procent.",
-      "Jämfört med grannkommunerna sticker Halmstad ut som länets hotellkommun. Hotellen stod för 483 776 gästnätter, flest i Halland, medan Falkenberg och Varberg har fler campingnätter. Halmstad har också de största logiintäkterna bland länets kommuner och den högsta intäkten per gästnatt, 55 kronor över länet men 96 kronor under riket. Räknat per invånare är gästnätterna färre än i Falkenberg och Varberg: 8 per invånare mot 20 respektive 12, och 9 i länet. Utländska gäster utgör 12,1 procent av gästnätterna, 14,2 procentenheter under riket, men deras gästnätter ökade med 20,9 procent på ett år och är fler än i någon annan halländsk kommun.",
-      "Hotellprofilen hänger sannolikt samman med Halmstads roll som residensstad, högskoleort och största arbetsmarknad i södra Halland: om en större del av resandet sker i tjänsten och sprids över året blir beroendet av sommarens campinggäster mindre än i Falkenberg och Varberg. Att gästnätterna ökar snabbare än intäkterna kan spegla prispress eller att de nya gästerna väljer billigare boende, men underlaget visar inte vilket. För planeringen pekar mönstret på att antalet gästnätter ensamt ger en ofullständig bild. Beläggning och intäkt per natt säger mer om hur stort utrymmet för ny kapacitet är."
+      "Gästnätterna i Halmstad har ökat sedan seriens lägsta nivå 2013, och nedgången under pandemin var återhämtad redan 2021. Sedan 2008 har antalet ökat med 28,1 procent, mindre än rikets 41,2 procent, men sedan 2015 med 30,2 procent, mer än rikets 17,8 procent. Under 2020 minskade det med 13,9 procent, men 2021 var antalet, 773 135, redan högre än 2019 års 751 565. Ökningen med 34,8 procent på fem år räknas därför från ett pandemiår. Efter en nedgång 2023 har antalet ökat två år i rad, 2025 med 5,3 procent till 872 543, seriens högsta värde.",
+      "Bland de tre kommuner i länet där hotellen redovisas har Halmstad flest hotellnätter, och hotellen har dragit ifrån campingen. Sedan 2015 har hotellnätterna ökat med 58,8 procent till 483 776 och campingnätterna med 15,3 procent till 365 326. Halmstad har också flest utländska gästnätter i länet, 105 231, men eftersom de svenska är många är andelen utländska, 12,1 procent, näst lägst i länet och under rikets 26,3 procent. Andelen har stigit varje år sedan 2020 och är seriens högsta. Med 8 gästnätter per invånare ligger Halmstad nära länets 9 men under grannkommunen Falkenbergs 20.",
+      "Den högsta intäkten per natt i länet kan hänga samman med hotellens tyngd: logiintäkten per gästnatt var 482 kronor, 55 kronor över länet men 96 kronor under riket. Intäkten per natt var som högst 531 kronor 2023 men har sedan minskat två år i rad, och logiintäkterna ökade med 1,7 procent 2025, mindre än gästnätterna. Rumsbeläggningen på hotell, stugbyar och vandrarhem var 51,4 procent, lägre än varje år 2015–2019. För planeringen innebär det att fler gästnätter de senaste två åren inte har följts av högre intäkt per natt."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["T_GAST_TOT"],
+        "rubrik": "Gästnätterna var redan 2021 fler än före pandemin"
+      },
+      {
+        "efter": 1,
+        "typ": "uppdelning",
+        "kpi": ["T_GAST_HOTELL", "T_GAST_CAMPING"],
+        "rubrik": "Hotellen har dragit ifrån campingen efter pandemin"
+      },
+      {
+        "efter": 2,
+        "typ": "halland",
+        "kpi": ["T_INTAKT_PER_GAST"],
+        "rubrik": "Halmstad har högst intäkt per gästnatt i länet"
+      }
     ]
   }
 }

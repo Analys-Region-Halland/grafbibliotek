@@ -1,29 +1,49 @@
 {
-  "hash": "ba44e6cfe75c5c73ef4cebb025dc7cd3",
-  "period": "2024",
+  "hash": "ee6066fd2747c99b5f4ba520dfc48749",
+  "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-02",
+  "granskad": "2026-10-05",
   "res": {
-    "rubrik": "Varberg har näst högst sysselsättning i Halland",
-    "ingress": "Varberg har en arbetsmarknad där en större andel i arbetsför ålder är sysselsatta än i riket och i länet som helhet. Bara Kungsbacka ligger högre i Halland, och avståndet till länet är störst bland utrikes födda.",
+    "rubrik": "Varberg har länets näst högsta sysselsättning efter Kungsbacka",
+    "ingress": "Av Varbergs invånare 20–64 år var 86,2 procent sysselsatta 2024, 5,3 procentenheter över riket och näst högst i länet. Andelen steg varje år 2020–2023 och sjönk 2024 något mer än i riket, medan arbetslösheten har stigit sedan 2022 men är lägre än 2020.",
     "i_korthet": [
       {
-        "ledtext": "Sysselsättningen ligger klart över riket",
-        "text": "Av invånarna 20–64 år var 86,2 procent sysselsatta 2024, vilket är 5,3 procentenheter över riket och plats 33 av landets 290 kommuner."
+        "ledtext": "Näst högst sysselsättning i länet",
+        "text": "Sysselsättningsgraden var 86,2 procent 2024, 2,2 procentenheter över länet och 5,3 över riket, och bara Kungsbacka låg högre."
       },
       {
-        "ledtext": "Utrikes födda sysselsatta över riket",
-        "text": "Bland utrikes födda var 75,9 procent sysselsatta, 5,5 procentenheter över riket, och arbetslösheten var 8,9 procent mot 11,9 procent i länet och riket."
+        "ledtext": "Arbetslösheten har stigit sedan 2022",
+        "text": "Arbetslösheten sjönk från 4,10 procent 2020 till 2,50 procent 2022 och steg sedan till 3,30 procent 2024, mot 5,40 i riket."
       },
       {
-        "ledtext": "Sysselsättningen sjönk något 2024",
-        "text": "Sysselsättningsgraden sjönk från 87,1 till 86,2 procent och arbetslösheten steg med 0,5 procentenheter, lika mycket som i riket."
+        "ledtext": "Större inkomstökning än riket sedan 2000",
+        "text": "Medianen av sammanräknad förvärvsinkomst har ökat med 231 700 kronor sedan 2000, mot 210 000 i riket, men i stort sett lika mycket som i riket de senaste fem åren."
       }
     ],
     "stycken": [
-      "Varberg hör till landets kommuner med störst andel sysselsatta: 86,2 procent av invånarna 20–64 år hade ett arbete 2024. Det är 5,3 procentenheter över riket och ger plats 33 av landets 290 kommuner. Arbetslösheten var samtidigt 3,3 procent av arbetskraften, mot 5,4 procent i riket. Under 2024 sjönk sysselsättningen något: sysselsättningsgraden minskade med 0,9 procentenheter från 87,1 procent året innan, mot 0,7 i riket, och arbetslösheten steg med 0,5 procentenheter, lika mycket som i riket.",
-      "Inom Halland ligger Varberg på andra plats efter Kungsbacka i nästan alla mått, med en sysselsättning som är 2,2 procentenheter över länet. Avståndet till länet är störst bland utrikes födda. Av dem är 75,9 procent sysselsatta, 4,2 procentenheter över länet och 5,5 över riket, och arbetslösheten i gruppen är 8,9 procent mot 11,9 procent i både länet och riket. Varberg har också länets högsta arbetskraftsdeltagande bland utrikes födda med 83,2 procent. Halmstad och Hylte ligger däremot under riket i sysselsättning, med 80,1 respektive 79,9 procent mot rikets 80,9 procent.",
-      "Läget hänger sannolikt samman med att Varberg har pendeltåg norrut. Om Kungsbacka och Göteborg går att nå på rimlig tid, så omfattar invånarnas arbetsmarknad betydligt mer än kommunens egna arbetsplatser, vilket kan förklara varför Varberg ligger närmare Kungsbacka än grannarna i söder. För planeringen betyder det att utrymmet att öka sysselsättningen bland dem som redan bor i kommunen sannolikt är begränsat, eftersom 89,1 procent av befolkningen 20–64 år redan ingår i arbetskraften. Nedgången 2024, som liknade den i riket, visar samtidigt att även en hög nivå påverkas när sysselsättningen sjunker i landet som helhet."
+      "Andelen sysselsatta i Varberg steg fram till 2023 och sjönk 2024 något mer än i riket. Av invånarna 20–64 år var 85,0 procent sysselsatta 2020, då SCB:s serie börjar, och 87,1 procent 2023, seriens högsta. Under 2024 sjönk andelen till 86,2 procent, en minskning med 0,9 procentenheter mot 0,7 i riket. Arbetslösheten sjönk från 4,10 procent 2020 till 2,50 procent 2022 och har sedan stigit två år i rad, till 3,30 procent 2024. Ökningen 2024 var 0,50 procentenheter, som i riket, och nivån är lägre än 2020.",
+      "Inom länet kommer Varberg efter Kungsbacka i nästan alla mått. Sysselsättningsgraden var 2,2 procentenheter över länet och 5,3 över riket. Arbetslösheten var 3,30 procent, mot 4,30 i länet och 5,40 i riket. Avståndet till länet är störst bland utrikes födda. Av dem var 75,9 procent sysselsatta, 4,2 procentenheter över länet, och deras arbetslöshet var 8,90 procent mot 11,90 i länet och riket. Även bland unga 18–24 år är arbetslösheten näst lägst i länet, 4,80 procent 2025 mot 6,29 i länet, i en serie som börjar 2023.",
+      "Mönstret kan hänga samman med pendeltåget norrut: när det går att pendla till Kungsbacka och Göteborg omfattar invånarnas arbetsmarknad mer än kommunens egna arbetsplatser. Även inkomsten är näst högst i länet: medianen av den sammanräknade förvärvsinkomsten, där pension och sjukpenning ingår, var 413 800 kronor 2024. Sedan 2000 har den ökat med 231 700 kronor, mot 210 000 i riket, men de senaste fem åren i stort sett lika mycket, 62 300 mot 62 500 kronor, och 2024 något mindre. För planeringen innebär mönstret att utrymmet att öka sysselsättningen bland de boende sannolikt är mindre än i länet: 89,1 procent av invånarna 20–64 år ingår redan i arbetskraften, mot 87,8 i länet, och arbetslösheten är lägre."
+    ],
+    "figurer": [
+      {
+        "efter": 0,
+        "typ": "utveckling",
+        "kpi": ["S_SYSS_TOT"],
+        "rubrik": "Sysselsättningsgraden steg till 2023 och sjönk något 2024"
+      },
+      {
+        "efter": 1,
+        "typ": "halland",
+        "kpi": ["S_SYSS_UTR"],
+        "rubrik": "Bland utrikes födda är sysselsättningen näst högst i länet"
+      },
+      {
+        "efter": 2,
+        "typ": "utveckling",
+        "kpi": ["N00906"],
+        "rubrik": "Inkomsten har ökat mer än i riket sedan 2000"
+      }
     ]
   }
 }

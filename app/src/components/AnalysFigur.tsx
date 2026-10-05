@@ -3,6 +3,7 @@ import type { KpiMeta } from "../types";
 import { ENHET_FARG, HALLAND_KOMMUNER } from "../types";
 import type { TemaConfig } from "../teman/tema-config";
 import { riktningFor } from "../teman/tema-config";
+import { LAN_EJ_JAMFORBAR } from "../teman";
 import type { Figur } from "../hooks/useAnalys";
 import type { KpiIndex } from "../utils/kpiStats";
 import { hallandsCeller, HALLAND_KOLUMNER, sammanfatta } from "../utils/kpiStats";
@@ -84,7 +85,7 @@ export default function AnalysFigur({ figur, idx, meta, tema, valdKod, enhetNamn
     const serier: Serie[] = figur.typ === "utveckling"
       ? [
           { id: "egen", namn: enhetNamn, farg: ENHET_FARG[valdKod] ?? HALLAND_FARG, huvud: true, punkter: serie(figur.kpi[0], valdKod) },
-          ...(valdKod !== "0013" && !arAntal ? [{ id: "halland", namn: "Halland", farg: HALLAND_FARG, streck: "4,3", punkter: serie(figur.kpi[0], "0013") }] : []),
+          ...(valdKod !== "0013" && !arAntal && !LAN_EJ_JAMFORBAR.has(figur.kpi[0]) ? [{ id: "halland", namn: "Halland", farg: HALLAND_FARG, streck: "4,3", punkter: serie(figur.kpi[0], "0013") }] : []),
           ...(!arAntal ? [{ id: "riket", namn: "Riket", farg: RIKET_FARG, streck: "1.5,2.5", punkter: serie(figur.kpi[0], "0000") }] : []),
         ]
       : figur.kpi.map((id, i) => ({ id, namn: namnFor(id, true), farg: DEL_FARGER[i % DEL_FARGER.length], huvud: i === 0, punkter: serie(id, valdKod) }));
@@ -111,7 +112,7 @@ export default function AnalysFigur({ figur, idx, meta, tema, valdKod, enhetNamn
     const c = hallandsCeller(idx, figur.kpi[0]);
     if (!c) return null;
     undertitel = `${matt(figur.kpi[0])}, ${fmtPeriod(c.period)}`;
-    innehall = <HallandStaplar celler={c.celler} valdKod={valdKod} namn={(k) => namnPaEnhet(k, enhetsnamn)} fmt={fmt} width={w} />;
+    innehall = <HallandStaplar celler={c.celler} valdKod={valdKod} utanLan={valdKod !== "0013" && LAN_EJ_JAMFORBAR.has(figur.kpi[0])} namn={(k) => namnPaEnhet(k, enhetsnamn)} fmt={fmt} width={w} />;
     tabell = {
       kolumner: ["Enhet", fmtPeriod(c.period)],
       rader: HALLAND_KOLUMNER.map((k) => [namnPaEnhet(k, enhetsnamn), c.celler.get(k)?.varde != null ? exakt(c.celler.get(k)!.varde!) : "–"]),
