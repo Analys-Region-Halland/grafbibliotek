@@ -7,7 +7,7 @@ import type { KpiIndex } from "../utils/kpiStats";
 import { HALLAND_KOLUMNER, hallandsCeller } from "../utils/kpiStats";
 import { byggGrupper, uppdelningsText } from "../utils/temaRader";
 import type { TabellRad } from "../utils/temaRader";
-import { fmtPeriod, kpiDecimaler } from "../utils/format";
+import { fmtPeriod, periodText, kpiDecimaler } from "../utils/format";
 import { fmt as fmtBas, fmtStor } from "../utils/format";
 import { LAN_EJ_JAMFORBAR } from "../teman";
 
@@ -74,7 +74,7 @@ export default function JamforTabell({ tema, meta, idx, valdKod, onOpenKpi, onVa
               {r.namn}
             </button>
             <p className="text-[11px] text-neutral-500 leading-tight mt-0.5">
-              {r.enhet}, {fmtPeriod(c.period)}
+              {r.enhet}{" "}<span className="kt-ar" title={`Alla värden på raden gäller ${periodText(c.period, c.kvartal)}`}>{fmtPeriod(c.period, c.kvartal)}</span>
             </p>
             {harNed && (
               <button className="kt-uppdela" aria-expanded={arOppen} onClick={() => vaxla(r.kpiId)}>
@@ -97,7 +97,7 @@ export default function JamforTabell({ tema, meta, idx, valdKod, onOpenKpi, onVa
                     background: cell.percentil != null ? stegFor(cell.percentil) : undefined,
                     boxShadow: vald ? `inset 0 0 0 1.5px ${ENHET_FARG[kod]}` : undefined,
                   }}
-                  title={`${namnFor(kod)}: ${cell.varde != null ? fmt(cell.varde, dec) : "uppgift saknas"}${cell.rang != null ? `, plats ${cell.rang} av ${cell.n} kommuner (1 = högst)` : ""}${annatMatt ? ". Går inte att jämföra med kommunernas värden" : ""}`}>
+                  title={`${namnFor(kod)} ${periodText(c.period, c.kvartal)}: ${cell.varde != null ? fmt(cell.varde, dec) : "uppgift saknas"}${cell.rang != null ? `, plats ${cell.rang} av ${cell.n} kommuner (1 = högst)` : ""}${annatMatt ? ". Går inte att jämföra med kommunernas värden" : ""}`}>
                 {cell.varde != null ? kort(cell.varde, dec) : "–"}{annatMatt && cell.varde != null && <sup aria-hidden>*</sup>}
               </td>
             );
@@ -180,7 +180,7 @@ export default function JamforTabell({ tema, meta, idx, valdKod, onOpenKpi, onVa
         </table>
       </div>
       <p className="mt-3 text-[11.5px] leading-relaxed text-neutral-500 max-w-[80ch]">
-        Kommunerna står i ordning från norr till söder, med Hylte i inlandet sist. Alla värden gäller samma period per rad.
+        Kommunerna står i ordning från norr till söder, med Hylte i inlandet sist. Alla värden på en rad gäller perioden under indikatorns namn; den kan skilja mellan raderna.
         Halland och riket är vägda värden och färgas inte.
         {tema.lanEjJamforbarText ? ` * ${tema.lanEjJamforbarText}` : ""}
       </p>

@@ -6,7 +6,7 @@ import KartaVy from "../charts/KartaVy";
 import type { KommunGruppData } from "../types";
 import { getAllVisningsnamn, getAllNettoKpis, getAllIngetIndex } from "../teman";
 import { fullKalla } from "../utils/kalla";
-import { fmtPeriod, fmt, isMonthly, sameMonthLastYear } from "../utils/format";
+import { fmtPeriod, fmt, isMonthly, sameMonthLastYear, periodText, arKvartalsserie } from "../utils/format";
 import { useContainerWidth } from "../hooks/useContainerWidth";
 import { useMapData } from "../hooks/useMapData";
 import { getKpiText } from "../utils/kpi-texter";
@@ -200,7 +200,11 @@ export default function KpiPopup({
         : Math.round(chartWidth * 0.65))
     : 0;
 
-  // ── Tidsperiod ──
+  // ── Tidsperiod (kvartalsdata lagras som kvartalets sista månad) ──
+  const kvartal = useMemo(
+    () => arKvartalsserie(allData.filter((d) => d.kpi_id === aktivtKpiId && d.kommun_kod === "0000")),
+    [allData, aktivtKpiId],
+  );
   const period = useMemo(() => {
     const years = allData
       .filter((d) => d.kpi_id === aktivtKpiId && d.varde != null)
@@ -208,8 +212,8 @@ export default function KpiPopup({
     if (years.length === 0) return "";
     const min = Math.min(...years);
     const max = Math.max(...years);
-    return min === max ? fmtPeriod(min) : `${fmtPeriod(min)}–${fmtPeriod(max)}`;
-  }, [allData, aktivtKpiId]);
+    return min === max ? fmtPeriod(min, kvartal) : `${fmtPeriod(min, kvartal)}–${fmtPeriod(max, kvartal)}`;
+  }, [allData, aktivtKpiId, kvartal]);
 
   const basAr = useMemo(() => {
     const years = allData
@@ -315,6 +319,8 @@ export default function KpiPopup({
     } else {
       seg.push({ text: introText });
     }
+    // Perioden står alltid utskriven: den varierar mellan indikatorerna
+    seg.push({ text: ` ${periodText(senaste.ar, kvartal)}` });
 
     // ── DEL 2: Riksgenomsnitt + ranking ──
     const relativ = aktivtEnhet !== "antal" || visaIndex;
@@ -328,7 +334,7 @@ export default function KpiPopup({
       const jmfOrd = Math.abs(diff) < 0.1
         ? "i nivå med"
         : (diff > 0 ? "över" : "under");
-      seg.push({ text: `, vilket är ${jmfOrd} riksgenomsnittet (${fmtKort(riksVal, aktivtEnhet)}).` });
+      seg.push({ text: `, vilket är ${jmfOrd} riksgenomsnittet samma period (${fmtKort(riksVal, aktivtEnhet)}).` });
     } else {
       seg.push({ text: "." });
     }
@@ -336,7 +342,7 @@ export default function KpiPopup({
     if (rang != null && av != null) {
       seg.push({ text: ` Bland landets ${geoTyp} intar ` });
       seg.push({ text: geo, accent: true });
-      seg.push({ text: ` plats ${rang} av ${av}.` });
+      seg.push({ text: ` plats ${rang} av ${av} ${periodText(senaste.ar, kvartal)}.` });
     }
 
     // ── DEL 3: Trend ──
@@ -360,19 +366,20 @@ export default function KpiPopup({
 
         // Bara 2 datapunkter → kort text utan upprepning
         if (!nästSenaste || nästSenaste.ar === forsta.ar) {
-          seg.push({ text: ` Sedan ${fmtPeriod(forsta.ar)} har ${pronomen} ${riktning}.` });
+          seg.push({ text: ` Sedan ${fmtPeriod(forsta.ar, kvartal)} har ${pronomen} ${riktning}.` });
         } else {
-          seg.push({ text: ` Över tid har ${pronomen} ${riktning}` });
+          seg.push({ text: ` Sedan ${fmtPeriod(forsta.ar, kvartal)} har ${pronomen} ${riktning}` });
+          const jmf = `jämfört med ${fmtPeriod(nästSenaste.ar, kvartal)}`;
 
           const arsDiff = v - (nästSenaste.varde ?? v);
           if (Math.abs(arsDiff) < 0.001) {
-            seg.push({ text: ", medan den senaste perioden var i stort sett oförändrad." });
+            seg.push({ text: `, medan ${pronomen} var i stort sett oförändrad ${jmf}.` });
           } else {
             const byteRikt = (totalDiff > 0 && arsDiff < 0) || (totalDiff < 0 && arsDiff > 0);
             if (byteRikt) {
-              seg.push({ text: `, men den senaste perioden visade ${arsDiff > 0 ? "en ökning" : "en minskning"}.` });
+              seg.push({ text: `, men ${jmf} ${arsDiff > 0 ? "ökade" : "minskade"} ${pronomen}.` });
             } else {
-              seg.push({ text: ` och den senaste perioden visade en fortsatt ${totalDiff > 0 ? "ökning" : "minskning"}.` });
+              seg.push({ text: `, och ${jmf} ${totalDiff > 0 ? "ökade" : "minskade"} ${pronomen} igen.` });
             }
           }
         }
@@ -380,7 +387,7 @@ export default function KpiPopup({
     }
 
     return seg;
-  }, [kommunNamn, isRegion, senaste, forsta, aktivtKpiId, aktivtEnhet, visaIndex, naturalText, allData, kommunKod]);
+  }, [kommunNamn, isRegion, senaste, forsta, aktivtKpiId, aktivtEnhet, visaIndex, naturalText, allData, kommunKod, kvartal, ranking]);
 
   // ── Alla valda kommuner som färgade linjer ──
   const riktaExtraLinjer = jamfor.selected;

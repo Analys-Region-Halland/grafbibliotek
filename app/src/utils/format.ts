@@ -72,12 +72,39 @@ const MANAD_KORT = [
   "jul", "aug", "sep", "okt", "nov", "dec",
 ];
 
-/** Formatera period: YYYYMM → "dec 2025", YYYY → "2025" */
-export function fmtPeriod(ar: number): string {
+const MANAD_LANG = [
+  "januari", "februari", "mars", "april", "maj", "juni",
+  "juli", "augusti", "september", "oktober", "november", "december",
+];
+
+/**
+ * Formatera period: YYYY → "2025", YYYYMM → "dec 2025". Kvartalsdata lagras som kvartalets
+ * sista månad (YYYY03, YYYY06 …) och skrivs "kv. 2 2026".
+ */
+export function fmtPeriod(ar: number, kvartal = false): string {
   if (!isMonthly(ar)) return String(ar);
   const year = Math.floor(ar / 100);
   const month = ar % 100;
+  if (kvartal) return `kv. ${Math.ceil(month / 3)} ${year}`;
   return `${MANAD_KORT[month - 1] ?? "?"} ${year}`;
+}
+
+/** Perioden i löptext: "år 2025", "i juli 2026", "andra kvartalet 2026" */
+export function periodText(ar: number, kvartal = false): string {
+  if (!isMonthly(ar)) return `år ${ar}`;
+  const year = Math.floor(ar / 100);
+  const month = ar % 100;
+  if (kvartal) return `${["första", "andra", "tredje", "fjärde"][Math.ceil(month / 3) - 1] ?? "?"} kvartalet ${year}`;
+  return `i ${MANAD_LANG[month - 1] ?? "?"} ${year}`;
+}
+
+/**
+ * Kvartalsserie: månadskodad men bara kvartalets sista månader (3, 6, 9, 12). Avgörs av hela
+ * serien, så att en enskild period kan formateras rätt.
+ */
+export function arKvartalsserie(rows: { ar: number }[]): boolean {
+  if (rows.length < 2 || !isMonthly(rows[0].ar)) return false;
+  return rows.every((r) => r.ar % 100 % 3 === 0);
 }
 
 /** Hitta "samma månad föregående år" — returnerar YYYYMM eller null */

@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from "react";
 import * as d3 from "d3";
-import { fmtPeriod } from "../utils/format";
+import { fmtPeriod, arKvartalsserie } from "../utils/format";
 
 export interface Serie {
   id: string;
@@ -71,6 +71,8 @@ export default function SerieGraf({ serier, width, height, fmt, kompakt, ariaLab
 
   if (!geo) return null;
   const { inom, x, y, ticks, m, forsta, sista, ar, etiketter } = geo;
+  // Kvartalsdata lagras som kvartalets sista månad och skrivs "kv. 2 2026"
+  const kv = arKvartalsserie(serier[0]?.punkter ?? []);
   const linje = d3.line<{ ar: number; varde: number }>().x((d) => x(tid(d.ar))).y((d) => y(d.varde)).curve(d3.curveMonotoneX);
 
   const flytta = (e: React.PointerEvent<SVGRectElement>) => {
@@ -97,8 +99,8 @@ export default function SerieGraf({ serier, width, height, fmt, kompakt, ariaLab
             <text x={m.l - 6} y={y(t) + 3.5} textAnchor="end" fontSize={kompakt ? 10 : 11} fill="#83888A">{fmt(t)}</text>
           </g>
         ))}
-        <text x={m.l} y={height - (kompakt ? 3 : 6)} fontSize={kompakt ? 10 : 11} fill="#83888A">{fmtPeriod(forsta)}</text>
-        <text x={width - m.r} y={height - (kompakt ? 3 : 6)} textAnchor="end" fontSize={kompakt ? 10 : 11} fill="#83888A">{fmtPeriod(sista)}</text>
+        <text x={m.l} y={height - (kompakt ? 3 : 6)} fontSize={kompakt ? 10 : 11} fill="#83888A">{fmtPeriod(forsta, kv)}</text>
+        <text x={width - m.r} y={height - (kompakt ? 3 : 6)} textAnchor="end" fontSize={kompakt ? 10 : 11} fill="#83888A">{fmtPeriod(sista, kv)}</text>
 
         {inom.filter((s) => !s.huvud).map((s) => (
           <path key={s.id} d={linje(s.punkter) ?? ""} fill="none" stroke={s.farg}
@@ -145,7 +147,7 @@ export default function SerieGraf({ serier, width, height, fmt, kompakt, ariaLab
       </svg>
       {!kompakt && pekar != null && pekVarden.length > 0 && (
         <div className="sg-tip" style={{ left: Math.min(x(tid(pekar)) + 10, width - 150), top: m.t }}>
-          <div className="sg-tip-ar">{fmtPeriod(pekar)}</div>
+          <div className="sg-tip-ar">{fmtPeriod(pekar, kv)}</div>
           {pekVarden.map(({ s, p }) => (
             <div key={s.id} className="sg-tip-rad">
               <svg width={14} height={6} aria-hidden>

@@ -1,6 +1,7 @@
 import type { KpiRow } from "../types";
 import { HALLAND_KODER, KOMMUNER_NORR_SODER } from "../types";
 import { LAN_EJ_JAMFORBAR } from "../teman";
+import { arKvartalsserie } from "./format";
 
 /** kpi_id → kommun_kod → rader sorterade på period */
 export type KpiIndex = Map<string, Map<string, KpiRow[]>>;
@@ -41,6 +42,8 @@ export interface KpiSammanfattning {
   percentil: number | null;
   /** Den valda enhetens serie */
   serie: KpiRow[];
+  /** Kvartalsdata (månadskodad, bara kvartalens sista månader) */
+  kvartal: boolean;
   /** Förändring mot 1/5/10 år tidigare; saknas basåret används seriens första värde */
   forandring: Record<1 | 5 | 10, { varde: number; sedan: number } | null>;
   ki: [number, number] | null;
@@ -101,11 +104,20 @@ export function sammanfatta(idx: KpiIndex, kpiId: string, kod: string): KpiSamma
   };
 
   return {
-    kpiId, period: p, nyastePeriod, varde, riket, halland, fordelning, enheter, hallandKommuner,
+    kpiId, period: p, nyastePeriod, kvartal: arKvartalsserie(serie), varde, riket, halland, fordelning, enheter, hallandKommuner,
     rang, n, percentil, serie,
     forandring: { 1: forandringMot(1), 5: manad ? null : forandringMot(5), 10: manad ? null : forandringMot(10) },
     ki: senaste.ki_lower != null && senaste.ki_upper != null ? [senaste.ki_lower, senaste.ki_upper] : null,
   };
+}
+
+/**
+ * Förändringen som tabellen och tooltipen visar: för årsdata tio år (eller sedan seriens första år
+ * när serien är kortare), för månads- och kvartalsdata samma period ett år tidigare. Perioden
+ * står alltid utskriven per indikator ("sedan 2015"), eftersom den varierar.
+ */
+export function huvudForandring(s: KpiSammanfattning) {
+  return s.forandring[s.period > 9999 ? 1 : 10];
 }
 
 /** Hallands kommuner (norr → söder), länet och riket: kolumnerna i jämförelsen */
@@ -117,7 +129,7 @@ export interface HallandCell { varde: number | null; percentil: number | null; r
  * Kommunerna, länet och riket vid en gemensam period: länets senaste år, annars det senaste
  * bland kommunerna. Percentil och rang gäller läget bland landets kommuner (1 = högst).
  */
-export function hallandsCeller(idx: KpiIndex, kpiId: string): { period: number; celler: Map<string, HallandCell> } | null {
+export function hallandsCeller(idx: KpiIndex, kpiId: string): { period: number; kvartal: boolean; celler: Map<string, HallandCell> } | null {
   const perEnhet = idx.get(kpiId);
   if (!perEnhet) return null;
   const senaste = (kod: string) => {
@@ -145,7 +157,8 @@ export function hallandsCeller(idx: KpiIndex, kpiId: string): { period: number; 
       n,
     });
   }
-  return { period: p, celler };
+  const kvartal = arKvartalsserie(perEnhet.get("0000") ?? perEnhet.get("0013") ?? [...perEnhet.values()][0] ?? []);
+  return { period: p, kvartal, celler };
 }
 
 /** Kvantil ur en sorterad vektor */

@@ -2,11 +2,11 @@ import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type { KpiMeta } from "../types";
 import type { TemaConfig, Riktning } from "../teman/tema-config";
 import { TEMA_FARG_HEX } from "../teman/tema-config";
-import { sammanfatta } from "../utils/kpiStats";
+import { sammanfatta, huvudForandring } from "../utils/kpiStats";
 import type { KpiIndex, KpiSammanfattning } from "../utils/kpiStats";
 import { byggGrupper, uppdelningsText } from "../utils/temaRader";
 import type { TabellRad } from "../utils/temaRader";
-import { kpiDecimaler, fmtPeriod } from "../utils/format";
+import { kpiDecimaler, fmtPeriod, periodText } from "../utils/format";
 import { fmt as fmtBas, fmtStor } from "../utils/format";
 import Spar from "../charts/Spar";
 import RadTip from "./RadTip";
@@ -31,17 +31,18 @@ interface Props {
 const enhetText = (enhet: string) => (enhet === "procent" ? "procent" : enhet);
 
 /**
- * Förändringen inom parentes; färg bara när önskvärd riktning är känd (lågt är bra).
+ * Förändringen och dess startperiod, som alltid skrivs ut per indikator ("sedan 2015", "sedan
+ * jul 2025"): perioden varierar mellan indikatorerna. Färg bara när önskvärd riktning är känd.
  * I tabellen i samma förkortade enhet som värdet, i tooltipen exakt.
  */
 function deltaFor(s: KpiSammanfattning, dec: number, riktning: Riktning, exakt = false) {
-  const f = s.forandring[s.period > 9999 ? 1 : 10];
+  const f = huvudForandring(s);
   if (!f) return null;
   const v = f.varde;
   const tal = (x: number) => (exakt ? fmt(x, dec) : kort(x, dec, s.varde));
-  const text = v === 0 ? "(±0)" : v > 0 ? `(+${tal(v)})` : `(${tal(v)})`;
+  const text = v === 0 ? "±0" : v > 0 ? `+${tal(v)}` : tal(v);
   const klass = !riktning || v === 0 ? "" : (v < 0) === (riktning === "lagt") ? "kt-battre" : "kt-samre";
-  return { text, klass };
+  return { text, klass, sedan: fmtPeriod(f.sedan, s.kvartal), sedanText: periodText(f.sedan, s.kvartal) };
 }
 
 /**
@@ -158,9 +159,11 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
     const arAntal = r.enhet === "antal";
     const delta = deltaFor(s, dec, r.riktning);
     const gammal = s.period < s.nyastePeriod;
+    const period = fmtPeriod(s.period, s.kvartal);
 
-    const aria = [`${r.helaNamn}: ${fmt(s.varde, dec)} ${enhetText(r.enhet)}${gammal ? ` (${fmtPeriod(s.period)})` : ""}`,
-      s.riket != null ? `riket ${fmt(s.riket, dec)}` : "",
+    const aria = [`${r.helaNamn}: ${fmt(s.varde, dec)} ${enhetText(r.enhet)} ${periodText(s.period, s.kvartal)}`,
+      delta ? `förändring ${delta.text} sedan ${delta.sedan}` : "",
+      s.riket != null ? `riket ${fmt(s.riket, dec)} samma period` : "",
       s.rang != null ? `plats ${s.rang} av ${s.n}` : ""].filter(Boolean).join(", ");
     const flera = r.nedbrytningar.length > 1;
     return (
@@ -188,10 +191,32 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
             )}
           </div>
           <div className="kt-c-varde kt-tal kt-varde">
-            <b>{kort(s.varde, dec)}</b>{delta && <> <span className={`kt-delta ${delta.klass}`}>{delta.text}</span></>}
-            <span className="kt-enhet">{s.ki ? `${enhetText(r.enhet)}, enkät` : enhetText(r.enhet)}{gammal && <>, <span className="kt-aldre" title={`Senaste värdet för ${enhetNamn}. Statistiken finns för andra enheter till och med ${fmtPeriod(s.nyastePeriod)}`}>{fmtPeriod(s.period)}</span></>}</span>
+            <b>{kort(s.varde, dec)}</b>
+            <span className="kt-enhet">{s.ki ? `${enhetText(r.enhet)}, enkät` : enhetText(r.enhet)}</span>
+            <span className={`kt-ar ${gammal ? "kt-ar-aldre" : ""}`}
+                  title={gammal
+                    ? `Senaste värdet för ${enhetNamn} gäller ${periodText(s.period, s.kvartal)}. Andra ${enhetsord} har värden till och med ${fmtPeriod(s.nyastePeriod, s.kvartal)}.`
+                    : `Värdet gäller ${periodText(s.period, s.kvartal)}`}>
+              {period}
+            </span>
           </div>
-          <div className="kt-c-riket kt-tal kt-riket">{s.riket != null ? kort(s.riket, dec) : "–"}</div>
+          <div className="kt-c-forandr kt-tal">
+            {delta ? (
+              <>
+                <span className={`kt-delta ${delta.klass}`}>{delta.text}</span>
+                <span className="kt-sedan" title={`Förändring från ${delta.sedanText} till ${periodText(s.period, s.kvartal)}`}>sedan {delta.sedan}</span>
+              </>
+            ) : (
+              <>
+                <span className="kt-delta">–</span>
+                <span className="kt-sedan">ingen jämförelse</span>
+              </>
+            )}
+          </div>
+          <div className="kt-c-riket kt-tal kt-riket">
+            {s.riket != null ? kort(s.riket, dec) : "–"}
+            <span className="kt-sedan">{s.riket != null ? period : `saknas ${period}`}</span>
+          </div>
           <div className="kt-c-spar"
                onMouseEnter={() => { iSpar.current = true; doljTip(); }}
                onMouseLeave={(e) => { iSpar.current = false; visaTip(r.kpiId, e.currentTarget.parentElement as HTMLElement); }}>
@@ -239,12 +264,13 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
             </button>
           )}
         </div>
-        <div className="kt-c-varde kt-tal">{enhetNamn}<small>Senaste år (förändring på tio år)</small></div>
-        <div className="kt-c-riket kt-tal">Riket<small>Senaste år</small></div>
+        <div className="kt-c-varde kt-tal">{enhetNamn}<small>Senaste värde, med året under</small></div>
+        <div className="kt-c-forandr kt-tal">Förändring<small>Sedan perioden under</small></div>
+        <div className="kt-c-riket kt-tal">Riket<small>Samma period</small></div>
         <div className="kt-c-spar" ref={sparRef}>
           {enhetNamn} och landets {enhetsord}
           <small>
-            Grå punkter är {enhetsord}, det grå fältet den mittersta hälften; grönt och rött där önskvärd riktning är känd. Svart streck
+            Samma period som värdet. Grå punkter är {enhetsord}, det grå fältet den mittersta hälften; grönt och rött där önskvärd riktning är känd. Svart streck
             riket{arRegion ? "" : ", streckat Halland"}. Platsen inom parentes bland {nEnheter}, 1 = högst.
           </small>
         </div>

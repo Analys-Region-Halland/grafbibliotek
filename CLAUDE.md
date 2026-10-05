@@ -182,8 +182,12 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
     (METODIK §8.0): band med block i områdesfärg → indikator → uppdelning, ihopfälld bakom en
     textknapp under namnet (*Visa kvinnor och män*), med linje i områdesfärg och korta radnamn
     (`kortNamn`). *Fäll ut alla uppdelningar* i kolumnhuvudet; utskrift fäller ut allt.
-    Kolumnhuvud i dagspressstil, värdet med förändring på tio år inom parentes och enheten
-    under, riket och spåret (`charts/Spar.tsx`) med kvartilerna tonade (mittersta hälften grå;
+    Kolumnhuvud i dagspressstil. **Perioden står per rad, aldrig bara i huvudet**, eftersom
+    den varierar mellan indikatorerna: värdet med enheten och perioden som markering under
+    ("2025", "jul 2026", "kv. 2 2026"; gul när enhetens senaste värde är äldre än övrigas),
+    förändringen i egen kolumn med sin startperiod ("+4 352 / sedan 2015"; årsdata tio år eller
+    sedan seriens början, månads- och kvartalsdata samma period året innan, `huvudForandring`),
+    riket med samma period, och spåret (`charts/Spar.tsx`) med kvartilerna tonade (mittersta hälften grå;
     bästa och sämsta fjärdedelen grön och röd när riktningen är känd) och placeringen inom
     parentes direkt efter, "(plats 17)". Placeringen visas bara där i raden. All fördjupning i
     radens tooltip (`RadTip.tsx`), som slutar med "Klicka på raden för diagram och karta";

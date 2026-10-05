@@ -173,12 +173,12 @@ body {
 .kt {
   --ink: #2D2E2D; --ink-mjuk: #3B4742; --mjuk: #5B5B5B; --gra-1: #83888A; --gra-2: #D6D6D6;
   --linje: #E4E6E8; --yta: #F7F8FA; --yta-2: #EEF0F2;
-  --k-varde: 132px; --k-riket: 76px; --k-plats: 78px; --k-gap: 14px;
+  --k-varde: 108px; --k-forandr: 96px; --k-riket: 76px; --k-plats: 78px; --k-gap: 14px;
   color: var(--ink);
 }
 .kt-rad, .kt-huvud {
   display: grid;
-  grid-template-columns: minmax(230px, 1.35fr) var(--k-varde) var(--k-riket) minmax(210px, 1fr) var(--k-plats);
+  grid-template-columns: minmax(220px, 1.35fr) var(--k-varde) var(--k-forandr) var(--k-riket) minmax(200px, 1fr) var(--k-plats);
   column-gap: var(--k-gap);
   align-items: center;
 }
@@ -199,7 +199,7 @@ body {
 .kt-mer-huvud { flex-shrink: 0; color: var(--farg); }
 
 .kt-rad {
-  position: relative; padding: 5px 8px; border-radius: 6px; cursor: pointer;
+  position: relative; padding: 8px 8px; border-radius: 6px; cursor: pointer;
   transition: background-color .12s;
 }
 .kt-rad:hover, .kt-rad.kt-pekad { background: color-mix(in srgb, var(--farg) 7%, #fff); }
@@ -260,7 +260,17 @@ body {
 .kt-delta.kt-battre { color: #00664D; }
 .kt-delta.kt-samre { color: #A51300; }
 .kt-enhet { display: block; font-size: 11px; line-height: 1.25; color: var(--mjuk); white-space: normal; }
-.kt-enhet .kt-aldre { color: var(--ink); font-weight: 600; }
+/* Varje värdes period, alltid utskriven: perioden varierar mellan indikatorerna */
+.kt-ar { display: inline-block; margin-top: 3px; padding: 1px 6px; border-radius: 4px; background: #EEF0F2;
+  font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 11px; font-weight: 600; line-height: 1.45;
+  color: #3B4742; white-space: nowrap; }
+/* Äldre än övriga enheters: markerad, med förklaring i title */
+.kt-ar-aldre { background: #FFF1D6; color: #7A4B00; box-shadow: inset 0 0 0 1px #F2C46D; }
+.kt-sedan { display: block; margin-top: 3px; font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+  font-size: 11px; line-height: 1.3; color: var(--mjuk); white-space: nowrap; }
+.kt-c-forandr .kt-delta { display: block; font-size: 13px; }
+.kt-rad-sub .kt-c-forandr .kt-delta { font-size: 12px; }
+.kt-rad-sub .kt-ar { font-size: 10.5px; }
 .kt-riket { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 13px; color: var(--mjuk); }
 
 .kt-bricka {
@@ -312,16 +322,17 @@ body {
 
 /* Smalare skärmar: två rader per indikator, sedan en kolumn */
 @media (max-width: 1100px) {
-  .kt { --k-varde: 120px; --k-riket: 68px; --k-plats: 72px; --k-gap: 10px; }
+  .kt { --k-varde: 100px; --k-forandr: 88px; --k-riket: 68px; --k-plats: 72px; --k-gap: 10px; }
 }
 @media (max-width: 860px) {
   .kt-rad, .kt-huvud {
-    grid-template-columns: minmax(0, 1fr) var(--k-varde);
-    grid-template-areas: "etikett varde" "spar plats";
+    grid-template-columns: minmax(0, 1fr) var(--k-varde) var(--k-forandr);
+    grid-template-areas: "etikett varde forandr" "spar spar plats";
     row-gap: 4px;
   }
   .kt-rad > .kt-c-etikett, .kt-huvud > .kt-c-etikett { grid-area: etikett; }
   .kt-rad > .kt-c-varde, .kt-huvud > .kt-c-varde { grid-area: varde; }
+  .kt-rad > .kt-c-forandr, .kt-huvud > .kt-c-forandr { grid-area: forandr; }
   .kt-rad > .kt-c-riket, .kt-huvud > .kt-c-riket { display: none; }
   .kt-rad > .kt-c-spar, .kt-huvud > .kt-c-spar { grid-area: spar; }
   .kt-rad > .kt-c-plats, .kt-huvud > .kt-c-plats { grid-area: plats; }

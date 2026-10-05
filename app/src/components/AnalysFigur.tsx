@@ -7,7 +7,7 @@ import { LAN_EJ_JAMFORBAR } from "../teman";
 import type { Figur } from "../hooks/useAnalys";
 import type { KpiIndex } from "../utils/kpiStats";
 import { hallandsCeller, HALLAND_KOLUMNER, sammanfatta } from "../utils/kpiStats";
-import { fmt as fmtBas, fmtPeriod, fmtStor, kpiDecimaler } from "../utils/format";
+import { fmt as fmtBas, fmtPeriod, fmtStor, kpiDecimaler, periodText, arKvartalsserie } from "../utils/format";
 import { useContainerWidth } from "../hooks/useContainerWidth";
 import SerieGraf from "../charts/SerieGraf";
 import type { Serie } from "../charts/SerieGraf";
@@ -98,7 +98,8 @@ export default function AnalysFigur({ figur, idx, meta, tema, valdKod, enhetNamn
       .filter((s) => s.punkter.length > 1);
     if (synliga.length === 0) return null;
     const huvud = synliga[0].punkter;
-    const spann = `${fmtPeriod(huvud[0].ar)}–${fmtPeriod(huvud[huvud.length - 1].ar)}${manad != null ? ", samma månad varje år" : ""}`;
+    const kv = arKvartalsserie(serier[0].punkter);
+    const spann = `${fmtPeriod(huvud[0].ar, kv)}–${fmtPeriod(huvud[huvud.length - 1].ar, kv)}${manad != null ? (kv ? ", samma kvartal varje år" : ", samma månad varje år") : ""}`;
     undertitel = figur.typ === "utveckling" ? `${matt(figur.kpi[0])}, ${spann}` : `${enhetNamn}, ${enhetText(enhet)}, ${spann}`;
     if (synliga.length > 1) legend = synliga.map((s) => ({ namn: s.namn, farg: s.farg, streck: s.streck, form: "linje" as const }));
     innehall = <SerieGraf serier={synliga} width={w} height={h} fmt={fmt}
@@ -106,22 +107,22 @@ export default function AnalysFigur({ figur, idx, meta, tema, valdKod, enhetNamn
     const ar = [...new Set(synliga.flatMap((s) => s.punkter.map((p) => p.ar)))].sort((a, b) => a - b);
     tabell = {
       kolumner: ["Period", ...synliga.map((s) => s.namn)],
-      rader: ar.map((a) => [fmtPeriod(a), ...synliga.map((s) => { const p = s.punkter.find((q) => q.ar === a); return p ? exakt(p.varde) : "–"; })]),
+      rader: ar.map((a) => [fmtPeriod(a, kv), ...synliga.map((s) => { const p = s.punkter.find((q) => q.ar === a); return p ? exakt(p.varde) : "–"; })]),
     };
   } else if (figur.typ === "halland") {
     const c = hallandsCeller(idx, figur.kpi[0]);
     if (!c) return null;
-    undertitel = `${matt(figur.kpi[0])}, ${fmtPeriod(c.period)}`;
+    undertitel = `${matt(figur.kpi[0])}, ${fmtPeriod(c.period, c.kvartal)}`;
     innehall = <HallandStaplar celler={c.celler} valdKod={valdKod} utanLan={valdKod !== "0013" && LAN_EJ_JAMFORBAR.has(figur.kpi[0])} namn={(k) => namnPaEnhet(k, enhetsnamn)} fmt={fmt} width={w} />;
     tabell = {
-      kolumner: ["Enhet", fmtPeriod(c.period)],
+      kolumner: ["Enhet", fmtPeriod(c.period, c.kvartal)],
       rader: HALLAND_KOLUMNER.map((k) => [namnPaEnhet(k, enhetsnamn), c.celler.get(k)?.varde != null ? exakt(c.celler.get(k)!.varde!) : "–"]),
     };
   } else if (figur.typ === "landet") {
     const s = sammanfatta(idx, figur.kpi[0], valdKod);
     if (!s) return null;
     const ord = valdKod === "0013" ? "regioner" : "kommuner";
-    undertitel = `${matt(figur.kpi[0])}, ${fmtPeriod(s.period)}`;
+    undertitel = `${matt(figur.kpi[0])}, ${fmtPeriod(s.period, s.kvartal)}`;
     legend = [
       { namn: `Landets ${ord}`, farg: "#B4B8BB", form: "punkt" },
       { namn: enhetNamn, farg: ENHET_FARG[valdKod] ?? HALLAND_FARG, form: "punkt" },
@@ -135,12 +136,12 @@ export default function AnalysFigur({ figur, idx, meta, tema, valdKod, enhetNamn
               kvartiler riktning={riktningFor(tema, figur.kpi[0])}
               ariaLabel={`${enhetNamn} ${fmt(s.varde)}, plats ${s.rang} av ${s.n} ${ord}`} />
         {s.rang != null && (
-          <p className="af-not">{enhetNamn} har {fmt(s.varde)} och plats {s.rang} av {s.n} {ord}, där 1 är det högsta värdet.</p>
+          <p className="af-not">{enhetNamn} har {fmt(s.varde)} {periodText(s.period, s.kvartal)} och plats {s.rang} av {s.n} {ord} samma period, där 1 är det högsta värdet.</p>
         )}
       </>
     );
     tabell = {
-      kolumner: ["", fmtPeriod(s.period)],
+      kolumner: ["", fmtPeriod(s.period, s.kvartal)],
       rader: [
         [enhetNamn, exakt(s.varde)],
         ...(s.halland != null ? [["Halland", exakt(s.halland)]] : []),
