@@ -114,19 +114,19 @@ utbildning_config <- function() {
     beraknade_kpier = tribble(
       ~kpi_id,         ~kpi_namn,                                              ~beskrivning,
       # Utbildningsnivå — kön
-      "N01982_KV",     "Eftergymnasial utbildning, kvinnor",                   "Andel kvinnor 25–64 år med eftergymnasial utbildning.",
-      "N01982_MAN",    "Eftergymnasial utbildning, män",                       "Andel män 25–64 år med eftergymnasial utbildning.",
-      "N01983_KV",     "Gymnasial utbildning, kvinnor",                        "Andel kvinnor 25–64 år med gymnasial utbildning.",
-      "N01983_MAN",    "Gymnasial utbildning, män",                            "Andel män 25–64 år med gymnasial utbildning.",
-      "N01984_KV",     "Förgymnasial utbildning, kvinnor",                     "Andel kvinnor 25–64 år med förgymnasial utbildning.",
-      "N01984_MAN",    "Förgymnasial utbildning, män",                         "Andel män 25–64 år med förgymnasial utbildning.",
+      "N01982_KV",     "Eftergymnasial utbildning, kvinnor",                   "Andel kvinnor 25–64 år med eftergymnasial utbildning. Källa: SCB via RKA Kolada.",
+      "N01982_MAN",    "Eftergymnasial utbildning, män",                       "Andel män 25–64 år med eftergymnasial utbildning. Källa: SCB via RKA Kolada.",
+      "N01983_KV",     "Gymnasial utbildning, kvinnor",                        "Andel kvinnor 25–64 år med gymnasial utbildning. Källa: SCB via RKA Kolada.",
+      "N01983_MAN",    "Gymnasial utbildning, män",                            "Andel män 25–64 år med gymnasial utbildning. Källa: SCB via RKA Kolada.",
+      "N01984_KV",     "Förgymnasial utbildning, kvinnor",                     "Andel kvinnor 25–64 år med förgymnasial utbildning. Källa: SCB via RKA Kolada.",
+      "N01984_MAN",    "Förgymnasial utbildning, män",                         "Andel män 25–64 år med förgymnasial utbildning. Källa: SCB via RKA Kolada.",
       # Grundskola/gymnasium — kön
-      "N15507_KV",     "Meritvärde åk 9, flickor",                             "Genomsnittligt meritvärde (17 ämnen) åk 9, flickor, hemkommun.",
-      "N15507_MAN",    "Meritvärde åk 9, pojkar",                              "Genomsnittligt meritvärde (17 ämnen) åk 9, pojkar, hemkommun.",
-      "N15428_KV",     "Behöriga till yrkesprogram, flickor",                  "Andel flickor i åk 9 som är behöriga till yrkesprogram, hemkommun.",
-      "N15428_MAN",    "Behöriga till yrkesprogram, pojkar",                   "Andel pojkar i åk 9 som är behöriga till yrkesprogram, hemkommun.",
-      "N17473_KV",     "Högskolebehörighet inom 3 år, kvinnor",               "Andel kvinnliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun.",
-      "N17473_MAN",    "Högskolebehörighet inom 3 år, män",                    "Andel manliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun."
+      "N15507_KV",     "Meritvärde åk 9, flickor",                             "Genomsnittligt meritvärde (17 ämnen) åk 9, flickor, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
+      "N15507_MAN",    "Meritvärde åk 9, pojkar",                              "Genomsnittligt meritvärde (17 ämnen) åk 9, pojkar, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
+      "N15428_KV",     "Behöriga till yrkesprogram, flickor",                  "Andel flickor i åk 9 som är behöriga till yrkesprogram, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
+      "N15428_MAN",    "Behöriga till yrkesprogram, pojkar",                   "Andel pojkar i åk 9 som är behöriga till yrkesprogram, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
+      "N17473_KV",     "Högskolebehörighet inom 3 år, kvinnor",               "Andel kvinnliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun. Källa: SCB via RKA Kolada.",
+      "N17473_MAN",    "Högskolebehörighet inom 3 år, män",                    "Andel manliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun. Källa: SCB via RKA Kolada."
     ),
 
     # Inga beräknade antal-KPI:er

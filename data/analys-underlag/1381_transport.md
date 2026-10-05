@@ -130,7 +130,7 @@ Mäter: Skillnaden mellan dagbefolkning och nattbefolkning (sysselsatta efter ar
 ## Kollektivtrafik och resande
 
 ### Befolkning i kollektivtrafiknära läge, andel (procent, 2024)
-Mäter: Andel befolkning i det geografiska området som har en trafikerad hållplats inom 500 meter från sin folkbokföringsadress. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Nyckeltalet följer upp miljökvalitetsmålet 'God bebyggd miljö', se även www.sverigesmiljomal.se.
+Mäter: Andel av befolkningen som har en trafikerad hållplats inom 500 meter fågelvägen från folkbokföringsadressen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag.
 - Laholm: 63,4
 - Halland (länet): 76,8
 - Riket: 80,9
@@ -172,7 +172,7 @@ Mäter: Andel befolkning i det geografiska området som har en trafikerad hållp
 - Förändring 1 år: -3,5 procentenheter (från 13,5 år 2023); riket -2,5 procentenheter
 
 ### Nytillkomna bostäder i kollektivtrafiknära läge, andel (procent, 2024)
-Mäter: Andel av kommunens nytillkomna bostäder under en treårsperiod som ligger i kollektivtrafiknära läge. Måttet visar om bostadsbyggandet stödjer hållbart resande genom att placera nya bostäder nära befintlig kollektivtrafik.
+Mäter: Andel av de bostäder som tillkom under året som har en trafikerad hållplats inom 500 meter fågelvägen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag.
 - Laholm: 69,7
 - Halland (länet): 81,5
 - Riket: 91,4
@@ -202,7 +202,7 @@ Mäter: Antal enkelresor med färdtjänst under året. Färdtjänst är ett komm
 ## Fordonsflotta och elektrifiering
 
 ### Personbilar, antal per 1 000 invånare (per 1 000 inv., 2025)
-Mäter: Antal registrerade personbilar per 1 000 invånare i kommunen. Måttet visar biltätheten och påverkas av faktorer som kollektivtrafikutbud, urbaniseringsgrad och inkomstnivå. Kommuner med god kollektivtrafik och tät bebyggelse tenderar att ha lägre bilinnehav.
+Mäter: Antal personbilar i trafik den 31 december, oavsett drivmedel, per 1 000 invånare.
 - Laholm: 614,9
 - Halland (länet): 532,6
 - Riket: 475,2
@@ -218,7 +218,7 @@ Mäter: Antal registrerade personbilar per 1 000 invånare i kommunen. Måttet v
 - Serien för Laholm 2013–2025: högst 617,3 (2020), lägst 601,7 (2013)
 
 ### Elbilar, andel av personbilar (procent, 2025)
-Mäter: Andel av kommunens registrerade personbilar som är rena elbilar. Elektrifieringen av fordonsflottan är central för att minska transporternas klimatpåverkan. Högre andelar syns oftare i kommuner med höga inkomster och god laddinfrastruktur.
+Mäter: Andel av personbilarna i trafik den 31 december som drivs med el.
 - Laholm: 5,85
 - Halland (länet): 8,09
 - Riket: 8,59
@@ -234,7 +234,7 @@ Mäter: Andel av kommunens registrerade personbilar som är rena elbilar. Elektr
 - Serien för Laholm 2013–2025: högst 5,85 (2025), lägst 0,01 (2013)
 
 ### Laddhybridbilar, andel av personbilar (procent, 2025)
-Mäter: Andel av kommunens registrerade personbilar som är laddhybrider, det vill säga bilar med kombination av elmotor och förbränningsmotor som kan laddas externt. Laddhybrider ses som en övergångsteknik mot helelektrifiering.
+Mäter: Andel av personbilarna i trafik den 31 december som är laddhybrider, det vill säga har både förbränningsmotor och elmotor och ett batteri som kan laddas från elnätet.
 - Laholm: 4,28
 - Halland (länet): 6,31
 - Riket: 7,42
@@ -250,7 +250,7 @@ Mäter: Andel av kommunens registrerade personbilar som är laddhybrider, det vi
 - Serien för Laholm 2013–2025: högst 4,28 (2025), lägst 0,01 (2013)
 
 ### Fossiloberoende personbilar, andel av totalt antal bilar (procent, 2025)
-Mäter: Andel av kommunens personbilar som klassas som fossiloberoende, det vill säga elbilar, laddhybrider och bilar som kan köras på biodrivmedel. Måttet ger en samlad bild av omställningen bort från fossila drivmedel i personbilsflottan.
+Mäter: Andel av personbilarna som kan köras på drivmedel från förnybara källor, men inte nödvändigtvis gör det: el, laddhybrider som laddas med sladd, gas, E85, vätgas och bilar som tillverkaren godkänt för HVO100.
 - Laholm: 19,7
 - Halland (länet): 23,4
 - Riket: 26,0
@@ -265,7 +265,7 @@ Mäter: Andel av kommunens personbilar som klassas som fossiloberoende, det vill
 - Serien för Laholm 2020–2025: högst 19,7 (2025), lägst 9,4 (2020)
 
 ### Elbilsladdpunkter, totalt antal i kommunen (antal, 2025)
-Mäter: Totalt antal publikt tillgängliga laddpunkter för elbilar i kommunen, inklusive både normalladdare och snabbladdare. God laddinfrastruktur är en förutsättning för elektrifieringen av fordonsflottan, särskilt för dem utan egen parkering.
+Mäter: Antal offentligt tillgängliga laddpunkter för elbilar, med både offentliga och privata ägare: normalladdare (upp till 50 kW), snabbladdare (50 till 150 kW) och supersnabbladdare (över 150 kW). Uppdelningen visar normal- och snabbladdare, så supersnabbladdarna ingår bara i totalen.
 - Laholm: 135
 - Halland (länet): 2 148
 - Riket: 60 892
@@ -296,7 +296,7 @@ Mäter: Totalt antal publikt tillgängliga laddpunkter för elbilar i kommunen, 
 ## Bilresande och trafiksäkerhet
 
 ### Genomsnittlig körsträcka med personbil, mil per invånare och år (mil/inv, 2024)
-Mäter: Genomsnittlig årlig körsträcka med personbil per invånare. Beräknas utifrån de personbilar som är registrerade i kommunen. Långa körsträckor kan spegla långa pendlingsavstånd, dålig kollektivtrafik eller gles bebyggelse.
+Mäter: Total körsträcka per år med personbilar registrerade i kommunen, delad med antalet invånare. Säger inget om var bilarna har körts. Bilar registrerade på företag ingår, vilket kan ge höga värden i kommuner med många företag och huvudkontor.
 - Laholm: 795,1
 - Halland (länet): 683,7
 - Riket: 624,8
@@ -312,7 +312,7 @@ Mäter: Genomsnittlig årlig körsträcka med personbil per invånare. Beräknas
 - Serien för Laholm 2010–2024: högst 880,0 (2012), lägst 766,2 (2022)
 
 ### Drivmedelsleverans till vägtransporter, liter per invånare (liter/inv, 2022)
-Mäter: Levererad mängd drivmedel (bensin och diesel) till vägtransporter per invånare inom kommunen. Måttet påverkas av genomfartstrafik och stationära tankställens lokalisering och speglar inte enbart kommuninvånarnas förbrukning.
+Mäter: Levererad mängd bensin, diesel, eldningsolja 1, etanol och HVO för vägtransporter till slutliga förbrukare, liter per invånare. Mäts där drivmedlet levereras och inte där förbrukarna bor, så kommuner med mycket genomfartstrafik kan få höga värden. Serien slutar 2023.
 - Laholm: 752,9
 - Plats bland landets 234 kommuner: 132 (1 = högsta värdet)
 - Hallands kommuner 2022 (högst först): Hylte 1 463,7; Varberg 954,6; Falkenberg 944,9; Halmstad 812,6; Laholm 752,9; Kungsbacka 544,8
@@ -322,7 +322,7 @@ Mäter: Levererad mängd drivmedel (bensin och diesel) till vägtransporter per 
 - Serien för Laholm 2018–2022: högst 902,7 (2018), lägst 752,9 (2022)
 
 ### Trafikolyckor med räddningsinsatser, antal per 1 000 invånare (per 1 000 inv., 2025)
-Mäter: Antal trafikolyckor som krävt kommunal räddningsinsats per 1 000 invånare. Måttet fångar de allvarligaste olyckorna och påverkas av trafikvolymer, hastighetsgränser och vägnätets säkerhet.
+Mäter: Genomsnittligt antal räddningsinsatser till trafikolyckor per år under tre år (året och de två föregående), per 1 000 invånare den 31 december. Alla trafikelement ingår, till exempel personbil, lastbil, cykel och djur.
 - Laholm: 1,88
 - Halland (länet): 1,52
 - Riket: 1,41

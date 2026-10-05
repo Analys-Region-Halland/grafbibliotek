@@ -220,3 +220,71 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från 
 - Hallands kommuner 2024 (högst först): Hylte 16,60; Halmstad 14,50; Falkenberg 11,90; Laholm 11,70; Varberg 8,90; Kungsbacka 6,80
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: 0,00 procentenheter (från 6,80 år 2023); riket +0,6 procentenheter
+
+## Befolkningen 20–64 år: Förvärvsinkomst, median 20–64 år
+
+### Sammanräknad förvärvsinkomst 20–64 år, median, kr (kr, 2024)
+Mäter: Medianen av sammanräknad förvärvsinkomst för invånare 20–64 år: inkomst av tjänst och näringsverksamhet, inklusive pension, sjukpenning och andra skattepliktiga transfereringar men inte kapitalinkomster.
+- Kungsbacka: 469 500
+- Halland (länet): 406 100
+- Riket: 401 400
+- Skillnad Kungsbacka mot riket: +68 100 kr
+- Skillnad Kungsbacka mot Halland: +63 400 kr
+- Plats bland landets 290 kommuner: 14 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Kungsbacka 469 500; Varberg 413 800; Falkenberg 383 900; Halmstad 383 800; Laholm 380 300; Hylte 372 800
+- Plats bland Hallands 6 kommuner: 1
+- Förändring hela serien sedan 2000: +263 600 kr (från 205 900 år 2000); riket +210 000 kr
+- Förändring 10 år: +138 100 kr (från 331 400 år 2014); riket +110 300 kr
+- Förändring 5 år: +77 300 kr (från 392 200 år 2019); riket +62 500 kr
+- Förändring 1 år: +17 100 kr (från 452 400 år 2023); riket +15 000 kr
+- Kungsbacka år för år: 2014 331 400; 2015 343 100; 2016 356 600; 2017 368 600; 2018 381 000; 2019 392 200; 2020 400 900; 2021 418 400; 2022 435 700; 2023 452 400; 2024 469 500
+- Serien för Kungsbacka 2000–2024: högst 469 500 (2024), lägst 205 900 (2000)
+
+## Unga och långtidsarbetslösa
+
+### Arbetslösa i arbetskraften 18–24 år, andel (procent, 2025)
+Mäter: Andel av arbetskraften 18–24 år som är öppet arbetslösa eller i program med aktivitetsstöd, årsmedelvärde. Arbetskraften enligt SCB:s befolkningens arbetsmarknadsstatus (BAS). Serien börjar 2023.
+- Kungsbacka: 4,41
+- Halland (länet): 6,29
+- Riket: 7,80
+- Skillnad Kungsbacka mot riket: -3,39 procentenheter
+- Skillnad Kungsbacka mot Halland: -1,88 procentenheter
+- Plats bland landets 290 kommuner: 274 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 9,01; Halmstad 8,20; Laholm 7,85; Falkenberg 5,48; Varberg 4,80; Kungsbacka 4,41
+- Plats bland Hallands 6 kommuner: 6
+- Förändring 1 år: -0,15 procentenheter (från 4,56 år 2024); riket -0,09 procentenheter
+- Kungsbacka år för år: 2023 3,33; 2024 4,56; 2025 4,41
+
+### Unga 16–24 år som varken arbetar eller studerar, andel (procent, 2024)
+Mäter: Andel invånare 16–24 år som under året varken arbetat (inkomst över ett basbelopp) eller studerat.
+- Kungsbacka: 4,62
+- Halland (länet): 5,54
+- Riket: 6,16
+- Skillnad Kungsbacka mot riket: -1,55 procentenheter
+- Skillnad Kungsbacka mot Halland: -0,93 procentenheter
+- Plats bland landets 290 kommuner: 268 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Hylte 8,66; Laholm 7,76; Falkenberg 6,06; Halmstad 5,65; Varberg 5,10; Kungsbacka 4,62
+- Plats bland Hallands 6 kommuner: 6
+- Förändring hela serien sedan 2008: +0,27 procentenheter (från 4,35 år 2008); riket -1,15 procentenheter
+- Förändring 10 år: -0,13 procentenheter (från 4,74 år 2014); riket -1,30 procentenheter
+- Förändring 5 år: +0,49 procentenheter (från 4,12 år 2019); riket -0,01 procentenheter
+- Förändring 1 år: +0,53 procentenheter (från 4,08 år 2023); riket +0,40 procentenheter
+- Kungsbacka år för år: 2014 4,74; 2015 5,00; 2016 4,99; 2017 4,40; 2018 4,30; 2019 4,12; 2020 4,31; 2021 3,64; 2022 3,52; 2023 4,08; 2024 4,62
+- Serien för Kungsbacka 2008–2024: högst 5,32 (2009), lägst 3,52 (2022)
+
+### Långtidsarbetslösa av de arbetslösa 18–65 år, andel (procent, 2025)
+Mäter: Andel av de arbetslösa 18–65 år (öppet arbetslösa eller i program med aktivitetsstöd) som varit det i minst sex månader, årsmedelvärde.
+- Kungsbacka: 52,1
+- Halland (länet): 59,5
+- Riket: 61,0
+- Skillnad Kungsbacka mot riket: -8,9 procentenheter
+- Skillnad Kungsbacka mot Halland: -7,3 procentenheter
+- Plats bland landets 252 kommuner: 232 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 68,4; Halmstad 62,7; Laholm 59,6; Falkenberg 59,3; Varberg 55,4; Kungsbacka 52,1
+- Plats bland Hallands 6 kommuner: 6
+- Förändring hela serien sedan 2010: +3,6 procentenheter (från 48,5 år 2010); riket +7,0 procentenheter
+- Förändring 10 år: +1,4 procentenheter (från 50,7 år 2015); riket +3,8 procentenheter
+- Förändring 5 år: +4,6 procentenheter (från 47,6 år 2020); riket +3,8 procentenheter
+- Förändring 1 år: +3,3 procentenheter (från 48,9 år 2024); riket +1,7 procentenheter
+- Kungsbacka år för år: 2015 50,7; 2016 50,6; 2017 54,5; 2018 53,1; 2019 53,7; 2020 47,6; 2021 58,8; 2022 55,6; 2023 49,9; 2024 48,9; 2025 52,1
+- Serien för Kungsbacka 2010–2025: högst 58,8 (2021), lägst 47,0 (2013)

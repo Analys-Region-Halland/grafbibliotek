@@ -44,7 +44,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 ## Hälsa: Ohälsotal
 
 ### Ohälsotal, dagar (dagar, 2025)
-Mäter: Ohälsotalet mäter det genomsnittliga antalet utbetalda dagar med sjukpenning, rehabiliteringspenning och sjuk- eller aktivitetsersättning per person 16–64 år under ett år. Måttet ger en samlad bild av sjukfrånvaron i kommunen. Höga värden kan spegla hälsoproblem, arbetsmarknadsförhållanden eller socioekonomiska faktorer.
+Mäter: Antal utbetalda dagar med sjukpenning, arbetsskadesjukpenning, rehabiliteringspenning samt aktivitets- och sjukersättning, delat med befolkningen 16–64 år.
 - Halland: 21,2
 - Riket: 22,0
 - Skillnad Halland mot riket: -0,8 dagar
@@ -407,7 +407,7 @@ Mäter: Medianinkomst i tusenkronor, beräknad som disponibel inkomst per konsum
 ## Inkomster och försörjning: Ginikoefficient, förvärvsinkomst
 
 ### Ginikoefficient, förvärvsinkomst (index, 2024)
-Mäter: Ginikoefficienten mäter ojämlikheten i förvärvsinkomster bland befolkningen 20 år och äldre. Värdet ligger mellan 0 och 1 där 0 innebär fullständig jämlikhet och 1 innebär att all inkomst tillfaller en enda person. Högre värden indikerar större inkomstspridning i kommunen.
+Mäter: Ginikoefficient för sammanräknad förvärvsinkomst på individnivå, från 0 (alla har lika stor inkomst) till 1 (total ojämlikhet).
 - Halland: 0,38
 - Riket: 0,41
 - Skillnad Halland mot riket: -0,03 index
@@ -422,7 +422,7 @@ Mäter: Ginikoefficienten mäter ojämlikheten i förvärvsinkomster bland befol
 ## Inkomster och försörjning: Ginikoefficient, disponibel inkomst
 
 ### Ginikoefficient, disponibel inkomst (index, 2024)
-Mäter: Ginikoefficienten mäter ojämlikheten i hushållens disponibla inkomster, det vill säga inkomster efter skatt och transfereringar, justerat för hushållets storlek. Disponibel inkomst ger en mer rättvisande bild av den faktiska köpkraften än förvärvsinkomst.
+Mäter: Ginikoefficient för disponibel inkomst per konsumtionsenhet, det vill säga inkomst efter skatt justerad för hushållets sammansättning, från 0 (total jämlikhet) till 1 (total ojämlikhet).
 - Halland: 0,30
 - Riket: 0,31
 - Skillnad Halland mot riket: -0,01 index

@@ -42,12 +42,23 @@ hamta_kommun_register <- function() {
 hamta_och_filtrera_kolada <- function(kpi_ids, kommun_koder, perioder,
                                       behall_kon_for = character(0)) {
   message(glue("  Hämtar {length(kpi_ids)} KPI:er × {length(perioder)} år × {length(kommun_koder)} kommuner..."))
-  radata <- get_values(
-    kpi = kpi_ids,
-    municipality = kommun_koder,
-    period = perioder,
-    simplify = TRUE
-  )
+  # rKolada ger bara en varning (och ett ofullständigt eller tomt svar) när API:t inte svarar.
+  # Det räknas här som fel: anropet görs om, och misslyckas det igen avbryts hämtningen
+  # innan något sparas, så att cachen aldrig skrivs över med ofullständig data.
+  for (forsok in 1:3) {
+    varningar <- character()
+    radata <- withCallingHandlers(
+      get_values(kpi = kpi_ids, municipality = kommun_koder, period = perioder, simplify = TRUE),
+      warning = function(w) {
+        varningar <<- c(varningar, conditionMessage(w))
+        invokeRestart("muffleWarning")
+      }
+    )
+    if (!any(grepl("connect", varningar, ignore.case = TRUE))) break
+    message(glue("  Kolada svarade inte (försök {forsok} av 3)"))
+    if (forsok == 3) stop("Kolada svarade inte efter tre försök; cachen lämnas orörd")
+    Sys.sleep(15 * forsok)
+  }
   # get_values() returnerar NULL när frågan saknar träffar
   if (is.null(radata) || nrow(radata) == 0) {
     message("  Rådata: 0 rader")
@@ -65,12 +76,13 @@ hamta_och_filtrera_kolada <- function(kpi_ids, kommun_koder, perioder,
 }
 
 #' Kör hämtning för ett tema med Kolada som källa
-#' @param tema_config Lista med tema-konfiguration (tema_id, kpier, startar)
+#' @param tema_config Lista med tema-konfiguration (tema_id, kpier, startar; startar_kolada
+#'   när Kolada-serierna ska börja tidigare än temats övriga källor)
 #' @param tvinga Tvinga omhämtning (default FALSE)
 hamta_tema_kolada <- function(tema_config, tvinga = FALSE) {
   tema_id <- tema_config$tema_id
   kpi_ids <- tema_config$kpier
-  startar <- tema_config$startar %||% 2010
+  startar <- tema_config$startar_kolada %||% tema_config$startar %||% 2010
 
   message(glue("\n--- Kolada-hämtning: {tema_config$tema_namn} ---"))
 
@@ -128,6 +140,14 @@ hamta_tema_kolada <- function(tema_config, tvinga = FALSE) {
     message(glue("  Fullständig hämtning: {length(kpi_ids)} KPI:er × {length(alla_perioder)} år"))
     filtrerad <- hamta_och_filtrera_kolada(kpi_ids, alla_kommun_koder, alla_perioder,
                                            behall_kon_for = behall_kon)
+    if (nrow(filtrerad) == 0) stop("Kolada gav inga värden vid fullständig hämtning; cachen lämnas orörd")
+    # Teman med flera källor (t.ex. SCB och Kolada) delar rådatafil: behåll de andra källornas rader
+    if (file.exists(radata_fil)) {
+      befintlig <- readRDS(radata_fil)
+      if (nrow(befintlig) > 0 && "kpi" %in% names(befintlig)) {
+        filtrerad <- bind_rows(befintlig |> filter(!kpi %in% kpi_ids), filtrerad)
+      }
+    }
     saveRDS(filtrerad, radata_fil)
     spara_cache_meta(tema_id, kpi_ids, alla_perioder, nrow(filtrerad))
     message(glue("  Sparat: {nrow(filtrerad)} rader"))

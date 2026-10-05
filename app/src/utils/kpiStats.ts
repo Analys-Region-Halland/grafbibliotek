@@ -22,6 +22,8 @@ export function indexera(data: KpiRow[]): KpiIndex {
 export interface KpiSammanfattning {
   kpiId: string;
   period: number;
+  /** Senaste period som någon enhet har värde för; äldre värden märks i tabellen */
+  nyastePeriod: number;
   varde: number;
   riket: number | null;
   halland: number | null;
@@ -55,6 +57,12 @@ export function sammanfatta(idx: KpiIndex, kpiId: string, kod: string): KpiSamma
   const varde = senaste.varde!;
   const arRegion = kod === "0013" || senaste.kommun_typ === "L";
 
+  let nyastePeriod = p;
+  for (const rows of perEnhet.values()) {
+    for (let i = rows.length - 1; i >= 0 && rows[i].ar > nyastePeriod; i--) {
+      if (rows[i].varde != null) { nyastePeriod = rows[i].ar; break; }
+    }
+  }
   const enheter: { kod: string; varde: number }[] = [];
   for (const [k, rows] of perEnhet) {
     if (k === "0000") continue;
@@ -92,7 +100,7 @@ export function sammanfatta(idx: KpiIndex, kpiId: string, kod: string): KpiSamma
   };
 
   return {
-    kpiId, period: p, varde, riket, halland, fordelning, enheter, hallandKommuner,
+    kpiId, period: p, nyastePeriod, varde, riket, halland, fordelning, enheter, hallandKommuner,
     rang, n, percentil, serie,
     forandring: { 1: forandringMot(1), 5: manad ? null : forandringMot(5), 10: manad ? null : forandringMot(10) },
     ki: senaste.ki_lower != null && senaste.ki_upper != null ? [senaste.ki_lower, senaste.ki_upper] : null,

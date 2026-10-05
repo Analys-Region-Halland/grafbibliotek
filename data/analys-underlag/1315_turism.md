@@ -114,7 +114,7 @@ Mäter: Antal gästnätter per invånare. Mäter turismintensiteten i förhålla
 - Serien för Hylte 2008–2025: högst 4 (2022), lägst 3 (2010)
 
 ### Gästnätter, årlig förändring (procent, 2025)
-Mäter: Gästnätternas förändring jämfört med föregående år, procent.
+Mäter: Gästnätternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Hylte: -6,60
 - Halland (länet): 5,40
 - Riket: 2,50
@@ -131,7 +131,7 @@ Mäter: Gästnätternas förändring jämfört med föregående år, procent.
 - Serien för Hylte 2009–2025: högst 30,70 (2012), lägst -17,50 (2013)
 
 ### Andel utländska gästnätter (procent, 2025)
-Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent.
+Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Hylte: 31,8
 - Halland (länet): 14,9
 - Riket: 26,3
@@ -180,7 +180,7 @@ Mäter: Antal ankomster av utländska gäster till kommersiella boenden.
 - Serien för Hylte 2008–2025: högst 5 059 (2025), lägst 611 (2020)
 
 ### Andel utländska gästankomster (procent, 2025)
-Mäter: Utländska gästankomster som andel av samtliga ankomster, procent.
+Mäter: Utländska gästankomster som andel av samtliga ankomster, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Hylte: 27,8
 - Halland (länet): 13,9
 - Riket: 23,8
@@ -214,7 +214,7 @@ Mäter: Totalt antal kommersiella boendeanläggningar.
 - Serien för Hylte 2008–2025: högst 11 (2024), lägst 3 (2010)
 
 ### Gästnätter per anläggning (antal, 2025)
-Mäter: Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.
+Mäter: Genomsnittligt antal gästnätter per anläggning. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Hylte: 3 822
 - Halland (länet): 21 615
 - Riket: 16 096
@@ -282,7 +282,7 @@ Mäter: Totala logiintäkter i kronor vid kommersiella boenden.
 - Serien för Hylte 2008–2025: högst 16 323 899 (2023), lägst 2 321 511 (2015)
 
 ### Logiintäkt per gästnatt (kr, 2025)
-Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala logiintäkter dividerat med antal gästnätter.
+Mäter: Genomsnittlig logiintäkt per gästnatt, kronor: totala logiintäkter dividerade med antal gästnätter. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Hylte: 363,0
 - Halland (länet): 427,0
 - Riket: 578,0
@@ -299,7 +299,7 @@ Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala lo
 - Serien för Hylte 2008–2025: högst 392,0 (2023), lägst 70,0 (2015)
 
 ### Logiintäkter, årlig förändring (procent, 2025)
-Mäter: Logiintäkternas förändring jämfört med föregående år, procent.
+Mäter: Logiintäkternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Hylte: -10,2
 - Halland (länet): 8,0
 - Riket: 4,4

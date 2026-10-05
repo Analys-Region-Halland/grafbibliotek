@@ -107,7 +107,7 @@ Mäter: Skillnaden mellan dagbefolkning och nattbefolkning (sysselsatta efter ar
 ## Kollektivtrafik och resande
 
 ### Resor med kollektivtrafik, antal resor per invånare och år (resor/inv, 2025)
-Mäter: Antal resor med regional kollektivtrafik per invånare i länet. Måttet avser betalda och förbetalda resor med buss, tåg och annan regional kollektivtrafik. Högre resande tyder på ett väl utbyggt och attraktivt kollektivtrafiksystem. Avser läns-/regionnivå.
+Mäter: Antal resor i regional kollektivtrafik per invånare, enligt de regionala trafikhuvudmännens rapportering. Avser läns- och regionnivå.
 - Halland: 55,0
 - Riket: 143,0
 - Skillnad Halland mot riket: -88,0 resor/inv
@@ -120,7 +120,7 @@ Mäter: Antal resor med regional kollektivtrafik per invånare i länet. Måttet
 - Serien för Halland 2010–2025: högst 60,0 (2019), lägst 33,1 (2021)
 
 ### Befolkning i kollektivtrafiknära läge, andel (procent, 2024)
-Mäter: Andel befolkning i det geografiska området som har en trafikerad hållplats inom 500 meter från sin folkbokföringsadress. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Nyckeltalet följer upp miljökvalitetsmålet 'God bebyggd miljö', se även www.sverigesmiljomal.se.
+Mäter: Andel av befolkningen som har en trafikerad hållplats inom 500 meter fågelvägen från folkbokföringsadressen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag.
 - Halland: 76,8
 - Riket: 80,9
 - Skillnad Halland mot riket: -4,1 procentenheter
@@ -153,7 +153,7 @@ Mäter: Andel befolkning i det geografiska området som har en trafikerad hållp
 - Förändring 1 år: -4,7 procentenheter (från 25,4 år 2023); riket -2,5 procentenheter
 
 ### Nytillkomna bostäder i kollektivtrafiknära läge, andel (procent, 2024)
-Mäter: Andel av kommunens nytillkomna bostäder under en treårsperiod som ligger i kollektivtrafiknära läge. Måttet visar om bostadsbyggandet stödjer hållbart resande genom att placera nya bostäder nära befintlig kollektivtrafik.
+Mäter: Andel av de bostäder som tillkom under året som har en trafikerad hållplats inom 500 meter fågelvägen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag.
 - Halland: 81,5
 - Riket: 91,4
 - Skillnad Halland mot riket: -9,9 procentenheter
@@ -166,7 +166,7 @@ Mäter: Andel av kommunens nytillkomna bostäder under en treårsperiod som ligg
 - Serien för Halland 2014–2024: högst 86,5 (2014), lägst 73,1 (2015)
 
 ### Förnybara drivmedel i kollektivtrafiken, andel (procent, 2025)
-Mäter: Andel av regionens kollektivtrafik som drivs med förnybara drivmedel, mätt i energiinnehåll. Inkluderar biodrivmedel, biogas och el från förnybara källor. Avser läns-/regionnivå.
+Mäter: Andel förnybara drivmedel, viktat efter energiinnehåll, i den allmänna kollektivtrafiken med trafikplikt: spårtrafik, buss och båt. Förnybart avser förnybar el, biodiesel, biogas och etanol, även låginblandning i diesel och bensin. Avser läns- och regionnivå.
 - Halland: 98,6
 - Riket: 94,6
 - Skillnad Halland mot riket: +4,0 procentenheter
@@ -178,7 +178,7 @@ Mäter: Andel av regionens kollektivtrafik som drivs med förnybara drivmedel, m
 - Serien för Halland 2012–2025: högst 98,6 (2025), lägst 61,5 (2012)
 
 ### Nettokostnad trafik, kronor per invånare (regionnivå) (kr/inv, 2025)
-Mäter: Regionens nettokostnad för trafikverksamhet per invånare, det vill säga kostnader minus intäkter för kollektivtrafik och annan regional trafikverksamhet. Måttet visar den offentliga subventionsgraden och avser läns-/regionnivå.
+Mäter: Regionens nettokostnad för trafik per invånare den 31 december, alltså den del av kostnaden som finansieras med skatt, generella statsbidrag och utjämning. Huvuddelen är bidrag till den regionala kollektivtrafikmyndigheten. Avser läns- och regionnivå.
 - Halland: 1 893
 - Riket: 3 063
 - Skillnad Halland mot riket: -1 171 kr/inv
@@ -192,7 +192,7 @@ Mäter: Regionens nettokostnad för trafikverksamhet per invånare, det vill sä
 ## Fordonsflotta och elektrifiering
 
 ### Personbilar, antal per 1 000 invånare (per 1 000 inv., 2025)
-Mäter: Antal registrerade personbilar per 1 000 invånare i kommunen. Måttet visar biltätheten och påverkas av faktorer som kollektivtrafikutbud, urbaniseringsgrad och inkomstnivå. Kommuner med god kollektivtrafik och tät bebyggelse tenderar att ha lägre bilinnehav.
+Mäter: Antal personbilar i trafik den 31 december, oavsett drivmedel, per 1 000 invånare.
 - Halland: 532,6
 - Riket: 475,2
 - Skillnad Halland mot riket: +57,4 per 1 000 inv.
@@ -205,7 +205,7 @@ Mäter: Antal registrerade personbilar per 1 000 invånare i kommunen. Måttet v
 - Serien för Halland 2013–2025: högst 535,5 (2017), lägst 519,6 (2013)
 
 ### Elbilar, andel av personbilar (procent, 2025)
-Mäter: Andel av kommunens registrerade personbilar som är rena elbilar. Elektrifieringen av fordonsflottan är central för att minska transporternas klimatpåverkan. Högre andelar syns oftare i kommuner med höga inkomster och god laddinfrastruktur.
+Mäter: Andel av personbilarna i trafik den 31 december som drivs med el.
 - Halland: 8,09
 - Riket: 8,59
 - Skillnad Halland mot riket: -0,50 procentenheter
@@ -218,7 +218,7 @@ Mäter: Andel av kommunens registrerade personbilar som är rena elbilar. Elektr
 - Serien för Halland 2013–2025: högst 8,09 (2025), lägst 0,01 (2013)
 
 ### Laddhybridbilar, andel av personbilar (procent, 2025)
-Mäter: Andel av kommunens registrerade personbilar som är laddhybrider, det vill säga bilar med kombination av elmotor och förbränningsmotor som kan laddas externt. Laddhybrider ses som en övergångsteknik mot helelektrifiering.
+Mäter: Andel av personbilarna i trafik den 31 december som är laddhybrider, det vill säga har både förbränningsmotor och elmotor och ett batteri som kan laddas från elnätet.
 - Halland: 6,31
 - Riket: 7,42
 - Skillnad Halland mot riket: -1,11 procentenheter
@@ -231,7 +231,7 @@ Mäter: Andel av kommunens registrerade personbilar som är laddhybrider, det vi
 - Serien för Halland 2013–2025: högst 6,31 (2025), lägst 0,02 (2013)
 
 ### Fossiloberoende personbilar, andel av totalt antal bilar (procent, 2025)
-Mäter: Andel av kommunens personbilar som klassas som fossiloberoende, det vill säga elbilar, laddhybrider och bilar som kan köras på biodrivmedel. Måttet ger en samlad bild av omställningen bort från fossila drivmedel i personbilsflottan.
+Mäter: Andel av personbilarna som kan köras på drivmedel från förnybara källor, men inte nödvändigtvis gör det: el, laddhybrider som laddas med sladd, gas, E85, vätgas och bilar som tillverkaren godkänt för HVO100.
 - Halland: 23,4
 - Riket: 26,0
 - Skillnad Halland mot riket: -2,6 procentenheter
@@ -243,7 +243,7 @@ Mäter: Andel av kommunens personbilar som klassas som fossiloberoende, det vill
 - Serien för Halland 2020–2025: högst 23,4 (2025), lägst 10,2 (2020)
 
 ### Elbilsladdpunkter, totalt antal i kommunen (antal, 2025)
-Mäter: Totalt antal publikt tillgängliga laddpunkter för elbilar i kommunen, inklusive både normalladdare och snabbladdare. God laddinfrastruktur är en förutsättning för elektrifieringen av fordonsflottan, särskilt för dem utan egen parkering.
+Mäter: Antal offentligt tillgängliga laddpunkter för elbilar, med både offentliga och privata ägare: normalladdare (upp till 50 kW), snabbladdare (50 till 150 kW) och supersnabbladdare (över 150 kW). Uppdelningen visar normal- och snabbladdare, så supersnabbladdarna ingår bara i totalen.
 - Halland: 2 148
 - Riket: 60 892
 - Plats bland landets 21 regioner: 4 (1 = högsta värdet)
@@ -268,7 +268,7 @@ Mäter: Totalt antal publikt tillgängliga laddpunkter för elbilar i kommunen, 
 ## Bilresande och trafiksäkerhet
 
 ### Genomsnittlig körsträcka med personbil, mil per invånare och år (mil/inv, 2024)
-Mäter: Genomsnittlig årlig körsträcka med personbil per invånare. Beräknas utifrån de personbilar som är registrerade i kommunen. Långa körsträckor kan spegla långa pendlingsavstånd, dålig kollektivtrafik eller gles bebyggelse.
+Mäter: Total körsträcka per år med personbilar registrerade i kommunen, delad med antalet invånare. Säger inget om var bilarna har körts. Bilar registrerade på företag ingår, vilket kan ge höga värden i kommuner med många företag och huvudkontor.
 - Halland: 683,7
 - Riket: 624,8
 - Skillnad Halland mot riket: +58,9 mil/inv
@@ -281,7 +281,7 @@ Mäter: Genomsnittlig årlig körsträcka med personbil per invånare. Beräknas
 - Serien för Halland 2010–2024: högst 737,4 (2016), lägst 662,7 (2021)
 
 ### Trafikolyckor med räddningsinsatser, antal per 1 000 invånare (per 1 000 inv., 2025)
-Mäter: Antal trafikolyckor som krävt kommunal räddningsinsats per 1 000 invånare. Måttet fångar de allvarligaste olyckorna och påverkas av trafikvolymer, hastighetsgränser och vägnätets säkerhet.
+Mäter: Genomsnittligt antal räddningsinsatser till trafikolyckor per år under tre år (året och de två föregående), per 1 000 invånare den 31 december. Alla trafikelement ingår, till exempel personbil, lastbil, cykel och djur.
 - Halland: 1,52
 - Riket: 1,41
 - Skillnad Halland mot riket: +0,12 per 1 000 inv.

@@ -1,5 +1,37 @@
 [
   {
+    "id": "N02938",
+    "namn": "Hushåll, antal",
+    "enhet": "antal",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2011,
+    "sista": 2025
+  },
+  {
+    "id": "N02942",
+    "namn": "Ensamstående hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N02938 (hushållstyperna)",
+    "forsta": 2011,
+    "sista": 2025
+  },
+  {
+    "id": "N02943",
+    "namn": "Sammanboende hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N02938 (hushållstyperna)",
+    "forsta": 2011,
+    "sista": 2025
+  },
+  {
+    "id": "N02944",
+    "namn": "Övriga hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N02938 (hushållstyperna)",
+    "forsta": 2011,
+    "sista": 2025
+  },
+  {
     "id": "N07905",
     "namn": "Färdigställda småhus per 1 000 invånare",
     "enhet": "antal/1 000 inv",
@@ -17,25 +49,25 @@
   },
   {
     "id": "N07907",
-    "namn": "Trångbodda hushåll, andel (%)",
+    "namn": "Trångbodda i flerbostadshus enligt norm 2, andel (%)",
     "enhet": "procent",
-    "roll": "indikator i bandet Priser och trångboddhet",
+    "roll": "indikator i bandet Hushåll och boende",
     "forsta": 2012,
     "sista": 2025
   },
   {
     "id": "N07908",
-    "namn": "Genomsnittligt pris för bostadsrätter, kr/kvm",
+    "namn": "Pris för bostadsrätter, kr per kvm",
     "enhet": "kr/kvm",
-    "roll": "indikator i bandet Priser och trångboddhet",
+    "roll": "indikator i bandet Priser",
     "forsta": 2010,
     "sista": 2025
   },
   {
     "id": "N07909",
-    "namn": "Genomsnittligt pris för småhus, tkr",
+    "namn": "Pris för småhus, kr per kvm",
     "enhet": "kr/kvm",
-    "roll": "indikator i bandet Priser och trångboddhet",
+    "roll": "indikator i bandet Priser",
     "forsta": 2010,
     "sista": 2025
   },
@@ -48,6 +80,14 @@
     "sista": 2025
   },
   {
+    "id": "N07914",
+    "namn": "Trångbodda i flerbostadshus enligt norm 3, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2012,
+    "sista": 2025
+  },
+  {
     "id": "N07917",
     "namn": "Nybyggda bostäder per 1 000 invånare",
     "enhet": "antal/1 000 inv",
@@ -57,7 +97,7 @@
   },
   {
     "id": "N07923",
-    "namn": "Planberedskap för bostadsbyggande, antal bostäder i detaljplan",
+    "namn": "Planberedskap, möjliga nya bostäder i gällande detaljplaner per 1 000 invånare",
     "enhet": "antal/1 000 inv",
     "roll": "indikator i bandet Bostadsbestånd och byggande",
     "forsta": 2021,
@@ -65,7 +105,7 @@
   },
   {
     "id": "N07956",
-    "namn": "Hyresrätter per 1 000 invånare",
+    "namn": "Hyresrätter i bostadsbeståndet, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N07913 (upplåtelseformerna)",
     "forsta": 2013,
@@ -73,7 +113,7 @@
   },
   {
     "id": "N07957",
-    "namn": "Bostadsrätter per 1 000 invånare",
+    "namn": "Bostadsrätter i bostadsbeståndet, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N07913 (upplåtelseformerna)",
     "forsta": 2013,
@@ -81,10 +121,26 @@
   },
   {
     "id": "N07958",
-    "namn": "Äganderätter per 1 000 invånare",
+    "namn": "Äganderätter i bostadsbeståndet, andel (%)",
     "enhet": "procent",
     "roll": "uppdelning av N07913 (upplåtelseformerna)",
     "forsta": 2013,
     "sista": 2025
+  },
+  {
+    "id": "N45920",
+    "namn": "Hushållens energianvändning, MWh per invånare",
+    "enhet": "MWh/inv",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2010,
+    "sista": 2023
+  },
+  {
+    "id": "N66081",
+    "namn": "Invånare med ansträngd boendeekonomi, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2012,
+    "sista": 2024
   }
 ]

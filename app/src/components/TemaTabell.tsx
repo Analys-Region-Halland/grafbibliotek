@@ -6,7 +6,7 @@ import { sammanfatta } from "../utils/kpiStats";
 import type { KpiIndex, KpiSammanfattning } from "../utils/kpiStats";
 import { byggGrupper, uppdelningsText } from "../utils/temaRader";
 import type { TabellRad } from "../utils/temaRader";
-import { kpiDecimaler } from "../utils/format";
+import { kpiDecimaler, fmtPeriod } from "../utils/format";
 import { fmt as fmtBas, fmtStor } from "../utils/format";
 import Spar from "../charts/Spar";
 import RadTip from "./RadTip";
@@ -148,8 +148,9 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
     const arOppen = oppna.has(r.kpiId);
     const arAntal = r.enhet === "antal";
     const delta = deltaFor(s, dec, r.lagtArBra);
+    const gammal = s.period < s.nyastePeriod;
 
-    const aria = [`${r.helaNamn}: ${fmt(s.varde, dec)} ${enhetText(r.enhet)}`,
+    const aria = [`${r.helaNamn}: ${fmt(s.varde, dec)} ${enhetText(r.enhet)}${gammal ? ` (${fmtPeriod(s.period)})` : ""}`,
       s.riket != null ? `riket ${fmt(s.riket, dec)}` : "",
       s.rang != null ? `plats ${s.rang} av ${s.n}` : ""].filter(Boolean).join(", ");
     const flera = r.nedbrytningar.length > 1;
@@ -179,7 +180,7 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
           </div>
           <div className="kt-c-varde kt-tal kt-varde">
             <b>{kort(s.varde, dec)}</b>{delta && <> <span className={`kt-delta ${delta.klass}`}>{delta.text}</span></>}
-            <span className="kt-enhet">{s.ki ? `${enhetText(r.enhet)}, enkät` : enhetText(r.enhet)}</span>
+            <span className="kt-enhet">{s.ki ? `${enhetText(r.enhet)}, enkät` : enhetText(r.enhet)}{gammal && <>, <span className="kt-aldre" title={`Senaste värdet för ${enhetNamn}. Statistiken finns för andra enheter till och med ${fmtPeriod(s.nyastePeriod)}`}>{fmtPeriod(s.period)}</span></>}</span>
           </div>
           <div className="kt-c-riket kt-tal kt-riket">{s.riket != null ? kort(s.riket, dec) : "–"}</div>
           <div className="kt-c-spar"

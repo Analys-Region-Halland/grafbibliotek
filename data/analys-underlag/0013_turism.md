@@ -130,7 +130,7 @@ Mäter: Antal gästnätter per invånare. Mäter turismintensiteten i förhålla
 - Serien för Halland 2008–2025: högst 9 (2025), lägst 7 (2020)
 
 ### Gästnätter, årlig förändring (procent, 2025)
-Mäter: Gästnätternas förändring jämfört med föregående år, procent.
+Mäter: Gästnätternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Halland: 5,40
 - Riket: 2,50
 - Skillnad Halland mot riket: +2,90 procentenheter
@@ -144,7 +144,7 @@ Mäter: Gästnätternas förändring jämfört med föregående år, procent.
 - Serien för Halland 2009–2025: högst 20,00 (2021), lägst -18,60 (2020)
 
 ### Andel utländska gästnätter (procent, 2025)
-Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent.
+Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Halland: 14,9
 - Riket: 26,3
 - Skillnad Halland mot riket: -11,4 procentenheter
@@ -186,7 +186,7 @@ Mäter: Antal ankomster av utländska gäster till kommersiella boenden.
 - Serien för Halland 2008–2025: högst 218 719 (2025), lägst 40 765 (2020)
 
 ### Andel utländska gästankomster (procent, 2025)
-Mäter: Utländska gästankomster som andel av samtliga ankomster, procent.
+Mäter: Utländska gästankomster som andel av samtliga ankomster, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Halland: 13,9
 - Riket: 23,8
 - Skillnad Halland mot riket: -9,9 procentenheter
@@ -215,7 +215,7 @@ Mäter: Totalt antal kommersiella boendeanläggningar.
 - Serien för Halland 2008–2025: högst 164 (2013), lägst 138 (2008)
 
 ### Gästnätter per anläggning (antal, 2025)
-Mäter: Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.
+Mäter: Genomsnittligt antal gästnätter per anläggning. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Halland: 21 615
 - Riket: 16 096
 - Plats bland landets 21 regioner: 2 (1 = högsta värdet)
@@ -272,7 +272,7 @@ Mäter: Totala logiintäkter i kronor vid kommersiella boenden.
 - Serien för Halland 2008–2025: högst 1 339 415 373 (2025), lägst 432 277 124 (2009)
 
 ### Logiintäkt per gästnatt (kr, 2025)
-Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala logiintäkter dividerat med antal gästnätter.
+Mäter: Genomsnittlig logiintäkt per gästnatt, kronor: totala logiintäkter dividerade med antal gästnätter. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Halland: 427,0
 - Riket: 578,0
 - Skillnad Halland mot riket: -151,0 kr
@@ -286,7 +286,7 @@ Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala lo
 - Serien för Halland 2008–2025: högst 427,0 (2025), lägst 190,0 (2009)
 
 ### Logiintäkter, årlig förändring (procent, 2025)
-Mäter: Logiintäkternas förändring jämfört med föregående år, procent.
+Mäter: Logiintäkternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Halland: 8,00
 - Riket: 4,40
 - Skillnad Halland mot riket: +3,60 procentenheter

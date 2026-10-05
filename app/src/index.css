@@ -260,6 +260,7 @@ body {
 .kt-delta.kt-battre { color: #00664D; }
 .kt-delta.kt-samre { color: #A51300; }
 .kt-enhet { display: block; font-size: 11px; line-height: 1.25; color: var(--mjuk); white-space: normal; }
+.kt-enhet .kt-aldre { color: var(--ink); font-weight: 600; }
 .kt-riket { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 13px; color: var(--mjuk); }
 
 .kt-bricka {

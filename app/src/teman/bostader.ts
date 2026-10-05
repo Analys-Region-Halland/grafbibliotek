@@ -2,7 +2,8 @@ import type { TemaConfig } from "./tema-config";
 
 const G = {
   BESTAND: "Bostadsbestånd och byggande",
-  PRISER: "Priser och trångboddhet",
+  HUSHALL: "Hushåll och boende",
+  PRISER: "Priser",
 };
 
 const bostader: TemaConfig = {
@@ -31,10 +32,19 @@ const bostader: TemaConfig = {
       kpiIds: ["N07923"],
     },
     {
+      id: "hushall",
+      gruppRubrik: G.HUSHALL,
+      namn: "Hushåll och boende",
+      kpiIds: ["N02938", "N07914", "N07907", "N66081", "N45920"],
+      undersektioner: [
+        { namn: "hushållstyperna", delAv: "N02938", kpiIds: ["N02942", "N02943", "N02944"] },
+      ],
+    },
+    {
       id: "priser",
       gruppRubrik: G.PRISER,
-      namn: "Priser och trångboddhet",
-      kpiIds: ["N07908", "N07909", "N07907"],
+      namn: "Priser",
+      kpiIds: ["N07908", "N07909"],
     },
   ],
   kortNamn: {
@@ -43,15 +53,18 @@ const bostader: TemaConfig = {
     N07958: "Äganderätter",
     N07905: "Småhus",
     N07906: "Lägenheter i flerbostadshus",
+    N02942: "Ensamstående",
+    N02943: "Sammanboende",
+    N02944: "Övriga hushåll",
   },
   visningsnamn: {
     "N07913": "Antal bostäder per 1 000 invånare",
     "B_TOT": "Antal bostäder, totalt",
-    "N07956": "Hyresrätter per 1 000 invånare",
+    "N07956": "Hyresrätter i bostadsbeståndet, andel (%)",
     "B_HYRA_N": "Hyresrätter, antal",
-    "N07957": "Bostadsrätter per 1 000 invånare",
+    "N07957": "Bostadsrätter i bostadsbeståndet, andel (%)",
     "B_BOST_N": "Bostadsrätter, antal",
-    "N07958": "Äganderätter per 1 000 invånare",
+    "N07958": "Äganderätter i bostadsbeståndet, andel (%)",
     "B_AGAN_N": "Äganderätter, antal",
     "N07917": "Nybyggda bostäder per 1 000 invånare",
     "B_NY_TOT": "Nybyggda bostäder, antal",
@@ -59,11 +72,19 @@ const bostader: TemaConfig = {
     "B_NY_SMAHUS": "Färdigställda småhus, antal",
     "N07906": "Färdigställda lägenheter i flerbostadshus per 1 000 invånare",
     "B_NY_FLERBO": "Färdigställda lägenheter i flerbostadshus, antal",
-    "N07923": "Planberedskap för bostadsbyggande, antal bostäder i detaljplan",
-    "N07908": "Genomsnittligt pris för bostadsrätter, kr/kvm",
-    "N07909": "Genomsnittligt pris för småhus, tkr",
-    "N07907": "Trångbodda hushåll, andel (%)",
+    "N07923": "Planberedskap, möjliga nya bostäder i gällande detaljplaner per 1 000 invånare",
+    "N07908": "Pris för bostadsrätter, kr per kvm",
+    "N07909": "Pris för småhus, kr per kvm",
+    "N02938": "Hushåll, antal",
+    "N02942": "Ensamstående hushåll, andel (%)",
+    "N02943": "Sammanboende hushåll, andel (%)",
+    "N02944": "Övriga hushåll, andel (%)",
+    "N07914": "Trångbodda i flerbostadshus enligt norm 3, andel (%)",
+    "N07907": "Trångbodda i flerbostadshus enligt norm 2, andel (%)",
+    "N66081": "Invånare med ansträngd boendeekonomi, andel (%)",
+    "N45920": "Hushållens energianvändning, MWh per invånare",
   },
+  lagtArBra: ["N07914", "N07907", "N66081", "N45920"],
 };
 
 export default bostader;

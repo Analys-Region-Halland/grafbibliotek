@@ -1,5 +1,11 @@
 import type { TemaConfig } from "./tema-config";
 
+const G = {
+  LUFT: "Utsläpp till luft",
+  ENERGI: "Energi och omställning",
+  AVFALL: "Avfall och skyddad natur",
+};
+
 const miljoKlimat: TemaConfig = {
   temaId: "miljo_klimat",
   temaNamn: "Miljö & klimat",
@@ -9,17 +15,32 @@ const miljoKlimat: TemaConfig = {
   sektioner: [
     {
       id: "utslapp",
-      gruppRubrik: "Utsläpp av växthusgaser",
-      namn: "Växthusgasutsläpp",
-      kpiIds: ["N00401"],
+      gruppRubrik: G.LUFT,
+      namn: "Utsläpp till luft",
+      kpiIds: ["N00401", "N85047", "N85048"],
       undersektioner: [
-        { namn: "utsläppen från fyra sektorer", kpiIds: ["N85073", "N85077", "N85078", "N85072"] },
+        {
+          namn: "sektorerna",
+          delAv: "N00401",
+          sorteraEfterVarde: true,
+          kpiIds: ["N85073", "N85077", "N85078", "N85072", "N85075", "N85076", "N85543", "N85541"],
+        },
       ],
     },
     {
       id: "energi",
+      gruppRubrik: G.ENERGI,
       namn: "Energi och omställning",
       kpiIds: ["N45913", "N45925", "N00403"],
+    },
+    {
+      id: "avfall-natur",
+      gruppRubrik: G.AVFALL,
+      namn: "Avfall och skyddad natur",
+      kpiIds: ["U07801", "U07414", "N85054"],
+      undersektioner: [
+        { namn: "land, hav och inlandsvatten", delAv: "N85054", kpiIds: ["N85055", "N85056", "N85057"] },
+      ],
     },
   ],
   kortNamn: {
@@ -27,6 +48,13 @@ const miljoKlimat: TemaConfig = {
     N85077: "Industri",
     N85078: "Jordbruk",
     N85072: "Uppvärmning",
+    N85075: "Arbetsmaskiner",
+    N85076: "El och fjärrvärme",
+    N85543: "Avfall och avlopp",
+    N85541: "Produktanvändning",
+    N85055: "Land",
+    N85056: "Hav",
+    N85057: "Inlandsvatten",
   },
   visningsnamn: {
     N00401: "Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare",
@@ -39,14 +67,34 @@ const miljoKlimat: TemaConfig = {
     N85538: "Växthusgasutsläpp jordbruk, ton CO2-ekvivalenter",
     N85072: "Växthusgasutsläpp uppvärmning, ton CO2-ekvivalenter per invånare",
     N85532: "Växthusgasutsläpp uppvärmning, ton CO2-ekvivalenter",
+    N85075: "Växthusgasutsläpp arbetsmaskiner, ton CO2-ekvivalenter per invånare",
+    N85535: "Växthusgasutsläpp arbetsmaskiner, ton CO2-ekvivalenter",
+    N85076: "Växthusgasutsläpp el och fjärrvärme, ton CO2-ekvivalenter per invånare",
+    N85536: "Växthusgasutsläpp el och fjärrvärme, ton CO2-ekvivalenter",
+    N85543: "Växthusgasutsläpp avfall och avlopp, ton CO2-ekvivalenter per invånare",
+    N85542: "Växthusgasutsläpp avfall och avlopp, ton CO2-ekvivalenter",
+    N85541: "Växthusgasutsläpp produktanvändning, ton CO2-ekvivalenter per invånare",
+    N85540: "Växthusgasutsläpp produktanvändning, ton CO2-ekvivalenter",
+    N85047: "Utsläpp av kväveoxider, kg per invånare",
+    N07701: "Utsläpp av kväveoxider, kg",
+    N85048: "Utsläpp av partiklar (PM2,5), kg per invånare",
+    N07700: "Utsläpp av partiklar (PM2,5), kg",
     N45913: "Energianvändning transporter, MWh per invånare",
     N45945: "Energianvändning transporter, MWh",
     N45925: "Elproduktion av förnybara energikällor, andel (%)",
     N00403: "Ekologiskt brukad åkermark, andel (%)",
+    U07801: "Insamlat kommunalt avfall, kg per invånare",
+    U07414: "Kommunalt avfall till materialåtervinning, andel (%)",
+    N85054: "Skyddad natur, andel av arealen (%)",
+    N85055: "Skyddad natur på land, andel (%)",
+    N85056: "Skyddad natur i hav, andel (%)",
+    N85057: "Skyddad natur i inlandsvatten, andel (%)",
   },
   lagtArBra: [
     "N00401", "N07702", "N85073", "N85533", "N85077", "N85537",
     "N85078", "N85538", "N85072", "N85532", "N45913", "N45945",
+    "N85075", "N85535", "N85076", "N85536", "N85543", "N85542", "N85541", "N85540",
+    "N85047", "N07701", "N85048", "N07700", "U07801",
   ],
 };
 

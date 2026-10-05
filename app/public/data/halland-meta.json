@@ -1,5 +1,33 @@
 [
   {
+    "kpi_id": "N03942",
+    "kpi_namn": "Ungdomsarbetslöshet, 18–24 år",
+    "beskrivning": "Andel av arbetskraften 18–24 år som är öppet arbetslösa eller i program med aktivitetsstöd, årsmedelvärde. Arbetskraften enligt SCB:s befolkningens arbetsmarknadsstatus (BAS). Serien börjar 2023. Källa: Arbetsförmedlingen och SCB via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad"
+  },
+  {
+    "kpi_id": "N02797",
+    "kpi_namn": "Unga som varken arbetar eller studerar, 16–24 år",
+    "beskrivning": "Andel invånare 16–24 år som under året varken arbetat (inkomst över ett basbelopp) eller studerat. Källa: Myndigheten för ungdoms- och civilsamhällesfrågor (MUCF) via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad"
+  },
+  {
+    "kpi_id": "N03954",
+    "kpi_namn": "Långtidsarbetslösa av arbetslösa, 18–65 år",
+    "beskrivning": "Andel av de arbetslösa 18–65 år (öppet arbetslösa eller i program med aktivitetsstöd) som varit det i minst sex månader, årsmedelvärde. Källa: Arbetsförmedlingen via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "arbetsmarknad"
+  },
+  {
+    "kpi_id": "N00906",
+    "kpi_namn": "Förvärvsinkomst, median 20–64 år",
+    "beskrivning": "Medianen av sammanräknad förvärvsinkomst för invånare 20–64 år: inkomst av tjänst och näringsverksamhet, inklusive pension, sjukpenning och andra skattepliktiga transfereringar men inte kapitalinkomster. Källa: SCB via RKA Kolada.",
+    "enhet": "kr",
+    "tema": "arbetsmarknad"
+  },
+  {
     "kpi_id": "S_SYSS_TOT",
     "kpi_namn": "Sysselsättningsgrad",
     "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Slutlig statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på årliga registeruppgifter och innehåller mer fullständiga och uppdaterade uppgifter än den preliminära månadsstatistiken. Publiceras med cirka 18 månaders eftersälpning.",
@@ -491,9 +519,30 @@
     "tema": "befolkning"
   },
   {
-    "kpi_id": "N07418",
-    "kpi_namn": "Befolkning i kollektivtrafiknära läge, andel (%)",
-    "beskrivning": "Andel befolkning i det geografiska området som har en trafikerad hållplats inom 500 meter från sin folkbokföringsadress. Med trafikerad hållplats avses hållplats, för samtliga trafikslag som trafikeras med minst en avgång per timme, vardagar mellan 06:00 och 20:00. Avståndet till hållplats utgår från fågelavstånd och beaktar inte väg- och gatunät. Nyckeltalet följer upp miljökvalitetsmålet 'God bebyggd miljö', se även www.sverigesmiljomal.se. Källa: SCB",
+    "kpi_id": "N02938",
+    "kpi_namn": "Hushåll, antal",
+    "beskrivning": "Antal hushåll 31/12 år T. Källa: SCB.",
+    "enhet": "antal",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N02942",
+    "kpi_namn": "Ensamstående hushåll, andel (%)",
+    "beskrivning": "Antal ensamstående hushåll 31/12 år T dividerat med antal hushåll totalt 31/12 år T. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N02943",
+    "kpi_namn": "Sammanboende hushåll, andel (%)",
+    "beskrivning": "Antal sammanboende hushåll 31/12 år T dividerat med antal hushåll totalt 31/12 år T. Källa: SCB.",
+    "enhet": "procent",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N02944",
+    "kpi_namn": "Övriga hushåll, andel (%)",
+    "beskrivning": "Antal övriga hushåll 31/12 år T dividerat med antal hushåll totalt 31/12 år T. Hushåll där minst en person saknar relationer till någon i hushållet. Hushåll som inte kan klassas som ensamstående eller sammanboende räknas som övriga hushåll, det kan exempelvis avse flergenerationshushåll och kompisboende. Källa: SCB.",
     "enhet": "procent",
     "tema": "bostader"
   },
@@ -543,6 +592,13 @@
     "par_kpi_id": "B_TOT"
   },
   {
+    "kpi_id": "N07914",
+    "kpi_namn": "Trångboddhet i flerbostadshus, enligt norm 3, andel (%)",
+    "beskrivning": "Antal personer boende i flerbostadshus exklusive specialbostäder trångbodda enligt norm 3, dividerat med antal personer boende i flerbostadshus exklusive specialbostäder, multiplicerat med 100 för redovisning i procent. Specialbostäder avser studentbostäder, bostäder för äldre/funktionshindrade och övriga specialbostäder. Norm 3, skapades 1974. Hushållet räknas som trångbott om det bor mer än en person per rum (vardagsrum och kök oräknade). Sammanboende par förutsätts dela sovrum. Källa: SCB",
+    "enhet": "procent",
+    "tema": "bostader"
+  },
+  {
     "kpi_id": "N07917",
     "kpi_namn": "Färdigställda bostäder, nybyggnad, antal/1000 inv",
     "beskrivning": "Inkluderar småhus och flerbostadshus. Småhus avser friliggande en- och tvåbostadshus samt par-, rad- och kedjehus (exklusive fritidshus). Flerbostadshus avser bostadsbyggnader innehållande tre eller flera lägenheter inklusive loftgångshus. Alla kommuner lämnar månatligen uppgifter om beviljade bygglov. Insamlingsrutinerna utgår från PBL. Uppgift om färdigställande ska primärt baseras på det slutbesked som byggherren ska få från byggnadsnämnden för bygglovsärendet. Dividerat med antal invånare 31/12 multiplicerat med 1000. Källa: SCB.",
@@ -580,6 +636,20 @@
     "enhet": "procent",
     "tema": "bostader",
     "par_kpi_id": "B_AGAN_N"
+  },
+  {
+    "kpi_id": "N45920",
+    "kpi_namn": "Slutanvändning energi inom hushåll inom det geografiska området, MWh/inv",
+    "beskrivning": "Slutanvändning av energi mätt i megawattimmar (MWh) dividerat med antalet invånare i kommunen. Avser slutanvänding som konsumerats av hushåll (småhus, flerbostadshus, fritidshus) oavsett bränsletyp, inom det geografiska områdets gränser. Källa: Energimyndigheten och SCB.",
+    "enhet": "MWh/inv",
+    "tema": "bostader"
+  },
+  {
+    "kpi_id": "N66081",
+    "kpi_namn": "Invånare med ansträngd boendeekonomi, andel (%)",
+    "beskrivning": "Bygger på Boverkets framtagna underlag på mått över andelen hushåll med en ansträngd boendeekonomi. Ansträngd boendeekonomi definieras som ”hushållet har en inkomst som inte räcker till att täcka en baskonsumtion beräknad utifrån genomsnittshyror på orden och riksnormen”. Källa: Boverket.",
+    "enhet": "procent",
+    "tema": "bostader"
   },
   {
     "kpi_id": "B_TOT",
@@ -954,8 +1024,8 @@
   {
     "kpi_id": "N00401",
     "kpi_namn": "Växthusgasutsläpp totalt, ton CO2-ekv/inv",
-    "beskrivning": "Totala utsläpp av växthusgaser inom kommunens geografiska gräns, mätt i ton koldioxidekvivalenter per invånare. Måttet inkluderar koldioxid, metan och lustgas från alla sektorer. Lägre värden innebär lägre klimatpåverkan per person. Källa: Nationella emissionsdatabasen via RKA Kolada.",
-    "enhet": "ton CO2/inv",
+    "beskrivning": "Utsläpp av växthusgaser inom kommunens gräns per invånare, i ton koldioxidekvivalenter (fossil koldioxid, metan, lustgas och fluorerade gaser) från alla sektorer. Utsläppen är inte konsumtionsbaserade: enskilda industrier, trafik på stora vägar eller mycket jordbruk kan ge höga värden lokalt. Tidsserien revideras bakåt vid varje uppdatering. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "ton CO2-ekv/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N07702"
   },
@@ -970,8 +1040,8 @@
   {
     "kpi_id": "N85073",
     "kpi_namn": "Växthusgasutsläpp transporter, ton CO2-ekv/inv",
-    "beskrivning": "Utsläpp av växthusgaser från inrikes transporter per invånare. Inkluderar vägtrafik, sjöfart, flyg, järnväg och arbetsmaskiner inom kommunens gräns. Kommuner med stor genomfartstrafik tenderar att ha högre värden. Källa: Nationella emissionsdatabasen via RKA Kolada.",
-    "enhet": "ton CO2/inv",
+    "beskrivning": "Utsläpp av växthusgaser från transporter inom kommunens gräns per invånare, i ton koldioxidekvivalenter (fossil koldioxid, metan, lustgas och fluorerade gaser): vägtrafik, järnväg, inrikes flyg, inrikes civil sjöfart och militära transporter, inklusive slitage och avdunstning från vägfordon. Arbetsmaskiner redovisas som en egen sektor. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "ton CO2-ekv/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85533"
   },
@@ -987,7 +1057,7 @@
     "kpi_id": "N85077",
     "kpi_namn": "Växthusgasutsläpp industri, ton CO2-ekv/inv",
     "beskrivning": "Utsläpp av växthusgaser från industriprocesser och industriell energianvändning per invånare. Enstaka stora anläggningar kan ge höga per capita-värden i mindre kommuner. Källa: Nationella emissionsdatabasen via RKA Kolada.",
-    "enhet": "ton CO2/inv",
+    "enhet": "ton CO2-ekv/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85537"
   },
@@ -1003,7 +1073,7 @@
     "kpi_id": "N85078",
     "kpi_namn": "Växthusgasutsläpp jordbruk, ton CO2-ekv/inv",
     "beskrivning": "Utsläpp av växthusgaser från jordbruket per invånare. Inkluderar metan från djurhållning och lustgas från gödsling. Kommuner med omfattande jordbruk har typiskt högre värden. Källa: Nationella emissionsdatabasen via RKA Kolada.",
-    "enhet": "ton CO2/inv",
+    "enhet": "ton CO2-ekv/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85538"
   },
@@ -1018,8 +1088,8 @@
   {
     "kpi_id": "N85072",
     "kpi_namn": "Växthusgasutsläpp uppvärmning, ton CO2-ekv/inv",
-    "beskrivning": "Utsläpp av växthusgaser från egen uppvärmning av bostäder och lokaler per invånare. Avser direkta utsläpp från förbränning av olja, gas och ved. Kommuner med utbyggd fjärrvärme har generellt lägre värden. Källa: Nationella emissionsdatabasen via RKA Kolada.",
-    "enhet": "ton CO2/inv",
+    "beskrivning": "Utsläpp av växthusgaser från egen uppvärmning av bostäder, kommersiella och offentliga lokaler samt jordbruks- och skogsbrukslokaler per invånare, i ton koldioxidekvivalenter (fossil koldioxid, metan, lustgas och fluorerade gaser). Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "ton CO2-ekv/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N85532"
   },
@@ -1032,9 +1102,147 @@
     "par_kpi_id": "N85072"
   },
   {
+    "kpi_id": "N85075",
+    "kpi_namn": "Växthusgasutsläpp arbetsmaskiner, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från arbetsmaskiner per invånare: bland annat industrins och byggsektorns arbetsmaskiner, fiskebåtar, jord- och skogsbruk och hushållens maskiner. Utsläppen per invånare ska inte tolkas som konsumtionsbaserade. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "ton CO2-ekv/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85535"
+  },
+  {
+    "kpi_id": "N85535",
+    "kpi_namn": "Växthusgasutsläpp arbetsmaskiner, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från arbetsmaskiner inom kommunens gräns. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85075"
+  },
+  {
+    "kpi_id": "N85076",
+    "kpi_namn": "Växthusgasutsläpp el och fjärrvärme, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från produktion av el och fjärrvärme inom kommunens gräns per invånare. Utsläppen per invånare ska inte tolkas som konsumtionsbaserade. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "ton CO2-ekv/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85536"
+  },
+  {
+    "kpi_id": "N85536",
+    "kpi_namn": "Växthusgasutsläpp el och fjärrvärme, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från produktion av el och fjärrvärme inom kommunens gräns. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85076"
+  },
+  {
+    "kpi_id": "N85543",
+    "kpi_namn": "Växthusgasutsläpp avfall, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från avfall inklusive avlopp per invånare: avfallsdeponier, behandling av avloppsvatten, biologisk behandling och förbränning av farligt avfall med mera. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "ton CO2-ekv/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85542"
+  },
+  {
+    "kpi_id": "N85542",
+    "kpi_namn": "Växthusgasutsläpp avfall, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från avfall inklusive avlopp inom kommunens gräns. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85543"
+  },
+  {
+    "kpi_id": "N85541",
+    "kpi_namn": "Växthusgasutsläpp produktanvändning, ton CO2-ekv/inv",
+    "beskrivning": "Utsläpp av växthusgaser från produktanvändning per invånare: lösningsmedel, färg, smörjmedel, fluorerade gaser med mera. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "ton CO2-ekv/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85540"
+  },
+  {
+    "kpi_id": "N85540",
+    "kpi_namn": "Växthusgasutsläpp produktanvändning, ton CO2-ekv",
+    "beskrivning": "Totala utsläpp av växthusgaser från produktanvändning inom kommunens gräns. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "ton CO2",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85541"
+  },
+  {
+    "kpi_id": "N85047",
+    "kpi_namn": "Utsläpp av kväveoxider, kg/inv",
+    "beskrivning": "Utsläpp till luft av kväveoxider (NOx) från samtliga sektorer inom kommunens geografiska område, i kilo per invånare. Vägtrafik på större vägar och enskilda industrier kan ge höga utsläpp lokalt. Följer upp miljökvalitetsmålet Frisk luft. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "kg/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N07701"
+  },
+  {
+    "kpi_id": "N07701",
+    "kpi_namn": "Utsläpp av kväveoxider, kg",
+    "beskrivning": "Totala utsläpp till luft av kväveoxider (NOx) från samtliga sektorer inom kommunens geografiska område. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "kg",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85047"
+  },
+  {
+    "kpi_id": "N85048",
+    "kpi_namn": "Utsläpp av partiklar PM2.5, kg/inv",
+    "beskrivning": "Utsläpp till luft av små partiklar (PM2,5) från samtliga sektorer inom kommunens geografiska område, i kilo per invånare. Egen uppvärmning, till exempel vedeldning, speglar förhållandena i kommunen väl. Följer upp miljökvalitetsmålet Frisk luft. Källa: Nationella emissionsdatabasen och SCB via RKA Kolada.",
+    "enhet": "kg/inv",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N07700"
+  },
+  {
+    "kpi_id": "N07700",
+    "kpi_namn": "Utsläpp av partiklar PM2.5, kg",
+    "beskrivning": "Totala utsläpp till luft av små partiklar (PM2,5) från samtliga sektorer inom kommunens geografiska område. Källa: Nationella emissionsdatabasen via RKA Kolada.",
+    "enhet": "kg",
+    "tema": "miljo_klimat",
+    "par_kpi_id": "N85048"
+  },
+  {
+    "kpi_id": "U07801",
+    "kpi_namn": "Insamlat kommunalt avfall, kg/inv",
+    "beskrivning": "Insamlat kommunalt avfall i kilo per invånare: mat- och restavfall, grovavfall, farligt avfall, liknande avfall från verksamheter och avfall under producentansvar som förpackningar och tidningar. Invånarantalet är justerat för fritidshus, gästnätter och pendling, så att kommuner med mycket turism eller inpendling kan jämföras med andra. Källa: Avfall Sverige via RKA Kolada.",
+    "enhet": "kg/inv",
+    "tema": "miljo_klimat"
+  },
+  {
+    "kpi_id": "U07414",
+    "kpi_namn": "Kommunalt avfall till materialåtervinning, andel",
+    "beskrivning": "Andel av det insamlade kommunala avfallet som samlats in för materialåtervinning, inklusive biologisk behandling. Andelen omfattar även den del som samlats in men inte kunnat återvinnas. Källa: Avfall Sverige via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "miljo_klimat"
+  },
+  {
+    "kpi_id": "N85054",
+    "kpi_namn": "Skyddad natur, andel av arealen",
+    "beskrivning": "Andel av kommunens totala areal, land och vatten, som är skyddad natur: nationalpark, naturreservat, naturvårdsområde eller biotopskyddsområde. Källa: SCB via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "miljo_klimat"
+  },
+  {
+    "kpi_id": "N85055",
+    "kpi_namn": "Skyddad natur på land, andel",
+    "beskrivning": "Andel av landarealen som är skyddad natur: nationalpark, naturreservat, naturvårdsområde eller biotopskyddsområde. Källa: SCB via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "miljo_klimat"
+  },
+  {
+    "kpi_id": "N85056",
+    "kpi_namn": "Skyddad natur i hav, andel",
+    "beskrivning": "Andel av havsarealen ut till territorialgränsen som är skyddad natur. Kommuner utan kust saknar värde. Källa: SCB via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "miljo_klimat"
+  },
+  {
+    "kpi_id": "N85057",
+    "kpi_namn": "Skyddad natur i inlandsvatten, andel",
+    "beskrivning": "Andel av arealen sjöar och större vattendrag som är skyddad natur. Källa: SCB via RKA Kolada.",
+    "enhet": "procent",
+    "tema": "miljo_klimat"
+  },
+  {
     "kpi_id": "N45913",
     "kpi_namn": "Energianvändning transporter, MWh/inv",
-    "beskrivning": "Slutanvändning av energi i transportsektorn per invånare, mätt i megawattimmar. Inkluderar bensin, diesel, el och biodrivmedel för alla trafikslag inom kommunen. Lägre värden kan spegla effektivare transporter eller kortare körsträckor. Källa: SCB Kommunal energistatistik via RKA Kolada.",
+    "beskrivning": "Slutanvändning av energi inom transporter, oavsett bränsle, inom kommunens gräns, i megawattimmar per invånare. Källa: Energimyndigheten och SCB via RKA Kolada.",
     "enhet": "MWh/inv",
     "tema": "miljo_klimat",
     "par_kpi_id": "N45945"
@@ -1050,14 +1258,14 @@
   {
     "kpi_id": "N45925",
     "kpi_namn": "Förnybar elproduktion, andel",
-    "beskrivning": "Andel av den lokalt producerade elen som kommer från förnybara energikällor som vindkraft, vattenkraft och solenergi. Värdet kan överstiga 100 procent om kommunen producerar mer förnybar el än den totala elproduktionen inom dess gräns. Källa: SCB Kommunal energistatistik via RKA Kolada.",
+    "beskrivning": "Elproduktion från vattenkraft, vindkraft och förnybara bränslen som andel av all elproduktion inom kommunens gräns, oavsett producent. Från och med 2021 ingår även solkraft. Källa: Energimyndigheten och SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "miljo_klimat"
   },
   {
     "kpi_id": "N00403",
     "kpi_namn": "Ekologiskt brukad åkermark, andel",
-    "beskrivning": "Andel av kommunens totala åkermark som brukas ekologiskt, inklusive mark under omställning. Ekologiskt jordbruk innebär odling utan kemiska bekämpningsmedel och konstgödsel. Källa: Jordbruksverket via RKA Kolada.",
+    "beskrivning": "Ekologiskt brukad åkermark som andel av all åkermark, enligt EU:s regler för ekologisk produktion. Uppgifterna kommer från två register, och ett jordbruksföretag registreras i en kommun även om marken ligger i flera, så kommunvärdena ska tolkas med försiktighet. Källa: Jordbruksverket via RKA Kolada.",
     "enhet": "procent",
     "tema": "miljo_klimat"
   },
@@ -1838,28 +2046,28 @@
   {
     "kpi_id": "N00956",
     "kpi_namn": "Ginikoefficient, förvärvsinkomst",
-    "beskrivning": "Ginikoefficienten mäter ojämlikheten i förvärvsinkomster bland befolkningen 20 år och äldre. Värdet ligger mellan 0 och 1 där 0 innebär fullständig jämlikhet och 1 innebär att all inkomst tillfaller en enda person. Högre värden indikerar större inkomstspridning i kommunen. Källa: SCB via RKA Kolada.",
+    "beskrivning": "Ginikoefficient för sammanräknad förvärvsinkomst på individnivå, från 0 (alla har lika stor inkomst) till 1 (total ojämlikhet). Källa: SCB via RKA Kolada.",
     "enhet": "index",
     "tema": "socioekonomi"
   },
   {
     "kpi_id": "N00997",
     "kpi_namn": "Ginikoefficient, disponibel inkomst",
-    "beskrivning": "Ginikoefficienten mäter ojämlikheten i hushållens disponibla inkomster, det vill säga inkomster efter skatt och transfereringar, justerat för hushållets storlek. Disponibel inkomst ger en mer rättvisande bild av den faktiska köpkraften än förvärvsinkomst. Källa: SCB via RKA Kolada.",
+    "beskrivning": "Ginikoefficient för disponibel inkomst per konsumtionsenhet, det vill säga inkomst efter skatt justerad för hushållets sammansättning, från 0 (total jämlikhet) till 1 (total ojämlikhet). Källa: SCB via RKA Kolada.",
     "enhet": "index",
     "tema": "socioekonomi"
   },
   {
     "kpi_id": "N00957",
     "kpi_namn": "Ohälsotal",
-    "beskrivning": "Ohälsotalet mäter det genomsnittliga antalet utbetalda dagar med sjukpenning, rehabiliteringspenning och sjuk- eller aktivitetsersättning per person 16–64 år under ett år. Måttet ger en samlad bild av sjukfrånvaron i kommunen. Höga värden kan spegla hälsoproblem, arbetsmarknadsförhållanden eller socioekonomiska faktorer. Källa: Försäkringskassan via RKA Kolada.",
+    "beskrivning": "Antal utbetalda dagar med sjukpenning, arbetsskadesjukpenning, rehabiliteringspenning samt aktivitets- och sjukersättning, delat med befolkningen 16–64 år. Källa: Försäkringskassan via RKA Kolada.",
     "enhet": "dagar",
     "tema": "socioekonomi"
   },
   {
     "kpi_id": "N00938",
     "kpi_namn": "Sjukpenningtal",
-    "beskrivning": "Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad person 16–64 år, exklusive försäkrade med hel sjukersättning. Till skillnad från ohälsotalet fångar sjukpenningtalet bara den kortare sjukfrånvaron och är därmed ett mer direkt mått på pågående sjukskrivning. Källa: Försäkringskassan via RKA Kolada.",
+    "beskrivning": "Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad 16–64 år, utom försäkrade med hel sjukersättning eller aktivitetsersättning. Källa: Försäkringskassan via RKA Kolada.",
     "enhet": "dagar",
     "tema": "socioekonomi"
   },
@@ -1873,7 +2081,7 @@
   {
     "kpi_id": "N31001",
     "kpi_namn": "Kostnad ekonomiskt bistånd, kr/inv",
-    "beskrivning": "Kommunens totala kostnad för ekonomiskt bistånd (försörjningsstöd) per invånare. Ekonomiskt bistånd är samhällets yttersta skyddsnät och beviljas när enskilda inte kan försörja sig genom arbete, sjukförsäkring eller andra inkomster. Höga kostnader kan spegla arbetsmarknadsläget, bostadssituationen och befolkningens sammansättning. Källa: Socialstyrelsen via RKA Kolada.",
+    "beskrivning": "Kommunens kostnad för ekonomiskt bistånd, inklusive utredning, per invånare den 31 december: bruttokostnaden minus interna intäkter och försäljning till andra kommuner och regioner. Försörjningsstöd till flyktinghushåll ingår inte. Källa: SCB via RKA Kolada.",
     "enhet": "kr/inv",
     "tema": "socioekonomi",
     "par_kpi_id": "N31910"
@@ -1959,14 +2167,14 @@
   {
     "kpi_id": "N00938_KV",
     "kpi_namn": "Sjukpenningtal, kvinnor",
-    "beskrivning": "Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad kvinna 16–64 år, exklusive försäkrade med hel sjukersättning. Källa: Försäkringskassan via RKA Kolada.",
+    "beskrivning": "Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad kvinna 16–64 år, utom försäkrade med hel sjukersättning eller aktivitetsersättning. Källa: Försäkringskassan via RKA Kolada.",
     "enhet": "dagar",
     "tema": "socioekonomi"
   },
   {
     "kpi_id": "N00938_MAN",
     "kpi_namn": "Sjukpenningtal, män",
-    "beskrivning": "Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad man 16–64 år, exklusive försäkrade med hel sjukersättning. Källa: Försäkringskassan via RKA Kolada.",
+    "beskrivning": "Antal utbetalda nettodagar med sjukpenning och rehabiliteringspenning per registrerad försäkrad man 16–64 år, utom försäkrade med hel sjukersättning eller aktivitetsersättning. Källa: Försäkringskassan via RKA Kolada.",
     "enhet": "dagar",
     "tema": "socioekonomi"
   },
@@ -2148,14 +2356,14 @@
   {
     "kpi_id": "N07935",
     "kpi_namn": "Personbilar per 1 000 invånare",
-    "beskrivning": "Antal registrerade personbilar per 1 000 invånare i kommunen. Måttet visar biltätheten och påverkas av faktorer som kollektivtrafikutbud, urbaniseringsgrad och inkomstnivå. Kommuner med god kollektivtrafik och tät bebyggelse tenderar att ha lägre bilinnehav. Källa: Trafikanalys via RKA Kolada.",
+    "beskrivning": "Antal personbilar i trafik den 31 december, oavsett drivmedel, per 1 000 invånare. Källa: SCB via RKA Kolada.",
     "enhet": "per 1 000 inv.",
     "tema": "transport"
   },
   {
     "kpi_id": "N07945",
     "kpi_namn": "Elbilar, andel av personbilar",
-    "beskrivning": "Andel av kommunens registrerade personbilar som är rena elbilar. Elektrifieringen av fordonsflottan är central för att minska transporternas klimatpåverkan. Högre andelar syns oftare i kommuner med höga inkomster och god laddinfrastruktur. Källa: Trafikanalys via RKA Kolada.",
+    "beskrivning": "Andel av personbilarna i trafik den 31 december som drivs med el. Källa: Trafikanalys och SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport",
     "par_kpi_id": "N07938"
@@ -2171,7 +2379,7 @@
   {
     "kpi_id": "N07947",
     "kpi_namn": "Laddhybridbilar, andel av personbilar",
-    "beskrivning": "Andel av kommunens registrerade personbilar som är laddhybrider, det vill säga bilar med kombination av elmotor och förbränningsmotor som kan laddas externt. Laddhybrider ses som en övergångsteknik mot helelektrifiering. Källa: Trafikanalys via RKA Kolada.",
+    "beskrivning": "Andel av personbilarna i trafik den 31 december som är laddhybrider, det vill säga har både förbränningsmotor och elmotor och ett batteri som kan laddas från elnätet. Källa: Trafikanalys och SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport",
     "par_kpi_id": "N07940"
@@ -2187,84 +2395,84 @@
   {
     "kpi_id": "U00501",
     "kpi_namn": "Fossiloberoende personbilar, andel",
-    "beskrivning": "Andel av kommunens personbilar som klassas som fossiloberoende, det vill säga elbilar, laddhybrider och bilar som kan köras på biodrivmedel. Måttet ger en samlad bild av omställningen bort från fossila drivmedel i personbilsflottan. Källa: Trafikanalys via RKA Kolada.",
+    "beskrivning": "Andel av personbilarna som kan köras på drivmedel från förnybara källor, men inte nödvändigtvis gör det: el, laddhybrider som laddas med sladd, gas, E85, vätgas och bilar som tillverkaren godkänt för HVO100. Källa: Miljöfordon Sverige via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport"
   },
   {
     "kpi_id": "N07713",
     "kpi_namn": "Elbilsladdpunkter, totalt antal",
-    "beskrivning": "Totalt antal publikt tillgängliga laddpunkter för elbilar i kommunen, inklusive både normalladdare och snabbladdare. God laddinfrastruktur är en förutsättning för elektrifieringen av fordonsflottan, särskilt för dem utan egen parkering. Källa: Energimyndigheten via RKA Kolada.",
+    "beskrivning": "Antal offentligt tillgängliga laddpunkter för elbilar, med både offentliga och privata ägare: normalladdare (upp till 50 kW), snabbladdare (50 till 150 kW) och supersnabbladdare (över 150 kW). Uppdelningen visar normal- och snabbladdare, så supersnabbladdarna ingår bara i totalen. Källa: Energimyndigheten/Nobil via RKA Kolada.",
     "enhet": "antal",
     "tema": "transport"
   },
   {
     "kpi_id": "N07710",
     "kpi_namn": "Normalladdare, antal",
-    "beskrivning": "Antal publikt tillgängliga normalladdare (upp till 22 kW) i kommunen. Normalladdare används typiskt vid längre uppställning, exempelvis vid arbetsplatser och i bostadsområden. Källa: Energimyndigheten via RKA Kolada.",
+    "beskrivning": "Antal offentligt tillgängliga laddpunkter för elbilar, med både offentliga och privata ägare, med en effekt upp till 50 kW (normalladdare). Beräknad laddtid cirka 3 till 10 timmar. Källa: Energimyndigheten/Nobil via RKA Kolada.",
     "enhet": "antal",
     "tema": "transport"
   },
   {
     "kpi_id": "N07711",
     "kpi_namn": "Snabbladdare, antal",
-    "beskrivning": "Antal publikt tillgängliga snabbladdare (över 22 kW) i kommunen. Snabbladdare möjliggör kortare laddningsstopp och är viktiga för längre resor och för dem utan tillgång till hemmaladdning. Källa: Energimyndigheten via RKA Kolada.",
+    "beskrivning": "Antal offentligt tillgängliga laddpunkter för elbilar, med både offentliga och privata ägare, med en effekt mellan 50 och 150 kW (snabbladdare). Beräknad laddtid cirka 15 till 120 minuter. Källa: Energimyndigheten/Nobil via RKA Kolada.",
     "enhet": "antal",
     "tema": "transport"
   },
   {
     "kpi_id": "N07418",
     "kpi_namn": "Befolkning i kollektivtrafiknära läge",
-    "beskrivning": "Andel av kommunens befolkning som bor inom 500 meter från en hållplats med minst 4 dubbelturer per dag i tätort, eller 1 000 meter utanför tätort. Måttet visar i vilken utsträckning invånarna har tillgång till grundläggande kollektivtrafik. Källa: Trafikverket via RKA Kolada.",
+    "beskrivning": "Andel av befolkningen som har en trafikerad hållplats inom 500 meter fågelvägen från folkbokföringsadressen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport"
   },
   {
     "kpi_id": "N07419",
     "kpi_namn": "Befolkning inom tätort, kollektivtrafiknära läge",
-    "beskrivning": "Andel av kommunens tätortsbefolkning som bor inom 500 meter från en hållplats med minst 4 dubbelturer per dag. Tätortsbor har generellt närmare till kollektivtrafik, men andelen varierar beroende på tätortens storlek och linjenätets utbredning. Källa: Trafikverket via RKA Kolada.",
+    "beskrivning": "Andel av befolkningen inom tätort som har en trafikerad hållplats inom 500 meter fågelvägen från folkbokföringsadressen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport"
   },
   {
     "kpi_id": "N07412",
     "kpi_namn": "Befolkning utanför tätort, kollektivtrafiknära läge",
-    "beskrivning": "Andel av kommunens befolkning utanför tätort som bor inom 1 000 meter från en hållplats med minst 4 dubbelturer per dag. Landsbygdens tillgänglighet till kollektivtrafik är ofta betydligt sämre än i tätort. Källa: Trafikverket via RKA Kolada.",
+    "beskrivning": "Andel av befolkningen utanför tätort som har en trafikerad hållplats inom 500 meter fågelvägen från folkbokföringsadressen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport"
   },
   {
     "kpi_id": "N07410",
     "kpi_namn": "Nytillkomna bostäder i kollektivtrafiknära läge",
-    "beskrivning": "Andel av kommunens nytillkomna bostäder under en treårsperiod som ligger i kollektivtrafiknära läge. Måttet visar om bostadsbyggandet stödjer hållbart resande genom att placera nya bostäder nära befintlig kollektivtrafik. Källa: Trafikverket via RKA Kolada.",
+    "beskrivning": "Andel av de bostäder som tillkom under året som har en trafikerad hållplats inom 500 meter fågelvägen. En trafikerad hållplats har minst en avgång i timmen vardagar mellan klockan 6 och 20, oavsett trafikslag. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport"
   },
   {
     "kpi_id": "N60404",
     "kpi_namn": "Resor med kollektivtrafik per invånare",
-    "beskrivning": "Antal resor med regional kollektivtrafik per invånare i länet. Måttet avser betalda och förbetalda resor med buss, tåg och annan regional kollektivtrafik. Högre resande tyder på ett väl utbyggt och attraktivt kollektivtrafiksystem. Avser läns-/regionnivå. Källa: Svensk kollektivtrafik via RKA Kolada.",
+    "beskrivning": "Antal resor i regional kollektivtrafik per invånare, enligt de regionala trafikhuvudmännens rapportering. Avser läns- och regionnivå. Källa: Trafikanalys via RKA Kolada.",
     "enhet": "resor/inv",
     "tema": "transport"
   },
   {
     "kpi_id": "U60496",
     "kpi_namn": "Förnybara drivmedel i kollektivtrafiken",
-    "beskrivning": "Andel av regionens kollektivtrafik som drivs med förnybara drivmedel, mätt i energiinnehåll. Inkluderar biodrivmedel, biogas och el från förnybara källor. Avser läns-/regionnivå. Källa: Svensk kollektivtrafik via RKA Kolada.",
+    "beskrivning": "Andel förnybara drivmedel, viktat efter energiinnehåll, i den allmänna kollektivtrafiken med trafikplikt: spårtrafik, buss och båt. Förnybart avser förnybar el, biodiesel, biogas och etanol, även låginblandning i diesel och bensin. Avser läns- och regionnivå. Källa: Trafikhuvudmännen och Energimyndigheten via RKA Kolada.",
     "enhet": "procent",
     "tema": "transport"
   },
   {
     "kpi_id": "U85001",
     "kpi_namn": "Nettokostnad trafik per invånare",
-    "beskrivning": "Regionens nettokostnad för trafikverksamhet per invånare, det vill säga kostnader minus intäkter för kollektivtrafik och annan regional trafikverksamhet. Måttet visar den offentliga subventionsgraden och avser läns-/regionnivå. Källa: SCB via RKA Kolada.",
+    "beskrivning": "Regionens nettokostnad för trafik per invånare den 31 december, alltså den del av kostnaden som finansieras med skatt, generella statsbidrag och utjämning. Huvuddelen är bidrag till den regionala kollektivtrafikmyndigheten. Avser läns- och regionnivå. Källa: SCB (räkenskapssammandraget) via RKA Kolada.",
     "enhet": "kr/inv",
     "tema": "transport"
   },
   {
     "kpi_id": "U07917",
     "kpi_namn": "Körsträcka med personbil, mil per invånare",
-    "beskrivning": "Genomsnittlig årlig körsträcka med personbil per invånare. Beräknas utifrån de personbilar som är registrerade i kommunen. Långa körsträckor kan spegla långa pendlingsavstånd, dålig kollektivtrafik eller gles bebyggelse. Källa: Trafikanalys via RKA Kolada.",
+    "beskrivning": "Total körsträcka per år med personbilar registrerade i kommunen, delad med antalet invånare. Säger inget om var bilarna har körts. Bilar registrerade på företag ingår, vilket kan ge höga värden i kommuner med många företag och huvudkontor. Källa: Trafikanalys via RKA Kolada.",
     "enhet": "mil/inv",
     "tema": "transport",
     "par_kpi_id": "U07918"
@@ -2280,7 +2488,7 @@
   {
     "kpi_id": "N07782",
     "kpi_namn": "Drivmedelsleverans vägtransporter, liter/inv",
-    "beskrivning": "Levererad mängd drivmedel (bensin och diesel) till vägtransporter per invånare inom kommunen. Måttet påverkas av genomfartstrafik och stationära tankställens lokalisering och speglar inte enbart kommuninvånarnas förbrukning. Källa: SPBI/Energimyndigheten via RKA Kolada.",
+    "beskrivning": "Levererad mängd bensin, diesel, eldningsolja 1, etanol och HVO för vägtransporter till slutliga förbrukare, liter per invånare. Mäts där drivmedlet levereras och inte där förbrukarna bor, så kommuner med mycket genomfartstrafik kan få höga värden. Serien slutar 2023. Källa: SCB via RKA Kolada.",
     "enhet": "liter/inv",
     "tema": "transport"
   },
@@ -2319,7 +2527,7 @@
   {
     "kpi_id": "N00799",
     "kpi_namn": "Trafikolyckor med räddningsinsatser",
-    "beskrivning": "Antal trafikolyckor som krävt kommunal räddningsinsats per 1 000 invånare. Måttet fångar de allvarligaste olyckorna och påverkas av trafikvolymer, hastighetsgränser och vägnätets säkerhet. Källa: MSB via RKA Kolada.",
+    "beskrivning": "Genomsnittligt antal räddningsinsatser till trafikolyckor per år under tre år (året och de två föregående), per 1 000 invånare den 31 december. Alla trafikelement ingår, till exempel personbil, lastbil, cykel och djur. Källa: Myndigheten för samhällsskydd och beredskap (MSB) via RKA Kolada.",
     "enhet": "per 1 000 inv.",
     "tema": "transport"
   },
@@ -2430,49 +2638,49 @@
   {
     "kpi_id": "T_GAST_HOTELL",
     "kpi_namn": "Gästnätter, hotell",
-    "beskrivning": "Antal gästnätter vid hotell.",
+    "beskrivning": "Antal gästnätter vid hotell. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_GAST_CAMPING",
     "kpi_namn": "Gästnätter, camping",
-    "beskrivning": "Antal gästnätter vid campinganläggningar.",
+    "beskrivning": "Antal gästnätter vid campinganläggningar. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_GAST_STUGBY",
     "kpi_namn": "Gästnätter, stugbyar",
-    "beskrivning": "Antal gästnätter vid stugbyar.",
+    "beskrivning": "Antal gästnätter vid stugbyar. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_GAST_VANDRARHEM",
     "kpi_namn": "Gästnätter, vandrarhem",
-    "beskrivning": "Antal gästnätter vid vandrarhem.",
+    "beskrivning": "Antal gästnätter vid vandrarhem. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_GAST_SOL",
     "kpi_namn": "Gästnätter, förmedlade stugor och lägenheter",
-    "beskrivning": "Antal gästnätter i kommersiellt förmedlade privata stugor och lägenheter.",
+    "beskrivning": "Antal gästnätter i kommersiellt förmedlade privata stugor och lägenheter. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_GAST_SVE",
     "kpi_namn": "Gästnätter, svenska gäster",
-    "beskrivning": "Antal gästnätter av gäster med hemland Sverige.",
+    "beskrivning": "Antal gästnätter av gäster med hemland Sverige. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_GAST_UTL",
     "kpi_namn": "Gästnätter, utländska gäster",
-    "beskrivning": "Antal gästnätter av gäster med hemland utanför Sverige.",
+    "beskrivning": "Antal gästnätter av gäster med hemland utanför Sverige. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism",
     "par_kpi_id": "T_ANDEL_UTL_NATTER"
@@ -2480,7 +2688,7 @@
   {
     "kpi_id": "T_ANDEL_UTL_NATTER",
     "kpi_namn": "Andel utländska gästnätter",
-    "beskrivning": "Utländska gästnätter som andel av samtliga gästnätter, procent.",
+    "beskrivning": "Utländska gästnätter som andel av samtliga gästnätter, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "turism",
     "par_kpi_id": "T_GAST_UTL"
@@ -2488,14 +2696,14 @@
   {
     "kpi_id": "T_ANKOMST_SVE",
     "kpi_namn": "Gästankomster, svenska",
-    "beskrivning": "Antal ankomster av svenska gäster till kommersiella boenden.",
+    "beskrivning": "Antal ankomster av svenska gäster till kommersiella boenden. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_ANKOMST_UTL",
     "kpi_namn": "Gästankomster, utländska",
-    "beskrivning": "Antal ankomster av utländska gäster till kommersiella boenden.",
+    "beskrivning": "Antal ankomster av utländska gäster till kommersiella boenden. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism",
     "par_kpi_id": "T_ANDEL_UTL"
@@ -2503,7 +2711,7 @@
   {
     "kpi_id": "T_ANDEL_UTL",
     "kpi_namn": "Andel utländska gästankomster",
-    "beskrivning": "Utländska gästankomster som andel av samtliga ankomster, procent.",
+    "beskrivning": "Utländska gästankomster som andel av samtliga ankomster, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "turism",
     "par_kpi_id": "T_ANKOMST_UTL"
@@ -2511,42 +2719,42 @@
   {
     "kpi_id": "T_BELAGG_RUM",
     "kpi_namn": "Rumsbeläggning",
-    "beskrivning": "Andel belagda rum av totalt antal disponibla rum, procent. Omfattar hotell, stugbyar och vandrarhem.",
+    "beskrivning": "Andel belagda rum av totalt antal disponibla rum, procent. Omfattar hotell, stugbyar och vandrarhem. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "turism"
   },
   {
     "kpi_id": "T_BELAGG_BADD",
     "kpi_namn": "Bäddbeläggning",
-    "beskrivning": "Andel belagda bäddar av totalt antal disponibla bäddar, procent.",
+    "beskrivning": "Andel belagda bäddar av totalt antal disponibla bäddar, procent. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "turism"
   },
   {
     "kpi_id": "T_LOGIINTAKT",
     "kpi_namn": "Logiintäkter",
-    "beskrivning": "Totala logiintäkter i kronor vid kommersiella boenden.",
+    "beskrivning": "Totala logiintäkter i kronor vid kommersiella boenden. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "kr",
     "tema": "turism"
   },
   {
     "kpi_id": "T_ANLAGGNINGAR",
     "kpi_namn": "Antal anläggningar",
-    "beskrivning": "Totalt antal kommersiella boendeanläggningar.",
+    "beskrivning": "Totalt antal kommersiella boendeanläggningar. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
   {
     "kpi_id": "T_INTAKT_PER_GAST",
     "kpi_namn": "Logiintäkt per gästnatt",
-    "beskrivning": "Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala logiintäkter dividerat med antal gästnätter.",
+    "beskrivning": "Genomsnittlig logiintäkt per gästnatt, kronor: totala logiintäkter dividerade med antal gästnätter. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "kr",
     "tema": "turism"
   },
   {
     "kpi_id": "T_GAST_PER_ANLAGG",
     "kpi_namn": "Gästnätter per anläggning",
-    "beskrivning": "Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.",
+    "beskrivning": "Genomsnittligt antal gästnätter per anläggning. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "turism"
   },
@@ -2560,14 +2768,14 @@
   {
     "kpi_id": "T_GAST_TILLVAXT",
     "kpi_namn": "Gästnätter, årlig förändring",
-    "beskrivning": "Gästnätternas förändring jämfört med föregående år, procent.",
+    "beskrivning": "Gästnätternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "turism"
   },
   {
     "kpi_id": "T_INTAKT_TILLVAXT",
     "kpi_namn": "Logiintäkter, årlig förändring",
-    "beskrivning": "Logiintäkternas förändring jämfört med föregående år, procent.",
+    "beskrivning": "Logiintäkternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "turism"
   },
@@ -2616,84 +2824,84 @@
   {
     "kpi_id": "N01982_KV",
     "kpi_namn": "Eftergymnasial utbildning, kvinnor",
-    "beskrivning": "Andel kvinnor 25–64 år med eftergymnasial utbildning.",
+    "beskrivning": "Andel kvinnor 25–64 år med eftergymnasial utbildning. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N01982_MAN",
     "kpi_namn": "Eftergymnasial utbildning, män",
-    "beskrivning": "Andel män 25–64 år med eftergymnasial utbildning.",
+    "beskrivning": "Andel män 25–64 år med eftergymnasial utbildning. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N01983_KV",
     "kpi_namn": "Gymnasial utbildning, kvinnor",
-    "beskrivning": "Andel kvinnor 25–64 år med gymnasial utbildning.",
+    "beskrivning": "Andel kvinnor 25–64 år med gymnasial utbildning. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N01983_MAN",
     "kpi_namn": "Gymnasial utbildning, män",
-    "beskrivning": "Andel män 25–64 år med gymnasial utbildning.",
+    "beskrivning": "Andel män 25–64 år med gymnasial utbildning. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N01984_KV",
     "kpi_namn": "Förgymnasial utbildning, kvinnor",
-    "beskrivning": "Andel kvinnor 25–64 år med förgymnasial utbildning.",
+    "beskrivning": "Andel kvinnor 25–64 år med förgymnasial utbildning. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N01984_MAN",
     "kpi_namn": "Förgymnasial utbildning, män",
-    "beskrivning": "Andel män 25–64 år med förgymnasial utbildning.",
+    "beskrivning": "Andel män 25–64 år med förgymnasial utbildning. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N15507_KV",
     "kpi_namn": "Meritvärde åk 9, flickor",
-    "beskrivning": "Genomsnittligt meritvärde (17 ämnen) åk 9, flickor, hemkommun.",
+    "beskrivning": "Genomsnittligt meritvärde (17 ämnen) åk 9, flickor, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
     "enhet": "poäng",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N15507_MAN",
     "kpi_namn": "Meritvärde åk 9, pojkar",
-    "beskrivning": "Genomsnittligt meritvärde (17 ämnen) åk 9, pojkar, hemkommun.",
+    "beskrivning": "Genomsnittligt meritvärde (17 ämnen) åk 9, pojkar, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
     "enhet": "poäng",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N15428_KV",
     "kpi_namn": "Behöriga till yrkesprogram, flickor",
-    "beskrivning": "Andel flickor i åk 9 som är behöriga till yrkesprogram, hemkommun.",
+    "beskrivning": "Andel flickor i åk 9 som är behöriga till yrkesprogram, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N15428_MAN",
     "kpi_namn": "Behöriga till yrkesprogram, pojkar",
-    "beskrivning": "Andel pojkar i åk 9 som är behöriga till yrkesprogram, hemkommun.",
+    "beskrivning": "Andel pojkar i åk 9 som är behöriga till yrkesprogram, hemkommun. Källa: SCB och Skolverket via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N17473_KV",
     "kpi_namn": "Högskolebehörighet inom 3 år, kvinnor",
-    "beskrivning": "Andel kvinnliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun.",
+    "beskrivning": "Andel kvinnliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   },
   {
     "kpi_id": "N17473_MAN",
     "kpi_namn": "Högskolebehörighet inom 3 år, män",
-    "beskrivning": "Andel manliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun.",
+    "beskrivning": "Andel manliga gymnasieelever med grundläggande högskolebehörighet inom 3 år, hemkommun. Källa: SCB via RKA Kolada.",
     "enhet": "procent",
     "tema": "utbildning"
   }

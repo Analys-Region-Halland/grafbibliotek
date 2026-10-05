@@ -220,3 +220,71 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från 
 - Hallands kommuner 2024 (högst först): Hylte 16,6; Halmstad 14,5; Falkenberg 11,9; Laholm 11,7; Varberg 8,9; Kungsbacka 6,8
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 1 år: +1,9 procentenheter (från 14,7 år 2023); riket +0,6 procentenheter
+
+## Befolkningen 20–64 år: Förvärvsinkomst, median 20–64 år
+
+### Sammanräknad förvärvsinkomst 20–64 år, median, kr (kr, 2024)
+Mäter: Medianen av sammanräknad förvärvsinkomst för invånare 20–64 år: inkomst av tjänst och näringsverksamhet, inklusive pension, sjukpenning och andra skattepliktiga transfereringar men inte kapitalinkomster.
+- Hylte: 372 800
+- Halland (länet): 406 100
+- Riket: 401 400
+- Skillnad Hylte mot riket: -28 600 kr
+- Skillnad Hylte mot Halland: -33 300 kr
+- Plats bland landets 290 kommuner: 227 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Kungsbacka 469 500; Varberg 413 800; Falkenberg 383 900; Halmstad 383 800; Laholm 380 300; Hylte 372 800
+- Plats bland Hallands 6 kommuner: 6
+- Förändring hela serien sedan 2000: +181 700 kr (från 191 100 år 2000); riket +210 000 kr
+- Förändring 10 år: +89 700 kr (från 283 100 år 2014); riket +110 300 kr
+- Förändring 5 år: +58 000 kr (från 314 800 år 2019); riket +62 500 kr
+- Förändring 1 år: +10 100 kr (från 362 700 år 2023); riket +15 000 kr
+- Hylte år för år: 2014 283 100; 2015 286 900; 2016 293 400; 2017 302 000; 2018 310 300; 2019 314 800; 2020 316 500; 2021 333 200; 2022 343 700; 2023 362 700; 2024 372 800
+- Serien för Hylte 2000–2024: högst 372 800 (2024), lägst 191 100 (2000)
+
+## Unga och långtidsarbetslösa
+
+### Arbetslösa i arbetskraften 18–24 år, andel (procent, 2025)
+Mäter: Andel av arbetskraften 18–24 år som är öppet arbetslösa eller i program med aktivitetsstöd, årsmedelvärde. Arbetskraften enligt SCB:s befolkningens arbetsmarknadsstatus (BAS). Serien börjar 2023.
+- Hylte: 9,01
+- Halland (länet): 6,29
+- Riket: 7,80
+- Skillnad Hylte mot riket: +1,20 procentenheter
+- Skillnad Hylte mot Halland: +2,72 procentenheter
+- Plats bland landets 290 kommuner: 89 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 9,01; Halmstad 8,20; Laholm 7,85; Falkenberg 5,48; Varberg 4,80; Kungsbacka 4,41
+- Plats bland Hallands 6 kommuner: 1
+- Förändring 1 år: +0,54 procentenheter (från 8,47 år 2024); riket -0,09 procentenheter
+- Hylte år för år: 2023 5,64; 2024 8,47; 2025 9,01
+
+### Unga 16–24 år som varken arbetar eller studerar, andel (procent, 2024)
+Mäter: Andel invånare 16–24 år som under året varken arbetat (inkomst över ett basbelopp) eller studerat.
+- Hylte: 8,66
+- Halland (länet): 5,54
+- Riket: 6,16
+- Skillnad Hylte mot riket: +2,50 procentenheter
+- Skillnad Hylte mot Halland: +3,11 procentenheter
+- Plats bland landets 290 kommuner: 45 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Hylte 8,66; Laholm 7,76; Falkenberg 6,06; Halmstad 5,65; Varberg 5,10; Kungsbacka 4,62
+- Plats bland Hallands 6 kommuner: 1
+- Förändring hela serien sedan 2008: +0,74 procentenheter (från 7,92 år 2008); riket -1,15 procentenheter
+- Förändring 10 år: +0,35 procentenheter (från 8,30 år 2014); riket -1,30 procentenheter
+- Förändring 5 år: +0,46 procentenheter (från 8,19 år 2019); riket -0,01 procentenheter
+- Förändring 1 år: -0,39 procentenheter (från 9,05 år 2023); riket +0,40 procentenheter
+- Hylte år för år: 2014 8,30; 2015 9,55; 2016 12,05; 2017 9,02; 2018 8,39; 2019 8,19; 2020 8,50; 2021 7,73; 2022 8,29; 2023 9,05; 2024 8,66
+- Serien för Hylte 2008–2024: högst 12,05 (2016), lägst 6,30 (2011)
+
+### Långtidsarbetslösa av de arbetslösa 18–65 år, andel (procent, 2025)
+Mäter: Andel av de arbetslösa 18–65 år (öppet arbetslösa eller i program med aktivitetsstöd) som varit det i minst sex månader, årsmedelvärde.
+- Hylte: 68,4
+- Halland (länet): 59,5
+- Riket: 61,0
+- Skillnad Hylte mot riket: +7,3 procentenheter
+- Skillnad Hylte mot Halland: +8,9 procentenheter
+- Plats bland landets 252 kommuner: 4 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 68,4; Halmstad 62,7; Laholm 59,6; Falkenberg 59,3; Varberg 55,4; Kungsbacka 52,1
+- Plats bland Hallands 6 kommuner: 1
+- Förändring hela serien sedan 2010: +19,2 procentenheter (från 49,1 år 2010); riket +7,0 procentenheter
+- Förändring 10 år: +5,3 procentenheter (från 63,0 år 2015); riket +3,8 procentenheter
+- Förändring 5 år: +5,9 procentenheter (från 62,5 år 2020); riket +3,8 procentenheter
+- Förändring 1 år: +3,8 procentenheter (från 64,6 år 2024); riket +1,7 procentenheter
+- Hylte år för år: 2015 63,0; 2016 67,4; 2017 70,2; 2018 73,0; 2019 64,3; 2020 62,5; 2021 72,6; 2022 71,2; 2023 65,3; 2024 64,6; 2025 68,4
+- Serien för Hylte 2010–2025: högst 73,0 (2018), lägst 48,5 (2011)

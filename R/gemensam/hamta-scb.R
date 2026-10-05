@@ -236,9 +236,11 @@ hamta_tema_scb <- function(tema_config, tvinga = FALSE) {
   # Bevara befintlig data från andra källor (t.ex. Kolada) vid blandade teman
   if (file.exists(radata_fil)) {
     befintlig <- readRDS(radata_fil)
-    # Ta bort SCB-KPI:er som uppdateras, behåll resten (Kolada m.fl.)
-    befintlig <- befintlig |> filter(!kpi %in% tabell_ids)
-    kombinerad <- bind_rows(befintlig, kombinerad)
+    # Ta bort SCB-KPI:er som uppdateras, behåll resten (Kolada m.fl.); en tom fil hoppas över
+    if (nrow(befintlig) > 0 && "kpi" %in% names(befintlig)) {
+      befintlig <- befintlig |> filter(!kpi %in% tabell_ids)
+      kombinerad <- bind_rows(befintlig, kombinerad)
+    }
   }
 
   saveRDS(kombinerad, radata_fil)

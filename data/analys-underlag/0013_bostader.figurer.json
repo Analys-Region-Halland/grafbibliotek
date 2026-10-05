@@ -1,5 +1,37 @@
 [
   {
+    "id": "N02938",
+    "namn": "Hushåll, antal",
+    "enhet": "antal",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2017,
+    "sista": 2025
+  },
+  {
+    "id": "N02942",
+    "namn": "Ensamstående hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N02938 (hushållstyperna)",
+    "forsta": 2017,
+    "sista": 2025
+  },
+  {
+    "id": "N02943",
+    "namn": "Sammanboende hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N02938 (hushållstyperna)",
+    "forsta": 2017,
+    "sista": 2025
+  },
+  {
+    "id": "N02944",
+    "namn": "Övriga hushåll, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N02938 (hushållstyperna)",
+    "forsta": 2017,
+    "sista": 2025
+  },
+  {
     "id": "N07905",
     "namn": "Färdigställda småhus per 1 000 invånare",
     "enhet": "antal/1 000 inv",
@@ -17,9 +49,17 @@
   },
   {
     "id": "N07907",
-    "namn": "Trångbodda hushåll, andel (%)",
+    "namn": "Trångbodda i flerbostadshus enligt norm 2, andel (%)",
     "enhet": "procent",
-    "roll": "indikator i bandet Priser och trångboddhet",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2012,
+    "sista": 2025
+  },
+  {
+    "id": "N07914",
+    "namn": "Trångbodda i flerbostadshus enligt norm 3, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Hushåll och boende",
     "forsta": 2012,
     "sista": 2025
   },
@@ -30,5 +70,21 @@
     "roll": "indikator i bandet Bostadsbestånd och byggande",
     "forsta": 2020,
     "sista": 2025
+  },
+  {
+    "id": "N45920",
+    "namn": "Hushållens energianvändning, MWh per invånare",
+    "enhet": "MWh/inv",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N66081",
+    "namn": "Invånare med ansträngd boendeekonomi, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Hushåll och boende",
+    "forsta": 2012,
+    "sista": 2024
   }
 ]

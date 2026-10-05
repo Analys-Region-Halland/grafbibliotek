@@ -51,11 +51,17 @@ arbetsmarknad_config <- function() {
     tema_id    = "arbetsmarknad",
     tema_namn  = "Arbetsmarknad",
     tema_farg  = "bla",
-    datakalla  = "scb",
-    startar    = 2020,
+    datakalla  = c("scb", "kolada"),
+    startar    = 2020,          # SCB BAS (slutlig statistik) finns från 2020
+    startar_kolada = 2000,      # Kolada-serierna är längre; ger den långa trenden
 
-    # Inga Kolada-KPI:er
-    kpier = character(0),
+    # Kolada-KPI:er: unga, långtidsarbetslöshet och inkomst av arbete
+    kpier = c(
+      "N03942",  # Arbetslösa av arbetskraften (BAS), 18–24 år, andel (%)
+      "N02797",  # Invånare 16–24 år som varken arbetar eller studerar, andel (%)
+      "N03954",  # Långtidsarbetslösa av arbetslösa, 18–65 år, andel (%)
+      "N00906"   # Sammanräknad förvärvsinkomst 20–64 år, median, kr
+    ),
 
     # SCB-tabeller — en per kombination (kön × födelseregion)
     scb_tabeller = list(
@@ -344,6 +350,11 @@ arbetsmarknad_config <- function() {
     # KPI-metadata
     kpi_meta = tribble(
       ~kpi_id,           ~enhet,     ~tema,            ~par_kpi_id,
+      # Kolada: unga, långtidsarbetslöshet, inkomst av arbete
+      "N03942",          "procent",  "arbetsmarknad",  NA_character_,
+      "N02797",          "procent",  "arbetsmarknad",  NA_character_,
+      "N03954",          "procent",  "arbetsmarknad",  NA_character_,
+      "N00906",          "kr",       "arbetsmarknad",  NA_character_,
       # Totalt
       "S_SYSS_TOT",      "procent",  "arbetsmarknad",  "S_SYSS_TOT_N",
       "S_SYSS_TOT_N",    "antal",    "arbetsmarknad",  "S_SYSS_TOT",
@@ -385,6 +396,11 @@ arbetsmarknad_config <- function() {
     # egna beskrivningar som KPI-metadata (ingen Kolada-hämtning)
     beraknade_kpier = tribble(
       ~kpi_id,           ~kpi_namn,                                      ~beskrivning,
+      # Kolada
+      "N03942",          "Ungdomsarbetslöshet, 18–24 år",                "Andel av arbetskraften 18–24 år som är öppet arbetslösa eller i program med aktivitetsstöd, årsmedelvärde. Arbetskraften enligt SCB:s befolkningens arbetsmarknadsstatus (BAS). Serien börjar 2023. Källa: Arbetsförmedlingen och SCB via RKA Kolada.",
+      "N02797",          "Unga som varken arbetar eller studerar, 16–24 år", "Andel invånare 16–24 år som under året varken arbetat (inkomst över ett basbelopp) eller studerat. Källa: Myndigheten för ungdoms- och civilsamhällesfrågor (MUCF) via RKA Kolada.",
+      "N03954",          "Långtidsarbetslösa av arbetslösa, 18–65 år",   "Andel av de arbetslösa 18–65 år (öppet arbetslösa eller i program med aktivitetsstöd) som varit det i minst sex månader, årsmedelvärde. Källa: Arbetsförmedlingen via RKA Kolada.",
+      "N00906",          "Förvärvsinkomst, median 20–64 år",             "Medianen av sammanräknad förvärvsinkomst för invånare 20–64 år: inkomst av tjänst och näringsverksamhet, inklusive pension, sjukpenning och andra skattepliktiga transfereringar men inte kapitalinkomster. Källa: SCB via RKA Kolada.",
       # Totalt
       "S_SYSS_TOT",      "Sysselsättningsgrad",                          "Andel sysselsatta av befolkningen 20–64 år. Slutlig statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 \u00e5rliga registeruppgifter och inneh\u00e5ller mer fullst\u00e4ndiga och uppdaterade uppgifter \u00e4n den prelimin\u00e4ra m\u00e5nadsstatistiken. Publiceras med cirka 18 m\u00e5naders efters\u00e4lpning.",
       "S_SYSS_TOT_N",    "Antal sysselsatta",                            "Antal sysselsatta 20–64 år. Slutlig statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 \u00e5rliga registeruppgifter och inneh\u00e5ller mer fullst\u00e4ndiga och uppdaterade uppgifter \u00e4n den prelimin\u00e4ra m\u00e5nadsstatistiken. Publiceras med cirka 18 m\u00e5naders efters\u00e4lpning.",
@@ -427,6 +443,10 @@ arbetsmarknad_config <- function() {
 
     # Visningsnamn för frontend
     visningsnamn = list(
+      "N03942"       = "Ungdomsarbetslöshet, 18–24 år",
+      "N02797"       = "Unga som varken arbetar eller studerar",
+      "N03954"       = "Långtidsarbetslösa av arbetslösa",
+      "N00906"       = "Förvärvsinkomst, median 20–64 år",
       "S_SYSS_TOT"   = "Sysselsättningsgrad",
       "S_SYSS_TOT_N" = "Antal sysselsatta",
       "S_ARKR_TOT"   = "Andel i arbetskraften",

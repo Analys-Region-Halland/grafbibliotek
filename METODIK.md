@@ -654,94 +654,69 @@ En KPI förekommer en gång per tema. `node app/scripts/exportera-teman.mjs` kon
 strukturen (dubbletter, `delAv`, tomma och delade band) och avbryter med fel; kap03 stannar då.
 Analysunderlaget i kap03 följer samma ordning: varje uppdelning står direkt efter sin indikator.
 
-### 8.1 Befolkning & demografi (tema_farg: grön)
+### 8.1 Indikatorerna per tema (oktober 2026)
 
-**Folkmängd och förändring:**
-- N01951 — Invånare totalt (antal)
-- N01963 / N02012 — Befolkningsförändring (procent / antal)
-- N02100 / N01803 — Födelsenetto (andel / antal)
-- N02101 / N01964 — Inrikes flyttnetto (andel / antal)
-- N02102 / N01806 — Utrikes flyttnetto (andel / antal)
-- N01770 — Summerad fruktsamhet (barn/kvinna)
-- N02937 — Invånare per kvadratkilometer (inv/kvm)
+Konfigurationerna är källan: `R/teman/<tema>/config.R` (KPI:er, enheter,
+beskrivningar) och `app/src/teman/<tema>.ts` (band, ordning, uppdelningar,
+visningsnamn). Listan nedan är en överblick: band, indikatorer och inom hakparentes
+uppdelningarna som fälls ut under indikatorn.
 
-**Befolkningens sammansättning:**
-- N00959 — Medelålder (år)
-- N00927 — Demografisk försörjningskvot (kvot)
-- N01994 / N01919 — Invånare 0–19 år (andel / antal)
-- N01961 / N01955 — Invånare 20–64 år (andel / antal)
-- N01812 / N01956 — Invånare 65–79 år (andel / antal)
-- N01813 / N01957 — Invånare 80+ (andel / antal)
-- N02923 / C02923 — Kvinnor i befolkningen (andel / beräknat antal)
-- N02926 / C02926 — Utrikes födda (andel / beräknat antal)
+**Befolkning & demografi** (grön; SCB)
+- Folkmängd och tillväxt: folkmängd [åldersgrupperna], årlig befolkningsförändring, befolkningstäthet
+- Födda, döda och flyttningar: födelsenetto [födda och döda], summerad fruktsamhet, inrikes flyttnetto [in- och utflyttningar], utrikes flyttnetto [in- och utvandringar]
+- Ålder och sammansättning: medelålder, försörjningskvot [yngre och äldre], utrikes födda, kvinnor
 
-### 8.2 Arbetsmarknad och kompetensförsörjning (tema_farg: blå)
+**Arbetsmarknad** (blå; SCB BAS 20–64 år från 2020, Kolada)
+- Befolkningen 20–64 år: sysselsättning, arbetskraftsdeltagande och arbetslöshet [kvinnor och män; inrikes och utrikes födda], sammanräknad förvärvsinkomst (median)
+- Unga och långtidsarbetslösa: arbetslöshet 18–24 år (från 2023), unga 16–24 år som varken arbetar eller studerar, långtidsarbetslösa av de arbetslösa
 
-Källa: SCB tabell ArRegArbStatus (Registerbaserad arbetsmarknadsstatistik, RAMS).
-Åldersgrupp: 20–64 år. Data från 2020.
+**Utbildning och kompetens** (lila; Kolada)
+- Utbildningsnivå 25–64 år: förgymnasial, gymnasial, eftergymnasial [kvinnor och män]
+- Skolresultat: meritvärde åk 9, behörighet till yrkesprogram [flickor och pojkar], högskolebehörighet inom tre år [kvinnor och män]
 
-**Övergripande:**
-- S_SYSS_TOT / S_SYSS_TOT_N — Sysselsättningsgrad (procent / antal)
-- S_ARKR_TOT / S_ARKR_TOT_N — Andel i arbetskraften (procent / antal)
-- S_ARBL_TOT / S_ARBL_TOT_N — Arbetslöshetsgrad (procent / antal)
+**Bostäder** (gul; Kolada)
+- Bostadsbestånd och byggande: bostäder per 1 000 invånare [upplåtelseformerna], nybyggda bostäder [småhus och flerbostadshus], planberedskap
+- Hushåll och boende: hushåll [hushållstyperna], trångboddhet i flerbostadshus enligt norm 3 och norm 2, ansträngd boendeekonomi, hushållens energianvändning
+- Priser: bostadsrätter och småhus, kr per kvm
 
-**Födelseregion:**
-- S_SYSS_INR / S_SYSS_INR_N — Sysselsättningsgrad, inrikes födda
-- S_SYSS_UTR / S_SYSS_UTR_N — Sysselsättningsgrad, utrikes födda
-- S_ARKR_INR / S_ARKR_INR_N — Andel i arbetskraften, inrikes födda
-- S_ARKR_UTR / S_ARKR_UTR_N — Andel i arbetskraften, utrikes födda
-- S_ARBL_INR / S_ARBL_INR_N — Arbetslöshetsgrad, inrikes födda
-- S_ARBL_UTR / S_ARBL_UTR_N — Arbetslöshetsgrad, utrikes födda
+**Näringsliv** (röd; SCB, Kolada)
+- Sysselsatta efter arbetsställe: totalt [kön; födelseregion; branscherna; utbildningsnivåerna], näringslivet och offentlig sektor [kön; födelseregion]
+- Tillväxt i antal sysselsatta: samma indelning som ovan, årlig förändring
+- Yrkesställning och företagande: anställda, företagare i AB, egenföretagare [födelseregion; andelen kvinnor], nystartade företag, företagsförekomster
 
-**Kvinnor och män:**
-- S_SYSS_KV / S_SYSS_KV_N — Sysselsättningsgrad, kvinnor
-- S_SYSS_MAN / S_SYSS_MAN_N — Sysselsättningsgrad, män
-- S_ARKR_KV / S_ARKR_KV_N — Andel i arbetskraften, kvinnor
-- S_ARKR_MAN / S_ARKR_MAN_N — Andel i arbetskraften, män
-- S_ARBL_KV / S_ARBL_KV_N — Arbetslöshetsgrad, kvinnor
-- S_ARBL_MAN / S_ARBL_MAN_N — Arbetslöshetsgrad, män
+**Turism & besöksnäring** (röd; Tillväxtverkets inkvarteringsstatistik)
+- Gästnätter: totalt [svenska och utländska gäster; boendeformerna], per invånare, årlig förändring, andel utländska
+- Gästankomster: svenska, utländska, andel utländska
+- Kapacitet och beläggning: anläggningar, gästnätter per anläggning, rums- och bäddbeläggning
+- Intäkter: logiintäkter, per gästnatt, årlig förändring
 
-### 8.3 Planerade teman (ännu ej implementerade)
+**Konjunktur** (blå; SCB månad och kvartal, Tillväxtverket; preliminära uppgifter)
+- Sysselsättning, arbetslöshet och arbetskraft [kön; födelseregion], dagbefolkning [branscherna], gästnätter [svenska och utländska], folkmängd och påbörjade lägenheter [småhus och flerbostadshus]
 
-Följande teman finns som KPI-listor men har inte fått egna config-filer ännu.
-Implementeras genom att skapa `R/teman/<tema_id>/config.R` +
-`app/src/teman/<tema_id>.ts` enligt mallen ovan.
+**Miljö & klimat** (grön; Kolada)
+- Utsläpp till luft: växthusgaser per invånare [sektorerna, sorterade efter storlek], kväveoxider, partiklar (PM2,5)
+- Energi och omställning: energianvändning i transporter, förnybar elproduktion, ekologiskt brukad åkermark
+- Avfall och skyddad natur: insamlat kommunalt avfall, materialåtervinning, skyddad natur [land, hav och inlandsvatten]
 
-**Pendling (lila):**
-- N02276 — Inpendling, andel
-- N02277 — Inpendling, antal
-- N02278 — Utpendling, antal
-- N02279 — Utpendling, andel
+**Kollektivtrafik & transport** (lila; Kolada, SCB, Trafikanalys)
+- Pendling: pendlingskvot, in- och utpendlingsandel, nettopendling [in- och utpendlare; dag- och nattbefolkning]
+- Kollektivtrafik och resande: resor per invånare, kollektivtrafiknära läge [inom och utanför tätort], nytillkomna bostäder i kollektivtrafiknära läge, förnybara drivmedel, nettokostnad, färdtjänst
+- Fordonsflotta och elektrifiering: personbilar per 1 000 invånare, andel elbilar, laddhybrider och fossiloberoende bilar, laddpunkter [normal- och snabbladdare]
+- Bilresande och trafiksäkerhet: körsträcka, drivmedelsleveranser, trafikolyckor med räddningsinsats
 
-**Skattekraft & ekonomi (gul):**
-- N00048 — Skattekraft, kr/inv
-- N00904 — Skattekraft som andel av riksmedelvärde
-- N03702 — Bruttoregionprodukt (BRP), tkr/inv
-- N00125 — Lönesumma dagbefolkning, mkr
-- N00126 — Lönesumma nattbefolkning, mkr
+**Socioekonomi & hälsa** (röd; Kolada, Folkhälsomyndigheten)
+- Hälsa, psykisk hälsa och levnadsvanor: de flesta [kvinnor och män]
+- Inkomster och försörjning: ekonomisk standard [kvinnor och män], ginikoefficienter, varaktigt låg ekonomisk standard, ekonomiskt bistånd
 
-**Inkomst & ojämlikhet (rod):**
-- N00905 — Mediannettoinkomst, kr/inv 20+
-- N00906 — Median förvärvsinkomst 20–64 år
-- N00956 — Ginikoefficient, förvärvsinkomst
-- N01455 — Varaktigt låg inkomststandard
+**Önskvärd riktning (`lagtArBra`).** Förändringar, platsens färg och spårets tonade
+ytterfjärdedelar visas bara för indikatorer där ett lågt värde entydigt är bättre:
+arbetslöshet, trångboddhet, ansträngd boendeekonomi, utsläpp, ohälsa, olyckor och
+liknande. Övriga visas neutralt, även där ett högt värde ofta ses som bättre.
 
-**Utbildning (lila):**
-- N01724 — Högutbildade 25–64 år, andel
-- N01721 — Låg utbildningsnivå 25–64 år, andel
-
-**Näringsliv & företagande (gul):**
-- N45700 — Företagsförekomster, antal/1 000 inv
-- N00999 — Nystartade företag, antal/1 000 inv
-- N45702 — Branschbredd, andel
-- N45703 — Företagens omsättning, tkr/inv
-
-**Bostäder (brun):**
-- N07917 — Färdigställda bostäder, antal/1 000 inv
-- N07913 — Totala bostäder, antal/1 000 inv
-- N07915 — Fastighetspris småhus, tkr
-- N07907 — Trångboddhet i flerbostadshus, andel
-
+**Beskrivningarna** följer källans definition (för Kolada: KPI:ns definition i
+Kolada) och slutar med källan. Tolkningar ("måttet visar att ...") hör inte hemma i
+beskrivningen. Kontroll: hämta Koladas definitioner med `https://api.kolada.se/v3/kpi/<id>`
+och jämför, se §12 Steg 4.
 
 ## 9. AI-analys — specifikation
 
@@ -853,15 +828,24 @@ Gränssnittet följer Edward Tuftes principer för informationsdesign.
 |---------|-----------|-----------|-----------|
 | #000000 | #83888A   | #D6D6D6   | #FFFFFF   |
 
-**Temafärger:**
-- Befolkning: Grön *(implementerat)*
-- Arbetsmarknad: Blå *(implementerat)*
-- Pendling: Lila
-- Ekonomi: Gul
-- Inkomst: Röd
-- Utbildning: Lila
-- Näringsliv: Gul
-- Bostäder: Brun
+**Temafärger** (`temaFarg` i temats config; `TEMA_FARG_HEX` i `tema-config.ts`):
+- Grön: Befolkning & demografi, Miljö & klimat
+- Blå: Arbetsmarknad, Konjunktur
+- Lila: Utbildning och kompetens, Kollektivtrafik & transport
+- Gul: Bostäder
+- Röd: Näringsliv, Turism & besöksnäring, Socioekonomi & hälsa
+
+**Kommunernas fasta färger** (`ENHET_FARG` i `types.ts`, grafriktlinjen VIS-01):
+Kungsbacka #0C8C7E, Varberg #004990, Falkenberg #FF7E00, Halmstad #A51300,
+Laholm #8cd211, Hylte #7b2d8e. Halland #555555 (streckad i spåret), riket svart streck
+i spåret och #999999 i diagram.
+
+**Önskvärd riktning:** förbättring #00664D (grön 1) och försämring #A51300 (röd 1) på
+förändringen och platsen; i spåret ljusgrön #E3F4E2 och ljusröd #FEE6E7 på de yttre
+fjärdedelarna, grå #EEF0F2 på den mittersta hälften. Bara när `lagtArBra` är satt.
+
+**Jämför kommuner:** cellfärgen visar läget bland landets kommuner i en neutral blå
+skala, inte önskvärdhet.
 
 ### 10.7 Typografi
 
@@ -919,14 +903,17 @@ cd app && npm install && npm run dev
 - [ ] `Rscript R/kap04-exportera.R` — kontrollera JSON
   - `halland-senaste.json` ska inkludera det nya temat (per-KPI senaste år)
 
-### Steg 4: Verifiera frontend
+### Steg 4: Verifiera
 
-- [ ] `npx tsc --noEmit` — inga TypeScript-fel
-- [ ] Starta frontend — verifiera att temat syns korrekt
-- [ ] Kontrollera att alla KPI-kort har data och sparklines
-- [ ] Kontrollera modalvyn (tidsserie, toggles, andel/antal)
+- [ ] `npm run build` i `app/`: inga TypeScript-fel (samma kontroll som CI)
+- [ ] Temat i tabellen: alla indikatorer har data för Halland, kommunerna och riket; uppdelningarna fälls ut
+- [ ] Raden öppnar graf och karta (tidsserie, andel/antal där `par_kpi_id` finns)
+- [ ] Visningsnamnets enhet stämmer med `enhet` i R-metan (andel, per 1 000 invånare, kr per kvm …)
+- [ ] Beskrivningarna följer källans definition och slutar med källan. För Kolada: jämför med
+      `https://api.kolada.se/v3/kpi/<id>` (tröskelvärden, avstånd, åldrar, period, nämnare, källa).
+      Granskningen 2026-10-05 hittade påhittade definitioner i transport och miljö.
 - [ ] Svensk formatering på alla siffror
-- [ ] API-nyckel INTE i git
+- [ ] Inga hemligheter i git
 
 ### Steg 5: Dokumentera
 

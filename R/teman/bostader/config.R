@@ -44,7 +44,15 @@ bostader_config <- function() {
       "N07909",   # Fastighetspris småhus, kr/kvm
       # Boendekvalitet
       "N07907",   # Trångboddhet flerbostadshus, norm 2, andel (%)
-      "N07418"    # Befolkning i kollektivtrafiknära läge, andel (%)
+      "N07914",   # Trångboddhet flerbostadshus, norm 3, andel (%)
+      # Hushåll och boendeekonomi
+      "N02938",   # Hushåll, antal
+      "N02942",   # Ensamstående hushåll, andel (%)
+      "N02943",   # Sammanboende hushåll, andel (%)
+      "N02944",   # Övriga hushåll, andel (%)
+      "N66081",   # Invånare med ansträngd boendeekonomi, andel (%)
+      "N45920"    # Slutanvändning energi inom hushåll, MWh/inv
+      # N07418 (kollektivtrafiknära läge) hör till transport
     ),
 
     # Ingen könsuppdelning
@@ -165,7 +173,7 @@ bostader_config <- function() {
       list(
         id = "kvalitet",
         namn = "Boendekvalitet",
-        kpi_ids = c("N07907", "N07418")
+        kpi_ids = c("N07907", "N07914", "N02938", "N02942", "N02943", "N02944", "N66081", "N45920")
       )
     ),
 
@@ -194,7 +202,14 @@ bostader_config <- function() {
       "N07909",      "kr/kvm",           "bostader",  NA_character_,
       # Boendekvalitet
       "N07907",      "procent",          "bostader",  NA_character_,
-      "N07418",      "procent",          "bostader",  NA_character_
+      "N07914",      "procent",          "bostader",  NA_character_,
+      # Hushåll och boendeekonomi
+      "N02938",      "antal",            "bostader",  NA_character_,
+      "N02942",      "procent",          "bostader",  NA_character_,
+      "N02943",      "procent",          "bostader",  NA_character_,
+      "N02944",      "procent",          "bostader",  NA_character_,
+      "N66081",      "procent",          "bostader",  NA_character_,
+      "N45920",      "MWh/inv",          "bostader",  NA_character_
     ),
 
     # Beräknade KPI:er — SCB-antal behöver namn/beskrivningar
@@ -233,8 +248,14 @@ bostader_config <- function() {
       "N07923"       = "Planberedskap",
       "N07908"       = "Bostadsrättspris",
       "N07909"       = "Småhuspris",
-      "N07907"       = "Trångboddhet",
-      "N07418"       = "Kollektivtrafiknära läge"
+      "N07907"       = "Trångbodda i flerbostadshus, norm 2",
+      "N07914"       = "Trångbodda i flerbostadshus, norm 3",
+      "N02938"       = "Hushåll",
+      "N02942"       = "Ensamstående hushåll",
+      "N02943"       = "Sammanboende hushåll",
+      "N02944"       = "Övriga hushåll",
+      "N66081"       = "Ansträngd boendeekonomi",
+      "N45920"       = "Hushållens energianvändning"
     )
   )
 }

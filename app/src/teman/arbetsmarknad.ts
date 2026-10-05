@@ -2,6 +2,7 @@ import type { TemaConfig } from "./tema-config";
 
 const G = {
   BEF: "Befolkningen 20–64 år",
+  UNGA: "Unga och långtidsarbetslösa",
 };
 
 const arbetsmarknad: TemaConfig = {
@@ -38,6 +39,18 @@ const arbetsmarknad: TemaConfig = {
         { namn: "kvinnor och män", kpiIds: ["S_ARBL_KV", "S_ARBL_MAN"] },
         { namn: "inrikes och utrikes födda", kpiIds: ["S_ARBL_INR", "S_ARBL_UTR"] },
       ],
+    },
+    {
+      id: "inkomst",
+      gruppRubrik: G.BEF,
+      namn: "Förvärvsinkomst, median 20–64 år",
+      kpiIds: ["N00906"],
+    },
+    {
+      id: "unga",
+      gruppRubrik: G.UNGA,
+      namn: "Unga och långtidsarbetslösa",
+      kpiIds: ["N03942", "N02797", "N03954"],
     },
   ],
   kortNamn: {
@@ -87,11 +100,15 @@ const arbetsmarknad: TemaConfig = {
     "S_ARBL_KV_N": "Arbetslösa bland kvinnor 20–64 år, antal",
     "S_ARBL_MAN": "Arbetslösa bland män 20–64 år, andel (%)",
     "S_ARBL_MAN_N": "Arbetslösa bland män 20–64 år, antal",
+    "N00906": "Sammanräknad förvärvsinkomst 20–64 år, median, kr",
+    "N03942": "Arbetslösa i arbetskraften 18–24 år, andel (%)",
+    "N02797": "Unga 16–24 år som varken arbetar eller studerar, andel (%)",
+    "N03954": "Långtidsarbetslösa av de arbetslösa 18–65 år, andel (%)",
   },
   lagtArBra: [
     "S_ARBL_TOT", "S_ARBL_TOT_N", "S_ARBL_INR", "S_ARBL_INR_N",
     "S_ARBL_UTR", "S_ARBL_UTR_N", "S_ARBL_KV", "S_ARBL_KV_N",
-    "S_ARBL_MAN", "S_ARBL_MAN_N",
+    "S_ARBL_MAN", "S_ARBL_MAN_N", "N03942", "N02797", "N03954",
   ],
 };
 

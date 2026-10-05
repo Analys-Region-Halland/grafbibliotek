@@ -1,5 +1,37 @@
 [
   {
+    "id": "N00906",
+    "namn": "Sammanräknad förvärvsinkomst 20–64 år, median, kr",
+    "enhet": "kr",
+    "roll": "indikator i bandet Befolkningen 20–64 år",
+    "forsta": 2000,
+    "sista": 2024
+  },
+  {
+    "id": "N02797",
+    "namn": "Unga 16–24 år som varken arbetar eller studerar, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Unga och långtidsarbetslösa",
+    "forsta": 2008,
+    "sista": 2024
+  },
+  {
+    "id": "N03942",
+    "namn": "Arbetslösa i arbetskraften 18–24 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Unga och långtidsarbetslösa",
+    "forsta": 2023,
+    "sista": 2025
+  },
+  {
+    "id": "N03954",
+    "namn": "Långtidsarbetslösa av de arbetslösa 18–65 år, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Unga och långtidsarbetslösa",
+    "forsta": 2010,
+    "sista": 2025
+  },
+  {
     "id": "S_ARBL_INR",
     "namn": "Arbetslösa bland inrikes födda 20–64 år, andel (%)",
     "enhet": "procent",

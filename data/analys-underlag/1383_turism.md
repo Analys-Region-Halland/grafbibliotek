@@ -118,7 +118,7 @@ Mäter: Antal gästnätter per invånare. Mäter turismintensiteten i förhålla
 - Serien för Varberg 2008–2025: högst 14 (2016), lägst 11 (2024)
 
 ### Gästnätter, årlig förändring (procent, 2025)
-Mäter: Gästnätternas förändring jämfört med föregående år, procent.
+Mäter: Gästnätternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Varberg: 6,50
 - Halland (länet): 5,40
 - Riket: 2,50
@@ -135,7 +135,7 @@ Mäter: Gästnätternas förändring jämfört med föregående år, procent.
 - Serien för Varberg 2009–2025: högst 12,50 (2021), lägst -10,00 (2020)
 
 ### Andel utländska gästnätter (procent, 2025)
-Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent.
+Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Varberg: 12,3
 - Halland (länet): 14,9
 - Riket: 26,3
@@ -184,7 +184,7 @@ Mäter: Antal ankomster av utländska gäster till kommersiella boenden.
 - Serien för Varberg 2008–2025: högst 54 624 (2024), lägst 11 667 (2020)
 
 ### Andel utländska gästankomster (procent, 2025)
-Mäter: Utländska gästankomster som andel av samtliga ankomster, procent.
+Mäter: Utländska gästankomster som andel av samtliga ankomster, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Varberg: 12,4
 - Halland (länet): 13,9
 - Riket: 23,8
@@ -218,7 +218,7 @@ Mäter: Totalt antal kommersiella boendeanläggningar.
 - Serien för Varberg 2008–2025: högst 38 (2013), lägst 31 (2011)
 
 ### Gästnätter per anläggning (antal, 2025)
-Mäter: Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.
+Mäter: Genomsnittligt antal gästnätter per anläggning. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Varberg: 25 971
 - Halland (länet): 21 615
 - Riket: 16 096
@@ -286,7 +286,7 @@ Mäter: Totala logiintäkter i kronor vid kommersiella boenden.
 - Serien för Varberg 2008–2025: högst 390 552 565 (2025), lägst 107 059 671 (2008)
 
 ### Logiintäkt per gästnatt (kr, 2025)
-Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala logiintäkter dividerat med antal gästnätter.
+Mäter: Genomsnittlig logiintäkt per gästnatt, kronor: totala logiintäkter dividerade med antal gästnätter. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Varberg: 470,0
 - Halland (länet): 427,0
 - Riket: 578,0
@@ -303,7 +303,7 @@ Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala lo
 - Serien för Varberg 2008–2025: högst 470,0 (2025), lägst 144,0 (2008)
 
 ### Logiintäkter, årlig förändring (procent, 2025)
-Mäter: Logiintäkternas förändring jämfört med föregående år, procent.
+Mäter: Logiintäkternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Varberg: 6,50
 - Halland (länet): 8,00
 - Riket: 4,40

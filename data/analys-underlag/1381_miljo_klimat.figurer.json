@@ -2,8 +2,8 @@
   {
     "id": "N00401",
     "namn": "Växthusgasutsläpp totalt, ton CO2-ekvivalenter per invånare",
-    "enhet": "ton CO2/inv",
-    "roll": "indikator i bandet Utsläpp av växthusgaser",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "indikator i bandet Utsläpp till luft",
     "forsta": 2010,
     "sista": 2024
   },
@@ -24,35 +24,131 @@
     "sista": 2024
   },
   {
+    "id": "N85047",
+    "namn": "Utsläpp av kväveoxider, kg per invånare",
+    "enhet": "kg/inv",
+    "roll": "indikator i bandet Utsläpp till luft",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85048",
+    "namn": "Utsläpp av partiklar (PM2,5), kg per invånare",
+    "enhet": "kg/inv",
+    "roll": "indikator i bandet Utsläpp till luft",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85054",
+    "namn": "Skyddad natur, andel av arealen (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Avfall och skyddad natur",
+    "forsta": 2014,
+    "sista": 2025
+  },
+  {
+    "id": "N85055",
+    "namn": "Skyddad natur på land, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N85054 (land, hav och inlandsvatten)",
+    "forsta": 2014,
+    "sista": 2025
+  },
+  {
+    "id": "N85056",
+    "namn": "Skyddad natur i hav, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N85054 (land, hav och inlandsvatten)",
+    "forsta": 2014,
+    "sista": 2025
+  },
+  {
+    "id": "N85057",
+    "namn": "Skyddad natur i inlandsvatten, andel (%)",
+    "enhet": "procent",
+    "roll": "uppdelning av N85054 (land, hav och inlandsvatten)",
+    "forsta": 2014,
+    "sista": 2025
+  },
+  {
     "id": "N85072",
     "namn": "Växthusgasutsläpp uppvärmning, ton CO2-ekvivalenter per invånare",
-    "enhet": "ton CO2/inv",
-    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
     "forsta": 2010,
     "sista": 2024
   },
   {
     "id": "N85073",
     "namn": "Växthusgasutsläpp transporter, ton CO2-ekvivalenter per invånare",
-    "enhet": "ton CO2/inv",
-    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85075",
+    "namn": "Växthusgasutsläpp arbetsmaskiner, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85076",
+    "namn": "Växthusgasutsläpp el och fjärrvärme, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
     "forsta": 2010,
     "sista": 2024
   },
   {
     "id": "N85077",
     "namn": "Växthusgasutsläpp industri, ton CO2-ekvivalenter per invånare",
-    "enhet": "ton CO2/inv",
-    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
     "forsta": 2010,
     "sista": 2024
   },
   {
     "id": "N85078",
     "namn": "Växthusgasutsläpp jordbruk, ton CO2-ekvivalenter per invånare",
-    "enhet": "ton CO2/inv",
-    "roll": "uppdelning av N00401 (utsläppen från fyra sektorer)",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
     "forsta": 2010,
     "sista": 2024
+  },
+  {
+    "id": "N85541",
+    "namn": "Växthusgasutsläpp produktanvändning, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "N85543",
+    "namn": "Växthusgasutsläpp avfall och avlopp, ton CO2-ekvivalenter per invånare",
+    "enhet": "ton CO2-ekv/inv",
+    "roll": "uppdelning av N00401 (sektorerna)",
+    "forsta": 2010,
+    "sista": 2024
+  },
+  {
+    "id": "U07414",
+    "namn": "Kommunalt avfall till materialåtervinning, andel (%)",
+    "enhet": "procent",
+    "roll": "indikator i bandet Avfall och skyddad natur",
+    "forsta": 2011,
+    "sista": 2025
+  },
+  {
+    "id": "U07801",
+    "namn": "Insamlat kommunalt avfall, kg per invånare",
+    "enhet": "kg/inv",
+    "roll": "indikator i bandet Avfall och skyddad natur",
+    "forsta": 2011,
+    "sista": 2025
   }
 ]

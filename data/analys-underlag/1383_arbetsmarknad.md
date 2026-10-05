@@ -220,3 +220,71 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från 
 - Hallands kommuner 2024 (högst först): Hylte 16,60; Halmstad 14,50; Falkenberg 11,90; Laholm 11,70; Varberg 8,90; Kungsbacka 6,80
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: +0,80 procentenheter (från 8,10 år 2023); riket +0,6 procentenheter
+
+## Befolkningen 20–64 år: Förvärvsinkomst, median 20–64 år
+
+### Sammanräknad förvärvsinkomst 20–64 år, median, kr (kr, 2024)
+Mäter: Medianen av sammanräknad förvärvsinkomst för invånare 20–64 år: inkomst av tjänst och näringsverksamhet, inklusive pension, sjukpenning och andra skattepliktiga transfereringar men inte kapitalinkomster.
+- Varberg: 413 800
+- Halland (länet): 406 100
+- Riket: 401 400
+- Skillnad Varberg mot riket: +12 400 kr
+- Skillnad Varberg mot Halland: +7 700 kr
+- Plats bland landets 290 kommuner: 47 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Kungsbacka 469 500; Varberg 413 800; Falkenberg 383 900; Halmstad 383 800; Laholm 380 300; Hylte 372 800
+- Plats bland Hallands 6 kommuner: 2
+- Förändring hela serien sedan 2000: +231 700 kr (från 182 100 år 2000); riket +210 000 kr
+- Förändring 10 år: +113 900 kr (från 299 900 år 2014); riket +110 300 kr
+- Förändring 5 år: +62 300 kr (från 351 500 år 2019); riket +62 500 kr
+- Förändring 1 år: +13 900 kr (från 399 900 år 2023); riket +15 000 kr
+- Varberg år för år: 2014 299 900; 2015 310 500; 2016 321 300; 2017 330 000; 2018 342 100; 2019 351 500; 2020 359 300; 2021 371 600; 2022 386 500; 2023 399 900; 2024 413 800
+- Serien för Varberg 2000–2024: högst 413 800 (2024), lägst 182 100 (2000)
+
+## Unga och långtidsarbetslösa
+
+### Arbetslösa i arbetskraften 18–24 år, andel (procent, 2025)
+Mäter: Andel av arbetskraften 18–24 år som är öppet arbetslösa eller i program med aktivitetsstöd, årsmedelvärde. Arbetskraften enligt SCB:s befolkningens arbetsmarknadsstatus (BAS). Serien börjar 2023.
+- Varberg: 4,80
+- Halland (länet): 6,29
+- Riket: 7,80
+- Skillnad Varberg mot riket: -3,01 procentenheter
+- Skillnad Varberg mot Halland: -1,49 procentenheter
+- Plats bland landets 290 kommuner: 261 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 9,01; Halmstad 8,20; Laholm 7,85; Falkenberg 5,48; Varberg 4,80; Kungsbacka 4,41
+- Plats bland Hallands 6 kommuner: 5
+- Förändring 1 år: -1,22 procentenheter (från 6,02 år 2024); riket -0,09 procentenheter
+- Varberg år för år: 2023 4,58; 2024 6,02; 2025 4,80
+
+### Unga 16–24 år som varken arbetar eller studerar, andel (procent, 2024)
+Mäter: Andel invånare 16–24 år som under året varken arbetat (inkomst över ett basbelopp) eller studerat.
+- Varberg: 5,10
+- Halland (länet): 5,54
+- Riket: 6,16
+- Skillnad Varberg mot riket: -1,06 procentenheter
+- Skillnad Varberg mot Halland: -0,45 procentenheter
+- Plats bland landets 290 kommuner: 246 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Hylte 8,66; Laholm 7,76; Falkenberg 6,06; Halmstad 5,65; Varberg 5,10; Kungsbacka 4,62
+- Plats bland Hallands 6 kommuner: 5
+- Förändring hela serien sedan 2008: -0,19 procentenheter (från 5,29 år 2008); riket -1,15 procentenheter
+- Förändring 10 år: -0,19 procentenheter (från 5,29 år 2014); riket -1,30 procentenheter
+- Förändring 5 år: +0,33 procentenheter (från 4,77 år 2019); riket -0,01 procentenheter
+- Förändring 1 år: +0,81 procentenheter (från 4,29 år 2023); riket +0,40 procentenheter
+- Varberg år för år: 2014 5,29; 2015 5,70; 2016 5,47; 2017 4,95; 2018 4,84; 2019 4,77; 2020 4,88; 2021 3,76; 2022 4,11; 2023 4,29; 2024 5,10
+- Serien för Varberg 2008–2024: högst 6,92 (2009), lägst 3,76 (2021)
+
+### Långtidsarbetslösa av de arbetslösa 18–65 år, andel (procent, 2025)
+Mäter: Andel av de arbetslösa 18–65 år (öppet arbetslösa eller i program med aktivitetsstöd) som varit det i minst sex månader, årsmedelvärde.
+- Varberg: 55,4
+- Halland (länet): 59,5
+- Riket: 61,0
+- Skillnad Varberg mot riket: -5,7 procentenheter
+- Skillnad Varberg mot Halland: -4,1 procentenheter
+- Plats bland landets 252 kommuner: 206 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 68,4; Halmstad 62,7; Laholm 59,6; Falkenberg 59,3; Varberg 55,4; Kungsbacka 52,1
+- Plats bland Hallands 6 kommuner: 5
+- Förändring hela serien sedan 2010: +7,5 procentenheter (från 47,9 år 2010); riket +7,0 procentenheter
+- Förändring 10 år: +5,4 procentenheter (från 50,0 år 2015); riket +3,8 procentenheter
+- Förändring 5 år: +1,8 procentenheter (från 53,6 år 2020); riket +3,8 procentenheter
+- Förändring 1 år: +2,8 procentenheter (från 52,6 år 2024); riket +1,7 procentenheter
+- Varberg år för år: 2015 50,0; 2016 52,9; 2017 59,6; 2018 58,6; 2019 59,0; 2020 53,6; 2021 60,0; 2022 56,6; 2023 51,8; 2024 52,6; 2025 55,4
+- Serien för Varberg 2010–2025: högst 60,0 (2021), lägst 45,3 (2012)

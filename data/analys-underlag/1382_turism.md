@@ -118,7 +118,7 @@ Mäter: Antal gästnätter per invånare. Mäter turismintensiteten i förhålla
 - Serien för Falkenberg 2008–2025: högst 20 (2025), lägst 10 (2008)
 
 ### Gästnätter, årlig förändring (procent, 2025)
-Mäter: Gästnätternas förändring jämfört med föregående år, procent.
+Mäter: Gästnätternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Falkenberg: 6,00
 - Halland (länet): 5,40
 - Riket: 2,50
@@ -135,7 +135,7 @@ Mäter: Gästnätternas förändring jämfört med föregående år, procent.
 - Serien för Falkenberg 2009–2025: högst 25,70 (2021), lägst -27,30 (2020)
 
 ### Andel utländska gästnätter (procent, 2025)
-Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent.
+Mäter: Utländska gästnätter som andel av samtliga gästnätter, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Falkenberg: 10,5
 - Halland (länet): 14,9
 - Riket: 26,3
@@ -184,7 +184,7 @@ Mäter: Antal ankomster av utländska gäster till kommersiella boenden.
 - Serien för Falkenberg 2008–2025: högst 54 977 (2025), lägst 6 657 (2020)
 
 ### Andel utländska gästankomster (procent, 2025)
-Mäter: Utländska gästankomster som andel av samtliga ankomster, procent.
+Mäter: Utländska gästankomster som andel av samtliga ankomster, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Falkenberg: 10,8
 - Halland (länet): 13,9
 - Riket: 23,8
@@ -218,7 +218,7 @@ Mäter: Totalt antal kommersiella boendeanläggningar.
 - Serien för Falkenberg 2008–2025: högst 36 (2017), lägst 18 (2008)
 
 ### Gästnätter per anläggning (antal, 2025)
-Mäter: Genomsnittligt antal gästnätter per anläggning. Indikerar genomsnittlig storlek och utnyttjande.
+Mäter: Genomsnittligt antal gästnätter per anläggning. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Falkenberg: 33 763
 - Halland (länet): 21 615
 - Riket: 16 096
@@ -286,7 +286,7 @@ Mäter: Totala logiintäkter i kronor vid kommersiella boenden.
 - Serien för Falkenberg 2008–2025: högst 362 781 156 (2025), lägst 39 350 226 (2011)
 
 ### Logiintäkt per gästnatt (kr, 2025)
-Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala logiintäkter dividerat med antal gästnätter.
+Mäter: Genomsnittlig logiintäkt per gästnatt, kronor: totala logiintäkter dividerade med antal gästnätter. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Falkenberg: 384,0
 - Halland (länet): 427,0
 - Riket: 578,0
@@ -303,7 +303,7 @@ Mäter: Genomsnittlig logiintäkt per gästnatt, kronor. Beräknat som totala lo
 - Serien för Falkenberg 2008–2025: högst 384,0 (2025), lägst 75,0 (2011)
 
 ### Logiintäkter, årlig förändring (procent, 2025)
-Mäter: Logiintäkternas förändring jämfört med föregående år, procent.
+Mäter: Logiintäkternas förändring jämfört med föregående år, procent. Beräknat av Region Halland ur Tillväxtverkets inkvarteringsstatistik.
 - Falkenberg: 21,8
 - Halland (länet): 8,0
 - Riket: 4,4

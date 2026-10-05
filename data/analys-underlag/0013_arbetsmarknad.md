@@ -174,3 +174,59 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Slutlig statistik från 
 - Plats bland landets 21 regioner: 13 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 16,6; Halmstad 14,5; Falkenberg 11,9; Laholm 11,7; Varberg 8,9; Kungsbacka 6,8
 - Förändring 1 år: +0,9 procentenheter (från 11,0 år 2023); riket +0,6 procentenheter
+
+## Befolkningen 20–64 år: Förvärvsinkomst, median 20–64 år
+
+### Sammanräknad förvärvsinkomst 20–64 år, median, kr (kr, 2024)
+Mäter: Medianen av sammanräknad förvärvsinkomst för invånare 20–64 år: inkomst av tjänst och näringsverksamhet, inklusive pension, sjukpenning och andra skattepliktiga transfereringar men inte kapitalinkomster.
+- Halland: 406 100
+- Riket: 401 400
+- Skillnad Halland mot riket: +4 700 kr
+- Plats bland landets 21 regioner: 3 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Kungsbacka 469 500; Varberg 413 800; Falkenberg 383 900; Halmstad 383 800; Laholm 380 300; Hylte 372 800
+- Förändring hela serien sedan 2000: +219 000 kr (från 187 100 år 2000); riket +210 000 kr
+- Förändring 10 år: +108 500 kr (från 297 600 år 2014); riket +110 300 kr
+- Förändring 5 år: +60 300 kr (från 345 800 år 2019); riket +62 500 kr
+- Förändring 1 år: +13 900 kr (från 392 200 år 2023); riket +15 000 kr
+- Halland år för år: 2014 297 600; 2015 307 000; 2016 317 800; 2017 327 000; 2018 337 000; 2019 345 800; 2020 352 200; 2021 364 800; 2022 379 400; 2023 392 200; 2024 406 100
+- Serien för Halland 2000–2024: högst 406 100 (2024), lägst 187 100 (2000)
+
+## Unga och långtidsarbetslösa
+
+### Arbetslösa i arbetskraften 18–24 år, andel (procent, 2025)
+Mäter: Andel av arbetskraften 18–24 år som är öppet arbetslösa eller i program med aktivitetsstöd, årsmedelvärde. Arbetskraften enligt SCB:s befolkningens arbetsmarknadsstatus (BAS). Serien börjar 2023.
+- Halland: 6,29
+- Riket: 7,80
+- Skillnad Halland mot riket: -1,52 procentenheter
+- Plats bland landets 21 regioner: 18 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 9,01; Halmstad 8,20; Laholm 7,85; Falkenberg 5,48; Varberg 4,80; Kungsbacka 4,41
+- Förändring 1 år: -0,41 procentenheter (från 6,70 år 2024); riket -0,09 procentenheter
+- Halland år för år: 2023 5,35; 2024 6,70; 2025 6,29
+
+### Unga 16–24 år som varken arbetar eller studerar, andel (procent, 2024)
+Mäter: Andel invånare 16–24 år som under året varken arbetat (inkomst över ett basbelopp) eller studerat.
+- Halland: 5,54
+- Riket: 6,16
+- Skillnad Halland mot riket: -0,62 procentenheter
+- Plats bland landets 21 regioner: 16 (1 = högsta värdet)
+- Hallands kommuner 2024 (högst först): Hylte 8,66; Laholm 7,76; Falkenberg 6,06; Halmstad 5,65; Varberg 5,10; Kungsbacka 4,62
+- Förändring hela serien sedan 2008: -0,17 procentenheter (från 5,71 år 2008); riket -1,15 procentenheter
+- Förändring 10 år: -0,46 procentenheter (från 6,01 år 2014); riket -1,30 procentenheter
+- Förändring 5 år: +0,14 procentenheter (från 5,40 år 2019); riket -0,01 procentenheter
+- Förändring 1 år: +0,48 procentenheter (från 5,07 år 2023); riket +0,40 procentenheter
+- Halland år för år: 2014 6,01; 2015 6,63; 2016 6,88; 2017 5,72; 2018 5,52; 2019 5,40; 2020 5,51; 2021 4,81; 2022 4,89; 2023 5,07; 2024 5,54
+- Serien för Halland 2008–2024: högst 7,35 (2009), lägst 4,81 (2021)
+
+### Långtidsarbetslösa av de arbetslösa 18–65 år, andel (procent, 2025)
+Mäter: Andel av de arbetslösa 18–65 år (öppet arbetslösa eller i program med aktivitetsstöd) som varit det i minst sex månader, årsmedelvärde.
+- Halland: 59,5
+- Riket: 61,0
+- Skillnad Halland mot riket: -1,5 procentenheter
+- Plats bland landets 21 regioner: 14 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Hylte 68,4; Halmstad 62,7; Laholm 59,6; Falkenberg 59,3; Varberg 55,4; Kungsbacka 52,1
+- Förändring hela serien sedan 2010: +8,3 procentenheter (från 51,2 år 2010); riket +7,0 procentenheter
+- Förändring 10 år: +4,1 procentenheter (från 55,4 år 2015); riket +3,8 procentenheter
+- Förändring 5 år: +3,8 procentenheter (från 55,6 år 2020); riket +3,8 procentenheter
+- Förändring 1 år: +2,8 procentenheter (från 56,7 år 2024); riket +1,7 procentenheter
+- Halland år för år: 2015 55,4; 2016 57,5; 2017 61,4; 2018 61,5; 2019 60,6; 2020 55,6; 2021 65,0; 2022 62,1; 2023 57,1; 2024 56,7; 2025 59,5
+- Serien för Halland 2010–2025: högst 65,0 (2021), lägst 51,1 (2012)
