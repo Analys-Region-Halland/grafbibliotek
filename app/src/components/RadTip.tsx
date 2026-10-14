@@ -6,6 +6,7 @@ import { ENHET_FARG } from "../types";
 import type { KpiSammanfattning } from "../utils/kpiStats";
 import { periodText } from "../utils/format";
 import { huvudForandring } from "../utils/kpiStats";
+import type { UtvecklingText } from "../utils/utveckling";
 
 interface Props {
   temaNamn: string;
@@ -22,8 +23,10 @@ interface Props {
   fmt: (v: number) => string;
   /** Exakt format för det stora talet och jämförelsen (fmt förkortar stora tal) */
   fmtExakt?: (v: number) => string;
-  /** Förändringen som text, t.ex. "+0,6", dess klass och startperiod ("2015", "jul 2025") */
-  delta: { text: string; klass: string; sedan: string } | null;
+  /** Utvecklingen över tid med vad som jämförs (utils/utveckling.ts), exakt formaterad */
+  utveckling: UtvecklingText | null;
+  /** Värdet är självt en förändring: ingen plats vid ett basår att jämföra med */
+  takt: boolean;
   bricka: { klass: string };
   /** Radens skärmposition */
   ankare: { x: number; topp: number; botten: number };
@@ -35,17 +38,16 @@ const punkter = (rows: KpiRow[] | null) =>
 
 export default function RadTip({
   temaNamn, farg, namn, enhet, beskrivning, s, enhetNamn, valdKod, riketSerie, hallandSerie,
-  enhetsnamn, fmt, fmtExakt = fmt, delta, bricka, ankare,
+  enhetsnamn, fmt, fmtExakt = fmt, utveckling, takt, bricka, ankare,
 }: Props) {
   const arRegion = valdKod === "0013";
   const arAntal = enhet === "antal";
   const enhetsord = arRegion ? "regioner" : "kommuner";
   const hogst = s.enheter[s.enheter.length - 1];
   const hk = [...s.hallandKommuner].sort((a, b) => b.varde - a.varde);
-  const forandring = huvudForandring(s);
+  const forandring = takt ? null : huvudForandring(s);
   const nu = periodText(s.period, s.kvartal);
   const basRad = forandring ? s.serie.find((r) => r.ar === forandring.sedan) : null;
-  const basVarde = basRad?.varde ?? null;
   const basRang = basRad?.rang_total ?? null;
   const beskr = beskrivning.replace(/\s*Källa:.*$/, "").trim();
   const kalla = beskrivning.match(/Källa:\s*(.*)$/)?.[1]?.trim();
@@ -67,14 +69,7 @@ export default function RadTip({
         <span style={{ fontSize: 12.5, color: "#5B5B5B", fontFamily: "var(--font-sans)" }}>{enhet}</span>
         <span className="kt-tip-ar">{enhetNamn} {nu}</span>
       </div>
-      {delta && (
-        <div className="kt-tip-fran">
-          Förändring <span className={`kt-delta ${delta.klass}`}>{delta.text}</span> sedan {delta.sedan}
-        </div>
-      )}
-      {basVarde != null && forandring && (
-        <div className="kt-tip-fran">Jämfört med {fmtExakt(basVarde)} {periodText(forandring.sedan, s.kvartal)}</div>
-      )}
+      {utveckling && <div className="kt-tip-utv">{utveckling.mening}</div>}
       <div className="kt-tip-kropp">
         <SerieGraf kompakt width={212} height={170} fmt={fmt} serier={[
           // För antal ritas inte länet och riket: nivåerna är så olika att enhetens kurva blir platt

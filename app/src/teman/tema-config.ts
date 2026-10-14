@@ -49,6 +49,13 @@ export interface TemaConfig {
   /** KPI-ID:n där högt värde entydigt är önskvärt (sysselsättning, behörighet, förnybart) */
   hogtArBra?: string[];
   /**
+   * KPI-ID:n vars värde självt är en förändring eller ett netto under perioden: årlig
+   * befolkningsförändring, flyttnetto, tillväxt, årsförändring. Skillnaden mot tio år tidigare
+   * vore en förändring av en förändring, så tabellen och tooltipen visar i stället snittet per
+   * år (årsdata) eller värdet samma månad året innan (månadsdata). Se `utils/utveckling.ts`.
+   */
+  taktKpis?: string[];
+  /**
    * KPI-ID:n där länets värde mäter något annat än kommunernas, t.ex. pendling över länsgränsen
    * mot pendling över kommungränsen. Länet visas då inte som jämförelse för en kommun.
    */

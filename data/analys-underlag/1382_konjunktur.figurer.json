@@ -1,7 +1,7 @@
 [
   {
     "id": "K_ANDEL_UTL",
-    "namn": "Andel utländska gästnätter (%)",
+    "namn": "Andel utländska gästnätter (%) (prelim.)",
     "enhet": "procent",
     "roll": "indikator i bandet Gästnätter",
     "forsta": 202001,
@@ -9,7 +9,7 @@
   },
   {
     "id": "K_ARBL_FORANDR",
-    "namn": "Arbetslöshet, årsförändring (procentenheter)",
+    "namn": "Arbetslöshet, årsförändring i procentenheter (prelim.)",
     "enhet": "procentenheter",
     "roll": "indikator i bandet Arbetslöshet och arbetskraft",
     "forsta": 202101,
@@ -81,7 +81,7 @@
   },
   {
     "id": "K_BEF_FORANDR",
-    "namn": "Befolkningsförändring mot samma månad fg. år",
+    "namn": "Befolkningsförändring jämfört med samma månad året innan (prelim.)",
     "enhet": "antal",
     "roll": "indikator i bandet Befolkning och bostadsbyggande",
     "forsta": 202101,
@@ -89,7 +89,7 @@
   },
   {
     "id": "K_BEF_TOT",
-    "namn": "Folkmängd (prelim.)",
+    "namn": "Folkmängd vid månadens slut (prelim.)",
     "enhet": "antal",
     "roll": "indikator i bandet Befolkning och bostadsbyggande",
     "forsta": 202001,
@@ -97,7 +97,7 @@
   },
   {
     "id": "K_BYGG_FLERBO",
-    "namn": "Påbörjade lägenheter, flerbostadshus (kvartal)",
+    "namn": "Påbörjade lägenheter, flerbostadshus, per kvartal (prelim.)",
     "enhet": "antal",
     "roll": "uppdelning av K_BYGG_TOT (småhus och flerbostadshus)",
     "forsta": 202003,
@@ -105,7 +105,7 @@
   },
   {
     "id": "K_BYGG_SMAHUS",
-    "namn": "Påbörjade lägenheter, småhus (kvartal)",
+    "namn": "Påbörjade lägenheter, småhus, per kvartal (prelim.)",
     "enhet": "antal",
     "roll": "uppdelning av K_BYGG_TOT (småhus och flerbostadshus)",
     "forsta": 202003,
@@ -113,7 +113,7 @@
   },
   {
     "id": "K_BYGG_TOT",
-    "namn": "Påbörjade lägenheter, alla hustyper (kvartal)",
+    "namn": "Påbörjade lägenheter, alla hustyper, per kvartal (prelim.)",
     "enhet": "antal",
     "roll": "indikator i bandet Befolkning och bostadsbyggande",
     "forsta": 202003,
@@ -209,7 +209,7 @@
   },
   {
     "id": "K_DAG_OFF",
-    "namn": "Sysselsatta inom offentlig sektor (prelim.)",
+    "namn": "Sysselsatta inom offentlig förvaltning, utbildning, vård och omsorg (prelim.)",
     "enhet": "antal",
     "roll": "uppdelning av K_DAG_TOT (branscherna)",
     "forsta": 202001,
@@ -217,17 +217,17 @@
   },
   {
     "id": "K_DAG_TILLVAXT",
-    "namn": "Dagbefolkning, årsförändring (procent)",
+    "namn": "Sysselsatta som arbetar i kommunen, årsförändring i procent (prelim.)",
     "enhet": "procent",
-    "roll": "indikator i bandet Näringsliv (dagbefolkning)",
+    "roll": "indikator i bandet Sysselsatta som arbetar i kommunen",
     "forsta": 202101,
     "sista": 202607
   },
   {
     "id": "K_DAG_TOT",
-    "namn": "Sysselsatta dagbefolkning 15–74 år, antal (prelim.)",
+    "namn": "Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.)",
     "enhet": "antal",
-    "roll": "indikator i bandet Näringsliv (dagbefolkning)",
+    "roll": "indikator i bandet Sysselsatta som arbetar i kommunen",
     "forsta": 202001,
     "sista": 202607
   },
@@ -241,7 +241,7 @@
   },
   {
     "id": "K_GAST_SVE",
-    "namn": "Gästnätter svenska gäster",
+    "namn": "Gästnätter, svenska gäster (prelim.)",
     "enhet": "antal",
     "roll": "uppdelning av K_GAST_TOT (svenska och utländska gäster)",
     "forsta": 202001,
@@ -249,7 +249,7 @@
   },
   {
     "id": "K_GAST_TILLVAXT",
-    "namn": "Gästnätter, årsförändring (%)",
+    "namn": "Gästnätter, årsförändring i procent (prelim.)",
     "enhet": "procent",
     "roll": "indikator i bandet Gästnätter",
     "forsta": 202101,
@@ -265,7 +265,7 @@
   },
   {
     "id": "K_GAST_UTL",
-    "namn": "Gästnätter utländska gäster",
+    "namn": "Gästnätter, utländska gäster (prelim.)",
     "enhet": "antal",
     "roll": "uppdelning av K_GAST_TOT (svenska och utländska gäster)",
     "forsta": 202001,
@@ -273,7 +273,7 @@
   },
   {
     "id": "K_NATT_ANT",
-    "namn": "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+    "namn": "Sysselsatta 15–74 år som bor i kommunen, antal (prelim.)",
     "enhet": "antal",
     "roll": "indikator i bandet Sysselsättning",
     "forsta": 202001,
@@ -289,7 +289,7 @@
   },
   {
     "id": "K_SYSS_FORANDR",
-    "namn": "Sysselsättningsgrad, årsförändring (procentenheter)",
+    "namn": "Sysselsättningsgrad, årsförändring i procentenheter (prelim.)",
     "enhet": "procentenheter",
     "roll": "indikator i bandet Sysselsättning",
     "forsta": 202101,

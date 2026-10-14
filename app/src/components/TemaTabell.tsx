@@ -2,8 +2,9 @@ import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import type { KpiMeta } from "../types";
 import type { TemaConfig, Riktning } from "../teman/tema-config";
 import { TEMA_FARG_HEX } from "../teman/tema-config";
-import { sammanfatta, huvudForandring } from "../utils/kpiStats";
+import { sammanfatta } from "../utils/kpiStats";
 import type { KpiIndex, KpiSammanfattning } from "../utils/kpiStats";
+import { utveckling, utvecklingText } from "../utils/utveckling";
 import { byggGrupper, uppdelningsText } from "../utils/temaRader";
 import type { TabellRad } from "../utils/temaRader";
 import { kpiDecimaler, fmtPeriod, periodText } from "../utils/format";
@@ -31,18 +32,13 @@ interface Props {
 const enhetText = (enhet: string) => (enhet === "procent" ? "procent" : enhet);
 
 /**
- * Förändringen och dess startperiod, som alltid skrivs ut per indikator ("sedan 2015", "sedan
- * jul 2025"): perioden varierar mellan indikatorerna. Färg bara när önskvärd riktning är känd.
- * I tabellen i samma förkortade enhet som värdet, i tooltipen exakt.
+ * Utvecklingen över tid: vad som jämförs skrivs ut per rad (utils/utveckling.ts), eftersom det
+ * varierar mellan indikatorerna. I tabellen i samma förkortade enhet som värdet, i tooltipen exakt.
  */
-function deltaFor(s: KpiSammanfattning, dec: number, riktning: Riktning, exakt = false) {
-  const f = huvudForandring(s);
-  if (!f) return null;
-  const v = f.varde;
-  const tal = (x: number) => (exakt ? fmt(x, dec) : kort(x, dec, s.varde));
-  const text = v === 0 ? "±0" : v > 0 ? `+${tal(v)}` : tal(v);
-  const klass = !riktning || v === 0 ? "" : (v < 0) === (riktning === "lagt") ? "kt-battre" : "kt-samre";
-  return { text, klass, sedan: fmtPeriod(f.sedan, s.kvartal), sedanText: periodText(f.sedan, s.kvartal) };
+function utvecklingFor(s: KpiSammanfattning, r: TabellRad, exakt = false) {
+  const u = utveckling(s, r.takt);
+  if (!u) return null;
+  return utvecklingText(u, s, r.enhet, r.riktning, (x, dec) => (exakt ? fmt(x, dec) : kort(x, dec, s.varde)));
 }
 
 /**
@@ -157,12 +153,12 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
     const harNed = !sub && r.nedbrytningar.length > 0;
     const arOppen = oppna.has(r.kpiId);
     const arAntal = r.enhet === "antal";
-    const delta = deltaFor(s, dec, r.riktning);
+    const utv = utvecklingFor(s, r);
     const gammal = s.period < s.nyastePeriod;
     const period = fmtPeriod(s.period, s.kvartal);
 
     const aria = [`${r.helaNamn}: ${fmt(s.varde, dec)} ${enhetText(r.enhet)} ${periodText(s.period, s.kvartal)}`,
-      delta ? `förändring ${delta.text} sedan ${delta.sedan}` : "",
+      utvecklingFor(s, r, true)?.mening ?? "",
       s.riket != null ? `riket ${fmt(s.riket, dec)} samma period` : "",
       s.rang != null ? `plats ${s.rang} av ${s.n}` : ""].filter(Boolean).join(", ");
     const flera = r.nedbrytningar.length > 1;
@@ -200,16 +196,17 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
               {period}
             </span>
           </div>
-          <div className="kt-c-forandr kt-tal">
-            {delta ? (
+          <div className="kt-c-forandr kt-tal" title={utvecklingFor(s, r, true)?.mening}>
+            {utv ? (
               <>
-                <span className={`kt-delta ${delta.klass}`}>{delta.text}</span>
-                <span className="kt-sedan" title={`Förändring från ${delta.sedanText} till ${periodText(s.period, s.kvartal)}`}>sedan {delta.sedan}</span>
+                <span className={`kt-delta ${utv.klass}`}>{utv.tal}</span>
+                {utv.enhet && <span className="kt-enhet">{utv.enhet}</span>}
+                <span className="kt-sedan">{utv.vad}</span>
               </>
             ) : (
               <>
                 <span className="kt-delta">–</span>
-                <span className="kt-sedan">ingen jämförelse</span>
+                <span className="kt-sedan">för kort serie</span>
               </>
             )}
           </div>
@@ -265,7 +262,7 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
           )}
         </div>
         <div className="kt-c-varde kt-tal">{enhetNamn}<small>Senaste värde, med året under</small></div>
-        <div className="kt-c-forandr kt-tal">Förändring<small>Sedan perioden under</small></div>
+        <div className="kt-c-forandr kt-tal">Utveckling<small>Vad som jämförs står på varje rad</small></div>
         <div className="kt-c-riket kt-tal">Riket<small>Samma period</small></div>
         <div className="kt-c-spar" ref={sparRef}>
           {enhetNamn} och landets {enhetsord}
@@ -295,7 +292,8 @@ export default function TemaTabell({ tema, meta, idx, valdKod, enhetNamn, enhets
             riketSerie={idx.get(tipRad.kpiId)?.get("0000") ?? []}
             hallandSerie={idx.get(tipRad.kpiId)?.get("0013") ?? null}
             enhetsnamn={enhetsnamn} fmt={(v) => kort(v, dec)} fmtExakt={(v) => fmt(v, dec)}
-            delta={deltaFor(tipS, dec, tipRad.riktning, true)} bricka={brickaFor(tipS, tipRad.riktning)}
+            utveckling={utvecklingFor(tipS, tipRad, true)} takt={tipRad.takt}
+            bricka={brickaFor(tipS, tipRad.riktning)}
             ankare={tip.ankare}
           />
         );

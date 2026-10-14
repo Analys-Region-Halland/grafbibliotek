@@ -7,6 +7,13 @@ const befolkning: TemaConfig = {
   // Inga netto-KPI:er som behöver klient-sidans per-1000-beräkning
   // — promille-värdena är förberäknade från SCB
   nettoKpis: [],
+  // Värdet är självt en förändring eller ett netto under året: tabellen visar snittet per år
+  taktKpis: [
+    "S_BEF_FORANDR_PCT", "S_BEF_FORANDR_ANTAL",
+    "S_FODELSENETTO_PROMILLE", "S_FODELSENETTO_ANTAL",
+    "S_INRIKES_NETTO_PROMILLE", "S_INRIKES_NETTO_ANTAL",
+    "S_UTRIKES_NETTO_PROMILLE", "S_UTRIKES_NETTO_ANTAL",
+  ],
   ingetIndex: [],
   sektioner: [
     {

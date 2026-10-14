@@ -23,6 +23,9 @@ data/*.json
 data/*.rds
 data/excel/
 
+# Claude Codes arbetsmapp (kontrollskript, skärmbilder, tillfälliga filer)
+_claude_arbete/
+
 # Excel-källfiler
 *.xlsx
 *.xls

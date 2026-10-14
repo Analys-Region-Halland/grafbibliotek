@@ -1,6 +1,6 @@
 # Uppdrag: analystexter att skriva
 
-Uppdaterad 2026-10-14 11:01. 0 text(er) saknas eller är inaktuella.
+Uppdaterad 2026-10-14 11:58. 0 text(er) saknas eller är inaktuella.
 
 Läs R/analys/systemprompt.md (stil, sifferregler, format), R/analys/figurregler.md och underlaget
 för varje text (<id>.md, och <id>.figurer.json för vilka KPI:er figurerna får använda).

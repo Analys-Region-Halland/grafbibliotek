@@ -710,7 +710,7 @@
   {
     "kpi_id": "K_SYSS_TOT",
     "kpi_namn": "Sysselsättningsgrad (prelim.)",
-    "beskrivning": "Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Sysselsatta som andel av befolkningen 20–64 år bland de folkbokförda i kommunen; som sysselsatt räknas bland annat den som under månaden fått lön enligt arbetsgivarnas deklarationer (AGI) eller bedöms driva ett verksamt företag. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur",
     "par_kpi_id": "K_SYSS_ANT"
@@ -718,7 +718,7 @@
   {
     "kpi_id": "K_SYSS_ANT",
     "kpi_namn": "Antal sysselsatta (prelim.)",
-    "beskrivning": "Antal sysselsatta 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 20–64 år bland de folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur",
     "par_kpi_id": "K_SYSS_TOT"
@@ -726,35 +726,35 @@
   {
     "kpi_id": "K_SYSS_INR",
     "kpi_namn": "Sysselsättningsgrad, inrikes födda (prelim.)",
-    "beskrivning": "Andel sysselsatta bland inrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Sysselsatta som andel av befolkningen bland inrikes födda 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_UTR",
     "kpi_namn": "Sysselsättningsgrad, utrikes födda (prelim.)",
-    "beskrivning": "Andel sysselsatta bland utrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Sysselsatta som andel av befolkningen bland utrikes födda 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_KV",
     "kpi_namn": "Sysselsättningsgrad, kvinnor (prelim.)",
-    "beskrivning": "Andel sysselsatta kvinnor 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Sysselsatta som andel av befolkningen bland kvinnor 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_MAN",
     "kpi_namn": "Sysselsättningsgrad, män (prelim.)",
-    "beskrivning": "Andel sysselsatta män 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Sysselsatta som andel av befolkningen bland män 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_NATT_ANT",
-    "kpi_namn": "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
-    "beskrivning": "Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommunen). Preliminär statistik från SCB BAS.",
+    "kpi_namn": "Sysselsatta 15–74 år som bor i kommunen, antal (prelim.)",
+    "beskrivning": "Antal sysselsatta 15–74 år bland de folkbokförda i kommunen, det vill säga efter bostadens belägenhet. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur",
     "par_kpi_id": "K_NATT_GRAD"
@@ -762,7 +762,7 @@
   {
     "kpi_id": "K_NATT_GRAD",
     "kpi_namn": "Sysselsättningsgrad 15–74 år (prelim.)",
-    "beskrivning": "Andel sysselsatta av befolkningen 15–74 år, nattbefolkning. Preliminär statistik från SCB BAS.",
+    "beskrivning": "Sysselsatta som andel av befolkningen 15–74 år bland de folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur",
     "par_kpi_id": "K_NATT_ANT"
@@ -770,7 +770,7 @@
   {
     "kpi_id": "K_ARBL_TOT",
     "kpi_namn": "Arbetslöshetsgrad (prelim.)",
-    "beskrivning": "Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Arbetslösa som andel av arbetskraften (sysselsatta och arbetslösa) 20–64 år bland de folkbokförda i kommunen; som arbetslös räknas den som någon gång under månaden varit inskriven hos Arbetsförmedlingen som öppet arbetslös eller sökande i program med aktivitetsstöd och inte är sysselsatt. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur",
     "par_kpi_id": "K_ARBL_ANT"
@@ -778,7 +778,7 @@
   {
     "kpi_id": "K_ARBL_ANT",
     "kpi_namn": "Antal arbetslösa (prelim.)",
-    "beskrivning": "Antal arbetslösa 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal arbetslösa 20–64 år bland de folkbokförda i kommunen, det vill säga inskrivna hos Arbetsförmedlingen som öppet arbetslösa eller sökande i program med aktivitetsstöd någon gång under månaden och inte sysselsatta. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur",
     "par_kpi_id": "K_ARBL_TOT"
@@ -786,238 +786,238 @@
   {
     "kpi_id": "K_ARBL_INR",
     "kpi_namn": "Arbetslöshetsgrad, inrikes födda (prelim.)",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Arbetslösa som andel av arbetskraften bland inrikes födda 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_UTR",
     "kpi_namn": "Arbetslöshetsgrad, utrikes födda (prelim.)",
-    "beskrivning": "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Arbetslösa som andel av arbetskraften bland utrikes födda 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_KV",
     "kpi_namn": "Arbetslöshetsgrad, kvinnor (prelim.)",
-    "beskrivning": "Andel arbetslösa kvinnor av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Arbetslösa som andel av arbetskraften bland kvinnor 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_MAN",
     "kpi_namn": "Arbetslöshetsgrad, män (prelim.)",
-    "beskrivning": "Andel arbetslösa män av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Arbetslösa som andel av arbetskraften bland män 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARKR_TOT",
     "kpi_namn": "Arbetskraftsdeltagande (prelim.)",
-    "beskrivning": "Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen 20–64 år bland de folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARKR_KV",
     "kpi_namn": "Arbetskraftsdeltagande, kvinnor (prelim.)",
-    "beskrivning": "Andel kvinnor 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen bland kvinnor 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARKR_MAN",
     "kpi_namn": "Arbetskraftsdeltagande, män (prelim.)",
-    "beskrivning": "Andel män 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen bland män 20–64 år som är folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_TOT",
-    "kpi_namn": "Sysselsatta dagbefolkning (prelim.)",
-    "beskrivning": "Antal sysselsatta efter arbetsställets kommun, alla branscher. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "kpi_namn": "Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.)",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, alla näringsgrenar; SCB kallar det sysselsatta efter arbetsställets belägenhet och använder inte ordet dagbefolkning, eftersom statistiken visar var arbetsstället ligger och inte var personerna befinner sig när arbetet utförs. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_JORD",
     "kpi_namn": "Sysselsatta, jordbruk m.m. (prelim.)",
-    "beskrivning": "Antal sysselsatta inom jordbruk, skogsbruk och fiske (SNI A) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI A: företag inom jordbruk, skogsbruk och fiske. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_IND",
     "kpi_namn": "Sysselsatta, tillverkning (prelim.)",
-    "beskrivning": "Antal sysselsatta inom tillverkning (SNI B+C) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI B+C: tillverkningsindustri; gruvor och mineralutvinningsindustri. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_ENMI",
     "kpi_namn": "Sysselsatta, energi och miljö (prelim.)",
-    "beskrivning": "Antal sysselsatta inom energi och miljö (SNI D+E) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI D+E: företag inom energi och miljö. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_BYG",
     "kpi_namn": "Sysselsatta, bygg (prelim.)",
-    "beskrivning": "Antal sysselsatta inom byggindustrin (SNI F) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI F: byggindustri. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_HAND",
     "kpi_namn": "Sysselsatta, handel (prelim.)",
-    "beskrivning": "Antal sysselsatta inom handel (SNI G) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI G: handel; serviceverkstäder för motorfordon och motorcyklar. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_TRANS",
     "kpi_namn": "Sysselsatta, transport (prelim.)",
-    "beskrivning": "Antal sysselsatta inom transport (SNI H) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI H: transport- och magasineringsföretag. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_HOTEL",
     "kpi_namn": "Sysselsatta, hotell & restaurang (prelim.)",
-    "beskrivning": "Antal sysselsatta inom hotell och restaurang (SNI I) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI I: hotell och restauranger. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_IT",
     "kpi_namn": "Sysselsatta, IT och kommunikation (prelim.)",
-    "beskrivning": "Antal sysselsatta inom IT och kommunikation (SNI J) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI J: informations- och kommunikationsföretag. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_FINANS",
     "kpi_namn": "Sysselsatta, finans och försäkring (prelim.)",
-    "beskrivning": "Antal sysselsatta inom finans och försäkring (SNI K) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI K: kreditinstitut och försäkringsbolag m.m. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_FAST",
     "kpi_namn": "Sysselsatta, fastigheter (prelim.)",
-    "beskrivning": "Antal sysselsatta inom fastighetsverksamhet (SNI L) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI L: fastighetsbolag och fastighetsförvaltare. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_FORETJ",
     "kpi_namn": "Sysselsatta, företagstjänster (prelim.)",
-    "beskrivning": "Antal sysselsatta inom företagstjänster (SNI M+N) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI M+N: företag inom juridik, ekonomi, vetenskap och teknik; företag inom uthyrning, fastighetsservice, resetjänster och andra stödtjänster. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_OFF",
-    "kpi_namn": "Sysselsatta, offentlig sektor (prelim.)",
-    "beskrivning": "Antal sysselsatta inom offentlig förvaltning, utbildning och vård (SNI O+P+Q) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "kpi_namn": "Sysselsatta inom offentlig förvaltning, utbildning, vård och omsorg (prelim.)",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI O (civila myndigheter och försvaret), P (utbildningsväsendet) och Q (enheter för vård och omsorg, socialtjänst), summerat av Region Halland; indelningen avser näringsgren och inte sektor, som SCB redovisar i en egen tabell. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_KULT",
     "kpi_namn": "Sysselsatta, kultur m.m. (prelim.)",
-    "beskrivning": "Antal sysselsatta inom kultur, nöje, fritid m.m. (SNI R+S+T+U) efter arbetsställets kommun. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "beskrivning": "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI R+S+T+U: enheter för kultur, nöje och fritid; andra serviceföretag m.m. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_SYSS_FORANDR",
-    "kpi_namn": "Sysselsättningsgrad, årsförändring (procentenheter)",
-    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "kpi_namn": "Sysselsättningsgrad, årsförändring i procentenheter (prelim.)",
+    "beskrivning": "Sysselsättningsgraden 20–64 år minus sysselsättningsgraden samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procentenheter",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ARBL_FORANDR",
-    "kpi_namn": "Arbetslöshet, årsförändring (procentenheter)",
-    "beskrivning": "Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "kpi_namn": "Arbetslöshet, årsförändring i procentenheter (prelim.)",
+    "beskrivning": "Arbetslösheten 20–64 år minus arbetslösheten samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion.",
     "enhet": "procentenheter",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_BEF_TOT",
-    "kpi_namn": "Folkmängd (prelim.)",
-    "beskrivning": "Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "kpi_namn": "Folkmängd vid månadens slut (prelim.)",
+    "beskrivning": "Antal folkbokförda personer i kommunen den sista dagen i månaden, enligt SCB:s befolkningsstatistik per månad (inte BAS). SCB kallar månadsstatistiken preliminär, men folkmängden redovisas cirka 5–6 veckor efter mättidpunkten och revideras inte i efterhand i tabellen; det som revideras under året är födda, döda och flyttningar, som blir slutliga när statistiken för december publicerats. Från 2025 har SCB tillfört varje värde en liten kontrollerad slumpmässig justering på mellan minus 3 och plus 3 personer (Cell Key Method, CKM) för att skydda enskilda personer, och värdena för 2020–2024 kommer från den tidigare tabellen. Källa: SCB, Befolkningsstatistik, tabellerna Befolkningsstatistik efter region och kön, månad (TAB1625 för 2020–2024 och TAB6473 från 2025).",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_BEF_FORANDR",
-    "kpi_namn": "Befolkningsförändring mot samma månad fg. år",
-    "beskrivning": "Absolut förändring i folkmängd jämfört med samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "kpi_namn": "Befolkningsförändring jämfört med samma månad året innan (prelim.)",
+    "beskrivning": "Folkmängden vid månadens slut minus folkmängden vid slutet av samma månad året innan, beräknad av Region Halland ur SCB:s befolkningsstatistik per månad (inte BAS). Folkmängden avser antalet folkbokförda den sista dagen i månaden och revideras inte i efterhand i SCB:s tabell; från 2025 har varje värde en liten slumpmässig skyddsjustering på mellan minus 3 och plus 3 personer (CKM), och värdena för 2020–2024 kommer från den tidigare tabellen. Källa: SCB, Befolkningsstatistik, tabellerna Befolkningsstatistik efter region och kön, månad (TAB1625 för 2020–2024 och TAB6473 från 2025).",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_DAG_TILLVAXT",
-    "kpi_namn": "Dagbefolkning, årsförändring (procent)",
-    "beskrivning": "Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
+    "kpi_namn": "Sysselsatta som arbetar i kommunen, årsförändring i procent (prelim.)",
+    "beskrivning": "Procentuell förändring av antalet sysselsatta 15–74 år med huvudsakligt arbetsställe i kommunen, alla näringsgrenar, jämfört med samma månad året innan, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter. Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_GAST_TOT",
     "kpi_namn": "Gästnätter totalt (prelim.)",
-    "beskrivning": "Antal gästnätter på samtliga inkvarteringsanläggningar. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "beskrivning": "Antal gästnätter under månaden på hotell, stugbyar, vandrarhem, campingplatser och i kommersiellt förmedlade privata stugor och lägenheter (bokningsplattformar som Airbnb ingår inte). Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter. En kommuns statistik redovisas bara för månader med minst fem öppna anläggningar. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_GAST_SVE",
-    "kpi_namn": "Gästnätter svenska gäster",
-    "beskrivning": "Antal gästnätter av svenska gäster. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "kpi_namn": "Gästnätter, svenska gäster (prelim.)",
+    "beskrivning": "Antal gästnätter under månaden av gäster från Sverige, på samma typer av anläggningar som i gästnätter totalt. Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_GAST_UTL",
-    "kpi_namn": "Gästnätter utländska gäster",
-    "beskrivning": "Antal gästnätter av utländska gäster. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "kpi_namn": "Gästnätter, utländska gäster (prelim.)",
+    "beskrivning": "Antal gästnätter under månaden av gäster från andra länder än Sverige. Under 2024 underrapporterades utländska gäster på grund av tekniska problem i ett bokningssystem för hotell, så ökningen 2025 ska enligt Tillväxtverket tolkas med försiktighet. Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_ANDEL_UTL",
-    "kpi_namn": "Andel utländska gästnätter (%)",
-    "beskrivning": "Andel utländska gästnätter av totala gästnätter. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "kpi_namn": "Andel utländska gästnätter (%) (prelim.)",
+    "beskrivning": "Utländska gästnätter som andel av summan av svenska och utländska gästnätter, beräknad av Region Halland. Under 2024 underrapporterades utländska gäster på grund av tekniska problem i ett bokningssystem för hotell, enligt Tillväxtverket. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_GAST_TILLVAXT",
-    "kpi_namn": "Gästnätter, årsförändring (%)",
-    "beskrivning": "Procentuell förändring i antal gästnätter mot samma månad föregående år. Källa: Tillväxtverkets inkvarteringsstatistik.",
+    "kpi_namn": "Gästnätter, årsförändring i procent (prelim.)",
+    "beskrivning": "Procentuell förändring av antalet gästnätter jämfört med samma månad året innan, beräknad av Region Halland. Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter. Källa: Tillväxtverkets inkvarteringsstatistik.",
     "enhet": "procent",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_BYGG_TOT",
-    "kpi_namn": "Påbörjade lägenheter, alla hustyper (kvartal)",
-    "beskrivning": "Antal påbörjade lägenheter i nybyggda hus per kvartal. Källa: SCB BO0101.",
+    "kpi_namn": "Påbörjade lägenheter, alla hustyper, per kvartal (prelim.)",
+    "beskrivning": "Antal påbörjade lägenheter i nybyggda hus under kvartalet, summan av småhus och flerbostadshus beräknad av Region Halland; som lägenhet räknas enligt SCB även bostaden i ett småhus, och påbörjandet räknas i de flesta fall från kommunens startbesked. Uppgifterna är preliminära och underskattade för de senaste kvartalen eftersom rapporteringen släpar efter: enligt SCB är underskattningen för påbörjade 20 till 60 procent det senaste kvartalet och cirka 2 procent efter ett år. Eftersläpningen ser olika ut i olika kommuner, så jämförelser mellan kommuner för de senaste kvartalen är osäkra. Källa: SCB, Bygglov, nybyggnad och ombyggnad, tabell TAB4572 Lägenheter i nybyggda hus efter region och hustyp.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_BYGG_SMAHUS",
-    "kpi_namn": "Påbörjade lägenheter, småhus (kvartal)",
-    "beskrivning": "Antal påbörjade lägenheter i nybyggda småhus per kvartal. Källa: SCB BO0101.",
+    "kpi_namn": "Påbörjade lägenheter, småhus, per kvartal (prelim.)",
+    "beskrivning": "Antal påbörjade lägenheter i nybyggda småhus under kvartalet; småhus är enligt SCB friliggande en- och tvåbostadshus samt par-, rad- och kedjehus (exklusive fritidshus). Uppgifterna är preliminära och underskattade för de senaste kvartalen eftersom rapporteringen släpar efter, och äldre kvartal revideras vid varje ny publicering. Källa: SCB, Bygglov, nybyggnad och ombyggnad, tabell TAB4572 Lägenheter i nybyggda hus efter region och hustyp.",
     "enhet": "antal",
     "tema": "konjunktur"
   },
   {
     "kpi_id": "K_BYGG_FLERBO",
-    "kpi_namn": "Påbörjade lägenheter, flerbostadshus (kvartal)",
-    "beskrivning": "Antal påbörjade lägenheter i nybyggda flerbostadshus per kvartal. Källa: SCB BO0101.",
+    "kpi_namn": "Påbörjade lägenheter, flerbostadshus, per kvartal (prelim.)",
+    "beskrivning": "Antal påbörjade lägenheter i nybyggda flerbostadshus under kvartalet; flerbostadshus är enligt SCB bostadsbyggnader med tre eller fler lägenheter, inklusive loftgångshus och specialbostäder som studentbostäder och bostäder för äldre eller funktionshindrade. Uppgifterna är preliminära och underskattade för de senaste kvartalen eftersom rapporteringen släpar efter, och äldre kvartal revideras vid varje ny publicering. Källa: SCB, Bygglov, nybyggnad och ombyggnad, tabell TAB4572 Lägenheter i nybyggda hus efter region och hustyp.",
     "enhet": "antal",
     "tema": "konjunktur"
   },

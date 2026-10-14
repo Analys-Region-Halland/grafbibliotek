@@ -1,7 +1,8 @@
 # teman/konjunktur/config.R — Konjunktur (preliminär månadsstatistik)
 # Källa: SCB tabeller ArbStatusM (nattbefolkning) och ArbStDoNMNN (dagbefolkning)
 # Åldersgrupp: 20–64 år
-# Data publiceras månadsvis med ~6 månaders eftersläpning.
+# Data publiceras månadsvis, normalt två månader efter månadens slut (SCB:s
+# kvalitetsdeklaration för preliminär BAS 2026, avsnitt 3.1).
 #
 # Skillnad mot arbetsmarknad-temat:
 #   - Arbetsmarknad använder BAS årsregister (slutlig registerstatistik)
@@ -29,6 +30,32 @@ konjunktur_config <- function() {
   # Generera månadskoder från 2020M01 till nuvarande år
   source("R/gemensam/hamta-scb-manad.R", local = TRUE)
   manadskoder <- generera_manadskoder(2020)
+
+  # ── Gemensamma delar av beskrivningarna (beraknade_kpier nedan) ──
+  # Bygger på källornas egna texter, kontrollerade 2026-10-14:
+  #   BAS: SCB:s kvalitetsdeklaration "Preliminär statistik baserad på månatliga uppgifter" 2026
+  #        (avsnitt 1.2, 2.3, 3.1) och "Skillnader mellan preliminär och slutlig statistik från BAS".
+  #   Befolkning: fotnoterna i TAB1625/TAB6473 och kvalitetsdeklarationen BE0101 2026 (röjandekontroll).
+  #   Bostadsbyggande: fotnoterna i TAB4572 och kvalitetsdeklarationen BO0101 2026.
+  #   Gästnätter: Tillväxtverkets sida om inkvarteringsstatistiken (frågor och svar).
+  # Källa-delen får inte innehålla punkt före slutet: frontend (utils/kalla.ts) läser fram till första punkten.
+  bas_prel <- paste(
+    "Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut.",
+    "SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter."
+  )
+  kalla_natt <- "Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB6260 Arbetsmarknadsstatus efter region, kön, ålder och födelseregion."
+  kalla_dag  <- "Källa: SCB, Befolkningens arbetsmarknadsstatus (BAS), tabell TAB3784 Sysselsatta 15–74 år efter region, kön, näringsgren (SNI 2007) och födelseregion."
+  # Text för en bransch i dagbefolkningen (SCB:s egen benämning av näringsgrenen)
+  dag_bransch <- function(sni) paste0(
+    "Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom ", sni,
+    if (grepl("\\.$", sni)) " " else ". ",
+    bas_prel, " ", kalla_dag
+  )
+  kalla_bef  <- "Källa: SCB, Befolkningsstatistik, tabellerna Befolkningsstatistik efter region och kön, månad (TAB1625 för 2020–2024 och TAB6473 från 2025)."
+  kalla_bygg <- "Källa: SCB, Bygglov, nybyggnad och ombyggnad, tabell TAB4572 Lägenheter i nybyggda hus efter region och hustyp."
+  bygg_prel  <- "Uppgifterna är preliminära och underskattade för de senaste kvartalen eftersom rapporteringen släpar efter, och äldre kvartal revideras vid varje ny publicering."
+  gast_prel  <- "Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter."
+  kalla_gast <- "Källa: Tillväxtverkets inkvarteringsstatistik."
 
   list(
     tema_id    = "konjunktur",
@@ -446,7 +473,7 @@ konjunktur_config <- function() {
         url = "https://api.scb.se/OV0104/v1/doris/sv/ssd/START/BO/BO0101/BO0101C/LagenhetNyKv16",
         kpi_id = "K_BYGG_SMAHUS",
         query = list(
-          Region = scb_regioner, Hustyp = c("SM\u00c5HUS"),
+          Region = scb_regioner, Hustyp = c("SMÅHUS"),
           ContentsCode = c("BO0101A4"),
           Tid = generera_kvartalskoder(2020)
         ),
@@ -470,47 +497,47 @@ konjunktur_config <- function() {
       # ── Arbetsmarknad ──
       list(
         id = "nattbefolkning",
-        namn = "Sysselsatta nattbefolkning 15\u201374 \u00e5r (prelim.)",
+        namn = "Sysselsatta som bor i kommunen, 15–74 år (prelim.)",
         kpi_ids = c("K_NATT_ANT"),
         undersektioner = list(
-          list(namn = "Syssels\u00e4ttningsgrad", kpi_ids = c("K_NATT_GRAD"))
+          list(namn = "Sysselsättningsgrad", kpi_ids = c("K_NATT_GRAD"))
         )
       ),
       list(
         id = "sysselsattning",
-        namn = "Syssels\u00e4ttningsgrad 20\u201364 \u00e5r (prelim.)",
+        namn = "Sysselsättningsgrad 20–64 år (prelim.)",
         kpi_ids = c("K_SYSS_TOT"),
         undersektioner = list(
-          list(namn = "F\u00f6delseregion", kpi_ids = c("K_SYSS_INR", "K_SYSS_UTR")),
-          list(namn = "Kvinnor och m\u00e4n", kpi_ids = c("K_SYSS_KV", "K_SYSS_MAN"))
+          list(namn = "Födelseregion", kpi_ids = c("K_SYSS_INR", "K_SYSS_UTR")),
+          list(namn = "Kvinnor och män", kpi_ids = c("K_SYSS_KV", "K_SYSS_MAN"))
         )
       ),
       list(
         id = "arbetsloshet",
-        namn = "Arbetsl\u00f6shet 20\u201364 \u00e5r (prelim.)",
+        namn = "Arbetslöshet 20–64 år (prelim.)",
         kpi_ids = c("K_ARBL_TOT"),
         undersektioner = list(
-          list(namn = "F\u00f6delseregion", kpi_ids = c("K_ARBL_INR", "K_ARBL_UTR")),
-          list(namn = "Kvinnor och m\u00e4n", kpi_ids = c("K_ARBL_KV", "K_ARBL_MAN"))
+          list(namn = "Födelseregion", kpi_ids = c("K_ARBL_INR", "K_ARBL_UTR")),
+          list(namn = "Kvinnor och män", kpi_ids = c("K_ARBL_KV", "K_ARBL_MAN"))
         )
       ),
       list(
         id = "arbetskraft",
-        namn = "Arbetskraftsdeltagande 20\u201364 \u00e5r (prelim.)",
+        namn = "Arbetskraftsdeltagande 20–64 år (prelim.)",
         kpi_ids = c("K_ARKR_TOT"),
         undersektioner = list(
-          list(namn = "Kvinnor och m\u00e4n", kpi_ids = c("K_ARKR_KV", "K_ARKR_MAN"))
+          list(namn = "Kvinnor och män", kpi_ids = c("K_ARKR_KV", "K_ARKR_MAN"))
         )
       ),
       list(
         id = "arbetsmarknad-forandring",
-        namn = "\u00c5rsf\u00f6r\u00e4ndring arbetsmarknad",
+        namn = "Årsförändring arbetsmarknad",
         kpi_ids = c("K_SYSS_FORANDR", "K_ARBL_FORANDR")
       ),
-      # ── N\u00e4ringsliv (dagbefolkning) ──
+      # ── Näringsliv (dagbefolkning) ──
       list(
         id = "dagbefolkning",
-        namn = "Sysselsatta dagbefolkning 15\u201374 \u00e5r (prelim.)",
+        namn = "Sysselsatta som arbetar i kommunen, 15–74 år (prelim.)",
         kpi_ids = c("K_DAG_TOT"),
         undersektioner = list(
           list(namn = "Branscher", kpi_ids = c(
@@ -523,7 +550,7 @@ konjunktur_config <- function() {
       ),
       list(
         id = "naringsliv-forandring",
-        namn = "\u00c5rsf\u00f6r\u00e4ndring dagbefolkning",
+        namn = "Årsförändring, sysselsatta som arbetar i kommunen",
         kpi_ids = c("K_DAG_TILLVAXT")
       ),
       # ── Befolkningsutveckling ──
@@ -532,14 +559,14 @@ konjunktur_config <- function() {
         namn = "Befolkningsutveckling",
         kpi_ids = c("K_BEF_TOT", "K_BEF_FORANDR")
       ),
-      # ── G\u00e4stn\u00e4tter ──
+      # ── Gästnätter ──
       list(
         id = "gastnatter",
-        namn = "G\u00e4stn\u00e4tter",
+        namn = "Gästnätter",
         kpi_ids = c("K_GAST_TOT"),
         undersektioner = list(
           list(namn = "Marknad", kpi_ids = c("K_GAST_SVE", "K_GAST_UTL", "K_ANDEL_UTL")),
-          list(namn = "\u00c5rsf\u00f6r\u00e4ndring", kpi_ids = c("K_GAST_TILLVAXT"))
+          list(namn = "Årsförändring", kpi_ids = c("K_GAST_TILLVAXT"))
         )
       ),
       # ── Bostadsmarknad ──
@@ -620,59 +647,74 @@ konjunktur_config <- function() {
     # Beräknade KPI:er — beskrivningar
     beraknade_kpier = tribble(
       ~kpi_id,            ~kpi_namn,                                              ~beskrivning,
-      # Sysselsättningsgrad
-      "K_SYSS_TOT",       "Sysselsättningsgrad (prelim.)",                        "Andel sysselsatta av befolkningen 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_SYSS_ANT",       "Antal sysselsatta (prelim.)",                          "Antal sysselsatta 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_SYSS_INR",       "Sysselsättningsgrad, inrikes födda (prelim.)",         "Andel sysselsatta bland inrikes födda 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_SYSS_UTR",       "Sysselsättningsgrad, utrikes födda (prelim.)",         "Andel sysselsatta bland utrikes födda 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_SYSS_KV",        "Sysselsättningsgrad, kvinnor (prelim.)",               "Andel sysselsatta kvinnor 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_SYSS_MAN",       "Sysselsättningsgrad, män (prelim.)",                   "Andel sysselsatta män 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      # Nattbefolkning 15–74
-      "K_NATT_ANT",       "Sysselsatta nattbefolkning 15\u201374 \u00e5r, antal (prelim.)",  "Antal sysselsatta i \u00e5ldern 15\u201374 \u00e5r, nattbefolkning (boende i kommunen). Prelimin\u00e4r statistik fr\u00e5n SCB BAS.",
-      "K_NATT_GRAD",      "Syssels\u00e4ttningsgrad 15\u201374 \u00e5r (prelim.)",            "Andel sysselsatta av befolkningen 15\u201374 \u00e5r, nattbefolkning. Prelimin\u00e4r statistik fr\u00e5n SCB BAS.",
-      # Arbetslöshet
-      "K_ARBL_TOT",       "Arbetslöshetsgrad (prelim.)",                          "Andel arbetslösa av arbetskraften 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARBL_ANT",       "Antal arbetslösa (prelim.)",                           "Antal arbetslösa 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARBL_INR",       "Arbetslöshetsgrad, inrikes födda (prelim.)",           "Andel arbetslösa av arbetskraften bland inrikes födda 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARBL_UTR",       "Arbetslöshetsgrad, utrikes födda (prelim.)",           "Andel arbetslösa av arbetskraften bland utrikes födda 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARBL_KV",        "Arbetslöshetsgrad, kvinnor (prelim.)",                 "Andel arbetslösa kvinnor av arbetskraften 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARBL_MAN",       "Arbetslöshetsgrad, män (prelim.)",                     "Andel arbetslösa män av arbetskraften 20–64 år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      # Arbetskraftsdeltagande
-      "K_ARKR_TOT",       "Arbetskraftsdeltagande (prelim.)",                     "Andel av befolkningen 20–64 år i arbetskraften. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARKR_KV",        "Arbetskraftsdeltagande, kvinnor (prelim.)",            "Andel kvinnor 20–64 år i arbetskraften. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARKR_MAN",       "Arbetskraftsdeltagande, män (prelim.)",                "Andel män 20–64 år i arbetskraften. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      # Dagbefolkning
-      "K_DAG_TOT",        "Sysselsatta dagbefolkning (prelim.)",                  "Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_JORD",       "Sysselsatta, jordbruk m.m. (prelim.)",                 "Antal sysselsatta inom jordbruk, skogsbruk och fiske (SNI A) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_IND",        "Sysselsatta, tillverkning (prelim.)",                  "Antal sysselsatta inom tillverkning (SNI B+C) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_ENMI",       "Sysselsatta, energi och miljö (prelim.)",              "Antal sysselsatta inom energi och miljö (SNI D+E) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_BYG",        "Sysselsatta, bygg (prelim.)",                          "Antal sysselsatta inom byggindustrin (SNI F) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_HAND",       "Sysselsatta, handel (prelim.)",                        "Antal sysselsatta inom handel (SNI G) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_TRANS",      "Sysselsatta, transport (prelim.)",                     "Antal sysselsatta inom transport (SNI H) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_HOTEL",      "Sysselsatta, hotell & restaurang (prelim.)",           "Antal sysselsatta inom hotell och restaurang (SNI I) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_IT",         "Sysselsatta, IT och kommunikation (prelim.)",          "Antal sysselsatta inom IT och kommunikation (SNI J) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_FINANS",     "Sysselsatta, finans och försäkring (prelim.)",         "Antal sysselsatta inom finans och försäkring (SNI K) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_FAST",       "Sysselsatta, fastigheter (prelim.)",                   "Antal sysselsatta inom fastighetsverksamhet (SNI L) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_FORETJ",     "Sysselsatta, företagstjänster (prelim.)",              "Antal sysselsatta inom företagstjänster (SNI M+N) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_OFF",        "Sysselsatta, offentlig sektor (prelim.)",              "Antal sysselsatta inom offentlig förvaltning, utbildning och vård (SNI O+P+Q) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_DAG_KULT",       "Sysselsatta, kultur m.m. (prelim.)",                   "Antal sysselsatta inom kultur, nöje, fritid m.m. (SNI R+S+T+U) efter arbetsställets kommun. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      # Förändring mot föregående år
-      "K_SYSS_FORANDR",   "Sysselsättningsgrad, årsförändring (procentenheter)",   "Förändring i procentenheter mot samma månad föregående år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      "K_ARBL_FORANDR",   "Arbetslöshet, årsförändring (procentenheter)",          "Förändring i procentenheter mot samma månad föregående år. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      # Befolkning
-      "K_BEF_TOT",        "Folkmängd (prelim.)",                                     "Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
-      "K_BEF_FORANDR",    "Befolkningsförändring mot samma månad fg. år",             "Absolut förändring i folkmängd jämfört med samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.",
-      "K_DAG_TILLVAXT",   "Dagbefolkning, årsförändring (procent)",               "Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad f\u00f6reg\u00e5ende \u00e5r. Prelimin\u00e4r statistik fr\u00e5n SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras p\u00e5 m\u00e5natliga administrativa uppgifter och publiceras med cirka sex m\u00e5naders efters\u00e4lpning. Syssels\u00e4ttningen tenderar att underskattas n\u00e5got j\u00e4mf\u00f6rt med den slutliga statistiken, men utvecklingen \u00f6ver tid st\u00e4mmer v\u00e4l \u00f6verens.",
-      # Turism (gästnätter)
-      "K_GAST_TOT",       "Gästnätter totalt (prelim.)",                             "Antal gästnätter på samtliga inkvarteringsanläggningar. Källa: Tillväxtverkets inkvarteringsstatistik.",
-      "K_GAST_SVE",       "Gästnätter svenska gäster",                               "Antal gästnätter av svenska gäster. Källa: Tillväxtverkets inkvarteringsstatistik.",
-      "K_GAST_UTL",       "Gästnätter utländska gäster",                             "Antal gästnätter av utländska gäster. Källa: Tillväxtverkets inkvarteringsstatistik.",
-      "K_ANDEL_UTL",      "Andel utländska gästnätter (%)",                          "Andel utländska gästnätter av totala gästnätter. Källa: Tillväxtverkets inkvarteringsstatistik.",
-      "K_GAST_TILLVAXT",  "Gästnätter, årsförändring (%)",                           "Procentuell förändring i antal gästnätter mot samma månad föregående år. Källa: Tillväxtverkets inkvarteringsstatistik.",
-      # Byggnation (kvartal)
-      "K_BYGG_TOT",       "P\u00e5b\u00f6rjade l\u00e4genheter, alla hustyper (kvartal)",   "Antal p\u00e5b\u00f6rjade l\u00e4genheter i nybyggda hus per kvartal. K\u00e4lla: SCB BO0101.",
-      "K_BYGG_SMAHUS",    "P\u00e5b\u00f6rjade l\u00e4genheter, sm\u00e5hus (kvartal)",     "Antal p\u00e5b\u00f6rjade l\u00e4genheter i nybyggda sm\u00e5hus per kvartal. K\u00e4lla: SCB BO0101.",
-      "K_BYGG_FLERBO",    "P\u00e5b\u00f6rjade l\u00e4genheter, flerbostadshus (kvartal)",  "Antal p\u00e5b\u00f6rjade l\u00e4genheter i nybyggda flerbostadshus per kvartal. K\u00e4lla: SCB BO0101."
+      # Sysselsättningsgrad (TAB6260, efter bostadens belägenhet)
+      "K_SYSS_TOT",       "Sysselsättningsgrad (prelim.)",                        paste("Sysselsatta som andel av befolkningen 20–64 år bland de folkbokförda i kommunen; som sysselsatt räknas bland annat den som under månaden fått lön enligt arbetsgivarnas deklarationer (AGI) eller bedöms driva ett verksamt företag.", bas_prel, kalla_natt),
+      "K_SYSS_ANT",       "Antal sysselsatta (prelim.)",                          paste("Antal sysselsatta 20–64 år bland de folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_SYSS_INR",       "Sysselsättningsgrad, inrikes födda (prelim.)",         paste("Sysselsatta som andel av befolkningen bland inrikes födda 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_SYSS_UTR",       "Sysselsättningsgrad, utrikes födda (prelim.)",         paste("Sysselsatta som andel av befolkningen bland utrikes födda 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_SYSS_KV",        "Sysselsättningsgrad, kvinnor (prelim.)",               paste("Sysselsatta som andel av befolkningen bland kvinnor 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_SYSS_MAN",       "Sysselsättningsgrad, män (prelim.)",                   paste("Sysselsatta som andel av befolkningen bland män 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      # Sysselsatta 15–74 år efter bostadens belägenhet (TAB6260)
+      "K_NATT_ANT",       "Sysselsatta 15–74 år som bor i kommunen, antal (prelim.)",  paste("Antal sysselsatta 15–74 år bland de folkbokförda i kommunen, det vill säga efter bostadens belägenhet.", bas_prel, kalla_natt),
+      "K_NATT_GRAD",      "Sysselsättningsgrad 15–74 år (prelim.)",            paste("Sysselsatta som andel av befolkningen 15–74 år bland de folkbokförda i kommunen.", bas_prel, kalla_natt),
+      # Arbetslöshet (TAB6260)
+      "K_ARBL_TOT",       "Arbetslöshetsgrad (prelim.)",                          paste("Arbetslösa som andel av arbetskraften (sysselsatta och arbetslösa) 20–64 år bland de folkbokförda i kommunen; som arbetslös räknas den som någon gång under månaden varit inskriven hos Arbetsförmedlingen som öppet arbetslös eller sökande i program med aktivitetsstöd och inte är sysselsatt.", bas_prel, kalla_natt),
+      "K_ARBL_ANT",       "Antal arbetslösa (prelim.)",                           paste("Antal arbetslösa 20–64 år bland de folkbokförda i kommunen, det vill säga inskrivna hos Arbetsförmedlingen som öppet arbetslösa eller sökande i program med aktivitetsstöd någon gång under månaden och inte sysselsatta.", bas_prel, kalla_natt),
+      "K_ARBL_INR",       "Arbetslöshetsgrad, inrikes födda (prelim.)",           paste("Arbetslösa som andel av arbetskraften bland inrikes födda 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_ARBL_UTR",       "Arbetslöshetsgrad, utrikes födda (prelim.)",           paste("Arbetslösa som andel av arbetskraften bland utrikes födda 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_ARBL_KV",        "Arbetslöshetsgrad, kvinnor (prelim.)",                 paste("Arbetslösa som andel av arbetskraften bland kvinnor 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_ARBL_MAN",       "Arbetslöshetsgrad, män (prelim.)",                     paste("Arbetslösa som andel av arbetskraften bland män 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      # Arbetskraftsdeltagande (TAB6260)
+      "K_ARKR_TOT",       "Arbetskraftsdeltagande (prelim.)",                     paste("Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen 20–64 år bland de folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_ARKR_KV",        "Arbetskraftsdeltagande, kvinnor (prelim.)",            paste("Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen bland kvinnor 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      "K_ARKR_MAN",       "Arbetskraftsdeltagande, män (prelim.)",                paste("Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen bland män 20–64 år som är folkbokförda i kommunen.", bas_prel, kalla_natt),
+      # Sysselsatta efter arbetsställets belägenhet, "dagbefolkning" (TAB3784)
+      "K_DAG_TOT",        "Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.)",                  paste("Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, alla näringsgrenar; SCB kallar det sysselsatta efter arbetsställets belägenhet och använder inte ordet dagbefolkning, eftersom statistiken visar var arbetsstället ligger och inte var personerna befinner sig när arbetet utförs.", bas_prel, kalla_dag),
+      "K_DAG_JORD",       "Sysselsatta, jordbruk m.m. (prelim.)",                 dag_bransch("SNI A: företag inom jordbruk, skogsbruk och fiske"),
+      "K_DAG_IND",        "Sysselsatta, tillverkning (prelim.)",                  dag_bransch("SNI B+C: tillverkningsindustri; gruvor och mineralutvinningsindustri"),
+      "K_DAG_ENMI",       "Sysselsatta, energi och miljö (prelim.)",              dag_bransch("SNI D+E: företag inom energi och miljö"),
+      "K_DAG_BYG",        "Sysselsatta, bygg (prelim.)",                          dag_bransch("SNI F: byggindustri"),
+      "K_DAG_HAND",       "Sysselsatta, handel (prelim.)",                        dag_bransch("SNI G: handel; serviceverkstäder för motorfordon och motorcyklar"),
+      "K_DAG_TRANS",      "Sysselsatta, transport (prelim.)",                     dag_bransch("SNI H: transport- och magasineringsföretag"),
+      "K_DAG_HOTEL",      "Sysselsatta, hotell & restaurang (prelim.)",           dag_bransch("SNI I: hotell och restauranger"),
+      "K_DAG_IT",         "Sysselsatta, IT och kommunikation (prelim.)",          dag_bransch("SNI J: informations- och kommunikationsföretag"),
+      "K_DAG_FINANS",     "Sysselsatta, finans och försäkring (prelim.)",         dag_bransch("SNI K: kreditinstitut och försäkringsbolag m.m."),
+      "K_DAG_FAST",       "Sysselsatta, fastigheter (prelim.)",                   dag_bransch("SNI L: fastighetsbolag och fastighetsförvaltare"),
+      "K_DAG_FORETJ",     "Sysselsatta, företagstjänster (prelim.)",              dag_bransch("SNI M+N: företag inom juridik, ekonomi, vetenskap och teknik; företag inom uthyrning, fastighetsservice, resetjänster och andra stödtjänster"),
+      "K_DAG_OFF",        "Sysselsatta inom offentlig förvaltning, utbildning, vård och omsorg (prelim.)",              paste("Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, inom SNI O (civila myndigheter och försvaret), P (utbildningsväsendet) och Q (enheter för vård och omsorg, socialtjänst), summerat av Region Halland; indelningen avser näringsgren och inte sektor, som SCB redovisar i en egen tabell.", bas_prel, kalla_dag),
+      "K_DAG_KULT",       "Sysselsatta, kultur m.m. (prelim.)",                   dag_bransch("SNI R+S+T+U: enheter för kultur, nöje och fritid; andra serviceföretag m.m."),
+      # Förändring mot samma månad föregående år (beräknade i bearbeta.R)
+      "K_SYSS_FORANDR",   "Sysselsättningsgrad, årsförändring i procentenheter (prelim.)",   paste("Sysselsättningsgraden 20–64 år minus sysselsättningsgraden samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden.", bas_prel, kalla_natt),
+      "K_ARBL_FORANDR",   "Arbetslöshet, årsförändring i procentenheter (prelim.)",          paste("Arbetslösheten 20–64 år minus arbetslösheten samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden.", bas_prel, kalla_natt),
+      # Befolkning (SCB:s befolkningsstatistik per månad, inte BAS)
+      "K_BEF_TOT",        "Folkmängd vid månadens slut (prelim.)",                                     paste("Antal folkbokförda personer i kommunen den sista dagen i månaden, enligt SCB:s befolkningsstatistik per månad (inte BAS).",
+                                                                                           "SCB kallar månadsstatistiken preliminär, men folkmängden redovisas cirka 5–6 veckor efter mättidpunkten och revideras inte i efterhand i tabellen; det som revideras under året är födda, döda och flyttningar, som blir slutliga när statistiken för december publicerats.",
+                                                                                           "Från 2025 har SCB tillfört varje värde en liten kontrollerad slumpmässig justering på mellan minus 3 och plus 3 personer (Cell Key Method, CKM) för att skydda enskilda personer, och värdena för 2020–2024 kommer från den tidigare tabellen.",
+                                                                                           kalla_bef),
+      "K_BEF_FORANDR",    "Befolkningsförändring jämfört med samma månad året innan (prelim.)",             paste("Folkmängden vid månadens slut minus folkmängden vid slutet av samma månad året innan, beräknad av Region Halland ur SCB:s befolkningsstatistik per månad (inte BAS).",
+                                                                                           "Folkmängden avser antalet folkbokförda den sista dagen i månaden och revideras inte i efterhand i SCB:s tabell; från 2025 har varje värde en liten slumpmässig skyddsjustering på mellan minus 3 och plus 3 personer (CKM), och värdena för 2020–2024 kommer från den tidigare tabellen.",
+                                                                                           kalla_bef),
+      "K_DAG_TILLVAXT",   "Sysselsatta som arbetar i kommunen, årsförändring i procent (prelim.)",               paste("Procentuell förändring av antalet sysselsatta 15–74 år med huvudsakligt arbetsställe i kommunen, alla näringsgrenar, jämfört med samma månad året innan, beräknad av Region Halland ur SCB:s månadsvärden.", bas_prel, kalla_dag),
+      # Turism (gästnätter, Tillväxtverkets öppna data per månad)
+      "K_GAST_TOT",       "Gästnätter totalt (prelim.)",                             paste("Antal gästnätter under månaden på hotell, stugbyar, vandrarhem, campingplatser och i kommersiellt förmedlade privata stugor och lägenheter (bokningsplattformar som Airbnb ingår inte).",
+                                                                                           gast_prel,
+                                                                                           "En kommuns statistik redovisas bara för månader med minst fem öppna anläggningar.",
+                                                                                           kalla_gast),
+      "K_GAST_SVE",       "Gästnätter, svenska gäster (prelim.)",                               paste("Antal gästnätter under månaden av gäster från Sverige, på samma typer av anläggningar som i gästnätter totalt.", gast_prel, kalla_gast),
+      "K_GAST_UTL",       "Gästnätter, utländska gäster (prelim.)",                             paste("Antal gästnätter under månaden av gäster från andra länder än Sverige.",
+                                                                                           "Under 2024 underrapporterades utländska gäster på grund av tekniska problem i ett bokningssystem för hotell, så ökningen 2025 ska enligt Tillväxtverket tolkas med försiktighet.",
+                                                                                           gast_prel, kalla_gast),
+      "K_ANDEL_UTL",      "Andel utländska gästnätter (%) (prelim.)",                          paste("Utländska gästnätter som andel av summan av svenska och utländska gästnätter, beräknad av Region Halland.",
+                                                                                           "Under 2024 underrapporterades utländska gäster på grund av tekniska problem i ett bokningssystem för hotell, enligt Tillväxtverket.",
+                                                                                           kalla_gast),
+      "K_GAST_TILLVAXT",  "Gästnätter, årsförändring i procent (prelim.)",                           paste("Procentuell förändring av antalet gästnätter jämfört med samma månad året innan, beräknad av Region Halland.", gast_prel, kalla_gast),
+      # Bostadsbyggande (kvartal, TAB4572)
+      "K_BYGG_TOT",       "Påbörjade lägenheter, alla hustyper, per kvartal (prelim.)",   paste("Antal påbörjade lägenheter i nybyggda hus under kvartalet, summan av småhus och flerbostadshus beräknad av Region Halland; som lägenhet räknas enligt SCB även bostaden i ett småhus, och påbörjandet räknas i de flesta fall från kommunens startbesked.",
+                                                                                           "Uppgifterna är preliminära och underskattade för de senaste kvartalen eftersom rapporteringen släpar efter: enligt SCB är underskattningen för påbörjade 20 till 60 procent det senaste kvartalet och cirka 2 procent efter ett år.",
+                                                                                           "Eftersläpningen ser olika ut i olika kommuner, så jämförelser mellan kommuner för de senaste kvartalen är osäkra.",
+                                                                                           kalla_bygg),
+      "K_BYGG_SMAHUS",    "Påbörjade lägenheter, småhus, per kvartal (prelim.)",     paste("Antal påbörjade lägenheter i nybyggda småhus under kvartalet; småhus är enligt SCB friliggande en- och tvåbostadshus samt par-, rad- och kedjehus (exklusive fritidshus).", bygg_prel, kalla_bygg),
+      "K_BYGG_FLERBO",    "Påbörjade lägenheter, flerbostadshus, per kvartal (prelim.)",  paste("Antal påbörjade lägenheter i nybyggda flerbostadshus under kvartalet; flerbostadshus är enligt SCB bostadsbyggnader med tre eller fler lägenheter, inklusive loftgångshus och specialbostäder som studentbostäder och bostäder för äldre eller funktionshindrade.", bygg_prel, kalla_bygg)
     ),
 
     # Inga beräknade antal-KPI:er (hanteras direkt)
@@ -680,57 +722,57 @@ konjunktur_config <- function() {
 
     # Visningsnamn för frontend
     visningsnamn = list(
-      "K_SYSS_TOT"       = "Sysselsatta bland befolkningen 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_SYSS_ANT"       = "Sysselsatta i befolkningen 20\u201364 \u00e5r, antal (prelim.)",
-      "K_SYSS_INR"       = "Sysselsatta bland inrikes f\u00f6dda 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_SYSS_UTR"       = "Sysselsatta bland utrikes f\u00f6dda 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_SYSS_KV"        = "Sysselsatta bland kvinnor 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_SYSS_MAN"       = "Sysselsatta bland m\u00e4n 20\u201364 \u00e5r, andel (%) (prelim.)",
+      "K_SYSS_TOT"       = "Sysselsatta bland befolkningen 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_ANT"       = "Sysselsatta i befolkningen 20–64 år, antal (prelim.)",
+      "K_SYSS_INR"       = "Sysselsatta bland inrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_UTR"       = "Sysselsatta bland utrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_KV"        = "Sysselsatta bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_SYSS_MAN"       = "Sysselsatta bland män 20–64 år, andel (%) (prelim.)",
 
-      "K_NATT_ANT"       = "Sysselsatta nattbefolkning 15\u201374 \u00e5r, antal (prelim.)",
-      "K_NATT_GRAD"      = "Syssels\u00e4ttningsgrad 15\u201374 \u00e5r (prelim.)",
+      "K_NATT_ANT"       = "Sysselsatta 15–74 år som bor i kommunen, antal (prelim.)",
+      "K_NATT_GRAD"      = "Sysselsättningsgrad 15–74 år (prelim.)",
 
-      "K_ARBL_TOT"       = "Arbetsl\u00f6sa i arbetskraften 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_ARBL_ANT"       = "Arbetsl\u00f6sa i arbetskraften 20\u201364 \u00e5r, antal (prelim.)",
-      "K_ARBL_INR"       = "Arbetsl\u00f6sa bland inrikes f\u00f6dda 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_ARBL_UTR"       = "Arbetsl\u00f6sa bland utrikes f\u00f6dda 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_ARBL_KV"        = "Arbetsl\u00f6sa bland kvinnor 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_ARBL_MAN"       = "Arbetsl\u00f6sa bland m\u00e4n 20\u201364 \u00e5r, andel (%) (prelim.)",
+      "K_ARBL_TOT"       = "Arbetslösa i arbetskraften 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_ANT"       = "Arbetslösa i arbetskraften 20–64 år, antal (prelim.)",
+      "K_ARBL_INR"       = "Arbetslösa bland inrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_UTR"       = "Arbetslösa bland utrikes födda 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_KV"        = "Arbetslösa bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_ARBL_MAN"       = "Arbetslösa bland män 20–64 år, andel (%) (prelim.)",
 
-      "K_ARKR_TOT"       = "I arbetskraften bland befolkningen 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_ARKR_KV"        = "I arbetskraften bland kvinnor 20\u201364 \u00e5r, andel (%) (prelim.)",
-      "K_ARKR_MAN"       = "I arbetskraften bland m\u00e4n 20\u201364 \u00e5r, andel (%) (prelim.)",
+      "K_ARKR_TOT"       = "I arbetskraften bland befolkningen 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_KV"        = "I arbetskraften bland kvinnor 20–64 år, andel (%) (prelim.)",
+      "K_ARKR_MAN"       = "I arbetskraften bland män 20–64 år, andel (%) (prelim.)",
 
-      "K_DAG_TOT"        = "Sysselsatta dagbefolkning 15\u201374 \u00e5r, antal (prelim.)",
+      "K_DAG_TOT"        = "Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.)",
       "K_DAG_JORD"       = "Sysselsatta inom jordbruk och skogsbruk (prelim.)",
       "K_DAG_IND"        = "Sysselsatta inom tillverkning (prelim.)",
-      "K_DAG_ENMI"       = "Sysselsatta inom energi och milj\u00f6 (prelim.)",
+      "K_DAG_ENMI"       = "Sysselsatta inom energi och miljö (prelim.)",
       "K_DAG_BYG"        = "Sysselsatta inom byggverksamhet (prelim.)",
       "K_DAG_HAND"       = "Sysselsatta inom handel (prelim.)",
       "K_DAG_TRANS"      = "Sysselsatta inom transport (prelim.)",
       "K_DAG_HOTEL"      = "Sysselsatta inom hotell och restaurang (prelim.)",
       "K_DAG_IT"         = "Sysselsatta inom IT och kommunikation (prelim.)",
-      "K_DAG_FINANS"     = "Sysselsatta inom finans och f\u00f6rs\u00e4kring (prelim.)",
+      "K_DAG_FINANS"     = "Sysselsatta inom finans och försäkring (prelim.)",
       "K_DAG_FAST"       = "Sysselsatta inom fastighetsverksamhet (prelim.)",
-      "K_DAG_FORETJ"     = "Sysselsatta inom f\u00f6retagstj\u00e4nster (prelim.)",
-      "K_DAG_OFF"        = "Sysselsatta inom offentlig sektor (prelim.)",
-      "K_DAG_KULT"       = "Sysselsatta inom kultur, n\u00f6je och fritid (prelim.)",
+      "K_DAG_FORETJ"     = "Sysselsatta inom företagstjänster (prelim.)",
+      "K_DAG_OFF"        = "Sysselsatta inom offentlig förvaltning, utbildning, vård och omsorg (prelim.)",
+      "K_DAG_KULT"       = "Sysselsatta inom kultur, nöje och fritid (prelim.)",
 
-      "K_SYSS_FORANDR"   = "Syssels\u00e4ttningsgrad, \u00e5rsf\u00f6r\u00e4ndring (procentenheter)",
-      "K_ARBL_FORANDR"   = "Arbetsl\u00f6shet, \u00e5rsf\u00f6r\u00e4ndring (procentenheter)",
+      "K_SYSS_FORANDR"   = "Sysselsättningsgrad, årsförändring i procentenheter (prelim.)",
+      "K_ARBL_FORANDR"   = "Arbetslöshet, årsförändring i procentenheter (prelim.)",
       "K_GAST_TOT"       = "Gästnätter totalt (prelim.)",
-      "K_GAST_SVE"       = "Gästnätter svenska gäster",
-      "K_GAST_UTL"       = "Gästnätter utländska gäster",
-      "K_ANDEL_UTL"      = "Andel utländska gästnätter (%)",
-      "K_GAST_TILLVAXT"  = "Gästnätter, årsförändring (%)",
-      "K_DAG_TILLVAXT"   = "Dagbefolkning, \u00e5rsf\u00f6r\u00e4ndring (procent)",
+      "K_GAST_SVE"       = "Gästnätter, svenska gäster (prelim.)",
+      "K_GAST_UTL"       = "Gästnätter, utländska gäster (prelim.)",
+      "K_ANDEL_UTL"      = "Andel utländska gästnätter (%) (prelim.)",
+      "K_GAST_TILLVAXT"  = "Gästnätter, årsförändring i procent (prelim.)",
+      "K_DAG_TILLVAXT"   = "Sysselsatta som arbetar i kommunen, årsförändring i procent (prelim.)",
 
-      "K_BEF_TOT"        = "Folkmängd (prelim.)",
-      "K_BEF_FORANDR"    = "Befolkningsförändring mot samma månad fg. år",
+      "K_BEF_TOT"        = "Folkmängd vid månadens slut (prelim.)",
+      "K_BEF_FORANDR"    = "Befolkningsförändring jämfört med samma månad året innan (prelim.)",
 
-      "K_BYGG_TOT"       = "P\u00e5b\u00f6rjade l\u00e4genheter, alla hustyper (kvartal)",
-      "K_BYGG_SMAHUS"    = "P\u00e5b\u00f6rjade l\u00e4genheter, sm\u00e5hus (kvartal)",
-      "K_BYGG_FLERBO"    = "P\u00e5b\u00f6rjade l\u00e4genheter, flerbostadshus (kvartal)"
+      "K_BYGG_TOT"       = "Påbörjade lägenheter, alla hustyper, per kvartal (prelim.)",
+      "K_BYGG_SMAHUS"    = "Påbörjade lägenheter, småhus, per kvartal (prelim.)",
+      "K_BYGG_FLERBO"    = "Påbörjade lägenheter, flerbostadshus, per kvartal (prelim.)"
     )
   )
 }

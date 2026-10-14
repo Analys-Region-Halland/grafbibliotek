@@ -3,7 +3,7 @@ import type { TemaConfig } from "./tema-config";
 const G = {
   SYSS: "Sysselsättning",
   ARBL: "Arbetslöshet och arbetskraft",
-  DAG: "Näringsliv (dagbefolkning)",
+  DAG: "Sysselsatta som arbetar i kommunen",
   GAST: "Gästnätter",
   BEF: "Befolkning och bostadsbyggande",
 };
@@ -12,11 +12,13 @@ const konjunktur: TemaConfig = {
   temaId: "konjunktur",
   temaNamn: "Konjunktur",
   temaFarg: "bla",
+  // Årsförändringar mot samma månad året innan: tabellen visar värdet ett år tidigare
+  taktKpis: ["K_SYSS_FORANDR", "K_ARBL_FORANDR", "K_DAG_TILLVAXT", "K_GAST_TILLVAXT", "K_BEF_FORANDR"],
   sektioner: [
     {
       id: "nattbefolkning",
       gruppRubrik: G.SYSS,
-      namn: "Sysselsatta nattbefolkning 15–74 år (prelim.)",
+      namn: "Sysselsatta som bor i kommunen, 15–74 år (prelim.)",
       kpiIds: ["K_NATT_ANT", "K_NATT_GRAD"],
     },
     {
@@ -49,7 +51,7 @@ const konjunktur: TemaConfig = {
     {
       id: "dagbefolkning",
       gruppRubrik: G.DAG,
-      namn: "Sysselsatta dagbefolkning 15–74 år (prelim.)",
+      namn: "Sysselsatta som arbetar i kommunen, 15–74 år (prelim.)",
       kpiIds: ["K_DAG_TOT", "K_DAG_TILLVAXT"],
       undersektioner: [
         {
@@ -109,7 +111,7 @@ const konjunktur: TemaConfig = {
     K_DAG_FINANS: "Finans",
     K_DAG_FAST: "Fastigheter",
     K_DAG_FORETJ: "Företagstjänster",
-    K_DAG_OFF: "Offentlig sektor",
+    K_DAG_OFF: "Offentlig förvaltning, utbildning, vård och omsorg",
     K_DAG_KULT: "Kultur med mera",
     K_GAST_SVE: "Svenska gäster",
     K_GAST_UTL: "Utländska gäster",
@@ -117,7 +119,7 @@ const konjunktur: TemaConfig = {
     K_BYGG_FLERBO: "Lägenheter i flerbostadshus",
   },
   visningsnamn: {
-    K_NATT_ANT: "Sysselsatta nattbefolkning 15–74 år, antal (prelim.)",
+    K_NATT_ANT: "Sysselsatta 15–74 år som bor i kommunen, antal (prelim.)",
     K_NATT_GRAD: "Sysselsättningsgrad 15–74 år (prelim.)",
 
     K_SYSS_TOT: "Sysselsatta bland befolkningen 20–64 år, andel (%) (prelim.)",
@@ -138,7 +140,7 @@ const konjunktur: TemaConfig = {
     K_ARKR_KV: "I arbetskraften bland kvinnor 20–64 år, andel (%) (prelim.)",
     K_ARKR_MAN: "I arbetskraften bland män 20–64 år, andel (%) (prelim.)",
 
-    K_DAG_TOT: "Sysselsatta dagbefolkning 15–74 år, antal (prelim.)",
+    K_DAG_TOT: "Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.)",
     K_DAG_JORD: "Sysselsatta inom jordbruk och skogsbruk (prelim.)",
     K_DAG_IND: "Sysselsatta inom tillverkning (prelim.)",
     K_DAG_ENMI: "Sysselsatta inom energi och miljö (prelim.)",
@@ -150,25 +152,25 @@ const konjunktur: TemaConfig = {
     K_DAG_FINANS: "Sysselsatta inom finans och försäkring (prelim.)",
     K_DAG_FAST: "Sysselsatta inom fastighetsverksamhet (prelim.)",
     K_DAG_FORETJ: "Sysselsatta inom företagstjänster (prelim.)",
-    K_DAG_OFF: "Sysselsatta inom offentlig sektor (prelim.)",
+    K_DAG_OFF: "Sysselsatta inom offentlig förvaltning, utbildning, vård och omsorg (prelim.)",
     K_DAG_KULT: "Sysselsatta inom kultur, nöje och fritid (prelim.)",
 
-    K_SYSS_FORANDR: "Sysselsättningsgrad, årsförändring (procentenheter)",
-    K_ARBL_FORANDR: "Arbetslöshet, årsförändring (procentenheter)",
-    K_DAG_TILLVAXT: "Dagbefolkning, årsförändring (procent)",
+    K_SYSS_FORANDR: "Sysselsättningsgrad, årsförändring i procentenheter (prelim.)",
+    K_ARBL_FORANDR: "Arbetslöshet, årsförändring i procentenheter (prelim.)",
+    K_DAG_TILLVAXT: "Sysselsatta som arbetar i kommunen, årsförändring i procent (prelim.)",
 
     K_GAST_TOT: "Gästnätter totalt (prelim.)",
-    K_GAST_SVE: "Gästnätter svenska gäster",
-    K_GAST_UTL: "Gästnätter utländska gäster",
-    K_ANDEL_UTL: "Andel utländska gästnätter (%)",
-    K_GAST_TILLVAXT: "Gästnätter, årsförändring (%)",
+    K_GAST_SVE: "Gästnätter, svenska gäster (prelim.)",
+    K_GAST_UTL: "Gästnätter, utländska gäster (prelim.)",
+    K_ANDEL_UTL: "Andel utländska gästnätter (%) (prelim.)",
+    K_GAST_TILLVAXT: "Gästnätter, årsförändring i procent (prelim.)",
 
-    K_BEF_TOT: "Folkmängd (prelim.)",
-    K_BEF_FORANDR: "Befolkningsförändring mot samma månad fg. år",
+    K_BEF_TOT: "Folkmängd vid månadens slut (prelim.)",
+    K_BEF_FORANDR: "Befolkningsförändring jämfört med samma månad året innan (prelim.)",
 
-    K_BYGG_TOT: "Påbörjade lägenheter, alla hustyper (kvartal)",
-    K_BYGG_SMAHUS: "Påbörjade lägenheter, småhus (kvartal)",
-    K_BYGG_FLERBO: "Påbörjade lägenheter, flerbostadshus (kvartal)",
+    K_BYGG_TOT: "Påbörjade lägenheter, alla hustyper, per kvartal (prelim.)",
+    K_BYGG_SMAHUS: "Påbörjade lägenheter, småhus, per kvartal (prelim.)",
+    K_BYGG_FLERBO: "Påbörjade lägenheter, flerbostadshus, per kvartal (prelim.)",
   },
   lagtArBra: [
     "K_ARBL_TOT", "K_ARBL_ANT", "K_ARBL_INR", "K_ARBL_UTR",

@@ -13,6 +13,8 @@ export interface TabellRad {
   beskrivning: string;
   /** Önskvärd riktning när den är känd, annars null (neutral färg) */
   riktning: Riktning;
+  /** Värdet är självt en förändring eller ett netto (temats taktKpis) */
+  takt: boolean;
   /** Uppdelningar av indikatorn, var och en med sitt namn ("kvinnor och män") */
   nedbrytningar: Uppdelning[];
 }
@@ -59,6 +61,7 @@ export function byggGrupper(tema: TemaConfig, meta: KpiMeta[], idx: KpiIndex): T
       enhet: m.enhet,
       beskrivning: m.beskrivning,
       riktning: riktningFor(tema, id),
+      takt: !!tema.taktKpis?.includes(id),
       nedbrytningar,
     };
   };

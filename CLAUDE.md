@@ -197,8 +197,15 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
     Kolumnhuvud i dagspressstil. **Perioden står per rad, aldrig bara i huvudet**, eftersom
     den varierar mellan indikatorerna: värdet med enheten och perioden som markering under
     ("2025", "jul 2026", "kv. 2 2026"; gul när enhetens senaste värde är äldre än övrigas),
-    förändringen i egen kolumn med sin startperiod ("+4 352 / sedan 2015"; årsdata tio år eller
-    sedan seriens början, månads- och kvartalsdata samma period året innan, `huvudForandring`),
+    utvecklingen i egen kolumn, där varje rad säger vad som jämförs (`utils/utveckling.ts`):
+    nivåer, andelar och flöden visar skillnaden med enheten utskriven ("+1,6 / procentenheter /
+    jämfört med 2015"; årsdata tio år eller sedan seriens början, månads- och kvartalsdata samma
+    period året innan). Indikatorer vars värde självt är en förändring eller ett netto (temats
+    `taktKpis`: årlig befolkningsförändring, flyttnetto, tillväxt, årsförändringar) visar aldrig
+    skillnaden mellan två takter (Varbergs "−0,45 sedan 2015" var obegriplig) utan snittet per år
+    ("1,30 procent / snitt per år 2016–2025"), för månadsdata värdet ett år tidigare. Skriv
+    "jämfört med", inte "sedan", som kan läsas som en summa. Ny indikator som är en takt eller ett
+    netto: lägg den i `taktKpis`.
     riket med samma period, och spåret (`charts/Spar.tsx`) med kvartilerna tonade (mittersta hälften grå;
     bästa och sämsta fjärdedelen grön och röd när riktningen är känd) och placeringen inom
     parentes direkt efter, "(plats 17)". Placeringen visas bara där i raden. All fördjupning i

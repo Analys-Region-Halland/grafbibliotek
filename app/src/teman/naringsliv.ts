@@ -10,6 +10,12 @@ const naringsliv: TemaConfig = {
   temaId: "naringsliv",
   temaNamn: "Näringsliv",
   temaFarg: "rod",
+  // Årlig tillväxt är självt en förändring: tabellen visar snittet per år
+  taktKpis: [
+    "N_SEK_TOT_TILLV", "N_SEK_TOT_KV_TILLV", "N_SEK_TOT_MAN_TILLV", "N_SEK_TOT_INR_TILLV", "N_SEK_TOT_UTR_TILLV",
+    "N_SEK_NARING_TILLV", "N_SEK_NARING_KV_TILLV", "N_SEK_NARING_MAN_TILLV", "N_SEK_NARING_INR_TILLV", "N_SEK_NARING_UTR_TILLV",
+    "N_SEK_OFF_TILLV", "N_SEK_OFF_KV_TILLV", "N_SEK_OFF_MAN_TILLV", "N_SEK_OFF_INR_TILLV", "N_SEK_OFF_UTR_TILLV",
+  ],
   sektioner: [
     {
       id: "sektor-tot",

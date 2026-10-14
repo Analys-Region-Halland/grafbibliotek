@@ -41,10 +41,10 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Konjunktur, Halland
 
-## Sysselsättning: Sysselsatta nattbefolkning 15–74 år (prelim.)
+## Sysselsättning: Sysselsatta som bor i kommunen, 15–74 år (prelim.)
 
-### Sysselsatta nattbefolkning 15–74 år, antal (prelim.) (antal, juli 2026)
-Mäter: Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommunen). Preliminär statistik från SCB BAS.
+### Sysselsatta 15–74 år som bor i kommunen, antal (prelim.) (antal, juli 2026)
+Mäter: Antal sysselsatta 15–74 år bland de folkbokförda i kommunen, det vill säga efter bostadens belägenhet. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: 180 055
 - Riket: 5 508 391
 - Plats bland landets 21 regioner: 7 (1 = högsta värdet)
@@ -56,7 +56,7 @@ Mäter: Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommun
 - Serien för Halland januari 2020–juli 2026: högst 180 124 (juli 2023), lägst 162 061 (februari 2021)
 
 ### Sysselsättningsgrad 15–74 år (prelim.) (procent, juli 2026)
-Mäter: Andel sysselsatta av befolkningen 15–74 år, nattbefolkning. Preliminär statistik från SCB BAS.
+Mäter: Sysselsatta som andel av befolkningen 15–74 år bland de folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: 73,7
 - Riket: 71,7
 - Skillnad Halland mot riket: +2,0 procentenheter
@@ -71,7 +71,7 @@ Mäter: Andel sysselsatta av befolkningen 15–74 år, nattbefolkning. Prelimin�
 ## Sysselsättning: Sysselsättningsgrad 20–64 år (prelim.)
 
 ### Sysselsatta bland befolkningen 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+Mäter: Sysselsatta som andel av befolkningen 20–64 år bland de folkbokförda i kommunen; som sysselsatt räknas bland annat den som under månaden fått lön enligt arbetsgivarnas deklarationer (AGI) eller bedöms driva ett verksamt företag. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: 85,6
 - Riket: 82,5
 - Skillnad Halland mot riket: +3,1 procentenheter
@@ -123,8 +123,8 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik fr�
 - Förändring 3 år (samma månad): 0,0 procentenheter (från 73,9 i juli 2023); riket +0,7 procentenheter
 - Förändring 1 år (samma månad året innan): +0,7 procentenheter (från 73,2 i juli 2025); riket +0,9 procentenheter
 
-### Sysselsättningsgrad, årsförändring (procentenheter) (procentenheter, juli 2026)
-Mäter: Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Sysselsättningsgrad, årsförändring i procentenheter (prelim.) (procentenheter, juli 2026)
+Mäter: Sysselsättningsgraden 20–64 år minus sysselsättningsgraden samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: 0,20
 - Riket: 0,40
 - Skillnad Halland mot riket: -0,20 procentenheter
@@ -139,7 +139,7 @@ Mäter: Förändring i procentenheter mot samma månad föregående år. Prelimi
 ## Arbetslöshet och arbetskraft: Arbetslöshet 20–64 år (prelim.)
 
 ### Arbetslösa i arbetskraften 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+Mäter: Arbetslösa som andel av arbetskraften (sysselsatta och arbetslösa) 20–64 år bland de folkbokförda i kommunen; som arbetslös räknas den som någon gång under månaden varit inskriven hos Arbetsförmedlingen som öppet arbetslös eller sökande i program med aktivitetsstöd och inte är sysselsatt. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: 3,70
 - Riket: 5,00
 - Skillnad Halland mot riket: -1,30 procentenheter
@@ -191,8 +191,8 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik fr
 - Förändring 3 år (samma månad): -0,20 procentenheter (från 10,10 i juli 2023); riket -0,2 procentenheter
 - Förändring 1 år (samma månad året innan): -1,00 procentenheter (från 10,90 i juli 2025); riket -1,0 procentenheter
 
-### Arbetslöshet, årsförändring (procentenheter) (procentenheter, juli 2026)
-Mäter: Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Arbetslöshet, årsförändring i procentenheter (prelim.) (procentenheter, juli 2026)
+Mäter: Arbetslösheten 20–64 år minus arbetslösheten samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: -0,30
 - Riket: -0,30
 - Plats bland landets 21 regioner: 10 (1 = högsta värdet)
@@ -206,7 +206,7 @@ Mäter: Förändring i procentenheter mot samma månad föregående år. Prelimi
 ## Arbetslöshet och arbetskraft: Arbetskraftsdeltagande 20–64 år (prelim.)
 
 ### I arbetskraften bland befolkningen 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+Mäter: Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen 20–64 år bland de folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: 89,0
 - Riket: 86,8
 - Skillnad Halland mot riket: +2,2 procentenheter
@@ -238,10 +238,10 @@ Mäter: Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik
 - Förändring 3 år (samma månad): -0,1 procentenheter (från 89,6 i juli 2023); riket 0,0 procentenheter
 - Förändring 1 år (samma månad året innan): -0,1 procentenheter (från 89,6 i juli 2025); riket 0,0 procentenheter
 
-## Näringsliv (dagbefolkning): Sysselsatta dagbefolkning 15–74 år (prelim.)
+## Sysselsatta som arbetar i kommunen: Sysselsatta som arbetar i kommunen, 15–74 år (prelim.)
 
-### Sysselsatta dagbefolkning 15–74 år, antal (prelim.) (antal, juli 2026)
-Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.) (antal, juli 2026)
+Mäter: Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, alla näringsgrenar; SCB kallar det sysselsatta efter arbetsställets belägenhet och använder inte ordet dagbefolkning, eftersom statistiken visar var arbetsstället ligger och inte var personerna befinner sig när arbetet utförs. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: 157 366
 - Riket: 5 474 535
 - Plats bland landets 21 regioner: 8 (1 = högsta värdet)
@@ -252,7 +252,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Halland år för år: juli 2021 154 396; juli 2022 157 647; juli 2023 158 819; juli 2024 157 690; juli 2025 157 675; juli 2026 157 366
 - Serien för Halland januari 2020–juli 2026: högst 158 819 (juli 2023), lägst 142 456 (februari 2021)
 
-### Sysselsatta inom jordbruk och skogsbruk (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom jordbruk och skogsbruk (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 4 251
 - Riket: 98 848
 - Plats bland landets 21 regioner: 10 (1 = högsta värdet)
@@ -261,7 +261,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +64 antal (från 4 187 i juli 2023), det vill säga +1,5 procent eller i genomsnitt +0,51 procent per år; riket -1,1 procent
 - Förändring 1 år (samma månad året innan): +30 antal (från 4 221 i juli 2025), det vill säga +0,7 procent; riket -0,4 procent
 
-### Sysselsatta inom tillverkning (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom tillverkning (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 16 156
 - Riket: 577 060
 - Plats bland landets 21 regioner: 15 (1 = högsta värdet)
@@ -270,7 +270,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -760 antal (från 16 916 i juli 2023), det vill säga -4,5 procent eller i genomsnitt -1,52 procent per år; riket -1,3 procent
 - Förändring 1 år (samma månad året innan): -165 antal (från 16 321 i juli 2025), det vill säga -1,0 procent; riket +0,2 procent
 
-### Sysselsatta inom energi och miljö (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom energi och miljö (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 3 346
 - Riket: 65 688
 - Plats bland landets 21 regioner: 4 (1 = högsta värdet)
@@ -279,7 +279,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +247 antal (från 3 099 i juli 2023), det vill säga +8,0 procent eller i genomsnitt +2,59 procent per år; riket +9,0 procent
 - Förändring 1 år (samma månad året innan): +30 antal (från 3 316 i juli 2025), det vill säga +0,9 procent; riket +2,7 procent
 
-### Sysselsatta inom byggverksamhet (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom byggverksamhet (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 12 903
 - Riket: 378 764
 - Plats bland landets 21 regioner: 7 (1 = högsta värdet)
@@ -288,7 +288,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -782 antal (från 13 685 i juli 2023), det vill säga -5,7 procent eller i genomsnitt -1,94 procent per år; riket -3,4 procent
 - Förändring 1 år (samma månad året innan): +93 antal (från 12 810 i juli 2025), det vill säga +0,7 procent; riket +1,9 procent
 
-### Sysselsatta inom handel (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom handel (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 23 964
 - Riket: 640 264
 - Plats bland landets 21 regioner: 5 (1 = högsta värdet)
@@ -297,7 +297,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -688 antal (från 24 652 i juli 2023), det vill säga -2,8 procent eller i genomsnitt -0,94 procent per år; riket -1,2 procent
 - Förändring 1 år (samma månad året innan): +204 antal (från 23 760 i juli 2025), det vill säga +0,9 procent; riket -0,2 procent
 
-### Sysselsatta inom transport (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom transport (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 5 625
 - Riket: 237 441
 - Plats bland landets 21 regioner: 10 (1 = högsta värdet)
@@ -306,7 +306,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +318 antal (från 5 307 i juli 2023), det vill säga +6,0 procent eller i genomsnitt +1,96 procent per år; riket -0,1 procent
 - Förändring 1 år (samma månad året innan): -404 antal (från 6 029 i juli 2025), det vill säga -6,7 procent; riket +0,1 procent
 
-### Sysselsatta inom hotell och restaurang (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom hotell och restaurang (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 8 593
 - Riket: 233 181
 - Plats bland landets 21 regioner: 5 (1 = högsta värdet)
@@ -315,7 +315,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +310 antal (från 8 283 i juli 2023), det vill säga +3,7 procent eller i genomsnitt +1,23 procent per år; riket +4,2 procent
 - Förändring 1 år (samma månad året innan): +307 antal (från 8 286 i juli 2025), det vill säga +3,7 procent; riket +2,6 procent
 
-### Sysselsatta inom IT och kommunikation (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom IT och kommunikation (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 2 368
 - Riket: 242 940
 - Plats bland landets 21 regioner: 15 (1 = högsta värdet)
@@ -324,7 +324,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -156 antal (från 2 524 i juli 2023), det vill säga -6,2 procent eller i genomsnitt -2,10 procent per år; riket -3,5 procent
 - Förändring 1 år (samma månad året innan): -77 antal (från 2 445 i juli 2025), det vill säga -3,1 procent; riket -1,3 procent
 
-### Sysselsatta inom finans och försäkring (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom finans och försäkring (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 1 789
 - Riket: 113 692
 - Plats bland landets 21 regioner: 8 (1 = högsta värdet)
@@ -333,7 +333,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +46 antal (från 1 743 i juli 2023), det vill säga +2,6 procent eller i genomsnitt +0,87 procent per år; riket +3,5 procent
 - Förändring 1 år (samma månad året innan): -10 antal (från 1 799 i juli 2025), det vill säga -0,6 procent; riket +0,2 procent
 
-### Sysselsatta inom fastighetsverksamhet (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom fastighetsverksamhet (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 2 567
 - Riket: 94 708
 - Plats bland landets 21 regioner: 9 (1 = högsta värdet)
@@ -342,7 +342,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -143 antal (från 2 710 i juli 2023), det vill säga -5,3 procent eller i genomsnitt -1,79 procent per år; riket -0,4 procent
 - Förändring 1 år (samma månad året innan): -209 antal (från 2 776 i juli 2025), det vill säga -7,5 procent; riket -0,3 procent
 
-### Sysselsatta inom företagstjänster (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom företagstjänster (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 15 143
 - Riket: 691 614
 - Plats bland landets 21 regioner: 8 (1 = högsta värdet)
@@ -351,7 +351,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +522 antal (från 14 621 i juli 2023), det vill säga +3,6 procent eller i genomsnitt +1,18 procent per år; riket +1,1 procent
 - Förändring 1 år (samma månad året innan): +391 antal (från 14 752 i juli 2025), det vill säga +2,7 procent; riket +0,8 procent
 
-### Sysselsatta inom offentlig sektor (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom offentlig förvaltning, utbildning, vård och omsorg (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 53 998
 - Riket: 1 848 822
 - Plats bland landets 21 regioner: 9 (1 = högsta värdet)
@@ -360,7 +360,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -55 antal (från 54 053 i juli 2023), det vill säga -0,1 procent eller i genomsnitt -0,03 procent per år; riket +1,7 procent
 - Förändring 1 år (samma månad året innan): -418 antal (från 54 416 i juli 2025), det vill säga -0,8 procent; riket +1,1 procent
 
-### Sysselsatta inom kultur, nöje och fritid (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom kultur, nöje och fritid (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Halland: 6 507
 - Riket: 245 541
 - Plats bland landets 21 regioner: 8 (1 = högsta värdet)
@@ -369,8 +369,8 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -283 antal (från 6 790 i juli 2023), det vill säga -4,2 procent eller i genomsnitt -1,41 procent per år; riket +0,8 procent
 - Förändring 1 år (samma månad året innan): -30 antal (från 6 537 i juli 2025), det vill säga -0,5 procent; riket +1,0 procent
 
-### Dagbefolkning, årsförändring (procent) (procent, juli 2026)
-Mäter: Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Sysselsatta som arbetar i kommunen, årsförändring i procent (prelim.) (procent, juli 2026)
+Mäter: Procentuell förändring av antalet sysselsatta 15–74 år med huvudsakligt arbetsställe i kommunen, alla näringsgrenar, jämfört med samma månad året innan, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Halland: -0,20
 - Riket: 0,70
 - Skillnad Halland mot riket: -0,90 procentenheter
@@ -385,7 +385,7 @@ Mäter: Procentuell förändring i antal sysselsatta dagbefolkning mot samma må
 ## Gästnätter
 
 ### Gästnätter totalt (prelim.) (antal, augusti 2026)
-Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
+Mäter: Antal gästnätter under månaden på hotell, stugbyar, vandrarhem, campingplatser och i kommersiellt förmedlade privata stugor och lägenheter (bokningsplattformar som Airbnb ingår inte). Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter. En kommuns statistik redovisas bara för månader med minst fem öppna anläggningar.
 - Halland: 489 476
 - Riket: 9 341 439
 - Plats bland landets 21 regioner: 5 (1 = högsta värdet)
@@ -396,7 +396,7 @@ Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
 - Halland år för år: augusti 2021 536 782; augusti 2022 518 158; augusti 2023 470 186; augusti 2024 488 113; augusti 2025 492 531; augusti 2026 489 476
 - Serien för Halland januari 2020–augusti 2026: högst 867 049 (juli 2021), lägst 48 096 (december 2020)
 
-### Gästnätter svenska gäster [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
+### Gästnätter, svenska gäster (prelim.) [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
 - Halland: 394 887
 - Riket: 6 073 835
 - Plats bland landets 21 regioner: 5 (1 = högsta värdet)
@@ -405,7 +405,7 @@ Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
 - Förändring 3 år (samma månad): +3 969 antal (från 390 918 i augusti 2023), det vill säga +1,0 procent eller i genomsnitt +0,34 procent per år; riket +1,1 procent
 - Förändring 1 år (samma månad året innan): +2 776 antal (från 392 111 i augusti 2025), det vill säga +0,7 procent; riket +0,7 procent
 
-### Gästnätter utländska gäster [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
+### Gästnätter, utländska gäster (prelim.) [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
 - Halland: 91 692
 - Riket: 3 131 069
 - Plats bland landets 21 regioner: 9 (1 = högsta värdet)
@@ -414,8 +414,8 @@ Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
 - Förändring 3 år (samma månad): +12 564 antal (från 79 128 i augusti 2023), det vill säga +15,9 procent eller i genomsnitt +5,03 procent per år; riket +16,3 procent
 - Förändring 1 år (samma månad året innan): -7 042 antal (från 98 734 i augusti 2025), det vill säga -7,1 procent; riket +1,4 procent
 
-### Andel utländska gästnätter (procent, augusti 2026)
-Mäter: Andel utländska gästnätter av totala gästnätter.
+### Andel utländska gästnätter (prelim.) (procent, augusti 2026)
+Mäter: Utländska gästnätter som andel av summan av svenska och utländska gästnätter, beräknad av Region Halland. Under 2024 underrapporterades utländska gäster på grund av tekniska problem i ett bokningssystem för hotell, enligt Tillväxtverket.
 - Halland: 18,8
 - Riket: 34,0
 - Skillnad Halland mot riket: -15,2 procentenheter
@@ -427,8 +427,8 @@ Mäter: Andel utländska gästnätter av totala gästnätter.
 - Halland år för år: augusti 2021 8,0; augusti 2022 13,2; augusti 2023 16,8; augusti 2024 18,7; augusti 2025 20,1; augusti 2026 18,8
 - Serien för Halland januari 2020–augusti 2026: högst 20,1 (augusti 2025), lägst 2,3 (maj 2021)
 
-### Gästnätter, årsförändring (procent, augusti 2026)
-Mäter: Procentuell förändring i antal gästnätter mot samma månad föregående år.
+### Gästnätter, årsförändring i procent (prelim.) (procent, augusti 2026)
+Mäter: Procentuell förändring av antalet gästnätter jämfört med samma månad året innan, beräknad av Region Halland. Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter.
 - Halland: -0,60
 - Riket: 1,20
 - Skillnad Halland mot riket: -1,80 procentenheter
@@ -442,8 +442,8 @@ Mäter: Procentuell förändring i antal gästnätter mot samma månad föregåe
 
 ## Befolkning och bostadsbyggande: Befolkningsutveckling
 
-### Folkmängd (prelim.) (antal, juli 2026)
-Mäter: Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Folkmängd vid månadens slut (prelim.) (antal, juli 2026)
+Mäter: Antal folkbokförda personer i kommunen den sista dagen i månaden, enligt SCB:s befolkningsstatistik per månad (inte BAS). SCB kallar månadsstatistiken preliminär, men folkmängden redovisas cirka 5–6 veckor efter mättidpunkten och revideras inte i efterhand i tabellen; det som revideras under året är födda, döda och flyttningar, som blir slutliga när statistiken för december publicerats. Från 2025 har SCB tillfört varje värde en liten kontrollerad slumpmässig justering på mellan minus 3 och plus 3 personer (Cell Key Method, CKM) för att skydda enskilda personer, och värdena för 2020–2024 kommer från den tidigare tabellen.
 - Halland: 346 763
 - Riket: 10 613 531
 - Plats bland landets 21 regioner: 7 (1 = högsta värdet)
@@ -454,8 +454,8 @@ Mäter: Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (B
 - Halland år för år: juli 2021 339 146; juli 2022 342 197; juli 2023 343 938; juli 2024 344 669; juli 2025 346 032; juli 2026 346 763
 - Serien för Halland januari 2020–juli 2026: högst 346 763 (juli 2026), lägst 334 124 (januari 2020)
 
-### Befolkningsförändring mot samma månad fg. år (antal, juli 2026)
-Mäter: Absolut förändring i folkmängd jämfört med samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Befolkningsförändring jämfört med samma månad året innan (prelim.) (antal, juli 2026)
+Mäter: Folkmängden vid månadens slut minus folkmängden vid slutet av samma månad året innan, beräknad av Region Halland ur SCB:s befolkningsstatistik per månad (inte BAS). Folkmängden avser antalet folkbokförda den sista dagen i månaden och revideras inte i efterhand i SCB:s tabell; från 2025 har varje värde en liten slumpmässig skyddsjustering på mellan minus 3 och plus 3 personer (CKM), och värdena för 2020–2024 kommer från den tidigare tabellen.
 - Halland: 731
 - Riket: 16 879
 - Plats bland landets 21 regioner: 6 (1 = högsta värdet)
@@ -468,8 +468,8 @@ Mäter: Absolut förändring i folkmängd jämfört med samma månad föregåend
 
 ## Befolkning och bostadsbyggande: Bostadsbyggande
 
-### Påbörjade lägenheter, alla hustyper (kvartal) (antal, juni 2026)
-Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
+### Påbörjade lägenheter, alla hustyper, per kvartal (prelim.) (antal, juni 2026)
+Mäter: Antal påbörjade lägenheter i nybyggda hus under kvartalet, summan av småhus och flerbostadshus beräknad av Region Halland; som lägenhet räknas enligt SCB även bostaden i ett småhus, och påbörjandet räknas i de flesta fall från kommunens startbesked. Uppgifterna är preliminära och underskattade för de senaste kvartalen eftersom rapporteringen släpar efter: enligt SCB är underskattningen för påbörjade 20 till 60 procent det senaste kvartalet och cirka 2 procent efter ett år. Eftersläpningen ser olika ut i olika kommuner, så jämförelser mellan kommuner för de senaste kvartalen är osäkra.
 - Halland: 216
 - Riket: 7 413
 - Plats bland landets 21 regioner: 7 (1 = högsta värdet)
@@ -480,7 +480,7 @@ Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
 - Halland år för år: juni 2021 453; juni 2022 751; juni 2023 216; juni 2024 98; juni 2025 115; juni 2026 216
 - Serien för Halland mars 2020–juni 2026: högst 751 (juni 2022), lägst 98 (juni 2024)
 
-### Påbörjade lägenheter, småhus (kvartal) [uppdelning av Påbörjade lägenheter, alla hustyper (kvartal): småhus och flerbostadshus] (antal, juni 2026)
+### Påbörjade lägenheter, småhus, per kvartal (prelim.) [uppdelning av Påbörjade lägenheter, alla hustyper, per kvartal (prelim.): småhus och flerbostadshus] (antal, juni 2026)
 - Halland: 99
 - Riket: 1 337
 - Plats bland landets 21 regioner: 4 (1 = högsta värdet)
@@ -489,7 +489,7 @@ Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
 - Förändring 3 år (samma månad): -25 antal (från 124 i juni 2023), det vill säga -20,2 procent eller i genomsnitt -7,23 procent per år; riket -23,9 procent
 - Förändring 1 år (samma månad året innan): +11 antal (från 88 i juni 2025), det vill säga +12,5 procent; riket -26,2 procent
 
-### Påbörjade lägenheter, flerbostadshus (kvartal) [uppdelning av Påbörjade lägenheter, alla hustyper (kvartal): småhus och flerbostadshus] (antal, juni 2026)
+### Påbörjade lägenheter, flerbostadshus, per kvartal (prelim.) [uppdelning av Påbörjade lägenheter, alla hustyper, per kvartal (prelim.): småhus och flerbostadshus] (antal, juni 2026)
 - Halland: 117
 - Riket: 6 076
 - Plats bland landets 21 regioner: 8 (1 = högsta värdet)

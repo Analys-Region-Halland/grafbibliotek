@@ -41,10 +41,10 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Konjunktur, Laholm
 
-## Sysselsättning: Sysselsatta nattbefolkning 15–74 år (prelim.)
+## Sysselsättning: Sysselsatta som bor i kommunen, 15–74 år (prelim.)
 
-### Sysselsatta nattbefolkning 15–74 år, antal (prelim.) (antal, juli 2026)
-Mäter: Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommunen). Preliminär statistik från SCB BAS.
+### Sysselsatta 15–74 år som bor i kommunen, antal (prelim.) (antal, juli 2026)
+Mäter: Antal sysselsatta 15–74 år bland de folkbokförda i kommunen, det vill säga efter bostadens belägenhet. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: 13 269
 - Halland (länet): 180 055
 - Riket: 5 508 391
@@ -58,7 +58,7 @@ Mäter: Antal sysselsatta i åldern 15–74 år, nattbefolkning (boende i kommun
 - Serien för Laholm januari 2020–juli 2026: högst 13 452 (juli 2023), lägst 12 084 (januari 2021)
 
 ### Sysselsättningsgrad 15–74 år (prelim.) (procent, juli 2026)
-Mäter: Andel sysselsatta av befolkningen 15–74 år, nattbefolkning. Preliminär statistik från SCB BAS.
+Mäter: Sysselsatta som andel av befolkningen 15–74 år bland de folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: 72,6
 - Halland (länet): 73,7
 - Riket: 71,7
@@ -76,7 +76,7 @@ Mäter: Andel sysselsatta av befolkningen 15–74 år, nattbefolkning. Prelimin�
 ## Sysselsättning: Sysselsättningsgrad 20–64 år (prelim.)
 
 ### Sysselsatta bland befolkningen 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+Mäter: Sysselsatta som andel av befolkningen 20–64 år bland de folkbokförda i kommunen; som sysselsatt räknas bland annat den som under månaden fått lön enligt arbetsgivarnas deklarationer (AGI) eller bedöms driva ett verksamt företag. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: 84,8
 - Halland (länet): 85,6
 - Riket: 82,5
@@ -143,8 +143,8 @@ Mäter: Andel sysselsatta av befolkningen 20–64 år. Preliminär statistik fr�
 - Förändring 3 år (samma månad): +1,6 procentenheter (från 71,9 i juli 2023); riket +0,7 procentenheter
 - Förändring 1 år (samma månad året innan): +0,9 procentenheter (från 72,6 i juli 2025); riket +0,9 procentenheter
 
-### Sysselsättningsgrad, årsförändring (procentenheter) (procentenheter, juli 2026)
-Mäter: Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Sysselsättningsgrad, årsförändring i procentenheter (prelim.) (procentenheter, juli 2026)
+Mäter: Sysselsättningsgraden 20–64 år minus sysselsättningsgraden samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: 0,40
 - Halland (länet): 0,20
 - Riket: 0,40
@@ -161,7 +161,7 @@ Mäter: Förändring i procentenheter mot samma månad föregående år. Prelimi
 ## Arbetslöshet och arbetskraft: Arbetslöshet 20–64 år (prelim.)
 
 ### Arbetslösa i arbetskraften 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+Mäter: Arbetslösa som andel av arbetskraften (sysselsatta och arbetslösa) 20–64 år bland de folkbokförda i kommunen; som arbetslös räknas den som någon gång under månaden varit inskriven hos Arbetsförmedlingen som öppet arbetslös eller sökande i program med aktivitetsstöd och inte är sysselsatt. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: 3,90
 - Halland (länet): 3,70
 - Riket: 5,00
@@ -227,8 +227,8 @@ Mäter: Andel arbetslösa av arbetskraften 20–64 år. Preliminär statistik fr
 - Förändring 3 år (samma månad): -1,30 procentenheter (från 10,60 i juli 2023); riket -0,2 procentenheter
 - Förändring 1 år (samma månad året innan): -0,60 procentenheter (från 9,90 i juli 2025); riket -1,0 procentenheter
 
-### Arbetslöshet, årsförändring (procentenheter) (procentenheter, juli 2026)
-Mäter: Förändring i procentenheter mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Arbetslöshet, årsförändring i procentenheter (prelim.) (procentenheter, juli 2026)
+Mäter: Arbetslösheten 20–64 år minus arbetslösheten samma månad året innan, i procentenheter, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: -0,10
 - Halland (länet): -0,30
 - Riket: -0,30
@@ -246,7 +246,7 @@ Mäter: Förändring i procentenheter mot samma månad föregående år. Prelimi
 ## Arbetslöshet och arbetskraft: Arbetskraftsdeltagande 20–64 år (prelim.)
 
 ### I arbetskraften bland befolkningen 20–64 år, andel (prelim.) (procent, juli 2026)
-Mäter: Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+Mäter: Personer i arbetskraften (sysselsatta och arbetslösa) som andel av befolkningen 20–64 år bland de folkbokförda i kommunen. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: 88,2
 - Halland (länet): 89,0
 - Riket: 86,8
@@ -287,10 +287,10 @@ Mäter: Andel av befolkningen 20–64 år i arbetskraften. Preliminär statistik
 - Förändring 3 år (samma månad): +0,3 procentenheter (från 88,9 i juli 2023); riket 0,0 procentenheter
 - Förändring 1 år (samma månad året innan): +0,2 procentenheter (från 89,0 i juli 2025); riket 0,0 procentenheter
 
-## Näringsliv (dagbefolkning): Sysselsatta dagbefolkning 15–74 år (prelim.)
+## Sysselsatta som arbetar i kommunen: Sysselsatta som arbetar i kommunen, 15–74 år (prelim.)
 
-### Sysselsatta dagbefolkning 15–74 år, antal (prelim.) (antal, juli 2026)
-Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.) (antal, juli 2026)
+Mäter: Antal sysselsatta 15–74 år vars huvudsakliga arbetsställe ligger i kommunen, alla näringsgrenar; SCB kallar det sysselsatta efter arbetsställets belägenhet och använder inte ordet dagbefolkning, eftersom statistiken visar var arbetsstället ligger och inte var personerna befinner sig när arbetet utförs. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: 9 578
 - Halland (länet): 157 366
 - Riket: 5 474 535
@@ -303,7 +303,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Laholm år för år: juli 2021 9 820; juli 2022 10 034; juli 2023 9 951; juli 2024 9 803; juli 2025 9 588; juli 2026 9 578
 - Serien för Laholm januari 2020–juli 2026: högst 10 034 (juli 2022), lägst 8 802 (februari 2026)
 
-### Sysselsatta inom jordbruk och skogsbruk (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom jordbruk och skogsbruk (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 719
 - Halland (länet): 4 251
 - Riket: 98 848
@@ -314,7 +314,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +15 antal (från 704 i juli 2023), det vill säga +2,1 procent eller i genomsnitt +0,71 procent per år; riket -1,1 procent
 - Förändring 1 år (samma månad året innan): +4 antal (från 715 i juli 2025), det vill säga +0,6 procent; riket -0,4 procent
 
-### Sysselsatta inom tillverkning (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom tillverkning (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 1 358
 - Halland (länet): 16 156
 - Riket: 577 060
@@ -325,7 +325,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -180 antal (från 1 538 i juli 2023), det vill säga -11,7 procent eller i genomsnitt -4,06 procent per år; riket -1,3 procent
 - Förändring 1 år (samma månad året innan): -15 antal (från 1 373 i juli 2025), det vill säga -1,1 procent; riket +0,2 procent
 
-### Sysselsatta inom energi och miljö (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom energi och miljö (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 137
 - Halland (länet): 3 346
 - Riket: 65 688
@@ -336,7 +336,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +22 antal (från 115 i juli 2023), det vill säga +19,1 procent eller i genomsnitt +6,01 procent per år; riket +9,0 procent
 - Förändring 1 år (samma månad året innan): 0 antal (från 137 i juli 2025), det vill säga 0,0 procent; riket +2,7 procent
 
-### Sysselsatta inom byggverksamhet (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom byggverksamhet (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 909
 - Halland (länet): 12 903
 - Riket: 378 764
@@ -347,7 +347,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +10 antal (från 899 i juli 2023), det vill säga +1,1 procent eller i genomsnitt +0,37 procent per år; riket -3,4 procent
 - Förändring 1 år (samma månad året innan): +24 antal (från 885 i juli 2025), det vill säga +2,7 procent; riket +1,9 procent
 
-### Sysselsatta inom handel (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom handel (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 1 180
 - Halland (länet): 23 964
 - Riket: 640 264
@@ -358,7 +358,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -50 antal (från 1 230 i juli 2023), det vill säga -4,1 procent eller i genomsnitt -1,37 procent per år; riket -1,2 procent
 - Förändring 1 år (samma månad året innan): -6 antal (från 1 186 i juli 2025), det vill säga -0,5 procent; riket -0,2 procent
 
-### Sysselsatta inom transport (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom transport (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 329
 - Halland (länet): 5 625
 - Riket: 237 441
@@ -369,7 +369,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -60 antal (från 389 i juli 2023), det vill säga -15,4 procent eller i genomsnitt -5,43 procent per år; riket -0,1 procent
 - Förändring 1 år (samma månad året innan): -26 antal (från 355 i juli 2025), det vill säga -7,3 procent; riket +0,1 procent
 
-### Sysselsatta inom hotell och restaurang (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom hotell och restaurang (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 418
 - Halland (länet): 8 593
 - Riket: 233 181
@@ -380,7 +380,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +26 antal (från 392 i juli 2023), det vill säga +6,6 procent eller i genomsnitt +2,16 procent per år; riket +4,2 procent
 - Förändring 1 år (samma månad året innan): +10 antal (från 408 i juli 2025), det vill säga +2,5 procent; riket +2,6 procent
 
-### Sysselsatta inom IT och kommunikation (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom IT och kommunikation (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 68
 - Halland (länet): 2 368
 - Riket: 242 940
@@ -391,7 +391,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -16 antal (från 84 i juli 2023), det vill säga -19,0 procent eller i genomsnitt -6,80 procent per år; riket -3,5 procent
 - Förändring 1 år (samma månad året innan): -9 antal (från 77 i juli 2025), det vill säga -11,7 procent; riket -1,3 procent
 
-### Sysselsatta inom finans och försäkring (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom finans och försäkring (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 78
 - Halland (länet): 1 789
 - Riket: 113 692
@@ -402,7 +402,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): 0 antal (från 78 i juli 2023), det vill säga 0,0 procent eller i genomsnitt 0,00 procent per år; riket +3,5 procent
 - Förändring 1 år (samma månad året innan): +1 antal (från 77 i juli 2025), det vill säga +1,3 procent; riket +0,2 procent
 
-### Sysselsatta inom fastighetsverksamhet (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom fastighetsverksamhet (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 134
 - Halland (länet): 2 567
 - Riket: 94 708
@@ -413,7 +413,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -27 antal (från 161 i juli 2023), det vill säga -16,8 procent eller i genomsnitt -5,94 procent per år; riket -0,4 procent
 - Förändring 1 år (samma månad året innan): +3 antal (från 131 i juli 2025), det vill säga +2,3 procent; riket -0,3 procent
 
-### Sysselsatta inom företagstjänster (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom företagstjänster (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 602
 - Halland (länet): 15 143
 - Riket: 691 614
@@ -424,7 +424,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -52 antal (från 654 i juli 2023), det vill säga -8,0 procent eller i genomsnitt -2,72 procent per år; riket +1,1 procent
 - Förändring 1 år (samma månad året innan): +5 antal (från 597 i juli 2025), det vill säga +0,8 procent; riket +0,8 procent
 
-### Sysselsatta inom offentlig sektor (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom offentlig förvaltning, utbildning, vård och omsorg (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 3 160
 - Halland (länet): 53 998
 - Riket: 1 848 822
@@ -435,7 +435,7 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): -94 antal (från 3 254 i juli 2023), det vill säga -2,9 procent eller i genomsnitt -0,97 procent per år; riket +1,7 procent
 - Förändring 1 år (samma månad året innan): +8 antal (från 3 152 i juli 2025), det vill säga +0,3 procent; riket +1,1 procent
 
-### Sysselsatta inom kultur, nöje och fritid (prelim.) [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal (prelim.): branscherna] (antal, juli 2026)
+### Sysselsatta inom kultur, nöje och fritid (prelim.) [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal (prelim.): branscherna] (antal, juli 2026)
 - Laholm: 447
 - Halland (länet): 6 507
 - Riket: 245 541
@@ -446,8 +446,8 @@ Mäter: Antal sysselsatta efter arbetsställets kommun, alla branscher. Prelimin
 - Förändring 3 år (samma månad): +17 antal (från 430 i juli 2023), det vill säga +4,0 procent eller i genomsnitt +1,30 procent per år; riket +0,8 procent
 - Förändring 1 år (samma månad året innan): -15 antal (från 462 i juli 2025), det vill säga -3,2 procent; riket +1,0 procent
 
-### Dagbefolkning, årsförändring (procent) (procent, juli 2026)
-Mäter: Procentuell förändring i antal sysselsatta dagbefolkning mot samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersälpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Sysselsatta som arbetar i kommunen, årsförändring i procent (prelim.) (procent, juli 2026)
+Mäter: Procentuell förändring av antalet sysselsatta 15–74 år med huvudsakligt arbetsställe i kommunen, alla näringsgrenar, jämfört med samma månad året innan, beräknad av Region Halland ur SCB:s månadsvärden. Statistiken är preliminär: den bygger på månatliga administrativa uppgifter och redovisas normalt två månader efter månadens slut. SCB:s slutliga statistik, där fler personer räknas som företagare, kommer i november året efter.
 - Laholm: -0,10
 - Halland (länet): -0,20
 - Riket: 0,70
@@ -465,7 +465,7 @@ Mäter: Procentuell förändring i antal sysselsatta dagbefolkning mot samma må
 ## Gästnätter
 
 ### Gästnätter totalt (prelim.) (antal, augusti 2026)
-Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
+Mäter: Antal gästnätter under månaden på hotell, stugbyar, vandrarhem, campingplatser och i kommersiellt förmedlade privata stugor och lägenheter (bokningsplattformar som Airbnb ingår inte). Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter. En kommuns statistik redovisas bara för månader med minst fem öppna anläggningar.
 - Laholm: 21 132
 - Halland (länet): 489 476
 - Riket: 9 341 439
@@ -478,7 +478,7 @@ Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
 - Laholm år för år: augusti 2021 31 400; augusti 2022 33 946; augusti 2023 29 981; augusti 2024 32 151; augusti 2025 32 391; augusti 2026 21 132
 - Serien för Laholm januari 2020–augusti 2026: högst 61 532 (juli 2025), lägst 1 440 (november 2020)
 
-### Gästnätter svenska gäster [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
+### Gästnätter, svenska gäster (prelim.) [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
 - Laholm: 14 743
 - Halland (länet): 394 887
 - Riket: 6 073 835
@@ -489,7 +489,7 @@ Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
 - Förändring 3 år (samma månad): -7 397 antal (från 22 140 i augusti 2023), det vill säga -33,4 procent eller i genomsnitt -12,68 procent per år; riket +1,1 procent
 - Förändring 1 år (samma månad året innan): -8 189 antal (från 22 932 i augusti 2025), det vill säga -35,7 procent; riket +0,7 procent
 
-### Gästnätter utländska gäster [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
+### Gästnätter, utländska gäster (prelim.) [uppdelning av Gästnätter totalt (prelim.): svenska och utländska gäster] (antal, augusti 2026)
 - Laholm: 6 367
 - Halland (länet): 91 692
 - Riket: 3 131 069
@@ -500,8 +500,8 @@ Mäter: Antal gästnätter på samtliga inkvarteringsanläggningar.
 - Förändring 3 år (samma månad): -1 471 antal (från 7 838 i augusti 2023), det vill säga -18,8 procent eller i genomsnitt -6,69 procent per år; riket +16,3 procent
 - Förändring 1 år (samma månad året innan): -3 070 antal (från 9 437 i augusti 2025), det vill säga -32,5 procent; riket +1,4 procent
 
-### Andel utländska gästnätter (procent, augusti 2026)
-Mäter: Andel utländska gästnätter av totala gästnätter.
+### Andel utländska gästnätter (prelim.) (procent, augusti 2026)
+Mäter: Utländska gästnätter som andel av summan av svenska och utländska gästnätter, beräknad av Region Halland. Under 2024 underrapporterades utländska gäster på grund av tekniska problem i ett bokningssystem för hotell, enligt Tillväxtverket.
 - Laholm: 30,2
 - Halland (länet): 18,8
 - Riket: 34,0
@@ -516,8 +516,8 @@ Mäter: Andel utländska gästnätter av totala gästnätter.
 - Laholm år för år: augusti 2021 14,3; augusti 2022 21,1; augusti 2023 26,1; augusti 2024 30,0; augusti 2025 29,2; augusti 2026 30,2
 - Serien för Laholm januari 2020–augusti 2026: högst 30,2 (augusti 2026), lägst 0,3 (april 2020)
 
-### Gästnätter, årsförändring (procent, augusti 2026)
-Mäter: Procentuell förändring i antal gästnätter mot samma månad föregående år.
+### Gästnätter, årsförändring i procent (prelim.) (procent, augusti 2026)
+Mäter: Procentuell förändring av antalet gästnätter jämfört med samma månad året innan, beräknad av Region Halland. Uppgifterna är preliminära tills den slutliga statistiken publiceras i mars året efter; fram till dess kan anläggningarna revidera sina uppgifter.
 - Laholm: -34,8
 - Halland (länet): -0,6
 - Riket: 1,2
@@ -534,8 +534,8 @@ Mäter: Procentuell förändring i antal gästnätter mot samma månad föregåe
 
 ## Befolkning och bostadsbyggande: Befolkningsutveckling
 
-### Folkmängd (prelim.) (antal, juli 2026)
-Mäter: Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Folkmängd vid månadens slut (prelim.) (antal, juli 2026)
+Mäter: Antal folkbokförda personer i kommunen den sista dagen i månaden, enligt SCB:s befolkningsstatistik per månad (inte BAS). SCB kallar månadsstatistiken preliminär, men folkmängden redovisas cirka 5–6 veckor efter mättidpunkten och revideras inte i efterhand i tabellen; det som revideras under året är födda, döda och flyttningar, som blir slutliga när statistiken för december publicerats. Från 2025 har SCB tillfört varje värde en liten kontrollerad slumpmässig justering på mellan minus 3 och plus 3 personer (Cell Key Method, CKM) för att skydda enskilda personer, och värdena för 2020–2024 kommer från den tidigare tabellen.
 - Laholm: 26 508
 - Halland (länet): 346 763
 - Riket: 10 613 531
@@ -548,8 +548,8 @@ Mäter: Folkmängd per kommun och månad. Preliminär statistik från SCB BAS (B
 - Laholm år för år: juli 2021 26 203; juli 2022 26 547; juli 2023 26 626; juli 2024 26 632; juli 2025 26 635; juli 2026 26 508
 - Serien för Laholm januari 2020–juli 2026: högst 26 649 (oktober 2023), lägst 25 912 (augusti 2020)
 
-### Befolkningsförändring mot samma månad fg. år (antal, juli 2026)
-Mäter: Absolut förändring i folkmängd jämfört med samma månad föregående år. Preliminär statistik från SCB BAS (Befolkningens arbetsmarknadsstatus). Baseras på månatliga administrativa uppgifter och publiceras med cirka sex månaders eftersläpning. Sysselsättningen tenderar att underskattas något jämfört med den slutliga statistiken, men utvecklingen över tid stämmer väl överens.
+### Befolkningsförändring jämfört med samma månad året innan (prelim.) (antal, juli 2026)
+Mäter: Folkmängden vid månadens slut minus folkmängden vid slutet av samma månad året innan, beräknad av Region Halland ur SCB:s befolkningsstatistik per månad (inte BAS). Folkmängden avser antalet folkbokförda den sista dagen i månaden och revideras inte i efterhand i SCB:s tabell; från 2025 har varje värde en liten slumpmässig skyddsjustering på mellan minus 3 och plus 3 personer (CKM), och värdena för 2020–2024 kommer från den tidigare tabellen.
 - Laholm: -127
 - Halland (länet): 731
 - Riket: 16 879
@@ -564,8 +564,8 @@ Mäter: Absolut förändring i folkmängd jämfört med samma månad föregåend
 
 ## Befolkning och bostadsbyggande: Bostadsbyggande
 
-### Påbörjade lägenheter, alla hustyper (kvartal) (antal, juni 2026)
-Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
+### Påbörjade lägenheter, alla hustyper, per kvartal (prelim.) (antal, juni 2026)
+Mäter: Antal påbörjade lägenheter i nybyggda hus under kvartalet, summan av småhus och flerbostadshus beräknad av Region Halland; som lägenhet räknas enligt SCB även bostaden i ett småhus, och påbörjandet räknas i de flesta fall från kommunens startbesked. Uppgifterna är preliminära och underskattade för de senaste kvartalen eftersom rapporteringen släpar efter: enligt SCB är underskattningen för påbörjade 20 till 60 procent det senaste kvartalet och cirka 2 procent efter ett år. Eftersläpningen ser olika ut i olika kommuner, så jämförelser mellan kommuner för de senaste kvartalen är osäkra.
 - Laholm: 9
 - Halland (länet): 216
 - Riket: 7 413
@@ -578,7 +578,7 @@ Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
 - Laholm år för år: juni 2021 44; juni 2022 82; juni 2023 17; juni 2024 5; juni 2025 3; juni 2026 9
 - Serien för Laholm mars 2020–juni 2026: högst 102 (juni 2020), lägst 1 (september 2025)
 
-### Påbörjade lägenheter, småhus (kvartal) [uppdelning av Påbörjade lägenheter, alla hustyper (kvartal): småhus och flerbostadshus] (antal, juni 2026)
+### Påbörjade lägenheter, småhus, per kvartal (prelim.) [uppdelning av Påbörjade lägenheter, alla hustyper, per kvartal (prelim.): småhus och flerbostadshus] (antal, juni 2026)
 - Laholm: 9
 - Halland (länet): 99
 - Riket: 1 337
@@ -589,7 +589,7 @@ Mäter: Antal påbörjade lägenheter i nybyggda hus per kvartal.
 - Förändring 3 år (samma månad): -8 antal (från 17 i juni 2023), det vill säga -47,1 procent eller i genomsnitt -19,10 procent per år; riket -23,9 procent
 - Förändring 1 år (samma månad året innan): +6 antal (från 3 i juni 2025), det vill säga +200,0 procent; riket -26,2 procent
 
-### Påbörjade lägenheter, flerbostadshus (kvartal) [uppdelning av Påbörjade lägenheter, alla hustyper (kvartal): småhus och flerbostadshus] (antal, juni 2026)
+### Påbörjade lägenheter, flerbostadshus, per kvartal (prelim.) [uppdelning av Påbörjade lägenheter, alla hustyper, per kvartal (prelim.): småhus och flerbostadshus] (antal, juni 2026)
 - Laholm: 0
 - Halland (länet): 117
 - Riket: 6 076

@@ -11,6 +11,8 @@ const turism: TemaConfig = {
   temaId: "turism",
   temaNamn: "Turism & besöksnäring",
   temaFarg: "rod",
+  // Årlig förändring är självt en förändring: tabellen visar snittet per år
+  taktKpis: ["T_GAST_TILLVAXT", "T_INTAKT_TILLVAXT"],
   sektioner: [
     {
       id: "gastnatter",
