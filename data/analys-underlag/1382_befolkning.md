@@ -45,17 +45,17 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
-- Falkenberg: 47 301
-- Halland (länet): 346 011
-- Riket: 10 602 557
+- Falkenberg: 47 321
+- Halland (länet): 346 090
+- Riket: 10 605 529
 - Plats bland landets 290 kommuner: 58 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
+- Hallands kommuner 2025 (högst först): Halmstad 106 315; Kungsbacka 86 332; Varberg 69 460; Falkenberg 47 321; Laholm 26 565; Hylte 10 094
 - Plats bland Hallands 6 kommuner: 4
-- Förändring hela serien sedan 2000: +8 484 antal (från 38 817 år 2000), det vill säga +21,9 procent eller i genomsnitt +0,79 procent per år; riket +19,4 procent
-- Förändring 10 år: +4 352 antal (från 42 949 år 2015), det vill säga +10,1 procent eller i genomsnitt +0,97 procent per år; riket +7,6 procent
-- Förändring 5 år: +1 250 antal (från 46 051 år 2020), det vill säga +2,7 procent eller i genomsnitt +0,54 procent per år; riket +2,2 procent
-- Förändring 1 år: -36 antal (från 47 337 år 2024), det vill säga -0,1 procent; riket +0,1 procent
-- Falkenberg år för år: 2015 42 949; 2016 43 867; 2017 44 195; 2018 44 701; 2019 45 367; 2020 46 051; 2021 46 773; 2022 47 017; 2023 47 108; 2024 47 337; 2025 47 301
+- Förändring hela serien sedan 2000: +8 504 antal (från 38 817 år 2000), det vill säga +21,9 procent eller i genomsnitt +0,80 procent per år; riket +19,4 procent
+- Förändring 10 år: +4 372 antal (från 42 949 år 2015), det vill säga +10,2 procent eller i genomsnitt +0,97 procent per år; riket +7,7 procent
+- Förändring 5 år: +1 270 antal (från 46 051 år 2020), det vill säga +2,8 procent eller i genomsnitt +0,55 procent per år; riket +2,2 procent
+- Förändring 1 år: -16 antal (från 47 337 år 2024), det vill säga -0,0 procent; riket +0,2 procent
+- Falkenberg år för år: 2015 42 949; 2016 43 867; 2017 44 195; 2018 44 701; 2019 45 367; 2020 46 051; 2021 46 773; 2022 47 017; 2023 47 108; 2024 47 337; 2025 47 321
 - Serien för Falkenberg 2000–2025: högst 47 337 (2024), lägst 38 720 (2001)
 
 ### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
@@ -77,8 +77,8 @@ Mäter: Folkmängden den 31 december.
 - Riket: 56,5
 - Skillnad Falkenberg mot riket: -4,9 procentenheter
 - Skillnad Falkenberg mot Halland: -1,7 procentenheter
-- Plats bland landets 290 kommuner: 165 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Plats bland landets 290 kommuner: 163 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,9; Falkenberg 51,6; Laholm 50,7
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 10 år: -2,7 procentenheter (från 54,3 år 2015); riket -1,0 procentenheter
 - Förändring 5 år: -1,4 procentenheter (från 53,0 år 2020); riket -0,1 procentenheter
@@ -90,7 +90,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 14,6
 - Skillnad Falkenberg mot riket: +3,3 procentenheter
 - Skillnad Falkenberg mot Halland: +1,8 procentenheter
-- Plats bland landets 290 kommuner: 130 (1 = högsta värdet)
+- Plats bland landets 290 kommuner: 132 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 19,0; Falkenberg 17,9; Varberg 17,9; Hylte 17,2; Halmstad 14,6; Kungsbacka 14,3
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 10 år: +0,9 procentenheter (från 17,0 år 2015); riket -0,1 procentenheter
@@ -98,17 +98,17 @@ Mäter: Folkmängden den 31 december.
 - Förändring 1 år: +0,1 procentenheter (från 17,8 år 2024); riket -0,1 procentenheter
 
 ### Invånare 80 år och äldre, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
-- Falkenberg: 7,90
+- Falkenberg: 8,00
 - Halland (länet): 7,30
 - Riket: 6,40
-- Skillnad Falkenberg mot riket: +1,50 procentenheter
-- Skillnad Falkenberg mot Halland: +0,60 procentenheter
-- Plats bland landets 290 kommuner: 142 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Skillnad Falkenberg mot riket: +1,60 procentenheter
+- Skillnad Falkenberg mot Halland: +0,70 procentenheter
+- Plats bland landets 290 kommuner: 136 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 8,00; Varberg 7,60; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
 - Plats bland Hallands 6 kommuner: 2
-- Förändring 10 år: +1,40 procentenheter (från 6,50 år 2015); riket +1,30 procentenheter
-- Förändring 5 år: +1,30 procentenheter (från 6,60 år 2020); riket +1,20 procentenheter
-- Förändring 1 år: +0,30 procentenheter (från 7,60 år 2024); riket +0,30 procentenheter
+- Förändring 10 år: +1,50 procentenheter (från 6,50 år 2015); riket +1,30 procentenheter
+- Förändring 5 år: +1,40 procentenheter (från 6,60 år 2020); riket +1,20 procentenheter
+- Förändring 1 år: +0,40 procentenheter (från 7,60 år 2024); riket +0,30 procentenheter
 
 ### Årlig befolkningsförändring, andel (procent, 2025)
 Mäter: Procentuell förändring av folkmängden sedan föregående år.
@@ -355,17 +355,16 @@ Mäter: Andelen av befolkningen som är födda utanför Sverige.
 ### Kvinnor i befolkningen, andel (procent, 2025)
 Mäter: Andelen kvinnor av totalbefolkningen.
 - Falkenberg: 49,7
-- Halland (länet): 50,0
-- Riket: 49,8
-- Skillnad Falkenberg mot riket: -0,1 procentenheter
-- Skillnad Falkenberg mot Halland: -0,3 procentenheter
-- Plats bland landets 290 kommuner: 72 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
+- Halland (länet): 49,9
+- Riket: 49,7
+- Skillnad Falkenberg mot Halland: -0,2 procentenheter
+- Plats bland landets 290 kommuner: 71 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Halmstad 50,0; Varberg 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,6
 - Plats bland Hallands 6 kommuner: 4
-- Förändring hela serien sedan 2000: -0,5 procentenheter (från 50,2 år 2000); riket -0,7 procentenheter
-- Förändring 10 år: 0,0 procentenheter (från 49,7 år 2015); riket -0,1 procentenheter
-- Förändring 5 år: +0,1 procentenheter (från 49,6 år 2020); riket +0,1 procentenheter
-- Förändring 1 år: -0,1 procentenheter (från 49,8 år 2024); riket +0,1 procentenheter
+- Förändring hela serien sedan 2000: -0,5 procentenheter (från 50,2 år 2000); riket -0,8 procentenheter
+- Förändring 10 år: 0,0 procentenheter (från 49,7 år 2015); riket -0,2 procentenheter
+- Förändring 5 år: +0,1 procentenheter (från 49,6 år 2020); riket 0,0 procentenheter
+- Förändring 1 år: -0,1 procentenheter (från 49,8 år 2024); riket 0,0 procentenheter
 - Falkenberg år för år: 2015 49,7; 2016 49,6; 2017 49,6; 2018 49,6; 2019 49,7; 2020 49,6; 2021 49,7; 2022 49,8; 2023 49,7; 2024 49,8; 2025 49,7
 - Serien för Falkenberg 2000–2025: högst 50,3 (2001), lägst 49,6 (2016)
 

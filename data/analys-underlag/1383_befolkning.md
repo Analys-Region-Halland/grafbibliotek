@@ -45,18 +45,18 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
-- Varberg: 69 410
-- Halland (länet): 346 011
-- Riket: 10 602 557
+- Varberg: 69 460
+- Halland (länet): 346 090
+- Riket: 10 605 529
 - Plats bland landets 290 kommuner: 35 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
+- Hallands kommuner 2025 (högst först): Halmstad 106 315; Kungsbacka 86 332; Varberg 69 460; Falkenberg 47 321; Laholm 26 565; Hylte 10 094
 - Plats bland Hallands 6 kommuner: 3
-- Förändring hela serien sedan 2000: +16 762 antal (från 52 648 år 2000), det vill säga +31,8 procent eller i genomsnitt +1,11 procent per år; riket +19,4 procent
-- Förändring 10 år: +8 380 antal (från 61 030 år 2015), det vill säga +13,7 procent eller i genomsnitt +1,29 procent per år; riket +7,6 procent
-- Förändring 5 år: +4 013 antal (från 65 397 år 2020), det vill säga +6,1 procent eller i genomsnitt +1,20 procent per år; riket +2,2 procent
-- Förändring 1 år: +340 antal (från 69 070 år 2024), det vill säga +0,5 procent; riket +0,1 procent
-- Varberg år för år: 2015 61 030; 2016 61 868; 2017 62 755; 2018 63 630; 2019 64 601; 2020 65 397; 2021 66 658; 2022 67 800; 2023 68 325; 2024 69 070; 2025 69 410
-- Serien för Varberg 2000–2025: högst 69 410 (2025), lägst 52 648 (2000)
+- Förändring hela serien sedan 2000: +16 812 antal (från 52 648 år 2000), det vill säga +31,9 procent eller i genomsnitt +1,11 procent per år; riket +19,4 procent
+- Förändring 10 år: +8 430 antal (från 61 030 år 2015), det vill säga +13,8 procent eller i genomsnitt +1,30 procent per år; riket +7,7 procent
+- Förändring 5 år: +4 063 antal (från 65 397 år 2020), det vill säga +6,2 procent eller i genomsnitt +1,21 procent per år; riket +2,2 procent
+- Förändring 1 år: +390 antal (från 69 070 år 2024), det vill säga +0,6 procent; riket +0,2 procent
+- Varberg år för år: 2015 61 030; 2016 61 868; 2017 62 755; 2018 63 630; 2019 64 601; 2020 65 397; 2021 66 658; 2022 67 800; 2023 68 325; 2024 69 070; 2025 69 460
+- Serien för Varberg 2000–2025: högst 69 460 (2025), lägst 52 648 (2000)
 
 ### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
 - Varberg: 22,5
@@ -64,7 +64,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 22,4
 - Skillnad Varberg mot riket: +0,1 procentenheter
 - Skillnad Varberg mot Halland: -0,8 procentenheter
-- Plats bland landets 290 kommuner: 111 (1 = högsta värdet)
+- Plats bland landets 290 kommuner: 113 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Kungsbacka 25,3; Hylte 23,8; Halmstad 22,8; Falkenberg 22,6; Varberg 22,5; Laholm 22,3
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 10 år: +0,2 procentenheter (från 22,3 år 2015); riket -0,3 procentenheter
@@ -77,8 +77,8 @@ Mäter: Folkmängden den 31 december.
 - Riket: 56,5
 - Skillnad Varberg mot riket: -4,4 procentenheter
 - Skillnad Varberg mot Halland: -1,2 procentenheter
-- Plats bland landets 290 kommuner: 142 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Plats bland landets 290 kommuner: 140 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,9; Falkenberg 51,6; Laholm 50,7
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 10 år: -2,9 procentenheter (från 55,0 år 2015); riket -1,0 procentenheter
 - Förändring 5 år: -1,1 procentenheter (från 53,2 år 2020); riket -0,1 procentenheter
@@ -90,7 +90,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 14,6
 - Skillnad Varberg mot riket: +3,3 procentenheter
 - Skillnad Varberg mot Halland: +1,8 procentenheter
-- Plats bland landets 290 kommuner: 130 (1 = högsta värdet)
+- Plats bland landets 290 kommuner: 132 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 19,0; Falkenberg 17,9; Varberg 17,9; Hylte 17,2; Halmstad 14,6; Kungsbacka 14,3
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 10 år: +1,2 procentenheter (från 16,7 år 2015); riket -0,1 procentenheter
@@ -98,17 +98,17 @@ Mäter: Folkmängden den 31 december.
 - Förändring 1 år: -0,1 procentenheter (från 18,0 år 2024); riket -0,1 procentenheter
 
 ### Invånare 80 år och äldre, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
-- Varberg: 7,50
+- Varberg: 7,60
 - Halland (länet): 7,30
 - Riket: 6,40
-- Skillnad Varberg mot riket: +1,10 procentenheter
-- Skillnad Varberg mot Halland: +0,20 procentenheter
-- Plats bland landets 290 kommuner: 173 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Skillnad Varberg mot riket: +1,20 procentenheter
+- Skillnad Varberg mot Halland: +0,30 procentenheter
+- Plats bland landets 290 kommuner: 168 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 8,00; Varberg 7,60; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
 - Plats bland Hallands 6 kommuner: 3
-- Förändring 10 år: +1,50 procentenheter (från 6,00 år 2015); riket +1,30 procentenheter
-- Förändring 5 år: +1,40 procentenheter (från 6,10 år 2020); riket +1,20 procentenheter
-- Förändring 1 år: +0,40 procentenheter (från 7,10 år 2024); riket +0,30 procentenheter
+- Förändring 10 år: +1,60 procentenheter (från 6,00 år 2015); riket +1,30 procentenheter
+- Förändring 5 år: +1,50 procentenheter (från 6,10 år 2020); riket +1,20 procentenheter
+- Förändring 1 år: +0,50 procentenheter (från 7,10 år 2024); riket +0,30 procentenheter
 
 ### Årlig befolkningsförändring, andel (procent, 2025)
 Mäter: Procentuell förändring av folkmängden sedan föregående år.
@@ -355,19 +355,19 @@ Mäter: Andelen av befolkningen som är födda utanför Sverige.
 
 ### Kvinnor i befolkningen, andel (procent, 2025)
 Mäter: Andelen kvinnor av totalbefolkningen.
-- Varberg: 50,1
-- Halland (länet): 50,0
-- Riket: 49,8
+- Varberg: 50,0
+- Halland (länet): 49,9
+- Riket: 49,7
 - Skillnad Varberg mot riket: +0,3 procentenheter
 - Skillnad Varberg mot Halland: +0,1 procentenheter
-- Plats bland landets 290 kommuner: 39 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
-- Plats bland Hallands 6 kommuner: 2
-- Förändring hela serien sedan 2000: -0,2 procentenheter (från 50,3 år 2000); riket -0,7 procentenheter
-- Förändring 10 år: +0,1 procentenheter (från 50,0 år 2015); riket -0,1 procentenheter
-- Förändring 5 år: +0,2 procentenheter (från 49,9 år 2020); riket +0,1 procentenheter
-- Förändring 1 år: +0,1 procentenheter (från 50,0 år 2024); riket +0,1 procentenheter
-- Varberg år för år: 2015 50,0; 2016 50,0; 2017 50,0; 2018 49,9; 2019 49,9; 2020 49,9; 2021 49,8; 2022 49,8; 2023 49,9; 2024 50,0; 2025 50,1
+- Plats bland landets 290 kommuner: 43 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Halmstad 50,0; Varberg 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,6
+- Plats bland Hallands 6 kommuner: 3
+- Förändring hela serien sedan 2000: -0,3 procentenheter (från 50,3 år 2000); riket -0,8 procentenheter
+- Förändring 10 år: 0,0 procentenheter (från 50,0 år 2015); riket -0,2 procentenheter
+- Förändring 5 år: +0,1 procentenheter (från 49,9 år 2020); riket 0,0 procentenheter
+- Förändring 1 år: 0,0 procentenheter (från 50,0 år 2024); riket 0,0 procentenheter
+- Varberg år för år: 2015 50,0; 2016 50,0; 2017 50,0; 2018 49,9; 2019 49,9; 2020 49,9; 2021 49,8; 2022 49,8; 2023 49,9; 2024 50,0; 2025 50,0
 - Serien för Varberg 2000–2025: högst 50,4 (2002), lägst 49,8 (2021)
 
 ## Befolkningsförändringens komponenter (antal personer)

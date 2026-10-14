@@ -102,6 +102,13 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
   bara ned när det efterfrågas. Använd eliminate-mönstret i PxWeb.
 - **Ange regionkoder explicit** i varje API-anrop. Alla kommuner och riket
   hämtas för att kunna rangordna; Halland filtreras fram i frontend.
+- **CKM från 2025: summera aldrig SCB-celler till en total.** Befolkningsstatistiken från
+  2025 (tabellerna `…CKM`) har en egen slumpavvikelse i varje cell, även totalen. Hämta totalen
+  färdig (`TotSA`/`TotSa`/`SC`) och använd den som nämnare; bygg grupper av så grova färdiga
+  klasser som möjligt; kontrollera kodlistan (100+ heter `100+1` i `BefolkningCKM`). Felet
+  låg ute i oktober 2026: Varbergs folkmängd 2025 visades som 69 410 (summa av ettårsklasser
+  utan 100+) i stället för SCB:s 69 460. Se `DATAHAMTNING.md` §2.8. Varje ny SCB-tabell från
+  2025: kontrollera om den är CKM-skyddad och jämför en total mot SCB:s publicerade siffra.
 - **Respektera SCB:s rate limit** (10 anrop / 10 s, max 100 000 celler).
 - **Regionkoder:** Region Halland = `0013` (Kolada) / `13` (SCB),
   riket = `0000` (Kolada) / `00` (SCB).
@@ -152,7 +159,12 @@ innan push. Appens bas-sökväg är `/grafbibliotek/` (`app/vite.config.ts`).
   kontrolleras, förbehåll och kontakt. Texten säger att texterna inte granskats i sin helhet av
   en analytiker; ändra den där om arbetssättet ändras.
 - Befolkningssiffrorna för 2025 är preliminära och skyddade med SCB:s CKM-metod (små
-  slumpavvikelser), så komponenterna summerar inte alltid exakt till folkmängdsförändringen.
+  slumpavvikelser), så komponenterna summerar inte alltid exakt till folkmängdsförändringen,
+  och åldersgruppernas andelar inte alltid till 100.
+- kap03 normaliserar radsluten i systemprompten och bakgrunden innan hashen räknas. När
+  OneDrive eller git bytte `systemprompt.md` till CRLF blev annars alla 70 texter inaktuella
+  fast innehållet var detsamma. Blir alla texter inaktuella på en gång: kontrollera radslut
+  och kodning innan något skrivs om.
 - **Omskrivningen 2026-10-05:** alla 70 texter skrevs om med figurer av parallella agenter
   (instruktion: tre till fyra texter var, systemprompt, figurregler, de granskade förlagorna
   `1382_befolkning`, `0013_befolkning`, `0013_konjunktur`) och granskades sedan av fristående

@@ -4,7 +4,8 @@
 #
 # SCB-tabeller som används:
 #   BE0101A/BefolkningNy       — Folkmängd per ålder och kön (1968-2024)
-#   BE0101A/BefolkningNyCKM    — Folkmängd preliminär (2025)
+#   BE0101A/BefolkningCKM      — Folkmängd preliminär (2025), CKM-skyddad: hämta
+#                                totaler färdiga (TotSA), summera aldrig celler
 #   BE0101G/BefforandrKvRLK    — Befolkningsförändringar (2000-2024)
 #   BE0101G/BefforandrKvRLKCKM — Befolkningsförändringar preliminär (2025)
 #   BE0101A/FkvotHVD           — Demografisk försörjningskvot (2000-2025)

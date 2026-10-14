@@ -53,8 +53,10 @@ TEMAN <- fromJSON("data/frontend-teman.json", simplifyVector = FALSE)
 # länet redovisas då inte som jämförelse i kommunernas underlag
 LAN_EJ_JAMFORBAR <- unique(unlist(lapply(TEMAN, function(t) unlist(t$lanEjJamforbar))))
 
-SYSTEMPROMPT <- read_file("R/analys/systemprompt.md")
-BAKGRUND     <- read_file("R/analys/bakgrund.md")
+# Radsluten normaliseras: OneDrive och git kan växla mellan LF och CRLF, och då ändras
+# hashen och alla texter blir inaktuella fast innehållet är detsamma
+SYSTEMPROMPT <- gsub("\r", "", read_file("R/analys/systemprompt.md"))
+BAKGRUND     <- gsub("\r", "", read_file("R/analys/bakgrund.md"))
 
 dir.create("data/analys-underlag", showWarnings = FALSE)
 dir.create("data/analys-cache", showWarnings = FALSE)

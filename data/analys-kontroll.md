@@ -1,6 +1,6 @@
 # Kontrollogg: analystexter
 
-Kontrollerad 2026-10-05 10:42.
+Kontrollerad 2026-10-14 11:01.
 
 | Text | Status | Kontroll | Figurer |
 |---|---|---|---|

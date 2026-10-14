@@ -45,18 +45,18 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
-- Halmstad: 106 268
-- Halland (länet): 346 011
-- Riket: 10 602 557
+- Halmstad: 106 315
+- Halland (länet): 346 090
+- Riket: 10 605 529
 - Plats bland landets 290 kommuner: 17 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
+- Hallands kommuner 2025 (högst först): Halmstad 106 315; Kungsbacka 86 332; Varberg 69 460; Falkenberg 47 321; Laholm 26 565; Hylte 10 094
 - Plats bland Hallands 6 kommuner: 1
-- Förändring hela serien sedan 2000: +21 068 antal (från 85 200 år 2000), det vill säga +24,7 procent eller i genomsnitt +0,89 procent per år; riket +19,4 procent
-- Förändring 10 år: +9 316 antal (från 96 952 år 2015), det vill säga +9,6 procent eller i genomsnitt +0,92 procent per år; riket +7,6 procent
-- Förändring 5 år: +2 514 antal (från 103 754 år 2020), det vill säga +2,4 procent eller i genomsnitt +0,48 procent per år; riket +2,2 procent
-- Förändring 1 år: +184 antal (från 106 084 år 2024), det vill säga +0,2 procent; riket +0,1 procent
-- Halmstad år för år: 2015 96 952; 2016 98 538; 2017 99 752; 2018 101 268; 2019 102 767; 2020 103 754; 2021 104 573; 2022 105 148; 2023 105 796; 2024 106 084; 2025 106 268
-- Serien för Halmstad 2000–2025: högst 106 268 (2025), lägst 85 200 (2000)
+- Förändring hela serien sedan 2000: +21 115 antal (från 85 200 år 2000), det vill säga +24,8 procent eller i genomsnitt +0,89 procent per år; riket +19,4 procent
+- Förändring 10 år: +9 363 antal (från 96 952 år 2015), det vill säga +9,7 procent eller i genomsnitt +0,93 procent per år; riket +7,7 procent
+- Förändring 5 år: +2 561 antal (från 103 754 år 2020), det vill säga +2,5 procent eller i genomsnitt +0,49 procent per år; riket +2,2 procent
+- Förändring 1 år: +231 antal (från 106 084 år 2024), det vill säga +0,2 procent; riket +0,2 procent
+- Halmstad år för år: 2015 96 952; 2016 98 538; 2017 99 752; 2018 101 268; 2019 102 767; 2020 103 754; 2021 104 573; 2022 105 148; 2023 105 796; 2024 106 084; 2025 106 315
+- Serien för Halmstad 2000–2025: högst 106 315 (2025), lägst 85 200 (2000)
 
 ### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
 - Halmstad: 22,8
@@ -64,7 +64,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 22,4
 - Skillnad Halmstad mot riket: +0,4 procentenheter
 - Skillnad Halmstad mot Halland: -0,5 procentenheter
-- Plats bland landets 290 kommuner: 99 (1 = högsta värdet)
+- Plats bland landets 290 kommuner: 97 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Kungsbacka 25,3; Hylte 23,8; Halmstad 22,8; Falkenberg 22,6; Varberg 22,5; Laholm 22,3
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 10 år: +0,7 procentenheter (från 22,1 år 2015); riket -0,3 procentenheter
@@ -78,7 +78,7 @@ Mäter: Folkmängden den 31 december.
 - Skillnad Halmstad mot riket: -0,7 procentenheter
 - Skillnad Halmstad mot Halland: +2,5 procentenheter
 - Plats bland landets 290 kommuner: 46 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,9; Falkenberg 51,6; Laholm 50,7
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 10 år: -1,6 procentenheter (från 57,4 år 2015); riket -1,0 procentenheter
 - Förändring 5 år: -0,5 procentenheter (från 56,3 år 2020); riket -0,1 procentenheter
@@ -89,7 +89,7 @@ Mäter: Folkmängden den 31 december.
 - Halland (länet): 16,1
 - Riket: 14,6
 - Skillnad Halmstad mot Halland: -1,5 procentenheter
-- Plats bland landets 290 kommuner: 225 (1 = högsta värdet)
+- Plats bland landets 290 kommuner: 226 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 19,0; Falkenberg 17,9; Varberg 17,9; Hylte 17,2; Halmstad 14,6; Kungsbacka 14,3
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 10 år: -0,4 procentenheter (från 15,0 år 2015); riket -0,1 procentenheter
@@ -103,7 +103,7 @@ Mäter: Folkmängden den 31 december.
 - Skillnad Halmstad mot riket: +0,40 procentenheter
 - Skillnad Halmstad mot Halland: -0,50 procentenheter
 - Plats bland landets 290 kommuner: 213 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 8,00; Varberg 7,60; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 10 år: +1,30 procentenheter (från 5,50 år 2015); riket +1,30 procentenheter
 - Förändring 5 år: +1,10 procentenheter (från 5,70 år 2020); riket +1,20 procentenheter
@@ -355,16 +355,17 @@ Mäter: Andelen av befolkningen som är födda utanför Sverige.
 ### Kvinnor i befolkningen, andel (procent, 2025)
 Mäter: Andelen kvinnor av totalbefolkningen.
 - Halmstad: 50,0
-- Halland (länet): 50,0
-- Riket: 49,8
-- Skillnad Halmstad mot riket: +0,2 procentenheter
-- Plats bland landets 290 kommuner: 44 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
-- Plats bland Hallands 6 kommuner: 3
-- Förändring hela serien sedan 2000: -1,1 procentenheter (från 51,1 år 2000); riket -0,7 procentenheter
-- Förändring 10 år: -0,3 procentenheter (från 50,3 år 2015); riket -0,1 procentenheter
-- Förändring 5 år: +0,1 procentenheter (från 49,9 år 2020); riket +0,1 procentenheter
-- Förändring 1 år: 0,0 procentenheter (från 50,0 år 2024); riket +0,1 procentenheter
+- Halland (länet): 49,9
+- Riket: 49,7
+- Skillnad Halmstad mot riket: +0,3 procentenheter
+- Skillnad Halmstad mot Halland: +0,1 procentenheter
+- Plats bland landets 290 kommuner: 43 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Halmstad 50,0; Varberg 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,6
+- Plats bland Hallands 6 kommuner: 2
+- Förändring hela serien sedan 2000: -1,1 procentenheter (från 51,1 år 2000); riket -0,8 procentenheter
+- Förändring 10 år: -0,3 procentenheter (från 50,3 år 2015); riket -0,2 procentenheter
+- Förändring 5 år: +0,1 procentenheter (från 49,9 år 2020); riket 0,0 procentenheter
+- Förändring 1 år: 0,0 procentenheter (från 50,0 år 2024); riket 0,0 procentenheter
 - Halmstad år för år: 2015 50,3; 2016 50,2; 2017 50,1; 2018 50,0; 2019 49,9; 2020 49,9; 2021 49,9; 2022 49,8; 2023 49,9; 2024 50,0; 2025 50,0
 - Serien för Halmstad 2000–2025: högst 51,1 (2000), lägst 49,8 (2022)
 

@@ -45,17 +45,17 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
-- Hylte: 10 117
-- Halland (länet): 346 011
-- Riket: 10 602 557
+- Hylte: 10 094
+- Halland (länet): 346 090
+- Riket: 10 605 529
 - Plats bland landets 290 kommuner: 214 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
+- Hallands kommuner 2025 (högst först): Halmstad 106 315; Kungsbacka 86 332; Varberg 69 460; Falkenberg 47 321; Laholm 26 565; Hylte 10 094
 - Plats bland Hallands 6 kommuner: 6
-- Förändring hela serien sedan 2000: -362 antal (från 10 479 år 2000), det vill säga -3,5 procent eller i genomsnitt -0,14 procent per år; riket +19,4 procent
-- Förändring 10 år: -397 antal (från 10 514 år 2015), det vill säga -3,8 procent eller i genomsnitt -0,38 procent per år; riket +7,6 procent
-- Förändring 5 år: -532 antal (från 10 649 år 2020), det vill säga -5,0 procent eller i genomsnitt -1,02 procent per år; riket +2,2 procent
-- Förändring 1 år: -79 antal (från 10 196 år 2024), det vill säga -0,8 procent; riket +0,1 procent
-- Hylte år för år: 2015 10 514; 2016 10 954; 2017 10 990; 2018 10 914; 2019 10 815; 2020 10 649; 2021 10 619; 2022 10 464; 2023 10 299; 2024 10 196; 2025 10 117
+- Förändring hela serien sedan 2000: -385 antal (från 10 479 år 2000), det vill säga -3,7 procent eller i genomsnitt -0,15 procent per år; riket +19,4 procent
+- Förändring 10 år: -420 antal (från 10 514 år 2015), det vill säga -4,0 procent eller i genomsnitt -0,41 procent per år; riket +7,7 procent
+- Förändring 5 år: -555 antal (från 10 649 år 2020), det vill säga -5,2 procent eller i genomsnitt -1,06 procent per år; riket +2,2 procent
+- Förändring 1 år: -102 antal (från 10 196 år 2024), det vill säga -1,0 procent; riket +0,2 procent
+- Hylte år för år: 2015 10 514; 2016 10 954; 2017 10 990; 2018 10 914; 2019 10 815; 2020 10 649; 2021 10 619; 2022 10 464; 2023 10 299; 2024 10 196; 2025 10 094
 - Serien för Hylte 2000–2025: högst 10 990 (2017), lägst 10 001 (2013)
 
 ### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
@@ -72,17 +72,17 @@ Mäter: Folkmängden den 31 december.
 - Förändring 1 år: -0,2 procentenheter (från 24,0 år 2024); riket -0,3 procentenheter
 
 ### Invånare 20–64 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
-- Hylte: 51,8
+- Hylte: 51,9
 - Halland (länet): 53,3
 - Riket: 56,5
-- Skillnad Hylte mot riket: -4,7 procentenheter
-- Skillnad Hylte mot Halland: -1,5 procentenheter
-- Plats bland landets 290 kommuner: 153 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Skillnad Hylte mot riket: -4,6 procentenheter
+- Skillnad Hylte mot Halland: -1,4 procentenheter
+- Plats bland landets 290 kommuner: 148 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,9; Falkenberg 51,6; Laholm 50,7
 - Plats bland Hallands 6 kommuner: 4
-- Förändring 10 år: -2,2 procentenheter (från 54,0 år 2015); riket -1,0 procentenheter
-- Förändring 5 år: -0,2 procentenheter (från 52,0 år 2020); riket -0,1 procentenheter
-- Förändring 1 år: -0,2 procentenheter (från 52,0 år 2024); riket 0,0 procentenheter
+- Förändring 10 år: -2,1 procentenheter (från 54,0 år 2015); riket -1,0 procentenheter
+- Förändring 5 år: -0,1 procentenheter (från 52,0 år 2020); riket -0,1 procentenheter
+- Förändring 1 år: -0,1 procentenheter (från 52,0 år 2024); riket 0,0 procentenheter
 
 ### Invånare 65–79 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
 - Hylte: 17,2
@@ -90,7 +90,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 14,6
 - Skillnad Hylte mot riket: +2,6 procentenheter
 - Skillnad Hylte mot Halland: +1,1 procentenheter
-- Plats bland landets 290 kommuner: 159 (1 = högsta värdet)
+- Plats bland landets 290 kommuner: 161 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 19,0; Falkenberg 17,9; Varberg 17,9; Hylte 17,2; Halmstad 14,6; Kungsbacka 14,3
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 10 år: +1,6 procentenheter (från 15,6 år 2015); riket -0,1 procentenheter
@@ -103,8 +103,8 @@ Mäter: Folkmängden den 31 december.
 - Riket: 6,40
 - Skillnad Hylte mot riket: +0,80 procentenheter
 - Skillnad Hylte mot Halland: -0,10 procentenheter
-- Plats bland landets 290 kommuner: 193 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Plats bland landets 290 kommuner: 192 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 8,00; Varberg 7,60; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 10 år: +1,10 procentenheter (från 6,10 år 2015); riket +1,30 procentenheter
 - Förändring 5 år: +0,70 procentenheter (från 6,50 år 2020); riket +1,20 procentenheter
@@ -355,19 +355,19 @@ Mäter: Andelen av befolkningen som är födda utanför Sverige.
 
 ### Kvinnor i befolkningen, andel (procent, 2025)
 Mäter: Andelen kvinnor av totalbefolkningen.
-- Hylte: 48,5
-- Halland (länet): 50,0
-- Riket: 49,8
-- Skillnad Hylte mot riket: -1,3 procentenheter
-- Skillnad Hylte mot Halland: -1,5 procentenheter
-- Plats bland landets 290 kommuner: 225 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
+- Hylte: 48,6
+- Halland (länet): 49,9
+- Riket: 49,7
+- Skillnad Hylte mot riket: -1,1 procentenheter
+- Skillnad Hylte mot Halland: -1,3 procentenheter
+- Plats bland landets 290 kommuner: 211 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Halmstad 50,0; Varberg 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,6
 - Plats bland Hallands 6 kommuner: 6
-- Förändring hela serien sedan 2000: -0,8 procentenheter (från 49,3 år 2000); riket -0,7 procentenheter
-- Förändring 10 år: 0,0 procentenheter (från 48,5 år 2015); riket -0,1 procentenheter
-- Förändring 5 år: -0,3 procentenheter (från 48,8 år 2020); riket +0,1 procentenheter
-- Förändring 1 år: -0,1 procentenheter (från 48,6 år 2024); riket +0,1 procentenheter
-- Hylte år för år: 2015 48,5; 2016 48,3; 2017 48,4; 2018 48,6; 2019 48,7; 2020 48,8; 2021 48,8; 2022 48,8; 2023 48,6; 2024 48,6; 2025 48,5
+- Förändring hela serien sedan 2000: -0,7 procentenheter (från 49,3 år 2000); riket -0,8 procentenheter
+- Förändring 10 år: +0,1 procentenheter (från 48,5 år 2015); riket -0,2 procentenheter
+- Förändring 5 år: -0,2 procentenheter (från 48,8 år 2020); riket 0,0 procentenheter
+- Förändring 1 år: 0,0 procentenheter (från 48,6 år 2024); riket 0,0 procentenheter
+- Hylte år för år: 2015 48,5; 2016 48,3; 2017 48,4; 2018 48,6; 2019 48,7; 2020 48,8; 2021 48,8; 2022 48,8; 2023 48,6; 2024 48,6; 2025 48,6
 - Serien för Hylte 2000–2025: högst 49,3 (2007), lägst 48,3 (2016)
 
 ## Befolkningsförändringens komponenter (antal personer)

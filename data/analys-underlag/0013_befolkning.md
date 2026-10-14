@@ -45,16 +45,16 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
-- Halland: 346 011
-- Riket: 10 602 557
+- Halland: 346 090
+- Riket: 10 605 529
 - Plats bland landets 21 regioner: 7 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
-- Förändring hela serien sedan 2000: +71 007 antal (från 275 004 år 2000), det vill säga +25,8 procent eller i genomsnitt +0,92 procent per år; riket +19,4 procent
-- Förändring 10 år: +31 227 antal (från 314 784 år 2015), det vill säga +9,9 procent eller i genomsnitt +0,95 procent per år; riket +7,6 procent
-- Förändring 5 år: +9 263 antal (från 336 748 år 2020), det vill säga +2,8 procent eller i genomsnitt +0,54 procent per år; riket +2,2 procent
-- Förändring 1 år: +937 antal (från 345 074 år 2024), det vill säga +0,3 procent; riket +0,1 procent
-- Halland år för år: 2015 314 784; 2016 320 333; 2017 324 825; 2018 329 352; 2019 333 848; 2020 336 748; 2021 340 243; 2022 342 805; 2023 343 746; 2024 345 074; 2025 346 011
-- Serien för Halland 2000–2025: högst 346 011 (2025), lägst 275 004 (2000)
+- Hallands kommuner 2025 (högst först): Halmstad 106 315; Kungsbacka 86 332; Varberg 69 460; Falkenberg 47 321; Laholm 26 565; Hylte 10 094
+- Förändring hela serien sedan 2000: +71 086 antal (från 275 004 år 2000), det vill säga +25,8 procent eller i genomsnitt +0,92 procent per år; riket +19,4 procent
+- Förändring 10 år: +31 306 antal (från 314 784 år 2015), det vill säga +9,9 procent eller i genomsnitt +0,95 procent per år; riket +7,7 procent
+- Förändring 5 år: +9 342 antal (från 336 748 år 2020), det vill säga +2,8 procent eller i genomsnitt +0,55 procent per år; riket +2,2 procent
+- Förändring 1 år: +1 016 antal (från 345 074 år 2024), det vill säga +0,3 procent; riket +0,2 procent
+- Halland år för år: 2015 314 784; 2016 320 333; 2017 324 825; 2018 329 352; 2019 333 848; 2020 336 748; 2021 340 243; 2022 342 805; 2023 343 746; 2024 345 074; 2025 346 090
+- Serien för Halland 2000–2025: högst 346 090 (2025), lägst 275 004 (2000)
 
 ### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
 - Halland: 23,3
@@ -71,7 +71,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 56,5
 - Skillnad Halland mot riket: -3,2 procentenheter
 - Plats bland landets 21 regioner: 15 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,9; Falkenberg 51,6; Laholm 50,7
 - Förändring 10 år: -2,0 procentenheter (från 55,3 år 2015); riket -1,0 procentenheter
 - Förändring 5 år: -0,7 procentenheter (från 54,0 år 2020); riket -0,1 procentenheter
 - Förändring 1 år: -0,1 procentenheter (från 53,4 år 2024); riket 0,0 procentenheter
@@ -91,7 +91,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 6,40
 - Skillnad Halland mot riket: +0,90 procentenheter
 - Plats bland landets 21 regioner: 10 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 8,00; Varberg 7,60; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
 - Förändring 10 år: +1,70 procentenheter (från 5,60 år 2015); riket +1,30 procentenheter
 - Förändring 5 år: +1,40 procentenheter (från 5,90 år 2020); riket +1,20 procentenheter
 - Förändring 1 år: +0,40 procentenheter (från 6,90 år 2024); riket +0,30 procentenheter
@@ -268,16 +268,16 @@ Mäter: Andelen av befolkningen som är födda utanför Sverige.
 
 ### Kvinnor i befolkningen, andel (procent, 2025)
 Mäter: Andelen kvinnor av totalbefolkningen.
-- Halland: 50,0
-- Riket: 49,8
+- Halland: 49,9
+- Riket: 49,7
 - Skillnad Halland mot riket: +0,2 procentenheter
-- Plats bland landets 21 regioner: 4 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
-- Förändring hela serien sedan 2000: -0,3 procentenheter (från 50,3 år 2000); riket -0,7 procentenheter
-- Förändring 10 år: 0,0 procentenheter (från 50,0 år 2015); riket -0,1 procentenheter
-- Förändring 5 år: +0,2 procentenheter (från 49,8 år 2020); riket +0,1 procentenheter
-- Förändring 1 år: +0,1 procentenheter (från 49,9 år 2024); riket +0,1 procentenheter
-- Halland år för år: 2015 50,0; 2016 49,9; 2017 49,9; 2018 49,9; 2019 49,8; 2020 49,8; 2021 49,8; 2022 49,8; 2023 49,9; 2024 49,9; 2025 50,0
+- Plats bland landets 21 regioner: 5 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Halmstad 50,0; Varberg 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,6
+- Förändring hela serien sedan 2000: -0,4 procentenheter (från 50,3 år 2000); riket -0,8 procentenheter
+- Förändring 10 år: -0,1 procentenheter (från 50,0 år 2015); riket -0,2 procentenheter
+- Förändring 5 år: +0,1 procentenheter (från 49,8 år 2020); riket 0,0 procentenheter
+- Förändring 1 år: 0,0 procentenheter (från 49,9 år 2024); riket 0,0 procentenheter
+- Halland år för år: 2015 50,0; 2016 49,9; 2017 49,9; 2018 49,9; 2019 49,8; 2020 49,8; 2021 49,8; 2022 49,8; 2023 49,9; 2024 49,9; 2025 49,9
 - Serien för Halland 2000–2025: högst 50,3 (2011), lägst 49,8 (2019)
 
 ## Befolkningsförändringens komponenter (antal personer)

@@ -254,39 +254,55 @@ hamta_befolkning <- function(config, tvinga = FALSE) {
   message(glue("  -> 9 KPI:er fran aldersdata"))
 
   # --- CKM 2025: Folkmagd per alder (BefolkningCKM) ---
+  # Fran 2025 skyddar SCB befolkningsstatistiken med CKM: varje publicerad cell far
+  # en egen liten slumpavvikelse. En summa av celler ar darfor INTE SCB:s total
+  # (Varberg 2025: 100 ettarsklasser gav 69 410, SCB:s total 69 460). Totalen hamtas
+  # fardig (Alder = TotSA) och ar namnare i andelarna. Aldersgrupperna byggs av sa
+  # grova fardiga klasser som mojligt, sa att sa fa brusade celler som mojligt summeras.
+  # 100 ar och aldre heter "100+1" i CKM-tabellen (inte "100+" som i BefolkningNy).
+  ckm_aldersklasser <- tribble(
+    ~Alder,  ~aldersgrupp,
+    "-9",    "0_19",   "10-19", "0_19",
+    "20-29", "20_64",  "30-39", "20_64",  "40-49", "20_64",
+    "50-59", "20_64",  "60-64", "20_64",
+    "65-69", "65_79",  "70-79", "65_79",
+    "80-89", "80_plus", "90-99", "80_plus", "100+1", "80_plus"
+  )
   tryCatch({
     message("\n  [A-CKM] Folkmagd 2025 (BefolkningCKM)...")
     ckm_meta <- hamta_scb_meta(SCB_TABELLER$befolkning_ckm)
     if ("2025" %in% ckm_meta$Tid) {
-      # Ettarsklasser: siffror 0-99 + "100+"
-      ckm_alder <- ckm_meta$Alder[grepl("^\\d+\\+?$", ckm_meta$Alder)]
+      saknade_alder <- setdiff(c("TotSA", ckm_aldersklasser$Alder), ckm_meta$Alder)
+      if (length(saknade_alder) > 0) {
+        stop(glue("BefolkningCKM saknar alderskoder: {paste(saknade_alder, collapse = ', ')}"))
+      }
       ckm_regioner <- intersect(alla_regioner, ckm_meta$Region)
       ckm_cc <- ckm_meta$ContentsCode[1]  # 000007ME
 
       ckm_alder_df <- hamta_chunked(SCB_TABELLER$befolkning_ckm,
-        list(Civilstand = "SC", Alder = ckm_alder, Kon = "TotSa",
-             ContentsCode = ckm_cc, Tid = "2025"),
-        ckm_regioner, chunk_storlek = 35)
+        list(Civilstand = "SC", Alder = c("TotSA", ckm_aldersklasser$Alder),
+             Kon = "TotSa", ContentsCode = ckm_cc, Tid = "2025"),
+        ckm_regioner, chunk_storlek = 100)
       # Byt kolumnnamn sa de matchar huvudtabellen
       if (ckm_cc %in% names(ckm_alder_df)) {
         ckm_alder_df <- ckm_alder_df |> rename(BE0101N1 = all_of(ckm_cc))
       }
       message(glue("  CKM hamtat: {nrow(ckm_alder_df)} rader"))
 
-      ckm_alder_df <- ckm_alder_df |>
-        mutate(alder_num = suppressWarnings(as.integer(Alder)),
-               alder_num = if_else(is.na(alder_num), 100L, alder_num),
-               aldersgrupp = case_when(
-                 alder_num <= 19 ~ "0_19", alder_num <= 64 ~ "20_64",
-                 alder_num <= 79 ~ "65_79", TRUE ~ "80_plus"))
+      ckm_total <- ckm_alder_df |>
+        filter(Alder == "TotSA") |>
+        select(Region, Tid, total = BE0101N1)
 
       ckm_grupp <- ckm_alder_df |>
+        inner_join(ckm_aldersklasser, by = "Alder") |>
         group_by(Region, Tid, aldersgrupp) |>
         summarise(antal = sum(BE0101N1, na.rm = TRUE), .groups = "drop")
 
-      ckm_total <- ckm_alder_df |>
-        group_by(Region, Tid) |>
-        summarise(total = sum(BE0101N1, na.rm = TRUE), .groups = "drop")
+      avvik <- ckm_grupp |>
+        group_by(Region) |> summarise(summa = sum(antal), .groups = "drop") |>
+        inner_join(ckm_total, by = "Region") |> mutate(d = summa - total)
+      message(glue("  Aldersgruppernas summa minus SCB:s total (CKM-brus): ",
+                   "median {median(avvik$d)}, storst {max(abs(avvik$d))}"))
 
       # Lagg till 2025 i total_pop (anvands av B och H)
       total_pop <- bind_rows(total_pop, ckm_total)
@@ -488,6 +504,16 @@ hamta_befolkning <- function(config, tvinga = FALSE) {
       utrikes_netto_promille   = if_else(folkmagd > 0, round(invandringsoverskott / folkmagd * 1000, 1), NA_real_)
     )
 
+  # Kontroll: folkmangden ska vara densamma som i steg A
+  olika <- forandr_bred |>
+    inner_join(total_pop, by = c("Region", "Tid")) |>
+    filter(folkmagd != total)
+  if (nrow(olika) > 0) {
+    warning(glue("Folkmangd skiljer mellan BefolkningNy och BefforandrKvRLK i ",
+                 "{nrow(olika)} region-ar, t.ex. {olika$Region[1]} {olika$Tid[1]}: ",
+                 "{olika$total[1]} mot {olika$folkmagd[1]}"))
+  }
+
   # Skapa KPI-rader for varje forandringsindikator
   forandr_kpi_spec <- list(
     list(kol = "folkokning",              id = "S_BEF_FORANDR_ANTAL"),
@@ -561,6 +587,18 @@ hamta_befolkning <- function(config, tvinga = FALSE) {
             fodelsenetto_promille = if_else(folkmagd > 0, round(fodelseoverskott / folkmagd * 1000, 1), NA_real_),
             inrikes_netto_promille = if_else(folkmagd > 0, round(inrikes_netto / folkmagd * 1000, 1), NA_real_),
             utrikes_netto_promille = if_else(folkmagd > 0, round(invandringsoverskott / folkmagd * 1000, 1), NA_real_))
+
+        # Kontroll: folkmangden ska vara densamma som i BefolkningCKM (TotSA)
+        olika <- ckm_forandr_bred |>
+          inner_join(total_pop, by = c("Region", "Tid")) |>
+          filter(folkmagd != total)
+        if (nrow(olika) > 0) {
+          warning(glue("Folkmangd 2025 skiljer mellan BefolkningCKM och BefforandrKvRLKCKM ",
+                       "i {nrow(olika)} regioner, t.ex. {olika$Region[1]}: ",
+                       "{olika$total[1]} mot {olika$folkmagd[1]}"))
+        } else {
+          message("  Kontroll: folkmangd 2025 lika i BefolkningCKM och BefforandrKvRLKCKM")
+        }
 
         # Lagg till CKM-rader for varje KPI
         for (spec in forandr_kpi_spec) {

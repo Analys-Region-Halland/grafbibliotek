@@ -1,15 +1,15 @@
 {
-  "hash": "a0a34d77e7c3d83b0760c0cc894d0773",
+  "hash": "950bd5c5a39caa8823317a26d1ac1ba0",
   "period": "2025",
   "skriven_av": "Claude Code",
-  "granskad": "2026-10-05",
+  "granskad": "2026-10-14",
   "res": {
     "rubrik": "Falkenberg har vuxit stadigt men tillväxten har bromsat in",
-    "ingress": "Falkenbergs folkmängd har ökat med 21,9 procent sedan 2000, mot 19,4 procent i riket, men tillväxten har avtagit sedan 2021. Under 2025 var folkmängden i stort sett oförändrad, med 36 färre invånare än året innan.",
+    "ingress": "Falkenbergs folkmängd har ökat med 21,9 procent sedan 2000, mot 19,4 procent i riket, men tillväxten har avtagit sedan 2021. Under 2025 var folkmängden i stort sett oförändrad, med 16 färre invånare än året innan.",
     "i_korthet": [
       {
         "ledtext": "Lång tillväxt, svagare de senaste åren",
-        "text": "Folkmängden ökade med 10,1 procent på tio år, mot 7,6 procent i riket, men med 2,7 procent de senaste fem åren."
+        "text": "Folkmängden ökade med 10,2 procent på tio år, mot 7,7 procent i riket, men med 2,8 procent de senaste fem åren."
       },
       {
         "ledtext": "Flyttningar har burit tillväxten",
@@ -21,7 +21,7 @@
       }
     ],
     "stycken": [
-      "Falkenbergs befolkning har vuxit i ett kvarts sekel men växer nu långsammare. Folkmängden har ökat med 21,9 procent sedan 2000, i genomsnitt 0,79 procent per år, och med 10,1 procent sedan 2015, mot 7,6 procent i riket. De senaste fem åren var ökningen 2,7 procent, eller 0,54 procent per år: den årliga tillväxten sjönk från 1,57 procent 2021 och har sedan 2022 legat mellan minus 0,03 och 0,52 procent. Under 2025 minskade folkmängden med 36 personer till 47 301, den första minskningen under de senaste tio åren. Ett enskilt år är ännu ingen ny riktning, men inbromsningen har pågått i fyra år.",
+      "Falkenbergs befolkning har vuxit i ett kvarts sekel men växer nu långsammare. Folkmängden har ökat med 21,9 procent sedan 2000, i genomsnitt 0,80 procent per år, och med 10,2 procent sedan 2015, mot 7,7 procent i riket. De senaste fem åren var ökningen 2,8 procent, eller 0,55 procent per år: den årliga tillväxten sjönk från 1,57 procent 2021 och har sedan 2022 legat mellan minus 0,03 och 0,52 procent. Under 2025 minskade folkmängden med 16 personer till 47 321, den första minskningen under de senaste tio åren. Ett enskilt år är ännu ingen ny riktning, men inbromsningen har pågått i fyra år.",
       "Tillväxten har kommit från flyttningar, men vilken typ som dominerar har skiftat. Under 2016–2025 bidrog invandringsöverskottet med 2 339 personer, inrikes flyttnetto med 1 799 och födelsenettot med 107. Invandringsöverskottet var störst till och med 2018, därefter inrikes flyttnetto, och de senaste fem åren bidrog inrikes flyttnetto med 974 personer mot 264 för invandringsöverskottet, medan födelsenettot var minus 23. Falkenberg minskade med 0,03 procent 2025 och låg fjärde i länet, efter Kungsbacka, Varberg och Halmstad, medan länet växte med 0,29 procent och riket med 0,17 procent.",
       "Inbromsningen sammanfaller främst med att flyttningsöverskottet har krympt: inrikes flyttnetto sjönk från 467 personer 2021 till 73 år 2025 och invandringsöverskottet från 130 till minus 41, medan födelsenettot gick från 103 till minus 43. Samtidigt åldras befolkningen. Försörjningskvoten, antalet unga och äldre per 100 invånare 20–64 år, har stigit varje år sedan 2015 till 93,9, näst högst i länet efter Laholm, mot 77,0 i riket; mest har kvoten för äldre ökat, med 6,8 mot 2,8 för yngre. För planeringen innebär det att behoven inom äldreomsorgen sannolikt fortsätter att växa även om folkmängden ökar långsammare."
     ],

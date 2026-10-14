@@ -222,6 +222,36 @@ df <- df |>
   )
 ```
 
+### 2.8 CKM-skyddade tabeller (befolkning från 2025) — summera aldrig celler
+
+Från referensår 2025 skyddar SCB befolkningsstatistiken med **CKM** (Cell Key Method).
+Tabellerna har nya namn med suffixet `CKM` (`BefolkningCKM`, `BefforandrKvRLKCKM`,
+`MBefStatRegionCKM`, `BefolkManadCKM`, `FoddaKCKM`, `DodaFodelsearKCKM`,
+`Flyttningar97CKM` …); de gamla tabellerna slutar 2024. Varje publicerad cell får en egen
+liten slumpavvikelse, även totalerna. Därför:
+
+- **Hämta totalen färdig** (`Alder = "TotSA"`, `Kon = "TotSa"`, `Civilstand = "SC"`), räkna
+  aldrig fram den som summa av ålders-, köns- eller civilståndsceller. Summan av Varbergs 100
+  ettårsklasser 2025 blev 69 410, SCB:s total är 69 460. Felet låg ute på sidan och upptäcktes
+  av en extern användare (oktober 2026).
+- **Använd SCB:s total som nämnare** i andelar. Delarna summerar inte exakt till totalen, och
+  andelarna summerar inte exakt till 100. Det är väntat och ska inte "rättas".
+- **Måste grupper byggas, ta så grova färdiga klasser som möjligt** (`-9`, `10-19`, `20-29` …
+  i stället för ettårsklasser), så att så få brusade celler som möjligt läggs ihop.
+- **Kontrollera kodlistan i varje CKM-tabell.** Koderna skiljer sig från de gamla tabellerna:
+  100 år och äldre heter `100+1`/`100+5`/`100+10` i `BefolkningCKM` (inte `100+`), totalt kön
+  heter `TotSa` (inte `1+2`). Ett filter som `grepl("^\\d+\\+?$", Alder)` tappade därför alla
+  100 år och äldre utan att något fel syntes.
+- **Jämför samma storhet i två tabeller.** `hamta.R` för befolkning varnar om folkmängden skiljer
+  mellan `BefolkningCKM` och `BefforandrKvRLKCKM`; lägg in samma slags kontroll när nya
+  CKM-tabeller tas i bruk.
+- Komponenterna (födda − döda + flyttnetto) summerar inte exakt till folkökningen. Det är
+  också CKM och ska förklaras, inte justeras.
+
+Preliminära månads-, kvartals- och halvårsvärden är olika perioder: en jämförelse med SCB ska
+göras för exakt samma månad. Folkmängden för Varberg i juni 2026 (halvårssiffran) är 69 741,
+i juli 69 835.
+
 ---
 
 ## 3. Kolada API (rKolada)
@@ -789,7 +819,7 @@ bestam_typ <- function(municipality_id) {
 
 ### 10.2 Alltid totalnivå först
 
-Hämta bara totalvärden (kön = totalt, alla åldrar sammanslaget) om inte köns- eller åldersuppdelning explicit behövs. Detaljerade nedbrytningar ger exponentiellt fler celler och riskerar att spräcka celltaket.
+Hämta bara totalvärden (kön = totalt, alla åldrar sammanslaget) om inte köns- eller åldersuppdelning explicit behövs. Detaljerade nedbrytningar ger exponentiellt fler celler och riskerar att spräcka celltaket. I CKM-skyddade tabeller (befolkning från 2025, §2.8) ger en summa av celler dessutom fel total: hämta totalen som egen cell.
 
 ### 10.3 Alltid kodformat (SCB/FoHM)
 

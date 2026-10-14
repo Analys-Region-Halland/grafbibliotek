@@ -45,18 +45,18 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
-- Kungsbacka: 86 323
-- Halland (länet): 346 011
-- Riket: 10 602 557
+- Kungsbacka: 86 332
+- Halland (länet): 346 090
+- Riket: 10 605 529
 - Plats bland landets 290 kommuner: 27 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
+- Hallands kommuner 2025 (högst först): Halmstad 106 315; Kungsbacka 86 332; Varberg 69 460; Falkenberg 47 321; Laholm 26 565; Hylte 10 094
 - Plats bland Hallands 6 kommuner: 2
-- Förändring hela serien sedan 2000: +21 210 antal (från 65 113 år 2000), det vill säga +32,6 procent eller i genomsnitt +1,13 procent per år; riket +19,4 procent
-- Förändring 10 år: +7 179 antal (från 79 144 år 2015), det vill säga +9,1 procent eller i genomsnitt +0,87 procent per år; riket +7,6 procent
-- Förändring 5 år: +1 393 antal (från 84 930 år 2020), det vill säga +1,6 procent eller i genomsnitt +0,33 procent per år; riket +2,2 procent
-- Förändring 1 år: +531 antal (från 85 792 år 2024), det vill säga +0,6 procent; riket +0,1 procent
-- Kungsbacka år för år: 2015 79 144; 2016 80 442; 2017 81 986; 2018 83 348; 2019 84 395; 2020 84 930; 2021 85 301; 2022 85 801; 2023 85 653; 2024 85 792; 2025 86 323
-- Serien för Kungsbacka 2000–2025: högst 86 323 (2025), lägst 65 113 (2000)
+- Förändring hela serien sedan 2000: +21 219 antal (från 65 113 år 2000), det vill säga +32,6 procent eller i genomsnitt +1,13 procent per år; riket +19,4 procent
+- Förändring 10 år: +7 188 antal (från 79 144 år 2015), det vill säga +9,1 procent eller i genomsnitt +0,87 procent per år; riket +7,7 procent
+- Förändring 5 år: +1 402 antal (från 84 930 år 2020), det vill säga +1,7 procent eller i genomsnitt +0,33 procent per år; riket +2,2 procent
+- Förändring 1 år: +540 antal (från 85 792 år 2024), det vill säga +0,6 procent; riket +0,2 procent
+- Kungsbacka år för år: 2015 79 144; 2016 80 442; 2017 81 986; 2018 83 348; 2019 84 395; 2020 84 930; 2021 85 301; 2022 85 801; 2023 85 653; 2024 85 792; 2025 86 332
+- Serien för Kungsbacka 2000–2025: högst 86 332 (2025), lägst 65 113 (2000)
 
 ### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
 - Kungsbacka: 25,3
@@ -78,7 +78,7 @@ Mäter: Folkmängden den 31 december.
 - Skillnad Kungsbacka mot riket: -3,3 procentenheter
 - Skillnad Kungsbacka mot Halland: -0,1 procentenheter
 - Plats bland landets 290 kommuner: 99 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,9; Falkenberg 51,6; Laholm 50,7
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 10 år: -0,8 procentenheter (från 54,0 år 2015); riket -1,0 procentenheter
 - Förändring 5 år: -0,2 procentenheter (från 53,4 år 2020); riket -0,1 procentenheter
@@ -103,8 +103,8 @@ Mäter: Folkmängden den 31 december.
 - Riket: 6,40
 - Skillnad Kungsbacka mot riket: +0,70 procentenheter
 - Skillnad Kungsbacka mot Halland: -0,20 procentenheter
-- Plats bland landets 290 kommuner: 195 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Plats bland landets 290 kommuner: 196 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 8,00; Varberg 7,60; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 10 år: +2,60 procentenheter (från 4,50 år 2015); riket +1,30 procentenheter
 - Förändring 5 år: +1,80 procentenheter (från 5,30 år 2020); riket +1,20 procentenheter
@@ -355,17 +355,17 @@ Mäter: Andelen av befolkningen som är födda utanför Sverige.
 ### Kvinnor i befolkningen, andel (procent, 2025)
 Mäter: Andelen kvinnor av totalbefolkningen.
 - Kungsbacka: 50,3
-- Halland (länet): 50,0
-- Riket: 49,8
-- Skillnad Kungsbacka mot riket: +0,5 procentenheter
-- Skillnad Kungsbacka mot Halland: +0,3 procentenheter
-- Plats bland landets 290 kommuner: 26 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
+- Halland (länet): 49,9
+- Riket: 49,7
+- Skillnad Kungsbacka mot riket: +0,6 procentenheter
+- Skillnad Kungsbacka mot Halland: +0,4 procentenheter
+- Plats bland landets 290 kommuner: 27 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Halmstad 50,0; Varberg 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,6
 - Plats bland Hallands 6 kommuner: 1
-- Förändring hela serien sedan 2000: +0,3 procentenheter (från 50,0 år 2000); riket -0,7 procentenheter
-- Förändring 10 år: +0,1 procentenheter (från 50,2 år 2015); riket -0,1 procentenheter
-- Förändring 5 år: +0,1 procentenheter (från 50,2 år 2020); riket +0,1 procentenheter
-- Förändring 1 år: +0,1 procentenheter (från 50,2 år 2024); riket +0,1 procentenheter
+- Förändring hela serien sedan 2000: +0,3 procentenheter (från 50,0 år 2000); riket -0,8 procentenheter
+- Förändring 10 år: +0,1 procentenheter (från 50,2 år 2015); riket -0,2 procentenheter
+- Förändring 5 år: +0,1 procentenheter (från 50,2 år 2020); riket 0,0 procentenheter
+- Förändring 1 år: +0,1 procentenheter (från 50,2 år 2024); riket 0,0 procentenheter
 - Kungsbacka år för år: 2015 50,2; 2016 50,2; 2017 50,2; 2018 50,2; 2019 50,2; 2020 50,2; 2021 50,2; 2022 50,2; 2023 50,2; 2024 50,2; 2025 50,3
 - Serien för Kungsbacka 2000–2025: högst 50,4 (2009), lägst 50,0 (2000)
 

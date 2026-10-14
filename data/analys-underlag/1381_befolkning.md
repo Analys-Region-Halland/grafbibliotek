@@ -45,17 +45,17 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 ### Folkmängd, antal invånare (antal, 2025)
 Mäter: Folkmängden den 31 december.
-- Laholm: 26 561
-- Halland (länet): 346 011
-- Riket: 10 602 557
+- Laholm: 26 565
+- Halland (länet): 346 090
+- Riket: 10 605 529
 - Plats bland landets 290 kommuner: 101 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 106 268; Kungsbacka 86 323; Varberg 69 410; Falkenberg 47 301; Laholm 26 561; Hylte 10 117
+- Hallands kommuner 2025 (högst först): Halmstad 106 315; Kungsbacka 86 332; Varberg 69 460; Falkenberg 47 321; Laholm 26 565; Hylte 10 094
 - Plats bland Hallands 6 kommuner: 5
-- Förändring hela serien sedan 2000: +3 814 antal (från 22 747 år 2000), det vill säga +16,8 procent eller i genomsnitt +0,62 procent per år; riket +19,4 procent
-- Förändring 10 år: +2 366 antal (från 24 195 år 2015), det vill säga +9,8 procent eller i genomsnitt +0,94 procent per år; riket +7,6 procent
-- Förändring 5 år: +594 antal (från 25 967 år 2020), det vill säga +2,3 procent eller i genomsnitt +0,45 procent per år; riket +2,2 procent
-- Förändring 1 år: -34 antal (från 26 595 år 2024), det vill säga -0,1 procent; riket +0,1 procent
-- Laholm år för år: 2015 24 195; 2016 24 664; 2017 25 147; 2018 25 491; 2019 25 903; 2020 25 967; 2021 26 319; 2022 26 575; 2023 26 565; 2024 26 595; 2025 26 561
+- Förändring hela serien sedan 2000: +3 818 antal (från 22 747 år 2000), det vill säga +16,8 procent eller i genomsnitt +0,62 procent per år; riket +19,4 procent
+- Förändring 10 år: +2 370 antal (från 24 195 år 2015), det vill säga +9,8 procent eller i genomsnitt +0,94 procent per år; riket +7,7 procent
+- Förändring 5 år: +598 antal (från 25 967 år 2020), det vill säga +2,3 procent eller i genomsnitt +0,46 procent per år; riket +2,2 procent
+- Förändring 1 år: -30 antal (från 26 595 år 2024), det vill säga -0,1 procent; riket +0,2 procent
+- Laholm år för år: 2015 24 195; 2016 24 664; 2017 25 147; 2018 25 491; 2019 25 903; 2020 25 967; 2021 26 319; 2022 26 575; 2023 26 565; 2024 26 595; 2025 26 565
 - Serien för Laholm 2000–2025: högst 26 595 (2024), lägst 22 747 (2000)
 
 ### Invånare 0–19 år, andel av befolkningen [uppdelning av Folkmängd, antal invånare: åldersgrupperna] (procent, 2025)
@@ -77,8 +77,8 @@ Mäter: Folkmängden den 31 december.
 - Riket: 56,5
 - Skillnad Laholm mot riket: -5,8 procentenheter
 - Skillnad Laholm mot Halland: -2,6 procentenheter
-- Plats bland landets 290 kommuner: 205 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,8; Falkenberg 51,6; Laholm 50,7
+- Plats bland landets 290 kommuner: 202 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Halmstad 55,8; Kungsbacka 53,2; Varberg 52,1; Hylte 51,9; Falkenberg 51,6; Laholm 50,7
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 10 år: -3,1 procentenheter (från 53,8 år 2015); riket -1,0 procentenheter
 - Förändring 5 år: -1,0 procentenheter (från 51,7 år 2020); riket -0,1 procentenheter
@@ -90,7 +90,7 @@ Mäter: Folkmängden den 31 december.
 - Riket: 14,6
 - Skillnad Laholm mot riket: +4,4 procentenheter
 - Skillnad Laholm mot Halland: +2,9 procentenheter
-- Plats bland landets 290 kommuner: 108 (1 = högsta värdet)
+- Plats bland landets 290 kommuner: 106 (1 = högsta värdet)
 - Hallands kommuner 2025 (högst först): Laholm 19,0; Falkenberg 17,9; Varberg 17,9; Hylte 17,2; Halmstad 14,6; Kungsbacka 14,3
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 10 år: +1,0 procentenheter (från 18,0 år 2015); riket -0,1 procentenheter
@@ -103,8 +103,8 @@ Mäter: Folkmängden den 31 december.
 - Riket: 6,40
 - Skillnad Laholm mot riket: +1,60 procentenheter
 - Skillnad Laholm mot Halland: +0,70 procentenheter
-- Plats bland landets 290 kommuner: 133 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 7,90; Varberg 7,50; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
+- Plats bland landets 290 kommuner: 136 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Laholm 8,00; Falkenberg 8,00; Varberg 7,60; Hylte 7,20; Kungsbacka 7,10; Halmstad 6,80
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 10 år: +1,80 procentenheter (från 6,20 år 2015); riket +1,30 procentenheter
 - Förändring 5 år: +1,70 procentenheter (från 6,30 år 2020); riket +1,20 procentenheter
@@ -355,17 +355,17 @@ Mäter: Andelen av befolkningen som är födda utanför Sverige.
 ### Kvinnor i befolkningen, andel (procent, 2025)
 Mäter: Andelen kvinnor av totalbefolkningen.
 - Laholm: 49,2
-- Halland (länet): 50,0
-- Riket: 49,8
-- Skillnad Laholm mot riket: -0,6 procentenheter
-- Skillnad Laholm mot Halland: -0,8 procentenheter
-- Plats bland landets 290 kommuner: 135 (1 = högsta värdet)
-- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Varberg 50,1; Halmstad 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,5
+- Halland (länet): 49,9
+- Riket: 49,7
+- Skillnad Laholm mot riket: -0,5 procentenheter
+- Skillnad Laholm mot Halland: -0,7 procentenheter
+- Plats bland landets 290 kommuner: 131 (1 = högsta värdet)
+- Hallands kommuner 2025 (högst först): Kungsbacka 50,3; Halmstad 50,0; Varberg 50,0; Falkenberg 49,7; Laholm 49,2; Hylte 48,6
 - Plats bland Hallands 6 kommuner: 5
-- Förändring hela serien sedan 2000: -0,4 procentenheter (från 49,6 år 2000); riket -0,7 procentenheter
-- Förändring 10 år: -0,2 procentenheter (från 49,4 år 2015); riket -0,1 procentenheter
-- Förändring 5 år: +0,1 procentenheter (från 49,1 år 2020); riket +0,1 procentenheter
-- Förändring 1 år: 0,0 procentenheter (från 49,2 år 2024); riket +0,1 procentenheter
+- Förändring hela serien sedan 2000: -0,4 procentenheter (från 49,6 år 2000); riket -0,8 procentenheter
+- Förändring 10 år: -0,2 procentenheter (från 49,4 år 2015); riket -0,2 procentenheter
+- Förändring 5 år: +0,1 procentenheter (från 49,1 år 2020); riket 0,0 procentenheter
+- Förändring 1 år: 0,0 procentenheter (från 49,2 år 2024); riket 0,0 procentenheter
 - Laholm år för år: 2015 49,4; 2016 49,3; 2017 49,3; 2018 49,3; 2019 49,1; 2020 49,1; 2021 49,1; 2022 49,0; 2023 49,1; 2024 49,2; 2025 49,2
 - Serien för Laholm 2000–2025: högst 49,7 (2011), lägst 49,0 (2022)
 
