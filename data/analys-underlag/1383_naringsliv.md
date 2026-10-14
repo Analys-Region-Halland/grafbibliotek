@@ -41,10 +41,10 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Näringsliv, Varberg
 
-## Sysselsatta efter arbetsställe: Dagbefolkning totalt
+## Sysselsatta efter arbetsställe: Sysselsatta som arbetar i kommunen, totalt
 
-### Sysselsatta dagbefolkning 15–74 år, antal (antal, 2024)
-Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsställets belägenhet.
+### Sysselsatta 15–74 år som arbetar i kommunen, antal (antal, 2024)
+Mäter: Antal sysselsatta 15–74 år totalt, efter arbetsställets belägenhet.
 - Varberg: 32 484
 - Halland (länet): 150 488
 - Riket: 5 260 642
@@ -55,7 +55,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Varberg år för år: 2020 31 380; 2021 32 087; 2022 32 382; 2023 32 453; 2024 32 484
 - Serien för Varberg 2020–2024: högst 32 484 (2024), lägst 31 380 (2020)
 
-### Sysselsatta kvinnor 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: kvinnor och män] (antal, 2024)
+### Sysselsatta kvinnor 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: kvinnor och män] (antal, 2024)
 - Varberg: 16 193
 - Halland (länet): 74 740
 - Riket: 2 551 783
@@ -64,7 +64,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: +176 antal (från 16 017 år 2023), det vill säga +1,1 procent; riket -0,1 procent
 
-### Sysselsatta män 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: kvinnor och män] (antal, 2024)
+### Sysselsatta män 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: kvinnor och män] (antal, 2024)
 - Varberg: 16 295
 - Halland (länet): 75 753
 - Riket: 2 708 863
@@ -73,7 +73,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: -141 antal (från 16 436 år 2023), det vill säga -0,9 procent; riket -0,7 procent
 
-### Sysselsatta inrikes födda 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: inrikes och utrikes födda] (antal, 2024)
+### Sysselsatta inrikes födda 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: inrikes och utrikes födda] (antal, 2024)
 - Varberg: 27 913
 - Halland (länet): 124 026
 - Riket: 4 065 389
@@ -82,7 +82,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: -47 antal (från 27 960 år 2023), det vill säga -0,2 procent; riket -0,8 procent
 
-### Sysselsatta utrikes födda 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: inrikes och utrikes födda] (antal, 2024)
+### Sysselsatta utrikes födda 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: inrikes och utrikes födda] (antal, 2024)
 - Varberg: 4 572
 - Halland (länet): 26 462
 - Riket: 1 195 254
@@ -91,7 +91,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: +80 antal (från 4 492 år 2023), det vill säga +1,8 procent; riket +0,7 procent
 
-### Sysselsatta inom jordbruk och skogsbruk, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom jordbruk och skogsbruk, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 2,50
 - Halland (länet): 2,60
 - Riket: 1,80
@@ -102,7 +102,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 1 år: 0,00 procentenheter (från 2,50 år 2023); riket +0,10 procentenheter
 
-### Sysselsatta inom tillverkning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom tillverkning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 9,30
 - Halland (länet): 10,40
 - Riket: 10,70
@@ -113,7 +113,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 1 år: -0,10 procentenheter (från 9,40 år 2023); riket +0,1 procentenheter
 
-### Sysselsatta inom energi och miljö, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom energi och miljö, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 4,90
 - Halland (länet): 2,10
 - Riket: 1,20
@@ -124,7 +124,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 1 år: +0,20 procentenheter (från 4,70 år 2023); riket +0,10 procentenheter
 
-### Sysselsatta inom byggverksamhet, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom byggverksamhet, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 10,4
 - Halland (länet): 8,6
 - Riket: 7,1
@@ -135,7 +135,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: -0,7 procentenheter (från 11,1 år 2023); riket -0,10 procentenheter
 
-### Sysselsatta inom handel, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom handel, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 13,8
 - Halland (länet): 14,9
 - Riket: 11,5
@@ -146,7 +146,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 1 år: +0,2 procentenheter (från 13,6 år 2023); riket 0,0 procentenheter
 
-### Sysselsatta inom transport, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom transport, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 2,80
 - Halland (länet): 3,70
 - Riket: 4,40
@@ -157,7 +157,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: 0,00 procentenheter (från 2,80 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom hotell och restaurang, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom hotell och restaurang, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 5,20
 - Halland (länet): 4,20
 - Riket: 3,80
@@ -168,7 +168,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: 0,00 procentenheter (från 5,20 år 2023); riket +0,10 procentenheter
 
-### Sysselsatta inom IT och kommunikation, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom IT och kommunikation, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 1,40
 - Halland (länet): 1,60
 - Riket: 4,70
@@ -179,7 +179,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 1 år: 0,00 procentenheter (från 1,40 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom finans och försäkring, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom finans och försäkring, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 1,30
 - Halland (länet): 1,20
 - Riket: 2,10
@@ -190,7 +190,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: -0,10 procentenheter (från 1,40 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom fastighetsverksamhet, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom fastighetsverksamhet, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 1,80
 - Halland (länet): 1,70
 - Riket: 1,70
@@ -201,7 +201,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: -0,10 procentenheter (från 1,90 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom företagstjänster, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom företagstjänster, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 9,90
 - Halland (länet): 9,50
 - Riket: 12,90
@@ -212,7 +212,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 1 år: +0,60 procentenheter (från 9,30 år 2023); riket +0,2 procentenheter
 
-### Sysselsatta inom offentlig förvaltning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom offentlig förvaltning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 4,30
 - Halland (länet): 6,20
 - Riket: 6,70
@@ -223,7 +223,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 1 år: +0,10 procentenheter (från 4,20 år 2023); riket +0,20 procentenheter
 
-### Sysselsatta inom utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 10,7
 - Halland (länet): 11,7
 - Riket: 10,5
@@ -234,7 +234,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: +0,3 procentenheter (från 10,4 år 2023); riket +0,1 procentenheter
 
-### Sysselsatta inom vård och omsorg, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom vård och omsorg, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 17,9
 - Halland (länet): 17,1
 - Riket: 16,4
@@ -245,7 +245,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: +0,5 procentenheter (från 17,4 år 2023); riket +0,6 procentenheter
 
-### Sysselsatta inom övriga tjänster, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom övriga tjänster, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Varberg: 3,60
 - Halland (länet): 4,20
 - Riket: 4,50
@@ -256,7 +256,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: 0,00 procentenheter (från 3,60 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta med förgymnasial utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: utbildningsnivåerna] (procent, 2024)
+### Sysselsatta med förgymnasial utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: utbildningsnivåerna] (procent, 2024)
 - Varberg: 9,70
 - Halland (länet): 10,30
 - Riket: 9,10
@@ -267,7 +267,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: -0,60 procentenheter (från 10,30 år 2023); riket -0,40 procentenheter
 
-### Sysselsatta med gymnasial utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: utbildningsnivåerna] (procent, 2024)
+### Sysselsatta med gymnasial utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: utbildningsnivåerna] (procent, 2024)
 - Varberg: 48,4
 - Halland (länet): 48,3
 - Riket: 42,5
@@ -278,7 +278,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 1 år: -0,5 procentenheter (från 48,9 år 2023); riket -0,4 procentenheter
 
-### Sysselsatta med eftergymnasial utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: utbildningsnivåerna] (procent, 2024)
+### Sysselsatta med eftergymnasial utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: utbildningsnivåerna] (procent, 2024)
 - Varberg: 40,7
 - Halland (länet): 40,1
 - Riket: 46,8
@@ -292,7 +292,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 ## Sysselsatta efter arbetsställe: Näringslivet
 
 ### Sysselsatta i näringslivet 15–74 år, antal (antal, 2024)
-Mäter: Antal sysselsatta dagbefolkning 15–74 år i näringslivet, efter arbetsställets belägenhet.
+Mäter: Antal sysselsatta 15–74 år i näringslivet, efter arbetsställets belägenhet.
 - Varberg: 22 466
 - Halland (länet): 100 452
 - Riket: 3 604 692
@@ -342,7 +342,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år i näringslivet, efter arbet
 ## Sysselsatta efter arbetsställe: Offentlig sektor
 
 ### Sysselsatta i offentlig sektor 15–74 år, antal (antal, 2024)
-Mäter: Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, efter arbetsställets belägenhet.
+Mäter: Antal sysselsatta 15–74 år i offentlig sektor, efter arbetsställets belägenhet.
 - Varberg: 10 018
 - Halland (länet): 50 036
 - Riket: 1 655 950
@@ -392,7 +392,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, efter ar
 ## Tillväxt i antal sysselsatta: Tillväxt totalt
 
 ### Årlig tillväxt, förvärvsarbetande totalt, förändring (procent, 2024)
-Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning totalt, efter arbetsställets belägenhet.
+Mäter: Årlig procentuell förändring av antalet sysselsatta totalt, efter arbetsställets belägenhet.
 - Varberg: 0,10
 - Halland (länet): -0,70
 - Riket: -0,40
@@ -452,7 +452,7 @@ Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning tot
 ## Tillväxt i antal sysselsatta: Tillväxt näringslivet
 
 ### Årlig tillväxt, förvärvsarbetande i näringslivet, förändring (procent, 2024)
-Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i näringslivet, efter arbetsställets belägenhet.
+Mäter: Årlig procentuell förändring av antalet sysselsatta i näringslivet, efter arbetsställets belägenhet.
 - Varberg: -0,20
 - Halland (länet): -0,70
 - Riket: -0,60
@@ -511,7 +511,7 @@ Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i n
 ## Tillväxt i antal sysselsatta: Tillväxt offentlig sektor
 
 ### Årlig tillväxt, förvärvsarbetande i offentlig sektor, förändring (procent, 2024)
-Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i offentlig sektor, efter arbetsställets belägenhet.
+Mäter: Årlig procentuell förändring av antalet sysselsatta i offentlig sektor, efter arbetsställets belägenhet.
 - Varberg: 0,80
 - Halland (länet): -0,80
 - Riket: -0,20
@@ -571,7 +571,7 @@ Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i o
 ## Yrkesställning och företagande: Anställda
 
 ### Anställda bland förvärvsarbetande 15–74 år, andel (procent, 2024)
-Mäter: Andel anställda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet.
+Mäter: Andel anställda av samtliga sysselsatta 15–74 år, efter arbetsställets belägenhet.
 - Varberg: 88,0
 - Halland (länet): 87,7
 - Riket: 90,0
@@ -620,7 +620,7 @@ Mäter: Andel anställda av samtliga sysselsatta 15–74 år, dagbefolkning efte
 ## Yrkesställning och företagande: Företagare i AB
 
 ### Företagare i AB bland förvärvsarbetande 15–74 år, andel (procent, 2024)
-Mäter: Andel företagare i AB av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet.
+Mäter: Andel företagare i AB av samtliga sysselsatta 15–74 år, efter arbetsställets belägenhet.
 - Varberg: 7,10
 - Halland (länet): 7,20
 - Riket: 5,80
@@ -669,7 +669,7 @@ Mäter: Andel företagare i AB av samtliga sysselsatta 15–74 år, dagbefolknin
 ## Yrkesställning och företagande: Egenföretagare
 
 ### Egenföretagare bland förvärvsarbetande 15–74 år, andel (procent, 2024)
-Mäter: Andel egenföretagare av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet.
+Mäter: Andel egenföretagare av samtliga sysselsatta 15–74 år, efter arbetsställets belägenhet.
 - Varberg: 4,80
 - Halland (länet): 5,10
 - Riket: 4,20

@@ -277,19 +277,19 @@ naringsliv_config <- function() {
       ds  <- dim_map_b[dk]
       kid <- paste0("N_SEK_", sek, ds)
       n   <- paste0("Sysselsatta ", sek_namn_b[sek], dim_namn_b[dk])
-      b   <- paste0("Antal sysselsatta dagbefolkning 15\u201374 \u00e5r ", sek_namn_b[sek], dim_namn_b[dk], ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")
+      b   <- paste0("Antal sysselsatta 15\u201374 \u00e5r ", sek_namn_b[sek], dim_namn_b[dk], ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")
       beskr_rows <- c(beskr_rows, list(tibble(kpi_id = kid, kpi_namn = n, beskrivning = b)))
       if (ds == "" && sek %in% c("NARING", "OFF")) {
         beskr_rows <- c(beskr_rows, list(
           tibble(kpi_id = paste0(kid, "_A"),
                  kpi_namn = paste0("Andel ", sek_namn_b[sek]),
-                 beskrivning = paste0("Andel av sysselsatta dagbefolkning 15\u201374 \u00e5r ", sek_namn_b[sek], ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
+                 beskrivning = paste0("Andel av sysselsatta 15\u201374 \u00e5r ", sek_namn_b[sek], ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
         ))
       }
       beskr_rows <- c(beskr_rows, list(
         tibble(kpi_id = paste0(kid, "_TILLV"),
                kpi_namn = paste0("\u00c5rlig tillv\u00e4xt, sysselsatta ", sek_namn_b[sek], dim_namn_b[dk]),
-               beskrivning = paste0("\u00c5rlig procentuell f\u00f6r\u00e4ndring av antalet sysselsatta dagbefolkning ", sek_namn_b[sek], dim_namn_b[dk], ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
+               beskrivning = paste0("\u00c5rlig procentuell f\u00f6r\u00e4ndring av antalet sysselsatta ", sek_namn_b[sek], dim_namn_b[dk], ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
       ))
     }
   }
@@ -300,10 +300,10 @@ naringsliv_config <- function() {
     beskr_rows <- c(beskr_rows, list(
       tibble(kpi_id = paste0("N_BR_", id),
              kpi_namn = paste0("Sysselsatta, ", tolower(namn)),
-             beskrivning = paste0("Antal sysselsatta dagbefolkning inom ", tolower(namn), ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
+             beskrivning = paste0("Antal sysselsatta inom ", tolower(namn), ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
       tibble(kpi_id = paste0("N_BR_", id, "_A"),
              kpi_namn = paste0("Andel ", tolower(namn)),
-             beskrivning = paste0("Andel av samtliga sysselsatta dagbefolkning inom ", tolower(namn), ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
+             beskrivning = paste0("Andel av samtliga sysselsatta inom ", tolower(namn), ", efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
     ))
   }
 
@@ -314,14 +314,14 @@ naringsliv_config <- function() {
     beskr_rows <- c(beskr_rows, list(
       tibble(kpi_id = paste0("N_UTB_", utb_id),
              kpi_namn = paste0("Sysselsatta, ", namn, " utbildning"),
-             beskrivning = paste0("Antal sysselsatta dagbefolkning med ", namn, " utbildning, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
+             beskrivning = paste0("Antal sysselsatta med ", namn, " utbildning, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
       tibble(kpi_id = paste0("N_UTB_", utb_id, "_A"),
              kpi_namn = paste0("Andel ", namn, " utbildning"),
-             beskrivning = paste0("Andel av samtliga sysselsatta dagbefolkning med ", namn, " utbildning, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
+             beskrivning = paste0("Andel av samtliga sysselsatta med ", namn, " utbildning, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
     ))
   }
   beskr_rows <- c(beskr_rows, list(
-    tibble(kpi_id = "N_UTB_TOT", kpi_namn = "Sysselsatta totalt (utb.)", beskrivning = "Totalt antal sysselsatta dagbefolkning, alla utbildningsniv\u00e5er, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")
+    tibble(kpi_id = "N_UTB_TOT", kpi_namn = "Sysselsatta totalt (utb.)", beskrivning = "Totalt antal sysselsatta, alla utbildningsniv\u00e5er, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")
   ))
 
   # Yrkesställning
@@ -336,10 +336,10 @@ naringsliv_config <- function() {
       beskr_rows <- c(beskr_rows, list(
         tibble(kpi_id = id_base,
                kpi_namn = paste0("Antal ", namn_del),
-               beskrivning = paste0("Antal ", namn_del, " 15\u201374 \u00e5r, dagbefolkning efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
+               beskrivning = paste0("Antal ", namn_del, " 15\u201374 \u00e5r, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
         tibble(kpi_id = paste0(id_base, "_A"),
                kpi_namn = paste0("Andel ", namn_del),
-               beskrivning = paste0("Andel ", namn_del, " av samtliga sysselsatta 15\u201374 \u00e5r, dagbefolkning efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
+               beskrivning = paste0("Andel ", namn_del, " av samtliga sysselsatta 15\u201374 \u00e5r, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
       ))
     }
   }
@@ -348,7 +348,7 @@ naringsliv_config <- function() {
     beskr_rows <- c(beskr_rows, list(
       tibble(kpi_id = paste0("N_YRK_TOT", fr),
              kpi_namn = paste0("Sysselsatta totalt", fr_namn[fr_key]),
-             beskrivning = paste0("Totalt antal sysselsatta", fr_namn[fr_key], " 15\u201374 \u00e5r, dagbefolkning efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
+             beskrivning = paste0("Totalt antal sysselsatta", fr_namn[fr_key], " 15\u201374 \u00e5r, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
     ))
   }
 
@@ -358,10 +358,10 @@ naringsliv_config <- function() {
     beskr_rows <- c(beskr_rows, list(
       tibble(kpi_id = paste0("N_YRK_", yrk, "_KV"),
              kpi_namn = paste0("Antal kvinnor, ", yrk_kv_namn[yrk]),
-             beskrivning = paste0("Antal kvinnor bland ", yrk_kv_namn[yrk], " 15\u201374 \u00e5r, dagbefolkning efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
+             beskrivning = paste0("Antal kvinnor bland ", yrk_kv_namn[yrk], " 15\u201374 \u00e5r, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter.")),
       tibble(kpi_id = paste0("N_YRK_", yrk, "_KV_A"),
              kpi_namn = paste0("Andel kvinnor, ", yrk_kv_namn[yrk]),
-             beskrivning = paste0("Andel kvinnor bland ", yrk_kv_namn[yrk], " 15\u201374 \u00e5r, dagbefolkning efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
+             beskrivning = paste0("Andel kvinnor bland ", yrk_kv_namn[yrk], " 15\u201374 \u00e5r, efter arbetsst\u00e4llets bel\u00e4genhet. K\u00e4lla: Slutlig statistik fr\u00e5n SCB BAS \u00e5rsregister. Baseras p\u00e5 \u00e5rliga registeruppgifter."))
     ))
   }
 

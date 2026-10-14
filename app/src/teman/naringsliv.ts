@@ -20,7 +20,7 @@ const naringsliv: TemaConfig = {
     {
       id: "sektor-tot",
       gruppRubrik: G.DAG,
-      namn: "Dagbefolkning totalt",
+      namn: "Sysselsatta som arbetar i kommunen, totalt",
       kpiIds: ["N_SEK_TOT"],
       undersektioner: [
         { namn: "kvinnor och män", kpiIds: ["N_SEK_TOT_KV", "N_SEK_TOT_MAN"] },
@@ -180,7 +180,7 @@ const naringsliv: TemaConfig = {
   },
   visningsnamn: {
     // Sektor
-    "N_SEK_TOT": "Sysselsatta dagbefolkning 15–74 år, antal",
+    "N_SEK_TOT": "Sysselsatta 15–74 år som arbetar i kommunen, antal",
     "N_SEK_NARING": "Sysselsatta i näringslivet 15–74 år, antal",
     "N_SEK_NARING_A": "Sysselsatta i näringslivet 15–74 år, andel (%)",
     "N_SEK_OFF": "Sysselsatta i offentlig sektor 15–74 år, antal",

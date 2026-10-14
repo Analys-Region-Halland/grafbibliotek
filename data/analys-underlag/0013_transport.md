@@ -44,7 +44,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 ## Pendling
 
 ### Pendlingskvot (dag / natt) (kvot, 2024)
-Mäter: Dagbefolkningen dividerad med nattbefolkningen (sysselsatta efter arbetsställe delat med sysselsatta efter bostad). Över 1,0 finns fler sysselsatta med arbetsställe i kommunen än sysselsatta som bor där, under 1,0 färre. För länet avses pendling över länsgränsen.
+Mäter: Sysselsatta efter arbetsställe delat med sysselsatta efter bostad. Över 1,0 finns fler sysselsatta med arbetsställe i kommunen än sysselsatta som bor där, under 1,0 färre. För länet avses pendling över länsgränsen.
 - Halland: 0,87
 - Riket: 0,99
 - Skillnad Halland mot riket: -0,12 kvot
@@ -55,7 +55,7 @@ Mäter: Dagbefolkningen dividerad med nattbefolkningen (sysselsatta efter arbets
 - Serien för Halland 2020–2024: högst 0,88 (2021), lägst 0,87 (2022)
 
 ### Inpendlingsandel (procent, 2024)
-Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanför kommunen: antal inpendlare dividerat med dagbefolkningen. För länet avses de som bor utanför länet, så länets värde går inte att jämföra med kommunernas.
+Mäter: Andel av de sysselsatta med arbetsställe i kommunen som bor utanför kommunen: antal inpendlare dividerat med antalet sysselsatta efter arbetsställe. För länet avses de som bor utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Halland: 11,1
 - Hallands kommuner 2024 (högst först): Hylte 29,9; Kungsbacka 29,7; Laholm 24,8; Falkenberg 22,4; Halmstad 20,4; Varberg 20,4
 - Förändring 1 år: +0,1 procentenheter (från 11,0 år 2023)
@@ -63,7 +63,7 @@ Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanf
 - Serien för Halland 2020–2024: högst 11,2 (2021), lägst 10,9 (2022)
 
 ### Utpendlingsandel (procent, 2024)
-Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanför kommunen: antal utpendlare dividerat med nattbefolkningen. För länet avses de som arbetar utanför länet, så länets värde går inte att jämföra med kommunernas.
+Mäter: Andel av de sysselsatta som bor i kommunen som arbetar utanför kommunen: antal utpendlare dividerat med antalet sysselsatta efter bostad. För länet avses de som arbetar utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Halland: 22,1
 - Hallands kommuner 2024 (högst först): Kungsbacka 55,3; Laholm 46,1; Hylte 33,1; Falkenberg 28,5; Varberg 26,2; Halmstad 16,9
 - Förändring 1 år: 0,0 procentenheter (från 22,1 år 2023)
@@ -71,7 +71,7 @@ Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanfö
 - Serien för Halland 2020–2024: högst 22,1 (2024), lägst 21,3 (2020)
 
 ### Nettopendling, antal (antal, 2024)
-Mäter: Skillnaden mellan dagbefolkning och nattbefolkning (sysselsatta efter arbetsställe minus sysselsatta efter bostad). Positivt värde innebär att fler pendlar in än ut — kommunen är ett arbetsplatscentrum. Negativt värde innebär nettoutpendling — kommunen är mer av bostadsort.
+Mäter: Sysselsatta efter arbetsställe minus sysselsatta efter bostad. Positivt värde innebär att fler pendlar in än ut — kommunen är ett arbetsplatscentrum. Negativt värde innebär nettoutpendling — kommunen är mer av bostadsort.
 - Halland: -22 133
 - Riket: -36 081
 - Plats bland landets 21 regioner: 19 (1 = högsta värdet)
@@ -90,14 +90,14 @@ Mäter: Skillnaden mellan dagbefolkning och nattbefolkning (sysselsatta efter ar
 - Hallands kommuner 2024 (högst först): Kungsbacka 24 687; Varberg 9 173; Halmstad 8 750; Falkenberg 6 658; Laholm 5 917; Hylte 1 595
 - Förändring 1 år: -298 antal (från 38 508 år 2023), det vill säga -0,8 procent
 
-### Dagbefolkning, antal sysselsatta [uppdelning av Nettopendling, antal: dag- och nattbefolkningen] (antal, 2024)
+### Sysselsatta som arbetar i kommunen, antal [uppdelning av Nettopendling, antal: sysselsatta som arbetar och som bor i kommunen] (antal, 2024)
 - Halland: 150 488
 - Riket: 5 260 642
 - Plats bland landets 21 regioner: 8 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Halmstad 54 225; Varberg 32 484; Kungsbacka 28 426; Falkenberg 21 525; Laholm 9 213; Hylte 4 611
 - Förändring 1 år: -1 105 antal (från 151 593 år 2023), det vill säga -0,7 procent; riket -0,4 procent
 
-### Nattbefolkning, antal sysselsatta [uppdelning av Nettopendling, antal: dag- och nattbefolkningen] (antal, 2024)
+### Sysselsatta som bor i kommunen, antal [uppdelning av Nettopendling, antal: sysselsatta som arbetar och som bor i kommunen] (antal, 2024)
 - Halland: 172 621
 - Riket: 5 296 723
 - Plats bland landets 21 regioner: 7 (1 = högsta värdet)

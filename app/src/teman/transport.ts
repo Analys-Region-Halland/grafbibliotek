@@ -21,7 +21,7 @@ const transport: TemaConfig = {
       kpiIds: ["C_PENDLKVOT", "C_INPENDL_ANDEL", "C_UTPENDL_ANDEL", "C_PENDL_NETTO"],
       undersektioner: [
         { namn: "inpendlare och utpendlare", delAv: "C_PENDL_NETTO", kpiIds: ["S_INPENDL", "S_UTPENDL"] },
-        { namn: "dag- och nattbefolkningen", delAv: "C_PENDL_NETTO", kpiIds: ["S_DAG_TOT", "S_NATT_TOT"] },
+        { namn: "sysselsatta som arbetar och som bor i kommunen", delAv: "C_PENDL_NETTO", kpiIds: ["S_DAG_TOT", "S_NATT_TOT"] },
       ],
     },
     {
@@ -52,8 +52,8 @@ const transport: TemaConfig = {
   kortNamn: {
     S_INPENDL: "Inpendlare",
     S_UTPENDL: "Utpendlare",
-    S_DAG_TOT: "Dagbefolkning",
-    S_NATT_TOT: "Nattbefolkning",
+    S_DAG_TOT: "Arbetar i kommunen",
+    S_NATT_TOT: "Bor i kommunen",
     N07419: "Inom tätort",
     N07412: "Utanför tätort",
     N07710: "Normalladdare",
@@ -66,8 +66,8 @@ const transport: TemaConfig = {
     C_UTPENDL_ANDEL: "Utpendlingsandel (%)",
     S_INPENDL: "Inpendlare, antal",
     S_UTPENDL: "Utpendlare, antal",
-    S_DAG_TOT: "Dagbefolkning, antal sysselsatta",
-    S_NATT_TOT: "Nattbefolkning, antal sysselsatta",
+    S_DAG_TOT: "Sysselsatta som arbetar i kommunen, antal",
+    S_NATT_TOT: "Sysselsatta som bor i kommunen, antal",
     N60404: "Resor med kollektivtrafik, antal resor per invånare och år",
     N07418: "Befolkning i kollektivtrafiknära läge, andel (%)",
     N07419: "Befolkning inom tätort i kollektivtrafiknära läge, andel (%)",

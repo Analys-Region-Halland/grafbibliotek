@@ -129,9 +129,9 @@
   },
   {
     "id": "S_DAG_TOT",
-    "namn": "Dagbefolkning, antal sysselsatta",
+    "namn": "Sysselsatta som arbetar i kommunen, antal",
     "enhet": "antal",
-    "roll": "uppdelning av C_PENDL_NETTO (dag- och nattbefolkningen)",
+    "roll": "uppdelning av C_PENDL_NETTO (sysselsatta som arbetar och som bor i kommunen)",
     "forsta": 2020,
     "sista": 2024
   },
@@ -145,9 +145,9 @@
   },
   {
     "id": "S_NATT_TOT",
-    "namn": "Nattbefolkning, antal sysselsatta",
+    "namn": "Sysselsatta som bor i kommunen, antal",
     "enhet": "antal",
-    "roll": "uppdelning av C_PENDL_NETTO (dag- och nattbefolkningen)",
+    "roll": "uppdelning av C_PENDL_NETTO (sysselsatta som arbetar och som bor i kommunen)",
     "forsta": 2020,
     "sista": 2024
   },

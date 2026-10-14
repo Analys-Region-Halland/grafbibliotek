@@ -41,10 +41,10 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 
 # Underlag: Näringsliv, Hylte
 
-## Sysselsatta efter arbetsställe: Dagbefolkning totalt
+## Sysselsatta efter arbetsställe: Sysselsatta som arbetar i kommunen, totalt
 
-### Sysselsatta dagbefolkning 15–74 år, antal (antal, 2024)
-Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsställets belägenhet.
+### Sysselsatta 15–74 år som arbetar i kommunen, antal (antal, 2024)
+Mäter: Antal sysselsatta 15–74 år totalt, efter arbetsställets belägenhet.
 - Hylte: 4 611
 - Halland (länet): 150 488
 - Riket: 5 260 642
@@ -55,7 +55,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Hylte år för år: 2020 4 646; 2021 4 691; 2022 4 752; 2023 4 706; 2024 4 611
 - Serien för Hylte 2020–2024: högst 4 752 (2022), lägst 4 611 (2024)
 
-### Sysselsatta kvinnor 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: kvinnor och män] (antal, 2024)
+### Sysselsatta kvinnor 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: kvinnor och män] (antal, 2024)
 - Hylte: 2 028
 - Halland (länet): 74 740
 - Riket: 2 551 783
@@ -64,7 +64,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: -36 antal (från 2 064 år 2023), det vill säga -1,7 procent; riket -0,1 procent
 
-### Sysselsatta män 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: kvinnor och män] (antal, 2024)
+### Sysselsatta män 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: kvinnor och män] (antal, 2024)
 - Hylte: 2 582
 - Halland (länet): 75 753
 - Riket: 2 708 863
@@ -73,7 +73,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: -59 antal (från 2 641 år 2023), det vill säga -2,2 procent; riket -0,7 procent
 
-### Sysselsatta inrikes födda 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: inrikes och utrikes födda] (antal, 2024)
+### Sysselsatta inrikes födda 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: inrikes och utrikes födda] (antal, 2024)
 - Hylte: 3 477
 - Halland (länet): 124 026
 - Riket: 4 065 389
@@ -82,7 +82,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: -67 antal (från 3 544 år 2023), det vill säga -1,9 procent; riket -0,8 procent
 
-### Sysselsatta utrikes födda 15–74 år, antal [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: inrikes och utrikes födda] (antal, 2024)
+### Sysselsatta utrikes födda 15–74 år, antal [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: inrikes och utrikes födda] (antal, 2024)
 - Hylte: 1 133
 - Halland (länet): 26 462
 - Riket: 1 195 254
@@ -91,7 +91,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: -34 antal (från 1 167 år 2023), det vill säga -2,9 procent; riket +0,7 procent
 
-### Sysselsatta inom jordbruk och skogsbruk, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom jordbruk och skogsbruk, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 5,70
 - Halland (länet): 2,60
 - Riket: 1,80
@@ -102,7 +102,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: +0,30 procentenheter (från 5,40 år 2023); riket +0,10 procentenheter
 
-### Sysselsatta inom tillverkning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom tillverkning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 34,2
 - Halland (länet): 10,4
 - Riket: 10,7
@@ -113,7 +113,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 1 år: -1,4 procentenheter (från 35,6 år 2023); riket +0,1 procentenheter
 
-### Sysselsatta inom energi och miljö, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom energi och miljö, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 0,40
 - Halland (länet): 2,10
 - Riket: 1,20
@@ -124,7 +124,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: +0,20 procentenheter (från 0,20 år 2023); riket +0,10 procentenheter
 
-### Sysselsatta inom byggverksamhet, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom byggverksamhet, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 6,30
 - Halland (länet): 8,60
 - Riket: 7,10
@@ -135,7 +135,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: -0,50 procentenheter (från 6,80 år 2023); riket -0,10 procentenheter
 
-### Sysselsatta inom handel, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom handel, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 8,30
 - Halland (länet): 14,90
 - Riket: 11,50
@@ -146,7 +146,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: +0,60 procentenheter (från 7,70 år 2023); riket 0,0 procentenheter
 
-### Sysselsatta inom transport, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom transport, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 3,40
 - Halland (länet): 3,70
 - Riket: 4,40
@@ -157,7 +157,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 1 år: +0,40 procentenheter (från 3,00 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom hotell och restaurang, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom hotell och restaurang, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 2,80
 - Halland (länet): 4,20
 - Riket: 3,80
@@ -168,7 +168,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: +0,30 procentenheter (från 2,50 år 2023); riket +0,10 procentenheter
 
-### Sysselsatta inom IT och kommunikation, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom IT och kommunikation, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 0,30
 - Halland (länet): 1,60
 - Riket: 4,70
@@ -179,7 +179,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: +0,10 procentenheter (från 0,20 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom finans och försäkring, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom finans och försäkring, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 0,90
 - Halland (länet): 1,20
 - Riket: 2,10
@@ -190,7 +190,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 3
 - Förändring 1 år: +0,10 procentenheter (från 0,80 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom fastighetsverksamhet, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom fastighetsverksamhet, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 1,60
 - Halland (länet): 1,70
 - Riket: 1,70
@@ -201,7 +201,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 1 år: +0,40 procentenheter (från 1,20 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta inom företagstjänster, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom företagstjänster, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 5,00
 - Halland (länet): 9,50
 - Riket: 12,90
@@ -212,7 +212,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: +0,80 procentenheter (från 4,20 år 2023); riket +0,2 procentenheter
 
-### Sysselsatta inom offentlig förvaltning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom offentlig förvaltning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 3,90
 - Halland (länet): 6,20
 - Riket: 6,70
@@ -223,7 +223,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 4
 - Förändring 1 år: -1,50 procentenheter (från 5,40 år 2023); riket +0,20 procentenheter
 
-### Sysselsatta inom utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 9,10
 - Halland (länet): 11,70
 - Riket: 10,50
@@ -234,7 +234,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 6
 - Förändring 1 år: -0,60 procentenheter (från 9,70 år 2023); riket +0,1 procentenheter
 
-### Sysselsatta inom vård och omsorg, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom vård och omsorg, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 13,2
 - Halland (länet): 17,1
 - Riket: 16,4
@@ -245,7 +245,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 5
 - Förändring 1 år: +2,5 procentenheter (från 10,7 år 2023); riket +0,6 procentenheter
 
-### Sysselsatta inom övriga tjänster, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: branscherna] (procent, 2024)
+### Sysselsatta inom övriga tjänster, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: branscherna] (procent, 2024)
 - Hylte: 5,10
 - Halland (länet): 4,20
 - Riket: 4,50
@@ -256,7 +256,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 1 år: -0,30 procentenheter (från 5,40 år 2023); riket 0,00 procentenheter
 
-### Sysselsatta med förgymnasial utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: utbildningsnivåerna] (procent, 2024)
+### Sysselsatta med förgymnasial utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: utbildningsnivåerna] (procent, 2024)
 - Hylte: 15,6
 - Halland (länet): 10,3
 - Riket: 9,1
@@ -267,7 +267,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 1 år: -0,5 procentenheter (från 16,1 år 2023); riket -0,40 procentenheter
 
-### Sysselsatta med gymnasial utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: utbildningsnivåerna] (procent, 2024)
+### Sysselsatta med gymnasial utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: utbildningsnivåerna] (procent, 2024)
 - Hylte: 54,6
 - Halland (länet): 48,3
 - Riket: 42,5
@@ -278,7 +278,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 - Plats bland Hallands 6 kommuner: 1
 - Förändring 1 år: +0,5 procentenheter (från 54,1 år 2023); riket -0,4 procentenheter
 
-### Sysselsatta med eftergymnasial utbildning, andel [uppdelning av Sysselsatta dagbefolkning 15–74 år, antal: utbildningsnivåerna] (procent, 2024)
+### Sysselsatta med eftergymnasial utbildning, andel [uppdelning av Sysselsatta 15–74 år som arbetar i kommunen, antal: utbildningsnivåerna] (procent, 2024)
 - Hylte: 28,3
 - Halland (länet): 40,1
 - Riket: 46,8
@@ -292,7 +292,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år totalt, efter arbetsstället
 ## Sysselsatta efter arbetsställe: Näringslivet
 
 ### Sysselsatta i näringslivet 15–74 år, antal (antal, 2024)
-Mäter: Antal sysselsatta dagbefolkning 15–74 år i näringslivet, efter arbetsställets belägenhet.
+Mäter: Antal sysselsatta 15–74 år i näringslivet, efter arbetsställets belägenhet.
 - Hylte: 3 286
 - Halland (länet): 100 452
 - Riket: 3 604 692
@@ -342,7 +342,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år i näringslivet, efter arbet
 ## Sysselsatta efter arbetsställe: Offentlig sektor
 
 ### Sysselsatta i offentlig sektor 15–74 år, antal (antal, 2024)
-Mäter: Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, efter arbetsställets belägenhet.
+Mäter: Antal sysselsatta 15–74 år i offentlig sektor, efter arbetsställets belägenhet.
 - Hylte: 1 325
 - Halland (länet): 50 036
 - Riket: 1 655 950
@@ -392,7 +392,7 @@ Mäter: Antal sysselsatta dagbefolkning 15–74 år i offentlig sektor, efter ar
 ## Tillväxt i antal sysselsatta: Tillväxt totalt
 
 ### Årlig tillväxt, förvärvsarbetande totalt, förändring (procent, 2024)
-Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning totalt, efter arbetsställets belägenhet.
+Mäter: Årlig procentuell förändring av antalet sysselsatta totalt, efter arbetsställets belägenhet.
 - Hylte: -2,00
 - Halland (länet): -0,70
 - Riket: -0,40
@@ -452,7 +452,7 @@ Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning tot
 ## Tillväxt i antal sysselsatta: Tillväxt näringslivet
 
 ### Årlig tillväxt, förvärvsarbetande i näringslivet, förändring (procent, 2024)
-Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i näringslivet, efter arbetsställets belägenhet.
+Mäter: Årlig procentuell förändring av antalet sysselsatta i näringslivet, efter arbetsställets belägenhet.
 - Hylte: -1,50
 - Halland (länet): -0,70
 - Riket: -0,60
@@ -512,7 +512,7 @@ Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i n
 ## Tillväxt i antal sysselsatta: Tillväxt offentlig sektor
 
 ### Årlig tillväxt, förvärvsarbetande i offentlig sektor, förändring (procent, 2024)
-Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i offentlig sektor, efter arbetsställets belägenhet.
+Mäter: Årlig procentuell förändring av antalet sysselsatta i offentlig sektor, efter arbetsställets belägenhet.
 - Hylte: -3,40
 - Halland (länet): -0,80
 - Riket: -0,20
@@ -572,7 +572,7 @@ Mäter: Årlig procentuell förändring av antalet sysselsatta dagbefolkning i o
 ## Yrkesställning och företagande: Anställda
 
 ### Anställda bland förvärvsarbetande 15–74 år, andel (procent, 2024)
-Mäter: Andel anställda av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet.
+Mäter: Andel anställda av samtliga sysselsatta 15–74 år, efter arbetsställets belägenhet.
 - Hylte: 87,1
 - Halland (länet): 87,7
 - Riket: 90,0
@@ -621,7 +621,7 @@ Mäter: Andel anställda av samtliga sysselsatta 15–74 år, dagbefolkning efte
 ## Yrkesställning och företagande: Företagare i AB
 
 ### Företagare i AB bland förvärvsarbetande 15–74 år, andel (procent, 2024)
-Mäter: Andel företagare i AB av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet.
+Mäter: Andel företagare i AB av samtliga sysselsatta 15–74 år, efter arbetsställets belägenhet.
 - Hylte: 4,80
 - Halland (länet): 7,20
 - Riket: 5,80
@@ -670,7 +670,7 @@ Mäter: Andel företagare i AB av samtliga sysselsatta 15–74 år, dagbefolknin
 ## Yrkesställning och företagande: Egenföretagare
 
 ### Egenföretagare bland förvärvsarbetande 15–74 år, andel (procent, 2024)
-Mäter: Andel egenföretagare av samtliga sysselsatta 15–74 år, dagbefolkning efter arbetsställets belägenhet.
+Mäter: Andel egenföretagare av samtliga sysselsatta 15–74 år, efter arbetsställets belägenhet.
 - Hylte: 8,00
 - Halland (länet): 5,10
 - Riket: 4,20

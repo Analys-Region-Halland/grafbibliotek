@@ -44,7 +44,7 @@ tillverkningsindustri, med pendling mot Halmstad och Falkenberg.
 ## Pendling
 
 ### Pendlingskvot (dag / natt) (kvot, 2024)
-Mäter: Dagbefolkningen dividerad med nattbefolkningen (sysselsatta efter arbetsställe delat med sysselsatta efter bostad). Över 1,0 finns fler sysselsatta med arbetsställe i kommunen än sysselsatta som bor där, under 1,0 färre. För länet avses pendling över länsgränsen.
+Mäter: Sysselsatta efter arbetsställe delat med sysselsatta efter bostad. Över 1,0 finns fler sysselsatta med arbetsställe i kommunen än sysselsatta som bor där, under 1,0 färre. För länet avses pendling över länsgränsen.
 - Varberg: 0,93
 - Riket: 0,99
 - Skillnad Varberg mot riket: -0,06 kvot
@@ -56,7 +56,7 @@ Mäter: Dagbefolkningen dividerad med nattbefolkningen (sysselsatta efter arbets
 - Serien för Varberg 2020–2024: högst 0,96 (2020), lägst 0,92 (2023)
 
 ### Inpendlingsandel (procent, 2024)
-Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanför kommunen: antal inpendlare dividerat med dagbefolkningen. För länet avses de som bor utanför länet, så länets värde går inte att jämföra med kommunernas.
+Mäter: Andel av de sysselsatta med arbetsställe i kommunen som bor utanför kommunen: antal inpendlare dividerat med antalet sysselsatta efter arbetsställe. För länet avses de som bor utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Varberg: 20,4
 - Plats bland landets 290 kommuner: 225 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Hylte 29,9; Kungsbacka 29,7; Laholm 24,8; Falkenberg 22,4; Halmstad 20,4; Varberg 20,4
@@ -66,7 +66,7 @@ Mäter: Andel av dagbefolkningen (sysselsatta efter arbetsställe) som bor utanf
 - Serien för Varberg 2020–2024: högst 20,5 (2021), lägst 19,8 (2022)
 
 ### Utpendlingsandel (procent, 2024)
-Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanför kommunen: antal utpendlare dividerat med nattbefolkningen. För länet avses de som arbetar utanför länet, så länets värde går inte att jämföra med kommunernas.
+Mäter: Andel av de sysselsatta som bor i kommunen som arbetar utanför kommunen: antal utpendlare dividerat med antalet sysselsatta efter bostad. För länet avses de som arbetar utanför länet, så länets värde går inte att jämföra med kommunernas.
 - Varberg: 26,2
 - Plats bland landets 290 kommuner: 209 (1 = högsta värdet)
 - Hallands kommuner 2024 (högst först): Kungsbacka 55,3; Laholm 46,1; Hylte 33,1; Falkenberg 28,5; Varberg 26,2; Halmstad 16,9
@@ -76,7 +76,7 @@ Mäter: Andel av nattbefolkningen (sysselsatta efter bostad) som arbetar utanfö
 - Serien för Varberg 2020–2024: högst 26,2 (2024), lägst 23,7 (2020)
 
 ### Nettopendling, antal (antal, 2024)
-Mäter: Skillnaden mellan dagbefolkning och nattbefolkning (sysselsatta efter arbetsställe minus sysselsatta efter bostad). Positivt värde innebär att fler pendlar in än ut — kommunen är ett arbetsplatscentrum. Negativt värde innebär nettoutpendling — kommunen är mer av bostadsort.
+Mäter: Sysselsatta efter arbetsställe minus sysselsatta efter bostad. Positivt värde innebär att fler pendlar in än ut — kommunen är ett arbetsplatscentrum. Negativt värde innebär nettoutpendling — kommunen är mer av bostadsort.
 - Varberg: -2 543
 - Halland (länet): -22 133
 - Riket: -36 081
@@ -103,7 +103,7 @@ Mäter: Skillnaden mellan dagbefolkning och nattbefolkning (sysselsatta efter ar
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: +36 antal (från 9 137 år 2023), det vill säga +0,4 procent
 
-### Dagbefolkning, antal sysselsatta [uppdelning av Nettopendling, antal: dag- och nattbefolkningen] (antal, 2024)
+### Sysselsatta som arbetar i kommunen, antal [uppdelning av Nettopendling, antal: sysselsatta som arbetar och som bor i kommunen] (antal, 2024)
 - Varberg: 32 484
 - Halland (länet): 150 488
 - Riket: 5 260 642
@@ -112,7 +112,7 @@ Mäter: Skillnaden mellan dagbefolkning och nattbefolkning (sysselsatta efter ar
 - Plats bland Hallands 6 kommuner: 2
 - Förändring 1 år: +31 antal (från 32 453 år 2023), det vill säga +0,1 procent; riket -0,4 procent
 
-### Nattbefolkning, antal sysselsatta [uppdelning av Nettopendling, antal: dag- och nattbefolkningen] (antal, 2024)
+### Sysselsatta som bor i kommunen, antal [uppdelning av Nettopendling, antal: sysselsatta som arbetar och som bor i kommunen] (antal, 2024)
 - Varberg: 35 027
 - Halland (länet): 172 621
 - Riket: 5 296 723
